@@ -33,7 +33,7 @@ function owid_enqueue_scripts_styles() {
 
 function build_static($post_ID, $post_after, $post_before) {
 	$current_user = wp_get_current_user();
-	exec("cd " . dirname(__FILE__) . " && node dist/postUpdatedHook.js " . escapeshellarg($current_user->user_email) . " " . escapeshellarg($current_user->display_name) . " " . $post_after->slug . " /tmp/wp-static.log", $op);
+	exec("cd " . dirname(__FILE__) . " && node dist/postUpdatedHook.js " . escapeshellarg($current_user->user_email) . " " . escapeshellarg($current_user->display_name) . " " . escapeshellarg($post_after->post_name) . " /tmp/wp-static.log", $op);
 }
 
 add_action('post_updated', 'build_static');
