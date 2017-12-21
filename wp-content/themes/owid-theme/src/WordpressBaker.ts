@@ -89,7 +89,6 @@ export class WordpressBaker {
                 try {
                     const outPath = path.join(outDir, `${slug}.html`)
                     const stat = fs.statSync(outPath)
-                    console.log(slug, stat.mtime, row.post_modified)
                     if (stat.mtime >= row.post_modified) {
                         // No newer version of this post, don't bother to bake
                         //console.log(`304 ${slug}`)
@@ -131,9 +130,13 @@ export class WordpressBaker {
         ])
     }
 
-    async deploy() {
+    async deploy(authorEmail?: string, authorName?: string) {
         const {outDir} = this.props
-        shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Automatic update"`)
+        if (authorEmail && authorName) {
+            shell.exec(`cd ${outDir} && git add -A . && git commit --author='${authorName} <${authorEmail}>' -a -m "Wordpress content update"`)
+        } else {
+            shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Code update"`)
+        }
         shell.exec(`cd ${outDir} && git push origin master`)
     }
 
