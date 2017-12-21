@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+
+.download { 
+  background: #333; 
+  color: #FFF; 
+  font-weight: 900; 
+  border: 2px solid #B10000; 
+  padding: 4px; 
+  margin:4px;
+}
+
+#TitleContainer{
+    position: absolute;
+	width: 100%;
+    height: 26px;
+    top:0px;
+	left: 0; 
+	background-color:#FAFAFA;
+}
+
+.mainTitleText{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+}
+
+#CreditsContainer{
+    position: absolute;
+	width: 100%;
+    height: 36px;
+    bottom:0px;
+	left: 0; 
+    background-color:#FAFAFA;
+
+}
+
+
+
+#map {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0; /*fill parent*/
+	background-color:#ECF6FC; /*hellblau*/
+}
+
+
+</style>
+
+
+
+
+
+<body>
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="datamaps.world.min.js"></script>
+  <script src="../../maxstyle_for_d3/colorbrewer.js"></script>
+
+   
+<div id="all">
+	<div id="map"> </div>
+	<div>    <svg id="CreditsContainer"></svg>  </div>
+	<div>    <svg id="TitleContainer"></svg>  </div>
+</div>
+
+   <script>
+     
+     
+     var colorschemeOfThisMap = colorbrewer.YlGnBu;
+  
+     var map = new Datamap({
+        scope: 'world',
+		projection: 'equirectangular',
+        element: document.getElementById('map'),
+        // projection: 'mercator',
+
+       geographyConfig: {
+        borderWidth: 0.2,
+        borderColor: '#4F4F4F',
+        highlightBorderColor: 'black',
+        highlightBorderWidth: 0.5,
+
+        highlightFillColor: '#FFEC38',
+        
+        popupTemplate: function(geography, data) {
+                    if ( !data ) return;  // makes sure that the tooltip is shown only if there is data 
+         			return '<div class="hoverinfo">' + geography.properties.name + '<br>Population density: <strong>' +  data.Density + '</strong> people per square kilometer';},
+            },        
+        fills: {
+            
+              
+// Fills & Legendlabels – Reihenfolge ist wichtig - wird in dieser Reihenfolge in der Legende angezeigt (also mit höchstem Wert beginnen)
+       defaultFill: 'grey',
+		"> 500": colorschemeOfThisMap[9][8],
+		"200 - 499":colorschemeOfThisMap[9][7],
+		"100 - 199":colorschemeOfThisMap[9][6],
+		"50 - 99":colorschemeOfThisMap[9][5],
+		"10 - 49":colorschemeOfThisMap[9][4],
+		"5 - 9.9":colorschemeOfThisMap[9][3],
+		"1 - 4.9":colorschemeOfThisMap[9][2],
+		"0.2 - 0.9":colorschemeOfThisMap[9][1],
+		"< 0.2":colorschemeOfThisMap[9][0],
+		"no data": 'grey'   
+		
+        },
+        
+      
+  data: {
+  
+ "KIR":{Density:123.65,fillKey:"50 - 99"},
+"PSE":{Density:84.21,fillKey:"50 - 99"},
+"MCO":{Density:76.26,fillKey:"50 - 99"},
+"TUV":{Density:46.66,fillKey:"10 - 49"},
+"LIE":{Density:44.38,fillKey:"10 - 49"},
+"GIB":{Density:42.56,fillKey:"10 - 49"},
+"SMR":{Density:40.69,fillKey:"10 - 49"},
+"NRU":{Density:33.03,fillKey:"10 - 49"},
+"LBN":{Density:28.48,fillKey:"10 - 49"},
+"TON":{Density:27.27,fillKey:"10 - 49"},
+"MDV":{Density:26.67,fillKey:"10 - 49"},
+"BGD":{Density:23.68,fillKey:"10 - 49"},
+"ITA":{Density:23.51,fillKey:"10 - 49"},
+"WLF":{Density:18.21,fillKey:"10 - 49"},
+"LUX":{Density:17.53,fillKey:"10 - 49"},
+"COK":{Density:15.47,fillKey:"10 - 49"},
+"CYP":{Density:15.44,fillKey:"10 - 49"},
+"GRC":{Density:15.25,fillKey:"10 - 49"},
+"FSM":{Density:13.82,fillKey:"10 - 49"},
+"GRD":{Density:13.62,fillKey:"10 - 49"},
+"BMU":{Density:11.29,fillKey:"10 - 49"},
+"ASM":{Density:9.88,fillKey:"5 - 9.9"},
+"BEL":{Density:9.83,fillKey:"5 - 9.9"},
+"GLP":{Density:9.60,fillKey:"5 - 9.9"},
+"LCA":{Density:9.14,fillKey:"5 - 9.9"},
+"CZE":{Density:9.09,fillKey:"5 - 9.9"},
+"ESP":{Density:9.09,fillKey:"5 - 9.9"},
+"FRA":{Density:9.03,fillKey:"5 - 9.9"},
+"IND":{Density:8.91,fillKey:"5 - 9.9"},
+"DEU":{Density:8.45,fillKey:"5 - 9.9"},
+"ISR":{Density:7.81,fillKey:"5 - 9.9"},
+"TUR":{Density:7.74,fillKey:"5 - 9.9"},
+"CHE":{Density:7.62,fillKey:"5 - 9.9"},
+"SRB":{Density:7.10,fillKey:"5 - 9.9"},
+"ALB":{Density:7.00,fillKey:"5 - 9.9"},
+"NPL":{Density:6.93,fillKey:"5 - 9.9"},
+"SVN":{Density:6.70,fillKey:"5 - 9.9"},
+"HRV":{Density:6.43,fillKey:"5 - 9.9"},
+"GEO":{Density:6.24,fillKey:"5 - 9.9"},
+"CHN":{Density:6.24,fillKey:"5 - 9.9"},
+"AUT":{Density:6.05,fillKey:"5 - 9.9"},
+"MDA":{Density:5.83,fillKey:"5 - 9.9"},
+"ARM":{Density:5.83,fillKey:"5 - 9.9"},
+"SVK":{Density:5.71,fillKey:"5 - 9.9"},
+"NLD":{Density:5.66,fillKey:"5 - 9.9"},
+"BHR":{Density:5.29,fillKey:"5 - 9.9"},
+"MHL":{Density:5.16,fillKey:"5 - 9.9"},
+"TUN":{Density:5.14,fillKey:"5 - 9.9"},
+"SYR":{Density:4.91,fillKey:"1 - 4.9"},
+"MKD":{Density:4.86,fillKey:"1 - 4.9"},
+"DNK":{Density:4.71,fillKey:"1 - 4.9"},
+"BIH":{Density:4.67,fillKey:"1 - 4.9"},
+"NIU":{Density:4.62,fillKey:"1 - 4.9"},
+"LKA":{Density:4.54,fillKey:"1 - 4.9"},
+"BGR":{Density:4.53,fillKey:"1 - 4.9"},
+"ATG":{Density:4.51,fillKey:"1 - 4.9"},
+"PRT":{Density:4.49,fillKey:"1 - 4.9"},
+"UZB":{Density:4.21,fillKey:"1 - 4.9"},
+"AZE":{Density:4.16,fillKey:"1 - 4.9"},
+"EGY":{Density:4.07,fillKey:"1 - 4.9"},
+"MEX":{Density:3.86,fillKey:"1 - 4.9"},
+"BEN":{Density:3.67,fillKey:"1 - 4.9"},
+"ROU":{Density:3.39,fillKey:"1 - 4.9"},
+"PAK":{Density:3.39,fillKey:"1 - 4.9"},
+"PYF":{Density:3.28,fillKey:"1 - 4.9"},
+"HUN":{Density:3.25,fillKey:"1 - 4.9"},
+"IRL":{Density:3.24,fillKey:"1 - 4.9"},
+"TJK":{Density:3.20,fillKey:"1 - 4.9"},
+"GBR":{Density:3.19,fillKey:"1 - 4.9"},
+"AFG":{Density:3.14,fillKey:"1 - 4.9"},
+"MLT":{Density:3.03,fillKey:"1 - 4.9"},
+"KWT":{Density:2.98,fillKey:"1 - 4.9"},
+"UKR":{Density:2.93,fillKey:"1 - 4.9"},
+"KHM":{Density:2.79,fillKey:"1 - 4.9"},
+"TWN":{Density:2.79,fillKey:"1 - 4.9"},
+"KGZ":{Density:2.56,fillKey:"1 - 4.9"},
+"IRN":{Density:2.47,fillKey:"1 - 4.9"},
+"AND":{Density:2.41,fillKey:"1 - 4.9"},
+"YEM":{Density:2.40,fillKey:"1 - 4.9"},
+"MNE":{Density:2.39,fillKey:"1 - 4.9"},
+"CRI":{Density:2.37,fillKey:"1 - 4.9"},
+"IRQ":{Density:2.29,fillKey:"1 - 4.9"},
+"WSM":{Density:2.06,fillKey:"1 - 4.9"},
+"CYM":{Density:2.02,fillKey:"1 - 4.9"},
+"VAT":{Density:1.95,fillKey:"1 - 4.9"},
+"AIA":{Density:1.91,fillKey:"1 - 4.9"},
+"CCK":{Density:1.78,fillKey:"1 - 4.9"},
+"SYC":{Density:1.66,fillKey:"1 - 4.9"},
+"POL":{Density:1.62,fillKey:"1 - 4.9"},
+"SGP":{Density:1.59,fillKey:"1 - 4.9"},
+"MMR":{Density:1.49,fillKey:"1 - 4.9"},
+"MAR":{Density:1.49,fillKey:"1 - 4.9"},
+"GTM":{Density:1.37,fillKey:"1 - 4.9"},
+"PNG":{Density:1.27,fillKey:"1 - 4.9"},
+"SLV":{Density:1.23,fillKey:"1 - 4.9"},
+"VNM":{Density:1.22,fillKey:"1 - 4.9"},
+"PER":{Density:1.16,fillKey:"1 - 4.9"},
+"GHA":{Density:1.14,fillKey:"1 - 4.9"},
+"COL":{Density:1.05,fillKey:"1 - 4.9"},
+"IDN":{Density:1.03,fillKey:"1 - 4.9"},
+"THA":{Density:0.98,fillKey:"0.2 - 0.9"},
+"TGO":{Density:0.96,fillKey:"0.2 - 0.9"},
+"KOR":{Density:0.92,fillKey:"0.2 - 0.9"},
+"JOR":{Density:0.89,fillKey:"0.2 - 0.9"},
+"DZA":{Density:0.86,fillKey:"0.2 - 0.9"},
+"GNB":{Density:0.86,fillKey:"0.2 - 0.9"},
+"LBR":{Density:0.82,fillKey:"0.2 - 0.9"},
+"GUM":{Density:0.81,fillKey:"0.2 - 0.9"},
+"ECU":{Density:0.80,fillKey:"0.2 - 0.9"},
+"SDN":{Density:0.80,fillKey:"0.2 - 0.9"},
+"PRK":{Density:0.79,fillKey:"0.2 - 0.9"},
+"LTU":{Density:0.73,fillKey:"0.2 - 0.9"},
+"GNQ":{Density:0.72,fillKey:"0.2 - 0.9"},
+"JPN":{Density:0.71,fillKey:"0.2 - 0.9"},
+"KAZ":{Density:0.71,fillKey:"0.2 - 0.9"},
+"BFA":{Density:0.71,fillKey:"0.2 - 0.9"},
+"TKM":{Density:0.71,fillKey:"0.2 - 0.9"},
+"GIN":{Density:0.70,fillKey:"0.2 - 0.9"},
+"EST":{Density:0.67,fillKey:"0.2 - 0.9"},
+"FJI":{Density:0.64,fillKey:"0.2 - 0.9"},
+"LVA":{Density:0.63,fillKey:"0.2 - 0.9"},
+"NGA":{Density:0.55,fillKey:"0.2 - 0.9"},
+"CXR":{Density:0.55,fillKey:"0.2 - 0.9"},
+"SAU":{Density:0.51,fillKey:"0.2 - 0.9"},
+"UGA":{Density:0.49,fillKey:"0.2 - 0.9"},
+"OMN":{Density:0.48,fillKey:"0.2 - 0.9"},
+"SWE":{Density:0.48,fillKey:"0.2 - 0.9"},
+"BLR":{Density:0.47,fillKey:"0.2 - 0.9"},
+"MYS":{Density:0.46,fillKey:"0.2 - 0.9"},
+"LAO":{Density:0.43,fillKey:"0.2 - 0.9"},
+"BDI":{Density:0.42,fillKey:"0.2 - 0.9"},
+"ETH":{Density:0.42,fillKey:"0.2 - 0.9"},
+"CMR":{Density:0.40,fillKey:"0.2 - 0.9"},
+"RWA":{Density:0.40,fillKey:"0.2 - 0.9"},
+"DJI":{Density:0.38,fillKey:"0.2 - 0.9"},
+"PHL":{Density:0.33,fillKey:"0.2 - 0.9"},
+"NOR":{Density:0.32,fillKey:"0.2 - 0.9"},
+"SOM":{Density:0.31,fillKey:"0.2 - 0.9"},
+"ARE":{Density:0.31,fillKey:"0.2 - 0.9"},
+"SWZ":{Density:0.29,fillKey:"0.2 - 0.9"},
+"BRN":{Density:0.28,fillKey:"0.2 - 0.9"},
+"BOL":{Density:0.28,fillKey:"0.2 - 0.9"},
+"CHL":{Density:0.28,fillKey:"0.2 - 0.9"},
+"MWI":{Density:0.27,fillKey:"0.2 - 0.9"},
+"LSO":{Density:0.27,fillKey:"0.2 - 0.9"},
+"LBY":{Density:0.25,fillKey:"0.2 - 0.9"},
+"TLS":{Density:0.24,fillKey:"0.2 - 0.9"},
+"ERI":{Density:0.23,fillKey:"0.2 - 0.9"},
+"VEN":{Density:0.22,fillKey:"0.2 - 0.9"},
+"BTN":{Density:0.22,fillKey:"0.2 - 0.9"},
+"CAF":{Density:0.20,fillKey:"0.2 - 0.9"},
+"MNG":{Density:0.19,fillKey:"< 0.2"},
+"NCL":{Density:0.19,fillKey:"< 0.2"},
+"MLI":{Density:0.18,fillKey:"< 0.2"},
+"KEN":{Density:0.18,fillKey:"< 0.2"},
+"SEN":{Density:0.17,fillKey:"< 0.2"},
+"TZA":{Density:0.17,fillKey:"< 0.2"},
+"NIC":{Density:0.16,fillKey:"< 0.2"},
+"QAT":{Density:0.15,fillKey:"< 0.2"},
+"CIV":{Density:0.14,fillKey:"< 0.2"},
+"NER":{Density:0.14,fillKey:"< 0.2"},
+"TCD":{Density:0.13,fillKey:"< 0.2"},
+"COG":{Density:0.13,fillKey:"< 0.2"},
+"STP":{Density:0.13,fillKey:"< 0.2"},
+"COD":{Density:0.12,fillKey:"< 0.2"},
+"PLW":{Density:0.11,fillKey:"< 0.2"},
+"ZWE":{Density:0.11,fillKey:"< 0.2"},
+"FRO":{Density:0.10,fillKey:"< 0.2"},
+"BHS":{Density:0.10,fillKey:"< 0.2"},
+"ISL":{Density:0.09,fillKey:"< 0.2"},
+"BLZ":{Density:0.09,fillKey:"< 0.2"},
+"GAB":{Density:0.08,fillKey:"< 0.2"},
+"REU":{Density:0.08,fillKey:"< 0.2"},
+"MOZ":{Density:0.08,fillKey:"< 0.2"},
+"SLB":{Density:0.08,fillKey:"< 0.2"},
+"RUS":{Density:0.08,fillKey:"< 0.2"},
+"ZAF":{Density:0.08,fillKey:"< 0.2"},
+"USA":{Density:0.07,fillKey:"< 0.2"},
+"FIN":{Density:0.07,fillKey:"< 0.2"},
+"DMA":{Density:0.06,fillKey:"< 0.2"},
+"NAM":{Density:0.05,fillKey:"< 0.2"},
+"ZMB":{Density:0.05,fillKey:"< 0.2"},
+"MRT":{Density:0.05,fillKey:"< 0.2"},
+"AGO":{Density:0.05,fillKey:"< 0.2"},
+"BRA":{Density:0.05,fillKey:"< 0.2"},
+"BWA":{Density:0.05,fillKey:"< 0.2"},
+"GMB":{Density:0.04,fillKey:"< 0.2"},
+"PRY":{Density:0.04,fillKey:"< 0.2"},
+"ARG":{Density:0.04,fillKey:"< 0.2"},
+"AUS":{Density:0.03,fillKey:"< 0.2"},
+"VUT":{Density:0.03,fillKey:"< 0.2"},
+"URY":{Density:0.03,fillKey:"< 0.2"},
+"SUR":{Density:0.03,fillKey:"< 0.2"},
+"GUY":{Density:0.03,fillKey:"< 0.2"},
+"MUS":{Density:0.03,fillKey:"< 0.2"},
+"HND":{Density:0.02,fillKey:"< 0.2"},
+"SLE":{Density:0.02,fillKey:"< 0.2"},
+"BRB":{Density:0.02,fillKey:"< 0.2"},
+"HTI":{Density:0.02,fillKey:"< 0.2"},
+"PAN":{Density:0.01,fillKey:"< 0.2"},
+"SHN":{Density:0.01,fillKey:"< 0.2"},
+"DOM":{Density:0.01,fillKey:"< 0.2"},
+"CAN":{Density:0.01,fillKey:"< 0.2"},
+"GUF":{Density:0.00,fillKey:"< 0.2"},
+"PRI":{Density:0.00,fillKey:"< 0.2"},
+"MDG":{Density:0.00,fillKey:"< 0.2"},
+"VCT":{Density:0.00,fillKey:"< 0.2"},
+"VIR":{Density:0.00,fillKey:"< 0.2"},
+"KNA":{Density:0.00,fillKey:"< 0.2"},
+"MSR":{Density:0.00,fillKey:"< 0.2"},
+"MTQ":{Density:0.00,fillKey:"< 0.2"},
+"VGB":{Density:0.00,fillKey:"< 0.2"},
+"ANT":{Density:0.00,fillKey:"< 0.2"},
+"SPM":{Density:0.00,fillKey:"< 0.2"},
+"JAM":{Density:0.00,fillKey:"< 0.2"},
+"ABW":{Density:0.00,fillKey:"< 0.2"},
+"TCA":{Density:0.00,fillKey:"< 0.2"},
+"CUB":{Density:0.00,fillKey:"< 0.2"},
+"ESH":{Density:0.00,fillKey:"< 0.2"},
+"TTO":{Density:0.00,fillKey:"< 0.2"},
+"FLK":{Density:0.00,fillKey:"< 0.2"},
+"COM":{Density:0.00,fillKey:"< 0.2"},
+"CPV":{Density:0.00,fillKey:"< 0.2"},
+"GRL":{Density:0.00,fillKey:"< 0.2"},
+"HKG":{Density:0.00,fillKey:"< 0.2"},
+"MAC":{Density:0.00,fillKey:"< 0.2"},
+"NZL":{Density:0.00,fillKey:"< 0.2"}
+  
+}
+});
+     
+     
+     
+
+
+    
+   // Max Plugin
+      //plugin added by me to have the legend vertically
+  function addLegendmaxstyle(layer, data, options) {
+    data = data || {};
+    if ( !this.options.fills ) {
+      return;
+    }
+
+    var html = '<dl>';
+    var label = '';
+    if ( data.legendTitle ) {
+      html = '<h4>' + data.legendTitle + '</h4>' + html;
+    }
+    
+    for ( var fillKey in this.options.fills ) {
+
+      if ( fillKey === 'defaultFill') {
+        if (! data.defaultFillName ) {
+          continue;
+        }
+        label = data.defaultFillName;
+      } else {
+        if (data.labels && data.labels[fillKey]) {
+          label = data.labels[fillKey];
+        } else {
+        
+        // Changed by Max //
+	label= '' + fillKey;
+    html += '<dd style="background-color:' +  this.options.fills[fillKey] + '">&nbsp;</dd>';
+	html += '<dt>' + label + '</dt>'+ '<br>';
+
+        }
+      }
+    }
+    html += '</dl>';
+
+    var hoverover = d3.select( this.options.element ).append('div')
+      .attr('class', 'datamaps-legend')
+      .html(html);
+  }
+  
+  
+//Legende anzeigen  
+   map.addPlugin("mylegend", addLegendmaxstyle);
+   map.mylegend({legendTitle:"Population density (People per square kilometer)"})
+
+    
+    
+    
+
+
+
+
+
+
+
+/*  TITLE                      */
+/* --------------------------- */
+
+var TitleCanvas = d3.select("#TitleContainer")
+
+
+TitleCanvas
+	.append("text")
+	.text("Population density in the year 0")
+	.attr("x",35)
+	.attr("y",18)
+	.attr('class','mainTitleText');
+	
+	
+	
+TitleCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+
+
+
+ 
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.explainingprogress.com/data/population-growth-vital-statistics/world-population-growth")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.explainingprogress.com/data/population-growth-vital-statistics/world-population-growth")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data source: The History Database of the Global Environment (HYDE)")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+	
+	
+	
+/* ------- end credits ------ */
+		  
+
+     
+     </script>
+</body>

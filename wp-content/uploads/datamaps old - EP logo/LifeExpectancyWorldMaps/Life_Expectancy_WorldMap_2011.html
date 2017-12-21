@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+
+.download { 
+  background: #333; 
+  color: #FFF; 
+  font-weight: 900; 
+  border: 2px solid #B10000; 
+  padding: 4px; 
+  margin:4px;
+}
+
+#TitleContainer{
+    position: absolute;
+	width: 100%;
+    height: 26px;
+    top:0px;
+	left: 0; 
+	background-color:#FAFAFA;
+}
+
+.mainTitleText{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+}
+
+#CreditsContainer{
+    position: absolute;
+	width: 100%;
+    height: 36px;
+    bottom:0px;
+	left: 0; 
+    background-color:#FAFAFA;
+
+}
+
+.datamaps-legend {
+        line-height: 16px !important;  /* Auch Höhe der Farbboxen*/ 
+}
+
+#map {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0; /*fill parent*/
+	background-color:#ECF6FC; /*hellblau*/
+}
+
+
+</style>
+
+
+
+
+
+<body>
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="datamaps.world.min.js"></script>
+  <script src="../../maxstyle_for_d3/colorbrewer.js"></script>
+
+   
+<div id="all">
+	<div id="map"> </div>
+	<div>    <svg id="CreditsContainer"></svg>  </div>
+	<div>    <svg id="TitleContainer"></svg>  </div>
+</div>
+
+   <script>
+     
+     
+     var colorschemeOfThisMap = colorbrewer.RdYlGn;
+  
+     var map = new Datamap({
+        scope: 'world',
+		projection: 'equirectangular',
+        element: document.getElementById('map'),
+        // projection: 'mercator',
+
+       geographyConfig: {
+        borderWidth: 0.2,
+        borderColor: '#4F4F4F',
+        highlightBorderColor: 'black',
+        highlightBorderWidth: 0.5,
+
+        highlightFillColor: '#FFEC38',
+        
+        popupTemplate: function(geography, data) {
+                    if ( !data ) return;  // makes sure that the tooltip is shown only if there is data 
+         			return '<div class="hoverinfo">' + geography.properties.name + '<br>Live Expectancy in 2011: <strong>' +  data.LifeExp + '</strong> years (at birth).';},
+            },        
+        fills: {
+            
+              
+// Fills & Legendlabels – Reihenfolge ist wichtig - wird in dieser Reihenfolge in der Legende angezeigt (also mit höchstem Wert beginnen)
+        defaultFill: 'grey',
+          "80-84":'#006837',
+		  "75-79":'#1a9850',
+          "70-74":'#66bd63',
+          "65-69":'#a6d96a',
+          "60-64":'#d9ef8b',
+          "55-59":'#ffffbf',
+          "50-54":'#fee08b',
+          "45-49":'#fdae61',
+          "40-44":'#f46d43',
+          "35-39":'#d73027',
+          "30-34":'#a50026',
+          "25-29":'#7A021C',
+          "20-24":'#4F0011'
+        },
+  data: {
+  "AFG":{LifeExp:60,fillKey:"60-64"},
+    "ALB":{LifeExp:74,fillKey:"70-74"},
+    "DZA":{LifeExp:73,fillKey:"70-74"},
+    "AND":{LifeExp:82,fillKey:"80-84"},
+    "AGO":{LifeExp:51,fillKey:"50-54"},
+    "ATG":{LifeExp:75,fillKey:"75-79"},
+    "ARG":{LifeExp:76,fillKey:"75-79"},
+    "ARM":{LifeExp:71,fillKey:"70-74"},
+    "AUS":{LifeExp:82,fillKey:"80-84"},
+    "AUT":{LifeExp:81,fillKey:"80-84"},
+    "AZE":{LifeExp:71,fillKey:"70-74"},
+    "BHS":{LifeExp:75,fillKey:"75-79"},
+    "BHR":{LifeExp:79,fillKey:"75-79"},
+    "BGD":{LifeExp:70,fillKey:"70-74"},
+    "BRB":{LifeExp:78,fillKey:"75-79"},
+    "BLR":{LifeExp:71,fillKey:"70-74"},
+    "BEL":{LifeExp:80,fillKey:"80-84"},
+    "BLZ":{LifeExp:74,fillKey:"70-74"},
+    "BEN":{LifeExp:57,fillKey:"55-59"},
+    "BTN":{LifeExp:67,fillKey:"65-69"},
+    "BOL":{LifeExp:67,fillKey:"65-69"},
+    "BIH":{LifeExp:76,fillKey:"75-79"},
+    "BWA":{LifeExp:66,fillKey:"65-69"},
+    "BRA":{LifeExp:74,fillKey:"70-74"},
+    "BRN":{LifeExp:77,fillKey:"75-79"},
+    "BGR":{LifeExp:74,fillKey:"70-74"},
+    "BFA":{LifeExp:56,fillKey:"55-59"},
+    "BDI":{LifeExp:53,fillKey:"50-54"},
+    "KHM":{LifeExp:65,fillKey:"65-69"},
+    "CMR":{LifeExp:53,fillKey:"50-54"},
+    "CAN":{LifeExp:82,fillKey:"80-84"},
+    "CPV":{LifeExp:72,fillKey:"70-74"},
+    "CAF":{LifeExp:48,fillKey:"45-49"},
+    "TCD":{LifeExp:51,fillKey:"50-54"},
+    "CHL":{LifeExp:79,fillKey:"75-79"},
+    "CHN":{LifeExp:76,fillKey:"75-79"},
+    "COL":{LifeExp:78,fillKey:"75-79"},
+    "COM":{LifeExp:62,fillKey:"60-64"},
+    "COG":{LifeExp:58,fillKey:"55-59"},
+    "COK":{LifeExp:77,fillKey:"75-79"},
+    "CRI":{LifeExp:79,fillKey:"75-79"},
+    "CIV":{LifeExp:56,fillKey:"55-59"},
+    "HRV":{LifeExp:77,fillKey:"75-79"},
+    "CUB":{LifeExp:78,fillKey:"75-79"},
+    "CYP":{LifeExp:81,fillKey:"80-84"},
+    "CZE":{LifeExp:78,fillKey:"75-79"},
+    "PRK":{LifeExp:69,fillKey:"65-69"},
+    "COD":{LifeExp:49,fillKey:"45-49"},
+    "DNK":{LifeExp:79,fillKey:"75-79"},
+    "DJI":{LifeExp:58,fillKey:"55-59"},
+    "DMA":{LifeExp:74,fillKey:"70-74"},
+    "DOM":{LifeExp:73,fillKey:"70-74"},
+    "ECU":{LifeExp:76,fillKey:"75-79"},
+    "EGY":{LifeExp:73,fillKey:"70-74"},
+    "SLV":{LifeExp:72,fillKey:"70-74"},
+    "GNQ":{LifeExp:54,fillKey:"50-54"},
+    "ERI":{LifeExp:61,fillKey:"60-64"},
+    "EST":{LifeExp:76,fillKey:"75-79"},
+    "ETH":{LifeExp:60,fillKey:"60-64"},
+    "FJI":{LifeExp:70,fillKey:"70-74"},
+    "FIN":{LifeExp:81,fillKey:"80-84"},
+    "FRA":{LifeExp:82,fillKey:"80-84"},
+    "GAB":{LifeExp:62,fillKey:"60-64"},
+    "GMB":{LifeExp:58,fillKey:"55-59"},
+    "GEO":{LifeExp:72,fillKey:"70-74"},
+    "DEU":{LifeExp:81,fillKey:"80-84"},
+    "GHA":{LifeExp:64,fillKey:"60-64"},
+    "GRC":{LifeExp:81,fillKey:"80-84"},
+    "GRD":{LifeExp:74,fillKey:"70-74"},
+    "GTM":{LifeExp:69,fillKey:"65-69"},
+    "GIN":{LifeExp:55,fillKey:"55-59"},
+    "GNB":{LifeExp:50,fillKey:"50-54"},
+    "GUY":{LifeExp:63,fillKey:"60-64"},
+    "HTI":{LifeExp:63,fillKey:"60-64"},
+    "HND":{LifeExp:74,fillKey:"70-74"},
+    "HUN":{LifeExp:75,fillKey:"75-79"},
+    "ISL":{LifeExp:82,fillKey:"80-84"},
+    "IND":{LifeExp:65,fillKey:"65-69"},
+    "IDN":{LifeExp:69,fillKey:"65-69"},
+    "IRN":{LifeExp:73,fillKey:"70-74"},
+    "IRQ":{LifeExp:69,fillKey:"65-69"},
+    "IRL":{LifeExp:81,fillKey:"80-84"},
+    "ISR":{LifeExp:82,fillKey:"80-84"},
+    "ITA":{LifeExp:82,fillKey:"80-84"},
+    "JAM":{LifeExp:75,fillKey:"75-79"},
+    "JPN":{LifeExp:83,fillKey:"80-84"},
+    "JOR":{LifeExp:74,fillKey:"70-74"},
+    "KAZ":{LifeExp:67,fillKey:"65-69"},
+    "KEN":{LifeExp:60,fillKey:"60-64"},
+    "KIR":{LifeExp:67,fillKey:"65-69"},
+    "KWT":{LifeExp:80,fillKey:"80-84"},
+    "KGZ":{LifeExp:69,fillKey:"65-69"},
+    "LAO":{LifeExp:68,fillKey:"65-69"},
+    "LVA":{LifeExp:74,fillKey:"70-74"},
+    "LBN":{LifeExp:74,fillKey:"70-74"},
+    "LSO":{LifeExp:50,fillKey:"50-54"},
+    "LBR":{LifeExp:59,fillKey:"55-59"},
+    "LBY":{LifeExp:65,fillKey:"65-69"},
+    "LTU":{LifeExp:74,fillKey:"70-74"},
+    "LUX":{LifeExp:82,fillKey:"80-84"},
+    "MDG":{LifeExp:66,fillKey:"65-69"},
+    "MWI":{LifeExp:58,fillKey:"55-59"},
+    "MYS":{LifeExp:74,fillKey:"70-74"},
+    "MDV":{LifeExp:77,fillKey:"75-79"},
+    "MLI":{LifeExp:51,fillKey:"50-54"},
+    "MLT":{LifeExp:80,fillKey:"80-84"},
+    "MHL":{LifeExp:60,fillKey:"60-64"},
+    "MRT":{LifeExp:59,fillKey:"55-59"},
+    "MUS":{LifeExp:74,fillKey:"70-74"},
+    "MEX":{LifeExp:75,fillKey:"75-79"},
+    "FSM":{LifeExp:69,fillKey:"65-69"},
+    "MCO":{LifeExp:82,fillKey:"80-84"},
+    "MNG":{LifeExp:68,fillKey:"65-69"},
+    "MNE":{LifeExp:76,fillKey:"75-79"},
+    "MAR":{LifeExp:72,fillKey:"70-74"},
+    "MOZ":{LifeExp:53,fillKey:"50-54"},
+    "MMR":{LifeExp:65,fillKey:"65-69"},
+    "NAM":{LifeExp:65,fillKey:"65-69"},
+    "NRU":{LifeExp:71,fillKey:"70-74"},
+    "NPL":{LifeExp:68,fillKey:"65-69"},
+    "NLD":{LifeExp:81,fillKey:"80-84"},
+    "NZL":{LifeExp:81,fillKey:"80-84"},
+    "NIC":{LifeExp:73,fillKey:"70-74"},
+    "NER":{LifeExp:56,fillKey:"55-59"},
+    "NGA":{LifeExp:53,fillKey:"50-54"},
+    "NIU":{LifeExp:72,fillKey:"70-74"},
+    "NOR":{LifeExp:81,fillKey:"80-84"},
+    "OMN":{LifeExp:72,fillKey:"70-74"},
+    "PAK":{LifeExp:67,fillKey:"65-69"},
+    "PLW":{LifeExp:72,fillKey:"70-74"},
+    "PAN":{LifeExp:77,fillKey:"75-79"},
+    "PNG":{LifeExp:63,fillKey:"60-64"},
+    "PRY":{LifeExp:75,fillKey:"75-79"},
+    "PER":{LifeExp:77,fillKey:"75-79"},
+    "PHL":{LifeExp:69,fillKey:"65-69"},
+    "POL":{LifeExp:76,fillKey:"75-79"},
+    "PRT":{LifeExp:80,fillKey:"80-84"},
+    "QAT":{LifeExp:82,fillKey:"80-84"},
+    "KOR":{LifeExp:81,fillKey:"80-84"},
+    "MDA":{LifeExp:71,fillKey:"70-74"},
+    "ROU":{LifeExp:74,fillKey:"70-74"},
+    "RUS":{LifeExp:69,fillKey:"65-69"},
+    "RWA":{LifeExp:60,fillKey:"60-64"},
+    "KNA":{LifeExp:74,fillKey:"70-74"},
+    "LCA":{LifeExp:75,fillKey:"75-79"},
+    "VCT":{LifeExp:74,fillKey:"70-74"},
+    "WSM":{LifeExp:73,fillKey:"70-74"},
+    "SMR":{LifeExp:83,fillKey:"80-84"},
+    "STP":{LifeExp:63,fillKey:"60-64"},
+    "SAU":{LifeExp:76,fillKey:"75-79"},
+    "SEN":{LifeExp:61,fillKey:"60-64"},
+    "SRB":{LifeExp:74,fillKey:"70-74"},
+    "SYC":{LifeExp:74,fillKey:"70-74"},
+    "SLE":{LifeExp:47,fillKey:"45-49"},
+    "SGP":{LifeExp:82,fillKey:"80-84"},
+    "SVK":{LifeExp:76,fillKey:"75-79"},
+    "SVN":{LifeExp:80,fillKey:"80-84"},
+    "SLB":{LifeExp:70,fillKey:"70-74"},
+    "SOM":{LifeExp:50,fillKey:"50-54"},
+    "ZAF":{LifeExp:58,fillKey:"55-59"},
+    "SSD":{LifeExp:54,fillKey:"50-54"},
+    "ESP":{LifeExp:82,fillKey:"80-84"},
+    "LKA":{LifeExp:75,fillKey:"75-79"},
+    "SDN":{LifeExp:62,fillKey:"60-64"},
+    "SUR":{LifeExp:72,fillKey:"70-74"},
+    "SWZ":{LifeExp:50,fillKey:"50-54"},
+    "SWE":{LifeExp:82,fillKey:"80-84"},
+    "CHE":{LifeExp:83,fillKey:"80-84"},
+    "SYR":{LifeExp:75,fillKey:"75-79"},
+    "TJK":{LifeExp:68,fillKey:"65-69"},
+    "THA":{LifeExp:74,fillKey:"70-74"},
+    "MKD":{LifeExp:75,fillKey:"75-79"},
+    "TLS":{LifeExp:64,fillKey:"60-64"},
+    "TGO":{LifeExp:56,fillKey:"55-59"},
+    "TON":{LifeExp:72,fillKey:"70-74"},
+    "TTO":{LifeExp:71,fillKey:"70-74"},
+    "TUN":{LifeExp:76,fillKey:"75-79"},
+    "TUR":{LifeExp:76,fillKey:"75-79"},
+    "TKM":{LifeExp:63,fillKey:"60-64"},
+    "TUV":{LifeExp:64,fillKey:"60-64"},
+    
+    "UGA":{LifeExp:56,fillKey:"55-59"},
+    "UKR":{LifeExp:71,fillKey:"70-74"},
+    "ARE":{LifeExp:76,fillKey:"75-79"},
+    "GBR":{LifeExp:80,fillKey:"80-84"},
+    "TZA":{LifeExp:59,fillKey:"55-59"},
+    "USA":{LifeExp:79,fillKey:"75-79"},
+    "URY":{LifeExp:77,fillKey:"75-79"},
+    "UZB":{LifeExp:68,fillKey:"65-69"},
+    "VUT":{LifeExp:72,fillKey:"70-74"},
+    "VEN":{LifeExp:75,fillKey:"75-79"},
+    "VNM":{LifeExp:75,fillKey:"75-79"},
+    "YEM":{LifeExp:64,fillKey:"60-64"},
+    "ZMB":{LifeExp:55,fillKey:"55-59"},
+    "ZWE":{LifeExp:54,fillKey:"50-54"}
+
+}
+});
+     
+     
+     
+
+
+    
+   // Max Plugin
+      //plugin added by me to have the legend vertically
+  function addLegendmaxstyle(layer, data, options) {
+    data = data || {};
+    if ( !this.options.fills ) {
+      return;
+    }
+
+    var html = '<dl>';
+    var label = '';
+    if ( data.legendTitle ) {
+      html = '<h4>' + data.legendTitle + '</h4>' + html;
+    }
+    
+    for ( var fillKey in this.options.fills ) {
+
+      if ( fillKey === 'defaultFill') {
+        if (! data.defaultFillName ) {
+          continue;
+        }
+        label = data.defaultFillName;
+      } else {
+        if (data.labels && data.labels[fillKey]) {
+          label = data.labels[fillKey];
+        } else {
+        
+        // Changed by Max //
+	label= '' + fillKey;
+    html += '<dd style="background-color:' +  this.options.fills[fillKey] + '">&nbsp;</dd>';
+	html += '<dt>' + label + '</dt>'+ '<br>';
+
+        }
+      }
+    }
+    html += '</dl>';
+
+    var hoverover = d3.select( this.options.element ).append('div')
+      .attr('class', 'datamaps-legend')
+      .html(html);
+  }
+  
+  
+//Legende anzeigen  
+   map.addPlugin("mylegend", addLegendmaxstyle);
+   map.mylegend({legendTitle:"Life Expectancy (at birth)"})
+
+    
+    
+    
+
+
+
+
+
+
+
+/*  TITLE                      */
+/* --------------------------- */
+
+var TitleCanvas = d3.select("#TitleContainer")
+
+
+TitleCanvas
+	.append("text")
+	.text("Life Expectancy (at birth) – in 2011")
+	.attr("x",35)
+	.attr("y",18)
+	.attr('class','mainTitleText');
+	
+	
+	
+TitleCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+
+
+
+ 
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.OurWorldinData.org/data/population-growth-vital-statistics/life-expectancy")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.OurWorldinData.org/data/population-growth-vital-statistics/life-expectancy")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data source: World Health Organisation (WHO) accessed in 2014")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+	
+	
+	
+/* ------- end credits ------ */
+		  
+
+     
+     </script>
+</body>

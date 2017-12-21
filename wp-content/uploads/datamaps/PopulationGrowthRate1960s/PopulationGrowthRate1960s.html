@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+
+.download { 
+  background: #333; 
+  color: #FFF; 
+  font-weight: 900; 
+  border: 2px solid #B10000; 
+  padding: 4px; 
+  margin:4px;
+}
+
+#TitleContainer{
+    position: absolute;
+	width: 100%;
+    height: 30px;
+    top:0px;
+	left: 0; 
+	background-color:#FAFAFA;
+}
+
+.mainTitleText{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+}
+
+#CreditsContainer{
+    position: absolute;
+	width: 100%;
+    height: 36px;
+    bottom:0px;
+	left: 0; 
+    background-color:#FAFAFA;
+
+}
+
+
+
+#map {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0; /*fill parent*/
+	background-color:#ECF6FC; /*hellblau*/
+}
+
+
+</style>
+
+
+
+
+
+<body>
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="datamaps.world.min.js"></script>
+  <script src="../../maxstyle_for_d3/colorbrewer.js"></script>
+
+   
+<div id="all">
+	<div id="map"> </div>
+	<div>    <svg id="CreditsContainer"></svg>  </div>
+	<div>    <svg id="TitleContainer"></svg>  </div>
+</div>
+
+   <script>
+     
+     
+     var colorschemeOfThisMap = colorbrewer.YlOrRd;
+  
+     var map = new Datamap({
+        scope: 'world',
+		projection: 'equirectangular',
+        element: document.getElementById('map'),
+        // projection: 'mercator',
+
+       geographyConfig: {
+        borderWidth: 0.2,
+        borderColor: '#4F4F4F',
+        highlightBorderColor: 'black',
+        highlightBorderWidth: 0.5,
+
+        highlightFillColor: '#FFEC38',
+        
+        popupTemplate: function(geography, data) {
+                    if ( !data ) return;  // makes sure that the tooltip is shown only if there is data 
+         			return '<div class="hoverinfo">' + geography.properties.name + '<br>Population growth: <strong>' +  data.growth + '</strong>% per year.';},
+            },        
+        fills: {
+            
+              
+// Fills & Legendlabels – Reihenfolge ist wichtig - wird in dieser Reihenfolge in der Legende angezeigt (also mit höchstem Wert beginnen)
+       defaultFill: 'grey',
+		"> 5%": colorschemeOfThisMap[9][8],
+		"3% - 4.9%":colorschemeOfThisMap[9][7],
+		"2.5% - 2.99%":colorschemeOfThisMap[9][6],
+		"2% - 2.49%":colorschemeOfThisMap[9][5],
+		"1.5% - 1.99%":colorschemeOfThisMap[9][4],
+		"1% - 1.49%":colorschemeOfThisMap[9][3],
+		"0.5% - 0.99%":colorschemeOfThisMap[9][2],
+		"0% - 0.49%":colorschemeOfThisMap[9][1],
+		"< 0%":colorschemeOfThisMap[9][0],
+		"no data": 'grey'   
+		
+        },
+        
+      
+  data: {
+  
+  "ARE":{growth:9.175,fillKey:"> 5%"},
+ "KWT":{growth:8.844,fillKey:"> 5%"},
+ "ESH":{growth:8.219,fillKey:"> 5%"},
+ "QAT":{growth:7.929,fillKey:"> 5%"},
+ "JOR":{growth:7.81,fillKey:"> 5%"},
+ "DJI":{growth:6.57,fillKey:"> 5%"},
+ "AND":{growth:5.382,fillKey:"> 5%"},
+ "VIR":{growth:5.116,fillKey:"> 5%"},
+ "BRN":{growth:4.707,fillKey:"3% - 4.9%"},
+ "CIV":{growth:4.338,fillKey:"3% - 4.9%"},
+ "TGO":{growth:4.272,fillKey:"3% - 4.9%"},
+ "GUF":{growth:4.208,fillKey:"3% - 4.9%"},
+ "MAC":{growth:3.863,fillKey:"3% - 4.9%"},
+ "LBY":{growth:3.856,fillKey:"3% - 4.9%"},
+ "MYT":{growth:3.829,fillKey:"3% - 4.9%"},
+ "BHS":{growth:3.8,fillKey:"3% - 4.9%"},
+ "SAU":{growth:3.702,fillKey:"3% - 4.9%"},
+ "IRQ":{growth:3.38,fillKey:"3% - 4.9%"},
+ "KEN":{growth:3.376,fillKey:"3% - 4.9%"},
+ "PYF":{growth:3.353,fillKey:"3% - 4.9%"},
+ "REU":{growth:3.35,fillKey:"3% - 4.9%"},
+ "SYR":{growth:3.338,fillKey:"3% - 4.9%"},
+ "MHL":{growth:3.313,fillKey:"3% - 4.9%"},
+ "VEN":{growth:3.294,fillKey:"3% - 4.9%"},
+ "UGA":{growth:3.287,fillKey:"3% - 4.9%"},
+ "ZWE":{growth:3.265,fillKey:"3% - 4.9%"},
+ "FSM":{growth:3.243,fillKey:"3% - 4.9%"},
+ "TJK":{growth:3.186,fillKey:"3% - 4.9%"},
+ "SLB":{growth:3.163,fillKey:"3% - 4.9%"},
+ "ZMB":{growth:3.148,fillKey:"3% - 4.9%"},
+ "UZB":{growth:3.14,fillKey:"3% - 4.9%"},
+ "TWN":{growth:3.124,fillKey:"3% - 4.9%"},
+ "MEX":{growth:3.118,fillKey:"3% - 4.9%"},
+ "TZA":{growth:3.046,fillKey:"3% - 4.9%"},
+ "BWA":{growth:3.024,fillKey:"3% - 4.9%"},
+ "NIC":{growth:3.024,fillKey:"3% - 4.9%"},
+ "RWA":{growth:2.992,fillKey:"2.5% - 2.99%"},
+ "ASM":{growth:2.977,fillKey:"2.5% - 2.99%"},
+ "DOM":{growth:2.971,fillKey:"2.5% - 2.99%"},
+ "BGD":{growth:2.955,fillKey:"2.5% - 2.99%"},
+ "THA":{growth:2.953,fillKey:"2.5% - 2.99%"},
+ "PHL":{growth:2.938,fillKey:"2.5% - 2.99%"},
+ "OMN":{growth:2.936,fillKey:"2.5% - 2.99%"},
+ "TKM":{growth:2.933,fillKey:"2.5% - 2.99%"},
+ "KIR":{growth:2.931,fillKey:"2.5% - 2.99%"},
+ "MRT":{growth:2.928,fillKey:"2.5% - 2.99%"},
+ "PAN":{growth:2.907,fillKey:"2.5% - 2.99%"},
+ "SEN":{growth:2.896,fillKey:"2.5% - 2.99%"},
+ "ECU":{growth:2.895,fillKey:"2.5% - 2.99%"},
+ "MNG":{growth:2.884,fillKey:"2.5% - 2.99%"},
+ "BTN":{growth:2.861,fillKey:"2.5% - 2.99%"},
+ "COG":{growth:2.848,fillKey:"2.5% - 2.99%"},
+ "COD":{growth:2.83,fillKey:"2.5% - 2.99%"},
+ "KGZ":{growth:2.829,fillKey:"2.5% - 2.99%"},
+ "SLV":{growth:2.825,fillKey:"2.5% - 2.99%"},
+ "NCL":{growth:2.824,fillKey:"2.5% - 2.99%"},
+ "BLZ":{growth:2.818,fillKey:"2.5% - 2.99%"},
+ "CRI":{growth:2.812,fillKey:"2.5% - 2.99%"},
+ "PER":{growth:2.805,fillKey:"2.5% - 2.99%"},
+ "DZA":{growth:2.801,fillKey:"2.5% - 2.99%"},
+ "NER":{growth:2.799,fillKey:"2.5% - 2.99%"},
+ "COL":{growth:2.797,fillKey:"2.5% - 2.99%"},
+ "VUT":{growth:2.785,fillKey:"2.5% - 2.99%"},
+ "PRK":{growth:2.769,fillKey:"2.5% - 2.99%"},
+ "VNM":{growth:2.746,fillKey:"2.5% - 2.99%"},
+ "STP":{growth:2.724,fillKey:"2.5% - 2.99%"},
+ "CHN":{growth:2.7,fillKey:"2.5% - 2.99%"},
+ "PAK":{growth:2.693,fillKey:"2.5% - 2.99%"},
+ "HND":{growth:2.69,fillKey:"2.5% - 2.99%"},
+ "GTM":{growth:2.682,fillKey:"2.5% - 2.99%"},
+ "NAM":{growth:2.679,fillKey:"2.5% - 2.99%"},
+ "IRN":{growth:2.676,fillKey:"2.5% - 2.99%"},
+ "ARM":{growth:2.661,fillKey:"2.5% - 2.99%"},
+ "ALB":{growth:2.642,fillKey:"2.5% - 2.99%"},
+ "PRY":{growth:2.635,fillKey:"2.5% - 2.99%"},
+ "LIE":{growth:2.628,fillKey:"2.5% - 2.99%"},
+ "MDG":{growth:2.619,fillKey:"2.5% - 2.99%"},
+ "MYS":{growth:2.619,fillKey:"2.5% - 2.99%"},
+ "MWI":{growth:2.618,fillKey:"2.5% - 2.99%"},
+ "CPV":{growth:2.616,fillKey:"2.5% - 2.99%"},
+ "BRA":{growth:2.593,fillKey:"2.5% - 2.99%"},
+ "SWZ":{growth:2.592,fillKey:"2.5% - 2.99%"},
+ "BHR":{growth:2.576,fillKey:"2.5% - 2.99%"},
+ "IDN":{growth:2.566,fillKey:"2.5% - 2.99%"},
+ "ETH":{growth:2.55,fillKey:"2.5% - 2.99%"},
+ "ZAF":{growth:2.545,fillKey:"2.5% - 2.99%"},
+ "AUS":{growth:2.536,fillKey:"2.5% - 2.99%"},
+ "TON":{growth:2.525,fillKey:"2.5% - 2.99%"},
+ "ERI":{growth:2.515,fillKey:"2.5% - 2.99%"},
+ "LBR":{growth:2.499,fillKey:"2% - 2.49%"},
+ "EGY":{growth:2.493,fillKey:"2% - 2.49%"},
+ "NRU":{growth:2.472,fillKey:"2% - 2.49%"},
+ "CMR":{growth:2.459,fillKey:"2% - 2.49%"},
+ "MMR":{growth:2.459,fillKey:"2% - 2.49%"},
+ "AZE":{growth:2.456,fillKey:"2% - 2.49%"},
+ "ISR":{growth:2.438,fillKey:"2% - 2.49%"},
+ "MAR":{growth:2.434,fillKey:"2% - 2.49%"},
+ "COK":{growth:2.417,fillKey:"2% - 2.49%"},
+ "AFG":{growth:2.41,fillKey:"2% - 2.49%"},
+ "LAO":{growth:2.408,fillKey:"2% - 2.49%"},
+ "WSM":{growth:2.387,fillKey:"2% - 2.49%"},
+ "PNG":{growth:2.385,fillKey:"2% - 2.49%"},
+ "MDV":{growth:2.373,fillKey:"2% - 2.49%"},
+ "GUY":{growth:2.361,fillKey:"2% - 2.49%"},
+ "BOL":{growth:2.343,fillKey:"2% - 2.49%"},
+ "LKA":{growth:2.323,fillKey:"2% - 2.49%"},
+ "BDI":{growth:2.316,fillKey:"2% - 2.49%"},
+ "TUN":{growth:2.316,fillKey:"2% - 2.49%"},
+ "SOM":{growth:2.31,fillKey:"2% - 2.49%"},
+ "FJI":{growth:2.304,fillKey:"2% - 2.49%"},
+ "TUR":{growth:2.296,fillKey:"2% - 2.49%"},
+ "GUM":{growth:2.284,fillKey:"2% - 2.49%"},
+ "SYC":{growth:2.275,fillKey:"2% - 2.49%"},
+ "SUR":{growth:2.273,fillKey:"2% - 2.49%"},
+ "SSD":{growth:2.221,fillKey:"2% - 2.49%"},
+ "NGA":{growth:2.218,fillKey:"2% - 2.49%"},
+ "GMB":{growth:2.191,fillKey:"2% - 2.49%"},
+ "MOZ":{growth:2.188,fillKey:"2% - 2.49%"},
+ "COM":{growth:2.176,fillKey:"2% - 2.49%"},
+ "GHA":{growth:2.176,fillKey:"2% - 2.49%"},
+ "IND":{growth:2.176,fillKey:"2% - 2.49%"},
+ "VGB":{growth:2.127,fillKey:"2% - 2.49%"},
+ "CAF":{growth:2.071,fillKey:"2% - 2.49%"},
+ "GAB":{growth:2.045,fillKey:"2% - 2.49%"},
+ "KOR":{growth:2.037,fillKey:"2% - 2.49%"},
+ "CHL":{growth:2.031,fillKey:"2% - 2.49%"},
+ "NPL":{growth:2.03,fillKey:"2% - 2.49%"},
+ "LSO":{growth:2.016,fillKey:"2% - 2.49%"},
+ "BEN":{growth:1.99,fillKey:"1.5% - 1.99%"},
+ "TLS":{growth:1.97,fillKey:"1.5% - 1.99%"},
+ "SGP":{growth:1.969,fillKey:"1.5% - 1.99%"},
+ "HTI":{growth:1.951,fillKey:"1.5% - 1.99%"},
+ "TCD":{growth:1.922,fillKey:"1.5% - 1.99%"},
+ "KAZ":{growth:1.921,fillKey:"1.5% - 1.99%"},
+ "LBN":{growth:1.87,fillKey:"1.5% - 1.99%"},
+ "SMR":{growth:1.856,fillKey:"1.5% - 1.99%"},
+ "MUS":{growth:1.854,fillKey:"1.5% - 1.99%"},
+ "CUB":{growth:1.833,fillKey:"1.5% - 1.99%"},
+ "ATG":{growth:1.83,fillKey:"1.5% - 1.99%"},
+ "YEM":{growth:1.792,fillKey:"1.5% - 1.99%"},
+ "DMA":{growth:1.776,fillKey:"1.5% - 1.99%"},
+ "CYM":{growth:1.766,fillKey:"1.5% - 1.99%"},
+ "AGO":{growth:1.741,fillKey:"1.5% - 1.99%"},
+ "SLE":{growth:1.74,fillKey:"1.5% - 1.99%"},
+ "CAN":{growth:1.699,fillKey:"1.5% - 1.99%"},
+ "BFA":{growth:1.667,fillKey:"1.5% - 1.99%"},
+ "GIN":{growth:1.653,fillKey:"1.5% - 1.99%"},
+ "KHM":{growth:1.652,fillKey:"1.5% - 1.99%"},
+ "LCA":{growth:1.569,fillKey:"1.5% - 1.99%"},
+ "GNQ":{growth:1.534,fillKey:"1.5% - 1.99%"},
+ "MDA":{growth:1.495,fillKey:"1% - 1.49%"},
+ "ARG":{growth:1.457,fillKey:"1% - 1.49%"},
+ "NZL":{growth:1.407,fillKey:"1% - 1.49%"},
+ "MKD":{growth:1.38,fillKey:"1% - 1.49%"},
+ "SPM":{growth:1.373,fillKey:"1% - 1.49%"},
+ "TUV":{growth:1.352,fillKey:"1% - 1.49%"},
+ "ROU":{growth:1.316,fillKey:"1% - 1.49%"},
+ "JPN":{growth:1.267,fillKey:"1% - 1.49%"},
+ "PLW":{growth:1.256,fillKey:"1% - 1.49%"},
+ "GLP":{growth:1.237,fillKey:"1% - 1.49%"},
+ "MLI":{growth:1.234,fillKey:"1% - 1.49%"},
+ "ISL":{growth:1.225,fillKey:"1% - 1.49%"},
+ "JAM":{growth:1.197,fillKey:"1% - 1.49%"},
+ "FRO":{growth:1.187,fillKey:"1% - 1.49%"},
+ "NLD":{growth:1.183,fillKey:"1% - 1.49%"},
+ "GIB":{growth:1.173,fillKey:"1% - 1.49%"},
+ "BMU":{growth:1.163,fillKey:"1% - 1.49%"},
+ "CHE":{growth:1.132,fillKey:"1% - 1.49%"},
+ "LTU":{growth:1.117,fillKey:"1% - 1.49%"},
+ "CYP":{growth:1.093,fillKey:"1% - 1.49%"},
+ "SHN":{growth:1.085,fillKey:"1% - 1.49%"},
+ "EST":{growth:1.054,fillKey:"1% - 1.49%"},
+ "ESP":{growth:1.021,fillKey:"1% - 1.49%"},
+ "VCT":{growth:1.017,fillKey:"1% - 1.49%"},
+ "GEO":{growth:1.002,fillKey:"1% - 1.49%"},
+ "PRI":{growth:1.001,fillKey:"1% - 1.49%"},
+ "USA":{growth:0.997,fillKey:"0.5% - 0.99%"},
+ "BLR":{growth:0.981,fillKey:"0.5% - 0.99%"},
+ "BIH":{growth:0.956,fillKey:"0.5% - 0.99%"},
+ "MNE":{growth:0.948,fillKey:"0.5% - 0.99%"},
+ "AIA":{growth:0.914,fillKey:"0.5% - 0.99%"},
+ "LVA":{growth:0.903,fillKey:"0.5% - 0.99%"},
+ "MTQ":{growth:0.873,fillKey:"0.5% - 0.99%"},
+ "URY":{growth:0.838,fillKey:"0.5% - 0.99%"},
+ "HKG":{growth:0.806,fillKey:"0.5% - 0.99%"},
+ "NOR":{growth:0.798,fillKey:"0.5% - 0.99%"},
+ "UKR":{growth:0.791,fillKey:"0.5% - 0.99%"},
+ "SWE":{growth:0.78,fillKey:"0.5% - 0.99%"},
+ "POL":{growth:0.775,fillKey:"0.5% - 0.99%"},
+ "FRA":{growth:0.735,fillKey:"0.5% - 0.99%"},
+ "TTO":{growth:0.723,fillKey:"0.5% - 0.99%"},
+ "ITA":{growth:0.714,fillKey:"0.5% - 0.99%"},
+ "GNB":{growth:0.703,fillKey:"0.5% - 0.99%"},
+ "DNK":{growth:0.701,fillKey:"0.5% - 0.99%"},
+ "RUS":{growth:0.572,fillKey:"0.5% - 0.99%"},
+ "BGR":{growth:0.69,fillKey:"0.5% - 0.99%"},
+ "SVK":{growth:0.688,fillKey:"0.5% - 0.99%"},
+ "DEU":{growth:0.675,fillKey:"0.5% - 0.99%"},
+ "IRL":{growth:0.605,fillKey:"0.5% - 0.99%"},
+ "ABW":{growth:0.586,fillKey:"0.5% - 0.99%"},
+ "LUX":{growth:0.568,fillKey:"0.5% - 0.99%"},
+ "GRC":{growth:0.558,fillKey:"0.5% - 0.99%"},
+ "AUT":{growth:0.553,fillKey:"0.5% - 0.99%"},
+ "SVN":{growth:0.478,fillKey:"0% - 0.49%"},
+ "GBR":{growth:0.471,fillKey:"0% - 0.49%"},
+ "BEL":{growth:0.469,fillKey:"0% - 0.49%"},
+ "HUN":{growth:0.341,fillKey:"0% - 0.49%"},
+ "BRB":{growth:0.28,fillKey:"0% - 0.49%"},
+ "HRV":{growth:0.194,fillKey:"0% - 0.49%"},
+ "CZE":{growth:0.192,fillKey:"0% - 0.49%"},
+ "FIN":{growth:0.183,fillKey:"0% - 0.49%"},
+ "MCO":{growth:0.172,fillKey:"0% - 0.49%"},
+ "NIU":{growth:0.137,fillKey:"0% - 0.49%"},
+ "GRD":{growth:-0.032,fillKey:"< 0%"},
+ "TCA":{growth:-0.131,fillKey:"< 0%"},
+ "MLT":{growth:-0.141,fillKey:"< 0%"},
+ "MSR":{growth:-0.363,fillKey:"< 0%"},
+ "PRT":{growth:-0.497,fillKey:"< 0%"},
+ "FLK":{growth:-0.817,fillKey:"< 0%"},
+ "WLF":{growth:-0.848,fillKey:"< 0%"},
+ "PSE":{growth:-1.148,fillKey:"< 0%"},
+ "KNA":{growth:-1.842,fillKey:"< 0%"},
+ "VAT":{growth:-5.544,fillKey:"< 0%"}
+}
+});
+     
+     
+     
+
+
+    
+   // Max Plugin
+      //plugin added by me to have the legend vertically
+  function addLegendmaxstyle(layer, data, options) {
+    data = data || {};
+    if ( !this.options.fills ) {
+      return;
+    }
+
+    var html = '<dl>';
+    var label = '';
+    if ( data.legendTitle ) {
+      html = '<h4>' + data.legendTitle + '</h4>' + html;
+    }
+    
+    for ( var fillKey in this.options.fills ) {
+
+      if ( fillKey === 'defaultFill') {
+        if (! data.defaultFillName ) {
+          continue;
+        }
+        label = data.defaultFillName;
+      } else {
+        if (data.labels && data.labels[fillKey]) {
+          label = data.labels[fillKey];
+        } else {
+        
+        // Changed by Max //
+	label= '' + fillKey;
+    html += '<dd style="background-color:' +  this.options.fills[fillKey] + '">&nbsp;</dd>';
+	html += '<dt>' + label + '</dt>'+ '<br>';
+
+        }
+      }
+    }
+    html += '</dl>';
+
+    var hoverover = d3.select( this.options.element ).append('div')
+      .attr('class', 'datamaps-legend')
+      .html(html);
+  }
+  
+  
+//Legende anzeigen  
+   map.addPlugin("mylegend", addLegendmaxstyle);
+   map.mylegend({legendTitle:"Annual Population Growth (in %)"})
+
+    
+    
+    
+
+
+
+
+
+
+
+/*  TITLE                      */
+/* --------------------------- */
+
+var TitleCanvas = d3.select("#TitleContainer")
+
+
+TitleCanvas
+	.append("text")
+	.text("Annual Population Growth Rate between 1965 and 1970")
+	.attr("x",75)
+	.attr("y",18)
+	.attr('class','mainTitleText');
+	
+	
+	
+TitleCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 65)
+   		.attr('height', 30)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+
+
+
+ 
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.OurWorldinData.org/data/population-growth-vital-statistics/world-population-growth")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.OurWorldinData.org/data/population-growth-vital-statistics/world-population-growth")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data source: UN Population Division")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+	
+	
+	
+/* ------- end credits ------ */
+		  
+
+     
+     </script>
+</body>

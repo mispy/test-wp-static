@@ -1,0 +1,1 @@
+[01-Feb-2016 05:32:41 America/Denver] PHP Fatal error:  Call to undefined function load_plugin_textdomain() in /home2/explain3/public_html/wp-content/plugins/usernoise/usernoise.php on line 12

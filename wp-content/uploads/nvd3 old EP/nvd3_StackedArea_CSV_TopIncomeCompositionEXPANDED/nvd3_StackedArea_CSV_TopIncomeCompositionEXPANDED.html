@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link href="nv.d3.css" rel="stylesheet" type="text/css">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+body {
+  overflow-y:hidden;
+  overflow-x:hidden;
+  margin:0px 4px 0px 0px; /* new & important */
+}
+
+
+#CreditsContainer{
+    position: absolute;
+
+    height: 40px;
+	background-color: #FAFAFA;
+	width:100%;
+	bottom:0;
+	margin:0;
+	border:0;
+	padding:0;
+	
+}
+
+#chart1, #chart2 {
+    position: absolute;
+ /* border: 2px solid #FAFAFA; */
+
+}
+
+
+#chart1 .nv-lineChart circle.nv-point,
+#chart2 .nv-lineChart circle.nv-point {
+
+    fill-opacity: 0.9;   /* Only lines: 0 – with markers: 0.9 */
+}
+
+#chart1 .nv-lineChart path.nv-line,
+#chart2 .nv-lineChart path.nv-line {
+
+    stroke-opacity: 0.6; /* Only lines: 1px – with markers: 0.6px */
+    stroke-width: 0.5px; /* Only lines: 1.3px – with markers: 0.5px */
+}
+
+.tick line {
+  opacity: 0.3;
+}
+
+
+
+
+</style>
+<body>
+
+    
+  <div>
+    <svg id="chart1"></svg>
+  </div>
+
+  <div>
+    <svg id="CreditsContainer"></svg>
+  </div>
+
+
+<script src="d3.v3.js"></script>
+<script src="nv.d3.js"></script>
+
+<script>
+
+
+
+	var chartdata = [ 
+	  {
+	    key    : "Wages salaries and pensions",
+	    values : []
+	  },
+	  {
+	    key    : "Entrepreneurial income",
+	    values : []
+	  },
+	  {
+	    key    : "Dividends",
+	    values : []
+	  },
+	  {
+	    key    : "Interest Income",
+	    values : []
+	  },
+	  {
+	    key    : "Rents",
+	    values : []
+	  }
+	];
+
+
+	d3.csv("Top1CompYearasYearPercentLevel.csv", function (error, csv) {
+	  if (error) return console.log("there was an error loading the csv: " + error);
+	  console.log("there are " + csv.length + " elements in my csv set");
+
+	var datacolumns = ["Wages salaries and pensions","Entrepreneurial income","Dividends","Interest Income","Rents"];
+
+	for (var i = 0; i < datacolumns.length; i++) {
+	 chartdata[i].values = csv.map(function(d) { return [ (+d["year"]-1970)*31556900000  , +d[datacolumns[i]] ]; });
+	};
+
+
+	//var colors = d3.scale.ordinal()
+	  //        .range(["red", "#104E8B","#3B6AA0","orange", "green"])
+	    //      .domain(d3.range(0,5));
+	var colors = d3.scale.category20();
+
+	keyColor = function(d, i) {return colors(d.key)};
+
+  
+  
+  
+var chart;
+nv.addGraph(function() {
+  var chart = nv.models.stackedAreaChart()
+  	.x(function(d) { return d[0]})
+  	.y(function(d) { return d[1]/100 })
+	.showControls(false) // stacked or grouped options
+	.margin({top: 30, right: 30, bottom: 80, left: 35}) 
+	.color(keyColor);
+         chart.style('expand');
+  chart.xAxis
+      .tickFormat(function(d) { return d3.time.format('%Y')(new Date(d)) });
+
+  chart.yAxis.tickFormat(d3.format('%'));
+
+  d3.select('#chart1')
+    .datum(chartdata)
+    .transition().call(chart);
+
+  nv.utils.windowResize(chart.update);
+
+  return chart;
+});
+});
+
+var logoCanvas = d3.select("#chart1")
+
+logoCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.explainingprogress.com/data/growth-and-distribution-of-prosperity/income-inequality/")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.explainingprogress.com/data/growth-and-distribution-of-prosperity/income-inequality")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data source: World Top Incomes Database")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+/* ------- end credits ------ */
+		  
+		  
+
+</script>
+</html>

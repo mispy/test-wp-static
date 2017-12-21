@@ -1,0 +1,13 @@
+.btn:first-child {
+	color: black;
+}
+.btn.btn-primary:first-child{
+	color: white;
+}
+.btn.btn-primary{
+	color: white;
+}
+.btn.{
+	color: black;
+}
+

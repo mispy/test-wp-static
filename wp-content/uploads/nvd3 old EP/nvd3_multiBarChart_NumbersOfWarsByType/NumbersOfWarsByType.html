@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link href="nv.d3.css" rel="stylesheet" type="text/css">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+body {
+  overflow-y:hidden;
+  overflow-x:hidden;
+  margin:0px 4px 0px 0px; /* new & important */
+}
+
+
+#CreditsContainer{
+    position: absolute;
+
+    height: 40px;
+	background-color: #FAFAFA;
+	width:100%;
+	bottom:0;
+	margin:0;
+	border:0;
+	padding:0;
+	
+}
+
+#chart1, #chart2 {
+    position: absolute;
+ /* border: 2px solid #FAFAFA; */
+
+}
+
+
+#chart1 .nv-lineChart circle.nv-point,
+#chart2 .nv-lineChart circle.nv-point {
+
+    fill-opacity: 0.9;   /* Only lines: 0 – with markers: 0.9 */
+}
+
+#chart1 .nv-lineChart path.nv-line,
+#chart2 .nv-lineChart path.nv-line {
+
+    stroke-opacity: 0.6; /* Only lines: 1px – with markers: 0.6px */
+    stroke-width: 0.5px; /* Only lines: 1.3px – with markers: 0.5px */
+}
+
+.tick line {
+  opacity: 0.3;
+}
+
+
+
+
+</style>
+<body>
+
+    
+  <div>
+    <svg id="chart1"></svg>
+  </div>
+
+  <div>
+    <svg id="CreditsContainer"></svg>
+  </div>
+
+
+<script src="d3.v3.js"></script>
+<script src="nv.d3.js"></script>
+
+<script>
+
+
+var xxx = [
+
+ {
+    "values" : [
+  {
+    "x":-7.57366E+11,
+    "y":5
+  },
+  {
+    "x":-7.25809E+11,
+    "y":5
+  },
+  {
+    "x":-6.94252E+11,
+    "y":5
+  },
+  {
+    "x":-6.62695E+11,
+    "y":5
+  },
+  {
+    "x":-6.31138E+11,
+    "y":5
+  },
+  {
+    "x":-5.99581E+11,
+    "y":4
+  },
+  {
+    "x":-5.68024E+11,
+    "y":5
+  },
+  {
+    "x":-5.36467E+11,
+    "y":7
+  },
+  {
+    "x":-5.0491E+11,
+    "y":6
+  },
+  {
+    "x":-4.73354E+11,
+    "y":6
+  },
+  {
+    "x":-4.41797E+11,
+    "y":6
+  },
+  {
+    "x":-4.1024E+11,
+    "y":6
+  },
+  {
+    "x":-3.78683E+11,
+    "y":5
+  },
+  {
+    "x":-3.47126E+11,
+    "y":3
+  },
+  {
+    "x":-3.15569E+11,
+    "y":1
+  },
+  {
+    "x":-2.84012E+11,
+    "y":2
+  },
+  {
+    "x":-2.52455E+11,
+    "y":3
+  },
+  {
+    "x":-2.20898E+11,
+    "y":2
+  },
+  {
+    "x":-1.89341E+11,
+    "y":4
+  },
+  {
+    "x":-1.57785E+11,
+    "y":4
+  },
+  {
+    "x":-1.26228E+11,
+    "y":4
+  },
+  {
+    "x":-94670700000,
+    "y":5
+  },
+  {
+    "x":-63113800000,
+    "y":4
+  },
+  {
+    "x":-31556900000,
+    "y":3
+  },
+  {
+    "x":0,
+    "y":3
+  },
+  {
+    "x":31556900000,
+    "y":3
+  },
+  {
+    "x":63113800000,
+    "y":3
+  },
+  {
+    "x":94670700000,
+    "y":3
+  },
+  {
+    "x":1.26228E+11,
+    "y":2
+  },
+  {
+    "x":1.57785E+11,
+    "y":0
+  },
+  {
+    "x":1.89341E+11,
+    "y":0
+  },
+  {
+    "x":2.20898E+11,
+    "y":0
+  },
+  {
+    "x":2.52455E+11,
+    "y":0
+  },
+  {
+    "x":2.84012E+11,
+    "y":0
+  },
+  {
+    "x":3.15569E+11,
+    "y":0
+  },
+  {
+    "x":3.47126E+11,
+    "y":0
+  },
+  {
+    "x":3.78683E+11,
+    "y":0
+  },
+  {
+    "x":4.1024E+11,
+    "y":0
+  },
+  {
+    "x":4.41797E+11,
+    "y":0
+  },
+  {
+    "x":4.73354E+11,
+    "y":0
+  },
+  {
+    "x":5.0491E+11,
+    "y":0
+  },
+  {
+    "x":5.36467E+11,
+    "y":0
+  },
+  {
+    "x":5.68024E+11,
+    "y":0
+  },
+  {
+    "x":5.99581E+11,
+    "y":0
+  },
+  {
+    "x":6.31138E+11,
+    "y":0
+  },
+  {
+    "x":6.62695E+11,
+    "y":0
+  },
+  {
+    "x":6.94252E+11,
+    "y":0
+  },
+  {
+    "x":7.25809E+11,
+    "y":0
+  },
+  {
+    "x":7.57366E+11,
+    "y":0
+  },
+  {
+    "x":7.88923E+11,
+    "y":0
+  },
+  {
+    "x":8.20479E+11,
+    "y":0
+  },
+  {
+    "x":8.52036E+11,
+    "y":0
+  },
+  {
+    "x":8.83593E+11,
+    "y":0
+  },
+  {
+    "x":9.1515E+11,
+    "y":0
+  },
+  {
+    "x":9.46707E+11,
+    "y":0
+  },
+  {
+    "x":9.78264E+11,
+    "y":0
+  },
+  {
+    "x":1.00982E+12,
+    "y":0
+  },
+  {
+    "x":1.04138E+12,
+    "y":0
+  },
+  {
+    "x":1.07293E+12,
+    "y":0
+  },
+  {
+    "x":1.10449E+12,
+    "y":0
+  },
+  {
+    "x":1.13605E+12,
+    "y":0
+  },
+  {
+    "x":1.16761E+12,
+    "y":0
+  }
+]
+	
+		,
+	
+	
+	
+    "key" : "Colonial"//Extrastate
+}
+,{
+    "values" :[
+  {
+    "x":-7.57366E+11,
+    "y":2
+  },
+  {
+    "x":-7.25809E+11,
+    "y":0
+  },
+  {
+    "x":-6.94252E+11,
+    "y":3
+  },
+  {
+    "x":-6.62695E+11,
+    "y":3
+  },
+  {
+    "x":-6.31138E+11,
+    "y":2
+  },
+  {
+    "x":-5.99581E+11,
+    "y":2
+  },
+  {
+    "x":-5.68024E+11,
+    "y":2
+  },
+  {
+    "x":-5.36467E+11,
+    "y":1
+  },
+  {
+    "x":-5.0491E+11,
+    "y":1
+  },
+  {
+    "x":-4.73354E+11,
+    "y":0
+  },
+  {
+    "x":-4.41797E+11,
+    "y":2
+  },
+  {
+    "x":-4.1024E+11,
+    "y":1
+  },
+  {
+    "x":-3.78683E+11,
+    "y":1
+  },
+  {
+    "x":-3.47126E+11,
+    "y":0
+  },
+  {
+    "x":-3.15569E+11,
+    "y":1
+  },
+  {
+    "x":-2.84012E+11,
+    "y":1
+  },
+  {
+    "x":-2.52455E+11,
+    "y":2
+  },
+  {
+    "x":-2.20898E+11,
+    "y":2
+  },
+  {
+    "x":-1.89341E+11,
+    "y":3
+  },
+  {
+    "x":-1.57785E+11,
+    "y":3
+  },
+  {
+    "x":-1.26228E+11,
+    "y":3
+  },
+  {
+    "x":-94670700000,
+    "y":5
+  },
+  {
+    "x":-63113800000,
+    "y":1
+  },
+  {
+    "x":-31556900000,
+    "y":5
+  },
+  {
+    "x":0,
+    "y":2
+  },
+  {
+    "x":31556900000,
+    "y":2
+  },
+  {
+    "x":63113800000,
+    "y":2
+  },
+  {
+    "x":94670700000,
+    "y":4
+  },
+  {
+    "x":1.26228E+11,
+    "y":3
+  },
+  {
+    "x":1.57785E+11,
+    "y":2
+  },
+  {
+    "x":1.89341E+11,
+    "y":1
+  },
+  {
+    "x":2.20898E+11,
+    "y":2
+  },
+  {
+    "x":2.52455E+11,
+    "y":4
+  },
+  {
+    "x":2.84012E+11,
+    "y":3
+  },
+  {
+    "x":3.15569E+11,
+    "y":2
+  },
+  {
+    "x":3.47126E+11,
+    "y":2
+  },
+  {
+    "x":3.78683E+11,
+    "y":2
+  },
+  {
+    "x":4.1024E+11,
+    "y":5
+  },
+  {
+    "x":4.41797E+11,
+    "y":3
+  },
+  {
+    "x":4.73354E+11,
+    "y":2
+  },
+  {
+    "x":5.0491E+11,
+    "y":3
+  },
+  {
+    "x":5.36467E+11,
+    "y":6
+  },
+  {
+    "x":5.68024E+11,
+    "y":3
+  },
+  {
+    "x":5.99581E+11,
+    "y":2
+  },
+  {
+    "x":6.31138E+11,
+    "y":2
+  },
+  {
+    "x":6.62695E+11,
+    "y":2
+  },
+  {
+    "x":6.94252E+11,
+    "y":1
+  },
+  {
+    "x":7.25809E+11,
+    "y":0
+  },
+  {
+    "x":7.57366E+11,
+    "y":0
+  },
+  {
+    "x":7.88923E+11,
+    "y":1
+  },
+  {
+    "x":8.20479E+11,
+    "y":2
+  },
+  {
+    "x":8.52036E+11,
+    "y":1
+  },
+  {
+    "x":8.83593E+11,
+    "y":2
+  },
+  {
+    "x":9.1515E+11,
+    "y":2
+  },
+  {
+    "x":9.46707E+11,
+    "y":2
+  },
+  {
+    "x":9.78264E+11,
+    "y":1
+  },
+  {
+    "x":1.00982E+12,
+    "y":1
+  },
+  {
+    "x":1.04138E+12,
+    "y":2
+  },
+  {
+    "x":1.07293E+12,
+    "y":0
+  },
+  {
+    "x":1.10449E+12,
+    "y":0
+  },
+  {
+    "x":1.13605E+12,
+    "y":0
+  },
+  {
+    "x":1.16761E+12,
+    "y":0
+  }
+]
+	
+	,	
+	
+    "key" : "Interstate"
+}
+,{
+    "values" : [
+  {
+    "x":-7.57366E+11,
+    "y":8
+  },
+  {
+    "x":-7.25809E+11,
+    "y":9
+  },
+  {
+    "x":-6.94252E+11,
+    "y":12
+  },
+  {
+    "x":-6.62695E+11,
+    "y":12
+  },
+  {
+    "x":-6.31138E+11,
+    "y":11
+  },
+  {
+    "x":-5.99581E+11,
+    "y":8
+  },
+  {
+    "x":-5.68024E+11,
+    "y":7
+  },
+  {
+    "x":-5.36467E+11,
+    "y":8
+  },
+  {
+    "x":-5.0491E+11,
+    "y":8
+  },
+  {
+    "x":-4.73354E+11,
+    "y":7
+  },
+  {
+    "x":-4.41797E+11,
+    "y":9
+  },
+  {
+    "x":-4.1024E+11,
+    "y":9
+  },
+  {
+    "x":-3.78683E+11,
+    "y":11
+  },
+  {
+    "x":-3.47126E+11,
+    "y":12
+  },
+  {
+    "x":-3.15569E+11,
+    "y":12
+  },
+  {
+    "x":-2.84012E+11,
+    "y":16
+  },
+  {
+    "x":-2.52455E+11,
+    "y":14
+  },
+  {
+    "x":-2.20898E+11,
+    "y":13
+  },
+  {
+    "x":-1.89341E+11,
+    "y":13
+  },
+  {
+    "x":-1.57785E+11,
+    "y":18
+  },
+  {
+    "x":-1.26228E+11,
+    "y":20
+  },
+  {
+    "x":-94670700000,
+    "y":21
+  },
+  {
+    "x":-63113800000,
+    "y":19
+  },
+  {
+    "x":-31556900000,
+    "y":17
+  },
+  {
+    "x":0,
+    "y":16
+  },
+  {
+    "x":31556900000,
+    "y":20
+  },
+  {
+    "x":63113800000,
+    "y":17
+  },
+  {
+    "x":94670700000,
+    "y":16
+  },
+  {
+    "x":1.26228E+11,
+    "y":19
+  },
+  {
+    "x":1.57785E+11,
+    "y":24
+  },
+  {
+    "x":1.89341E+11,
+    "y":27
+  },
+  {
+    "x":2.20898E+11,
+    "y":27
+  },
+  {
+    "x":2.52455E+11,
+    "y":30
+  },
+  {
+    "x":2.84012E+11,
+    "y":32
+  },
+  {
+    "x":3.15569E+11,
+    "y":31
+  },
+  {
+    "x":3.47126E+11,
+    "y":33
+  },
+  {
+    "x":3.78683E+11,
+    "y":36
+  },
+  {
+    "x":4.1024E+11,
+    "y":33
+  },
+  {
+    "x":4.41797E+11,
+    "y":34
+  },
+  {
+    "x":4.73354E+11,
+    "y":32
+  },
+  {
+    "x":5.0491E+11,
+    "y":36
+  },
+  {
+    "x":5.36467E+11,
+    "y":37
+  },
+  {
+    "x":5.68024E+11,
+    "y":34
+  },
+  {
+    "x":5.99581E+11,
+    "y":38
+  },
+  {
+    "x":6.31138E+11,
+    "y":44
+  },
+  {
+    "x":6.62695E+11,
+    "y":50
+  },
+  {
+    "x":6.94252E+11,
+    "y":48
+  },
+  {
+    "x":7.25809E+11,
+    "y":41
+  },
+  {
+    "x":7.57366E+11,
+    "y":45
+  },
+  {
+    "x":7.88923E+11,
+    "y":38
+  },
+  {
+    "x":8.20479E+11,
+    "y":38
+  },
+  {
+    "x":8.52036E+11,
+    "y":37
+  },
+  {
+    "x":8.83593E+11,
+    "y":33
+  },
+  {
+    "x":9.1515E+11,
+    "y":34
+  },
+  {
+    "x":9.46707E+11,
+    "y":31
+  },
+  {
+    "x":9.78264E+11,
+    "y":30
+  },
+  {
+    "x":1.00982E+12,
+    "y":28
+  },
+  {
+    "x":1.04138E+12,
+    "y":25
+  },
+  {
+    "x":1.07293E+12,
+    "y":27
+  },
+  {
+    "x":1.10449E+12,
+    "y":26
+  },
+  {
+    "x":1.13605E+12,
+    "y":28
+  },
+  {
+    "x":1.16761E+12,
+    "y":29
+  }
+]
+	,	
+	
+    "key" : "Civil" //Interstate
+}
+,{
+    "values" : [
+  {
+    "x":-7.57366E+11,
+    "y":2
+  },
+  {
+    "x":-7.25809E+11,
+    "y":0
+  },
+  {
+    "x":-6.94252E+11,
+    "y":0
+  },
+  {
+    "x":-6.62695E+11,
+    "y":0
+  },
+  {
+    "x":-6.31138E+11,
+    "y":0
+  },
+  {
+    "x":-5.99581E+11,
+    "y":0
+  },
+  {
+    "x":-5.68024E+11,
+    "y":0
+  },
+  {
+    "x":-5.36467E+11,
+    "y":0
+  },
+  {
+    "x":-5.0491E+11,
+    "y":0
+  },
+  {
+    "x":-4.73354E+11,
+    "y":0
+  },
+  {
+    "x":-4.41797E+11,
+    "y":0
+  },
+  {
+    "x":-4.1024E+11,
+    "y":1
+  },
+  {
+    "x":-3.78683E+11,
+    "y":1
+  },
+  {
+    "x":-3.47126E+11,
+    "y":1
+  },
+  {
+    "x":-3.15569E+11,
+    "y":3
+  },
+  {
+    "x":-2.84012E+11,
+    "y":2
+  },
+  {
+    "x":-2.52455E+11,
+    "y":2
+  },
+  {
+    "x":-2.20898E+11,
+    "y":3
+  },
+  {
+    "x":-1.89341E+11,
+    "y":4
+  },
+  {
+    "x":-1.57785E+11,
+    "y":2
+  },
+  {
+    "x":-1.26228E+11,
+    "y":2
+  },
+  {
+    "x":-94670700000,
+    "y":2
+  },
+  {
+    "x":-63113800000,
+    "y":2
+  },
+  {
+    "x":-31556900000,
+    "y":3
+  },
+  {
+    "x":0,
+    "y":4
+  },
+  {
+    "x":31556900000,
+    "y":3
+  },
+  {
+    "x":63113800000,
+    "y":4
+  },
+  {
+    "x":94670700000,
+    "y":3
+  },
+  {
+    "x":1.26228E+11,
+    "y":2
+  },
+  {
+    "x":1.57785E+11,
+    "y":3
+  },
+  {
+    "x":1.89341E+11,
+    "y":3
+  },
+  {
+    "x":2.20898E+11,
+    "y":3
+  },
+  {
+    "x":2.52455E+11,
+    "y":4
+  },
+  {
+    "x":2.84012E+11,
+    "y":4
+  },
+  {
+    "x":3.15569E+11,
+    "y":6
+  },
+  {
+    "x":3.47126E+11,
+    "y":7
+  },
+  {
+    "x":3.78683E+11,
+    "y":4
+  },
+  {
+    "x":4.1024E+11,
+    "y":6
+  },
+  {
+    "x":4.41797E+11,
+    "y":5
+  },
+  {
+    "x":4.73354E+11,
+    "y":4
+  },
+  {
+    "x":5.0491E+11,
+    "y":5
+  },
+  {
+    "x":5.36467E+11,
+    "y":5
+  },
+  {
+    "x":5.68024E+11,
+    "y":4
+  },
+  {
+    "x":5.99581E+11,
+    "y":4
+  },
+  {
+    "x":6.31138E+11,
+    "y":4
+  },
+  {
+    "x":6.62695E+11,
+    "y":0
+  },
+  {
+    "x":6.94252E+11,
+    "y":3
+  },
+  {
+    "x":7.25809E+11,
+    "y":5
+  },
+  {
+    "x":7.57366E+11,
+    "y":1
+  },
+  {
+    "x":7.88923E+11,
+    "y":1
+  },
+  {
+    "x":8.20479E+11,
+    "y":2
+  },
+  {
+    "x":8.52036E+11,
+    "y":2
+  },
+  {
+    "x":8.83593E+11,
+    "y":4
+  },
+  {
+    "x":9.1515E+11,
+    "y":5
+  },
+  {
+    "x":9.46707E+11,
+    "y":4
+  },
+  {
+    "x":9.78264E+11,
+    "y":5
+  },
+  {
+    "x":1.00982E+12,
+    "y":3
+  },
+  {
+    "x":1.04138E+12,
+    "y":2
+  },
+  {
+    "x":1.07293E+12,
+    "y":5
+  },
+  {
+    "x":1.10449E+12,
+    "y":6
+  },
+  {
+    "x":1.13605E+12,
+    "y":5
+  },
+  {
+    "x":1.16761E+12,
+    "y":5
+  }
+]
+	,	
+	
+    "key" : "Civil (with foreign intervention)"//Internationalized Intrastate
+}
+
+
+
+
+];
+
+
+var colors = d3.scale.ordinal()
+          .range(["black", "darkblue","#ff7232", "#ffcb00"])
+          .domain(d3.range(0,4));
+		  
+keyColor = function(d, i) {return colors(d.key)};
+
+var chart;
+nv.addGraph(function() {
+    chart = nv.models.multiBarChart()
+		.margin({top: 30, right: 20, bottom: 80, left: 40}) 
+	.stacked(true)  
+      .color(keyColor)
+      		.tooltipContent(function(key, x, y, e, graph) {return '<h3>' + key + '</h3>' +
+               '<p>' +  y + ' in ' + x + '</p>'			})
+    //  .delay(0)
+      .rotateLabels(45)
+      .groupSpacing(0.1)
+      ;
+
+    chart.multibar
+      .hideable(true);
+
+    chart.reduceXTicks(true).staggerLabels(false);
+
+	chart.xAxis.tickFormat(function(d) {
+	                return d3.time.format('%Y')(new Date(d));
+	            });
+
+	  chart.yAxis
+      .axisLabel('Number of wars')
+  	  .axisLabelDistance(50)
+        .tickFormat(d3.format(',.0f'))   ;
+
+    d3.select('#chart1')
+        .datum(xxx)
+       .transition().duration(1000).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+    return chart;
+});
+
+	
+
+
+var logoCanvas = d3.select("#chart1")
+
+logoCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.explainingprogress.com/data/war-peace/war-and-peace-after-1945/")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.explainingprogress.com/data/war-peace/war-and-peace-after-1945")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data sources: Human Security Project (PRIO data)")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+/* ------- end credits ------ */
+		  
+		  
+
+
+
+</script>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>Yields and Land Use in Agriculture - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World in Data &raquo; Yields and Land Use in Agriculture Comments Feed" href="/yields-and-land-use-in-agriculture/feed/" />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/yields-and-land-use-in-agriculture/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fyields-and-land-use-in-agriculture%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fyields-and-land-use-in-agriculture%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="Yields and Land Use in Agriculture"/>
+  <meta property="og:url" content="/yields-and-land-use-in-agriculture/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Empirical View
+Yields over the long-term
+Yields in the UK over the Long Run
+In the charts below, we see the average agricultural yield of particular crops over the long-term in the United Kingdom, from 1885 onwards. In the first chart, we have plotted cereal crops (wheat, barley and oats). Overal"/>
+  <meta property="og:image" content="/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Yields and Land Use in Agriculture"/>
+  <meta itemprop="description" content="Empirical View
+Yields over the long-term
+Yields in the UK over the Long Run
+In the charts below, we see the average agricultural yield of particular crops over the long-term in the United Kingdom, from 1885 onwards. In the first chart, we have plotted cereal crops (wheat, barley and oats). Overal"/>
+  <meta itemprop="image" content="/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Yields and Land Use in Agriculture"/>
+  <meta name="twitter:url" content="/yields-and-land-use-in-agriculture/"/>
+  <meta name="twitter:description" content="Empirical View
+Yields over the long-term
+Yields in the UK over the Long Run
+In the charts below, we see the average agricultural yield of particular crops over the long-term in the United Kingdom, from 1885 onwards. In the first chart, we have plotted cereal crops (wheat, barley and oats). Overal"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-2809 page-child parent-pageid-621">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category active'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class="active"><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category active' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class="active"><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class="active"><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="page-with-sidebar clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-2809" class="post-2809 page type-page status-publish has-post-thumbnail hentry category-entries category-food">
+			<header class="article-header">
+				<h1 class="entry-title">Yields and Land Use in Agriculture</h1>									<div class='authors-byline'><a href="/about/#the-team">by Max Roser and Hannah Ritchie </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser and Hannah Ritchie (2017) – &lsquo;Yields and Land Use in Agriculture&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /yields-and-land-use-in-agriculture/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="yields-over-the-long-term"> <a class="deep-link" href="#yields-over-the-long-term"># </a>Yields over the long-term</h3>
+<h4 id="yields-in-the-uk-over-the-long-run"> <a class="deep-link" href="#yields-in-the-uk-over-the-long-run"># </a>Yields in the UK over the Long Run</h4>
+<p>In the charts below, we see the average agricultural yield of particular crops over the long-term in the United Kingdom, from 1885 onwards. In the first chart, we have plotted cereal crops (wheat, barley and oats). Overall, we see that improvements in cereal yields from the 19th century into the first half of the 20th century were relatively slow&#8211; by the 1940s, yields were typically in the range of 2-2.5 tonnes per hectare. Productivity gains between the 1950s and 1990s was rapid, growing 2-3 fold over this period. Since the turn of the millennium however, cereal yields in the UK have been relatively stagnant.</p>
+<p>In the second chart below we see UK yields in sugar beet and potatoes&#8211;these roots and tuber crops tend to have much higher yields than cereal crops by mass (although they are likely to have a much higher percentage of water weight). Similarly to cereal yields, productivity gains in sugar beet and potatoes have been most impressive over the latter half of the 20th century. Since 1960, yields in sugar beet have more than doubled, rising from 30 tonnes to more than than 80 tonnes per hectare. Potato yields have also almost doubled, increasing from just over 20 tonnes in 1960 to more than 40 tonnes per hectare in 2014.<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/long-term-cereal-yields-in-the-united-kingdom" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/long-term-cereal-yields-in-the-united-kingdom" width="300" height="150"></iframe></noscript><br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/long-term-agricultural-yields-in-the-united-kingdom" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/long-term-agricultural-yields-in-the-united-kingdom" width="300" height="150"></iframe></noscript></p>
+<h4 id="wheat-yields-across-europe-from-1850"> <a class="deep-link" href="#wheat-yields-across-europe-from-1850"># </a>Wheat Yields across Europe from 1850</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/long-term-wheat-yields-in-europe" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/long-term-wheat-yields-in-europe" width="300" height="150"></iframe></noscript></p>
+<h4 id="us-average-corn-grain-yields-1866-2014"> <a class="deep-link" href="#us-average-corn-grain-yields-1866-2014"># </a>US average corn grain yields, 1866-2014</h4>
+<p>In the chart below we have plotted average corn (maize) yields in the United States from 1866-2014, based on data from the United States Department of Agriculture (USDA) and UN FAO. As seen below, average corn yields in the United States remained relatively flat throughout the 1800s until the 1930s. In the period since 1940, yields have increased more than five-fold.</p>
+<p>What caused this significant drive in yield improvements? There are a number of factors which are likely to have contributed to sustained yield gains: fertilizer application, irrigation, increased soil tillage, and improved farming practices. However, a key driver in the initial rise in yield is considered to be the adoption of improved corn varieties from <a href="https://passel.unl.edu/pages/informationmodule.php?idinformationmodule=1075412493&amp;topicorder=10&amp;maxto=12&amp;minto=1">plant breeding developments</a>. The initial period of yield gains in the late 1930s-early 1940s coincides with the transition period of farmers from open-pollinated varieties to hybrids. This process of cross-breeding between open-pollinated varieties, combined with improved breed selection practices is thought to define the key turning point in US corn yields.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='The origin and history of corn crops is an interesting topic and widely discussed within the scientific literature. Am accessible overview of the history of corn can be found here.'>1</sup></a></p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/average-corn-yields-in-the-united-states-1866-2014" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/average-corn-yields-in-the-united-states-1866-2014" width="300" height="150"></iframe></noscript></p>
+<h4 id="cereal-yields-in-chile-1929-2014"> <a class="deep-link" href="#cereal-yields-in-chile-1929-2014"># </a>Cereal yields in Chile, 1929-2014</h4>
+<p>In the chart below we see the average yields in key cereal crops (wheat, barley and oats) in Chile from 1929-2014. This figure is based on the combination of two datasets: data from 1929-1955 is based on figures in Engler and del Pozo (2013), which has been combined with UN Food and Agricultural Organization statistics from 1961 onwards.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Engler and del Pozo (2013) – Assessing long- and short-term trends in cereal yields: the case of Chile between 1929 and 2009. Ciencia e investigación agraria. Vol.40 no.1 Santiago Apr. 2013.  Pontificia Universidad Católica de Chile. Available online. Data from 1961 onwards is taken from FAOstat; database online here.'>2</sup></a> Also shown on this figure are specific technological, economic or policy events which are likely to have influenced the change in cereal yields over this period&#8211;these events have been highlighted by Engler and del Pozo (2013).</p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01.png"><img class="wp-image-12897 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01.png" alt="" width="1225" height="874" srcset="/wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01.png 6036w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-150x107.png 150w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-400x286.png 400w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-768x548.png 768w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-750x535.png 750w" sizes="(max-width: 1225px) 100vw, 1225px" /><noscript><img class="wp-image-12897 aligncenter" src="https://owid.netlify.com/wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01.png" alt="" width="1225" height="874" srcset="/wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01.png 6036w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-150x107.png 150w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-400x286.png 400w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-768x548.png 768w, /wp-content/uploads/2017/08/Long-term-cereal-yields-in-Chile-01-750x535.png 750w" sizes="(max-width: 1225px) 100vw, 1225px" /></noscript></a><br />
+<!----------------------------------></p>
+<h3 id="yields-since-1960"> <a class="deep-link" href="#yields-since-1960"># </a>Yields since 1960</h3>
+<p>Our data on agricultural yields across crop types and by country are much more extensive from 1960 onwards. The UN Food and Agricultural Organization (FAO) publish yield estimates across a range of crop commodities by country over this period. The FAO report yield values as the national average for any given year; this is calculated by diving total crop output (in kilograms or tonnes) by the area of land used to grow a given crop (in hectares). There are likely to be certain regional and seasonal differences in yield within a given country, however, reported average yields still provide a useful indication of changes in productivity over time and geographical region.</p>
+<p>In the chart below we see the change in average yield for key crop commodities since 1961. In this visualisation, you can select/deselect which crops you wish to see and compare, and you can also view these trends across any country or region using the &#8220;change country&#8221; wheel.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/agricultural-yields-in-key-crops-per-hectare-1961-2014?shown=World%20-%20Bananas+World%20-%20Maize+World%20-%20Rice%2C%20paddy+World%20-%20Soybeans+World%20-%20Wheat+World%20-%20Cassava+World%20-%20Cocoa%20beans+World%20-%20Potatoes+World%20-%20Beans%2C%20dry" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/agricultural-yields-in-key-crops-per-hectare-1961-2014?shown=World%20-%20Bananas+World%20-%20Maize+World%20-%20Rice%2C%20paddy+World%20-%20Soybeans+World%20-%20Wheat+World%20-%20Cassava+World%20-%20Cocoa%20beans+World%20-%20Potatoes+World%20-%20Beans%2C%20dry" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="yields-across-the-world-in-key-crops"> <a class="deep-link" href="#yields-across-the-world-in-key-crops"># </a>Yields across the world in key crops</h3>
+<h4 id="wheat-yields"> <a class="deep-link" href="#wheat-yields"># </a>Wheat yields</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-map-of-wheat-yields" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-map-of-wheat-yields" width="300" height="150"></iframe></noscript></p>
+<h4 id="rice-yields"> <a class="deep-link" href="#rice-yields"># </a>Rice yields</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-map-of-rice-yields" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-map-of-rice-yields" width="300" height="150"></iframe></noscript></p>
+<h4 id="soybean-yields"> <a class="deep-link" href="#soybean-yields"># </a>Soybean yields</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-map-of-soybean-yields" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-map-of-soybean-yields" width="300" height="150"></iframe></noscript></p>
+<h4 id="yields-of-other-crops"> <a class="deep-link" href="#yields-of-other-crops"># </a>Yields of other crops</h4>
+<p>Global interactive maps of yields for the following crops are also available to explore:</p>
+<ul>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-maize-yields">Maize (corn)</a></li>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-potato-yields">Potatoes</a></li>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-sugar-cane-yields">Sugar cane</a></li>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-rapeseed-yields">Rapeseed</a></li>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-cocoa-bean-yields">Cocoa beans</a></li>
+<li><a href="https://owid.netlify.com/grapher/global-map-of-tomato-yields">Tomatoes</a></li>
+</ul>
+<h3 id="agriculture-land-use-over-the-long-run"> <a class="deep-link" href="#agriculture-land-use-over-the-long-run"># </a>Agriculture land use over the long-run</h3>
+<h4 id="total-agricultural-land-use-over-the-long-run"> <a class="deep-link" href="#total-agricultural-land-use-over-the-long-run"># </a>Total agricultural land use over the long-run</h4>
+<p>The visualisation below shows total land used for agriculture (which is a combination of cropland and grazing land) over the long-term (since 10,000 BC), measured in hectares. In the following sections you can find disaggregated data for cropland and grazing land change over time.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/total-agricultural-area-over-the-long-term" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/total-agricultural-area-over-the-long-term" width="300" height="150"></iframe></noscript></p>
+<h4 id="cropland-use-over-the-long-run"> <a class="deep-link" href="#cropland-use-over-the-long-run"># </a>Cropland use over the long-run</h4>
+<p>The visualisation below shows total cropland (which does not include land for grazing) over the long-term (since 10,000 BC), measured in hectares.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/cropland-use-over-the-long-term" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/cropland-use-over-the-long-term" width="300" height="150"></iframe></noscript></p>
+<h4 id="grazing-land-use-over-the-long-run"> <a class="deep-link" href="#grazing-land-use-over-the-long-run"># </a>Grazing land use over the long-run</h4>
+<p>The visualisation below shows total grazing land over the long-term (since 10,000 BC), measured in hectares.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/grazing-land-use-over-the-long-term" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/grazing-land-use-over-the-long-term" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="land-use-definitions-and-categories"> <a class="deep-link" href="#land-use-definitions-and-categories"># </a>Land use definitions and categories</h3>
+<p>The following discussions on global land use (particularly in relation to agriculture) cover a number of definitions and combined categories. It is therefore useful to understand the differences between land use terminology; for example, the definition of &#8220;arable land&#8221; versus &#8220;agricultural land&#8221;.</p>
+<p>To provide some clarity on the definitions used here (and the common terminology within the literature) we have visualised these land use categories and groupings in the chart below. Also shown are the definitions of each. The groupings and definitions shown below are based on the UN Food and Agricultural Organization (FAO) and should therefore be consistent with most international data sources.</p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-classification.png"><img class="alignnone wp-image-13005" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-classification.png" alt="" width="1400" height="940" srcset="/wp-content/uploads/2013/10/Land-use-classification.png 3000w, /wp-content/uploads/2013/10/Land-use-classification-150x101.png 150w, /wp-content/uploads/2013/10/Land-use-classification-400x269.png 400w, /wp-content/uploads/2013/10/Land-use-classification-768x516.png 768w, /wp-content/uploads/2013/10/Land-use-classification-750x504.png 750w" sizes="(max-width: 1400px) 100vw, 1400px" /><noscript><img class="alignnone wp-image-13005" src="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-classification.png" alt="" width="1400" height="940" srcset="/wp-content/uploads/2013/10/Land-use-classification.png 3000w, /wp-content/uploads/2013/10/Land-use-classification-150x101.png 150w, /wp-content/uploads/2013/10/Land-use-classification-400x269.png 400w, /wp-content/uploads/2013/10/Land-use-classification-768x516.png 768w, /wp-content/uploads/2013/10/Land-use-classification-750x504.png 750w" sizes="(max-width: 1400px) 100vw, 1400px" /></noscript></a></p>
+<h3 id="breakdown-of-global-land-area-today"> <a class="deep-link" href="#breakdown-of-global-land-area-today"># </a>Breakdown of global land area today</h3>
+<p>The graphic below details the breakdown of global land allocation and use based on areal extent. Only 71 percent of Earth&#8217;s land surface is defined as habitable; the remaining 29 percent comprises of glaciers and barren land. Here, &#8216;barren land&#8217; refers to land cover in which less than one-third of the area has vegetation or other cover; barren land typically has thin soil, sand or rocks and includes deserts, dry salt flats, beaches, sand dunes, and exposed rocks.</p>
+<p>Humans use half of global habitable area for agricultural production (of the remainder, 37 percent is forested; 11 percent as shrubbery; and only one-percent is utilised as urban infrastructure).</p>
+<p>More than three-quarters of our agricultural land is used for the rearing of livestock through a combination of grazing land and land used for animal feed production. Despite being dominant in land allocation for agriculture, meat and dairy products supply only 17 percent of global caloric supply and only 33 percent of global protein supply. In other words, the 11 million square kilometres used for crops supply more calories and protein for the global population than the almost 4-times larger area used for livestock.</p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png"><img class="alignnone size-full wp-image-12927" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png" alt="" width="6251" height="4377" srcset="/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png 6251w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-150x105.png 150w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-400x280.png 400w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-768x538.png 768w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-750x525.png 750w" sizes="(max-width: 6251px) 100vw, 6251px" /><noscript><img class="alignnone size-full wp-image-12927" src="https://owid.netlify.com/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png" alt="" width="6251" height="4377" srcset="/wp-content/uploads/2013/10/Land-use-graphic-01-01-01.png 6251w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-150x105.png 150w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-400x280.png 400w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-768x538.png 768w, /wp-content/uploads/2013/10/Land-use-graphic-01-01-01-750x525.png 750w" sizes="(max-width: 6251px) 100vw, 6251px" /></noscript></a></p>
+<h4 id="how-the-worlds-land-is-used-total-area-sizes-by-type-of-use-cover"> <a class="deep-link" href="#how-the-worlds-land-is-used-total-area-sizes-by-type-of-use-cover"># </a>How the world&#8217;s land is used: total area sizes by type of use &amp; cover</h4>
+<p>Visualising land use areas on a global map is perhaps the most relatable way to understand the scale of different land uses across the world. In the chart below we show the graphic displayed above &#8211; on the breakdown of global land use &amp; cover &#8211; by scale on a global map.</p>
+<p>Here, land use groupings are aggregated to show the total surface area allocated for each. Note that these are not used to represent the distribution of each: this figure does not mean the United States is wholly used for livestock, or that Europe comprises only of barren land. It is used to indicate the global areal extent of each land use only.</p>
+<p>We see that:</p>
+<ul>
+<li>global land allocated to livestock &#8211; either in the form of grazing land or cropland used for animal feed is equivalent to the area of the Americas (North, Central and South America combined);</li>
+<li>cropland (minus land used for the production of animal feed) is equivalent to the area of East Asia-Pacific, extending as far south as Thailand;</li>
+<li>forested area is equal to Africa (minus Libya), the Middle East and South Asia;</li>
+<li>global freshwater (inland water bodies) approximates to the area of Mongolia</li>
+<li>total build-up land (villages, towns, cities &amp; infrastructure) would fit into an area the size of Libya;</li>
+<li>shrub land is equivalent to an area the size of East Asia-Pacific, from Malaysia southwards;</li>
+<li>barren land is equivalent to the size of Europe;</li>
+<li>glaciers (permanent ice &amp; snow) approximates to an area of Antarctica &amp; Greenland combined.</li>
+</ul>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/10/World-Map-by-Land-Use-01.png"><img class="alignnone size-full wp-image-14270" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/World-Map-by-Land-Use-01.png" alt="" width="6251" height="4695" srcset="/wp-content/uploads/2013/10/World-Map-by-Land-Use-01.png 6251w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-150x113.png 150w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-400x300.png 400w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-768x577.png 768w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-732x550.png 732w" sizes="(max-width: 6251px) 100vw, 6251px" /><noscript><img class="alignnone size-full wp-image-14270" src="https://owid.netlify.com/wp-content/uploads/2013/10/World-Map-by-Land-Use-01.png" alt="" width="6251" height="4695" srcset="/wp-content/uploads/2013/10/World-Map-by-Land-Use-01.png 6251w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-150x113.png 150w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-400x300.png 400w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-768x577.png 768w, /wp-content/uploads/2013/10/World-Map-by-Land-Use-01-732x550.png 732w" sizes="(max-width: 6251px) 100vw, 6251px" /></noscript></a></p>
+<h3 id="global-agricultural-land-use-today"> <a class="deep-link" href="#global-agricultural-land-use-today"># </a>Global agricultural land use today</h3>
+<p>We use roughly half of global habitable land for agriculture. But how much of total land area is utilised for agriculture across the world? In the map below we see the share of total (both habitable and non-habitable) land area used for agriculture from 1961-2014.</p>
+<p>There is large variability in the share of land a given country uses for agriculture. Allocation ranges from less than ten percent, particularly across countries in Sub-Saharan Africa and the Scandinavian region to close to 80 percent across most regions (including the UK, Uruguay, South Africa, Nigeria and Saudi Arabia). It&#8217;s important to note that this metric includes both land used for arable (cropland) production and pasture land for livestock grazing; this means that agriculture can consume a large share of land area, even in arid and semi-arid regions where extensive arable farming is not possible. We will explore this difference in cropland and pastureland in the following section.</p>
+<p>If we view the map below in &#8220;chart&#8221; mode, we see how the allocation of land to agriculture has changed over time across the global regions. The share of land used for agriculture has been slowly increasing across most of the world&#8217;s regions over the past few decades. However, land use across Europe and Central Asia- particularly within the European Union (EU) zone- and North America has been declining. <iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-land-area-used-for-agriculture" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-land-area-used-for-agriculture" width="300" height="150"></iframe></noscript></p>
+<h4 id="arable-agriculture-cropland"> <a class="deep-link" href="#arable-agriculture-cropland"># </a>Arable agriculture (cropland)</h4>
+<p>There are two main uses of agricultural land: arable farming (which is land dedicated to growing crops), and pastureland (which includes meadows and pastures used for livestock rearing). In the chart below we see a global map of land used for arable agriculture (as a share of total land area).</p>
+<p>For most countries, as we will show in the section below, land use for livestock grazing is dominant relative to arable farming. For most countries, land dedicated to cropland is typically below 20 percent, with many countries dedicating less than 10 percent. There are some notable exceptions, however;  countries in South Asia and Europe allocate a large share of land area to arable farming. India, Bangladesh, Ukraine and Denmark all dedicated more than half of total land area to cropland in 2014.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-land-area-used-for-arable-agriculture" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-land-area-used-for-arable-agriculture" width="300" height="150"></iframe></noscript></p>
+<h4 id="pastureland-permanent-meadows-and-pasture"> <a class="deep-link" href="#pastureland-permanent-meadows-and-pasture"># </a>Pastureland (permanent meadows and pasture)</h4>
+<p>For most countries, the majority of agricultural land is used for livestock rearing in the form of pastureland. In the map below we see the share of permanent meadows and pasture as a percentage of total land area.</p>
+<p>As a contrast to arable farming, land use for livestock in Europe and South Asia, in particular, is typically less than 20 percent. However, most continental regions have countries where pastureland reaches close to half of total land area. In some countries (particularly in Central Asia, including Mongolia, Kazakhstan, and Turkmenistan) this can reach up to 70 percent. Livestock farming can take place across a range of diverse climatic and environmental regions (for example, ranging from cattle rearing in temperate regions to sheep farming in hilly and semi-arid terrain); meaning that this type of agriculture is potentially less geographically-constrained than arable farming.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-land-area-used-for-permanent-meadows-and-pastures-1961-2014" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-land-area-used-for-permanent-meadows-and-pastures-1961-2014" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="arable-land-cropland-use-per-person"> <a class="deep-link" href="#arable-land-cropland-use-per-person"># </a>Arable land (cropland) use per person</h3>
+<h4 id="cropland-per-person-over-the-long-term"> <a class="deep-link" href="#cropland-per-person-over-the-long-term"># </a>Cropland per person over the long-term</h4>
+<p>The visualisation below shows the change in the average cropland use per person over the long-term (since 10,000 BC), measured in hectares per person.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/cropland-per-person-over-the-long-term" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/cropland-per-person-over-the-long-term" width="300" height="150"></iframe></noscript></p>
+<h4 id="arable-land-use-per-person-in-the-near-term"> <a class="deep-link" href="#arable-land-use-per-person-in-the-near-term"># </a>Arable land use per person in the near-term</h4>
+<p>Global population has <a href="https://owid.netlify.com/world-population-growth/">more than doubled</a> over the last 50 years. To meet the demands of a rapidly growing population on a planet with finite land resources, reducing our per capita land footprint is essential.</p>
+<p>In the chart below we have plotted trends of the average arable land use per person across the world&#8217;s regions. Overall we see that the arable land use per capita has declined across all regions since 1961. Per capita land use is highest in North America&#8211; more than double the land use of any other region. Land use in Asia&#8211; both in South and East Asia is lowest (5-6 times less than in North America). Rates of reduction in South Asia have been the most dramatic; per capita land use in 2014 was roughly one-third of its value in 1961.<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/arable-land-use-per-person" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/arable-land-use-per-person" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="agricultural-land-use-per-person"> <a class="deep-link" href="#agricultural-land-use-per-person"># </a>Agricultural land use per person</h3>
+<h4 id="agricultural-land-per-person-over-the-long-term"> <a class="deep-link" href="#agricultural-land-per-person-over-the-long-term"># </a>Agricultural land per person over the long-term</h4>
+<p>The visualisation below shows the change in the average agricultural land use (which is the sum of cropland and grazing area) per person over the long-term (since 10,000 BC), measured in hectares per person.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/total-agricultural-land-use-per-person" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/total-agricultural-land-use-per-person" width="300" height="150"></iframe></noscript></p>
+<h4 id="agricultural-land-per-person-over-the-near-term"> <a class="deep-link" href="#agricultural-land-per-person-over-the-near-term"># </a>Agricultural land per person over the near-term</h4>
+<p>If we extend our land coverage above from arable land use to total agricultural land (which is the sum of arable, permanent crops and pastures and meadows), we still see overall declines in land per person but with different rates and patterns of reduction. Overall, we see that agricultural land per person is higher than that of arable land. At the global level, per capita agricultural land use is now less than half its value in 1961.</p>
+<p>Africa in particular has seen dramatic reductions in agricultural land per person &#8211; now less than one-third of per capita land 50 years ago. The Americas (North and South) and Africa have notably higher per capita agricultural land use relative to Europe and Asia.  <iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/agricultural-area-per-capita" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/agricultural-area-per-capita" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="land-projections-to-2050-60-have-we-reached-peak-farmland"> <a class="deep-link" href="#land-projections-to-2050-60-have-we-reached-peak-farmland"># </a>Land projections to 2050-60: have we reached &#8216;peak farmland&#8217;?</h3>
+<p>Is the expansion of global agricultural land likely to continue in the coming decades? In the chart below we see the trends of global land under arable and permanent crops from 1961-2014, in addition to UN FAO projections of arable land use through to 2050. This projection is published in the FAO&#8217;s World agriculture towards 2030/2050 Report.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Alexandratos, N. and J. Bruinsma. 2012. World agriculture towards 2030/2050: the 2012 revision. ESA Working paper No. 12-03. Rome, FAO. Available online.'>3</sup></a></p>
+<p>The FAO predicts that global arable land use will continue to grow to 2050, however, this is likely that this rate of expansion (towards eventual decline) will be at a slower rate than over the past 50 years. Most of this growth is projected to result from developing countries, meanwhile arable land use in developed countries is likely to continue its decline.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/fao-projections-of-arable-land-to-2050" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/fao-projections-of-arable-land-to-2050" width="300" height="150"></iframe></noscript></p>
+<p>This FAO projection of continued arable land expansion through to 2050 was disputed by Ausubel, Wernick &amp; Waggoner in a widely-discussed paper in 2013 which predicted we had reached a global peak in farmland use in 2009.<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Available online.'>4</sup></a> The authors, which only had land use data available to 2009 predicted we had reached &#8216;peak farmland&#8217;, with continued decline in arable land use of around 0.2 percent per year from 2010-2060.</p>
+<p>In the chart below we have plotted this &#8216;peak and decline&#8217; projection but have extended actual land use trends through to the year 2014. As we see, over the period 2009-2014, arable land use has continued to increase, diverging from Ausubel&#8217;s earlier projection. Whilst premature, the authors&#8217; model for estimating arable land requirements provides a useful explanation of the variables which will determine at what date we reach this peak. We discuss these determinants, and where Ausubel&#8217;s predictions diverge from actual trends in the <a href="https://owid.netlify.com/yields-and-land-use-in-agriculture/#determinants-of-arable-land-use-in-agriculture">Correlates, Determinants &amp; Consequences</a> section of this entry.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/peaking-farmland-global-arable-and-permanent-crop-area-and-ausubel-2013-projections-of-peak-farmland" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/peaking-farmland-global-arable-and-permanent-crop-area-and-ausubel-2013-projections-of-peak-farmland" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="land-projections-to-2050-when-will-we-reach-peak-agricultural-land"> <a class="deep-link" href="#land-projections-to-2050-when-will-we-reach-peak-agricultural-land"># </a>Land projections to 2050: when will we reach peak agricultural land?</h3>
+<p>The projections of farmland above are limited in scope to land used for crop production (i.e. arable land plus land under permanent crop production). These estimates do not include land used for grazing and livestock production.</p>
+<p>The chart below maps a range of published estimates of total agricultural area over time (which is the sum of arable land and permanent crops, plus permanent meadows and pastures for grazing). You can note that the areal extent of our agricultural land is significantly larger than that of the farmland analysed above (about three times larger). These estimates come from a range of sources, including the UN FAO, OECD and Millennium Ecosystem Assessment (MEA). Also shown is the actual agricultural areal extent from 1980 onwards, as reported by the UN Food and Agricultural Organization.</p>
+<p>Some projections vary significantly &#8211; for example, the MEA scenario 1 suggests that the world will not peak in agricultural land prior to 2050. However, most projections suggest a peaking of land expansion in the timespan between 2020 and 2040. Our measured agricultural area appears to be most closely aligned to the FAO/IMAGE projection, which is characterised by a very slow increase in areal extent over the coming decades before peaking around 2040.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/projections-for-global-peak-agricultural-land" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/projections-for-global-peak-agricultural-land" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="land-use-by-crop-type"> <a class="deep-link" href="#land-use-by-crop-type"># </a>Land use by crop type</h3>
+<p>In the chart below we see the global area of land use in agriculture by major crop types, from 1961 to 2014. Overall, we see that the majority of our arable land is used for cereal production; this has grown from around 650 to 720 million hectares (an area roughly twice the size of Germany) over this period. The total land area used for coarse grains has remained approximately constant over this 50 year period, and is the 2nd largest user of arable land.</p>
+<p>The most dramatic increase in land allocation is in the production of oilcrops. Total land area used for oilcrop production has increased almost 3-fold since 1961&#8211; an area just short of the size of Mexico. All other crop types take up less than 100 million hectares of global area.<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-agricultural-land-use-by-major-crop-type" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-agricultural-land-use-by-major-crop-type" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="land-use-by-food-type"> <a class="deep-link" href="#land-use-by-food-type"># </a>Land use by food type</h3>
+<p>The amount of land required to produce food has wide variations depending on the product&#8211;this is especially true when differentiating crops and animal products. In the chart below we have plotted the average land required (sometimes termed the &#8220;land footprint&#8221;) to produce one gram of protein across a range of food types.</p>
+<p>At the bottom of the scale, we see that cereal crops typically have a small land impact per unit of protein (although such protein is often lacking in some essential amino acids). At the upper end of the spectrum we find meat products, with the land required for beef or mutton up to 100 times larger than cereals. However, it&#8217;s important to note the differences in land required across the meat products: poultry and pork have a land footprint 8-10 times lower than that of beef. This means individuals can make notable reductions in the environmental impact of their diets simply by substituting lower-impact meat products for beef or mutton.  <iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/land-use-per-gram-of-protein-by-food-type" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/land-use-per-gram-of-protein-by-food-type" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<h3 id="determinants-of-crop-yields"> <a class="deep-link" href="#determinants-of-crop-yields"># </a>Determinants of crop yields</h3>
+<p>Modern inputs – irrigation, improved varieties of cereal &amp; fertilizer – have expanded rapidly around the world but have lagged in Sub-Saharan Africa, as seen in the following graph.</p>
+<h6 id="irrigation-improved-varieties-of-cereal-fertilizer-use-by-world-region-1962-1982-and-2002-world-development-report-2008ref"> <a class="deep-link" href="#irrigation-improved-varieties-of-cereal-fertilizer-use-by-world-region-1962-1982-and-2002-world-development-report-2008ref"># </a>Irrigation, improved varieties of cereal &amp; fertilizer use by world region, 1962, 1982 and 2002 – World Development Report (2008)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='This is taken from World Bank (2008) – World Development Report (2008): Agriculture for Development. Washington, DC: World Bank. Online here. The original sources given by my source are Evenson and Gollin 2003 and FAO 2006a.'>5</sup></a><strong><img class="aligncenter size-medium wp-image-2803" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002-480x500.png" alt="Modern inputs – Irrigation, Improved Varieties of Cereal, &amp; Fertilizer – have expanded rapidly around the world but have lagged in Sub-Saharan Africa (1962, 1982, 2002) – World Development Report (2008)0" width="480" height="500" srcset="/wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002-480x500.png 480w, /wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002.png 721w" sizes="(max-width: 480px) 100vw, 480px" /><noscript><img class="aligncenter size-medium wp-image-2803" src="https://owid.netlify.com/wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002-480x500.png" alt="Modern inputs – Irrigation, Improved Varieties of Cereal, &amp; Fertilizer – have expanded rapidly around the world but have lagged in Sub-Saharan Africa (1962, 1982, 2002) – World Development Report (2008)0" width="480" height="500" srcset="/wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002-480x500.png 480w, /wp-content/uploads/2013/10/modern-inputs-irrigation-improved-varieties-of-cereal-fertilizer-have-expanded-rapidly-around-the-world-but-have-lagged-in-sub-saharan-africa-1962-1982-2002.png 721w" sizes="(max-width: 480px) 100vw, 480px" /></noscript></strong></p>
+<h4 id="fertilizer-use-and-yields"> <a class="deep-link" href="#fertilizer-use-and-yields"># </a>Fertilizer use and yields</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/cereal-crop-yield-vs-fertilizer-application" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/cereal-crop-yield-vs-fertilizer-application" width="300" height="150"></iframe></noscript></p>
+<h4 id="tractor-use-per-100-square-km-and-yields"> <a class="deep-link" href="#tractor-use-per-100-square-km-and-yields"># </a>Tractor use (per 100 square km) and yields</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/cereal-yields-vs-tractor-inputs-in-agriculture" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/cereal-yields-vs-tractor-inputs-in-agriculture" width="300" height="150"></iframe></noscript><br />
+<!----------------------------------><br />
+<!----------------------------------></p>
+<h3 id="determinants-of-arable-land-use-in-agriculture"> <a class="deep-link" href="#determinants-of-arable-land-use-in-agriculture"># </a>Determinants of arable land use in agriculture</h3>
+<p>The quantity of land required for arable agriculture is determined by a range of factors relating to population, dietary consumption, and food system dynamics/productivity. As we discussed <a href="https://owid.netlify.com/yields-and-land-use-in-agriculture/#land-projections-to-2050-60-have-we-reached-peak-farmland">earlier in the entry</a>, Ausubel, Wernick &amp; Waggoner (2013) applied a simplified model of these variables to predict when the world would reach &#8216;peak farmland&#8217;.<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Although proven to be premature in their projection, the model remains useful in estimating future demands for arable land.&#091;ref&#093;Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Available online.'>6</sup></a></p>
+<p>Ausubel defines it as the IMPACT model, where land use is determined by five key variables:</p>
+<ol>
+<li><strong>P</strong> = Population (number of people to feed)</li>
+<li><strong>A</strong> = Affluence (in GDP per capita)</li>
+<li><strong>C1</strong> = Consumption 1 (in kcal/GDP), where kcal refers to the annual national or global food supply in kilocalories from both vegetal and animal sources. C1 provides a measure of how much our kilocalorie (i.e. food) intake increases (or decreases) as we get richer or poorer.</li>
+<li><strong>C2</strong> = Consumption 2 (in Crop Production Index [PIN]/kcal) using the FAO Crop Production Index, which measures the relative level of aggregate volume of agricultural crop production indexed to a base year. C2 tracks the ratio of crop production for food, feed, fuel, fiber, and tobacco to the supply of food calories. This means it provides a measure of how much food is produced relative to how much food is eaten (i.e. the efficiency of the system in delivering food from the field to peoples&#8217; plates). If we reallocate more food towards feed and fuel, for example, we would have to continue increasing agricultural output to ensure food supplies remain adequate.</li>
+<li style="text-align: left;"><strong>T</strong> = Technology (in hectares/Crop PIN) tracks how much land farmers use relative to total crop value. This is a measure of agricultural yield/productivity.</li>
+</ol>
+<p>We are therefore left with the equation, where:</p>
+<p><strong>Im (arable land in hectares) = P * A * C<sub>1</sub> * C<sub>2 </sub>* T</strong></p>
+<p>Or the rate of change in arable land is equal to the sum of the rates of change in these variables (in percent per year):</p>
+<p><strong>im = p + a + c<sub>1</sub> + c<sub>2</sub> + t</strong></p>
+<h4 id="how-did-ausubels-predictions-differ-from-reality"> <a class="deep-link" href="#how-did-ausubels-predictions-differ-from-reality"># </a>How did Ausubel&#8217;s predictions differ from reality?</h4>
+<p>In order to assess why Ausubel et al. (2013) predicted we would reach &#8216;peak farmland&#8217; prematurely, we assessed how their predicted values for each of the variables differed from actual values over the period 2009-2014. It should be noted that the authors derived their rate of decline (at 0.2 percent per year) based on an average prediction over the period 2010-2060; therefore a divergence from this value over the first 5-year period does not necessarily confirm these averaged predictions to be false.</p>
+<p>In the table below, we provide a comparison of the values used in Ausubel&#8217;s projection, and our own analysis of changes in these variables from 2009-2014 (measured in percent change per year). Whilst Ausubel predicted a 0.2 percent decline in arable land area per year, our analysis suggests a 0.37 percent increase per year over this 5-year period. This correlates very closely to the actual land in land use; FAO figures suggest this also grew at 0.37 percent per year.</p>
+<table style="height: 343px; width: 797px;">
+<tbody>
+<tr>
+<td style="width: 320px; text-align: center;"> <strong>Variable</strong></td>
+<td style="width: 104px; text-align: center;"><strong>Ausubel prediction (2010-2060)</strong></td>
+<td style="width: 162px; text-align: center;"><strong>OWID analysis (2009-2014)</strong></td>
+<td style="width: 187px; text-align: center;"><strong>Actual change in land (2009-2014)</strong></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;">Population (p)</td>
+<td style="width: 104px; text-align: center;">0.90%</td>
+<td style="width: 162px; text-align: center;">1.2%</td>
+<td style="width: 187px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;">Affluence (GDP per capita)</td>
+<td style="width: 104px; text-align: center;">1.80%</td>
+<td style="width: 162px; text-align: center;">1.8%</td>
+<td style="width: 187px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;">Food supply/GDP (kcal/GDP)</td>
+<td style="width: 104px; text-align: center;">-1.60%</td>
+<td style="width: 162px; text-align: center;">-1.4%</td>
+<td style="width: 187px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;">Crop PIN/kcal</td>
+<td style="width: 104px; text-align: center;">0.40%</td>
+<td style="width: 162px; text-align: center;">0.50%</td>
+<td style="width: 187px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;">Technology (yield)</td>
+<td style="width: 104px; text-align: center;">-1.70%</td>
+<td style="width: 162px; text-align: center;">-1.8%</td>
+<td style="width: 187px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 320px; text-align: center;"><strong>Total change in arable land (per year)</strong></td>
+<td style="width: 104px; text-align: center;"><strong>-0.20%</strong></td>
+<td style="width: 162px; text-align: center;"><strong>0.37%</strong></td>
+<td style="width: 187px; text-align: center;"><strong>0.37%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-trade-off-between-higher-yields-and-land-use"> <a class="deep-link" href="#the-trade-off-between-higher-yields-and-land-use"># </a>The trade-off between higher yields and land use</h3>
+<h4 id="agricultural-production-index-land-needed-per-unit-of-crop-production"> <a class="deep-link" href="#agricultural-production-index-land-needed-per-unit-of-crop-production"># </a>Agricultural Production Index: land needed per unit of crop production</h4>
+<p>The following graph shows that to produce an equivalent aggregate of crop production in 2012 required only about 32% of the land needed in 1961. The agricultural production index (PIN) use here is the sum of agricultural commodities produced (after deductions of quantities used as seed and feed). It is weighted by the commodity prices. The FAO explains the construction of the PIN in detail <a href="https://faostat.fao.org/site/362/DesktopDefault.aspx?PageID=362">here</a>.</p>
+<p>The idea for this chart is taken from Ausubel, Wernick, and Waggoner (2013).<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Online here.'>7</sup></a> The authors write: <em>&#8216;A combination of agricultural technologies raised yields, keeping downward pressure on the extent of cropland, sparing land for nature.<br />
+Countering the global rise of population and affluence by parents and workers, consumers and farmers restrained the expansion of arable land by changing tastes and lifting yields. The noticeable shrinkage in the extent of cropland as a function of the Crop Production index since 1990 (Figure below) provides encouragement that farmers will continue sparing land.&#8217;</em></p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525.png"><img class=" wp-image-12884 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525.png" alt="" width="780" height="546" srcset="/wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525.png 750w, /wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525-150x105.png 150w, /wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525-400x280.png 400w" sizes="(max-width: 780px) 100vw, 780px" /><noscript><img class=" wp-image-12884 aligncenter" src="https://owid.netlify.com/wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525.png" alt="" width="780" height="546" srcset="/wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525.png 750w, /wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525-150x105.png 150w, /wp-content/uploads/2017/08/ourworldindata_land-per-crop-pin-750x525-400x280.png 400w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></a></p>
+<h4 id="production-yield-and-land-use-changes-over-time"> <a class="deep-link" href="#production-yield-and-land-use-changes-over-time"># </a>Production, yield and land use changes over time</h4>
+<p>In the chart below we see index trends in cereal production, yield, land use and population measured from 1961 (i.e. 1961 = 100). From 1961 to 2014, global cereal production has increased by 280 percent. If we compare this increase to that of total population (which increased only 136 percent over the same period), we see that global cereal production has increased at a much faster rate than that of population. If distributed equally, cereal production per person has increased despite a growing population.</p>
+<p>Have we achieved this through land expansion or improved yields? A bit of both. In 2014, we used 16% more land for cereal production than we did in 1961 (approximately equivalent to double the area of Germany). Overall, this means we use less land per person than we did fifty years ago. Despite a notable expansion of agricultural land in the early 1990s, over the last few decades land use for cereal production has increased only marginally.</p>
+<p>Most of our improvements in cereal production have arisen from improvements in yield. The average cereal yield has increased by 175 percent since 1961. Today, the world can produce almost three-times as much cereal from a given area of land as it did in 1961.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/index-of-cereal-production-yield-and-land-use-1961-2014" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/index-of-cereal-production-yield-and-land-use-1961-2014" width="300" height="150"></iframe></noscript></p>
+<h4 id="yields-vs-land-use"> <a class="deep-link" href="#yields-vs-land-use"># </a>Yields vs. Land Use</h4>
+<p>There is therefore an important relationship between yields improvements and land use. In order to grow more food, we can increase the output from a given area of land (called &#8216;intensification&#8217;), or expand the area over which we grow our food (called &#8216;extensification&#8217;). Increasing yields reduces the pressure of expanding agricultural land.</p>
+<p>In the chart below, we see the indexed change in land area used for cereal production from 1961-2014 (on the y-axis), measured against the indexed change in cereal yield over the same period (on the x-axis). In these trends we see large regional differences in this yield-land use trade-off.</p>
+<p>Most European, American (both North and Latin American), Asian and Pacific countries have seen a much larger increase in cereal yields relative to area used for production. For many, changes in the arable land have been minimal (or have declined). This is an important contrast to Africa where results are more mixed. Some countries, including Ethiopia, Nigeria and Algeria have followed the rest of the world in yield increases. However, a failure to increase agricultural productivity in many Sub-Saharan countries has led to large increases in land used for cereal production.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/yields-change-vs-land-use-change" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/yields-change-vs-land-use-change" width="300" height="150"></iframe></noscript></p>
+<h4 id="different-approaches-to-growing-food-south-asia-vs-sub-saharan-africa"> <a class="deep-link" href="#different-approaches-to-growing-food-south-asia-vs-sub-saharan-africa"># </a>Different approaches to growing food: South Asia vs. Sub-Saharan Africa</h4>
+<p>This trade-off between land use for agriculture and yields is very clearly exemplified in a comparison between cereal production in Asia and Sub-Saharan Africa. Expansion of cereal production has followed very different paths in Sub-Saharan Africa and Asia.</p>
+<p>Land use for cereal production in South Asia has increased by less than 20 percent since 1961, meanwhile cereal yields have more than tripled – which meant that much more food could be produced in South Asia without an equivalent extension of the agricultural land. This is in strong contrast to Sub-Saharan Africa where the area of land used for cereal production has more than doubled since 1961 and yields have only increased by 80 percent.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/the-change-of-cereal-yield-vs-the-change-of-land-used-for-cereal-production-1961-2014" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/the-change-of-cereal-yield-vs-the-change-of-land-used-for-cereal-production-1961-2014" width="300" height="150"></iframe></noscript></p>
+<h4 id="land-sparing-from-improvements-in-cereal-yields"> <a class="deep-link" href="#land-sparing-from-improvements-in-cereal-yields"># </a>Land sparing from improvements in cereal yields</h4>
+<p>Although there are a few exceptions&#8211;notably across Sub-Saharan Africa, the continued increase in cereal yields across the world has been the major driver of total cereal production. This has inevitably allowed us to &#8216;spare&#8217; land we would have otherwise had to convert for cereal production.</p>
+<p>In the chart below we see that the global area under cereal production (in blue) has increased from 625 to 721 million hectares from 1961-2014. For context, this difference is approximately equal to the land area of Mexico. However, if global average cereal yields were to have remained at their 1961 levels, we see the amount of additional land (in red, below) which we would have had to convert to arable land if we were to achieve the same levels of cereal production. This &#8216;spared&#8217; land amounts to 1.26 billion hectares in 2014&#8211; roughly equal to the area of Mexico and Europe combined.</p>
+<p>We currently use <a href="https://owid.netlify.com/land-use-in-agriculture/#the-breakdown-of-global-land-use-today">approximately 50 percent</a> of global habitable land for agriculture; without cereal yield increases, this may have risen to 62 percent. This agricultural expansion would likely have been into fertile forested land, resulting in a loss of up to one-third of the world&#8217;s forests.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-land-spared-as-a-result-of-cereal-yield-improvements" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-land-spared-as-a-result-of-cereal-yield-improvements" width="300" height="150"></iframe></noscript></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<h3 id="yields"> <a class="deep-link" href="#yields"># </a>Yields</h3>
+<p>The definition for &#8216;crop yield&#8217; given by the FAO is &#8216;Harvested production per unit of harvested area for crop products. In most of the cases yield data are not recorded but obtained by dividing the production data by the data on area harvested. Data on yields of permanent crops are not as reliable as those for temporary crops either because most of the area information may correspond to planted area, as for grapes, or because of the scarcity and unreliability of the area figures reported by the countries, as for example for cocoa and coffee.&#8217;<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='This is the definition given by the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online here.'>8</sup></a></p>
+<h3 id="agricultural-land-use"> <a class="deep-link" href="#agricultural-land-use"># </a>Agricultural Land Use</h3>
+<p>The Land Area of the World is 13,003 million ha. 4,889 million ha are classified as &#8216;agricultural area&#8217; by the FAO (this is 37.6% of the Land Area).</p>
+<p>The agricultural area use is divided into 3 categories: arable land (28% of the global agricultural area), permanent crops (3%) and permanent meadows and pastures (69%) which account for the largest share of the world&#8217;s agricultural area.<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='These numbers are taken from FAO (2013) – Statistical Yearbook. Table 4. Online here. For comparison: The area of the USA, Canada and China are all short of 1,000 million ha (USA 963 million ha, China 932 million ha, Canada 909 million ha).'>9</sup></a></p>
+<p>What do these words mean?</p>
+<p>The <strong>agricultural area</strong> is the sum of arable land, permanent crops, permanent meadows and pastures.</p>
+<p>The FAO definition for <strong>arable land</strong> is land under temporary agricultural crops (multiple-cropped areas are counted only once), temporary meadows for mowing or pasture, land under market and kitchen gardens and land temporarily fallow (less than five years). The abandoned land resulting from shifting cultivation is not included in this category. Data for “Arable land” are not meant to indicate the amount of land that is potentially cultivable.&#8217;<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='This is the definition given by the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online here.'>10</sup></a></p>
+<p>The same source defines <strong>permanent crops </strong>as follows: &#8216;Permanent crops are divided into temporary and permanent crops. Permanent crops are sown or planted once, and then occupy the land for some years and need not be replanted after each annual harvest, such as cocoa, coffee and rubber. This category includes flowering shrubs, fruit trees, nut trees and vines, but excludes trees grown for wood or timber. And again from the same source the definition for <em>permanent meadows and pastures </em>is &#8216;land used permanently (five years or more) to grow herbaceous forage crops, either cultivated or growing wild (wild prairie or grazing land).&#8217;</p>
+<p>The FAO definition for <strong>f</strong><strong>allow land</strong> is &#8216;the cultivated land that is not seeded for one or more growing seasons. The maximum idle period is usually less than five years.&#8217;</p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<p>&nbsp;</p>
+<h5 id="fao-statistical-database-faostat"> <a class="deep-link" href="#fao-statistical-database-faostat"># </a>FAO Statistical Database (FAOstat)</h5>
+<ul>
+<li><strong>Data:</strong> Many indicators relating to food production, yields and land use – the full list is <a href="https://www.fao.org/faostat/en/#data">here</a>.</li>
+<li><strong>Geographical coverage:</strong> Global – by country and world region.</li>
+<li><strong>Time span:</strong> Since 1961.</li>
+<li><strong>Available at:</strong> Available for download <a href="https://www.fao.org/faostat/en/#data" target="_blank" rel="noopener">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-development-indicators-world-bank"> <a class="deep-link" href="#world-development-indicators-world-bank"># </a>World Development Indicators – World Bank</h5>
+<ul>
+<li><strong>Data:</strong> Cereal yields, production and land use data</li>
+<li><strong>Geographical coverage:  </strong>Global – by country and world region</li>
+<li><strong>Time span:</strong> 1961-2014</li>
+<li class="no-bullet"><strong>Available at: </strong>online <a href="https://data.worldbank.org/data-catalog/world-development-indicators" target="_blank" rel="noopener">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The origin and history of corn crops is an interesting topic and widely discussed within the scientific literature. Am accessible overview of the history of corn can be found <a href="https://passel.unl.edu/pages/informationmodule.php?idinformationmodule=1075412493&amp;topicorder=10&amp;maxto=12&amp;minto=1">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Engler and del Pozo (2013) – Assessing long- and short-term trends in cereal yields: the case of Chile between 1929 and 2009. Ciencia e investigación agraria. Vol.40 no.1 Santiago Apr. 2013.  Pontificia Universidad Católica de Chile. Available <a href="https://www.scielo.cl/pdf/ciagr/v40n1/art05.pdf">online</a>. Data from 1961 onwards is taken from FAOstat; database online <a href="https://www.fao.org/faostat/en/#data">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Alexandratos, N. and J. Bruinsma. 2012. World agriculture towards 2030/2050: the 2012 revision. ESA Working paper No. 12-03. Rome, FAO. Available <a href="https://www.fao.org/docrep/016/ap106e/ap106e.pdf">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Available <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1728-4457.2013.00561.x/abstract">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from World Bank (2008) – World Development Report (2008): Agriculture for Development. Washington, DC: World Bank. Online <a href="https://siteresources.worldbank.org/INTWDRS/Resources/477365-1327599046334/WDR_00_book.pdf">here</a>.</p>
+<p>The original sources given by my source are Evenson and Gollin 2003 and FAO 2006a.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Although proven to be premature in their projection, the model remains useful in estimating future demands for arable land.&#91;ref&#93;Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Available <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1728-4457.2013.00561.x/abstract">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Jesse H. Ausubel, Iddo K. Wernick, Paul E. Waggoner (2013) – Peak Farmland and the Prospect for Land Sparing. Population and Development Review, Volume 38, Issue Supplement s1, pages 221–242, February 2013. DOI: 10.1111/j.1728-4457.2013.00561.x. Online <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1728-4457.2013.00561.x/abstract">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This is the definition given by the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online <a href="https://faostat.fao.org/site/375/default.aspx">here</a>. </p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>These numbers are taken from FAO (2013) – Statistical Yearbook. Table 4. Online <a href="https://www.fao.org/docrep/018/i3107e/i3107e.PDF">here</a>.</p>
+<p>For comparison: The area of the USA, Canada and China are all short of 1,000 million ha (USA 963 million ha, China 932 million ha, Canada 909 million ha).</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This is the definition given by the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online <a href="https://faostat.fao.org/site/375/default.aspx">here</a>. </p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=2809&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>
