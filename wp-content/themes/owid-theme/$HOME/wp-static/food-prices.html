@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>Food Prices - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World in Data &raquo; Food Prices Comments Feed" href="/food-prices/feed/" />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/food-prices/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Ffood-prices%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Ffood-prices%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="Food Prices"/>
+  <meta property="og:url" content="/food-prices/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Empirical View
+Food Prices over the very long run
+Wheat prices since the 13th century
+The visualisation shows the price of Wheat over more than 7 centuries.
+Wheat prices in constant 1996 pounds, 1264-1996
+
+
+
+Full screen view Download as static image Download Data 
+Long-term food commodity p"/>
+  <meta property="og:image" content="/wp-content/uploads/2013/10/ourworldindata_wheat-prices-1264-1996-in-constant-1996-pounds-–-makridakis-wheelwright-and-hyndman-1997.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Food Prices"/>
+  <meta itemprop="description" content="Empirical View
+Food Prices over the very long run
+Wheat prices since the 13th century
+The visualisation shows the price of Wheat over more than 7 centuries.
+Wheat prices in constant 1996 pounds, 1264-1996
+
+
+
+Full screen view Download as static image Download Data 
+Long-term food commodity p"/>
+  <meta itemprop="image" content="/wp-content/uploads/2013/10/ourworldindata_wheat-prices-1264-1996-in-constant-1996-pounds-–-makridakis-wheelwright-and-hyndman-1997.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Food Prices"/>
+  <meta name="twitter:url" content="/food-prices/"/>
+  <meta name="twitter:description" content="Empirical View
+Food Prices over the very long run
+Wheat prices since the 13th century
+The visualisation shows the price of Wheat over more than 7 centuries.
+Wheat prices in constant 1996 pounds, 1264-1996
+
+
+
+Full screen view Download as static image Download Data 
+Long-term food commodity p"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2013/10/ourworldindata_wheat-prices-1264-1996-in-constant-1996-pounds-–-makridakis-wheelwright-and-hyndman-1997.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-2689 page-child parent-pageid-621">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category active'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class="active"><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category active' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class="active"><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class="active"><a class="" href="/food-prices/">Food Prices</a></li></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="page-with-sidebar clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-2689" class="post-2689 page type-page status-publish has-post-thumbnail hentry category-entries category-food">
+			<header class="article-header">
+				<h1 class="entry-title">Food Prices</h1>									<div class='authors-byline'><a href="/about/#the-team">by Max Roser and Hannah Ritchie </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser and Hannah Ritchie (2017) – &lsquo;Food Prices&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /food-prices/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="food-prices-over-the-very-long-run"> <a class="deep-link" href="#food-prices-over-the-very-long-run"># </a>Food Prices over the very long run</h3>
+<h4 id="wheat-prices-since-the-13th-century"> <a class="deep-link" href="#wheat-prices-since-the-13th-century"># </a>Wheat prices since the 13th century</h4>
+<p>The visualisation shows the price of Wheat over more than 7 centuries.</p>
+<h6>Wheat prices in constant 1996 pounds, 1264-1996<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='The data is taken from Makridakis, Wheelwright, and Hyndman (1997) &#8211; Forecasting: Methods and Applications. Wiley. The data is available at the book&#8217;s accompanying website here. This book is now online here and completely freely available.'>1</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://owid.netlify.com/roser/graphs/wheat_price_LongRun_inEngland/wheat_price_LongRun_inEngland.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://owid.netlify.com/roser/graphs/wheat_price_LongRun_inEngland/wheat_price_LongRun_inEngland.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="https://owid.netlify.com/roser/graphs/wheat_price_LongRun_inEngland/wheat_price_LongRun_inEngland.html">Full screen view</a> <a href="https://owid.netlify.com/wp-content/uploads/2013/10/ourworldindata_wheat-prices-1264-1996-in-constant-1996-pounds-%E2%80%93-makridakis-wheelwright-and-hyndman-1997.png">Download as static image</a> <a href="https://owid.netlify.com/roser/graphs/wheat_price_LongRun_inEngland/wheat_price_LongRun_inEngland.csv">Download Data</a> </address>
+<h4 id="long-term-food-commodity-prices-since-1850"> <a class="deep-link" href="#long-term-food-commodity-prices-since-1850"># </a>Long-term food commodity prices since 1850</h4>
+<p>The following visualisation shows long-term commodity price indexes across various food items since 1850, relative to real prices in the year 1900 (i.e. prices in 1900 = 100).<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/long-term-price-index-in-food-commodities-1850-2015?shown=Lamb+Beef+Pork+Corn+Rice+Wheat" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/long-term-price-index-in-food-commodities-1850-2015?shown=Lamb+Beef+Pork+Corn+Rice+Wheat" width="300" height="150"></iframe></noscript></p>
+<h4 id="long-term-comparison-of-us-manufacturing-wages-and-food-prices"> <a class="deep-link" href="#long-term-comparison-of-us-manufacturing-wages-and-food-prices"># </a>Long-term comparison of US manufacturing wages and food prices</h4>
+<p>The following visualisations show the relative difference in average USA manufacturing wages relative to the price of food commodities based on Bureau of Labor Statistics data.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='This data is taken from the report &#8216;100 Years of U.S. Consumer Spending: Data for the Nation, New York City, and Boston&#8217; published by the Bureau of Labor Statistics (BLS Report 991). Online here. More specifically it is taken from the chapter on 2002-3 online here. I have taken the idea for this graph from The Atlantic online here.'>2</sup></a></p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/wages-in-the-manufacturing-sector-vs-several-food-prices-usa" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/wages-in-the-manufacturing-sector-vs-several-food-prices-usa" width="300" height="150"></iframe></noscript><br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/how-much-food-can-you-buy-for-working-one-hour-in-the-manufacturing-sector" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/how-much-food-can-you-buy-for-working-one-hour-in-the-manufacturing-sector" width="300" height="150"></iframe></noscript></p>
+<h3 id="food-prices-in-the-recent-past"> <a class="deep-link" href="#food-prices-in-the-recent-past"># </a>Food prices in the recent past</h3>
+<p>The FAO Food Price Index (FPI) is a measure of the international prices of food (e.g., between suppliers or nations), while the food consumer price index (CPI) is a measure of the price of food to the actual consumer. The following graphs show that &#8220;the FPI translate to higher consumer prices only to a very limited degree and with a time lag of a few months.&#8221; The lag is often due to the time needed to harvest, transport and process food to the consumer. The limited relationship in the magnitude of the two indices &#8220;is explained by a combination of factors that determine vertical price transmission in every food economy, including mark-ups for transportation, processing and marketing, and by any subsidies at the consumer level.&#8221;<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='The source is FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online here. The FAO is the source and copyright holder of this material.'>3</sup></a></p>
+<h6>Global food consumer price index (CPI) &amp; FAO food price index (right-hand scale), 2001-2013 – FAO (2013)<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='The source is FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online here. The FAO is the source and copyright holder of this material.'>4</sup></a></p>
+<p><img class="aligncenter size-medium wp-image-2693" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130-645x261.png" alt="Global Food CPI &amp; FAO Food Price Index (right-hand scale) (2001-2013) – FAO (2013)0" width="645" height="261" srcset="/wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130-645x261.png 645w, /wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130.png 994w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2693" src="https://owid.netlify.com/wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130-645x261.png" alt="Global Food CPI &amp; FAO Food Price Index (right-hand scale) (2001-2013) – FAO (2013)0" width="645" height="261" srcset="/wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130-645x261.png 645w, /wp-content/uploads/2013/10/global-food-cpi-fao-food-price-index-right-hand-scale-2001-2013-fao-20130.png 994w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h3 id="food-price-volatility"> <a class="deep-link" href="#food-price-volatility"># </a>Food Price Volatility</h3>
+<h4 id="consequences-of-high-food-price-volatility"> <a class="deep-link" href="#consequences-of-high-food-price-volatility"># </a>Consequences of High Food Price Volatility</h4>
+<p>The volatility of food prices matters especially for the wellbeing of poorer people since the price increases can translate into shortages of food supply at low income levels. The following visualisations show the declining volatility over the very long-run in various locations. Especially important for this decline was the increasing integration into larger markets so that poor harvests in one area can be compensated by importing food from regions less affected by worse harvests.</p>
+<h6>Volatility of real wages of laborers in Stockholm/Sweden, 1468–2004, measured as the percentage year-on-year change in real wages – Söderberg (2010)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. The article by Söderberg is online at the Swedish Riksbank here. The entire book is also available at the Swedish Riksbank here.'>5</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2730" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100-645x427.png" alt="Volatility of real wages of labourers in Stockholm:Sweden (1468–2004), measured as the percentage year-on-year change in real wages – Söderberg (2010)0" width="645" height="427" srcset="/wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100-645x427.png 645w, /wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100.png 1021w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2730" src="https://owid.netlify.com/wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100-645x427.png" alt="Volatility of real wages of labourers in Stockholm:Sweden (1468–2004), measured as the percentage year-on-year change in real wages – Söderberg (2010)0" width="645" height="427" srcset="/wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100-645x427.png 645w, /wp-content/uploads/2013/10/volatility-of-real-wages-of-labourers-in-stockholmsweden-1468-2004-measured-as-the-percentage-year-on-year-change-in-real-wages-soderberg-20100.png 1021w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h6 id="real-wages-of-unskilled-laborers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-2010ref"> <a class="deep-link" href="#real-wages-of-unskilled-laborers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-2010ref"># </a>Real wages of unskilled laborers in Stockholm, 1365-1864, and industrial workers in Sweden, 1865–2004 (index 1950=100) – Söderberg (2010)<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. The article by Söderberg is online at the Swedish Riksbank here. The entire book is also available at the Swedish Riksbank here. Note by the authors: A vertical line marks the change in 1865 from unskilled labourers in Stockholm to industrial workers in Sweden.'>6</sup></a></p>
+<p><img class="aligncenter size-medium wp-image-2731" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-645x415.png" alt="Real wages of unskilled labourers in Stockholm, (1365-1864), and industrial workers in Sweden 1865–2004 (index 1950=100) – Söderberg (2010)0" width="645" height="415" srcset="/wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-645x415.png 645w, /wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-1024x659.png 1024w, /wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100.png 1031w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2731" src="https://owid.netlify.com/wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-645x415.png" alt="Real wages of unskilled labourers in Stockholm, (1365-1864), and industrial workers in Sweden 1865–2004 (index 1950=100) – Söderberg (2010)0" width="645" height="415" srcset="/wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-645x415.png 645w, /wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100-1024x659.png 1024w, /wp-content/uploads/2013/10/real-wages-of-unskilled-labourers-in-stockholm-1365-1864-and-industrial-workers-in-sweden-1865-2004-index-1950100-soderberg-20100.png 1031w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h6>Volatility of the deflator consumer price index (CPI), 1291-2004, measured as the percentage year-on-year change in the CPI – Söderberg (2010)<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. The article by Söderberg is online at the Swedish Riksbank here. The entire book is also available at the Swedish Riksbank here.'>7</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2732" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100-645x427.png" alt="Volatility of the deflator CPI, (1291-2004), measured as the percentage year-on-year change in the CPI – Söderberg (2010)0" width="645" height="427" srcset="/wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100-645x427.png 645w, /wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100.png 1012w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2732" src="https://owid.netlify.com/wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100-645x427.png" alt="Volatility of the deflator CPI, (1291-2004), measured as the percentage year-on-year change in the CPI – Söderberg (2010)0" width="645" height="427" srcset="/wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100-645x427.png 645w, /wp-content/uploads/2013/10/volatility-of-the-deflator-cpi-1291-2004-measured-as-the-percentage-year-on-year-change-in-the-cpi-soderberg-20100.png 1012w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h6>Volatility in real wages and in the deflator consumer price index (CPI), 1291–2004, measured as the standard deviation of the percentage year-on-year change – Söderberg (2010)<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. The article by Söderberg is online at the Swedish Riksbank here. The entire book is also available at the Swedish Riksbank here.'>8</sup></a></h6>
+
+<table id="tablepress-37" class="tablepress tablepress-id-37">
+<thead>
+<tr class="row-1">
+	<th class="column-1">Period</th><th class="column-2">Volatility of real wages</th><th class="column-3">Volatility of deflator CPI</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1">1291 - 1399</td><td class="column-2"></td><td class="column-3">38.1</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1">1400 - 99</td><td class="column-2"></td><td class="column-3">17.8</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1">1500 - 99</td><td class="column-2">20</td><td class="column-3">19.2</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1">1600 - 99</td><td class="column-2">16.4</td><td class="column-3">14.7</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1">1700 - 99</td><td class="column-2">13.3</td><td class="column-3">12.6</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1">1800 - 99</td><td class="column-2">9.5</td><td class="column-3">6.9</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1">1900 - 2004</td><td class="column-2">4.7</td><td class="column-3">7</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-37 from cache -->
+<h4 id="long-run-evidence-of-the-decrease-of-volatility"> <a class="deep-link" href="#long-run-evidence-of-the-decrease-of-volatility"># </a>Long Run Evidence of the Decrease of Volatility</h4>
+<h6> Year-to-year variation in the price of wheat in pisa, 1351-1799 – Ó Gráda<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='This is taken from Ó Gráda (2007) – Making Famine History. Journal of Economic Literature. Vol. 45, No. 1 (Mar., 2007), pp. 5-38. Online here at the Research Repository from the University College Dublin. As noted at the pdf the paper is licensed under Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Ireland.'>9</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2741" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/pastedImage693-645x352.png" alt="pastedImage693" width="645" height="352" srcset="/wp-content/uploads/2013/10/pastedImage693-645x352.png 645w, /wp-content/uploads/2013/10/pastedImage693.png 974w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2741" src="https://owid.netlify.com/wp-content/uploads/2013/10/pastedImage693-645x352.png" alt="pastedImage693" width="645" height="352" srcset="/wp-content/uploads/2013/10/pastedImage693-645x352.png 645w, /wp-content/uploads/2013/10/pastedImage693.png 974w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h6 id="coefficients-of-variation-for-wheat-and-rye-combined-market-integration-in-the-north-and-baltic-seas-1500-1800-jacks-2000ref"> <a class="deep-link" href="#coefficients-of-variation-for-wheat-and-rye-combined-market-integration-in-the-north-and-baltic-seas-1500-1800-jacks-2000ref"># </a>Coefficients of variation for wheat and rye combined &#8211; market integration in the North and Baltic Seas, 1500-1800 – Jacks (2000)<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='This is taken David S. Jacks (2000) – Market Integration in the North and Baltic Seas, 1500-1800. Department of Economic History. London School of Economics. The paper is online here. &nbsp; The coefficient of variation is defined as the ratio of the standard deviation to the mean.'>10</sup></a></p>
+<p><img class="aligncenter size-full wp-image-2742" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/coefficients-of-variation-for-wheat-and-rye-combined-market-integration-in-the-north-and-baltic-seas-1500-1800-jacks.png" alt="Coefficients of Variation for Wheat and Rye combined- Market integration in the North and Baltic Seas, (1500-1800) – Jacks" width="643" height="439" /><noscript><img class="aligncenter size-full wp-image-2742" src="https://owid.netlify.com/wp-content/uploads/2013/10/coefficients-of-variation-for-wheat-and-rye-combined-market-integration-in-the-north-and-baltic-seas-1500-1800-jacks.png" alt="Coefficients of Variation for Wheat and Rye combined- Market integration in the North and Baltic Seas, (1500-1800) – Jacks" width="643" height="439" /></noscript></p>
+<h4 id="recent-trends-in-food-price-volatility"> <a class="deep-link" href="#recent-trends-in-food-price-volatility"># </a>Recent trends in food price volatility</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/domestic-food-price-volatility-index" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/domestic-food-price-volatility-index" width="300" height="150"></iframe></noscript></p>
+<h3 id="consumer-expenditure-on-food"> <a class="deep-link" href="#consumer-expenditure-on-food"># </a>Consumer expenditure on food</h3>
+<h4 id="per-capita-food-expenditure"> <a class="deep-link" href="#per-capita-food-expenditure"># </a>Per capita food expenditure</h4>
+<p>In the map below we see the average per capita food expenditure in 2015 across select countries, as published by the United States Department for Agriculture (USDA). Food expenditures are measured in US$.</p>
+<p>Overall we see large differences in food expenditure across the world. The average Swiss expenditure in 2015 was $3,763 in 2015 &#8211; more than 20 times higher than the average Venezuelan who spent only $165.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/food-expenditure-per-person-per-year-2015" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/food-expenditure-per-person-per-year-2015" width="300" height="150"></iframe></noscript></p>
+<h4 id="food-expenditure-as-a-share-of-total-consumer-expenditure"> <a class="deep-link" href="#food-expenditure-as-a-share-of-total-consumer-expenditure"># </a>Food expenditure as a share of total consumer expenditure</h4>
+<p>In the chart below we see the share of total consumer expenditure spent on food across select countries in 2015. For some countries, food constitutes a large share of expenditure &#8211; Nigerians spent 56 percent of total expenditure on food. For others, food constitutes a small share &#8211; in the United States, this share was only 6 percent. This relationship is explained by a concept called &#8216;Engel&#8217;s Law&#8217; which <a href="https://owid.netlify.com/food-prices/#engels-law">we explore</a> in the Correlates section of this entry.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-consumer-expenditure-spent-on-food-2015" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-consumer-expenditure-spent-on-food-2015" width="300" height="150"></iframe></noscript><br />
+<!------------------------------><br />
+<!------------------------------></p>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<h3 id="determinants-of-food-prices"> <a class="deep-link" href="#determinants-of-food-prices"># </a>Determinants of Food Prices</h3>
+<h6>Correlation coefficients between % yield and % price inverted, 1211-1491 – Campbell<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='This is taken from Campbell (2007) &#8211; &#8216;Three Centuries of English Crop Yields, 1211-1491.&#8217; published by Bruce M. S. Campbell. Online here.[accessed on 08/10/2013] The author, who is a professor at Queen&#8217;s University Belfast (academic website), is the copyright holder.'>11</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2694" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0-645x387.png" alt="Correlation Coefficients between yield and price inverted (1211-1491) – Campbell0" width="645" height="387" srcset="/wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0-645x387.png 645w, /wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0.png 996w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2694" src="https://owid.netlify.com/wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0-645x387.png" alt="Correlation Coefficients between yield and price inverted (1211-1491) – Campbell0" width="645" height="387" srcset="/wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0-645x387.png 645w, /wp-content/uploads/2013/10/correlation-coefficients-between-yield-and-price-inverted-1211-1491-campbell0.png 996w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h4 id="food-vs-fuel-food-and-energy-prices"> <a class="deep-link" href="#food-vs-fuel-food-and-energy-prices"># </a>Food vs. fuel: food and energy prices</h4>
+<p>In the chart below we see the long-term global commodity price index of cereal crops (wheat and corn) alongside the oil price index since 1850. Although not perfectly matched, we see some relationship between the two: increases in oil (energy) prices tend to result in increases in cereal prices.</p>
+<p>This relationship may be attributed to two key reasons. Firstly, most modern agricultural and food systems require energy inputs (either in the form of on-farm machinery, transportation, distribution or storage energy). Increases in energy prices can inevitably have an impact of producer and distribution costs, resulting in higher food prices. Studies have suggest that the passthrough of price changes in energy and transport inputs to agricultural commodities to result in a price increase of approximately 15-20 percent.<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Gilbert, C. L. (2010). How to understand high food prices. Journal of Agricultural Economics, 61(2), 398-425. Available online.'>12</sup></a></p>
+<p>The second potential reasoning for this relationship relates to the allocation of crops to biofuels &#8211; an important consideration in terms of food security. The rationale follows that a rise in oil prices drive demand in the production of biofuels; this increased diversion of food crops to biofuel production reduces food supplies, resulting in an increase in price. The role of biofuel production on food prices and food security remains strongly contested. Following the rise in food prices over the period 2005-2008, several authors &#8211; including the World Bank &#8211; attributed the largest driver to be increased biofuel production in the United States and European Union.<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='Mitchell, Donald. 2008. A note on rising food prices. Policy Research working paper ; no. WPS 4682. Washington, DC: World Bank. Available online.'>13</sup></a> The authors state that the rise in food prices &#8221; the most important factor [in higher food prices] was the large increase in biofuels production in the U.S. and the EU. Without these increases, global wheat and maize stocks would not have declined appreciably, oilseed prices would not have tripled, and price increases due to other factors, such as droughts, would have been more moderate.&#8221;</p>
+<p>Other studies which assess the relative contributions of different drivers of food prices suggest the price relationship between biofuel and food commodities is more complex. Zilberman et al. (2012) conclude that the introduction of biofuels can affect food prices but this impact various significantly by crop type and location; this effect is less marked when biofuel production is not competing for natural resources with food crops.<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='Zilberman, D., Hochman, G., Rajagopal, D., Sexton, S., &amp; Timilsina, G. (2012). The impact of biofuels on commodity food prices: Assessment of findings. American Journal of Agricultural Economics, 95(2), 275-281. Available online.'>14</sup></a> For example, the use of sugarcane ethanol in Brazil or use of non-food crop biofuels (such as miscanthus grasses) are likely to have a smaller impact on food prices relative to cereals such as wheat or corn. The authors also note that the impact of biofuels on food prices can be significant, but less so than other drivers such as economic growth, or the introduction of genetically-modified crops (which have the opposite effect on prices).</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/commodity-price-index-of-cereal-crops-and-petroleum-1850-2015" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/commodity-price-index-of-cereal-crops-and-petroleum-1850-2015" width="300" height="150"></iframe></noscript></p>
+<h3 id="determinants-of-food-price-volatility"> <a class="deep-link" href="#determinants-of-food-price-volatility"># </a>Determinants of Food Price Volatility</h3>
+<h4 id="evidence-of-the-increase-of-food-trade-and-the-effect-of-trade-on-food-price-volatility"> <a class="deep-link" href="#evidence-of-the-increase-of-food-trade-and-the-effect-of-trade-on-food-price-volatility"># </a>Evidence of the Increase of Food Trade and the Effect of Trade on Food Price Volatility</h4>
+<h6>Average distance of world wheat production from London, 1866-1930 – Olmstead &amp; Rhode (2007)<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='This is taken from Alan L. Olmstead and Paul W. Rhode &#8211; &#8216;Biological Globalization&#8217; in Hatton, O&#8217;Rourke, and Taylor (ed.) (2007) &#8211; New Comparative Economic History: Essays in Honor of Jeffrey G. Williamson. MIT Press.'>15</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2744" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode-569x500.png" alt="Average distance of world wheat production from London, (1866-1930) – Olmstead &amp; Rhode" width="569" height="500" srcset="/wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode-569x500.png 569w, /wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode.png 692w" sizes="(max-width: 569px) 100vw, 569px" /><noscript><img class="aligncenter size-medium wp-image-2744" src="https://owid.netlify.com/wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode-569x500.png" alt="Average distance of world wheat production from London, (1866-1930) – Olmstead &amp; Rhode" width="569" height="500" srcset="/wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode-569x500.png 569w, /wp-content/uploads/2013/10/average-distance-of-world-wheat-production-from-london-1866-1930-olmstead-rhode.png 692w" sizes="(max-width: 569px) 100vw, 569px" /></noscript></p>
+<h6>Anglo-American wheat Trade, volume and price, 1800-2000 – O&#8217;Rourke &amp; Williamson (2005)<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='This is taken from O&#8217;Rourke &amp; Williamson (2005) – From Malthus to Ohlin: Trade, Industrialisation and Distribution Since 1500. Journal of Economic Growth. March 2005, Volume 10, Issue 1, pp 5-34. Online here at the Journal of Economic Growth and here at the University of Oxford.'>16</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2745" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050-645x430.png" alt="Anglo-American Wheat Trade, Volume and Price (1800-2000) – O'Rourke &amp; Williamson (2005)0" width="645" height="430" srcset="/wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050-645x430.png 645w, /wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050.png 988w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2745" src="https://owid.netlify.com/wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050-645x430.png" alt="Anglo-American Wheat Trade, Volume and Price (1800-2000) – O'Rourke &amp; Williamson (2005)0" width="645" height="430" srcset="/wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050-645x430.png 645w, /wp-content/uploads/2013/10/anglo-american-wheat-trade-volume-and-price-1800-2000-orourke-williamson-20050.png 988w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<p>In the following graph you see two important aspects: Firstly the correlation between price correlation and distance and, secondly, how in India between 1750-1830 and 1870-1914 the agricultural market became more integreated, and the price differences between different regions were reduced.</p>
+<h6 id="market-integration-in-japan-indonesia-and-india-average-correlation-coefficient-vs-distance-1750-1914-van-zanden-2009ref"> <a class="deep-link" href="#market-integration-in-japan-indonesia-and-india-average-correlation-coefficient-vs-distance-1750-1914-van-zanden-2009ref"># </a>Market integration in Japan, Indonesia and India &#8211; average correlation coefficient vs. distance, 1750-1914 – Van Zanden (2009)<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='This is taken from Van Zanden (2009) – The Long Road to the Industrial Revolution. Brill Academic Publishers. The book&#8217;s website at the publisher is here. The original sources of the author are: Studer (2008), Shuie and Keller (2007), and own calculations based on Iwahashi (1981) rice price data in annual Colonial Reports of Indonesia (Indisch Verslag, 1878–1896)'>17</sup></a><br />
+<strong><img class="aligncenter size-full wp-image-2746" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/market-integration-in-japan-indonesia-and-india-average-correlation-coefficient-vs-distance-1750-1914-van-zanden-20090.png" alt="Market integration in Japan, Indonesia and India - average correlation coefficient vs. distance (1750-1914) - Van Zanden (2009)0" width="542" height="344" /><noscript><img class="aligncenter size-full wp-image-2746" src="https://owid.netlify.com/wp-content/uploads/2013/10/market-integration-in-japan-indonesia-and-india-average-correlation-coefficient-vs-distance-1750-1914-van-zanden-20090.png" alt="Market integration in Japan, Indonesia and India - average correlation coefficient vs. distance (1750-1914) - Van Zanden (2009)0" width="542" height="344" /></noscript></strong></p>
+<h4 id="kerala-study-of-the-effect-of-mobile-phone-adoptions-on-price-volatility-the-digital-provide"> <a class="deep-link" href="#kerala-study-of-the-effect-of-mobile-phone-adoptions-on-price-volatility-the-digital-provide"># </a>Kerala Study of the Effect of Mobile Phone Adoptions on Price Volatility &#8211; The Digital Provide</h4>
+<h6 id="mobile-phone-adoption-by-fishermen-jensen-2007ref"> <a class="deep-link" href="#mobile-phone-adoption-by-fishermen-jensen-2007ref"># </a>Mobile phone adoption by fishermen – Jensen (2007)<a id='ref-18' class='side-matter side-matter-ref' href='#note-18'><sup class='side-matter side-matter-sup' title='This is taken from Jensen (2007) – The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector. In The Quarterly Journal of Economics, 122, 3, 879&#8211;924. Online here at The Quarterly Journal of Economics website. Here is an overview of several available versions of this paper. And here are the slides on this paper at Yale University.'>18</sup></a></p>
+<p><strong><img class="aligncenter size-medium wp-image-2747" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-645x437.png" alt="Mobile Phone Adoption by Fishermen – Jensen (2007)0" width="645" height="437" srcset="/wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-645x437.png 645w, /wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-1024x695.png 1024w, /wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070.png 1025w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2747" src="https://owid.netlify.com/wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-645x437.png" alt="Mobile Phone Adoption by Fishermen – Jensen (2007)0" width="645" height="437" srcset="/wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-645x437.png 645w, /wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070-1024x695.png 1024w, /wp-content/uploads/2013/10/mobile-phone-adoption-by-fishermen-jensen-20070.png 1025w" sizes="(max-width: 645px) 100vw, 645px" /></noscript><br />
+</strong></p>
+<h6 id="prices-and-mobile-phone-service-in-kerala-jensen-2007ref"> <a class="deep-link" href="#prices-and-mobile-phone-service-in-kerala-jensen-2007ref"># </a>Prices and mobile phone service in Kerala – Jensen (2007)<a id='ref-19' class='side-matter side-matter-ref' href='#note-19'><sup class='side-matter side-matter-sup' title='This is taken from Jensen (2007) – The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector. In The Quarterly Journal of Economics, 122, 3, 879&#8211;924. Online here at The Quarterly Journal of Economics website. Here is an overview of several available versions of this paper. And here are the slides on this paper at Yale University.'>19</sup></a></p>
+<p><img class="aligncenter size-medium wp-image-2748" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-645x455.png" alt="Prices and Mobile Phone Service in Kerala – Jensen (2007)0" width="645" height="455" srcset="/wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-645x455.png 645w, /wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-1024x723.png 1024w, /wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070.png 1135w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2748" src="https://owid.netlify.com/wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-645x455.png" alt="Prices and Mobile Phone Service in Kerala – Jensen (2007)0" width="645" height="455" srcset="/wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-645x455.png 645w, /wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070-1024x723.png 1024w, /wp-content/uploads/2013/10/prices-and-mobile-phone-service-in-kerala-jensen-20070.png 1135w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h4 id="the-effect-of-protectionism"> <a class="deep-link" href="#the-effect-of-protectionism"># </a>The Effect of Protectionism</h4>
+<h6 id="decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007ref"> <a class="deep-link" href="#decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007ref"># </a>Decomposition of ‘world’ price variance, 1830-1913 – Federico and Persson (2007)<a id='ref-20' class='side-matter side-matter-ref' href='#note-20'><sup class='side-matter side-matter-sup' title='This is taken from Giovanni Federico and Karl Gunnar Persson (2007) &#8211; &#8216;Market Integration and Convergence in the World Wheat Market&#8217; in Hatton, O&#8217;Rourke, and Taylor (ed.) (2007) &#8211; New Comparative Economic History: Essays in Honor of Jeffrey G. Williamson. MIT Press.'>20</sup></a></p>
+<p><img class="aligncenter size-medium wp-image-2750" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007-486x500.png" alt="Decomposition of ‘world’ price variance, (1830-1913) – Federico and Persson (2007)" width="486" height="500" srcset="/wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007-486x500.png 486w, /wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007.png 630w" sizes="(max-width: 486px) 100vw, 486px" /><noscript><img class="aligncenter size-medium wp-image-2750" src="https://owid.netlify.com/wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007-486x500.png" alt="Decomposition of ‘world’ price variance, (1830-1913) – Federico and Persson (2007)" width="486" height="500" srcset="/wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007-486x500.png 486w, /wp-content/uploads/2013/10/decomposition-of-world-price-variance-1830-1913-federico-and-persson-2007.png 630w" sizes="(max-width: 486px) 100vw, 486px" /></noscript></p>
+<h3 id="determinants-of-food-expenditure"> <a class="deep-link" href="#determinants-of-food-expenditure"># </a>Determinants of Food Expenditure</h3>
+<h4 id="engels-law"> <a class="deep-link" href="#engels-law"># </a>Engel&#8217;s Law</h4>
+<p>In 1857, the economist Ernest Engel wrote: &#8220;the poorer a family, the greater the proportion of its total expenditure that must be devoted to the provision of food&#8221;, with later extension of this concept to national and global levels.<a id='ref-21' class='side-matter side-matter-ref' href='#note-21'><sup class='side-matter side-matter-sup' title='Engel, Ernst (1857). &#8220;Die Productions- und Consumtionsverhältnisse des Königreichs Sachsen&#8221;. Zeitschrift des statistischen Bureaus des Königlich Sächsischen Ministerium des Inneren. 8–9: 28–29. Available online.'>21</sup></a> This later became known as &#8216;Engel&#8217;s Law&#8217;.</p>
+<p>&#8216;Engel&#8217;s Law&#8217; states that as incomes rise, the proportion of consumer expenditure spent on food falls, even if food expenditure rises in absolute terms. We can see this relationship in the following two charts across select countries of varying income levels. In the first chart we see the relationship between the share of consumer expenditure spent on food (y-axis) versus gross domestic product (GDP) per capita. Overall we see that countries at lower incomes tend to spend a much higher percentage of expenditure on food; countries with per capita GDP below $5,000 tend to spend more than 30 percent of expenditure on food. Countries at the high end of the income scale tend to spend a much lower share: typically 10-15 percent.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-consumer-expenditure-spent-on-food-vs-gdp-per-capita-2015" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-consumer-expenditure-spent-on-food-vs-gdp-per-capita-2015" width="300" height="150"></iframe></noscript></p>
+<p>Those at higher incomes tend to spend a lower share of expenditure on food &#8211; this is despite the fact that they tend to spend more on food in absolute terms. In the chart below we see total food expenditure (in US$ in 2015) on the y-axis versus GDP per capita. Here we see that as incomes rise we spend more money on food in absolute terms; the average person in Switzerland spends more than 10 times as much on food than the average Indian. However, this is despite the fact that the average Indian spends more than three times as much as a share of total expenditure, as seen in the chart above (the average Indian spends 31 percent of total expenditure on food, versus only 9 percent in Switzerland).</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/annual-food-expenditure-per-person-vs-gdp-per-capita" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/annual-food-expenditure-per-person-vs-gdp-per-capita" width="300" height="150"></iframe></noscript></p>
+<p>So, as incomes rise we tend to allocate a smaller share of total expenditure on food (and spend it instead on other goods and services) <em>despite</em> spending more on food in absolute terms (as seen in the chart below).</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/share-of-total-expenditure-spent-on-food-vs-food-expenditure-per-person" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/share-of-total-expenditure-spent-on-food-vs-food-expenditure-per-person" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p><!------------------------------><br />
+<!------------------------------></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<h3 id="fao-food-price-index"> <a class="deep-link" href="#fao-food-price-index"># </a>FAO Food Price Index</h3>
+<p>“The FAO Food Price Index is a measure of the monthly change in international prices of a basket of food commodities. It consists of the average of five commodity group price indices [cereal, vegetable, dairy, meat and sugar], weighted with the average export shares.&#8221;<a id='ref-22' class='side-matter side-matter-ref' href='#note-22'><sup class='side-matter side-matter-sup' title='Definition from the FAO itself'>22</sup></a></p>
+<p><!------------------------------><br />
+<!------------------------------></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="historical-statistics-on-food-prices"> <a class="deep-link" href="#historical-statistics-on-food-prices"># </a>Historical Statistics on Food Prices</h3>
+<h5 id="food-price-data-by-david-jacks"> <a class="deep-link" href="#food-price-data-by-david-jacks"># </a>Food Price Data by David Jacks</h5>
+<ul>
+<li><strong>Data:</strong> David Jacks an expert in agricultural history publishes many food price series on his website.</li>
+<li><strong>Geographical coverage:</strong> Many countries and regions around the world</li>
+<li><strong>Time span:</strong> Some of the series go back to the Middle Ages but most start after 1800.</li>
+<li><strong>Available at:</strong> David Jacks personal website <a href="https://www.sfu.ca/~djacks/data/index.html">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="food-price-data-by-nicholas-poynder"> <a class="deep-link" href="#food-price-data-by-nicholas-poynder"># </a>Food Price Data by Nicholas Poynder</h5>
+<ul>
+<li><strong>Data:</strong> Monthly grain prices</li>
+<li><strong>Geographical coverage:</strong> Different places in England</li>
+<li><strong>Time span:</strong> 1270-1955</li>
+<li><strong>Available at:</strong> The website of the International Institute of Social History <a href="https://www.iisg.nl/hpw/poynder-england.php">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="data-on-food-prices-in-recent-decades"> <a class="deep-link" href="#data-on-food-prices-in-recent-decades"># </a>Data on Food Prices in Recent Decades</h3>
+<h5 id="fao-food-and-agricultural-price-statistics"> <a class="deep-link" href="#fao-food-and-agricultural-price-statistics"># </a>FAO – Food and agricultural price statistics</h5>
+<ul>
+<li><strong>Data:</strong> Food prices of over 200 commodities for primary crops, live animals and livestock – “representing over 97 percent of the world’s value of gross agricultural production” (FAO). Producer prices and producer and consumer price indices.</li>
+<li><strong>Geographical coverage:</strong> Over 130 countries.</li>
+<li><strong>Time span:</strong> The up-to-now series go back to 1991, whilst the Price Archive contains historical data from 1966 to 1990 (these series are not always comparable). Monthly and annual data.</li>
+<li><strong>Available at:</strong> The FAO Food and Agricultural Price Statistics are online <a href="https://faostat.fao.org/site/351/default.aspx%20">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="fao-food-price-level-index"> <a class="deep-link" href="#fao-food-price-level-index"># </a>FAO – Food Price Level Index</h5>
+<ul>
+<li><strong>Data:</strong> FAO Food Price Index</li>
+<li><strong>Geographical coverage:</strong> Global</li>
+<li><strong>Time span:</strong> Since 1961</li>
+<li><strong>Available at:</strong> the <a href="https://www.fao.org/worldfoodsituation/foodpricesindex/en/">FAO food price level index page</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="fao-giews-food-price-data-and-analysis-tool"> <a class="deep-link" href="#fao-giews-food-price-data-and-analysis-tool"># </a>FAO – GIEWS Food Price Data and Analysis Tool</h5>
+<ul>
+<li><strong>Data:</strong> Database with over 1170 series of prices of different food commodities</li>
+<li><strong>Geographical coverage:</strong> Over 80 countries – often several cities within the same country</li>
+<li><strong>Time span:</strong> Some series going back to 1990</li>
+<li><strong>Available at:</strong> the FAO <a href="here:%20https://www.fao.org/giews/pricetool/">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="famine-early-warning-system-fews"> <a class="deep-link" href="#famine-early-warning-system-fews"># </a>Famine Early Warning System (FEWS)</h5>
+<ul>
+<li><strong>Data:</strong> FEWS publishes country-by-country <em><strong>Price Bulletins</strong></em> that provide graphs tracking the prices of commodities that are important locally.</li>
+<li><strong>Geographical coverage:</strong> on a small scale level within countries.</li>
+<li><strong>Time span:</strong> mostly the recent past.</li>
+<li><strong>Available at:</strong> <a href="https://www.fews.net/">www.fews.net</a></li>
+<li class="no-bullet"><em> FEWS was created in 1985 by the US Agency for International Development (USAID).</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="international-coffee-organization-ico"> <a class="deep-link" href="#international-coffee-organization-ico"># </a>International Coffee Organization (ICO)</h5>
+<ul>
+<li><strong>Data:</strong> Data on coffee prices, coffee trade, coffee consumption and more is available from the International Coffee Organization (ICO).</li>
+<li><strong>Geographical coverage:</strong> Global</li>
+<li><strong>Time span:</strong> From 1990 onwards.</li>
+<li><strong>Available at:</strong> <a href="https://www.ico.org/new_historical.asp">www.ico.org</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p>&nbsp;</p>
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data is taken from Makridakis, Wheelwright, and Hyndman (1997) &#8211; Forecasting: Methods and Applications. Wiley.</h6>
+<p>The data is available at the book&#8217;s accompanying website <a href="https://robjhyndman.com/forecasting/data/">here</a>.<br />
+This book is now online <a href="https://otexts.com/fpp/">here</a> and completely freely available.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This data is taken from the report &#8216;100 Years of U.S. Consumer Spending: Data for the Nation, New York City, and Boston&#8217; published by the Bureau of Labor Statistics (BLS Report 991). Online <a href="https://www.bls.gov/opub/uscs/">here</a>. More specifically it is taken from the chapter on 2002-3 online <a href="https://www.bls.gov/opub/uscs/2002-03.pdf">here</a>.<br />
+I have taken the idea for this graph from <em>The Atlantic</em> online <a href="https://www.theatlantic.com/business/archive/2012/04/food-is-cheap/255516/">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The source is FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online <a href="https://www.fao.org/publications/sofi/2013/en/">here</a>.</p>
+<p>The FAO is the source and copyright holder of this material.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The source is FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online <a href="https://www.fao.org/publications/sofi/2013/en/">here</a>.</h6>
+<p>The FAO is the source and copyright holder of this material.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008.<br />
+The article by Söderberg is online at the Swedish Riksbank <a href="https://www.riksbank.se/Upload/Dokument_riksbank/Kat_foa/2010/9.pdf">here</a>.<br />
+The entire book is also available at the Swedish Riksbank <a href="https://www.riksbank.se/en/The-Riksbank/Research/Historical-Monetary-Statistics-/Historical-Monetary-and-Financial-Statistics-for-Sweden-Exchange-Rates-Prices-and-Wages-1277-2008/">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008.</p>
+<p>The article by Söderberg is online at the Swedish Riksbank <a href="https://www.riksbank.se/Upload/Dokument_riksbank/Kat_foa/2010/9.pdf">here</a>.</p>
+<p>The entire book is also available at the Swedish Riksbank <a href="https://www.riksbank.se/en/The-Riksbank/Research/Historical-Monetary-Statistics-/Historical-Monetary-and-Financial-Statistics-for-Sweden-Exchange-Rates-Prices-and-Wages-1277-2008/">here</a>.</p>
+<p>Note by the authors: A vertical line marks the change in 1865 from unskilled labourers in Stockholm to industrial workers in Sweden.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008.<br />
+The article by Söderberg is online at the Swedish Riksbank <a href="https://www.riksbank.se/Upload/Dokument_riksbank/Kat_foa/2010/9.pdf">here</a>.<br />
+The entire book is also available at the Swedish Riksbank <a href="https://www.riksbank.se/en/The-Riksbank/Research/Historical-Monetary-Statistics-/Historical-Monetary-and-Financial-Statistics-for-Sweden-Exchange-Rates-Prices-and-Wages-1277-2008/">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Söderberg (2010) – Long-term trends in real wages of labourers. In Rodney Edvinsson, Tor Jacobson och Daniel Waldenström (eds.) (2010) – Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008. Historical Monetary and Financial Statistics for Sweden: Exchange Rates, Prices, and Wages, 1277-2008.<br />
+The article by Söderberg is online at the Swedish Riksbank <a href="https://www.riksbank.se/Upload/Dokument_riksbank/Kat_foa/2010/9.pdf">here</a>.<br />
+The entire book is also available at the Swedish Riksbank <a href="https://www.riksbank.se/en/The-Riksbank/Research/Historical-Monetary-Statistics-/Historical-Monetary-and-Financial-Statistics-for-Sweden-Exchange-Rates-Prices-and-Wages-1277-2008/">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Ó Gráda (2007) – Making Famine History. Journal of Economic Literature. Vol. 45, No. 1 (Mar., 2007), pp. 5-38.<br />
+Online <a href="https://irserver.ucd.ie/bitstream/handle/10197/492/ogradac_article_pub_063.pdf?sequence=3">here</a> at the Research Repository from the University College Dublin.<br />
+As noted at the pdf the paper is licensed under <em>Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Ireland</em>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken David S. Jacks (2000) – Market Integration in the North and Baltic Seas, 1500-1800. Department of Economic History. London School of Economics.</p>
+<p>The paper is online <a href=" https://www.sfu.ca/~djacks/research/publications/Market%20Integration%20in%20the%20North%20and%20Baltic%20Seas,%201500-1800.pdf">here</a>.</p>
+<p>&nbsp;</p>
+<p>The coefficient of variation is defined as the ratio of the standard deviation to the mean.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Campbell (2007) &#8211; &#8216;Three Centuries of English Crop Yields, 1211-1491.&#8217; published by Bruce M. S. Campbell. Online <a href="https://www.cropyields.ac.uk">here</a>.[accessed on 08/10/2013]<br />
+The author, who is a professor at Queen&#8217;s University Belfast (<a href="https://web.archive.org/web/20151019132438/https://www.qub.ac.uk/schools/gap/Staff/AcademicStaff/ProfBruceCampbell/">academic website</a>), is the copyright holder.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Gilbert, C. L. (2010). How to understand high food prices. Journal of Agricultural Economics, 61(2), 398-425. Available <a href="https://core.ac.uk/download/pdf/6262849.pdf">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Mitchell, Donald. 2008. <i>A note on rising food prices</i>. Policy Research working paper ; no. WPS 4682. Washington, DC: World Bank. Available <a href="https://documents.worldbank.org/curated/en/229961468140943023/pdf/WP4682.pdf">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Zilberman, D., Hochman, G., Rajagopal, D., Sexton, S., &amp; Timilsina, G. (2012). The impact of biofuels on commodity food prices: Assessment of findings. <i>American Journal of Agricultural Economics</i>, <i>95</i>(2), 275-281. Available <a href="https://s3.amazonaws.com/academia.edu.documents/44272884/The_Impact_of_Biofuels_on_Commodity_Food20160331-16479-1qo4r7w.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&#038;Expires=1506359309&#038;Signature=at34seBurvjwaw2u1oDo%2F1cvzoQ%3D&#038;response-content-disposition=inline%3B%20filename%3DThe_Impact_of_Biofuels_on_Commodity_Food.pdf">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from Alan L. Olmstead and Paul W. Rhode &#8211; &#8216;Biological Globalization&#8217; in Hatton, O&#8217;Rourke, and Taylor (ed.) (2007) &#8211; New Comparative Economic History: Essays in Honor of Jeffrey G. Williamson. MIT Press. </p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This is taken from O&#8217;Rourke &amp; Williamson (2005) – From Malthus to Ohlin: Trade, Industrialisation and Distribution Since 1500. Journal of Economic Growth. March 2005, Volume 10, Issue 1, pp 5-34.<br />
+Online <a href="https://link.springer.com/article/10.1007/s10887-005-1111-5">here</a> at the Journal of Economic Growth and <a href="https://web.archive.org/web/20140801130432/https://economics.ouls.ox.ac.uk/15309/1/FromMaltus.pdf">here</a> at the University of Oxford.</p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Van Zanden (2009) – The Long Road to the Industrial Revolution. Brill Academic Publishers. The book&#8217;s website at the publisher is <a href="https://www.brill.com/long-road-industrial-revolution">here</a>.</p>
+<p>The original sources of the author are: Studer (2008), Shuie and Keller (2007), and own calculations based on Iwahashi (1981) rice price data in annual Colonial Reports of Indonesia (Indisch Verslag, 1878–1896)</p>
+					</div>
+				</li>
+								<li id='note-18' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Jensen (2007) – The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector. In The Quarterly Journal of Economics, 122, 3, 879&#8211;924.</p>
+<p>Online <a href="https://qje.oxfordjournals.org/content/122/3/879.abstract">here</a> at The Quarterly Journal of Economics website.<br />
+Here is an <a href="https://scholar.google.co.uk/scholar?cluster=14479768387379224975&amp;hl=en&amp;as_sdt=0,5&amp;as_vis=1">overview</a> of several available versions of this paper.<br />
+And <a href="https://www.econ.yale.edu/~dirkb/teach/pdf/j/jensen/2007-thedigitalprovide-slides.pdf">here</a> are the slides on this paper at Yale University.</p>
+					</div>
+				</li>
+								<li id='note-19' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Jensen (2007) – The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector. In The Quarterly Journal of Economics, 122, 3, 879&#8211;924.</p>
+<p>Online <a href="https://qje.oxfordjournals.org/content/122/3/879.abstract">here</a> at The Quarterly Journal of Economics website.<br />
+Here is an <a href="https://scholar.google.co.uk/scholar?cluster=14479768387379224975&amp;hl=en&amp;as_sdt=0,5&amp;as_vis=1">overview</a> of several available versions of this paper.<br />
+And <a href="https://www.econ.yale.edu/~dirkb/teach/pdf/j/jensen/2007-thedigitalprovide-slides.pdf">here</a> are the slides on this paper at Yale University.</p>
+					</div>
+				</li>
+								<li id='note-20' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Giovanni Federico and Karl Gunnar Persson (2007) &#8211; &#8216;Market Integration and Convergence in the World Wheat Market&#8217; in Hatton, O&#8217;Rourke, and Taylor (ed.) (2007) &#8211; New Comparative Economic History: Essays in Honor of Jeffrey G. Williamson. MIT Press. </p>
+					</div>
+				</li>
+								<li id='note-21' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Engel, Ernst (1857). &#8220;Die Productions- und Consumtionsverhältnisse des Königreichs Sachsen&#8221;. Zeitschrift des statistischen Bureaus des Königlich Sächsischen Ministerium des Inneren. 8–9: 28–29. Available <a href="https://archive.org/details/dielebenskostenb00engluoft">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-22' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Definition from the FAO itself</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=2689&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

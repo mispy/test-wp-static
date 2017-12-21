@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>War and Peace - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/war-and-peace/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fwar-and-peace%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fwar-and-peace%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="War and Peace"/>
+  <meta property="og:url" content="/war-and-peace/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This entry presents an empirical perspective on war and peace.
+We also published a data visualization history of human violence here on OurWorldInData.org which presents empirical data showing that we are now living in the most peaceful time in our species&#039; existence.
+Empirical View
+The past was"/>
+  <meta property="og:image" content="/wp-content/uploads/2013/08/ourworldindata_wars-long-run-military-civilian-fatalities-from-brecke.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="War and Peace"/>
+  <meta itemprop="description" content="This entry presents an empirical perspective on war and peace.
+We also published a data visualization history of human violence here on OurWorldInData.org which presents empirical data showing that we are now living in the most peaceful time in our species&#039; existence.
+Empirical View
+The past was"/>
+  <meta itemprop="image" content="/wp-content/uploads/2013/08/ourworldindata_wars-long-run-military-civilian-fatalities-from-brecke.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="War and Peace"/>
+  <meta name="twitter:url" content="/war-and-peace/"/>
+  <meta name="twitter:description" content="This entry presents an empirical perspective on war and peace.
+We also published a data visualization history of human violence here on OurWorldInData.org which presents empirical data showing that we are now living in the most peaceful time in our species&#039; existence.
+Empirical View
+The past was"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2013/08/ourworldindata_wars-long-run-military-civilian-fatalities-from-brecke.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-9678">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category active'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class="active"><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category active' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class="active"><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class="active"><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class=" clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-9678" class="post-9678 page type-page status-publish has-post-thumbnail hentry category-war-peace">
+			<header class="article-header">
+				<h1 class="entry-title">War and Peace</h1>									<div class='authors-byline'><a href="/about/#the-team">by Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser (2016) – &lsquo;War and Peace&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /war-and-peace/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<p>This entry presents an empirical perspective on war and peace.<br />
+We also published a data <a href="https://owid.netlify.com/VisualHistoryOf/Violence.html">visualization history of human violence</a> here on OurWorldInData.org which presents empirical data showing that we are now living in the most peaceful time in our species&#8217; existence.</p>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="the-past-was-not-peaceful"> <a class="deep-link" href="#the-past-was-not-peaceful"># </a>The past was not peaceful</h3>
+<p>It would be wrong to believe that the past was peaceful. One reason why some people might have this impression is that many of the past conflicts feature less prominently in our memories, they are simply forgotten.</p>
+<p>An overview of all the conflicts that we have historical knowledge and an estimate of the number of fatalities of is shown in the visualization below.</p>
+<p>The red circles visualize all conflicts in the Conflict Catalog (<a href="https://www.cgeh.nl/data#conflict">here</a>) authored by Peter Brecke. Brecke&#8217;s dataset contains information on 3708 conflicts, but in the more distant past it is still incomplete and for many past conflicts Brecke is either lacking an estimate of the number of fatalities or we can suspect that entire conflicts are completely unknown.</p>
+<h6>Global deaths in conflicts, since 1400<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='The Conflict Catalog (Violent Conflicts 1400 A.D. to the Present in Different Regions of the World) authored by Peter Brecke contains information on 3708 conflicts, data on parties, fatalities, date and duration between the year 1400 and 2000. It is available at the Center for Global Economic History here. The data on the military death rate after 1946 is taken from the Human Security Report Project, which takes data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online here.'>1</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke.png"><img class="aligncenter size-large wp-image-9398" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-750x490.png" alt="wars-long-run-military-civilian-fatalities-from-brecke" width="750" height="490" srcset="/wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-750x490.png 750w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-150x98.png 150w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-400x261.png 400w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-768x502.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-9398" src="https://owid.netlify.com/wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-750x490.png" alt="wars-long-run-military-civilian-fatalities-from-brecke" width="750" height="490" srcset="/wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-750x490.png 750w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-150x98.png 150w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-400x261.png 400w, /wp-content/uploads/2013/08/Wars-Long-Run-military-civilian-fatalities-from-Brecke-768x502.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h3 id="in-europe-the-second-half-of-the-20th-century-was-extraordinarily-peaceful"> <a class="deep-link" href="#in-europe-the-second-half-of-the-20th-century-was-extraordinarily-peaceful"># </a>In Europe the second half of the 20th century was extraordinarily peaceful</h3>
+<p>The following Gantt chart shows the years in which European countries (or their predecessor states) took part in an international wars. Below the country-by-country visualization we see the sum (per half century) of all years in which European countries fought wars.</p>
+<h6>Years in which European countries took part in an international war, 1500-2000<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='These data are taken from the CLIO Infra Project. The original source of these data is the Conflict Catalog by Peter Brecke, which you can access directly here.'>2</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational.png"><img class="aligncenter size-large wp-image-9397" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-750x505.png" alt="europe-only-armedconflictsinternational" width="750" height="505" srcset="/wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-750x505.png 750w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-150x101.png 150w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-400x269.png 400w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-768x517.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-9397" src="https://owid.netlify.com/wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-750x505.png" alt="europe-only-armedconflictsinternational" width="750" height="505" srcset="/wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-750x505.png 750w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-150x101.png 150w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-400x269.png 400w, /wp-content/uploads/2013/08/Europe-only-ArmedConflictsInternational-768x517.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h6>Percentage of years in which the &#8216;Great Powers&#8217; fought one another, 1500-2015<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='The data are taken from figure 5-12 in Pinker (2011) – The Better Angels of Our Nature: Why Violence Has Declined. Viking Adult. The original source of the data are Levy &amp; Thompson (2011) &#8211; The Arc of War (Origins, Escalation, and Transformation), The University of Chicago Press, Chicago and London'>3</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000.png"><img class="aligncenter size-large wp-image-5261" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-710x550.png" alt="Percentage of years in which the great powers fought one another 1500–2000" width="710" height="550" srcset="/wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-710x550.png 710w, /wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-150x116.png 150w, /wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-400x310.png 400w" sizes="(max-width: 710px) 100vw, 710px" /><noscript><img class="aligncenter size-large wp-image-5261" src="https://owid.netlify.com/wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-710x550.png" alt="Percentage of years in which the great powers fought one another 1500–2000" width="710" height="550" srcset="/wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-710x550.png 710w, /wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-150x116.png 150w, /wp-content/uploads/2013/08/ourworldindata_percentage-of-years-in-which-the-great-powers-fought-one-another-1500–2000-400x310.png 400w" sizes="(max-width: 710px) 100vw, 710px" /></noscript></a></p>
+<h6>Death rates from military conflicts in England, 1170s-1900s – Clark (2008)<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='The Source is Clark (2008) &#8211; A Farewell to Alms: A Brief Economic History of the World. Princeton University Press. The line shows a fifty year moving average of combat death rates in England.'>4</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2569" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-645x399.png" alt="Death Rates from Military Conflicts in England, 1170s–1900s - Clark0" width="645" height="399" srcset="/wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-645x399.png 645w, /wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-1024x633.png 1024w, /wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0.png 1139w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2569" src="https://owid.netlify.com/wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-645x399.png" alt="Death Rates from Military Conflicts in England, 1170s–1900s - Clark0" width="645" height="399" srcset="/wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-645x399.png 645w, /wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0-1024x633.png 1024w, /wp-content/uploads/2013/08/death-rates-from-military-conflicts-in-england-1170s-1900s-clark0.png 1139w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<p>&nbsp;</p>
+<h3 id="wars-and-other-atrocities-in-the-very-long-run"> <a class="deep-link" href="#wars-and-other-atrocities-in-the-very-long-run"># </a>Wars and Other Atrocities in the Very Long Run</h3>
+<p>A list of &#8216;Dictionaries or Encyclopedias of Wars and Battles&#8217; is presented by Peter Brecke in his article &#8216;The Long-Term Patterns of Violent Conflict in Different Regions of the World&#8217;.<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='The article is online here, and the list can be found in the appendix.'>5</sup></a></p>
+<h6>&#8216;The 100 Worst Atrocities&#8217; over the last millennia – New York Times<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='This infographic is taken from the New York Times; the original is here. The source of the data is White (2011) &#8211; The Great Book of Horrible Things &#8211; The Definitive Chronicle Of History&#8217;s 100 Worst Atrocities. W. W. Norton &amp; Company. The website of the book is here.'>6</sup></a></h6>
+<p style="text-align: center;"><em><a href="https://owid.netlify.com/wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0.png" target="_blank">CLICK HERE</a> to see <em>the infographic in more detail</em>.</em></p>
+<p style="text-align: center;"><img class="aligncenter size-medium wp-image-2568" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-379x500.png" alt="The 100 Worst Atrocities over the last Millennia - New York Times [Data from Matthew White]0" width="379" height="500" srcset="/wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-379x500.png 379w, /wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-777x1024.png 777w, /wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0.png 1400w" sizes="(max-width: 379px) 100vw, 379px" /><noscript><img class="aligncenter size-medium wp-image-2568" src="https://owid.netlify.com/wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-379x500.png" alt="The 100 Worst Atrocities over the last Millennia - New York Times [Data from Matthew White]0" width="379" height="500" srcset="/wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-379x500.png 379w, /wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0-777x1024.png 777w, /wp-content/uploads/2013/08/The-100-Worst-Atrocities-over-the-last-Millennia-New-York-Times-Data-from-Matthew-White0.png 1400w" sizes="(max-width: 379px) 100vw, 379px" /></noscript></p>
+<p>&nbsp;</p>
+<h3 id="the-20th-century"> <a class="deep-link" href="#the-20th-century"># </a>The 20th Century</h3>
+<h6>International battle deaths per 100,000 people, 20th Century – Acemoglu (2012)<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Acemoglu (2012) &#8211; The world our grandchildren will inherit: the rights revolution and beyond. Essay prepared for Economic Possibilities for Our Grandchildren edited by Ignacio Palacios-Huerta, MIT, 2012. The article is online at the website of the MIT here. The data used for this figure are the “best estimates” from the PRIO-UPSALA dataset from Lacina and Gleditsch (2005) &#8211; &#8216;Monitoring Trends in Global Combat: A New Dataset of Battle Deaths&#8217;, European Journal of Population vol. 21(2–3): 145–166. The website of the PRIO database is here. International battle deaths are those recorded in conflicts between two or more recognized states.'>7</sup></a></h6>
+<p><img class="aligncenter size-medium wp-image-2572" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-645x432.png" alt="International Battle Deaths per 100,000 (20th Century) - Acemoglu0" width="645" height="432" srcset="/wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-645x432.png 645w, /wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-1024x687.png 1024w, /wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0.png 1037w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-2572" src="https://owid.netlify.com/wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-645x432.png" alt="International Battle Deaths per 100,000 (20th Century) - Acemoglu0" width="645" height="432" srcset="/wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-645x432.png 645w, /wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0-1024x687.png 1024w, /wp-content/uploads/2013/08/International-Battle-Deaths-per-100000-20th-Century-Acemoglu0.png 1037w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h3 id="war-and-peace-after-1945"> <a class="deep-link" href="#war-and-peace-after-1945"># </a>War and Peace after 1945</h3>
+<h4 id="the-absolute-number-of-war-deaths-is-declining-since-1945"> <a class="deep-link" href="#the-absolute-number-of-war-deaths-is-declining-since-1945"># </a>The Absolute Number of War Deaths is Declining since 1945</h4>
+<p>The absolute number of war deaths has been declining since 1946. In some years in the early post-war era, around half a million people died in wars; in contrast, in 2007 (the last year for which I have data) the number of all war deaths was down to 22.139.</p>
+<p>The detailed numbers for 2007 also show which deaths are counted as war deaths:<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='This statistic is taken from the  Human Security Report Project – Miniatlas of human security (accessed April 2013). It provides data on the global number of war deaths. It is available online here.'>8</sup></a></p>
+<ul>
+<li>Number of State-Based Battle Deaths: 16773</li>
+<li>Number of Non-State Battle Deaths: 1865</li>
+<li>Number of One Sided Violence Deaths: 3501</li>
+<li>The<em> total sum of the above</em> is: 22139. This is the number of all war deaths on our planet in 2007.</li>
+</ul>
+<p>The decline of the absolute number of battle deaths is visualized in the following graph that shows global battle deaths per year by world region. There are three marked peaks in war deaths since then: the Korean War (early 1950s), the Vietnam War (around 1970) and the Iran-Iraq and Afghanistan wars (1980s).</p>
+<h6>Number of annual war battle deaths by world region, 1946-2007<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='The data is taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online here.'>9</sup></a></h6>
+<p><iframe style="border: 0px none;" data-src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_StackedArea_WarDeathsByRegion/nvd3_StackedArea_WarDeathsByRegion.html" width="100%" height="545" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_StackedArea_WarDeathsByRegion/nvd3_StackedArea_WarDeathsByRegion.html" width="100%" height="545" scrolling="no"></iframe></noscript></p>
+<address><span style="font-size: x-small;"><a class="fancybox-iframe" href="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_StackedArea_WarDeathsByRegion/nvd3_StackedArea_WarDeathsByRegion.html">Click to open in Full Screen</a></span></address>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region.png"><img class="aligncenter size-thumbnail wp-image-5259" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-150x98.png" alt="War-Deaths-by-World-Region" width="150" height="98" srcset="/wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-150x98.png 150w, /wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-400x262.png 400w, /wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-750x491.png 750w" sizes="(max-width: 150px) 100vw, 150px" /><noscript><img class="aligncenter size-thumbnail wp-image-5259" src="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-150x98.png" alt="War-Deaths-by-World-Region" width="150" height="98" srcset="/wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-150x98.png 150w, /wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-400x262.png 400w, /wp-content/uploads/2013/06/ourworldindata_war-deaths-by-world-region-750x491.png 750w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></a></p>
+<h3 id="the-share-of-war-deaths-is-declining-even-faster"> <a class="deep-link" href="#the-share-of-war-deaths-is-declining-even-faster"># </a>The Share of War Deaths is Declining even Faster</h3>
+<p>The previous graph showed absolute numbers, but as the world has seen rapid population growth (see our entry on <a title="World Population Growth" href="https://owid.netlify.com/data/population-growth-vital-statistics/world-population-growth/">global population growth</a>), it is more appropriate to look at relative numbers. The following graph therefore shows the battle deaths per 100,000 people per year. The figures are shown by type of conflict.</p>
+<h6>Rate of battle deaths in state-based armed conflicts by type of conflict, 1946-2013<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='The data from 1946 to 2008 are based on the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online here. Data for 2008 to 2013 were provided by Steven Pinker who published these estimates in Steven Pinker and Andrew Mack (Dec 2014) – The World Is Not Falling Apart, in Slate magazine here. These estimates are based on data from 2 institutes that frequently collaborate: the Uppsala Conflict Data Program (UCDP) provided all data but the data for the Syrian conflict in 2013 which were provided by PRIO. The estimate for Syria used here is the “High Estimate” since PRIO did not publish a “Best Estimate”.'>10</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type.png"><img class="aligncenter size-large wp-image-5202" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-750x536.png" alt="Wars-after-1946-State-Based-Battle-Death-Rate-By-Type" width="750" height="536" srcset="/wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-750x536.png 750w, /wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-150x107.png 150w, /wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-400x286.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-5202" src="https://owid.netlify.com/wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-750x536.png" alt="Wars-after-1946-State-Based-Battle-Death-Rate-By-Type" width="750" height="536" srcset="/wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-750x536.png 750w, /wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-150x107.png 150w, /wp-content/uploads/2013/06/ourworldindata_wars-after-1946-state-based-battle-death-rate-by-type-400x286.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<address><a class="fancybox-iframe" href="https://www.ourworldindata.org/roser/graphs/StateBasedBattleDeathRateByType/StateBasedBattleDeathRateByType.html">Full screen view of the <strong>interactive</strong> chart</a> <a href="https://www.ourworldindata.org/roser/graphs/StateBasedBattleDeathRateByType/StateBasedBattleDeathRateByType.csv">Download the data visualized in the chart</a></address>
+<h3 id="the-number-of-wars-increased-until-the-end-of-the-cold-war"> <a class="deep-link" href="#the-number-of-wars-increased-until-the-end-of-the-cold-war"># </a>The Number of Wars Increased until the End of the Cold War</h3>
+<p>As we have seen, the number of war victims varies hugely between different wars; whereas 1,200,000 died during the the Korean War (1950–1953), other wars had &#8216;just&#8217; 1,000 victims. For this reason, statistics on the number of wars should not be considered without information on the size of these conflicts.</p>
+<p>The following figure shows that the number of wars increased until the breakdown of the Soviet Union and has been decreasing since then. Extrastate conflicts are colonial conflicts that ended with the end of colonialism. Interstate conflicts – wars fought between countries – have almost ceased to exist. As other wars are becoming rare, intrastate conflicts (civil wars) in some parts of the world remain.</p>
+<h6>Number of state-based armed conflicts by type, 1946-2007<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='The data is taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online here.'>11</sup></a></h6>
+<p><iframe style="border: 0px none;" data-src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_multiBarChart_NumbersOfWarsByType/NumbersOfWarsByType.html" width="100%" height="545" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_multiBarChart_NumbersOfWarsByType/NumbersOfWarsByType.html" width="100%" height="545" scrolling="no"></iframe></noscript></p>
+<p>The increase in the number of wars shown before is predominantly an increase of smaller and smaller conflicts. This follows from the previously shown facts that the number of war victims declined while the number of conflicts increased. The decreasing deadliness of conflicts is shown in the following graph.</p>
+<h6>Deadliness of wars &#8211; average battle deaths per conflict by decade, 1950-2007<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='The data on which the calculation is based was taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The two used datasets are: the Battle Deaths from State-Based Armed Conflicts by Type of Conflict, 1946-2007 (online here) and the number of State-Based Armed Conflicts by Type, 1946-2007 (online here). The graph shows for each decade the sum of battle deaths per conflict devided by the number of conflicts of that type.'>12</sup></a></h6>
+<p> <iframe style="border: 0px none;" data-src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_multiBarChart_DeadlinessPerConflictPerTypePerDecade/DeadlinessPerConflictPerTypePerDecade.html" width="100%" height="545" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://owid.netlify.com/wp-content/uploads/nvd3/nvd3_multiBarChart_DeadlinessPerConflictPerTypePerDecade/DeadlinessPerConflictPerTypePerDecade.html" width="100%" height="545" scrolling="no"></iframe></noscript></p>
+<h3 id="ongoing-wars"> <a class="deep-link" href="#ongoing-wars"># </a>Ongoing Wars</h3>
+<p>Information on ongoing wars that is always up-to-date can be found at <a href="https://en.wikipedia.org/wiki/Ongoing_wars">Wikipedia&#8217;s List of Ongoing Military Conflicts</a>.</p>
+<p>After the documented decline of war, large parts of the world have now been peaceful for an unprecedented long period. Although wars are still fought, the world is now more peaceful than ever.<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='For more information on this claim have a look at Mueller (2009) &#8211; War Has Almost Ceased to Exist: An Assessment. In Political Science Quarterly, 124, 2, 297&#8211;321. and Pinker (2011) – The Better Angels of Our Nature: Why Violence Has Declined. Viking Adult.'>13</sup></a></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<p><strong>Definition of War</strong> Most data for the period 1945 and later are taken from the PRIO/UCDP dataset. The following definitions quoted from the <a href="https://www.hsrgroup.org/our-work/security-stats/Definitions.aspx">website of the Human Security Report Project</a> apply:</p>
+<ul>
+<li>A conflict is coded as a war when the battle-death toll reaches 1,000 or more in a given calendar year.</li>
+<li>An extrastate armed conflict is a conflict between a state and an armed group outside the state’s own territory. These are mostly colonial conflicts.</li>
+<li>An interstate armed conflict is a conflict fought between two or more states. An intrastate armed conflict (also known as a civil conflict) is a conflict between a government and a non-state group that takes place largely within the territory of the state in question.</li>
+<li>An intrastate armed conflict becomes an internationalized intrastate armed conflict when the government, or an armed group opposing it, receives support, in the form of troops, from one or more foreign states.</li>
+</ul>
+<p>For more information on definitions visit the website of the Human Security Report.</p>
+<p><!-----------------><br />
+<!-----------------></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="long-run-perspective"> <a class="deep-link" href="#long-run-perspective"># </a>Long run perspective</h3>
+<h5 id="uppsala-conflict-data-program-ucdp-and-peace-research-institute-oslo-prio"> <a class="deep-link" href="#uppsala-conflict-data-program-ucdp-and-peace-research-institute-oslo-prio"># </a>Uppsala Conflict Data Program (UCDP) and Peace Research Institute Oslo (PRIO)</h5>
+<ul>
+<li><strong>Data:</strong> Armed conflict data</li>
+<li><strong>Geographical coverage: </strong>Global</li>
+<li><strong>Time span:</strong> 1948-2008</li>
+<li><strong>Available at:</strong> Online <a href="https://www.prio.org/Data/Armed-Conflict/UCDP-PRIO/">here</a></li>
+</ul>
+<h5 id="peter-breckes-conflict-catalog"> <a class="deep-link" href="#peter-breckes-conflict-catalog"># </a>Peter Brecke&#8217;s Conflict Catalog</h5>
+<ul>
+<li><strong>Data:</strong> 3708 conflicts, data on parties, fatalities, date and duration</li>
+<li><strong>Geographical coverage: </strong>Global</li>
+<li><strong>Time span:</strong> 1400 CE to present</li>
+<li><strong>Available at:</strong> Online at <a href="https://www.cgeh.nl/data#conflict">Clio Infra</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="after-1945"> <a class="deep-link" href="#after-1945"># </a>After 1945</h3>
+<p>There are two major projects that gather on wars on a global scale for the post-war period and make their finding publicly available:</p>
+<p><strong>1. The Correlates of War Project</strong></p>
+<ul>
+<li><a href="https://www.correlatesofwar.org/data-sets">The database is here</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Correlates_of_War">The Wikipedia page is here</a></li>
+</ul>
+<p><strong>2. The PRIO, UCDP &amp; Human Security Reports</strong> PRIO and UCDP collaborate to build the data set on wars. This data set is the base for the annual publication of the Human Security Project and for most of the data in this post.</p>
+<p>Peace Research Institute of Oslo (PRIO)</p>
+<ul>
+<li><a href="https://www.prio.no/Data/Armed-Conflict/?id=348">The database is here</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Peace_Research_Institute_Oslo">The wikipedia page is here</a></li>
+</ul>
+<p>Uppsala Conflict Data Program (UCDP)</p>
+<ul>
+<li><a href="https://www.ucdp.uu.se/gpdatabase/search.php">The database is here</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Uppsala_Conflict_Data_Program">The wikipedia page is here</a></li>
+</ul>
+<p>Human Security Report Project</p>
+<ul>
+<li><a href="https://www.hsrgroup.org/our-work/security-stats/overview-security-stats.aspx">The database is here</a></li>
+<li><a href="https://www.hsrgroup.org/human-security-reports/2012/graphs-and-tables.aspx">Graphs and data for the 2012 report is available here</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Human_Security_Report_Project">The wikipedia page is here</a></li>
+</ul>
+<h5 id="data-on-civil-wars"> <a class="deep-link" href="#data-on-civil-wars"># </a>Data on Civil Wars</h5>
+<p>Data on on civil conflicts for the period 1945–99 was collected by Fearon and Laitin and can be found <a href="https://www.stanford.edu/group/ethnic/">here</a>.</p>
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The Conflict Catalog (Violent Conflicts 1400 A.D. to the Present in Different Regions of the World) authored by Peter Brecke contains information on 3708 conflicts, data on parties, fatalities, date and duration between the year 1400 and 2000.<br />
+It is available at the Center for Global Economic History <a href="https://www.cgeh.nl/data#conflict">here</a>.<br />
+The data on the military death rate after 1946 is taken from the Human Security Report Project, which takes data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online <a href="https://www.hsrgroup.org/our-work/security-stats/Deaths-from-Organized-Violence.aspx">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+These data are taken from the <a href="https://www.clio-infra.eu/">CLIO Infra Project</a>. The original source of these data is the Conflict Catalog by Peter Brecke, which you can access directly <a href="https://www.cgeh.nl/data#conflict">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data are taken from figure 5-12 in Pinker (2011) – The Better Angels of Our Nature: Why Violence Has Declined. Viking Adult.<br />
+The original source of the data are Levy &amp; Thompson (2011) &#8211; The Arc of War (Origins, Escalation, and Transformation), The University of Chicago Press, Chicago and London</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The Source is Clark (2008) &#8211; A Farewell to Alms: A Brief Economic History of the World. Princeton University Press.<br />
+The line shows a fifty year moving average of combat death rates in England.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The article is online <a href="https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=A4E9BE45048F6F88BBFD296204BB2055?doi=10.1.1.15.9141&amp;rep=rep1&amp;type=pdf">here</a>, and the list can be found in the appendix.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This infographic is taken from the New York Times; the original is <a href="https://www.nytimes.com/imagepages/2011/11/06/opinion/06atrocities_timeline.html">here</a>.<br />
+The source of the data is White (2011) &#8211; The Great Book of Horrible Things &#8211; The Definitive Chronicle Of History&#8217;s 100 Worst Atrocities. W. W. Norton &amp; Company.</p>
+<p>The website of the book is <a href="https://books.wwnorton.com/books/detail.aspx?ID=22362">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+Acemoglu (2012) &#8211; The world our grandchildren will inherit: the rights revolution and beyond. Essay prepared for Economic Possibilities for Our Grandchildren edited by Ignacio Palacios-Huerta, MIT, 2012.<br />
+The article is online at the website of the MIT <a href="https://web.archive.org/web/20141224143634/https://economics.mit.edu:80/files/7742">here</a>.</p>
+<p>The data used for this figure are the “best estimates” from the PRIO-UPSALA dataset from Lacina and Gleditsch (2005) &#8211; &#8216;Monitoring Trends in Global Combat: A New Dataset of Battle Deaths&#8217;, European Journal of Population vol. 21(2–3): 145–166.</p>
+<p>The website of the PRIO database is <a href="https://www.prio.no/Data/Armed-Conflict/">here</a>.</p>
+<p>International battle deaths are those recorded in conflicts between two or more recognized states.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This statistic is taken from the  <em>Human Security Report Project</em> – Miniatlas of human security (accessed April 2013). It provides data on the global number of war deaths. It is available online <a href="https://www.hsrgroup.org/our-work/security-stats/Deaths-from-Organized-Violence.aspx">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data is taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online <a href="https://www.hsrgroup.org/our-work/security-stats/state-based-battle-deaths-region.aspx">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data from 1946 to 2008 are based on the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online <a href="https://www.hsrgroup.org/our-work/security-stats/State-Based-Battle-Deaths-by-Type.aspx">here</a>.</p>
+<p>Data for 2008 to 2013 were provided by Steven Pinker who published these estimates in Steven Pinker and Andrew Mack (Dec 2014) – The World Is Not Falling Apart, in Slate magazine <a href="https://www.slate.com/articles/news_and_politics/foreigners/2014/12/the_world_is_not_falling_apart_the_trend_lines_reveal_an_increasingly_peaceful.html">here</a>.<br />
+These estimates are based on data from 2 institutes that frequently collaborate: the Uppsala Conflict Data Program (UCDP) provided all data but the data for the Syrian conflict in 2013 which were provided by PRIO. The estimate for Syria used here is the “High Estimate” since PRIO did not publish a “Best Estimate”.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data is taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The page presenting this data is online <a href="https://www.hsrgroup.org/our-work/security-stats/State-Based-Armed-Conflicts-By-Type.aspx">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data on which the calculation is based was taken from the Human Security Report Project which is taking data from the PRIO Battle Deaths Dataset v.3.0. The two used datasets are: the Battle Deaths from State-Based Armed Conflicts by Type of Conflict, 1946-2007 (online <a href="https://www.hsrgroup.org/our-work/security-stats/State-Based-Battle-Deaths-by-Type.aspx">here</a>) and the number of State-Based Armed Conflicts by Type, 1946-2007 (online <a href="https://www.hsrgroup.org/our-work/security-stats/State-Based-Armed-Conflicts-By-Type.aspx">here</a>). The graph shows for each decade the sum of battle deaths per conflict devided by the number of conflicts of that type.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>For more information on this claim have a look at Mueller (2009) &#8211; War Has Almost Ceased to Exist: An Assessment. In Political Science Quarterly, 124, 2, 297&#8211;321. and Pinker (2011) – The Better Angels of Our Nature: Why Violence Has Declined. Viking Adult.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=9678&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

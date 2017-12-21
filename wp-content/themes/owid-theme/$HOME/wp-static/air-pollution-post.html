@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>What is my risk of dying prematurely from air pollution? - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Air pollution: does it get worse before it gets better?' href='/air-pollution-does-it-get-worse-before-it-gets-better/' />
+<link rel='next' title='Carbon intensity in China&#8217;s recent history – Politics matters a lot in achieving both prosperity and sustainability' href='/chinese-turbulence-how-periods-of-political-reform-affect-the-carbon-intensity-of-economies/' />
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/air-pollution-post" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fair-pollution-post" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fair-pollution-post&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="What is my risk of dying prematurely from air pollution?"/>
+  <meta property="og:url" content="/air-pollution-post"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+This blog post draws on data and research discussed in our entry on Air Pollution.
+Deaths from air pollution is a topic which frequently claims newspaper headlines. Rightly so. The Worl"/>
+  <meta property="og:image" content="/wp-content/uploads/2017/04/air-pollution-deaths-as-percentage-of-global-disease-burden.png"/>
+  <meta property="article:published_time" content="2017-04-20T18:00:08+00:00"/>
+  <meta property="article:modified_time" content="2017-11-14T15:00:36+00:00" />
+  <meta property="og:updated_time" content="2017-11-14T15:00:36+00:00" />
+  <meta property="article:section" content="Uncategorized"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="What is my risk of dying prematurely from air pollution?"/>
+  <meta itemprop="description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+This blog post draws on data and research discussed in our entry on Air Pollution.
+Deaths from air pollution is a topic which frequently claims newspaper headlines. Rightly so. The Worl"/>
+  <meta itemprop="image" content="/wp-content/uploads/2017/04/air-pollution-deaths-as-percentage-of-global-disease-burden.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="What is my risk of dying prematurely from air pollution?"/>
+  <meta name="twitter:url" content="/air-pollution-post"/>
+  <meta name="twitter:description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+This blog post draws on data and research discussed in our entry on Air Pollution.
+Deaths from air pollution is a topic which frequently claims newspaper headlines. Rightly so. The Worl"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2017/04/air-pollution-deaths-as-percentage-of-global-disease-burden.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="post-template-default single single-post postid-11093 single-format-standard">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+<header class="blog-header">
+	<h1><a href="/blog">Blog</a></h1>
+</header>
+
+<div class="site-content">
+			<article id="post-11093" class="post-11093 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+			<header class="article-header">
+				<h1 class="entry-title"><a href="/air-pollution-post">What is my risk of dying prematurely from air pollution?</a></h1>
+			  	<div class='entry-meta'><time>April 20, 2017</time> by Hannah Ritchie</div>
+
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<div class="blog-info">Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.<br />
+This blog post draws on data and research discussed in our entry on <b><a href="https://owid.netlify.com/air-pollution/" target="_blank" rel="noopener">Air Pollution</a>.</b></div>
+<p>Deaths from air pollution is a topic which frequently claims newspaper headlines. Rightly so. The World Health Organization (WHO) highlights air pollution as the number one reason for environment-related deaths in the world. It’s estimated to be the cause of seven million premature deaths every year – 4.3 million from outdoor air pollution, and 2.6 million from <a href="https://owid.netlify.com/indoor-air-pollution/">indoor pollution</a>.<span style="font-size: 13.3333px;"><a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='World Health Organization. Ambient Air Pollution: A global assessment of exposure and burden of disease. World Health Organization. 1–131 (2016). Available at: doi:9789241511353'>1</sup></a> </span>With historical links to <a href="https://owid.netlify.com/air-pollution/#the-future-of-global-so2-emissions">development and economic growth</a>, we expect the number of deaths from outdoor pollution to grow (largely in Asia and Africa).</p>
+<p style="text-align: left;">We may therefore be excused for believing that our risk of dying from air pollution-related causes is growing. But, is that what the data shows? In the chart below we see percentage of global disease burden attributed to air pollution-related mortality from 1990 to 2015. At the global level, we see that since 1990, this percentage has been falling. In most countries, the likelihood of dying prematurely from air pollution has been declining over the last few decades.  This post explores how (and why) this risk has changed through time.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/air-pollution-deaths-as-percentage-of-global-disease-burden" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/air-pollution-deaths-as-percentage-of-global-disease-burden" width="300" height="150"></iframe></noscript></p>
+<p style="text-align: left;"><strong>Getting the metrics right</strong></p>
+<p style="text-align: left;">Firstly, it’s important to clarify what we mean by “premature deaths from air pollution”. We <a href="https://www.stateofglobalair.org/data/methods" target="_blank" rel="noopener">define</a> this as the number of individuals in a given year who have died earlier (in the range of months to years) than would have been expected in the absence of air pollution. In most cases, it has a chronic (rather than an acute) impact on health—acting to exacerbate or accelerate pre-existing or underlying cardiorespiratory conditions.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Xing, Y. F., Xu, Y. H., Shi, M. H. &amp; Lian, Y. X. The impact of PM2.5 on the human respiratory system. Journal of Thoracic Disease. 8, E69–E74 (2016). Available at: doi: 10.3978/j.issn.2072-1439.2016.01.19'>2</sup></a></p>
+<p style="text-align: left;">To measure the risk or likelihood of premature death for a given individual, we use age-standardized death rates. These death rates correct for population size and age structure, reporting the number of premature deaths per 100,000 people. This allows us to make comparisons among countries and through time; without this correction, the risk would appear higher in countries with a larger or older population, even if exposure and other health factors were equal.</p>
+<p style="text-align: left;">Pollution-related disease can also be attributed to several different forms of exposure. The three key sources of pollution deaths are from the indoor burning of solid fuels (<a href="https://owid.netlify.com/indoor-air-pollution/">household pollution</a>), exposure to ambient outdoor ozone (O3), and ambient outdoor particulate matter (PM) pollution. For the remainder of this post, we will be focusing on PM2.5 (particulate matter measuring less than 2.5µm in diameter, which is one of the most concerning air pollutants for human health. Whilst a number of air pollutants can have negative health impacts, there is particular concern for the smaller particles (those with a diameter of less than 2.5µm) since they can penetrate into the lungs, impacting respiratory health.</p>
+<p style="text-align: left;">However, it&#8217;s worth having a brief look at how death rates from all three sources have changed through time. In the chart below we see the death rate (per 100,000) from ozone, PM, and indoor pollution. At the global level, we see that the death rate from ozone exposure is small (less than 5%). Rates of PM and indoor pollution exposure are fairly equal (although in 2015, the rate of PM is slightly higher than that of indoor pollution). The relative contribution of the three sources varies by country. Most high-income countries experience negligible impact from indoor fuel use, in contrast to many low- to middle-income countries where household pollution is dominant.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/death-rate-by-source-from-air-pollution-per-100000" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/death-rate-by-source-from-air-pollution-per-100000" width="300" height="150"></iframe></noscript></p>
+<p style="text-align: left;"><strong>What is my risk of premature death from particulate matter? How has this changed through time?</strong></p>
+<p style="text-align: left;">In the chart below, we see the age-standardized death rate (per 100,000 people) from particulate matter (PM2.5) pollution, by country from 1990 to 2015.</p>
+<p style="text-align: left;">In almost every country in the world, death rates from air pollution have fallen since 1990. This reduction in risk has been most dramatic in transitioning economies—in China, for example, the likelihood of an individual dying prematurely from PM2.5-related causes is now 85 per 100,000 people, down from 147 in 1990. This represents a 43% reduction. In India, rates have fallen by approximately 20% since 1990.</p>
+<p>Little improvement in mortality risk seems to have been achieved in high-income countries over the last few decades. Death rates have largely stagnated, although they were already at a lower level compared with poorer countries.</p>
+<p>There remains a large difference in death rates between high-income and low- to middle-income countries. The rate in most high-income nations is between 10 to 30 deaths per 100,000 people; in China in contrast, you’re 3-4 times more likely to die prematurely, and 5-6 times more likely in India. For most transitioning economies, however, improvements in this rate seem to be continuing.</p>
+<p style="text-align: left;"><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/age-standardised-death-rate-from-ambient-pm25-air-pollution-per-100000" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/age-standardised-death-rate-from-ambient-pm25-air-pollution-per-100000" width="300" height="150"></iframe></noscript></p>
+<p style="text-align: left;"><strong>Why are pollution-related death rates falling?</strong></p>
+<p style="text-align: left;">It seems contradictory that death rates from PM2.5 pollution appear to be falling despite increased pollution exposure <a href="https://owid.netlify.com/air-pollution/#historical-perspective">across many economies</a>. If we take the example of China and India, PM2.5 concentrations have continued to increase since 1990. We might therefore expect death rates to be increasing. Why does the opposite occur?</p>
+<p style="text-align: left;">A person’s vulnerability to pollution-related disease is determined by a number of factors and the exposure to pollutants in only one of many. Also important is the individual’s overall health, wellbeing, quality of life and standard of healthcare.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Forouzanfar, M. H. et al. Global, regional, and national comparative risk assessment of 79 behavioural, environmental and occupational, and metabolic risks or clusters of risks, 1990-2015: a systematic analysis for the Global Burden of Disease Study 2015. Lancet 388, 1659–1724 (2016). Available at: doi:10.1016/S0140-6736(16)31679-8'>3</sup></a> In most countries, the mortality rates from cardiovascular diseases have fallen by virtue of improved health outcomes.<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Cohen, A. J., Brauer, M. &amp; Burnett, R. T. Estimates and 25-year trends of the global burden of disease attributable to ambient air pollution: An analysis of data from the Global burden of Diseases Study 2015. Lancet In press, 1–12 (2017). Available at: doi:10.1016/S0140-6736(17)30505-6'>4</sup></a> The increase in levels of air pollution across transitioning economies has been development-related—it has been a by-product of economic growth, increased energy production, industrial output and improved standards of living. <a href="https://owid.netlify.com/a-history-of-global-living-conditions-in-5-charts/">With development comes improved quality of life</a>, health, wellbeing and healthcare services. Transitioning economies have therefore seen major improvements in all of these aspects in recent decades—this in turn has dramatically <a href="https://owid.netlify.com/health-meta/">improved health standards</a> and decreased their vulnerability to disease. It is a result of these broad improvements that—even when the exposure to pollution increases—the risk and vulnerability to environmental exposure can fall.</p>
+<p style="text-align: left;">There have been significant differences among countries in how quickly death rates have fallen at a time of economic growth and development. Some countries have performed better than others. Whilst the reduction in mortality risk is surely an important success, death rates remain higher in China and India relative to other countries of a similar level of <a href="https://owid.netlify.com/economic-growth">prosperity</a>. Below we see the age-standardized death rate (per 100,000) (y-axis) plotted against GDP per capita (PPP in int-$) from 1990 to 2015. The size of the bubbles represents a country’s population, and they are colored by continent. You can move the slider below the chart to see the change since 1990.</p>
+<p style="text-align: left;">In 2015, we see a wide range of death rates for any given level of GDP per capita. Rates in both China and India are among the highest for their respective levels of GDP per capita. There are likely to be a number of contributing factors to this trend—the rate at which both of these economies have grown in recent decades, combined with a strong dependence on coal-fired power are likely to be important.</p>
+<p style="text-align: left;"><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/age-standardized-death-rate-from-pm25-pollution-per-100000-vs-gdp-per-capita-int-" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/age-standardized-death-rate-from-pm25-pollution-per-100000-vs-gdp-per-capita-int-" width="300" height="150"></iframe></noscript></p>
+<p style="text-align: left;"><strong>Why are the number of deaths rising, if death rates are falling?</strong></p>
+<p style="text-align: left;">Highlighting the progress which has been made in reducing individual mortality risk does not downplay the burden of global deaths from air pollution—4.3 million premature deaths from ambient PM2.5 pollution per year is an important global concern.</p>
+<p style="text-align: left;">Indeed, the absolute number of deaths globally has been increasing since 1990. In the chart below we see the absolute number of deaths per year from 1990 to 2015. At a global level, the number of deaths is dominated by economies in Asia and Africa—in 2015 China and India accounted for about 2.2 million deaths from ambient PM2.5 pollution, an increase of about 30% from 1990. The absolute number of deaths in most high-income nations, much like death rates, is comparably stagnant with some year-to-year variability.</p>
+<p>If death rates are falling, why are the absolute number of deaths still rising? The absolute number of deaths is a function of three factors: the death rate, population size, and a population’s age structure. Older people are more vulnerable to pollution-related illness, so a country with a large or older population will have a greater number of deaths than a country with a smaller or younger population, even if an individual’s risk of premature death is the same in both countries. The dominance of China and India in global death statistics is not only a result of high death rates, but also a reflection of their respective population size. More people, unfortunately, means more deaths.</p>
+<p>The influence of population demographics has an important impact on trends over time. If a country’s population is growing (or aging) at a rate faster than the decline in death rates, then the absolute number of deaths will continue to rise.</p>
+<p style="text-align: left;"><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/absolute-number-of-deaths-from-ambient-particulate-air-pollution" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/absolute-number-of-deaths-from-ambient-particulate-air-pollution" width="300" height="150"></iframe></noscript>This presents us with a complex development-health trade-off. Air pollution has historically been an unfortunate by-product of the energy-driven process necessary for poverty alleviation. This pollution has undoubtedly led to an increased number of pollution-related diseases (although it should be noted that this transition is necessary in reducing deaths from household/indoor pollution). However, the evidence that death rates are <em>falling</em> whilst concentrations are <em>increasing</em> provides an important illustration of the importance of the underlying health and healthcare to overall quality of life outcomes. Without development, populations would be highly vulnerable to pollution exposure, even at low concentrations. It&#8217;s a complex trade-off that tends to divide opinion. Nonetheless, the numbers presented here hopefully highlight the importance of considering not only environmental change, but also the underlying synergies and risks that characterize development and global change.</p>
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>World Health Organization. Ambient Air Pollution: A global assessment of exposure and burden of disease. <em>World Health Organization.</em> 1–131 (2016). Available at: <a href="https://apps.who.int/iris/bitstream/10665/250141/1/9789241511353-eng.pdf">doi:9789241511353</a></p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Xing, Y. F., Xu, Y. H., Shi, M. H. &amp; Lian, Y. X. The impact of PM2.5 on the human respiratory system. <em>Journal of Thoracic Disease.</em> <strong>8,</strong> E69–E74 (2016). Available at: <a href="https://dx.doi.org/10.3978%2Fj.issn.2072-1439.2016.01.19">doi: 10.3978/j.issn.2072-1439.2016.01.19</a></p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Forouzanfar, M. H. <em>et al.</em> Global, regional, and national comparative risk assessment of 79 behavioural, environmental and occupational, and metabolic risks or clusters of risks, 1990-2015: a systematic analysis for the Global Burden of Disease Study 2015. <em>Lancet</em> <strong>388,</strong> 1659–1724 (2016). Available at: <a href="https://dx.doi.org/10.1016/S0140-6736(16)31679-8">doi:10.1016/S0140-6736(16)31679-8</a></p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Cohen, A. J., Brauer, M. &amp; Burnett, R. T. Estimates and 25-year trends of the global burden of disease attributable to ambient air pollution: An analysis of data from the Global burden of Diseases Study 2015. <em>Lancet</em> <strong>In press,</strong> 1–12 (2017). Available at: <a href="https://dx.doi.org/10.1016/S0140-6736(17)30505-6">doi:10.1016/S0140-6736(17)30505-6</a></p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+				
+
+	  
+</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=11093&#038;action=edit">Edit Post</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

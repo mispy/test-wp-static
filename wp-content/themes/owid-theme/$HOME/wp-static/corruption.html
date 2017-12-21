@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>Corruption - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/corruption/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fcorruption%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fcorruption%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="Corruption"/>
+  <meta property="og:url" content="/corruption/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Published on 10 October, 2016
+
+
+Introduction
+
+This entry presents available data and empirical evidence on corruption—an important problem imposing political, economic, and environmental costs to societies around the world.
+
+Corruption is a phenomenon involving many different aspects, and it"/>
+  <meta property="og:image" content="/wp-content/uploads/2016/10/TI-corruption-perception-index.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Corruption"/>
+  <meta itemprop="description" content="Published on 10 October, 2016
+
+
+Introduction
+
+This entry presents available data and empirical evidence on corruption—an important problem imposing political, economic, and environmental costs to societies around the world.
+
+Corruption is a phenomenon involving many different aspects, and it"/>
+  <meta itemprop="image" content="/wp-content/uploads/2016/10/TI-corruption-perception-index.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Corruption"/>
+  <meta name="twitter:url" content="/corruption/"/>
+  <meta name="twitter:description" content="Published on 10 October, 2016
+
+
+Introduction
+
+This entry presents available data and empirical evidence on corruption—an important problem imposing political, economic, and environmental costs to societies around the world.
+
+Corruption is a phenomenon involving many different aspects, and it"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2016/10/TI-corruption-perception-index.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-8998">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class="active"><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category active'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class="active"><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class="active"><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category active' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class="active"><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class="active"><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class=" clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-8998" class="post-8998 page type-page status-publish has-post-thumbnail hentry category-politics category-public-sector">
+			<header class="article-header">
+				<h1 class="entry-title">Corruption</h1>									<div class='authors-byline'><a href="/about/#the-team">by Esteban Ortiz-Ospina and Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Esteban Ortiz-Ospina and Max Roser (2017) – &lsquo;Corruption&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /corruption/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<div class="blog-info">
+Published on 10 October, 2016
+</div>
+<h2 id="introduction"> <a class="deep-link" href="#introduction"># </a>Introduction</h2>
+<p>This entry presents available data and empirical evidence on corruption—an important problem imposing political, economic, and environmental costs to societies around the world.</p>
+<p>Corruption is a phenomenon involving many different aspects, and it is therefore hard to give a precise and comprehensive definition. However, at the core of most definitions of corruption is the idea that a corrupt act implies the abuse of entrusted power for private gain. Classic examples include <a href="https://www.transparency.org/glossary/term/bribery" target="_blank">bribery</a>, <a href="https://www.transparency.org/glossary/term/clientelism" target="_blank">clientelism</a>, and <a href="https://www.transparency.org/glossary/term/embezzlement" target="_blank">embezzlement</a>. Other, often more subtle and sometimes even legal examples of corruption include <a href="https://www.transparency.org/glossary/term/lobbying" target="_blank">lobbying</a> and <a href="https://www.transparency.org/glossary/term/patronage" target="_blank">patronage</a>.</p>
+<p>While long-run data on corruption is very limited, historical examples suggest that corruption has been a persistent feature of human societies over time and space. Two such examples are the sale of parliamentary seats in ‘rotten boroughs’ in England before the Reform Act of 1832, and ‘machine politics’ in the US at the turn of the 19th century (Aidt 2003).<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='&#8216;Rotten boroughs&#8217; were constituencies that had a very small electorate, and could thus be used by a wealthy patron to secure influence; at the turn of the 19th century in immigrant US cities, &#8216;machine politics&#8217; involved hierarchical political organizations that provided social services and jobs in exchange for votes. For more information, see: Aidt, T. S. (2003). Economic analysis of corruption: a survey. The Economic Journal, 113(491), F632-F652.'>1</sup></a></p>
+<p>The unethical and often illegal nature of corruption makes measurement particularly complicated. Corruption data usually comes from either direct observation (e.g. law enforcement records and audit reports), or perception surveys (e.g. public opinion surveys, or expert assessments). In this entry we discuss data from both sources, and discuss their underlying limitations.  </p>
+<p>As we show, although precise corruption measurement is difficult, there is a clear correlation between <em>perception</em> and <em>behavior</em>; so available corruption data does provide valuable information that, when interpreted carefully, can both tell us something important about our world as well as contribute to the development of effective policies. </p>
+<p>For example, the data from perception surveys suggests that corruption correlates with human development, and a number of studies exploiting rich data from law enforcement records have shown that education is an important element explaining this relationship. Specifically, the data provides support for the idea that voters with more education tend to be more willing and able to monitor public employees and to take action when these employees violate the law.</p>
+<p><!---------------------Empirical View---------------------></p>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<p><!---------------------Surveys---------------------></p>
+<h3 id="evidence-from-surveys"> <a class="deep-link" href="#evidence-from-surveys"># </a>Evidence from surveys</h3>
+<h4 id="where-is-perceived-corruption-highest"> <a class="deep-link" href="#where-is-perceived-corruption-highest"># </a> Where is perceived corruption highest?</h4>
+<p>The non-governmental organization <a href="https://www.transparency.org/" target="_blank">Transparency International</a> (TI) estimates a &#8216;Corruption Perception Index&#8217;, which is arguably the most widely used indicator of corruption worldwide. The visualization below shows a map of their most recent results. </p>
+<p>The Corruption Perception Index scores countries on a scale of 0-100, where 0 means that a country is perceived as highly corrupt and 100 means that a country is perceived as very clean. The indicator is representative of expert opinion, as it is constructed by taking the averages of various standardized expert surveys, including those from the Bertelsmann Foundation, the World Economic Forum, the World Bank, and many others.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='The list of sources that are considered (subject to availability for each country) are: African Development Bank &#8211; Governance Ratings, Bertelsmann Foundation &#8211; Sustainable Governance Indicators, Bertelsmann Foundation &#8211; Transformation Index, IMD World Competitiveness Yearbook, Political Risk Services &#8211; Country Risk Guide, World Bank &#8211; Country Performance and Institutional Assessment, World Economic Forum &#8211; Executive Opinion Survey, World Justice Project &#8211; Rule of Law Index, Economist Intelligence Unit &#8211; Country Risk Assessment, Global Insight &#8211; Country Risk Ratings, Political and Economic Risk Consultancy &#8211; Asian Intelligence, Freedom House &#8211; Nations in Transit'>2</sup></a></p>
+<p>While TI&#8217;s Corruption Perception Index has been estimated since 1995, the methodology has changed recurrently up until 2012. Because of this, the data presented below starts in 2012. You can explore country-specific trends by clicking on the &#8216;Chart&#8217; tab, in which countries can be added by clicking &#8216;Add country&#8217; in the bottom left corner.</p>
+<p>As we can see, the five countries with the highest scores (and thus perceived as most &#8216;clean&#8217;) are Denmark, Finland, Sweden, New Zealand and the Netherlands. At the other extreme, the countries with the lowest scores (and highest perceived corruption) are South Sudan, Sudan, Afghanistan, North Korea and Somalia.</p>
+<p>Over the time period 2012-2015, we can see that scores are fairly stable, and drastic changes in ranking are not very common. There are, however, some clear exceptions—Greece, for example, improved its score from 36 to 46 in the period 2012-2015 (which corresponds to a change in world ranking from 94 to 58).</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/TI-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/TI-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="where-do-people-perceive-corruption-to-be-a-major-problem"> <a class="deep-link" href="#where-do-people-perceive-corruption-to-be-a-major-problem"># </a>Where do people perceive corruption to be a major problem?</h4>
+<p>The data visualized above relies on the perception of experts (e.g. business people, country analysts, etc.). Now we analyze data representing the perceptions of everyday people confronting corruption around the world. </p>
+<p>The Global Corruption Barometer, also produced by Transparency International, surveys individuals around the world, asking them about their opinions and experiences regarding corruption. The visualization below shows the average national perception of corruption, as rated on a scale of 1 to 5 by respondents asked the question: &#8220;To what extent do you think that corruption is a problem in the public sector in this country?&#8221;. The data is from 2013.</p>
+<p>The map below shows that everyday people&#8217;s perception of the problems associated with corruption correlate with expert opinion (seen in the previous section) about how much corruption there is. However, the correlation is far from perfect, indicating that these two indicators present us with different perspectives. An important example is Sudan, which according to the Global Corruption Barometer has one of the lowest average ratings (meaning that average people do not consider corruption in the public sector to be a major problem). This stands in stark contrast to expert opinion, which regards Sudan as having among the highest levels of public sector corruption.</p>
+<p>The fact that the perception of experts and other citizens diverge is at the heart of <em>perception</em> measures: experts and non-experts have different reference points against which they assess whether corruption is a problem. Indeed, in countries where the public finds corruption extremely intolerable, the perception of its implications may be extreme, even if baseline corruption levels are lower than in other countries. </p>
+<p>Corruption is sometimes hard to tackle precisely because it is common, so people perceive it to be a natural economic transaction: it is easier to act corruptly if there are many other individuals who think it is fine to be corrupt. This is the rationale behind &#8216;big-push&#8217; policies that aim to shift norms and perceptions.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/average-rating-of-corruption-perception" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/average-rating-of-corruption-perception" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="which-institutions-do-people-perceive-as-most-corrupt"> <a class="deep-link" href="#which-institutions-do-people-perceive-as-most-corrupt"># </a>Which institutions do people perceive as most corrupt?</h4>
+<p>The Global Corruption Barometer produced by Transparency International asks individuals across countries whether they perceive specific institutions to be corrupt. The following chart presents, by institution, the global aggregate figures. The numbers correspond to the percentage of survey respondents who think each institution is &#8220;corrupt or extremely corrupt&#8221; in their home country.</p>
+<p>The estimates show that, globally, people perceive political parties to be particularly corrupt. Detailed data by country, including survey answers for other institutions, are available from the corresponding <a href="https://www.transparency.org/gcb2013/in_detail/" target="_blank">Global Corruption Barometer Report</a>. </p>
+<p><iframe data-src="https://owid.netlify.com/grapher/perception-of-corruption-by-institution-global" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/perception-of-corruption-by-institution-global" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>The following visualization digs deeper into corruption perceptions, specifically in the context of politics. The data is from the same source above, and the map shows the percentage of survey respondents in each country who think that political parties are &#8220;corrupt or extremely corrupt&#8221;. </p>
+<p>As we can see, there is substantial cross-country heterogeneity, and patterns again show differences with respect to general corruption perception. In Greece and Italy, for example, around 90% of survey respondents consider that political parties are very corrupt. This ranks them among the top-ten countries with the highest perception of political corruption.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/share-of-people-who-think-political-parties-are-very-corrupt" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/share-of-people-who-think-political-parties-are-very-corrupt" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="where-are-people-more-likely-to-pay-bribes-to-access-public-services"> <a class="deep-link" href="#where-are-people-more-likely-to-pay-bribes-to-access-public-services"># </a>Where are people more likely to pay bribes to access public services?</h4>
+<p>Bribery is one of the most common forms of corruption. The following visualization shows the share of people who report having paid a bribe to access public services in the 12 months prior to the survey. The data comes from the Global Corruption Barometer, produced by Transparency International, and the public services in question are: education, judiciary, medical and health, police, registry and permit services, utilities, tax revenue and/or customs, and land services.</p>
+<p>Once again, cross-country heterogeneity stands out. In countries such as Kenya, Yemen, Liberia and Sierra Leone, more than two out of three survey respondents report having paid a bribe within the past year. In Denmark, Japan, Finland and Australia, only one in a hundred reports having paid a bribe in the same window of time.</p>
+<p>While these results do show that in some countries bribe paying is very rare, we have to take into account that these estimates come from ordinary people interacting locally. As we show <a href="https://owid.netlify.com/corruption/#many-firms-from-high-income-countries-engage-in-bribery-across-the-world">below</a>, many countries where ordinary people do not frequently pay bribes, have far-from-perfect international records when it comes to international private-sector bribery. </p>
+<p><iframe data-src="https://owid.netlify.com/grapher/share-of-people-paying-bribes-2013" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/share-of-people-paying-bribes-2013" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="how-does-petty-corruption-affect-the-income-of-the-poor"> <a class="deep-link" href="#how-does-petty-corruption-affect-the-income-of-the-poor"># </a>How does petty corruption affect the income of the poor?</h4>
+<p> For those without money and connections, paying even small bribes to access basic public services such as public health or police, can have important consequences. In fact, petty corruption in the form of bribes often acts as a regressive tax, since the burden typically falls disproportionately on the poor.</p>
+<p>The following visualization, from the <a href="https://documents.worldbank.org/curated/en/230351468332946759/pdf/226840WDR00PUB0ng0poverty0200002001.pdf" target="_blank">World Development Report (2011)</a>, uses data from Ecuador to estimate the cost of bribes paid relative to income. More specifically, the right panel shows the self-reported cost of bribes paid by households (as share of household income), while the left panel shows the self-reported cost of bribes paid by firms (as share of firm revenue). The presented estimates are in percent and come from a 1999 survey of 1,164 enterprises and another of 1,800 households.</p>
+<p>As we can see from this example, petty corruption seems to act as a regressive tax: poor households tend to pay a larger share of their income on bribes to access public services. </p>
+<h6 id="estimates-of-the-cost-of-bribes-relative-to-income-ecuador-1999-figure-6-2-in-world-development-report-2011"> <a class="deep-link" href="#estimates-of-the-cost-of-bribes-relative-to-income-ecuador-1999-figure-6-2-in-world-development-report-2011"># </a>Estimates of the cost of bribes relative to income, Ecuador, 1999 – Figure 6.2 in <a href="https://documents.worldbank.org/curated/en/230351468332946759/pdf/226840WDR00PUB0ng0poverty0200002001.pdf" target="_blank">World Development Report (2011)</a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2016/10/WDR_EcuadorBribes.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2016/10/WDR_EcuadorBribes-450x550.png" alt="wdr_ecuadorbribes" width="450" height="550" class="aligncenter size-large wp-image-9024" srcset="/wp-content/uploads/2016/10/WDR_EcuadorBribes-450x550.png 450w, /wp-content/uploads/2016/10/WDR_EcuadorBribes-123x150.png 123w, /wp-content/uploads/2016/10/WDR_EcuadorBribes-327x400.png 327w, /wp-content/uploads/2016/10/WDR_EcuadorBribes.png 510w" sizes="(max-width: 450px) 100vw, 450px" /><noscript><img src="https://owid.netlify.com/wp-content/uploads/2016/10/WDR_EcuadorBribes-450x550.png" alt="wdr_ecuadorbribes" width="450" height="550" class="aligncenter size-large wp-image-9024" srcset="/wp-content/uploads/2016/10/WDR_EcuadorBribes-450x550.png 450w, /wp-content/uploads/2016/10/WDR_EcuadorBribes-123x150.png 123w, /wp-content/uploads/2016/10/WDR_EcuadorBribes-327x400.png 327w, /wp-content/uploads/2016/10/WDR_EcuadorBribes.png 510w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></a></p>
+<h4 id="where-are-firms-more-likely-to-be-asked-for-bribes"> <a class="deep-link" href="#where-are-firms-more-likely-to-be-asked-for-bribes"># </a>Where are firms more likely to be asked for bribes?</h4>
+<p>As the visualization above shows, bribes are also requested from, and paid by, firms in the private sector. The below visualization shows, for a selection of countries, the percentage of firms experiencing at least one bribe payment request during 6 transactions dealing with utilities access, permits, licenses, and taxes. The data comes from the World Bank&#8217;s Enterprise Surveys (2007-2013).</p>
+<p>According to this source, close to 70% of firms report having been asked for bribes in Syria and Liberia. Whereas in countries such as Bhutan, Slovenia, Israel, Eritrea and Estonia, the corresponding figure is below 1%.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/incidence-bribes-firms-2013" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/incidence-bribes-firms-2013" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="which-countries-are-perceived-by-business-executives-as-more-likely-to-export-corruption"> <a class="deep-link" href="#which-countries-are-perceived-by-business-executives-as-more-likely-to-export-corruption"># </a>Which countries are perceived by business executives as more likely to &#8216;export corruption&#8217;?</h4>
+<p>The above visualization provides evidence of the frequency with which firms are requested to pay bribes—that is, the <em>demand side</em> of bribing. Here we explore the supply side, using data from Transparency International&#8217;s &#8216;Bribe Payers Survey&#8217;. </p>
+<p>In its most recent edition (2011), the Bribe Payers Survey asked 3,016 senior business executives in 30 countries around the world for their perceptions of the likelihood of companies, from countries they have business dealings with, to engage in bribery when doing business in the executive’s own country.</p>
+<p>Based on the answers from the Bribe Payers Survey, Transparency International estimates the average of the scores given by all the respondents who rated each country (on a scale from 0 to 10, where 0 means firms always pay bribes in that country, and 10 means they never do). This gives the so-called  &#8216;Bribe Payers Index&#8217;.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Methodological details are available from Transparency International'>3</sup></a> The following map shows the results from this exercise.</p>
+<p>As we can see, companies from China and Russia are viewed as the most likely to pay bribes. From a global perspective this is important, since<a href="https://owid.netlify.com/international-trade#south-south-trade-is-becoming-increasingly-important"> China and Russia are becoming increasingly powerful players in international trade</a>.</p>
+<p>Transparency International also publishes its index results by sector. According to these estimates, &#8216;public works contracts and construction&#8217; is the sector where firms from industrialized countries are more likely to engage in international bribery.</p>
+<p>The results from Transparency International reveal large heterogeneity across sectors; so it should be kept in mind that cross-country differences in the visualization below reflect, to a great extent, such differences across sectors.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/bribe-payers-index" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/bribe-payers-index" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p><!---------------------Official Records---------------------></p>
+<h3 id="evidence-from-law-enforcement-and-regulation"> <a class="deep-link" href="#evidence-from-law-enforcement-and-regulation"># </a>Evidence from law-enforcement and regulation</h3>
+<h4 id="many-firms-from-high-income-countries-engage-in-bribery-across-the-world"> <a class="deep-link" href="#many-firms-from-high-income-countries-engage-in-bribery-across-the-world"># </a>Many firms from high-income countries engage in bribery across the world</h4>
+<p>The Foreign Corrupt Practices Act (FCPA) in the US was passed in 1977 with the aim of making the bribery of foreign officials illegal. The following visualization, from the Mintz Group, shows the global distribution of all penalties in US Government FCPA cases since 1977. Darker colors in the map denote larger total penalties for activities in the corresponding country. Total penalties are measured in US dollars, so this chart combines the number and magnitude of cases. In Argentina, for example, the dark color is mainly due to one very large case involving Siemens (450 Million USD penalty, in 2008). An interactive version of this map including details regarding specific penalties, is available from the Mintz Group at <a href="https://www.fcpamap.com" target="_blank">https://www.fcpamap.com</a>.</p>
+<p>These official records show that US firms have paid bribes in 80 countries since 1977—including in many OECD countries. </p>
+<h6 id="penalties-in-u-s-government-fcpa-cases-since-1977-mintz-group-refcopyright-2016-mintz-group-llc-all-rights-reserved-the-information-and-graphics-contained-in-this-map-are-co"> <a class="deep-link" href="#penalties-in-u-s-government-fcpa-cases-since-1977-mintz-group-refcopyright-2016-mintz-group-llc-all-rights-reserved-the-information-and-graphics-contained-in-this-map-are-co"># </a>Penalties in U.S. Government FCPA Cases Since 1977 – <a href="https://www.fcpamap.com" target="_blank">Mintz Group ©</a><a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Copyright© 2016 Mintz Group LLC. All Rights Reserved. The information and graphics contained in this map are copyrighted and may not be distributed, modified, reproduced in whole or in part without the prior written permission of Mintz Group LLC.'>4</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2016/10/Minz_FCPA-1.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2016/10/Minz_FCPA-1-750x356.png" alt="minz_fcpa" width="750" height="356" class="aligncenter size-large wp-image-9094" srcset="/wp-content/uploads/2016/10/Minz_FCPA-1-750x356.png 750w, /wp-content/uploads/2016/10/Minz_FCPA-1-150x71.png 150w, /wp-content/uploads/2016/10/Minz_FCPA-1-400x190.png 400w, /wp-content/uploads/2016/10/Minz_FCPA-1-768x365.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="https://owid.netlify.com/wp-content/uploads/2016/10/Minz_FCPA-1-750x356.png" alt="minz_fcpa" width="750" height="356" class="aligncenter size-large wp-image-9094" srcset="/wp-content/uploads/2016/10/Minz_FCPA-1-750x356.png 750w, /wp-content/uploads/2016/10/Minz_FCPA-1-150x71.png 150w, /wp-content/uploads/2016/10/Minz_FCPA-1-400x190.png 400w, /wp-content/uploads/2016/10/Minz_FCPA-1-768x365.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h4 id="diplomats-from-countries-with-high-corruption-perception-tend-to-break-traffic-rules-abroad-more-often"> <a class="deep-link" href="#diplomats-from-countries-with-high-corruption-perception-tend-to-break-traffic-rules-abroad-more-often"># </a>Diplomats from countries with high corruption perception tend to break traffic rules abroad more often</h4>
+<p>Corruption is commonly defined as &#8220;the abuse of entrusted power for private gain&#8221;. Here we provide evidence of how diplomats in New York City abused their diplomatic status to break traffic rules by parking illegally.</p>
+<p>UN mission personnel and their families benefit from diplomatic immunity. In New York City, until November 2002, diplomatic immunity implied that UN mission personnel could park illegally and avoid paying the corresponding fines. The following visualization maps average unpaid annual New York City parking violations per diplomat by the diplomat&#8217;s country of origin, over the period November 1997 &#8211; November 2002. The data comes from Fisman and Miguel (2007)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='Fisman, R., &#038; Miguel, E. (2007). Corruption, norms, and legal enforcement: Evidence from diplomatic parking tickets. Journal of Political economy, 115(6), 1020-1048.'>5</sup></a>, who in turn obtained information compiled by the New York City Department of Finance.</p>
+<p>As we cans see from the map, this ‘revealed-preference’ measure of corruption among diplomats correlates positively with the <a href="https://owid.netlify.com/corruption/#where-is-perceived-corruption-highest">survey-based measures of corruption</a> we have already discussed. Diplomats from countries where corruption perception is low (e.g. Denmark) seem to be generally less likely to break parking rules abroad, even in situations in which there are no legal consequences.</p>
+<p>While the correlation is obviously not perfect (e.g. Colombia has a high corruption perception but zero unpaid parking violations in the data) Fisman and Miguel (2007) show that, statistically speaking, the positive correlation between corrupt behavior by diplomats &#8216;abroad&#8217;, and corruption perception &#8216;at home&#8217;, remains after controlling for factors such as national income in the diplomats’ home country, or the diplomats&#8217; salaries. This evidence suggests that cultural norms are one of the factors that affect corrupt behavior. </p>
+<p><iframe data-src="https://owid.netlify.com/grapher/unpaid-parking-violations-per-diplomat" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/unpaid-parking-violations-per-diplomat" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="oecd-countries-are-increasingly-providing-procedures-for-public-officials-to-report-corruption"> <a class="deep-link" href="#oecd-countries-are-increasingly-providing-procedures-for-public-officials-to-report-corruption"># </a>OECD countries are increasingly providing procedures for public officials to report corruption</h4>
+<p>Corruption is not something that only affects low income countries—and in fact, many high income countries have become increasingly aware of this in recent years.</p>
+<p>The below table details a list of OECD countries and whether they have specific procedures in place for public officials to report misconduct or suspected corruption.</p>
+<p>As we can see, since 2000 many OECD countries have developed formal mechanisms to allow public officials to expose corruption (&#8216;whistle-blowing&#8217;) more easily. Specifically, the table below shows that the share of OECD countries that reported having legal whistle-blowing procedures went up from 44.8% in the year 2000 (13 out of 29 countries in the sample), to 79.3% in 2009 (23 out of 29 countries in the sample). Today, many of these countries supplement legal provisions with internal rules (e.g. minimum requirements for whistle-blowing programmes).</p>
+<p>In 1999, the <a href="https://www.oecd.org/corruption/oecdantibriberyconvention.htm" target="_blank">OECD Convention on Combating Bribery of Foreign Public Officials in International Business Transactions</a> was enacted. This convention established legal standards to criminalize bribery of foreign public officials in international business transactions. In 2009 this convention was revised with new measures. The <a href="https://www.cesifo-group.de/ifoHome/facts/DICE/Public-Sector/Public-Governance-and-Law/Corruption/part-anti-corr12/fileBinary/part-anti-corr12.pdf" target="_blank">CESifo research centre provides an overview</a> of when different OECD countries signed this and other related conventions, such as the <a href="https://www.unodc.org/unodc/en/treaties/CAC/" target="_blank">UN Convention Against Corruption</a>. As this evidence shows, legal provisions to fight corruption are something rather new, and high income countries are still trying to find new policy instruments to deal with corruption.</p>
+<h6 id="procedures-for-public-officials-to-report-misconduct-or-suspected-corruption-2000-vs-2009-table-d3-in-oecd-government-at-a-glance-2009"> <a class="deep-link" href="#procedures-for-public-officials-to-report-misconduct-or-suspected-corruption-2000-vs-2009-table-d3-in-oecd-government-at-a-glance-2009"># </a>Procedures for public officials to report misconduct or suspected corruption (2000 vs 2009) – Table D3 in <a href="https://www.oecd-ilibrary.org/governance/government-at-a-glance-2009_9789264075061-en" target="_blank">OECD Government at a Glance (2009) </a> </h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-516x550.png" alt="whistleblowing_oecd_govglance2009" width="516" height="550" class="aligncenter size-large wp-image-9030" srcset="/wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-516x550.png 516w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-141x150.png 141w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-375x400.png 375w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-768x819.png 768w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009.png 1292w" sizes="(max-width: 516px) 100vw, 516px" /><noscript><img src="https://owid.netlify.com/wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-516x550.png" alt="whistleblowing_oecd_govglance2009" width="516" height="550" class="aligncenter size-large wp-image-9030" srcset="/wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-516x550.png 516w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-141x150.png 141w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-375x400.png 375w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009-768x819.png 768w, /wp-content/uploads/2016/10/WhistleBlowing_OECD_GovGlance2009.png 1292w" sizes="(max-width: 516px) 100vw, 516px" /></noscript></a></p>
+<p><!--------------------------------------------------------><br />
+<!---------------------CORRELATES---------------------></p>
+<h2 id="correlates-determinants-and-consequences"> <a class="deep-link" href="#correlates-determinants-and-consequences"># </a>Correlates, Determinants and Consequences</h2>
+<h4 id="what-is-the-relationship-between-corruption-and-development"> <a class="deep-link" href="#what-is-the-relationship-between-corruption-and-development"># </a>What is the relationship between corruption and development?</h4>
+<p>The following visualization shows the cross-country relationship between development (as measured by the United Nations <a href="https://owid.netlify.com/human-development-index/">Human Development Index</a>) and corruption (as measured by Transparency International&#8217;s <a href="https://owid.netlify.com/corruption/#where-is-perceived-corruption-highest">Corruption Perception Index</a>).</p>
+<p>As we can see, countries that score higher in the Corruption Perception Index (i.e. countries seen as less corrupt) tend to also have better scores in the Human Development Index. </p>
+<p><iframe data-src="https://owid.netlify.com/grapher/human-development-index-vs-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/human-development-index-vs-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>The relationship in the visualization above is just a correlation: there are many factors that simultaneously drive corruption and development. Education is an important case in point. </p>
+<p>The below scatter plot provides evidence of the cross-country relationship between educational attainment and corruption. The horizontal axis measures corruption using Transparency International&#8217;s <a href="https://owid.netlify.com/corruption/#where-is-perceived-corruption-highest">Corruption Perception Index</a>; and the vertical axis measures <a href="https://owid.netlify.com/global-rise-of-education#years-of-schooling">average years of schooling</a>. </p>
+<p>As we can see, there is again a strong positive relationship: countries where people are more educated tend to have better scores in the Corruption Perception Index. </p>
+<p>A number of academic studies have tried to establish the extent to which this relationship is causal. Glaeser and Saks (2006)<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Glaeser, E. L., &#038; Saks, R. E. (2006). Corruption in america. Journal of public Economics, 90(6), 1053-1072.'>6</sup></a>, for example, show that within the US, states that are better educated tend to be less corrupt—importantly, they show that this relationship holds even when using historical factors like Congregationalism in 1890 as a proxy for the current levels of schooling. In other words, they find that historical levels of education predict differences in levels of corruption across States several generations later. This is consistent with other studies that support the theory that voters with more education tend to be more willing and able to monitor public employees and to take action when these employees violate the law.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/average-years-of-schooling-vs-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/average-years-of-schooling-vs-corruption-perception-index" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="what-is-the-relationship-between-corruption-and-accountability"> <a class="deep-link" href="#what-is-the-relationship-between-corruption-and-accountability"># </a>What is the relationship between corruption and accountability?</h4>
+<p>One of the most widely accepted mechanisms of controling corruption is to ensure that those entrusted with power are held responsible for reporting their activities. This is the idea behind so-called &#8216;accountability&#8217; measures against corruption.<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Transparency International defines accountability as &#8220;the concept that individuals, agencies and organisations (public, private and civil society) are held responsible for reporting their activities and executing their powers properly.&#8221;'>7</sup></a></p>
+<p>The following visualization shows the cross-country relationship between corruption and accountability. Here, corruption is measured as the <a href="https://owid.netlify.com/corruption/#where-are-people-more-likely-to-pay-bribes-to-access-public-services">share of people who admit having paid bribes in the past 12 months</a> (as per the estimates from the Global Corruption Barometer), and accountability is measured by the Accountability Transparency Index developed by Williams (2015)<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='Williams, A. (2015). A global index of information transparency and accountability. Journal of Comparative Economics, 43(3), 804-824.'>8</sup></a> (this index is constructed from a number of underlying indicators which gather information about the extent of free media, fiscal transparency, and political constraints). </p>
+<p>As we can see,  people are less likely to pay bribes in countries where there are stronger institutions to support accountability. </p>
+<p>In a recent paper, Ferraz and Finan (2011)<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='Ferraz, C., &#038; Finan, F. (2011). Electoral accountability and corruption: Evidence from the audits of local governments. The American Economic Review, 101(4), 1274-1311.'>9</sup></a> show that there is evidence that this relationship is causal. Specifically, they show that electoral accountability causally affects the corruption practices of incumbent politicians in Brazil. In municipalities where mayors can run for reelection there is significantly less corruption, and the positive effect of accountability via reelection is more pronounced among municipalities with less access to information and where the likelihood of judicial punishment is lower.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/accountability-vs-paying-bribes" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/accountability-vs-paying-bribes" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h4 id="how-effective-are-top-down-audits-to-reduce-corruption"> <a class="deep-link" href="#how-effective-are-top-down-audits-to-reduce-corruption"># </a>How effective are top-down audits to reduce corruption?</h4>
+<p>A common policy prescription to fight corruption is to increase monitoring and punishments. The logic supporting such policies is straightforward: better monitoring and harsher punishments increase the expected cost of acting corruptly, so people rationally choose not to break the rules.</p>
+<p>To test the extent to which monitoring and punishments effectively reduce corruption, economists often rely on &#8216;policy experiments&#8217;, where they administer these policies to &#8216;treatment groups&#8217;. Olken (2007)<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='Olken, Benjamin A. (2007). &#8220;Monitoring Corruption: Evidence from a Field Experiment in Indonesia.&#8221; Journal of Political Economy 115(2): 200-249.'>10</sup></a> follows this approach, increasing the probability of central government audits from 4 percent to 100 percent (the &#8216;policy treatment&#8217;), in the context of Indonesian village road projects.</p>
+<p>Olken (2007) compares the outcomes for villages that received this intervention with those that did not, and finds that audits significantly reduced missing expenditures, as measured by discrepancies between official project costs and an independent engineers’ estimates. The following visualization summarizes these results. The height of the bars shows the percent of expenditures that engineers found to be missing. </p>
+<p>As we can see, missing expenditures were much lower in villages where audits were certain.</p>
+<p>Olken (2007) provides further evidence of the extent to which officials in charge of road projects responded to private incentives: he finds that (i) audits were most effective when officials faced elections soon, and (ii) village elites shifted to nepotism (the practice of hiring family members), which is a form of corruption that was harder for audits to detect.</p>
+<h6> Effect of audits on missing expenditures in an Indonesian Randomized Control Trial – Figure 2 in <a href="https://www.povertyactionlab.org/sites/default/files/publications/2012.1.19-Controlling_Corruption.pdf" target="_blank">J-pal Policy Briefcase (2012)<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='This Policy Briefcase was issued in March 2008, and revised in May 2012. The data comes from Olken, Benjamin A. 2007. &#8220;Monitoring Corruption: Evidence from a Field Experiment in Indonesia.&#8221; Journal of Political Economy 115(2): 200-249.'>11</sup></a></a><br />
+<a href="https://owid.netlify.com/wp-content/uploads/2016/10/AuditImpact_Olken2007.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2016/10/AuditImpact_Olken2007-750x428.png" alt="auditimpact_olken2007" width="750" height="428" class="aligncenter size-large wp-image-9045" srcset="/wp-content/uploads/2016/10/AuditImpact_Olken2007-750x428.png 750w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-150x86.png 150w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-400x228.png 400w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-768x438.png 768w, /wp-content/uploads/2016/10/AuditImpact_Olken2007.png 1113w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="https://owid.netlify.com/wp-content/uploads/2016/10/AuditImpact_Olken2007-750x428.png" alt="auditimpact_olken2007" width="750" height="428" class="aligncenter size-large wp-image-9045" srcset="/wp-content/uploads/2016/10/AuditImpact_Olken2007-750x428.png 750w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-150x86.png 150w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-400x228.png 400w, /wp-content/uploads/2016/10/AuditImpact_Olken2007-768x438.png 768w, /wp-content/uploads/2016/10/AuditImpact_Olken2007.png 1113w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h4 id="how-important-is-the-link-between-cultural-norms-and-corruption"> <a class="deep-link" href="#how-important-is-the-link-between-cultural-norms-and-corruption"># </a>How important is the link between cultural norms and corruption?</h4>
+<p>A recent study by Fisman and Miguel (2007)<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Fisman, R., &#038; Miguel, E. (2007). Corruption, norms, and legal enforcement: Evidence from diplomatic parking tickets. Journal of Political economy, 115(6), 1020-1048.'>12</sup></a> shows that diplomats from countries where corruption perception is low (e.g. Denmark) seem to be generally less likely to break parking rules abroad, even in situations in which there are no legal consequences.</p>
+<p>A world map showing the number of parking violations per diplomat, across different UN diplomatic delegations in the New York, US, is available <a href="https://owid.netlify.com/grapher/unpaid-parking-violations-per-diplomat">here</a>. You can read more about the data in our section on <a href="https://owid.netlify.com/corruption/#diplomats-from-countries-with-high-corruption-perception-tend-to-break-traffic-rules-abroad-more-often">Evidence from law-enforcement and regulation</a> above.</p>
+<p>Fisman and Miguel (2007) show that the positive correlation between corrupt behavior by diplomats ‘abroad’, and corruption perception ‘at home’, remains after controlling for factors such as national income in the diplomats’ home country, or the diplomats’ salaries. This evidence suggests that cultural norms are one of the factors that affect corrupt behavior. </p>
+<p><!--------------------------------------------------------><br />
+<!---------------------Measurement---------------------></p>
+<h2 id="definitions-measurement-and-data-quality"> <a class="deep-link" href="#definitions-measurement-and-data-quality"># </a>Definitions, Measurement and Data Quality</h2>
+<h4 id="definition"> <a class="deep-link" href="#definition"># </a>Definition </h4>
+<p>Corruption is a phenomenon involving many different aspects, and it is therefore hard to give a precise and comprehensive definition. However, at the core of most definitions of corruption is the idea that a corrupt act implies the abuse of entrusted power for private gain. Classic examples include <a href="https://www.transparency.org/glossary/term/bribery" target="_blank">bribery</a>, <a href="https://www.transparency.org/glossary/term/clientelism" target="_blank">clientelism</a>, and <a href="https://www.transparency.org/glossary/term/embezzlement" target="_blank">embezzlement</a>. Other, often more subtle – and sometimes even legal – examples of corruption include <a href="https://www.transparency.org/glossary/term/lobbying" target="_blank">lobbying</a> and <a href="https://www.transparency.org/glossary/term/patronage" target="_blank">patronage</a>.</p>
+<h4 id="measurement-limitations"> <a class="deep-link" href="#measurement-limitations"># </a>Measurement limitations</h4>
+<p>The unethical and often illegal nature of corruption makes measurement particularly complicated.  Corruption data usually comes from either direct observation (typically law-enforcement records), or perception surveys (e.g. general-population attitudinal surveys, or expert assessments).</p>
+<p>The main disadvantage of direct observation is that corruption is, as should be clear from its definition, difficult to observe. This means that estimates are almost surely biased, and are not generally suitable for cross-country comparisons, since differences in levels may stem from differences in law enforcement, rather than actual differences in corruption.</p>
+<p>On the other hand, the main disadvantage of measuring the <em>perception</em> of corruption, rather than corrupt behavior directly, is that estimates are highly sensitive to how survey respondents—both experts and everyday people—form perceptions in the first place. For instance, differences in perceived corruption between countries may stem from differences in the way corruption is defined or morally viewed, rather than from differences in actual behavior.</p>
+<p>In any case, despite these limitations, both sources provide very valuable information regarding underlying patterns. For example, studies relying on direct observation have been widely used for within-country studies, specifically in contexts where law enforcement is considered to be broadly constant across states or municipalities (see, for example, Glaeser and Saks 2006 </a><a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='Glaeser, E. L., &#038; Saks, R. E. (2006). Corruption in america. Journal of public Economics, 90(6), 1053-1072.'>13</sup></a>, and Ferraz and Finan 2011</a><a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='Ferraz, C., &#038; Finan, F. (2011). Electoral accountability and corruption: Evidence from the audits of local governments. The American Economic Review, 101(4), 1274-1311.'>14</sup></a>).</p>
+<h4 id="relationship-between-sources"> <a class="deep-link" href="#relationship-between-sources"># </a>Relationship between sources</h4>
+<p>The following visualization shows the relationship between two different survey-based measures of corruption. In the vertical axis, perception is measured using Transparency International&#8217;s <a href="https://owid.netlify.com/corruption/#where-is-perceived-corruption-highest">Corruption Perception Index</a> (lower scores reflect higher perceived corruption); and in the horizontal axis, corruption is measured using <a href="https://owid.netlify.com/corruption/#where-are-people-more-likely-to-pay-bribes-to-access-public-services">self-reported bribe paying</a> behavior (estimated as the share of survey respondents who report having paid a bribe to access public services in the last year). </p>
+<p>As we can see from this plot, there is a clear association between both measures: countries where people report having to pay bribes often, are also countries that tend to score low in the Corruption Perception Index.</p>
+<p>The fact that corruption perception does contain information about corrupt behavior has been corroborated by detailed case studies. Olken (2009)<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Olken, B. A. (2009). Corruption perceptions vs. corruption reality. Journal of Public economics, 93(7), 950-964.'>15</sup></a>, for example, shows that citizens&#8217; perception of corruption in infrastructure projects correlate with objective measures of &#8216;missing expenditures&#8217;, as measured by independent engineers’ estimates in Indonesia.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/share-of-people-paying-bribes-vs-corruption-perception" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/share-of-people-paying-bribes-vs-corruption-perception" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p><!------------------------------------------------------><br />
+<!---------------------DATA SOURCES---------------------></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h5 id="transparency-international-corruption-perception-index-cpi"> <a class="deep-link" href="#transparency-international-corruption-perception-index-cpi"># </a>Transparency International – Corruption Perception Index (CPI)</h5>
+<ul>
+<li><strong>Data:</strong>  Index relying on surveys and indicators from various sources, including the African Development Bank, the Bertelsmann Foundation, and the World Bank (among many others).<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='The list of sources that are considered (subject to availability for each country) are: African Development Bank &#8211; Governance Ratings, Bertelsmann Foundation &#8211; Sustainable Governance Indicators, Bertelsmann Foundation &#8211; Transformation Index, IMD World Competitiveness Yearbook, Political Risk Services &#8211; Country Risk Guide, World Bank &#8211; Country Performance and Institutional Assessment, World Economic Forum &#8211; Executive Opinion Survey, World Justice Project &#8211; Rule of Law Index, Economist Intelligence Unit &#8211; Country Risk Assessment, Global Insight &#8211; Country Risk Ratings, Political and Economic Risk Consultancy &#8211; Asian Intelligence, Freedom House &#8211; Nations in Transit'>16</sup></a>
+</li>
+<li><strong>Geographical coverage:</strong> Global by country</li>
+<li><strong>Time span:</strong> Current methodology available since 2012 (other – non-comparable –methodologies go back to 1995)</li>
+<li><strong>Available at:</strong>  <a href="https://www.transparency.org/cpi2015" target="_blank">https://www.transparency.org/cpi2015</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-bank-worldwide-governance-indicators"> <a class="deep-link" href="#world-bank-worldwide-governance-indicators"># </a>World Bank – Worldwide Governance Indicators</h5>
+<ul>
+<li><strong>Data:</strong> Control of Corruption Index. Composite index relying on surveys and indicators from various sources (many of which intercept with TI&#8217;s Corruption Perception Index – full list available from <a href="https://info.worldbank.org/governance/wgi/#doc" target="_blank">https://info.worldbank.org/governance/wgi/#doc</a>).
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> Yearly since 1996</li>
+<li><strong>Available at:</strong>  <a href="https://info.worldbank.org/governance/wgi/#home" target="_blank">https://info.worldbank.org/governance/wgi/#home</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="transparency-international-bribe-payers-index-bpi"> <a class="deep-link" href="#transparency-international-bribe-payers-index-bpi"># </a>Transparency International – Bribe Payers Index (BPI)</h5>
+<ul>
+<li><strong>Data:</strong> Index constructed from surveys asking business executives for their perceptions of the likelihood of companies, from countries they have business dealings with, to engage in bribery.
+</li>
+<li><strong>Geographical coverage:</strong> Selected countries (28 of the world’s largest economies) </li>
+<li><strong>Time span:</strong> 1999, 2002, 2006, 2008, 2011</li>
+<li><strong>Available at:</strong>  <a href="https://www.transparency.org/bpi2011" target="_blank">https://www.transparency.org/bpi2011</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="transparency-international-global-corruption-barometer-gcb"> <a class="deep-link" href="#transparency-international-global-corruption-barometer-gcb"># </a>Transparency International – Global Corruption Barometer (GCB)</h5>
+<ul>
+<li><strong>Data:</strong> Global opinion survey asking people about their experiences and perceptions regarding corruption. It addresses people’s direct experiences with bribery and details their views on corruption in the main institutions in their countries
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> Yearly editions since 2003, but some questions have not been repeated in multiple editions</li>
+<li><strong>Available at:</strong> <a href="https://www.transparency.org/research/gcb/overview" target="_blank"> https://www.transparency.org/research/gcb/overview</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="political-risk-services-international-country-risk-guide"> <a class="deep-link" href="#political-risk-services-international-country-risk-guide"># </a>Political Risk Services – International Country Risk Guide</h5>
+<ul>
+<li><strong>Data:</strong> Indicator of Quality of Government (used as an input to TI&#8217;s Corruption Perception Index described above)
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> Yearly editions since 1984</li>
+<li><strong>Available at:</strong> Proprietary dataset – more details from <a href="https://epub.prsgroup.com/products/international-country-risk-guide-icrg" target="_blank">https://epub.prsgroup.com/products/international-country-risk-guide-icrg</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="gallup-analytics-world-poll"> <a class="deep-link" href="#gallup-analytics-world-poll"># </a>Gallup Analytics – World Poll</h5>
+<ul>
+<li><strong>Data:</strong>  Public opinion survey question asking: Is corruption widespread throughout the government in this country, or not?
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> Yearly since 2006</li>
+<li><strong>Available at:</strong> Proprietary dataset – more details from <a href="https://www.gallup.com/products/170987/gallup-analytics.aspx" target="_blank">https://www.gallup.com/products/170987/gallup-analytics.aspx </a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-bank-enterprise-surveys"> <a class="deep-link" href="#world-bank-enterprise-surveys"># </a>World Bank – Enterprise Surveys</h5>
+<ul>
+<li><strong>Data:</strong> Firm-level survey of a representative sample of an economy&#8217;s private sector. The surveys cover a broad range of business environment topics including corruption.
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> 2007-2015 (different survey years for different countries)</li>
+<li><strong>Available at:</strong> <a href="https://www.enterprisesurveys.org/data/exploretopics/corruption" target="_blank">https://www.enterprisesurveys.org/data/exploretopics/corruption</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="williams-a-2015"> <a class="deep-link" href="#williams-a-2015"># </a>Williams, A. (2015)</h5>
+<ul>
+<li> <strong>Reference:</strong> Williams, A. (2015). A global index of information transparency and accountability. Journal of Comparative Economics, 43(3), 804-824.</li>
+<li><strong>Data:</strong>  Accountability Transparency Index. Composite index relying on 16 separate indicators from various sources.
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> 1980-2010</li>
+<li><strong>Available at:</strong> <a href="https://andrewwilliamsecon.wordpress.com/datasets/" target="_blank">https://andrewwilliamsecon.wordpress.com/datasets/</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="global-integrity-global-integrity-report-data"> <a class="deep-link" href="#global-integrity-global-integrity-report-data"># </a>Global Integrity – Global Integrity Report Data</h5>
+<ul>
+<li><strong>Data:</strong>  Battery of Integrity Indicators (scored by a lead in-country researcher and blindly reviewed by a panel of peer reviewers).
+</li>
+<li><strong>Geographical coverage:</strong> Global by country </li>
+<li><strong>Time span:</strong> 2004-2011</li>
+<li><strong>Available at:</strong><a href="https://www.globalintegrity.org/downloads/" target="_blank">https://www.globalintegrity.org/downloads/</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="quality-of-government-institute-qog-assembled-dataset"> <a class="deep-link" href="#quality-of-government-institute-qog-assembled-dataset"># </a>Quality of Government Institute (QoG) – Assembled Dataset</h5>
+<ul>
+<li> <strong>Reference:</strong> Teorell, Jan, Stefan Dahlberg, Sören Holmberg, Bo Rothstein, Anna Khomenko &#038; Richard Svensson. 2016. The Quality of Government Standard Dataset, version Jan16. University of Gothenburg: The Quality of Government Institute, https://www.qog.pol.gu.se doi:10.18157/QoGStdJan16 </li>
+<li><strong>Data:</strong>  Dataset gathering indicators from approximately 2500 variables, from more than 100 data sources. Many of the indicators described above are included in this dataset.
+</li>
+<li><strong>Geographical coverage:</strong> Global by country. </li>
+<li><strong>Time span:</strong>  Data from and around 2012. </li>
+<li><strong>Available at:</strong> <a href="https://qog.pol.gu.se/data/datadownloads/qogstandarddata" target="_blank">https://qog.pol.gu.se/data/datadownloads/qogstandarddata</a></li>
+</ul>
+<hr class="datasources-hr" />
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>&#8216;Rotten boroughs&#8217; were constituencies that had a very small electorate, and could thus be used by a wealthy patron to secure influence; at the turn of the 19th century in immigrant US cities, &#8216;machine politics&#8217; involved hierarchical political organizations that provided social services and jobs in exchange for votes. <br />For more information, see: Aidt, T. S. (2003). Economic analysis of corruption: a survey. The Economic Journal, 113(491), F632-F652.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The list of sources that are considered (subject to availability for each country) are: African Development Bank &#8211; Governance Ratings, Bertelsmann Foundation &#8211; Sustainable Governance Indicators, Bertelsmann Foundation &#8211; Transformation Index, IMD World Competitiveness Yearbook, Political Risk Services &#8211; Country Risk Guide, World Bank &#8211; Country Performance and Institutional Assessment, World Economic Forum &#8211; Executive Opinion Survey, World Justice Project &#8211; Rule of Law Index, Economist Intelligence Unit &#8211; Country Risk Assessment, Global Insight &#8211; Country Risk Ratings, Political and Economic Risk Consultancy &#8211; Asian Intelligence, Freedom House &#8211; Nations in Transit</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Methodological details are available from <a href="https://www.transparency.org/bpi2011/in_detail#myAnchor1">Transparency International</a> </p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Copyright© 2016 Mintz Group LLC. All Rights Reserved. The information and graphics contained in this map are copyrighted and may not be distributed, modified, reproduced in whole or in part without the prior written permission of Mintz Group LLC.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Fisman, R., &#038; Miguel, E. (2007). Corruption, norms, and legal enforcement: Evidence from diplomatic parking tickets. Journal of Political economy, 115(6), 1020-1048.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Glaeser, E. L., &#038; Saks, R. E. (2006). Corruption in america. Journal of public Economics, 90(6), 1053-1072.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Transparency International defines accountability as &#8220;the concept that individuals, agencies and organisations (public, private and civil society) are held responsible for reporting their activities and executing their powers properly.&#8221;</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Williams, A. (2015). A global index of information transparency and accountability. Journal of Comparative Economics, 43(3), 804-824.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Ferraz, C., &#038; Finan, F. (2011). Electoral accountability and corruption: Evidence from the audits of local governments. The American Economic Review, 101(4), 1274-1311.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Olken, Benjamin A. (2007). &#8220;Monitoring Corruption: Evidence from a Field Experiment in Indonesia.&#8221; Journal of Political Economy 115(2): 200-249.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This Policy Briefcase was issued in March 2008, and revised in  May 2012. The data comes from Olken, Benjamin A. 2007. &#8220;Monitoring Corruption: Evidence from a Field Experiment in Indonesia.&#8221; Journal of Political Economy 115(2): 200-249.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Fisman, R., &#038; Miguel, E. (2007). Corruption, norms, and legal enforcement: Evidence from diplomatic parking tickets. Journal of Political economy, 115(6), 1020-1048.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Glaeser, E. L., &#038; Saks, R. E. (2006). Corruption in america. Journal of public Economics, 90(6), 1053-1072.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Ferraz, C., &#038; Finan, F. (2011). Electoral accountability and corruption: Evidence from the audits of local governments. The American Economic Review, 101(4), 1274-1311.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Olken, B. A. (2009). Corruption perceptions vs. corruption reality. Journal of Public economics, 93(7), 950-964.</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The list of sources that are considered (subject to availability for each country) are: African Development Bank &#8211; Governance Ratings, Bertelsmann Foundation &#8211; Sustainable Governance Indicators, Bertelsmann Foundation &#8211; Transformation Index, IMD World Competitiveness Yearbook, Political Risk Services &#8211; Country Risk Guide, World Bank &#8211; Country Performance and Institutional Assessment, World Economic Forum &#8211; Executive Opinion Survey, World Justice Project &#8211; Rule of Law Index, Economist Intelligence Unit &#8211; Country Risk Assessment, Global Insight &#8211; Country Risk Ratings, Political and Economic Risk Consultancy &#8211; Asian Intelligence, Freedom House &#8211; Nations in Transit</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=8998&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

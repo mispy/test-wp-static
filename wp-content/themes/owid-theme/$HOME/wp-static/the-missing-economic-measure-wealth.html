@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>The missing economic measure: Wealth - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/the-missing-economic-measure-wealth/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fthe-missing-economic-measure-wealth%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fthe-missing-economic-measure-wealth%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="The missing economic measure: Wealth"/>
+  <meta property="og:url" content="/the-missing-economic-measure-wealth/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="GDP – or Gross Domestic Product – is a statistical figure so engrained in our understanding of the economy that it is often taken to be indicative of how well a country and its people are doing. But what does GDP actually tell us, and why is it increasingly seen as an incomplete and sometimes mislea"/>
+  <meta property="og:image" content="https://owid.netlify.com/wp-content/uploads/2016/06/OurWorldInData.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="The missing economic measure: Wealth"/>
+  <meta itemprop="description" content="GDP – or Gross Domestic Product – is a statistical figure so engrained in our understanding of the economy that it is often taken to be indicative of how well a country and its people are doing. But what does GDP actually tell us, and why is it increasingly seen as an incomplete and sometimes mislea"/>
+  <meta itemprop="image" content="https://owid.netlify.com/wp-content/uploads/2016/06/OurWorldInData.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="The missing economic measure: Wealth"/>
+  <meta name="twitter:url" content="/the-missing-economic-measure-wealth/"/>
+  <meta name="twitter:description" content="GDP – or Gross Domestic Product – is a statistical figure so engrained in our understanding of the economy that it is often taken to be indicative of how well a country and its people are doing. But what does GDP actually tell us, and why is it increasingly seen as an incomplete and sometimes mislea"/>
+  <meta name="twitter:image" content="https://owid.netlify.com/wp-content/uploads/2016/06/OurWorldInData.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-14844">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class=" clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-14844" class="post-14844 page type-page status-publish hentry">
+			<header class="article-header">
+				<h1 class="entry-title">The missing economic measure: Wealth</h1>									<div class='authors-byline'><a href="/about/#the-team">by Sandra Tzvetkova and Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Sandra Tzvetkova and Max Roser (2017) – &lsquo;The missing economic measure: Wealth&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /the-missing-economic-measure-wealth/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<p>GDP – or Gross Domestic Product – is a statistical figure so engrained in our understanding of the economy that it is often taken to be indicative of how well a country and its people are doing. But what does GDP actually tell us, and why is it increasingly seen as an incomplete and sometimes misleading measure of both economy activity and wellbeing? In this blog post, we answer this question and discuss a ‘new’, albeit historically older, measure which is gaining traction as a much-needed supplement to GDP: national wealth.</p>
+<h3 id="what-gdp-does-and-doesnt-tell-us"> <a class="deep-link" href="#what-gdp-does-and-doesnt-tell-us"># </a>What GDP does and doesn&#8217;t tell us</h3>
+<p>So, what is GDP? GDP is a measure of economic activity – in terms of market-based gross output – in a given period (often a year). This is of course useful in many ways. GDP growth, when captured accurately, has the potential to tell us about the pace of change and rising levels of consumption. Equally, a cessation of GDP growth can serve as an important red flag: stalling enterprises and increases in unemployed workers tend to imply hardship and losses in welfare. </p>
+<p>However, there are important changes that GDP does not shed light on, and indeed might give us incorrect signals about. Think about climate change – a critical issue that was recently <a href="https://unfccc.int/meetings/bonn_nov_2017/meeting/10084.php" rel="noopener" target="_blank">under discussion in Bonn, Germany</a>. An economy can increase its <a href="https://owid.netlify.com/co2-and-other-greenhouse-gas-emissions/">CO<sub>2</sub> emissions</a> and drive up <a href="https://owid.netlify.com/air-pollution/">local pollutants</a> – both clearly harmful to the long-term wellbeing of the population – while being rewarded with rising GDP figures. Similarly, a natural disaster might harm people, destroy infrastructure, and require expensive emergency measures – yet thanks to a rise in spending, this too would temporarily register as an increase in GDP. On the flip side, beneficial endeavors such as attempting to stall the alarming rate of biodiversity loss or deforestation not only fail to register in our headline statistic; they might slow its growth.</p>
+<p>This is where wealth accounting comes in. Rather than measuring <em>flows</em>, as GDP does, wealth is an indicator of an economy’s underlying capital <em>stocks</em>. Wealth, if measured in detail, accounts for the assets such as natural capital, produced capital, and human capital that underpin growth and consumption possibilities, and in this way shows us viable development pathways. In the event of a natural disaster or rising pollution, for example, while GDP might grow, wealth measures would alert us to the depletion of underlying physical and natural capital stocks and the need for targeted investment. A detailed enough balance sheet would thus theoretically allow for the sustainable management of an economy&#8217;s productive capital. Therefore, while GDP has little to say about whether a nation’s assets can sustain current consumption levels into the future, wealth measures can tell us exactly this. The relationship between wealth and GDP is analogous to company accounts: the balance sheet of a company describes the stock of useful assets owned by a company (akin to wealth), while the profit and loss statement describes the flows of revenue, costs, and net income that the company has been able to generate using those assets (akin to GDP). Ultimately, the two measures are necessarily linked and best considered alongside each other.</p>
+<h3 id="genuine-saving-a-measure-of-change-in-wealth"> <a class="deep-link" href="#genuine-saving-a-measure-of-change-in-wealth"># </a>Genuine saving: a measure of change in wealth</h3>
+<p>With the same logic described above, we can understand that current change to a country’s total wealth is linked to whether a country’s future consumption will lie above or below its current consumption level. Genuine saving (also known as “adjusted net saving” or “comprehensive investment”) provides a measure of the change in wealth. If a country’s genuine saving is negative, this indicates that the country is consuming more than it is saving, thus eating into its capital stocks. If genuine saving is positive, the country is augmenting its wealth and theoretically improving its future prospects. </p>
+<p>It is important, however, to emphasize that this measure of sustainability assumes perfect substitutability among different forms of capital. For example, a country can maintain the same level of genuine saving by depleting natural capital while simultaneously investing in produced capital. Yet this overlooks the fact that some natural capital that is essential to our existence on Earth – such as productive soils, a stable climate, and functioning ecosystems – face tipping points beyond which they cannot be easily restored. Fittingly, this type of assumption about substitutability underpins a concept often referred to as &#8220;weak sustainability&#8221;. &#8220;Strong sustainability&#8221;, on the other hand, focusses on the fact that natural capital cannot always be substituted for by other forms of capital.</p>
+<p>With this important distinction in mind, let us consider existing measures of genuine saving.</p>
+<p>Researchers Blum, Ducoing and McLaughlin (2017)<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='Blum, Ducoing, McLaughlin. “A sustainable century? Genuine savings in developing and developed countries 1900-2000” in National Wealth: What is Missing, Why it Matters. Eds. Hamilton, K., &#038; Hepburn, C. Oxford University Press.'>1</sup></a> provide a view of the long-run development of genuine saving covering eleven countries over the span of the twentieth century. Their definition of genuine savings is as follows: Genuine Savings = net fixed produced capital formation and overseas investment + change in natural capital + education expenditure. Broadly speaking, their measure of saving accounts for changes in wealth in terms of the underlying produced, human, natural, and financial capital.</p>
+<p>In the graph below, we see genuine saving plotted alongside GDP for the years 1900-2000 for the UK. You can compare countries by one or both of these measures by clicking &#8220;add country&#8221; at the bottom of the chart.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/genuine-saving-and-gdp-per-capita-in-international-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/genuine-saving-and-gdp-per-capita-in-international-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>In the above graph of the UK, we can clearly see the political and social developments of the 20th century reflected statistically. The effects of the Great Depression and Second World War register as dips in genuine saving, while GDP simultaneously grows. This is the case for other early-industrializing countries as well. Adding Switzerland to the chart, however, shows an anomaly – as genuine saving declines across most European countries during the two World Wars, Switzerland experienced periods of large saving. This highlights the country&#8217;s role as a safe haven for capital.</p>
+<p>Interestingly, the time between the Great Depression and World War II also marks the moment in which GDP emerged as the foremost measure of the economy. Although its creators Simon Kuznets and Colin Clark intended to introduce an indicator that would inform us about welfare, wartime pressure took priority. GDP was thus developed as a way to calculate the extent to which people in an economy could be forced to divert efforts into wartime production.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Coyle, D., 2015. GDP: A brief but affectionate history. Princeton University Press.'>2</sup></a> In this telling context, Kuznets warned that GDP would fail to make the distinction between the &#8220;quantity and quality of growth, between its costs and returns, and between the short and the long term&#8221;.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Simon Kuznets in: Herbert David Croly eds. (1962) The New Republic Vol. 147. p. 29: About rethinking the system of national accounting'>3</sup></a></p>
+<p>In the following chart, we can see a comparison of genuine saving across different countries over the 20th century.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/genuine-savings-per-capita-in-international-dollars-1900-2000" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/genuine-savings-per-capita-in-international-dollars-1900-2000" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>What does genuine saving look like in the years after 2000? The researchers responsible for producing the data presented above are currently working on expanding the dataset&#8217;s country-coverage. In the interim, we can see estimates calculated using a different methodology from the World Bank. The below chart shows the World Bank&#8217;s measure of Adjusted Net Saving (ANS), also an indicator of genuine saving, for the years 1970 to 2015. It is important to note that here ANS is presented as a total – rather than per capita – annual figure, so larger countries have larger ANS.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/adjusted-net-saving-current-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/adjusted-net-saving-current-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<h3 id="total-and-per-capita-wealth-by-asset-type"> <a class="deep-link" href="#total-and-per-capita-wealth-by-asset-type"># </a>Total and per capita wealth by asset-type</h3>
+<p>Now that we have considered the long-term evolution of <em>changes</em> in wealth, let us consider the latest figures of total and per capita wealth. As mentioned, this is by no means a new idea. As we examine the various forms of capital that make up an economy – and which are only just now beginning to garner renewed attention – let us keep in mind that wealth has a history longer than that of GDP. Think of Adam Smith&#8217;s aptly named &#8220;The Wealth of Nations&#8221; – originally published in 1776 – and the statistician Robert Giffen, who examined stocks of capital as closely as flows of output in 1889.<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Giffen, R. (1889). The growth of capital. London: G. Bell.'>4</sup></a> Even the Victorians, who 150 years ago constructed much of the physical capital that we continue to rely upon today, could intuit the lasting impact of capital stocks.</p>
+<p>The data visualized below draws on figures just released by the World Bank, who have been at the forefront of developing the methodology and accounting practices behind modern-day wealth accounts. Their newly revised methodology measures wealth from the &#8220;bottom-up&#8221;, calculating the separate value of four asset groups – natural capital, produced capital, human capital, and net foreign assets – which together account for the majority of national wealth.<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='The metric is nonetheless an evolving measure, and is not necessarily completely inclusive in its scope at present. Other forms of capital that are not captured but are currently being researched include social and institutional capital as well as ecosystem services.'>5</sup></a> Each of these asset groups is measured, where possible, as the net present value of the stream of future returns. This approach intends to capture the lifetime value of an asset, thus allowing us to examine assets, income, and consumption within a framework linking them to future sustainability. The most important improvement to this set of wealth accounts is the inclusion of human capital, calculated as the discounted value of lifetime earnings.</p>
+<p>The chart below shows total wealth per capita by country groupings based on income level. We can see that average per capita wealth across the world grew from $130,032 to $169,349 – or a rate of 1.3 percent per year – between 1995 and 2014. This signals an overall gradually increasing asset base, however it also contains differences in wealth accumulation between rich and poor countries. Over the last twenty years, the concentration of wealth among high income countries fell as middle income countries – and most notably upper middle income countries – increased their share of global wealth. Low income countries, however, held on to only 1% of global wealth in 2014, about the same share as in 1995.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/total-wealth-per-capita-by-income-groups-in-2014-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/total-wealth-per-capita-by-income-groups-in-2014-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>By breaking down total wealth into its underlying asset groups, we can see that human capital holds the largest share of global wealth in 2014, at 65% of all wealth. Notably, this figure fell from 69% in 1995 – a development which the World Bank attributes to the steep decline after 2000 in the shares of human capital in high and upper middle income countries. This decline is in turn a result of rapidly aging labor forces and slumping real wages (especially in high-income OECD countries). Still, according to the World Bank, human capital is the largest component of wealth in all but low income countries, where the value of natural capital exceeds that of human capital. Among all income groups except high income non-OECD countries, we see that net foreign assets are negative. This implies the role of oil-producers as net creditors to the world.<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Forthcoming: World Bank (2018). The Changing Wealth of Nations.'>6</sup></a> You can compare the asset breakdown of total wealth for various country groupings by clicking on &#8220;change country&#8221; in the bottom of the chart.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/total-wealth-by-asset-group-in-millions-2014-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/total-wealth-by-asset-group-in-millions-2014-us-dollars" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>Some asset groups can be further broken down into sub-components. This is particularly useful for examining natural capital in individual countries – and especially so in countries with larger shares of natural capital. A breakdown of natural capital allows us to distinguish between renewable assets such as forests, and non-renewable ones such as fossil fuels. Below we can see that Saudi Arabia is unsurprisingly highly dependent on fossil energy resources. </p>
+<p>Notably, natural capital accounts currently fall short of capturing aspects of nature – such as biodiversity – that have been in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809" rel="noopener" target="_blank">dramatic decline</a>. To attempt to address this pressing issue, various groups are exploring the <a href="https://www.wavespartnership.org/" rel="noopener" target="_blank">valuation of ecosystem services</a>.</p>
+<p><iframe data-src="https://owid.netlify.com/grapher/wealth-per-capita-by-asset-group-with-natural-capital-disaggregated-in-2014-us-dollars?country=SAU" style="width: 100%; height: 600px; border: 0px none;"></iframe><noscript><iframe src="https://owid.netlify.com/grapher/wealth-per-capita-by-asset-group-with-natural-capital-disaggregated-in-2014-us-dollars?country=SAU" style="width: 100%; height: 600px; border: 0px none;"></iframe></noscript></p>
+<p>The newly released data from the World Bank signals an exciting step toward statistical measures that shed light on material wellbeing and our ability to sustain it. As wealth gains traction in public thinking – it was recently featured in <a href="https://global-perspectives.org.uk/wp-content/uploads/2017/10/making-the-future-count.pdf" rel="noopener" target="_blank">the winning entry of the Indigo Prize</a>, and has been a prominent aspect of other proposals to reform economic measurement<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='See for example recommendation 3 of the influential Stiglitz-Sen-Fitoussi Report on the Measurement of Economic Performance and Social Progress: &#8220;Consider income and consumption jointly with wealth&#8221; pg. 24, available online.'>7</sup></a> – we may hope to see country statistical agencies releasing wealth data alongside GDP data. The implications of such widespread adoption would be big. Focusing on wealth as the primary measure of the economy would mean a complete recasting of the way we determine progress: one that finally shifts away from growth-at-all-costs and pays attention to our future.</p>
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Blum, Ducoing, McLaughlin. “A sustainable century? Genuine savings in developing and developed countries 1900-2000” in National Wealth: What is Missing, Why it Matters. Eds. Hamilton, K., &#038; Hepburn, C. Oxford University Press.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Coyle, D., 2015. GDP: A brief but affectionate history. Princeton University Press.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Simon Kuznets in: Herbert David Croly eds. (1962) The New Republic Vol. 147. p. 29: About rethinking the system of national accounting</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Giffen, R. (1889). The growth of capital. London: G. Bell.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The metric is nonetheless an evolving measure, and is not necessarily completely inclusive in its scope at present. Other forms of capital that are not captured but are currently being researched include social and institutional capital as well as ecosystem services.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Forthcoming: World Bank (2018). The Changing Wealth of Nations.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>See for example recommendation 3 of the influential Stiglitz-Sen-Fitoussi Report on the Measurement of Economic Performance and Social Progress: &#8220;Consider income and consumption jointly with wealth&#8221; pg. 24, available <a href="https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report" rel="noopener" target="_blank">online</a>.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=14844&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

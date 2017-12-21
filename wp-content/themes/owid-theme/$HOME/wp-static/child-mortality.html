@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>Child Mortality - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World in Data &raquo; Child Mortality Comments Feed" href="/child-mortality/feed/" />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/child-mortality/" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fchild-mortality%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fchild-mortality%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="Child Mortality"/>
+  <meta property="og:url" content="/child-mortality/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Since the beginning of the age of the Enlightenment and over the course of modernization, the mortality of children below 5 years of age has declined rapidly. Child mortality in rich countries today is much lower than 1%. This is a very recent development and was only reached after a hundredfold dec"/>
+  <meta property="og:image" content="/wp-content/uploads/2013/05/global-child-mortality-timeseries.png"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Child Mortality"/>
+  <meta itemprop="description" content="Since the beginning of the age of the Enlightenment and over the course of modernization, the mortality of children below 5 years of age has declined rapidly. Child mortality in rich countries today is much lower than 1%. This is a very recent development and was only reached after a hundredfold dec"/>
+  <meta itemprop="image" content="/wp-content/uploads/2013/05/global-child-mortality-timeseries.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Child Mortality"/>
+  <meta name="twitter:url" content="/child-mortality/"/>
+  <meta name="twitter:description" content="Since the beginning of the age of the Enlightenment and over the course of modernization, the mortality of children below 5 years of age has declined rapidly. Child mortality in rich countries today is much lower than 1%. This is a very recent development and was only reached after a hundredfold dec"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2013/05/global-child-mortality-timeseries.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page-template-default page page-id-1441">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category active'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class="active"><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category active' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class="active"><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class="active"><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="page-with-sidebar clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-1441" class="post-1441 page type-page status-publish has-post-thumbnail hentry category-entries category-population">
+			<header class="article-header">
+				<h1 class="entry-title">Child Mortality</h1>									<div class='authors-byline'><a href="/about/#the-team">by Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser (2017) – &lsquo;Child Mortality&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /child-mortality/ [Online Resource]
+					</div>
+								
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<p>Since the beginning of the age of the Enlightenment and over the course of modernization, the mortality of children below 5 years of age has declined rapidly. Child mortality in rich countries today is much lower than 1%. This is a very recent development and was only reached after a hundredfold decline in child mortality in these countries. In early-modern times, child mortality was very high; in 18th century Sweden every third child died, and in 19th century Germany every second child died. With declining poverty and increasing knowledge and service in the health sector, child mortality around the world is declining very rapidly: Global child mortality fell from 18.2% in 1960 to 4.3% in 2015; while 4.3% is still too high, this is a substantial achievement.</p>
+<p>One reason why we do not hear about how global living conditions are improving in the media is that these are the slow processes that never make the headlines: In 1990 7.6 million children died before they were five years old, in 2013 the number of children dying in childhood was down to 3.7 million.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='These are the estimates from the Global Burden of Disease 2013 study.'>1</sup></a> This happened at a time when the number of children being born increased globally. Unfortunately the media is overly obsessed with reporting single events and with things that go wrong and does not nearly pay enough attention to the slow developments like these that reshape our world. A media that would report global development could have had the headline “The number of children dying globally fell by 455 since yesterday” and they wouldn’t have this headline once, but every single day over these more than 2 decades.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Reduction over 23 years: 3,900,000.00 reduction every year on average: 169,565.22 reduction every month on average: 14,130.43 reduction every day on average: 455.82. To take a longer perspective: on no day in the last 5 decades was there ever the headline ‘Global Child Mortality Fell by 0.00719% Since Yesterday’.'>2</sup></a></p>
+<p>Big countries like Brazil and China reduced their child mortality rates 10-fold over the last 4 decades. Other countries – especially in Africa – still have high child mortality rates, but its not true that these countries are not making progress. In Sub-Saharan Africa, child mortality has been continuously falling for the last 50 years (1 in 4 children died in the early 60s – today it is less than 1 in 10). Over the last decade this improvement has been happening faster than ever before. Rising prosperity, rising education and the spread of health care around the globe are the major drivers of this progress.</p>
+<p><!--------------------------><br />
+<!--------------------------></p>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="global-decline-of-child-mortality"> <a class="deep-link" href="#global-decline-of-child-mortality"># </a>Global decline of child mortality</h3>
+<p>One reason why we do not see progress is that we are unaware of how bad the past was.</p>
+<p>In 1800 the health conditions of our ancestors were such that 43% of the world&#8217;s newborns died before their 5th birthday. These estimates are shown in the visualisation below.</p>
+<p>In 1960 child mortality was still 18.5%. Almost every 5th child born in that year died in childhood.</p>
+<p>Over the last decades we have seen a very rapid decline of child mortality globally. In 2015 child mortality was down to 4.3% – 10-fold lower than 2 centuries ago. You have to take this long perspective to see the progress that we have achieved.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-child-mortality-timeseries" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-child-mortality-timeseries" width="300" height="150"></iframe></noscript></p>
+<h3 id="country-by-country-decline-in-child-mortality"> <a class="deep-link" href="#country-by-country-decline-in-child-mortality"># </a>Country by country decline in child mortality</h3>
+<p>In the time series plot below I show child mortality over the long run. Today child mortality in industrialized countries is below 0.5%. The time series plot shows that these low mortality rates are a very recent development, and in pre-modern countries child mortality rates were between 30% and 50%. In the late 19th century, every second child in Germany died before its fifth birthday. In developing countries the health of children is quickly improving – but child mortality is still much higher than in developed countries.</p>
+<p>A second interesting characteristic that is immediately noticeable is that the series are very &#8216;spikey&#8217; in the 19th century and are then much smoother in the 20th century. This is partly because the data quality is improving over time but it also shows how frequent crises were in pre-modern times. The decline of crises is an important aspect of improving &#8216;living standards&#8217;. In our <a href="//ourworldindata.org/data/food-agriculture/volatility-of-food-prices/#year-to-year-variation-in-the-price-of-wheat-in-pisa-1351-1799-o-gradaref">entry on food price volatility</a> you find a long-run series in Pisa that shows how frequent food crises were. In the following plot you can see what these and other crises – epidemics or wars, for example – meant for the health of the population.</p>
+<p><iframe data-src="/grapher/child-mortality" width="100%" height="600px"></iframe><noscript><iframe src="/grapher/child-mortality" width="100%" height="600px"></iframe></noscript></p>
+<h3 id="global-picture-of-child-mortality-from-1800-until-today"> <a class="deep-link" href="#global-picture-of-child-mortality-from-1800-until-today"># </a>Global picture of child mortality from 1800 until today</h3>
+<p>The chart shows the child mortality rate – the share of children dying before they reach the age of 5 – for the entire world population at 4 different points in time.</p>
+<p><em><strong>How to read the following graph:</strong> On the x-axis you find the cumulative share of the world population. The countries are ordered along the x-axis descending by the country’s child mortality rate. This makes it possible to see the child mortality rate for each country. Some countries are labelled, but not all. It is also possible to see which share of the world population had a child mortality rate lower than a given level. For the orange line – referring to data from 1950-60 – we see that close to 70% of the world population have a child mortality rate of higher than 10% back then.<br />
+</em></p>
+<p>For 1800 (red line), you see that the countries on the very left – Yemen, India, and others that are not labelled – had a child mortality rate higher than 50%. Every second child died before the age of 5. On the very right of the red line you see that in 1800 the best-off countries in the world had a child mortality rate higher than 30%: Every third child died in the countries with the <em>best</em> health.</p>
+<p>Looking at the orange line, you see that in the following 150 years some countries substantially reduced their child mortality rate: 30% of the world population has a child mortality under 10%. Other countries were stuck in poor health: More than half of the world (57%) had child mortality that were still higher than 20%. The world was clearly divided into developed and developing countries. The rapid progress of the industrialized countries had the consequence that the distribution of global health was hugely unequal.</p>
+<p>The latest data refers to 2013. Global health has improved hugely. Particularly those countries that had the worst health in the 1950s experienced the most dramatic improvements. China for example reduced its child mortality from 28.4% to now 1.3%. The consequence of the faster progress in former developing countries is that global health inequality has fallen since the 1950s.</p>
+<p>The global average child mortality rate (weighted population) was 43.3% in 1800 and now fell to 3.4%. Focusing at global inequality we see that in 1800 health was bad around the world, in the 1950s the world became unequal, and today we are back to higher equality but on a much higher level.</p>
+<p>Comparing the position of countries on the red, orange, green and blue lines also makes it possible to see the change in a single countries: In 1800 every second child in South Korea died, in the 1950s the rate was halved (26%), and today it is down to 2.7%.</p>
+<h6 id="world-population-by-level-of-child-mortality-over-time-1800-2013refthe-data-shown-in-this-graph-are-obtained-from-gapminder-org"> <a class="deep-link" href="#world-population-by-level-of-child-mortality-over-time-1800-2013refthe-data-shown-in-this-graph-are-obtained-from-gapminder-org"># </a>World population by level of child mortality over time, 1800-2013<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='The data shown in this graph are obtained from Gapminder.org.'>3</sup></a></p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality.png"><img class="aligncenter wp-image-5568 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-750x525.png" alt="World population by level of fertility over time, 1950-2050 – Max Roser" width="750" height="525" srcset="/wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-750x525.png 750w, /wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-150x105.png 150w, /wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-400x280.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-5568 size-large" src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-750x525.png" alt="World population by level of fertility over time, 1950-2050 – Max Roser" width="750" height="525" srcset="/wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-750x525.png 750w, /wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-150x105.png 150w, /wp-content/uploads/2013/05/ourworldindata_world-population-by-level-of-child-mortality-400x280.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h4 id="the-child-mortality-rate-country-by-country"> <a class="deep-link" href="#the-child-mortality-rate-country-by-country"># </a>The child mortality rate – country by country</h4>
+<p>The following visualisation shows the child mortality rate for all countries in 1955 and six decades later.</p>
+<p>To read the change for individual countries you can hover with the mouse arrow over the lines.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/child-mortality-by-country" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/child-mortality-by-country" width="300" height="150"></iframe></noscript></p>
+<h3 id="child-deaths-over-time"> <a class="deep-link" href="#child-deaths-over-time"># </a>Child deaths over time</h3>
+<p>The data presented showed the rate of child deaths. The absolute number of child deaths also depends on the absolute number of births and is shown in the following chart.</p>
+<p>In the late 1960s there close to 20 million children died every year. Even though the number of births increased since then, the absolute number of child deaths started to decrease and from annually more than 20 million deaths declined to below 6 million deaths. The annual decrease of this reduction stayed remarkably stable over these five decades.</p>
+<p>By clicking &#8216;add country&#8217; it is possible to see this change over time for all countries in the world.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/child-deaths-UN-data" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/child-deaths-UN-data" width="300" height="150"></iframe></noscript></p>
+<h3 id="child-mortality-in-pre-modern-cultures"> <a class="deep-link" href="#child-mortality-in-pre-modern-cultures"># </a>Child mortality in pre-modern cultures</h3>
+<p>In &#8216;<a href="https://nfs.unipv.it/NFS/MINF/DISPENSE/PATGEN/lectures/files/readings/gurven_2007.pdf">Longevity Among Hunter‐Gatherers</a>&#8216; the authors, Gurven and Kaplan, compare mortality patterns of hunter gatherers and modern societies and state that &#8220;infant mortality is over 30 times greater among hunter-gatherers, and early child mortality is over 100 times greater than encountered in the United States&#8221;.<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='M Gurven, H Kaplan (2007) – Longevity Among Hunter‐Gatherers: A Cross‐Cultural Examination. Population and Development Review. Volume 33, Issue 2, pages 321–365, June 2007.'>4</sup></a></p>
+<h6 id="proportions-of-subadults-defined-as-individuals-with-incomplete-skeletal-or-dental-development-in-samples-of-fossil-hominids-chamberlain-2006ref"> <a class="deep-link" href="#proportions-of-subadults-defined-as-individuals-with-incomplete-skeletal-or-dental-development-in-samples-of-fossil-hominids-chamberlain-2006ref"># </a>Proportions of subadults (defined as individuals with incomplete skeletal or dental development) in samples of fossil hominids – Chamberlain (2006)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='This is taken from Andrew T. Chamberlain (2006) – Demography in Archaeology. Cambridge University Press (Cambridge Manuals in Archaeology). The original sources of the data are: Koobi Fora: Wood, 1991; Hadar: Johanson et al., 1982; Kimbel et al., 1982; White and Johanson, 1982; Kimbel et al., 1994; Sterkfontein: Mann, 1975; Brain, 1981; Lockwood and Tobias, 2002; Swartkrans: Mann, 1975; Brain, 1981; Grine, 1993; Zhoukoudian: Weidenreich, 1939; Neanderthals: Trinkaus, 1995; Olduvai Gorge: Tobias, 1991; Atapuerca: Bermúdez de Castro et al., 2004.'>5</sup></a> 
+<table id="tablepress-51" class="tablepress tablepress-id-51">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">Site and species</th><th class="column-2">Subadults</th><th class="column-3">Adults</th><th class="column-4">Share of Subadults</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Surface collected sites<br />
+Koobi Fora (Homo)</td><td class="column-2">7</td><td class="column-3">28</td><td class="column-4">20%</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Koobi Fora (Paranthropus boisei)</td><td class="column-2">10</td><td class="column-3">29</td><td class="column-4">26%</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Hadar (Australopithecus afarensis)</td><td class="column-2">17</td><td class="column-3">41</td><td class="column-4">29%</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Excavated sites<br />
+Sterkfontein (Australopithecus africanus)</td><td class="column-2">22</td><td class="column-3">56</td><td class="column-4">28%</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Swartkrans (Paranthropus robustus)</td><td class="column-2">79</td><td class="column-3">80</td><td class="column-4">50%</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Zhoukoudian (Homo erectus)</td><td class="column-2">15</td><td class="column-3">23</td><td class="column-4">39%</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Neanderthals  (Homo  neanderthalensis)</td><td class="column-2">106</td><td class="column-3">100</td><td class="column-4">52%</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">Olduvai Gorge (Homo habilis)</td><td class="column-2">13</td><td class="column-3">6</td><td class="column-4">68%</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">Atapuerca (Homo heidelbergensis)</td><td class="column-2">19</td><td class="column-3">9</td><td class="column-4">68%</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-51 from cache --></p>
+<h3 id="child-mortality-globally-post-1950"> <a class="deep-link" href="#child-mortality-globally-post-1950"># </a>Child mortality globally post-1950</h3>
+<p>Globally child mortality has declined from 23% in 1950 to 4.5% today.</p>
+<p>Though there are still large disparities between child mortality rates between different regions around the world, it is steadily decreasing in all world regions.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/child-mortality-by-world-region" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/child-mortality-by-world-region" width="300" height="150"></iframe></noscript></p>
+<h4 id="child-mortality-has-declined-in-all-countries-of-the-world"> <a class="deep-link" href="#child-mortality-has-declined-in-all-countries-of-the-world"># </a>Child mortality has declined in all countries of the world</h4>
+<p>The scatter plot below shows for each country the child mortality rate in 1970 and in 2015. It shows that the mortality rate has fallen in each country.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/u5mr-1970-vs-2015" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/u5mr-1970-vs-2015" width="300" height="150"></iframe></noscript></p>
+<h3 id="world-map-of-child-mortality"> <a class="deep-link" href="#world-map-of-child-mortality"># </a>World map of child mortality</h3>
+<p>The world visualizes the level of child mortality country by country. By moving the slider to a later year one can study the global decrease in child mortality. In fact child mortality has decreased in every single country over the last decades.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/child-mortality?tab=map" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/child-mortality?tab=map" width="300" height="150"></iframe></noscript></p>
+<h3 id="child-mortality-by-cause-of-death"> <a class="deep-link" href="#child-mortality-by-cause-of-death"># </a>Child mortality by cause of death</h3>
+<h4 id="all-causes-of-child-death-globally"> <a class="deep-link" href="#all-causes-of-child-death-globally"># </a>All causes of child death – globally</h4>
+<p>In a publication in The Lancet Liu et al. (2015)<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Li Liu, PhD, Shefali Oza, MSc, Daniel Hogan, PhD, Jamie Perin, PhD, Prof Igor Rudan, MD, Prof Joy E Lawn, MD, Prof Simon Cousens, MA, Colin Mathers, PhD, Prof Robert E Black (2015) – Global, regional, and national causes of child mortality in 2000–13, with projections to inform post-2015 priorities: an updated systematic analysis. The Lancet, Volume 385, No. 9966, p430–440, 31 January 2015.'>6</sup></a> presented estimates on the causes of deaths of children in 2000 and 2013. The tree map below presents this data. Each rectangle corresponds to a cause of child mortality. The size of each rectangle shows the share of children killed by each cause. The three leading causes are preterm birth complications (15% of total; 0.965 million), pneumonia (2% in the first month, 13% later; 0.935 million in total), and intrapartum-related complications (11%, 0·662 million).</p>
+<p>44% of all children died in the first month of their life. More than half of all children (51.8%) died of infectious diseases. The researchers report &#8220;deaths due to infectious diseases, such as<br />
+pneumonia, diarrhoea, and malaria, are concentrated in the first 2 years of life, which should direct programmes towards these very young ill children&#8221;.</p>
+<p>The color of each rectangle indicates the annual reduction of the mortality rate from that specific cause since 2000. Child mortality from all causes declined; the smallest decline (0.2%) was achieved for pertussis, also known as whooping cough; the largest decline was achieved for measles (12.8%) for which <a href="https://owid.netlify.com/data/health/vaccination/">a vaccination is widely available</a>. As the causes of mortality later in childhood are declining faster the researchers observe a shift in the timing of child deaths closer and closer to the time of birth.</p>
+<p>The absolute number of children dying decreased: In 2000 9,887 million children died before they were 5 years old – 13 years later, 6,282 million children died. This happened while the absolute number of livebirths increased from 127,703 million in 2000 to 137,688 million in 2013.</p>
+<p>Since cause of death data is not available for all countries in the world the researchers had to make use of three different sources of data: The preferred data was of course vital registration data; where not available Liu et al. (2015) estimated the cause of death with a multicause model, applying a multinomial logistic regression framework and when this was not possible they used a &#8220;verbal autopsy databased multicause model&#8221;.</p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_u5_deaths_by_cause_2013_lancet_data.png" rel="attachment wp-att-7281"><img class="aligncenter size-large wp-image-7281" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_u5_deaths_by_cause_2013_lancet_data-707x550.png" alt="U5_Deaths_by_Cause_2013_Lancet_data" width="707" height="650" /><noscript><img class="aligncenter size-large wp-image-7281" src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_u5_deaths_by_cause_2013_lancet_data-707x550.png" alt="U5_Deaths_by_Cause_2013_Lancet_data" width="707" height="650" /></noscript></a></p>
+<h4 id="all-causes-of-child-death-globally-over-time"> <a class="deep-link" href="#all-causes-of-child-death-globally-over-time"># </a>All causes of child death – globally over time</h4>
+<p>The following visualisation is following on the change over time and shows the number of child deaths by cause. The data comes from the IHME’s <a href="https://www.healthdata.org/gbd">Global Burden of Disease study</a>.</p>
+<p>This visualization shows the many causes of child deaths and the mortality rate that they are responsible for. Birth complications, pneumonia, diarrheal diseases, and malaria all still lead to the death of more than 400,000 children annually.</p>
+<p>In many cases, the comparison with 1990 shows that we are on track to a rapid reduction. But the breakdown by cause also highlights that preventable diseases are still responsible for an unacceptably large share of child deaths and we have the duty and the possibility to reduce child mortality further.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-child-deaths-by-cause" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-child-deaths-by-cause" width="300" height="150"></iframe></noscript></p>
+<h4 id="the-five-most-lethal-infectious-diseases-over-time"> <a class="deep-link" href="#the-five-most-lethal-infectious-diseases-over-time"># </a>The five most lethal infectious diseases over time</h4>
+<p>The chart below focusses on the five most lethal infectious diseases. It shows the number of child deaths caused by these diseases from 1990 onwards.</p>
+<p>Deaths caused by malaria and HIV/AIDS were rising over the 1990s. From 2005 onwards the deaths caused by each of these diseases is declining.</p>
+<p>The most important disease referred to as &#8216;<a href="https://en.wikipedia.org/wiki/Lower_respiratory_tract_infection">lower respiratory infections</a>&#8216; in the visualisation is pneumonia.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/childhood-deaths-from-the-five-most-lethal-infectious-diseases-worldwide" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/childhood-deaths-from-the-five-most-lethal-infectious-diseases-worldwide" width="300" height="150"></iframe></noscript></p>
+<h3 id="child-mortality-by-sex"> <a class="deep-link" href="#child-mortality-by-sex"># </a>Child mortality by sex</h3>
+<p>The visualisation below that the mortality of boys is higher than the mortality of girls in the huge majority of countries around the world. Part of the explanation for this consistent difference across very different countries is that newborn girls have a biological advantage in survival over newborn boys. According to a UN (2011)<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='United Nations, Department of Economic and Social Affairs, Population Division (2011). Sex Differentials in Childhood Mortality (United Nations publication, ST/ESA/SER.A/314). Online here.'>7</sup></a> report on the topic this is particularly due to girls&#8217; &#8220;lesser vulnerability to perinatal conditions (including birth trauma, intrauterine hypoxia and birth asphyxia, prematurity, respiratory distress syndrome and neonatal tetanus), congenital anomalies, and such infectious diseases as intestinal infections and lower respiratory infections&#8221;.</p>
+<p><a href="https://owid.netlify.com/grapher/child-mortality-line-chart-by-sex">Here</a> is a visualisation of child mortality by sex as a line chart.<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/child-mortality-by-sex" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/child-mortality-by-sex" width="300" height="150"></iframe></noscript></p>
+<h3 id="how-many-children-did-a-woman-give-birth-to-that-died-before-their-5th-birthday"> <a class="deep-link" href="#how-many-children-did-a-woman-give-birth-to-that-died-before-their-5th-birthday"># </a>How many children did a woman give birth to that died before their 5th birthday?</h3>
+<p>The brutal reality of child mortality becomes clearer when one remembers what it means for each woman who loses her child.</p>
+<p>The following visualization uses the data on <a href="https://owid.netlify.com/fertility/">fertility</a> – the number of children born per woman – over time and combines it with information on child mortality over time. Taking these two time series together makes it possible to estimate how many children a woman on average lost before the children were five years old.<br />
+Below you see the data for Sweden which is one of the country for which we have the best historical data, the Swedish office for population statistics <em>Tabellverket</em> was founded as early as 1749.<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='See the history of Statistics in Sweden.'>8</sup></a> The visualization shows that throughout most of the 19th century Swedish women gave birth to more than 4 children. As we have seen above, child mortality in this period was often higher than 25%. Fertility and child mortality were so high that on average <em> every</em> woman lost 1 of her children before they could celebrate their 5th birthday. With the decline of child mortality and fertility this became very rare, in 2015 Swedish women lost on average 0.006 children before they were 5 years old.</p>
+<p>In this visualization you can change the country for which this time-series is visualized to explore the trends in countries around the world. To <em>compare</em> the number of children lost per woman for several countries – and see the data on a world map – you can use <a href="https://owid.netlify.com/grapher/children-died-before-five-per-woman">this visualisation</a>.</p>
+<p>The data shown in this visualization is calculated based on the historical estimates of fertility and child mortality presented at <a href="https://gapminder.org">Gapminder.org</a> (see the sources tab in the chart for more information); particularly for the early period data coverage is not as good as one wishes and it should be understood that the presented estimates are coming with a considerable uncertainty.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/Children-woman-death-vs-survival" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/Children-woman-death-vs-survival" width="300" height="150"></iframe></noscript></p>
+<p><!------ infant mortality -----></p>
+<h3 id="infant-mortality"> <a class="deep-link" href="#infant-mortality"># </a>Infant mortality</h3>
+<h4 id="declining-number-of-infant-deaths"> <a class="deep-link" href="#declining-number-of-infant-deaths"># </a>Declining number of infant deaths</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/annual-deaths-of-infants-younger-than-1-year-by-world-region" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/annual-deaths-of-infants-younger-than-1-year-by-world-region" width="300" height="150"></iframe></noscript></p>
+<h4 id="declining-infant-mortality-around-the-world"> <a class="deep-link" href="#declining-infant-mortality-around-the-world"># </a>Declining infant mortality around the world</h4>
+<p>Through this world map you can see the dramatic decrease in infant mortality since 1950. Press play to see the change over time around the world or click on any country to see the decline in a particular country.</p>
+<p>In 1970 Malawi, Afghanistan, and Yemen still suffered from infant mortality over 20%. Today there is no country in the world with an infant mortality higher than 10%.</p>
+<h4 id="the-decline-of-infant-mortality-around-the-world"> <a class="deep-link" href="#the-decline-of-infant-mortality-around-the-world"># </a>The decline of infant mortality around the world</h4>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/infant-mortality?year=1970" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/infant-mortality?year=1970" width="300" height="150"></iframe></noscript></p>
+<p><!------ Neo-natal mortality -----></p>
+<h3 id="neo-natal-mortality"> <a class="deep-link" href="#neo-natal-mortality"># </a>Neo-natal mortality</h3>
+<h4 id="declining-neo-natal-mortality-around-the-world"> <a class="deep-link" href="#declining-neo-natal-mortality-around-the-world"># </a>Declining neo-natal mortality around the world</h4>
+<p>The neonatal mortality rate, shown in the following visualization, is defined as the share of newborns that die during the first 28 days of life (0-27 days).<br />
+<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/neonatal-mortality-rate-per-1000-live-births?year=1990" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/neonatal-mortality-rate-per-1000-live-births?year=1990" width="300" height="150"></iframe></noscript></p>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<h3 id="child-mortality-and-income-level"> <a class="deep-link" href="#child-mortality-and-income-level"># </a>Child mortality and income level</h3>
+<p>As one would expect, income level of the country is extremely correlated with child mortality rate. The poorest countries have the highest levels of child mortality, and the countries with the highest income have the lowest rates. This relationship has remained the same even as child mortality has decreased around the world, as demonstrated below.</p>
+<p><iframe data-src="/grapher/child-mortality-by-income-level-of-country" width="100%" height="600px"></iframe><noscript><iframe src="/grapher/child-mortality-by-income-level-of-country" width="100%" height="600px"></iframe></noscript></p>
+<p>The following scatter plot shows that child mortality is higher in countries in which a higher share of the population lives in extreme poverty.</p>
+<p><iframe data-src="/grapher/poverty-and-child-mortality" width="100%" height="600px"></iframe><noscript><iframe src="/grapher/poverty-and-child-mortality" width="100%" height="600px"></iframe></noscript></p>
+<h3 id="inequality-by-socio-economic-class"> <a class="deep-link" href="#inequality-by-socio-economic-class"># </a>Inequality by socio-economic class</h3>
+<p>In absolute terms the inequality of life expectancy has decreased massively in the UK – the visualisation above showed that the Gini for life expectancy has declined from over .45 to below .1 in the beginning of the 21st century.</p>
+<p>We can see below that the gap in infant mortality has narrowed significantly in absolute terms; there were 80 infant deaths per 1,000 live births for infants with fathers who were in unskilled manual fields, versus 32 deaths per 1,000 live births born to fathers with professional careers, representing a 2.5 times lower rate. Today, those absolute mortality numbers are only 7.4 and 3.8 respectively, but there is still nearly a two-fold difference in mortality rate. Absolute inequality has decreased dramatically, but the ratio between the two – a measure of relative inequality – has only decreased a little.</p>
+<p>When considering how the inequality of child mortality has decreased, one has to take into account that the occupational structure has also changed – the share of people employed in the low-skilled sector has decreased. The authors of the data below – Floud, Fogel, Harris, Hong – add that the &#8220;differences are still apparent even after allowances have been made for the effects of changes in the occupational structure of the British population and selection effect&#8221;.<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='For the source see the next citation.'>9</sup></a></p>
+<h6 id="infant-mortality-rates-of-both-sexes-by-fathers-social-class-in-england-and-wales-1930-2-2001ref"> <a class="deep-link" href="#infant-mortality-rates-of-both-sexes-by-fathers-social-class-in-england-and-wales-1930-2-2001ref"># </a>Infant mortality rates of both sexes by father’s social class in England and Wales, 1930/2-2001<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='The data is taken from Table 4.3 of Roderick Floud, Robert W. Fogel, Bernard Harris, Sok Chul Hong (2011) – The Changing Body Health, Nutrition, and Human Development in the Western World Since 1700. Cambridge University Press. The book&#8217;s website is here. The original sources cited by my source are 1930–32, 1949–53, 1970–72: Townsend, Davidson, and Whitehead 1988, pp. 40, 63. 1993–95: Botting 1997, p. 86. 2001: Rowan 2003, p. 38. After 1970-72, the &#8220;skilled&#8221; group splits into two different groups, which are not labeled on the graph: &#8220;skilled manual&#8221; (blue), and &#8220;skilled non-manual&#8221; (dark orange).'>10</sup></a><br />
+<a href="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class.png"><img class="aligncenter wp-image-4498 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-750x465.png" alt="Infant mortality rates of both sexes by father’s social class in England and Wales, 1930/2-2001 – Max Roser" width="750" height="465" data-id="4498" srcset="/wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-750x465.png 750w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-150x93.png 150w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-400x248.png 400w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class.png 1280w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-4498 size-large" src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-750x465.png" alt="Infant mortality rates of both sexes by father’s social class in England and Wales, 1930/2-2001 – Max Roser" width="750" height="465" data-id="4498" srcset="/wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-750x465.png 750w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-150x93.png 150w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class-400x248.png 400w, /wp-content/uploads/2014/02/ourworldindata_infant-mortality-rates-by-fathers-social-class.png 1280w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h3 id="better-education-of-women-reduces-child-mortality"> <a class="deep-link" href="#better-education-of-women-reduces-child-mortality"># </a>Better education of women reduces child mortality</h3>
+<p>There is a substantial literature on the effects of women&#8217;s education on child mortality. A more educated female population is strongly associated with lower rates of child mortality as well as both human and economic development. Some of the suggested reasons for this relationship are summarised in the figure below.</p>
+<h6 id="the-linkages-between-female-education-human-development-and-economic-development-brown-and-barrettrefangela-w-browne-hazel-r-barrett-1991-female-education-in-sub%e2%80%90saharan-a"> <a class="deep-link" href="#the-linkages-between-female-education-human-development-and-economic-development-brown-and-barrettrefangela-w-browne-hazel-r-barrett-1991-female-education-in-sub%e2%80%90saharan-a"># </a>The linkages between female education, human development and economic development &#8211; Brown and Barrett<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='Angela W. Browne &amp; Hazel R. Barrett (1991) Female Education in Sub‐Saharan Africa: the key to development?, Comparative Education, 27:3, 275-285, DOI: 10.1080/0305006910270303.'>11</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development.png"><img class="aligncenter size-large wp-image-5727" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-750x384.png" alt="The linkages between female education, human development and economic development" width="750" height="384" srcset="/wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-750x384.png 750w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-150x77.png 150w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-400x205.png 400w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development.png 1283w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-5727" src="https://owid.netlify.com/wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-750x384.png" alt="The linkages between female education, human development and economic development" width="750" height="384" srcset="/wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-750x384.png 750w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-150x77.png 150w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development-400x205.png 400w, /wp-content/uploads/2013/07/ourworldindata_the-linkages-between-female-education-human-development-and-economic-development.png 1283w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p><iframe data-src="/grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older" width="100%" height="600px"></iframe><noscript><iframe src="/grapher/correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older" width="100%" height="600px"></iframe></noscript></p>
+<p>Gakidou et al. find that over half the decline seen in child mortality globally between 1970-2010 can be explained by improvements in the education of women. What is more, they find that economic growth (GDP) can only explain a very small amount of the reduction in child mortality.</p>
+<p>Explanatory notes from the authors: &#8220;The lines represent the actual child mortality rate (blue); estimated child mortality rate if GDP for each country had remained at the level it was in 1970 or 1990 (green); estimated child mortality rate if education of reproductive-age women for each country had remained at the level it was in 1970 or 1990 (red); and estimated child mortality rate if both GDP and education of reproductive-age women had remained at their 1970 or 1990 levels (purple).&#8221;</p>
+<h6 id="counterfactual-analysis-of-effect-of-education-and-gross-domestic-product-gdp-on-child-mortality-globally-with-1970-a-and-1990-b-as-base-years-gakidou-et-al-refemmanuela-gakidou-kryci"> <a class="deep-link" href="#counterfactual-analysis-of-effect-of-education-and-gross-domestic-product-gdp-on-child-mortality-globally-with-1970-a-and-1990-b-as-base-years-gakidou-et-al-refemmanuela-gakidou-kryci"># </a>Counterfactual analysis of effect of education and gross domestic product (GDP) on child mortality globally with 1970 (A) and 1990 (B) as base years &#8211; Gakidou et al.<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Emmanuela Gakidou, Krycia Cowling, Rafael Lozano, Christopher JL Murray (2010) – Increased educational attainment and its effect on child mortality in 175 countries between 1970 and 2009: a systematic analysis, The Lancet, Volume 376, Issue 9745, 18–24 September 2010, Pages 959-974, ISSN 0140-6736, https://dx.doi.org/10.1016/S0140-6736(10)61257-3.'>12</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality.jpg" rel="attachment wp-att-7094"><img class="aligncenter wp-image-7094 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-750x286.jpg" alt="nm-Effect-of-Edu-and-GDP-on-Child-Mortality" width="750" height="286" srcset="/wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-750x286.jpg 750w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-150x57.jpg 150w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-400x152.jpg 400w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-768x293.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-7094 size-large" src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-750x286.jpg" alt="nm-Effect-of-Edu-and-GDP-on-Child-Mortality" width="750" height="286" srcset="/wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-750x286.jpg 750w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-150x57.jpg 150w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-400x152.jpg 400w, /wp-content/uploads/2013/05/ourworldindata_nm-effect-of-edu-and-gdp-on-child-mortality-768x293.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>Below we can see that a higher educational attainment by mothers is associated with lower child mortality rates within countries. For instance, Niger has the highest national average of child mortality, but within the country, mothers with a secondary school education or higher experience child mortality rates that are lower than the national averages of the next 16 countries listed.</p>
+<h6 id="under-5-mortality-rate-by-mothers-education-and-wealth-selected-countries-2003-2009-unesco-2011ref"> <a class="deep-link" href="#under-5-mortality-rate-by-mothers-education-and-wealth-selected-countries-2003-2009-unesco-2011ref"># </a>Under-5 mortality rate by mother’s education and wealth, selected countries, 2003—2009 – UNESCO (2011)<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='The source is UNESCO (2011) EFA Global Monitoring Report &#8211; The hidden crisis: Armed conflict and education. Note: Data are for the most recent year available during the period specified. The UNESCO&#8217;s original source is ICF Macro (2010).'>13</sup></a> <a href="https://owid.netlify.com/wp-content/uploads/2013/05/under-5-mortality-rate-by-mothers-education-and-wealth-selected-countries-2003-2009-unesco-20110.png"><img class="aligncenter wp-image-3488 size-full" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/05/under-5-mortality-rate-by-mothers-education-and-wealth-selected-countries-2003-2009-unesco-20110.png" alt="Under-5 mortality rate, by mother’s education and wealth, selected countries, 2003—2009 – UNESCO (2011)" width="450" height="419" /><noscript><img class="aligncenter wp-image-3488 size-full" src="https://owid.netlify.com/wp-content/uploads/2013/05/under-5-mortality-rate-by-mothers-education-and-wealth-selected-countries-2003-2009-unesco-20110.png" alt="Under-5 mortality rate, by mother’s education and wealth, selected countries, 2003—2009 – UNESCO (2011)" width="450" height="419" /></noscript></a></p>
+<p>The effect of education on child mortality is huge. Especially in places with relatively little education, the prospects for extending education are promising. In 2008, 4.4 million children younger than 5 years died in sub-Sahran Africa. The UNESCO estimates that an extension of secondary education for all women would save 1.8 million children per year.<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='The source is UNESCO (2011) EFA Global Monitoring Report &#8211; The hidden crisis: Armed conflict and education.'>14</sup></a></p>
+<h3 id="health-care-and-child-mortality"> <a class="deep-link" href="#health-care-and-child-mortality"># </a>Health care and child mortality</h3>
+<p>In a publication in the American Economic Journal the authors report that Thailand&#8217;s 2001 healthcare reform led to significant reductions in child mortality, especially among the poor.<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Gruber, Jonathan, Nathaniel Hendren, and Robert M. Townsend (2014) – &#8220;The Great Equalizer: Health Care Access and Infant Mortality in Thailand.&#8221; American Economic Journal: Applied Economics, 6(1): 91-107.'>15</sup></a> The following graph shows for a large cross-section of countries that high expenditure on health more generally comes along with lower levels of child mortality.</p>
+<p><iframe data-src="/grapher/per-capita-total-expenditure-on-health-vs-child-mortality" width="100%" height="600px"></iframe><noscript><iframe src="/grapher/per-capita-total-expenditure-on-health-vs-child-mortality" width="100%" height="600px"></iframe></noscript></p>
+<h3 id="when-more-infants-survive-fertility-goes-down"> <a class="deep-link" href="#when-more-infants-survive-fertility-goes-down"># </a>When more infants survive – fertility goes down</h3>
+<p>On the y-axis we measure the number of annual live births per 1,000 people. On the x-axis we measure how many infants, who were born alive, survive their 1st year of life – this is the <em>infant survival rate.</em></p>
+<p>The chart shows how these two aspects changed over the course of the 20th century: At the beginning of the century all 4 countries can be found in the upper left corner – they are characterized by high fertility and an infant survival rate below 85%. If we follow the 4 lines we are taken to the bottom right corner and see that women have fewer children when the mortality rate of babies goes down.</p>
+<p>The causal link between infant survival and fertility is established in both directions: Firstly, increasing infant survival reduces the parents’ demand for children. And secondly, a decreasing fertility allows the parents to devote more attention and resources to their children.</p>
+<p>This link between fertility and child mortality is an immensely important insight and tells us what drives the acceleration and slowdown of population growth: In the initial stage of the transition, when fertility rates are still high but health is already improving, the population starts to grow. But then, a bit later, we see that this transition works to decrease population growth since improving health of the children leads to lower fertility. It is an important part of the mechanism behind the <a href="https://owid.netlify.com/data/population-growth-vital-statistics/world-population-growth/#the-demographic-transition">demographic transition</a>.</p>
+<p>A very cynical view is that a decrease in child mortality is bad for the world since it would contribute to the overpopulation of the planet. The chart above shows that this opinion is not just contemptuous of human life but plainly wrong: When more infants survive fertility goes down and the temporary population growth comes to an end. If we want to ensure that the world’s population increase comes to an end soon we must work to increase child survival.</p>
+<h6 id="infant-survival-and-fertility-through-time-max-roserrefthe-data-is-taken-from-the-international-historical-statistics-ihs-edited-by-palgrave-macmillan-ltd-april-2013-the-online-vers"> <a class="deep-link" href="#infant-survival-and-fertility-through-time-max-roserrefthe-data-is-taken-from-the-international-historical-statistics-ihs-edited-by-palgrave-macmillan-ltd-april-2013-the-online-vers"># </a>Infant survival and fertility through time – Max Roser<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='The data is taken from the International Historical Statistics (IHS), edited by Palgrave Macmillan Ltd. (April 2013). The online version is available here. As a printed version it is published by Palgrave. The child survival rate is calculated using the IHS Data &#8216;Deaths Of Infants Under One Year Old Per 1,000 Live Births&#8217;.'>16</sup></a></p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival.png" rel="attachment wp-att-7368"><img class="aligncenter size-large wp-image-7368" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-750x536.png" alt="Scatter-Fertility-vs-Infant-Survival" width="750" height="536" srcset="/wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-750x536.png 750w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-150x107.png 150w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-400x286.png 400w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-768x548.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-7368" src="https://owid.netlify.com/wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-750x536.png" alt="Scatter-Fertility-vs-Infant-Survival" width="750" height="536" srcset="/wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-750x536.png 750w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-150x107.png 150w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-400x286.png 400w, /wp-content/uploads/2013/05/ourworldindata_scatter-fertility-vs-infant-survival-768x548.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<h3 id="definitions"> <a class="deep-link" href="#definitions"># </a>Definitions</h3>
+<p>Child mortality is the probability per 1,000 live births that a newborn baby will die before reaching age five under current age-specific mortality patterns.</p>
+<p>Infant mortality is defined as the number of deaths of children under 1 year of age per 1,000 live births.<br />
+A neonatal death is defined as a death during the first 28 days of life (0-27 days).</p>
+<p>The neonatal mortality rate is defined as the number of neonatal deaths per 1000 live births.</p>
+<h3 id="data-quality"> <a class="deep-link" href="#data-quality"># </a>Data Quality</h3>
+<p>The uncertainty associated with the estimates of child mortality can be understood if one compares different data sources. The UN Inter-agency Group for Child Mortality Estimation does this for each country of the world. <a href="https://www.childmortality.org/index.php?r=site/graph#ID=BRA_Brazil">Here</a> is the chart on the child mortality of Brazil as one example. On the same website the differences between various data sources can be studied for a large number of countries.</p>
+<h4 id="wide-within-country-variation-of-infant-mortality"> <a class="deep-link" href="#wide-within-country-variation-of-infant-mortality"># </a>Wide within-country variation of infant mortality</h4>
+<p>Country averages of infant mortality sometimes obscure the variation in infant mortality between regions within the country. Storeygard, Balk, Levy and Deane (2008) assembled a data-set that looks at the sub-national distribution of infant mortality.<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online here.'>17</sup></a> The data set covers over 10,000 national and subnational units worldwide. It is benchmarked to the year 2000. Understandably, many of the countries with the highest national infant mortality averages have lots of subnational variation in these rates, but even some of the most highly developed nations still see massive variation in infant mortality at the regional level. The most extreme example is China, which experiences an infant mortality rate near 0 in some regions but a rate around 325 at the other extreme.</p>
+<h6>The wide variation of infant mortality within countries<a id='ref-18' class='side-matter side-matter-ref' href='#note-18'><sup class='side-matter side-matter-sup' title='This visualization is taken from Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online here.'>18</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10.png"><img class="aligncenter wp-image-6109 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-750x544.png" alt="The wide variation of infant mortality within countries" width="750" height="544" srcset="/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-750x544.png 750w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-150x109.png 150w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-400x290.png 400w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10.png 1325w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-6109 size-large" src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-750x544.png" alt="The wide variation of infant mortality within countries" width="750" height="544" srcset="/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-750x544.png 750w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-150x109.png 150w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10-400x290.png 400w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.28.10.png 1325w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>&nbsp;</p>
+<p>The following map visualizes the subnational variation in infant mortality rates from the previous chart.</p>
+<h6>World map of infant mortality on the sub-national level<a id='ref-19' class='side-matter side-matter-ref' href='#note-19'><sup class='side-matter side-matter-sup' title='This visualization is taken from Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online here.'>19</sup></a></h6>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45.png"><img class="aligncenter wp-image-6108 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-750x401.png" alt="World map of infant mortality on the sub-national level" width="750" height="401" srcset="/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-750x401.png 750w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-150x80.png 150w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-400x214.png 400w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45.png 1290w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-6108 size-large" src="https://owid.netlify.com/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-750x401.png" alt="World map of infant mortality on the sub-national level" width="750" height="401" srcset="/wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-750x401.png 750w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-150x80.png 150w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45-400x214.png 400w, /wp-content/uploads/2014/02/ourworldindata_screen-shot-2015-08-01-at-13.27.45.png 1290w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="data-on-child-mortality-in-early-cultures-and-hunter-gatherers"> <a class="deep-link" href="#data-on-child-mortality-in-early-cultures-and-hunter-gatherers"># </a>Data on child mortality in early cultures and hunter gatherers</h3>
+<p>A still often cited early text is Acsádi and J. Nemeskéri (1970) – History of human life span and mortality.<a id='ref-20' class='side-matter side-matter-ref' href='#note-20'><sup class='side-matter side-matter-sup' title='The book by Gy. Acsádi and J. Nemeskéri was translated by K. Balas and published by Akadémiai Kiadó (Budapest. 1970, 346 pp.)'>20</sup></a> Other texts on early cultures and hunter gatherers are:</p>
+<ul>
+<li>Andrew T. Chamberlain (2006) &#8211; Demography in Archaeology-Cambridge University Press (Cambridge Manuals in Archaeology)</li>
+<li>Gurven, H Kaplan (2007) – <a href="https://nfs.unipv.it/NFS/MINF/DISPENSE/PATGEN/lectures/files/readings/gurven_2007.pdf">Longevity Among Hunter‐Gatherers: A Cross‐Cultural Examination</a>. Population and Development Review. Volume 33, Issue 2, pages 321–365, June 2007.</li>
+<li>Preston (1995) – <a href="https://dkerr.kingsfaculty.ca/dkerr/assets/Reading11.pdf">Human mortality throughout history and prehistory</a>. In Simon (1995) – The State of Humanity. Wiley.</li>
+<li>Johnston, F. E., and C. E. Snow (1961) – The Reassessment of the Age and Sex of the Indian Knoll Skeletal Population:  Demographic and Methodological Aspects, American Journal of Physical Anthropology, vol. 19.</li>
+<li>Brothwell, D. (1975) – Paleodemography, in Biological Aspects of Demography, ed. W. Brass. London: Taylor and Francis.</li>
+<li>Hopkins, M. K. (1966) – On the Probable Age Structure of the Roman Population, Population Studies, 20, 2.</li>
+<li>Howell, N. (1979) – The Demography of the Dobe !Kung. New York: Academic Press.</li>
+</ul>
+<h3 id="long-run-data"> <a class="deep-link" href="#long-run-data"># </a>Long-run data</h3>
+<h5 id="the-human-mortality-database"> <a class="deep-link" href="#the-human-mortality-database"># </a>The <strong>Human Mortality Database</strong></h5>
+<ul>
+<li><strong>Data: </strong>Child mortality estimates and more mortality data</li>
+<li><strong>Geographical coverage: </strong>More than 35 countries. Mostly European but also Taiwan and USA.</li>
+<li><strong>Time span: </strong>For some countries data is available since the 19th century. Few data available for the 18th century.</li>
+<li><strong>Available at: </strong>Online at <a href="https://www.mortality.org/">www.mortality.org</a>.</li>
+<li class="no-bullet"><em> This very comprehensive source is maintained by the University of California, Berkeley (USA), and the Max Planck Institute for Demographic Research (Germany). </em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="gapminder-org"> <a class="deep-link" href="#gapminder-org"># </a><a href="https://www.gapminder.org"><strong>Gapminder.org</strong></a></h5>
+<ul>
+<li><strong>Data: </strong>Child mortality estimates</li>
+<li><strong>Geographical coverage: </strong>Global – by country</li>
+<li><strong>Time span: </strong>From 1800 onwards (data on Sweden go back to 1751)</li>
+<li><strong>Available at: </strong>Online at <a href="https://www.gapminder.org">Gapminder.org</a></li>
+<li class="no-bullet"><em> The sources of Gapminder are the Human Mortality Database and Child Mortality Estimates Info. Some of the data on child mortality is estimated from data on infant mortality (see the documentation which is online <a href="https://www.gapminder.org/data/documentation/gd005/">here</a>).</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="post-1950"> <a class="deep-link" href="#post-1950"># </a>Post-1950</h3>
+<h5 id="child-mortality-estimates-info-cme-info"> <a class="deep-link" href="#child-mortality-estimates-info-cme-info"># </a><strong>&#8216;Child Mortality Estimates Info&#8217;</strong> (CME Info)</h5>
+<ul>
+<li><strong>Data: </strong>The latest estimates based on the research of the UN Inter-agency Group for Child Mortality Estimation: Under-five mortality estimates, Infant mortality estimates, Neonatal mortality estimates (for all three rates and deaths) Estimates of: Sex-specific under-five mortality rate, Sex-specific infant mortality rate, Annual rate of reduction of under-five mortality.</li>
+<li><strong>Geographical coverage: </strong>Global – by country.</li>
+<li><strong>Time span: </strong>Data availability varies, but for some countries it goes as far back as the 1930s.</li>
+<li><strong>Available at: </strong>Online at <a href="https://www.childmortality.org">www.childmortality.org</a></li>
+<li class="no-bullet"><em> This very good source is published by UNICEF. It is possible to explore the trends country by country and to visualize the data on a map.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-development-indicators-wdi-published-by-the-world-bank"> <a class="deep-link" href="#world-development-indicators-wdi-published-by-the-world-bank"># </a><strong>World Development Indicators</strong> (WDI) published by the World Bank</h5>
+<ul>
+<li><strong>Data: </strong>&#8216;Mortality rate, under-5 (per 1,000 live births)&#8217;</li>
+<li><strong>Geographical coverage: </strong>Global – by country and world region</li>
+<li><strong>Time span: </strong>Annual data since 1960</li>
+<li><strong>Available at: Online <a href="https://data.worldbank.org/indicator/SH.DYN.MORT">here</a> </strong></li>
+<li class="no-bullet"><em> The World Bank data is based on the estimates developed by the UN Inter-agency Group for Child Mortality Estimation (UNICEF, WHO, World Bank, UN DESA Population Division) at childmortality.org.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<p>&nbsp;</p>
+<h3 id="long-run-data-sources-on-infant-mortality"> <a class="deep-link" href="#long-run-data-sources-on-infant-mortality"># </a>Long Run Data Sources on infant mortality</h3>
+<h5 id="clio-infra-project"> <a class="deep-link" href="#clio-infra-project"># </a> &#8216;Clio Infra&#8217; Project</h5>
+<ul>
+<li><strong>Data:</strong> Infant mortality rate</li>
+<li><strong>Geographical coverage:</strong> Global – by country</li>
+<li><strong>Time span:</strong> 1810 &#8211; 2000. Data are presented as decadal averages (1810 means 1810-19, etc.)</li>
+<li><strong>Available at:</strong> Online <a href="https://www.clio-infra.eu/datasets/indicators">here</a>.</li>
+<li class="no-bullet"><em>Various sources are used (well documented online at Clio Infra). The main source is: Aboubarb, M.R. and A.L.. Kimball. “A New Dataset on Infant Mortality Rates, 1816-2002.” Journal of Peace Research 44 (2007):743. This dataset is available for download at prio <a href="https://www.prio.no/Journals/Journal/?x=2&amp;content=replicationData#2007">here</a> (it is called: M. Rodwan Abouharb &amp; Anessa L. Kimball – A New Dataset on Infant Mortality Rates, 1816-2002).<br />
+</em></li>
+<li class="no-bullet"><em>Main data collectors of the Clio Infra data are Joerg Baten and Mathias Blum.<br />
+</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="international-historical-statistics"> <a class="deep-link" href="#international-historical-statistics"># </a>International Historical Statistics</h5>
+<ul>
+<li><strong>Data: </strong>Infant mortality rate<strong><br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Global – by country<strong><br />
+</strong></li>
+<li><strong>Time span: </strong>Annual data from 1750 onwards<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>The books are published in three volumes covering more than 5000 pages.<a id='ref-21' class='side-matter side-matter-ref' href='#note-21'><sup class='side-matter side-matter-sup' title='The printed version is published in 3 volumes: Africa, Asia, Oceania – The Americas – Europe. The volume set is described at the publisher&#8217;s website here.'>21</sup></a> At some universities you can access the online version of the books where data tables can be downloaded as ePDFs and Excel files. The online access is <a href="https://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">here</a>.<strong><br />
+</strong></li>
+<li class="no-bullet"><em> These statistics – orignally published under the editorial leadership of Brian Mitchell (since 1983) – are a collection of datasets taken from many primary sources, including both official national and international abstracts dating back to 1750.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="gapminder"> <a class="deep-link" href="#gapminder"># </a>Gapminder</h5>
+<ul>
+<li><strong>Data:</strong> Infant mortality rate</li>
+<li><strong>Geographical coverage:</strong> Global – by country</li>
+<li><strong>Time span:</strong> The data goes back to 1800 but is relatively sparse during the 19th century.</li>
+<li><strong>Available at:</strong> Data and documentation are online <a href=" https://www.gapminder.org/data/documentation/gd002/">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="post-1950-data"> <a class="deep-link" href="#post-1950-data"># </a>Post 1950 Data</h3>
+<h5 id="the-united-nations-population-division"> <a class="deep-link" href="#the-united-nations-population-division"># </a>The United Nations Population Division</h5>
+<ul>
+<li><strong>Data: </strong>Infant mortality rate<strong><br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Global – by countries and world regions<strong><br />
+</strong></li>
+<li><strong>Time span: </strong>5-year intervals since 1950<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>Online <a href="https://esa.un.org/unpd/wpp/Excel-Data/mortality.htm">here</a>.<em><strong><br />
+</strong></em></li>
+<li><em>An advantage of this data set is that there are no gaps in the data since 1950 (for all countries and world regions)</em>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="child-mortality-estimates-info-cme-info"> <a class="deep-link" href="#child-mortality-estimates-info-cme-info"># </a>&#8216;Child Mortality Estimates Info&#8217; (CME Info)</h5>
+<ul>
+<li><strong>Data: </strong>The latest estimates based on the research of the UN Inter-agency Group for Child Mortality Estimation
+<ul>
+<li><strong>List of available data:</strong> Under-five mortality estimates, Infant mortality estimates, Neonatal mortality estimates (for all three rates and deaths)<br />
+Estimates of: Sex-specific under-five mortality rate, Sex-specific infant mortality rate, Annual rate of reduction of under-five mortality.</li>
+</ul>
+</li>
+<li><strong>Geographical coverage: </strong>Global – by country.<strong><br />
+</strong></li>
+<li><strong>Time span: </strong>Data availability varies but for some countries it goes as far back as the 1930s.<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>Online at <a href="https://www.childmortality.org">www.childmortality.org</a><strong><br />
+</strong></li>
+<li class="no-bullet"><em> This very good source is published by UNICEF. It is possible to explore the trends country by country and to visualize the data on a map.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-development-indicators-by-the-world-bank"> <a class="deep-link" href="#world-development-indicators-by-the-world-bank"># </a>World Development Indicators by the World Bank</h5>
+<ul>
+<li><strong>Data:</strong> Infant mortality rate – &#8220;mortality rate, infant (per 1,000 live births)&#8221;<strong><br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Global – by country and world region<strong><br />
+</strong></li>
+<li><strong>Time span: </strong>Annual data since 1961<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>Online <a href="https://data.worldbank.org/indicator/SP.DYN.IMRT.IN">here</a>.<strong><br />
+</strong></li>
+<li class="no-bullet"><em> The data is based on estimates developed by the UN Inter-agency Group for Child Mortality Estimation (UNICEF, WHO, World Bank, UN DESA Population Division) at www.childmortality.org.<br />
+</em></li>
+</ul>
+<hr class="datasources-hr" />
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>These are the estimates from the Global Burden of Disease 2013 study.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Reduction over 23 years: 3,900,000.00</p>
+<p>reduction every year on average: 169,565.22</p>
+<p>reduction every month on average: 14,130.43</p>
+<p>reduction every day on average: 455.82.<br />
+To take a longer perspective: on no day in the last 5 decades was there ever the headline ‘Global Child Mortality Fell by 0.00719% Since Yesterday’.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The data shown in this graph are obtained from <a href="https://www.gapminder.org">Gapminder.org</a>.</h6>
+<p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>M Gurven, H Kaplan (2007) – <a href="https://nfs.unipv.it/NFS/MINF/DISPENSE/PATGEN/lectures/files/readings/gurven_2007.pdf">Longevity Among Hunter‐Gatherers: A Cross‐Cultural Examination</a>. Population and Development Review. Volume 33, Issue 2, pages 321–365, June 2007.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Andrew T. Chamberlain (2006) – <a href="https://www.cambridge.org/us/academic/subjects/archaeology/archaeological-theory-and-methods/demography-archaeology">Demography in Archaeology</a>. Cambridge University Press (Cambridge Manuals in Archaeology). The original sources of the data are: Koobi Fora: Wood, 1991; Hadar: Johanson et al., 1982; Kimbel et al., 1982; White and Johanson, 1982; Kimbel et al., 1994; Sterkfontein: Mann, 1975; Brain, 1981; Lockwood and Tobias, 2002; Swartkrans: Mann, 1975; Brain, 1981; Grine, 1993; Zhoukoudian: Weidenreich, 1939; Neanderthals: Trinkaus, 1995; Olduvai Gorge: Tobias, 1991; Atapuerca: Bermúdez de Castro et al., 2004.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Li Liu, PhD, Shefali Oza, MSc, Daniel Hogan, PhD, Jamie Perin, PhD, Prof Igor Rudan, MD, Prof Joy E Lawn, MD, Prof Simon Cousens, MA, Colin Mathers, PhD, Prof Robert E Black (2015) – <a href="https://www.who.int/entity/immunization/diseases/tetanus/Lancet-2013-Global-child-mortality.pdf">Global, regional, and national causes of child mortality in 2000–13, with projections to inform post-2015 priorities: an updated systematic analysis</a>. The Lancet, Volume 385, No. 9966, p430–440, 31 January 2015.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>United Nations, Department of Economic and Social Affairs, Population Division (2011). Sex Differentials in Childhood Mortality (United Nations publication, ST/ESA/SER.A/314). Online <a href="https://www.un.org/esa/population/publications/SexDifChildMort/SexDifferentialsChildhoodMortality.pdf">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>See the <a href="https://www.scb.se/en/About-us/main-activity/history-of-statistics-sweden/">history of Statistics in Sweden</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>For the source see the next citation.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from Table 4.3 of Roderick Floud, Robert W. Fogel, Bernard Harris, Sok Chul Hong (2011) – The Changing Body Health, Nutrition, and Human Development in the Western World Since 1700. Cambridge University Press.</p>
+<p>The book&#8217;s website is <a href="https://www.cambridge.org/us/academic/subjects/history/economic-history/changing-body-health-nutrition-and-human-development-western-world-1700">here</a>.</p>
+<p>The original sources cited by my source are 1930–32, 1949–53, 1970–72: Townsend, Davidson, and Whitehead 1988, pp. 40, 63. 1993–95: Botting 1997, p. 86. 2001: Rowan 2003, p. 38.</p>
+<p>After 1970-72, the &#8220;skilled&#8221; group splits into two different groups, which are not labeled on the graph: &#8220;skilled manual&#8221; (blue), and &#8220;skilled non-manual&#8221; (dark orange).</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Angela W. Browne &amp; Hazel R. Barrett (1991) Female Education in Sub‐Saharan Africa: the key to development?, Comparative Education, 27:3, 275-285, DOI: 10.1080/0305006910270303.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Emmanuela Gakidou, Krycia Cowling, Rafael Lozano, Christopher JL Murray (2010) – <a href="https://can-mnch.ca/wp-content/uploads/2012/06/5.-EducationandChildSurvivalLancet.pdf">Increased educational attainment and its effect on child mortality in 175 countries between 1970 and 2009: a systematic analysis</a>, The Lancet, Volume 376, Issue 9745, 18–24 September 2010, Pages 959-974, ISSN 0140-6736, https://dx.doi.org/10.1016/S0140-6736(10)61257-3.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The source is UNESCO (2011) EFA Global Monitoring Report &#8211; <a href="https://unesdoc.unesco.org/images/0019/001907/190743e.pdf">The hidden crisis: Armed conflict and education</a>. Note: Data are for the most recent year available during the period specified. The UNESCO&#8217;s original source is ICF Macro (2010).</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The source is UNESCO (2011) EFA Global Monitoring Report &#8211; <a href="https://unesdoc.unesco.org/images/0019/001907/190743e.pdf">The hidden crisis: Armed conflict and education</a>.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Gruber, Jonathan, Nathaniel Hendren, and Robert M. Townsend (2014) – &#8220;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3998713/">The Great Equalizer: Health Care Access and Infant Mortality in Thailand</a>.&#8221; American Economic Journal: Applied Economics, 6(1): 91-107.</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The data is taken from the International Historical Statistics (IHS), edited by Palgrave Macmillan Ltd. (April 2013). The online version is available <a href="https://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">here</a>. As a printed version it is published by <a href="https://www.palgrave.com/products/title.aspx?pid=275960">Palgrave</a>.</h6>
+<p>The child survival rate is calculated using the IHS Data &#8216;Deaths Of Infants Under One Year Old Per 1,000 Live Births&#8217;.</p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online <a href="https://onlinelibrary.wiley.com/doi/10.1002/psp.484/abstract">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-18' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This visualization is taken from Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online <a href="https://onlinelibrary.wiley.com/doi/10.1002/psp.484/abstract">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-19' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+This visualization is taken from Adam Storeygard, Deborah Balk, Marc Levy and Glenn Deane (2008) – The global distribution of infant mortality: a subnational spatial view. Population, Space and Place, Volume 14, Issue 3, pages 209–229, May/June 2008. Online <a href="https://onlinelibrary.wiley.com/doi/10.1002/psp.484/abstract">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-20' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The book by Gy. Acsádi and J. Nemeskéri was translated by K. Balas and published by Akadémiai Kiadó (Budapest. 1970, 346 pp.)</p>
+					</div>
+				</li>
+								<li id='note-21' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The printed version is published in 3 volumes: Africa, Asia, Oceania – The Americas – Europe. The volume set is described at the publisher&#8217;s website <a href="https://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">here</a>.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=1441&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

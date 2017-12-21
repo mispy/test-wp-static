@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
+<head>
+	<title>A sense of units and scale for electrical energy production and consumption - Our World in Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//l' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How new vaccines can help with our antibiotic dependence' href='/vaccines-antibiotic-dependence' />
+<link rel='next' title='Child maltreatment and educational outcomes' href='/child-maltreatment-and-educational-outcomes/' />
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel="canonical" href="/scale-for-electricity" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fscale-for-electricity" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fscale-for-electricity&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Our World in Data"/>
+  <meta property="og:title" content="A sense of units and scale for electrical energy production and consumption"/>
+  <meta property="og:url" content="/scale-for-electricity"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+Test. This blog post draws on data and research discussed in our entry on Energy Production &amp; Changing Energy Sources.
+Discussions about energy and electricity can be confusing. Oft"/>
+  <meta property="og:image" content="/wp-content/uploads/2017/11/Energy-Units-01.png"/>
+  <meta property="article:published_time" content="2017-11-22T09:50:03+00:00"/>
+  <meta property="article:modified_time" content="2017-12-21T14:25:53+00:00" />
+  <meta property="og:updated_time" content="2017-12-21T14:25:53+00:00" />
+  <meta property="article:section" content="Uncategorized"/>
+  <meta property="fb:app_id" content="1149943818390250"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="A sense of units and scale for electrical energy production and consumption"/>
+  <meta itemprop="description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+Test. This blog post draws on data and research discussed in our entry on Energy Production &amp; Changing Energy Sources.
+Discussions about energy and electricity can be confusing. Oft"/>
+  <meta itemprop="image" content="/wp-content/uploads/2017/11/Energy-Units-01.png"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="A sense of units and scale for electrical energy production and consumption"/>
+  <meta name="twitter:url" content="/scale-for-electricity"/>
+  <meta name="twitter:description" content="Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+Test. This blog post draws on data and research discussed in our entry on Energy Production &amp; Changing Energy Sources.
+Discussions about energy and electricity can be confusing. Oft"/>
+  <meta name="twitter:image" content="/wp-content/uploads/2017/11/Energy-Units-01.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="post-template-default single single-post postid-12301 single-format-standard">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="https://google.com/search" method="GET">
+					<input type="hidden" name="sitesearch" value="ourworldindata.org">
+					<input type="search" name="q" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class=""><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+<header class="blog-header">
+	<h1><a href="/blog">Blog</a></h1>
+</header>
+
+<div class="site-content">
+			<article id="post-12301" class="post-12301 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+			<header class="article-header">
+				<h1 class="entry-title"><a href="/scale-for-electricity">A sense of units and scale for electrical energy production and consumption</a></h1>
+			  	<div class='entry-meta'><time>November 22, 2017</time> by Hannah Ritchie and Max Roser</div>
+
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<div class="blog-info">Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.<br />
+Test. This blog post draws on data and research discussed in our entry on <a href="https://owid.netlify.com/energy-production-and-changing-energy-sources/">Energy Production &amp; Changing Energy Sources</a>.</div>
+<p>Discussions about energy and electricity can be confusing. Often, the root of this confusion lies in the choice of units and scale. Firstly, units are often quoted inconsistently: we switch between watt-hours, kilograms of oil equivalent, joules, and even more confusingly, units of power. Secondly, we begin quoting big numbers in the order of millions and billions without a sense of scale: is the unit equivalent to one, ten, or one hundred coal-fired power stations? Thirdly, we lose perspective on the equivalence between electrical energy production and consumption: how many people could a wind or solar farm provide for?</p>
+<p>To make our full data entry on <a href="https://owid.netlify.com/energy-production-and-changing-energy-sources/">Energy Production &amp; Changing Energy Sources</a> as useful and clear as possible, we have standardized all of our energy data into a single energy unit: the watt-hour (Wh). The only variation on the watt-hour which we have used is in scaling large numbers into kilowatt, megawatt or gigawatt-hours (which are one thousand, million, and billion watt-hours, respectively). The base unit of the watt-hour, however, remains consistent. This should help to reduce confusion for the first of the three reasons described above.</p>
+<p>To address the latter two challenges we have produced the chart shown below, which aims to provide a sense of scale for both electricity production and consumption [<strong>clicking on this chart offers a pop-out version, for which some finer aspects can be more easily read</strong>]. It is comprised of two scales: electricity production and electricity consumption. On the left-hand side we have a chart which extends from zero up to 100,000 MWh. The individual arrows represent the daily electrical outputs of different plant types; as we see, there is a large range of outputs depending on the size and conditions of the specific facility. The average daily output of specific power plants (some of which you may recognize) are shown and labelled as individual stars.</p>
+<p>The labeled horizontal lines on these charts aim to give a sense of perspective on electricity consumption levels across the world. For example, in the chart below a very large hydro or nuclear plant could produce enough electricity to meet the demands of 100 million people in Ghana; a large hydro, nuclear, or coal plant could provide for 10 million average global citizens, and average-sized plant would meet demands of ten million in Brazil.</p>
+<p>The left-hand chart is dominated by hydropower, nuclear, coal and geothermal production. The output of onshore and offshore wind, and solar photovoltaic (PV) farms currently lie below 10,000 MWh per day, which you see at the bottom of the left-hand chart. The right-hand chart provides a magnification of the bottom section of this chart, extending only from zero to 10,000 MWh. Just as in the left-hand chart, the range of daily electricity outputs from wind and solar PV farms are shown by the arrows, with specific farms represented by stars. Again, we have provided a sense of perspective on how this relates to electricity consumption needs across a range of countries using the labeled horizontal lines.</p>
+<p>The data used in these charts are not perfect; we have attempted to provide a global-level overview of a range of electrical energy production sources and average levels of consumption across countries. These figures are based on a number of assumptions and calculations which are explained in detail below. Despite these limitations, we hope these charts are of value in providing an overall sense of scale for both production and consumption.</p>
+<p><a href="https://owid.netlify.com/wp-content/uploads/2017/11/Energy-Units-01.png"><img class="aligncenter size-full wp-image-15070" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2017/11/Energy-Units-01.png" alt="" width="12976" height="9676" srcset="/wp-content/uploads/2017/11/Energy-Units-01.png 12976w, /wp-content/uploads/2017/11/Energy-Units-01-150x112.png 150w, /wp-content/uploads/2017/11/Energy-Units-01-400x298.png 400w, /wp-content/uploads/2017/11/Energy-Units-01-768x573.png 768w, /wp-content/uploads/2017/11/Energy-Units-01-738x550.png 738w" sizes="(max-width: 12976px) 100vw, 12976px" /><noscript><img class="aligncenter size-full wp-image-15070" src="https://owid.netlify.com/wp-content/uploads/2017/11/Energy-Units-01.png" alt="" width="12976" height="9676" srcset="/wp-content/uploads/2017/11/Energy-Units-01.png 12976w, /wp-content/uploads/2017/11/Energy-Units-01-150x112.png 150w, /wp-content/uploads/2017/11/Energy-Units-01-400x298.png 400w, /wp-content/uploads/2017/11/Energy-Units-01-768x573.png 768w, /wp-content/uploads/2017/11/Energy-Units-01-738x550.png 738w" sizes="(max-width: 12976px) 100vw, 12976px" /></noscript></a></p>
+<h2 id="data-sources-for-electrical-energy-production-and-consumption-chart"> <a class="deep-link" href="#data-sources-for-electrical-energy-production-and-consumption-chart"># </a>Data sources for electrical energy production and consumption chart</h2>
+<p>Explanation of the assumptions and calculations involved in the derivation of the figures used in the charts above are detailed below.</p>
+<h3 id="electrical-energy-production"> <a class="deep-link" href="#electrical-energy-production"># </a>Electrical energy production</h3>
+<p>Figures on the daily output from different electricity sources have been derived in one of two ways:</p>
+<ul>
+<li>Where specific reported details on the annual energy output of a plant or facility have been published, we have converted this to a daily average output in watt-hours or megawatt-hours.</li>
+<li>Where specific details on electrical output are not available, we have calculated this based on a plant&#8217;s maximum power rating and the average capacity factor for a plant of its type, based on capacity factor data published by the US Energy Information Administration (EIA)<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available online.'>1</sup></a> (described below).</li>
+</ul>
+<p>The output of electric power facilities are often described in terms of their maximum capacity; this is a metric of power (not energy), measured in watts (W). There are two conversions we need to make to this metric to derive the average electrical energy daily output. First, we have to convert power into energy. Energy is a measure of power output over time (energy = power x time). So to calculate energy output in watt-hours we have to multiply our power rating by the number of hours our plant is running. For example, if we have a 1000MW plant, its maximum energy output in a day would be 24,000MWh (1000MW x 24 hours).</p>
+<p>However, this assumes that a plant runs continuously at maximum output, which most (if not all) don&#8217;t. The second correction we have to make is to multiply this output by its capacity factor. The capacity factor is defined as the actual electrical energy output as a percentage or ratio of the maximum possible output over a given time period. For example, if our plant only operates at 80% (through a combination of shut-down episodes and periods of operating below maximum capacity), our daily energy production would only be 19,200MWh per day (24,000MWh x 80%).</p>
+<p><strong>How much electricity does a hydropower plant produce in a day?</strong></p>
+<p>Hydropower production is unique from the perspective that it covers the largest range of electrical energy outputs; ranging from the largest production facilities in the world, down to so-called &#8220;<a href="https://energypedia.info/wiki/Pico_Hydro_Power" target="_blank" rel="noopener">pico hydro</a>&#8221; schemes—simple water turbines which are often installed for a single household or cluster of households. xThese typically have a power rating of less than 5kW, producing less than one MWh per day (only about <a href="https://www.renewablesfirst.co.uk/hydropower/hydropower-learning-centre/how-much-energy-could-i-generate-from-a-hydro-turbine/" target="_blank" rel="noopener">22 MWh per year</a>).</p>
+<p>A collection of the world&#8217;s largest hydro stations can be found <a href="https://en.wikipedia.org/wiki/List_of_largest_hydroelectric_power_stations" target="_blank" rel="noopener">here</a>. Brazil&#8217;s Itaipu Dam, and China&#8217;s Three Gorges Dam—the two largest electricity producers in the world—are key outliers with regards to output, producing almost double that of the third largest hydro facility. These two sites are represented as stars, with Itaipu Dam producing a daily average of 282,000 MWh (103 TWh per year/365 days), and the Three Gorges Dam produced an average of 270,000 MWh per day in 2014 (98.8 TWh/365). The other single hydro site shown in this chart is the USA&#8217;s Hoover Dam, which produced a daily average of 11,000 MWh in 2014 (4 TWh/365).<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='United States Bureau of Reclamation (USBR). Hoover Dam &#8211; Frequently asked questions. Available online.'>2</sup></a></p>
+<p>Aside from the hydro outliers of the Itaipu and Three Gorges Dam, the cluster of the largest hydropower facilities achieve an annual output between 50-55 TWh. As a daily average (although seasonal variability will inevitably influence daily outputs throughout the year), large hydropower facilities produce approximately 150,000 MWh per day.</p>
+<p><strong>How much electricity does a nuclear plant produce in a day?</strong></p>
+<p>Output from nuclear power stations is typically more stable over time than output from hydropower or other renewable resources because they are less influenced by seasonal or environmental variations. To estimate the range of typical daily outputs from nuclear stations, we have utilized the reported maximum capacity of specific stations listed <a href="https://en.wikipedia.org/wiki/List_of_nuclear_power_stations" target="_blank" rel="noopener">here</a> with the average capacity factor of nuclear power, which is approximately 90%.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available online.'>3</sup></a></p>
+<p>For example, the world&#8217;s largest operating nuclear station is Canada&#8217;s Bruce station, with a maximum capacity of 6,384 MW. The estimated average daily output is therefore calculated as 6,384 MW x 90% x 24 hours, which gives us approximately 138,000 MWh per day. The average daily output of the other nuclear stations highlighted here have been calculated using exactly the same methodology.</p>
+<p>Small nuclear stations have a maximum capacity of around 400 MW, but can be as small as 200-250 MW. Reactors at India&#8217;s Kaiga Atomic Power Station, for example, have a maximum capacity of 220 MW. As a result, the Kaiga Atomic facility produces on average 6100 MWh per day.</p>
+<p><strong>How much electricity does a coal plant produce in a day?</strong></p>
+<p>Like nuclear, our estimates of daily electrical output from coal-fired power stations have been calculated based on reported maximum capacity figures, found <a href="https://en.wikipedia.org/wiki/List_of_coal_power_stations" target="_blank" rel="noopener">here</a>, and an average capacity factor of 64%.<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available online.'>4</sup></a> The largest operating coal plant in the world is the Tiachung Power Plant in Taiwan; with a maximum capacity of 5500 MW, average daily output would be approximately 85,000 MWh (5,500MW * 64% * 24 hours).</p>
+<p>Like nuclear production, small coal-fired plants can have a maximum capacity as low as hundreds of MW. The Kahone Thermal Power Station in Senegal, for example, has a capacity of only 102 MW. If we assume an average capacity factor of around 64%, daily output for coal can be as low as 1600 MWh per day.</p>
+<p><strong>How much electricity does a geothermal plant produce in a day?</strong></p>
+<p>The capacity and production of geothermal energy tends to be lower than that of hydro, nuclear and coal-powered stations. The largest geothermal producer in the world is The Geysers site in the USA; with a capacity of 1,517 MW and reported capacity factor of 63%, we calculate estimated daily output to be approximately 23,000 MWh.<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='Ronald DiPippo (2008). Geothermal Power Plants: Principles, Applications, Case Studies and Environmental Impact. Elsevier Science &amp; Technology. Available online.'>5</sup></a></p>
+<p>However, if we look at the <a href="https://en.wikipedia.org/wiki/List_of_geothermal_power_stations" target="_blank" rel="noopener">range of geothermal plants</a> across the world, The Geysers site is a large outlier in terms of potential output. The second largest geothermal plant has roughly half the installed capacity as The Geysers. If we take its installed capacity of 820 MW and assume Bloomberg New Energy Finance&#8217;s global average capacity factor for geothermal of 73%, we approximate a typical large geothermal plant to produce roughly 14,000-15,000 MWh per day. Like hydropower, geothermal sites can also exist at a very small-scale; Italy&#8217;s San Martino geothermal site has a capacity of only 40 MW; if we assume an average capacity factor of 73% for geothermal, average daily output would be around 700 MWh.</p>
+<p><strong>How much electricity does an onshore wind farm produce in a day?</strong></p>
+<p>Whilst the majority of onshore wind farms produce less than 10,000 MWh per day on average, the Gansu Wind Farm in China is a notable outlier. With an <a href="https://en.wikipedia.org/wiki/Gansu_Wind_Farm" target="_blank" rel="noopener">installed capacity</a> of 7,965 MW and average capacity factor of 12.4% for wind power in the Gansu region, we estimate daily output to be around 24,000 MWh.<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='The case of wind production in the Gansu region is interesting. Although the capacity factor of renewables tend to be lower than fossil fuel and nuclear sources, 12.4% is particularly low for wind energy. The US IEA quote a range of capacity factors from 20-40%. Also notable is that wind generation in this region is highly underutilized. In 2016, 43% of wind capacity in the Gansu region was wasted. Chinese National Energy Board. 2016 Wind Power Grid Operation. Available online.'>6</sup></a></p>
+<p>The <a href="https://en.wikipedia.org/wiki/List_of_onshore_wind_farms" target="_blank" rel="noopener">next largest</a> wind farms are significantly smaller than Gansu Wind Farm—Muppandal Wind Farm in India and Alta Wind Energy Centre in the USA have a maximum capacity of 1500 MW and 1320 MW, respectively. With a capacity <a href="https://en.wikipedia.org/wiki/Alta_Wind_Energy_Center" target="_blank" rel="noopener">factor of 30%</a> versus the average factor in India of 15%, the Alta Wind Energy Centre produces an average of 7,342 MWh per day versus 5,400 MWh at Muppandal.<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Due to poor availability of local capacity factors for wind generation, we have had to assume the factor at Muppandal is similar to the Indian average of 15%. Power System Operation Corporation. SRLDC System Operation Report, March 2015. Available online.'>7</sup></a></p>
+<p>Wind farms can be very small in size and capacity, down to the range of tens of megawatts. With a maximum capacity of only 11 MW, for example, Utgrunden Wind Farm in Sweden is likely to produce on average around 80 MWh per day.</p>
+<p><strong>How much electricity does an offshore wind farm produce in a day?</strong></p>
+<p>Although offshore wind farms can often achieve a higher capacity factor than onshore equivalents, their total installed capacity is yet to reach the scale of the largest onshore farms. The largest offshore wind farm to date is the UK&#8217;s London Array. With a capacity of 630 MW and <a href="https://en.wikipedia.org/wiki/London_Array#cite_note-2" target="_blank" rel="noopener">capacity factor in 2015</a> of 45.3%, average daily output approximates to 6,800 MWh.</p>
+<p>Similarly to onshore wind, offshore wind farms can be small in size—some below 10 MW of installed capacity. Mt Stuart Wind Farm in New Zealand, for example, produces a daily average of only 70 MWh.</p>
+<p><strong>How much electricity does a solar photovoltaic (PV) farm produce in a day?</strong></p>
+<p>As discussed by David MacKay in his book &#8220;Sustainable Energy &#8211; without the hot air&#8221; (<a href="https://www.withouthotair.com/Contents.html" target="_blank" rel="noopener">free here</a>), the electrical energy production per unit area of solar paneling is almost directly proportional to the amount of sunlight that falls upon it.<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='David JC MacKay. Sustainable Energy &#8211; without the hot air&#8221;. Available free online.'>8</sup></a> As a result, optimal locations for solar energy, especially at low latitudes can achieve an energy output 2-3 times higher than at very high latitudes. However, as this <a href="https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations" target="_blank" rel="noopener">list of the largest solar PV farms</a> shows, solar can deliver a reasonable output across most countries, regardless of latitude.</p>
+<p>The largest solar PV farm to date is China&#8217;s Tengger Desert Solar Park, with an installed capacity of 1,500 MW. If we assume a capacity factor of 20% (which is high for solar, but not unreasonable), daily output would be approximately 7,200 MWh. California&#8217;s Topaz Solar Farm has an installed capacity about one-third of China&#8217;s Tengger, but with a high capacity factor of 24.4% achieves an average daily output of 3,466 MWh.</p>
+<p>Like onshore and offshore wind, solar PV farms can be as small as tens of megawatt hours per day. Iran&#8217;s largest PV park, Jarqavieh has only 10 MW capacity, and produces an average of 48 MWh (assuming a 20% capacity factor) daily.</p>
+<h3 id="electricity-consumption"> <a class="deep-link" href="#electricity-consumption"># </a>Electricity consumption</h3>
+<p>The figures on electricity consumption (represented as horizontal lines on the chart above) are based on figures presented in our below chart on per capita electricity. We have used World Bank estimates of annual per capita electrical power consumption in 2014, by first calculating <em>daily</em> per capita use (by dividing annual figures by 365), and using multipliers of 10 million; one million; and 100,000 to calculate the total daily electricity consumption of a given number of citizens across a range of countries.</p>
+<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/per-capita-electricity-consumption" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/per-capita-electricity-consumption" width="300" height="150"></iframe></noscript></p>
+			</div><!-- .article-content -->
+
+			<footer class="article-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available <a href="https://www.eia.gov/electricity/annual/archive/03482009.pdf" target="_blank" rel="noopener">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>United States Bureau of Reclamation (USBR). Hoover Dam &#8211; Frequently asked questions. Available <a href="https://www.usbr.gov/lc/hooverdam/faqs/powerfaq.html" target="_blank" rel="noopener">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available <a href="https://www.eia.gov/electricity/annual/archive/03482009.pdf" target="_blank" rel="noopener">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>U.S. Energy Information Administration. Electric Power Annual 2009 (Updated in 2011). Available <a href="https://www.eia.gov/electricity/annual/archive/03482009.pdf" target="_blank" rel="noopener">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Ronald DiPippo (2008). <i>Geothermal Power Plants: Principles, Applications, Case Studies and Environmental Impact</i>. Elsevier Science &amp; Technology. Available <a href="https://books.google.com/books?id=YsSN8gdqKWEC">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The case of wind production in the Gansu region is interesting. Although the capacity factor of renewables tend to be lower than fossil fuel and nuclear sources, 12.4% is particularly low for wind energy. The US IEA quote a range of capacity factors from 20-40%. Also notable is that wind generation in this region is highly underutilized. In 2016, 43% of wind capacity in the Gansu region was wasted.<em> Chinese National Energy Board. 2016 Wind Power Grid Operation. Available <a href="https://www.nea.gov.cn/2017-01/26/c_136014615.htm">online</a>.</em></p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Due to poor availability of local capacity factors for wind generation, we have had to assume the factor at Muppandal is similar to the Indian average of 15%. Power System Operation Corporation. SRLDC System Operation Report, March 2015. Available <a href="https://www.srldc.org/var/ftp/reports/monthlyrep/2014-15/Mar-month.pdf" target="_blank" rel="noopener">online</a>.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>David JC MacKay. Sustainable Energy &#8211; without the hot air&#8221;. Available free <a href="https://www.withouthotair.com/Contents.html">online</a>.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .article-footer -->
+		</article><!-- #post-## -->
+				
+
+	  
+</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
+					<br>		
+					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
+					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
+					
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
+				<hr>
+				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
+					<div style="max-width: 45%; margin-right: 10px;">
+						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
+					</div>
+					<div style="max-width: 45%; margin-left: 10px;">
+						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<script>
+		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
+        for (var iframe of iframes) {
+			var dataSrc = iframe.getAttribute('data-src');
+			if (dataSrc && dataSrc.match(/\/grapher\//)) {
+				var figure = document.createElement('figure')
+				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
+				figure.setAttribute('style', iframe.getAttribute('style'));
+				iframe.parentNode.replaceChild(figure, iframe)
+			}
+		}
+	</script>
+
+	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=12301&#038;action=edit">Edit Post</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+		}
+	</script>
+</body>
+</html>

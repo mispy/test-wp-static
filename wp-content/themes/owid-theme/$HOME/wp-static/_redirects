@@ -1,0 +1,27 @@
+http://owid.netlify.com* https://owid.netlify.com:splat
+/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200
+/fertility-rates/ https://ourworldindata.org/fertility-rate 301
+/inequality-between-world-citizens/ https://ourworldindata.org/global-economic-inequality 301
+/minorities-violence-racial-tolerance/ https://ourworldindata.org/treatment-of-minorities 301
+/how-to-embed-ourworldindata-visualisations-in-your-article/ /how-to-embed/ 301
+/VisualHistoryOf/Health.html /slides/global-health 301
+/VisualHistoryOf/Violence.html /slides/war-and-violence 301
+/VisualHistoryOf/Poverty.html /slides/world-poverty 301
+/VisualHistoryOf/Hunger.html /slides/hunger-and-food-provision 301
+/VisualHistoryOf/AfricaInData.html https://africaindata.org/ 302
+/grapher/public/(.*) /grapher/$1 302
+/democratisation/ /democracy/ 301
+/infant-mortality/ https://ourworldindata.org/child-mortality/#infant-mortality 301
+/war-and-peace-long-run/ https://ourworldindata.org/war-and-peace/ 301
+/war-and-peace-after-1945/ https://ourworldindata.org/war-and-peace/ 301
+/child-mortality-globally-post https://ourworldindata.org/child-mortality-globally 301
+/global-child-mortality-it-is-hard-to-overestimate-both-the-immensity-of-the-tragedy-and-the-progress-the-world-has-made/ /child-mortality-globally 301
+/treatment-of-minorities /human-rights 301
+/cascade-of-rights/ /human-rights/ 301
+/social-spending/ /public-spending/ 301
+/age-structure-and-mortality-by-age/ https://ourworldindata.org/life-expectancy/ 301
+/yields/ https://ourworldindata.org/yields-and-land-use-in-agriculture/ 301
+/land-use-in-agriculture/ https://ourworldindata.org/yields-and-land-use-in-agriculture/ 301
+//future-world-population-growth/ https://ourworldindata.org/world-population-growth/ 301
+/supporters/ https://ourworldindata.org/about 301
+/fertility/ /fertility-rate/ 301
