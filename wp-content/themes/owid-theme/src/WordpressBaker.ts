@@ -123,7 +123,7 @@ export class WordpressBaker {
     }
 
     async bakeAll() {
-        await Promise.all([
+        return Promise.all([
             this.bakeRedirects(),
             this.bakePosts(),
             this.bakeAssets()
@@ -135,7 +135,7 @@ export class WordpressBaker {
         if (authorEmail && authorName && commitMsg) {
             shell.exec(`cd ${outDir} && git add -A . && git commit --author='${authorName} <${authorEmail}>' -a -m '${commitMsg}'`)
         } else {
-            shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Code update"`)
+            shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Automated update"`)
         }
         shell.exec(`cd ${outDir} && git push origin master`)
     }

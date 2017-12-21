@@ -214,16 +214,11 @@ var WordpressBaker = /** @class */ (function () {
     WordpressBaker.prototype.bakeAll = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, Promise.all([
-                            this.bakeRedirects(),
-                            this.bakePosts(),
-                            this.bakeAssets()
-                        ])];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
+                return [2 /*return*/, Promise.all([
+                        this.bakeRedirects(),
+                        this.bakePosts(),
+                        this.bakeAssets()
+                    ])];
             });
         });
     };
@@ -236,7 +231,7 @@ var WordpressBaker = /** @class */ (function () {
                     shell.exec("cd " + outDir + " && git add -A . && git commit --author='" + authorName + " <" + authorEmail + ">' -a -m '" + commitMsg + "'");
                 }
                 else {
-                    shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Code update\"");
+                    shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Automated update\"");
                 }
                 shell.exec("cd " + outDir + " && git push origin master");
                 return [2 /*return*/];
