@@ -132,7 +132,8 @@ export class WordpressBaker {
 
     async deploy() {
         const {outDir} = this.props
-        shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Automatic update" && git push origin master`)
+        shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Automatic update"`)
+        shell.exec(`cd ${outDir} && git push origin master`)
     }
 
     end() {

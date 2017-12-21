@@ -232,7 +232,8 @@ var WordpressBaker = /** @class */ (function () {
             var outDir;
             return __generator(this, function (_a) {
                 outDir = this.props.outDir;
-                shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Automatic update\" && git push origin master");
+                shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Automatic update\"");
+                shell.exec("cd " + outDir + " && git push origin master");
                 return [2 /*return*/];
             });
         });
