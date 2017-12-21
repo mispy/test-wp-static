@@ -9,7 +9,6 @@ http://owid.netlify.com* https://owid.netlify.com:splat
 /VisualHistoryOf/Poverty.html /slides/world-poverty 301
 /VisualHistoryOf/Hunger.html /slides/hunger-and-food-provision 301
 /VisualHistoryOf/AfricaInData.html https://africaindata.org/ 302
-/grapher/public/(.*) /grapher/$1 302
 /democratisation/ /democracy/ 301
 /infant-mortality/ https://ourworldindata.org/child-mortality/#infant-mortality 301
 /war-and-peace-long-run/ https://ourworldindata.org/war-and-peace/ 301
