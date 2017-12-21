@@ -38,22 +38,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var WordpressBaker_1 = require("./WordpressBaker");
 var parseArgs = require("minimist");
 var argv = parseArgs(process.argv.slice(2));
-function main(email, name, postSlug) {
+function main(database, wordpressUrl, wordpressDir, email, name, postSlug) {
     return __awaiter(this, void 0, void 0, function () {
         var baker;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
+                    console.log(database, wordpressUrl, wordpressDir, email, name, postSlug);
                     baker = new WordpressBaker_1.WordpressBaker({
-                        database: "owid_wordpress",
-                        wordpressUrl: "http://l:8080",
-                        wordpressDir: "/Users/mispy/ourworldindata.org",
+                        database: database,
+                        wordpressUrl: wordpressUrl,
+                        wordpressDir: wordpressDir,
                         outDir: "/Users/mispy/wp-static"
                     });
                     return [4 /*yield*/, baker.bakeAll()];
                 case 1:
                     _a.sent();
-                    return [4 /*yield*/, baker.deploy(email, name, postSlug)];
+                    return [4 /*yield*/, baker.deploy(email, name, "Updating " + postSlug)];
                 case 2:
                     _a.sent();
                     baker.end();
@@ -62,5 +63,5 @@ function main(email, name, postSlug) {
         });
     });
 }
-main(argv._[0], argv._[1], argv._[2]);
+main(argv._[0], argv._[1], argv._[2], argv._[3], argv._[4], argv._[5]);
 //# sourceMappingURL=postUpdatedHook.js.map

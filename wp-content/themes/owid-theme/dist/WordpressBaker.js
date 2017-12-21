@@ -233,7 +233,7 @@ var WordpressBaker = /** @class */ (function () {
             return __generator(this, function (_a) {
                 outDir = this.props.outDir;
                 if (authorEmail && authorName && commitMsg) {
-                    shell.exec("cd " + outDir + " && git add -A . && git commit --author='" + authorName + " <" + authorEmail + ">' -a -m \"" + commitMsg + "\"");
+                    shell.exec("cd " + outDir + " && git add -A . && git commit --author='" + authorName + " <" + authorEmail + ">' -a -m '" + commitMsg + "'");
                 }
                 else {
                     shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Code update\"");

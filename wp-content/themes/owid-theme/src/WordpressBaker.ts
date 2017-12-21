@@ -133,7 +133,7 @@ export class WordpressBaker {
     async deploy(authorEmail?: string, authorName?: string, commitMsg?: string) {
         const {outDir} = this.props
         if (authorEmail && authorName && commitMsg) {
-            shell.exec(`cd ${outDir} && git add -A . && git commit --author='${authorName} <${authorEmail}>' -a -m "${commitMsg}"`)
+            shell.exec(`cd ${outDir} && git add -A . && git commit --author='${authorName} <${authorEmail}>' -a -m '${commitMsg}'`)
         } else {
             shell.exec(`cd ${outDir} && git add -A . && git commit -a -m "Code update"`)
         }
