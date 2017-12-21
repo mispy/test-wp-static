@@ -1,0 +1,923 @@
+0000.000 (0) Opened log file at time: Tue, 19 Nov 2013 14:08:25 +0000
+0000.004 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.20 WP: 3.6.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL:  Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.5M | 49.8M) ZipArchive::addFile: Y W3TC/ObjectCache: N
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 1311074.6 Mb
+0000.009 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.010 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.068 (0) Requesting semaphore lock (fd)
+0000.071 (0) Set semaphore last lock (fd) time to 2013-11-19 14:08:25
+0000.072 (0) Semaphore lock (fd) complete.
+0000.077 (0) Backup run: resumption=0, nonce=bd823f23b95d, begun at=1384870105 (0s ago), job type=backup
+0000.078 (0) Scheduling a resumption (1) after 300 seconds (1384870405) in case this run gets aborted
+0000.094 (0) Checking if we have a zip executable available
+0000.095 (0) Testing: /usr/bin/zip
+0000.113 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.115 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.117 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.117 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.118 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.133 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.135 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.169 (0) Working binary zip found: /usr/bin/zip
+0000.170 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.171 (0) Creation of backups of directories: beginning
+0000.175 (0) Beginning creation of dump of plugins (split every: 800 Mb)
+0000.508 (0) Remaining entities to add to zip file: 451 directories, 3006 files
+0000.515 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.521 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.528 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.534 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.540 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.541 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.5 Mb, 3006 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0002.071 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 5.80 Mb
+0002.079 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 600 files added (on-disk size: 5959.3 Kb)
+0002.084 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 700 files added (on-disk size: 5959.3 Kb)
+0002.089 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 800 files added (on-disk size: 5959.3 Kb)
+0002.095 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 900 files added (on-disk size: 5959.3 Kb)
+0002.101 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1000 files added (on-disk size: 5959.3 Kb)
+0002.102 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.8 Mb, 3006 files batched, 501 (1002) added so far); re-opening (prior size: 5959.3 Kb)
+0002.166 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 5.80 Mb
+0002.931 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 7.90 Mb
+0002.943 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1100 files added (on-disk size: 8094.7 Kb)
+0002.952 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1200 files added (on-disk size: 8094.7 Kb)
+0002.961 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1300 files added (on-disk size: 8094.7 Kb)
+0002.970 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1400 files added (on-disk size: 8094.7 Kb)
+0002.979 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1500 files added (on-disk size: 8094.7 Kb)
+0002.981 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.5 Mb, 3006 files batched, 501 (1503) added so far); re-opening (prior size: 8094.7 Kb)
+0003.056 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 7.90 Mb
+0004.253 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 10.10 Mb
+0004.262 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1600 files added (on-disk size: 10345.6 Kb)
+0004.268 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1700 files added (on-disk size: 10345.6 Kb)
+0004.274 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1800 files added (on-disk size: 10345.6 Kb)
+0004.280 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 1900 files added (on-disk size: 10345.6 Kb)
+0004.286 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2000 files added (on-disk size: 10345.6 Kb)
+0004.288 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7 Mb, 3006 files batched, 501 (2004) added so far); re-opening (prior size: 10345.6 Kb)
+0004.370 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 10.10 Mb
+0005.356 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 13.10 Mb
+0005.365 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2100 files added (on-disk size: 13456.5 Kb)
+0005.374 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2200 files added (on-disk size: 13456.5 Kb)
+0005.380 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2300 files added (on-disk size: 13456.5 Kb)
+0005.387 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2400 files added (on-disk size: 13456.5 Kb)
+0005.393 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2500 files added (on-disk size: 13456.5 Kb)
+0005.394 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (14.2 Mb, 3006 files batched, 501 (2505) added so far); re-opening (prior size: 13456.5 Kb)
+0005.494 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 13.10 Mb
+0007.444 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 18.90 Mb
+0007.454 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2600 files added (on-disk size: 19374 Kb)
+0007.460 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2700 files added (on-disk size: 19374 Kb)
+0007.466 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2800 files added (on-disk size: 19374 Kb)
+0007.473 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 2900 files added (on-disk size: 19374 Kb)
+0007.479 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: 3000 files added (on-disk size: 19374 Kb)
+0007.481 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.6 Mb, 3006 files batched, 501 (3006) added so far); re-opening (prior size: 19374 Kb)
+0007.922 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip.tmp: size is now: 18.90 Mb
+0008.822 (0) Created plugins zip (0) - 20999.6 Kb in 8.6 s (2429.3 Kb/s)
+0008.825 (0) Beginning creation of dump of themes (split every: 800 Mb)
+0008.868 (0) Remaining entities to add to zip file: 31 directories, 180 files
+0008.874 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.444 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip.tmp: size is now: 1.80 Mb
+0009.451 (0) Created themes zip (0) - 1822 Kb in 0.6 s (2924.2 Kb/s)
+0009.454 (0) Beginning creation of dump of uploads (split every: 800 Mb)
+0009.638 (0) Remaining entities to add to zip file: 15 directories, 1601 files
+0009.645 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.651 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0009.657 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0009.791 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 Mb added on this batch (25.1 Mb, 1601 files batched, 318 (318) added so far); re-opening (prior size: 0 Kb)
+0016.128 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 24.70 Mb
+0016.132 (0) A useful amount of data was added after this amount of zip processing: 7.3 s (normalised: 7.3 s, rate: 3521.3 Kb/s)
+0016.139 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 400 files added (on-disk size: 25325.8 Kb)
+0016.144 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 Mb added on this batch (25.1 Mb, 1601 files batched, 147 (465) added so far); re-opening (prior size: 25325.8 Kb)
+0016.708 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 24.70 Mb
+0019.160 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 49.50 Mb
+0019.163 (0) A useful amount of data was added after this amount of zip processing: 3.3 s (normalised: 3.3 s, rate: 7678.3 Kb/s)
+0019.165 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.34151911736, normalised_time=3.33407244904, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=47175459)
+0019.169 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 500 files added (on-disk size: 50669.1 Kb)
+0019.176 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 600 files added (on-disk size: 50669.1 Kb)
+0019.183 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 700 files added (on-disk size: 50669.1 Kb)
+0019.190 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 800 files added (on-disk size: 50669.1 Kb)
+0019.200 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 900 files added (on-disk size: 50669.1 Kb)
+0019.206 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (40.3 Mb, 1601 files batched, 501 (966) added so far); re-opening (prior size: 50669.1 Kb)
+0020.274 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 49.50 Mb
+0027.268 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 88.30 Mb
+0027.274 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1000 files added (on-disk size: 90380.4 Kb)
+0027.281 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1100 files added (on-disk size: 90380.4 Kb)
+0027.288 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1200 files added (on-disk size: 90380.4 Kb)
+0027.294 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 45 Mb added on this batch (45.2 Mb, 1601 files batched, 309 (1275) added so far); re-opening (prior size: 90380.4 Kb)
+0030.451 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 88.30 Mb
+0037.783 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 119.60 Mb
+0037.787 (0) A useful amount of data was added after this amount of zip processing: 11 s (normalised: 10.9 s, rate: 4217.5 Kb/s)
+0037.791 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1300 files added (on-disk size: 122520.8 Kb)
+0037.798 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1400 files added (on-disk size: 122520.8 Kb)
+0037.805 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1500 files added (on-disk size: 122520.8 Kb)
+0037.812 (0) Zip: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: 1600 files added (on-disk size: 122520.8 Kb)
+0041.071 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip.tmp: size is now: 119.60 Mb
+0044.332 (0) Created uploads zip (0) - 145715.5 Kb in 34.9 s (4178.1 Kb/s)
+0044.335 (0) Beginning backup of other directories found in the content directory (index: 0)
+0044.336 (0) Looking for candidates to back up in: /home2/explain3/public_html/wp-content
+0044.337 (0) finding files: tablepress-combined.min.css: adding to list
+0044.338 (0) finding files: w3tc-config: adding to list
+0044.339 (0) finding files: advanced-cache.php: adding to list
+0044.340 (0) finding files: plugins: skipping: this is the plugins directory
+0044.341 (0) finding files: updraft: skipping: this is the updraft directory
+0044.342 (0) finding files: tablepress-custom.min.css: adding to list
+0044.343 (0) finding files: mu-plugins: adding to list
+0044.344 (0) finding files: index.php: adding to list
+0044.345 (0) finding files: uploads: skipping: this is the uploads directory
+0044.346 (0) finding files: cache: skipping: excluded by options
+0044.347 (0) finding files: themes: skipping: this is the themes directory
+0044.348 (0) finding files: tablepress-custom.css: adding to list
+0044.349 (0) finding files: upgrade: skipping: excluded by options
+0044.353 (0) Remaining entities to add to zip file: 2 directories, 9 files
+0044.393 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip.tmp: size is now: 0.00 Mb
+0044.397 (0) Created others zip (0) - 10.7 Kb in 0 s (238.4 Kb/s)
+0044.401 (0) Saving backup status to database (elements: 8)
+0044.403 (0) Beginning creation of database dump
+0044.411 (0) Table wp_options: Total expected rows (approximate): 505
+0044.502 (0) Table wp_options: Total rows added: 505 in 0.09 seconds
+0044.504 (0) Table wp_options: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_options.table.gz)
+0044.514 (0) Table wp_users: Total expected rows (approximate): 1
+0044.516 (0) Table wp_users: Total rows added: 1 in 0.01 seconds
+0044.517 (0) Table wp_users: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_users.table.gz)
+0044.524 (0) Table wp_usermeta: Total expected rows (approximate): 44
+0044.528 (0) Table wp_usermeta: Total rows added: 44 in 0.01 seconds
+0044.530 (0) Table wp_usermeta: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_usermeta.table.gz)
+0044.537 (0) Table wp_commentmeta: Total expected rows (approximate): 4
+0044.539 (0) Table wp_commentmeta: Total rows added: 4 in 0.01 seconds
+0044.541 (0) Table wp_commentmeta: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_commentmeta.table.gz)
+0044.548 (0) Table wp_comments: Total expected rows (approximate): 2
+0044.551 (0) Table wp_comments: Total rows added: 2 in 0.01 seconds
+0044.552 (0) Table wp_comments: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_comments.table.gz)
+0044.561 (0) Table wp_links: Total expected rows (approximate): 0
+0044.562 (0) Table wp_links: Total rows added: 0 in 0.01 seconds
+0044.563 (0) Table wp_links: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_links.table.gz)
+0044.569 (0) Table wp_postmeta: Total expected rows (approximate): 2754
+0044.731 (0) Table wp_postmeta: Total rows added: 2754 in 0.17 seconds
+0044.733 (0) Table wp_postmeta: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_postmeta.table.gz)
+0044.743 (0) Table wp_posts: Total expected rows (approximate): 1507
+0045.886 (0) Table wp_posts: Total rows added: 1507 in 1.15 seconds
+0045.889 (0) Table wp_posts: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_posts.table.gz)
+0045.897 (0) Table wp_term_relationships: Total expected rows (approximate): 117
+0045.902 (0) Table wp_term_relationships: Total rows added: 117 in 0.01 seconds
+0045.904 (0) Table wp_term_relationships: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_term_relationships.table.gz)
+0045.912 (0) Table wp_term_taxonomy: Total expected rows (approximate): 20
+0045.915 (0) Table wp_term_taxonomy: Total rows added: 20 in 0.01 seconds
+0045.916 (0) Table wp_term_taxonomy: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_term_taxonomy.table.gz)
+0045.923 (0) Table wp_terms: Total expected rows (approximate): 20
+0045.926 (0) Table wp_terms: Total rows added: 20 in 0.01 seconds
+0045.927 (0) Table wp_terms: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_terms.table.gz)
+0045.936 (0) Table wp_duplicator: Total expected rows (approximate): 1
+0045.939 (0) Table wp_duplicator: Total rows added: 1 in 0.01 seconds
+0045.940 (0) Table wp_duplicator: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_duplicator.table.gz)
+0045.949 (0) Table wp_myshouts: Total expected rows (approximate): 0
+0045.950 (0) Table wp_myshouts: Total rows added: 0 in 0.01 seconds
+0045.952 (0) Table wp_myshouts: finishing file (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_myshouts.table.gz)
+0045.957 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_options.table.gz: adding to final database dump
+0046.019 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_users.table.gz: adding to final database dump
+0046.021 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_usermeta.table.gz: adding to final database dump
+0046.023 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_commentmeta.table.gz: adding to final database dump
+0046.025 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_comments.table.gz: adding to final database dump
+0046.026 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_links.table.gz: adding to final database dump
+0046.028 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_postmeta.table.gz: adding to final database dump
+0046.089 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_posts.table.gz: adding to final database dump
+0046.708 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_term_relationships.table.gz: adding to final database dump
+0046.711 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_term_taxonomy.table.gz: adding to final database dump
+0046.713 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_terms.table.gz: adding to final database dump
+0046.715 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_duplicator.table.gz: adding to final database dump
+0046.716 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db-table-wp_myshouts.table.gz: adding to final database dump
+0046.717 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: finished writing out complete database file (1600 Kb)
+0046.721 (0) Total database tables backed up: 13
+0046.723 (0) Saving backup history
+0046.727 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0046.728 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0046.729 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0046.730 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has not yet been successfully uploaded: will queue
+0046.731 (0) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has not yet been successfully uploaded: will queue
+0046.732 (0) Decremented the semaphore (fd) by 1.
+0046.733 (0) Semaphore (fd) unlocked.
+0046.734 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0046.737 (0) Cloud backup selection: dropbox
+0046.738 (0) Beginning dispatch of backup to remote (dropbox)
+0046.739 (0) Dropbox: begin cloud upload
+0046.779 (0) Dropbox: access gained
+0047.113 (0) Dropbox quota usage: normal=1838.8 Mb, shared=3546.9 Mb, total=18432 Mb, available=13046.2 Mb
+0047.114 (0) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip
+0049.058 (0) Dropbox chunked upload: 2.4 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 524288)
+0050.776 (0) Dropbox chunked upload: 4.9 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 1048576)
+0052.960 (0) Dropbox chunked upload: 7.3 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 1572864)
+0055.241 (0) Dropbox chunked upload: 9.8 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 2097152)
+0057.501 (0) Dropbox chunked upload: 12.2 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 2621440)
+0059.888 (0) Dropbox chunked upload: 14.6 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 3145728)
+0062.341 (0) Dropbox chunked upload: 17.1 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 3670016)
+0065.038 (0) Dropbox chunked upload: 19.5 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 4194304)
+0066.602 (0) Dropbox chunked upload: 21.9 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 4718592)
+0068.361 (0) Dropbox chunked upload: 24.4 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 5242880)
+0070.400 (0) Dropbox chunked upload: 26.8 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 5767168)
+0072.474 (0) Dropbox chunked upload: 29.3 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 6291456)
+0074.964 (0) Dropbox chunked upload: 31.7 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 6815744)
+0077.311 (0) Dropbox chunked upload: 34.1 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 7340032)
+0079.872 (0) Dropbox chunked upload: 36.6 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 7864320)
+0082.770 (0) Dropbox chunked upload: 39 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 8388608)
+0084.291 (0) Dropbox chunked upload: 41.4 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 8912896)
+0086.157 (0) Dropbox chunked upload: 43.9 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 9437184)
+0088.084 (0) Dropbox chunked upload: 46.3 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 9961472)
+0090.339 (0) Dropbox chunked upload: 48.8 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 10485760)
+0092.874 (0) Dropbox chunked upload: 51.2 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 11010048)
+0095.091 (0) Dropbox chunked upload: 53.6 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 11534336)
+0098.934 (0) Dropbox chunked upload: 56.1 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 12058624)
+0101.727 (0) Dropbox chunked upload: 58.5 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 12582912)
+0103.392 (0) Dropbox chunked upload: 61 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 13107200)
+0105.098 (0) Dropbox chunked upload: 63.4 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 13631488)
+0107.143 (0) Dropbox chunked upload: 65.8 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 14155776)
+0109.124 (0) Dropbox chunked upload: 68.3 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 14680064)
+0111.277 (0) Dropbox chunked upload: 70.7 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 15204352)
+0115.831 (0) Dropbox chunked upload: 73.1 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 15728640)
+0118.253 (0) Dropbox chunked upload: 75.6 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 16252928)
+0121.791 (0) Dropbox chunked upload: 78 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 16777216)
+0123.692 (0) Dropbox chunked upload: 80.5 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 17301504)
+0125.623 (0) Dropbox chunked upload: 82.9 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 17825792)
+0129.077 (0) Dropbox chunked upload: 85.3 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 18350080)
+0133.148 (0) Dropbox chunked upload: 87.8 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 18874368)
+0136.576 (0) Dropbox chunked upload: 90.2 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 19398656)
+0140.391 (0) Dropbox chunked upload: 92.6 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 19922944)
+0144.743 (0) Dropbox chunked upload: 95.1 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 20447232)
+0150.289 (0) Dropbox chunked upload: 97.5 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 20971520)
+0153.214 (0) Dropbox chunked upload: 100 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 21495808)
+0154.111 (0) Dropbox chunked upload: 100 % uploaded (kkE_U8JxL_pP7yf-jmVK2A, 21503599)
+0155.318 (0) Recording as successfully uploaded: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip (14f036bbb1a22c3665837e9f7aa1ddd3)
+0155.322 (0) Deleting local file: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip
+0155.332 (0) Dropbox: File upload success (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip): 20999 Kb in 108s (194 Kb/s)
+0155.612 (0) Dropbox quota usage: normal=1859.4 Mb, shared=3546.9 Mb, total=18432 Mb, available=13025.7 Mb
+0155.614 (0) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip
+0158.361 (0) Dropbox chunked upload: 28.1 % uploaded (R3XOCcdlmmwMGTQW-HOV2w, 524288)
+0161.321 (0) Dropbox chunked upload: 56.2 % uploaded (R3XOCcdlmmwMGTQW-HOV2w, 1048576)
+0164.556 (0) Dropbox chunked upload: 84.3 % uploaded (R3XOCcdlmmwMGTQW-HOV2w, 1572864)
+0166.939 (0) Dropbox chunked upload: 100 % uploaded (R3XOCcdlmmwMGTQW-HOV2w, 1865769)
+0169.138 (0) Recording as successfully uploaded: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip (88fe111cff6169cf0e555654f66b40a9)
+0169.142 (0) Deleting local file: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip
+0169.144 (0) Dropbox: File upload success (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip): 1822 Kb in 13s (134 Kb/s)
+0169.419 (0) Dropbox quota usage: normal=1861.1 Mb, shared=3546.9 Mb, total=18432 Mb, available=13023.9 Mb
+0169.427 (0) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+0171.081 (0) Dropbox chunked upload: 0.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 524288)
+0172.859 (0) Dropbox chunked upload: 0.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 1048576)
+0175.007 (0) Dropbox chunked upload: 1.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 1572864)
+0177.213 (0) Dropbox chunked upload: 1.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 2097152)
+0179.463 (0) Dropbox chunked upload: 1.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 2621440)
+0181.782 (0) Dropbox chunked upload: 2.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 3145728)
+0184.332 (0) Dropbox chunked upload: 2.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 3670016)
+0187.445 (0) Dropbox chunked upload: 2.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 4194304)
+0189.252 (0) Dropbox chunked upload: 3.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 4718592)
+0191.400 (0) Dropbox chunked upload: 3.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 5242880)
+0193.847 (0) Dropbox chunked upload: 3.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 5767168)
+0197.632 (0) Dropbox chunked upload: 4.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 6291456)
+0200.051 (0) Dropbox chunked upload: 4.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 6815744)
+0202.883 (0) Dropbox chunked upload: 4.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 7340032)
+0206.014 (0) Dropbox chunked upload: 5.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 7864320)
+0209.503 (0) Dropbox chunked upload: 5.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 8388608)
+0211.137 (0) Dropbox chunked upload: 6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 8912896)
+0213.441 (0) Dropbox chunked upload: 6.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 9437184)
+0215.638 (0) Dropbox chunked upload: 6.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 9961472)
+0218.347 (0) Dropbox chunked upload: 7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 10485760)
+0220.732 (0) Dropbox chunked upload: 7.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 11010048)
+0223.443 (0) Dropbox chunked upload: 7.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 11534336)
+0226.328 (0) Dropbox chunked upload: 8.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 12058624)
+0229.471 (0) Dropbox chunked upload: 8.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 12582912)
+0231.229 (0) Dropbox chunked upload: 8.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 13107200)
+0233.216 (0) Dropbox chunked upload: 9.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 13631488)
+0235.604 (0) Dropbox chunked upload: 9.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 14155776)
+0237.700 (0) Dropbox chunked upload: 9.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 14680064)
+0239.759 (0) Dropbox chunked upload: 10.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 15204352)
+0242.934 (0) Dropbox chunked upload: 10.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 15728640)
+0246.016 (0) Dropbox chunked upload: 10.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 16252928)
+0248.911 (0) Dropbox chunked upload: 11.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 16777216)
+0251.118 (0) Dropbox chunked upload: 11.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 17301504)
+0253.198 (0) Dropbox chunked upload: 11.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 17825792)
+0255.106 (0) Dropbox chunked upload: 12.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 18350080)
+0255.109 (0) The scheduled resumption is within 45 seconds - will reschedule
+0255.113 (0) Rescheduling resumption 1: moving to 345 seconds from now (1384870705)
+0255.118 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 45 = 345
+0257.308 (0) Dropbox chunked upload: 12.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 18874368)
+0259.840 (0) Dropbox chunked upload: 13 % uploaded (USArSXJ9HySuxwM8sWxkfg, 19398656)
+0262.329 (0) Dropbox chunked upload: 13.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 19922944)
+0265.535 (0) Dropbox chunked upload: 13.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 20447232)
+0268.250 (0) Dropbox chunked upload: 14.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 20971520)
+0269.928 (0) Dropbox chunked upload: 14.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 21495808)
+0271.667 (0) Dropbox chunked upload: 14.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 22020096)
+0273.862 (0) Dropbox chunked upload: 15.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 22544384)
+0276.493 (0) Dropbox chunked upload: 15.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 23068672)
+0278.888 (0) Dropbox chunked upload: 15.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 23592960)
+0281.424 (0) Dropbox chunked upload: 16.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 24117248)
+0284.635 (0) Dropbox chunked upload: 16.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 24641536)
+0287.746 (0) Dropbox chunked upload: 16.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 25165824)
+0289.569 (0) Dropbox chunked upload: 17.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 25690112)
+0291.522 (0) Dropbox chunked upload: 17.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 26214400)
+0293.690 (0) Dropbox chunked upload: 17.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 26738688)
+0296.199 (0) Dropbox chunked upload: 18.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 27262976)
+0298.434 (0) Dropbox chunked upload: 18.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 27787264)
+0300.858 (0) Dropbox chunked upload: 19 % uploaded (USArSXJ9HySuxwM8sWxkfg, 28311552)
+0303.444 (0) Dropbox chunked upload: 19.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 28835840)
+0306.177 (0) Dropbox chunked upload: 19.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 29360128)
+0307.728 (0) Dropbox chunked upload: 20 % uploaded (USArSXJ9HySuxwM8sWxkfg, 29884416)
+0309.575 (0) Dropbox chunked upload: 20.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 30408704)
+0311.439 (0) Dropbox chunked upload: 20.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 30932992)
+0313.742 (0) Dropbox chunked upload: 21.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 31457280)
+0315.881 (0) Dropbox chunked upload: 21.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 31981568)
+0315.885 (0) The time we have been running (315.9) is approaching the resumption interval (345) - increasing resumption interval to 346
+0318.338 (0) Dropbox chunked upload: 21.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 32505856)
+0318.342 (0) The time we have been running (318.3) is approaching the resumption interval (346) - increasing resumption interval to 349
+0320.901 (0) Dropbox chunked upload: 22.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 33030144)
+0320.907 (0) The time we have been running (320.9) is approaching the resumption interval (349) - increasing resumption interval to 351
+0323.689 (0) Dropbox chunked upload: 22.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 33554432)
+0323.692 (0) The time we have been running (323.7) is approaching the resumption interval (351) - increasing resumption interval to 354
+0325.333 (0) Dropbox chunked upload: 22.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 34078720)
+0325.337 (0) The time we have been running (325.3) is approaching the resumption interval (354) - increasing resumption interval to 356
+0327.110 (0) Dropbox chunked upload: 23.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 34603008)
+0327.117 (0) The time we have been running (327.1) is approaching the resumption interval (356) - increasing resumption interval to 358
+0329.302 (0) Dropbox chunked upload: 23.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 35127296)
+0329.306 (0) The time we have been running (329.3) is approaching the resumption interval (358) - increasing resumption interval to 360
+0331.424 (0) Dropbox chunked upload: 23.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 35651584)
+0331.428 (0) The time we have been running (331.4) is approaching the resumption interval (360) - increasing resumption interval to 362
+0333.901 (0) Dropbox chunked upload: 24.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 36175872)
+0333.906 (0) The time we have been running (333.9) is approaching the resumption interval (362) - increasing resumption interval to 364
+0336.356 (0) Dropbox chunked upload: 24.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 36700160)
+0336.364 (0) The time we have been running (336.4) is approaching the resumption interval (364) - increasing resumption interval to 367
+0339.513 (0) Dropbox chunked upload: 24.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 37224448)
+0339.517 (0) The time we have been running (339.5) is approaching the resumption interval (367) - increasing resumption interval to 370
+0342.530 (0) Dropbox chunked upload: 25.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 37748736)
+0342.534 (0) The time we have been running (342.5) is approaching the resumption interval (370) - increasing resumption interval to 373
+0344.053 (0) Dropbox chunked upload: 25.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 38273024)
+0344.056 (0) The time we have been running (344.1) is approaching the resumption interval (373) - increasing resumption interval to 375
+0345.883 (0) Dropbox chunked upload: 26 % uploaded (USArSXJ9HySuxwM8sWxkfg, 38797312)
+0345.887 (0) The time we have been running (345.9) is approaching the resumption interval (375) - increasing resumption interval to 376
+0347.915 (0) Dropbox chunked upload: 26.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 39321600)
+0347.918 (0) The time we have been running (347.9) is approaching the resumption interval (376) - increasing resumption interval to 378
+0350.019 (0) Dropbox chunked upload: 26.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 39845888)
+0350.023 (0) The time we have been running (350) is approaching the resumption interval (378) - increasing resumption interval to 381
+0352.391 (0) Dropbox chunked upload: 27.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 40370176)
+0352.395 (0) The time we have been running (352.4) is approaching the resumption interval (381) - increasing resumption interval to 383
+0354.884 (0) Dropbox chunked upload: 27.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 40894464)
+0354.888 (0) The time we have been running (354.9) is approaching the resumption interval (383) - increasing resumption interval to 385
+0357.273 (0) Dropbox chunked upload: 27.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 41418752)
+0357.277 (0) The time we have been running (357.3) is approaching the resumption interval (385) - increasing resumption interval to 388
+0359.911 (0) Dropbox chunked upload: 28.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 41943040)
+0359.914 (0) The time we have been running (359.9) is approaching the resumption interval (388) - increasing resumption interval to 390
+0361.700 (0) Dropbox chunked upload: 28.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 42467328)
+0361.704 (0) The time we have been running (361.7) is approaching the resumption interval (390) - increasing resumption interval to 392
+0363.468 (0) Dropbox chunked upload: 28.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 42991616)
+0363.472 (0) The time we have been running (363.5) is approaching the resumption interval (392) - increasing resumption interval to 394
+0365.435 (0) Dropbox chunked upload: 29.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 43515904)
+0365.438 (0) The time we have been running (365.4) is approaching the resumption interval (394) - increasing resumption interval to 396
+0367.493 (0) Dropbox chunked upload: 29.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 44040192)
+0367.498 (0) The time we have been running (367.5) is approaching the resumption interval (396) - increasing resumption interval to 398
+0369.714 (0) Dropbox chunked upload: 29.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 44564480)
+0369.718 (0) The time we have been running (369.7) is approaching the resumption interval (398) - increasing resumption interval to 400
+0372.034 (0) Dropbox chunked upload: 30.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 45088768)
+0372.038 (0) The time we have been running (372) is approaching the resumption interval (400) - increasing resumption interval to 403
+0374.641 (0) Dropbox chunked upload: 30.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 45613056)
+0374.646 (0) The time we have been running (374.6) is approaching the resumption interval (403) - increasing resumption interval to 405
+0377.645 (0) Dropbox chunked upload: 30.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 46137344)
+0377.649 (0) The time we have been running (377.6) is approaching the resumption interval (405) - increasing resumption interval to 408
+0379.391 (0) Dropbox chunked upload: 31.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 46661632)
+0379.396 (0) The time we have been running (379.4) is approaching the resumption interval (408) - increasing resumption interval to 410
+0381.201 (0) Dropbox chunked upload: 31.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 47185920)
+0381.205 (0) The time we have been running (381.2) is approaching the resumption interval (410) - increasing resumption interval to 412
+0383.320 (0) Dropbox chunked upload: 32 % uploaded (USArSXJ9HySuxwM8sWxkfg, 47710208)
+0383.324 (0) The time we have been running (383.3) is approaching the resumption interval (412) - increasing resumption interval to 414
+0385.393 (0) Dropbox chunked upload: 32.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 48234496)
+0385.397 (0) The time we have been running (385.4) is approaching the resumption interval (414) - increasing resumption interval to 416
+0387.599 (0) Dropbox chunked upload: 32.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 48758784)
+0387.603 (0) The time we have been running (387.6) is approaching the resumption interval (416) - increasing resumption interval to 418
+0389.884 (0) Dropbox chunked upload: 33 % uploaded (USArSXJ9HySuxwM8sWxkfg, 49283072)
+0389.888 (0) The time we have been running (389.9) is approaching the resumption interval (418) - increasing resumption interval to 420
+0392.467 (0) Dropbox chunked upload: 33.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 49807360)
+0392.470 (0) The time we have been running (392.5) is approaching the resumption interval (420) - increasing resumption interval to 423
+0395.467 (0) Dropbox chunked upload: 33.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 50331648)
+0395.472 (0) The time we have been running (395.5) is approaching the resumption interval (423) - increasing resumption interval to 426
+0397.878 (0) Dropbox chunked upload: 34.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 50855936)
+0397.886 (0) The time we have been running (397.9) is approaching the resumption interval (426) - increasing resumption interval to 428
+0399.903 (0) Dropbox chunked upload: 34.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 51380224)
+0399.906 (0) The time we have been running (399.9) is approaching the resumption interval (428) - increasing resumption interval to 430
+0402.032 (0) Dropbox chunked upload: 34.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 51904512)
+0402.036 (0) The time we have been running (402) is approaching the resumption interval (430) - increasing resumption interval to 433
+0404.555 (0) Dropbox chunked upload: 35.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 52428800)
+0404.578 (0) The time we have been running (404.6) is approaching the resumption interval (433) - increasing resumption interval to 435
+0406.718 (0) Dropbox chunked upload: 35.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 52953088)
+0406.725 (0) The time we have been running (406.7) is approaching the resumption interval (435) - increasing resumption interval to 437
+0409.344 (0) Dropbox chunked upload: 35.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 53477376)
+0409.348 (0) The time we have been running (409.3) is approaching the resumption interval (437) - increasing resumption interval to 440
+0411.998 (0) Dropbox chunked upload: 36.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 54001664)
+0412.002 (0) The time we have been running (412) is approaching the resumption interval (440) - increasing resumption interval to 442
+0414.787 (0) Dropbox chunked upload: 36.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 54525952)
+0414.791 (0) The time we have been running (414.8) is approaching the resumption interval (442) - increasing resumption interval to 445
+0416.667 (0) Dropbox chunked upload: 36.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 55050240)
+0416.671 (0) The time we have been running (416.7) is approaching the resumption interval (445) - increasing resumption interval to 447
+0418.558 (0) Dropbox chunked upload: 37.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 55574528)
+0418.562 (0) The time we have been running (418.6) is approaching the resumption interval (447) - increasing resumption interval to 449
+0420.706 (0) Dropbox chunked upload: 37.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 56098816)
+0420.710 (0) The time we have been running (420.7) is approaching the resumption interval (449) - increasing resumption interval to 451
+0423.034 (0) Dropbox chunked upload: 37.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 56623104)
+0423.038 (0) The time we have been running (423) is approaching the resumption interval (451) - increasing resumption interval to 454
+0425.831 (0) Dropbox chunked upload: 38.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 57147392)
+0425.835 (0) The time we have been running (425.8) is approaching the resumption interval (454) - increasing resumption interval to 456
+0428.452 (0) Dropbox chunked upload: 38.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 57671680)
+0428.461 (0) The time we have been running (428.5) is approaching the resumption interval (456) - increasing resumption interval to 459
+0431.044 (0) Dropbox chunked upload: 39 % uploaded (USArSXJ9HySuxwM8sWxkfg, 58195968)
+0431.048 (0) The time we have been running (431) is approaching the resumption interval (459) - increasing resumption interval to 462
+0434.171 (0) Dropbox chunked upload: 39.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 58720256)
+0434.175 (0) The time we have been running (434.2) is approaching the resumption interval (462) - increasing resumption interval to 465
+0435.844 (0) Dropbox chunked upload: 39.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 59244544)
+0435.849 (0) The time we have been running (435.8) is approaching the resumption interval (465) - increasing resumption interval to 466
+0437.761 (0) Dropbox chunked upload: 40.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 59768832)
+0437.764 (0) The time we have been running (437.8) is approaching the resumption interval (466) - increasing resumption interval to 468
+0439.944 (0) Dropbox chunked upload: 40.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 60293120)
+0439.949 (0) The time we have been running (439.9) is approaching the resumption interval (468) - increasing resumption interval to 470
+0442.391 (0) Dropbox chunked upload: 40.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 60817408)
+0442.396 (0) The time we have been running (442.4) is approaching the resumption interval (470) - increasing resumption interval to 473
+0444.940 (0) Dropbox chunked upload: 41.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 61341696)
+0444.948 (0) The time we have been running (444.9) is approaching the resumption interval (473) - increasing resumption interval to 475
+0447.627 (0) Dropbox chunked upload: 41.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 61865984)
+0447.631 (0) The time we have been running (447.6) is approaching the resumption interval (475) - increasing resumption interval to 478
+0450.452 (0) Dropbox chunked upload: 41.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 62390272)
+0450.454 (0) The time we have been running (450.5) is approaching the resumption interval (478) - increasing resumption interval to 481
+0453.678 (0) Dropbox chunked upload: 42.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 62914560)
+0453.681 (0) The time we have been running (453.7) is approaching the resumption interval (481) - increasing resumption interval to 484
+0455.361 (0) Dropbox chunked upload: 42.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 63438848)
+0455.364 (0) The time we have been running (455.4) is approaching the resumption interval (484) - increasing resumption interval to 486
+0457.190 (0) Dropbox chunked upload: 42.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 63963136)
+0457.195 (0) The time we have been running (457.2) is approaching the resumption interval (486) - increasing resumption interval to 488
+0459.321 (0) Dropbox chunked upload: 43.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 64487424)
+0459.326 (0) The time we have been running (459.3) is approaching the resumption interval (488) - increasing resumption interval to 490
+0461.407 (0) Dropbox chunked upload: 43.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 65011712)
+0461.411 (0) The time we have been running (461.4) is approaching the resumption interval (490) - increasing resumption interval to 492
+0463.953 (0) Dropbox chunked upload: 43.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 65536000)
+0463.956 (0) The time we have been running (464) is approaching the resumption interval (492) - increasing resumption interval to 494
+0466.487 (0) Dropbox chunked upload: 44.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 66060288)
+0466.497 (0) The time we have been running (466.5) is approaching the resumption interval (494) - increasing resumption interval to 497
+0469.039 (0) Dropbox chunked upload: 44.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 66584576)
+0469.043 (0) The time we have been running (469) is approaching the resumption interval (497) - increasing resumption interval to 500
+0471.952 (0) Dropbox chunked upload: 45 % uploaded (USArSXJ9HySuxwM8sWxkfg, 67108864)
+0471.956 (0) The time we have been running (472) is approaching the resumption interval (500) - increasing resumption interval to 502
+0473.585 (0) Dropbox chunked upload: 45.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 67633152)
+0473.589 (0) The time we have been running (473.6) is approaching the resumption interval (502) - increasing resumption interval to 504
+0475.310 (0) Dropbox chunked upload: 45.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 68157440)
+0475.314 (0) The time we have been running (475.3) is approaching the resumption interval (504) - increasing resumption interval to 506
+0477.155 (0) Dropbox chunked upload: 46 % uploaded (USArSXJ9HySuxwM8sWxkfg, 68681728)
+0477.158 (0) The time we have been running (477.2) is approaching the resumption interval (506) - increasing resumption interval to 508
+0479.245 (0) Dropbox chunked upload: 46.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 69206016)
+0479.249 (0) The time we have been running (479.2) is approaching the resumption interval (508) - increasing resumption interval to 510
+0481.506 (0) Dropbox chunked upload: 46.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 69730304)
+0481.510 (0) The time we have been running (481.5) is approaching the resumption interval (510) - increasing resumption interval to 512
+0483.927 (0) Dropbox chunked upload: 47.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 70254592)
+0483.934 (0) The time we have been running (483.9) is approaching the resumption interval (512) - increasing resumption interval to 514
+0486.690 (0) Dropbox chunked upload: 47.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 70778880)
+0486.694 (0) The time we have been running (486.7) is approaching the resumption interval (514) - increasing resumption interval to 517
+0489.289 (0) Dropbox chunked upload: 47.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 71303168)
+0489.293 (0) The time we have been running (489.3) is approaching the resumption interval (517) - increasing resumption interval to 520
+0490.777 (0) Dropbox chunked upload: 48.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 71827456)
+0490.781 (0) The time we have been running (490.8) is approaching the resumption interval (520) - increasing resumption interval to 521
+0492.778 (0) Dropbox chunked upload: 48.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 72351744)
+0492.783 (0) The time we have been running (492.8) is approaching the resumption interval (521) - increasing resumption interval to 523
+0494.790 (0) Dropbox chunked upload: 48.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 72876032)
+0494.794 (0) The time we have been running (494.8) is approaching the resumption interval (523) - increasing resumption interval to 525
+0496.999 (0) Dropbox chunked upload: 49.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 73400320)
+0497.008 (0) The time we have been running (497) is approaching the resumption interval (525) - increasing resumption interval to 528
+0499.261 (0) Dropbox chunked upload: 49.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 73924608)
+0499.267 (0) The time we have been running (499.3) is approaching the resumption interval (528) - increasing resumption interval to 530
+0501.627 (0) Dropbox chunked upload: 49.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 74448896)
+0501.631 (0) The time we have been running (501.6) is approaching the resumption interval (530) - increasing resumption interval to 532
+0504.272 (0) Dropbox chunked upload: 50.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 74973184)
+0504.276 (0) The time we have been running (504.3) is approaching the resumption interval (532) - increasing resumption interval to 535
+0507.453 (0) Dropbox chunked upload: 50.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 75497472)
+0507.458 (0) The time we have been running (507.5) is approaching the resumption interval (535) - increasing resumption interval to 538
+0509.003 (0) Dropbox chunked upload: 50.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 76021760)
+0509.010 (0) The time we have been running (509) is approaching the resumption interval (538) - increasing resumption interval to 540
+0510.850 (0) Dropbox chunked upload: 51.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 76546048)
+0510.865 (0) The time we have been running (510.9) is approaching the resumption interval (540) - increasing resumption interval to 541
+0512.780 (0) Dropbox chunked upload: 51.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 77070336)
+0512.783 (0) The time we have been running (512.8) is approaching the resumption interval (541) - increasing resumption interval to 543
+0514.681 (0) Dropbox chunked upload: 52 % uploaded (USArSXJ9HySuxwM8sWxkfg, 77594624)
+0514.684 (0) The time we have been running (514.7) is approaching the resumption interval (543) - increasing resumption interval to 545
+0518.657 (0) Dropbox chunked upload: 52.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 78118912)
+0518.661 (0) The time we have been running (518.7) is approaching the resumption interval (545) - increasing resumption interval to 549
+0521.153 (0) Dropbox chunked upload: 52.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 78643200)
+0521.157 (0) The time we have been running (521.2) is approaching the resumption interval (549) - increasing resumption interval to 552
+0524.084 (0) Dropbox chunked upload: 53.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 79167488)
+0524.088 (0) The time we have been running (524.1) is approaching the resumption interval (552) - increasing resumption interval to 555
+0526.819 (0) Dropbox chunked upload: 53.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 79691776)
+0526.823 (0) The time we have been running (526.8) is approaching the resumption interval (555) - increasing resumption interval to 557
+0528.419 (0) Dropbox chunked upload: 53.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 80216064)
+0528.422 (0) The time we have been running (528.4) is approaching the resumption interval (557) - increasing resumption interval to 559
+0530.175 (0) Dropbox chunked upload: 54.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 80740352)
+0530.179 (0) The time we have been running (530.2) is approaching the resumption interval (559) - increasing resumption interval to 561
+0532.219 (0) Dropbox chunked upload: 54.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 81264640)
+0532.224 (0) The time we have been running (532.2) is approaching the resumption interval (561) - increasing resumption interval to 563
+0534.806 (0) Dropbox chunked upload: 54.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 81788928)
+0534.809 (0) The time we have been running (534.8) is approaching the resumption interval (563) - increasing resumption interval to 565
+0538.203 (0) Dropbox chunked upload: 55.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 82313216)
+0538.207 (0) The time we have been running (538.2) is approaching the resumption interval (565) - increasing resumption interval to 569
+0540.624 (0) Dropbox chunked upload: 55.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 82837504)
+0540.628 (0) The time we have been running (540.6) is approaching the resumption interval (569) - increasing resumption interval to 571
+0543.507 (0) Dropbox chunked upload: 55.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 83361792)
+0543.511 (0) The time we have been running (543.5) is approaching the resumption interval (571) - increasing resumption interval to 574
+0546.163 (0) Dropbox chunked upload: 56.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 83886080)
+0546.168 (0) The time we have been running (546.2) is approaching the resumption interval (574) - increasing resumption interval to 577
+0547.783 (0) Dropbox chunked upload: 56.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 84410368)
+0547.931 (0) The time we have been running (547.8) is approaching the resumption interval (577) - increasing resumption interval to 578
+0549.837 (0) Dropbox chunked upload: 56.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 84934656)
+0549.842 (0) The time we have been running (549.8) is approaching the resumption interval (578) - increasing resumption interval to 580
+0551.799 (0) Dropbox chunked upload: 57.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 85458944)
+0551.803 (0) The time we have been running (551.8) is approaching the resumption interval (580) - increasing resumption interval to 582
+0553.819 (0) Dropbox chunked upload: 57.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 85983232)
+0553.822 (0) The time we have been running (553.8) is approaching the resumption interval (582) - increasing resumption interval to 584
+0556.604 (0) Dropbox chunked upload: 58 % uploaded (USArSXJ9HySuxwM8sWxkfg, 86507520)
+0556.609 (0) The time we have been running (556.6) is approaching the resumption interval (584) - increasing resumption interval to 587
+0556.611 (0) The scheduled resumption is within 45 seconds - will reschedule
+0556.616 (0) Rescheduling resumption 1: moving to 632 seconds from now (1384871293)
+0556.622 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 587 + 45 = 632
+0559.107 (0) Dropbox chunked upload: 58.3 % uploaded (USArSXJ9HySuxwM8sWxkfg, 87031808)
+0561.607 (0) Dropbox chunked upload: 58.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 87556096)
+0564.273 (0) Dropbox chunked upload: 59 % uploaded (USArSXJ9HySuxwM8sWxkfg, 88080384)
+0565.998 (0) Dropbox chunked upload: 59.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 88604672)
+0567.919 (0) Dropbox chunked upload: 59.7 % uploaded (USArSXJ9HySuxwM8sWxkfg, 89128960)
+0569.945 (0) Dropbox chunked upload: 60.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 89653248)
+0571.939 (0) Dropbox chunked upload: 60.4 % uploaded (USArSXJ9HySuxwM8sWxkfg, 90177536)
+0574.089 (0) Dropbox chunked upload: 60.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 90701824)
+0576.611 (0) Dropbox chunked upload: 61.1 % uploaded (USArSXJ9HySuxwM8sWxkfg, 91226112)
+0579.272 (0) Dropbox chunked upload: 61.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 91750400)
+0582.141 (0) Dropbox chunked upload: 61.8 % uploaded (USArSXJ9HySuxwM8sWxkfg, 92274688)
+0583.953 (0) Dropbox chunked upload: 62.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 92798976)
+0585.968 (0) Dropbox chunked upload: 62.5 % uploaded (USArSXJ9HySuxwM8sWxkfg, 93323264)
+0588.021 (0) Dropbox chunked upload: 62.9 % uploaded (USArSXJ9HySuxwM8sWxkfg, 93847552)
+0590.250 (0) Dropbox chunked upload: 63.2 % uploaded (USArSXJ9HySuxwM8sWxkfg, 94371840)
+0592.468 (0) Dropbox chunked upload: 63.6 % uploaded (USArSXJ9HySuxwM8sWxkfg, 94896128)
+1116028.705 (1) Opened log file at time: Mon, 02 Dec 2013 12:08:53 +0000
+1116028.707 (1) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1116028.897 (1) Free space on disk containing Updraft's temporary directory: 1310433.9 Mb
+1116028.901 (1) Backup run: resumption=1, nonce=bd823f23b95d, begun at=1384870105 (1116029s ago), job type=backup, previous check-in=592.5s
+1116028.903 (1) Long time past since expected resumption time: approx expected=1384871329.7, now=1385986133.8, diff=1114804.1
+1116028.906 (1) Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: http://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+1116028.907 (1) Scheduling a resumption (2) after 632 seconds (1385986766) in case this run gets aborted
+1116028.933 (1) Checking if we have a zip executable available
+1116028.935 (1) Testing: /usr/bin/zip
+1116028.952 (1) Output: zip warning: binziptest/test.zip not found or empty
+1116028.953 (1) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+1116028.954 (1) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+1116028.955 (1) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+1116028.956 (1) Output: total bytes=127, compressed=105 -> 17% savings
+1116028.969 (1) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+1116028.971 (1) Output: total bytes=261, compressed=214 -> 18% savings
+1116029.009 (1) Working binary zip found: /usr/bin/zip
+1116029.011 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+1116029.012 (1) Creation of backups of directories: already finished
+1116029.013 (1) Saving backup status to database (elements: 8)
+1116029.015 (1) Database dump: Creation was completed already
+1116029.016 (1) Saving backup history
+1116029.020 (1) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1116029.021 (1) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1116029.022 (1) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1116029.022 (1) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has not yet been successfully uploaded: will queue
+1116029.023 (1) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has not yet been successfully uploaded: will queue
+1116029.026 (1) Requesting upload of the files that have not yet been successfully uploaded (3)
+1116029.027 (1) Cloud backup selection: dropbox
+1116029.052 (1) Beginning dispatch of backup to remote (dropbox)
+1116029.053 (1) Dropbox: begin cloud upload
+1116029.111 (1) Dropbox: access gained
+1116029.900 (1) Dropbox quota usage: normal=1862 Mb, shared=3546.9 Mb, total=18432 Mb, available=13023 Mb
+1116029.901 (1) This is a resumption: 94896128 bytes had already been uploaded
+1116029.902 (1) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1116031.236 (1) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1116031.237 (1) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1116031.238 (1) An error condition has occurred for the first time during this job
+1116031.490 (1) Dropbox quota usage: normal=1862 Mb, shared=3546.9 Mb, total=18432 Mb, available=13023 Mb
+1116031.492 (1) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip
+1116032.336 (1) Dropbox chunked upload: 100 % uploaded (iPPTqchN9mDK7u7i6Ckb4g, 11007)
+1116033.405 (1) Recording as successfully uploaded: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip (42061ec40e04b3825c133490358ff5a2)
+1116033.408 (1) Deleting local file: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip
+1116033.420 (1) Dropbox: File upload success (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip): 10 Kb in 1s (5 Kb/s)
+1116033.672 (1) Dropbox quota usage: normal=1862 Mb, shared=3546.9 Mb, total=18432 Mb, available=13023 Mb
+1116033.674 (1) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz
+1116035.413 (1) Dropbox chunked upload: 31.5 % uploaded (OVEcVTr76QRbiD1Pb63GQw, 524288)
+1116037.617 (1) Dropbox chunked upload: 63.1 % uploaded (OVEcVTr76QRbiD1Pb63GQw, 1048576)
+1116039.852 (1) Dropbox chunked upload: 94.6 % uploaded (OVEcVTr76QRbiD1Pb63GQw, 1572864)
+1116041.378 (1) Dropbox chunked upload: 100 % uploaded (OVEcVTr76QRbiD1Pb63GQw, 1663035)
+1116042.921 (1) Recording as successfully uploaded: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz (2af04388edd0ce4ffa90b301eff000e2)
+1116042.924 (1) Deleting local file: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz
+1116042.926 (1) Dropbox: File upload success (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz): 1624 Kb in 9s (175 Kb/s)
+1116042.929 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1116042.931 (1) Number of backup sets in history: 2
+1116042.932 (1) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1116042.933 (1) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1116042.936 (1) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1116042.937 (1) Examining backup set with datestamp: 1382786294 (Oct 26 2013 11:18:14)
+1116042.938 (1) 1382786294: db: this set includes a database (backup_2013-10-26-1118_Explaining_Progress_0713fc299495-db.gz); db count is now 2
+1116042.939 (1) 1382786294: db: over retain limit (1); will delete this database
+1116042.940 (1) Delete file: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-db.gz, service=dropbox
+1116042.949 (1) Dropbox: request deletion: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-db.gz
+1116043.337 (1) Dropbox: delete succeeded
+1116043.339 (1) plugins: 1382786294: over retain limit (1); will delete this file (backup_2013-10-26-1118_Explaining_Progress_0713fc299495-plugins.zip)
+1116043.340 (1) themes: 1382786294: over retain limit (1); will delete this file (backup_2013-10-26-1118_Explaining_Progress_0713fc299495-themes.zip)
+1116043.341 (1) uploads: 1382786294: over retain limit (1); will delete this file (backup_2013-10-26-1118_Explaining_Progress_0713fc299495-uploads.zip)
+1116043.342 (1) others: 1382786294: over retain limit (1); will delete this file (backup_2013-10-26-1118_Explaining_Progress_0713fc299495-others.zip)
+1116043.343 (1) Delete file: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-plugins.zip, service=dropbox
+1116043.343 (1) Delete file: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-themes.zip, service=dropbox
+1116043.344 (1) Delete file: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-uploads.zip, service=dropbox
+1116043.345 (1) Delete file: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-others.zip, service=dropbox
+1116043.349 (1) Dropbox: request deletion: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-plugins.zip
+1116043.723 (1) Dropbox: delete succeeded
+1116043.725 (1) Dropbox: request deletion: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-themes.zip
+1116044.111 (1) Dropbox: delete succeeded
+1116044.112 (1) Dropbox: request deletion: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-uploads.zip
+1116044.500 (1) Dropbox: delete succeeded
+1116044.501 (1) Dropbox: request deletion: backup_2013-10-26-1118_Explaining_Progress_0713fc299495-others.zip
+1116044.927 (1) Dropbox: delete succeeded
+1116044.930 (1) 1382786294: this backup set is now empty; will remove from history
+1116044.931 (1) 1382786294: deleting log file (log.0713fc299495.txt)
+1116045.019 (1) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1116045.022 (1) Resume backup (bd823f23b95d, 1): finish run
+1116045.023 (1) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1116045.025 (1) The backup has not finished; a resumption is scheduled
+1116724.902 (2) Opened log file at time: Mon, 02 Dec 2013 12:20:30 +0000
+1116724.903 (2) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1116725.062 (2) Free space on disk containing Updraft's temporary directory: 1310433.4 Mb
+1116725.066 (2) Backup run: resumption=2, nonce=bd823f23b95d, begun at=1384870105 (1116725s ago), job type=backup, previous check-in=16.2s
+1116725.066 (2) Scheduling a resumption (3) after 632 seconds (1385987462) in case this run gets aborted
+1116725.089 (2) Checking if we have a zip executable available
+1116725.091 (2) Zip engine: found/will use a binary zip: /usr/bin/zip
+1116725.092 (2) Creation of backups of directories: already finished
+1116725.093 (2) Saving backup status to database (elements: 8)
+1116725.095 (2) Database dump: Creation was completed already
+1116725.097 (2) Saving backup history
+1116725.100 (2) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1116725.101 (2) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1116725.101 (2) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1116725.102 (2) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1116725.103 (2) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1116725.106 (2) Requesting upload of the files that have not yet been successfully uploaded (1)
+1116725.108 (2) Cloud backup selection: dropbox
+1116725.115 (2) Beginning dispatch of backup to remote (dropbox)
+1116725.118 (2) Dropbox: begin cloud upload
+1116725.148 (2) Dropbox: access gained
+1116725.402 (2) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1116725.404 (2) This is a resumption: 94896128 bytes had already been uploaded
+1116725.405 (2) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1116726.677 (2) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1116726.679 (2) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1116726.680 (2) An error condition has occurred for the first time during this job
+1116726.682 (2) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1116726.683 (2) Number of backup sets in history: 1
+1116726.684 (2) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1116726.685 (2) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1116726.691 (2) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1116726.691 (2) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1116726.693 (2) Resume backup (bd823f23b95d, 2): finish run
+1116726.694 (2) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1116726.696 (2) The backup has not finished; a resumption is scheduled
+1117514.677 (3) Opened log file at time: Mon, 02 Dec 2013 12:33:39 +0000
+1117514.678 (3) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1117514.846 (3) Free space on disk containing Updraft's temporary directory: 1310432.9 Mb
+1117514.850 (3) Backup run: resumption=3, nonce=bd823f23b95d, begun at=1384870105 (1117515s ago), job type=backup, previous check-in=1.8s
+1117514.850 (3) Scheduling a resumption (4) after 632 seconds (1385988252) in case this run gets aborted
+1117514.879 (3) Checking if we have a zip executable available
+1117514.880 (3) Zip engine: found/will use a binary zip: /usr/bin/zip
+1117514.881 (3) Creation of backups of directories: already finished
+1117514.883 (3) Saving backup status to database (elements: 8)
+1117514.886 (3) Database dump: Creation was completed already
+1117514.887 (3) Saving backup history
+1117514.891 (3) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1117514.892 (3) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1117514.893 (3) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1117514.893 (3) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1117514.894 (3) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1117514.897 (3) Requesting upload of the files that have not yet been successfully uploaded (1)
+1117514.899 (3) Cloud backup selection: dropbox
+1117514.905 (3) Beginning dispatch of backup to remote (dropbox)
+1117514.907 (3) Dropbox: begin cloud upload
+1117514.939 (3) Dropbox: access gained
+1117515.322 (3) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1117515.324 (3) This is a resumption: 94896128 bytes had already been uploaded
+1117515.324 (3) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1117516.516 (3) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1117516.517 (3) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1117516.518 (3) An error condition has occurred for the first time during this job
+1117516.520 (3) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1117516.522 (3) Number of backup sets in history: 1
+1117516.524 (3) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1117516.524 (3) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1117516.541 (3) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1117516.542 (3) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1117516.543 (3) Resume backup (bd823f23b95d, 3): finish run
+1117516.545 (3) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1117516.547 (3) The backup has not finished; a resumption is scheduled
+1118197.313 (4) Opened log file at time: Mon, 02 Dec 2013 12:45:02 +0000
+1118197.314 (4) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1118197.515 (4) Free space on disk containing Updraft's temporary directory: 1310427.8 Mb
+1118197.518 (4) Backup run: resumption=4, nonce=bd823f23b95d, begun at=1384870105 (1118197s ago), job type=backup, previous check-in=1.9s
+1118197.519 (4) Scheduling a resumption (5) after 632 seconds (1385988934) in case this run gets aborted
+1118197.554 (4) Checking if we have a zip executable available
+1118197.555 (4) Zip engine: found/will use a binary zip: /usr/bin/zip
+1118197.556 (4) Creation of backups of directories: already finished
+1118197.557 (4) Saving backup status to database (elements: 8)
+1118197.559 (4) Database dump: Creation was completed already
+1118197.561 (4) Saving backup history
+1118197.564 (4) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1118197.565 (4) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1118197.566 (4) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1118197.567 (4) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1118197.568 (4) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1118197.570 (4) Requesting upload of the files that have not yet been successfully uploaded (1)
+1118197.572 (4) Cloud backup selection: dropbox
+1118197.575 (4) Beginning dispatch of backup to remote (dropbox)
+1118197.575 (4) Dropbox: begin cloud upload
+1118197.597 (4) Dropbox: access gained
+1118197.898 (4) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1118197.899 (4) This is a resumption: 94896128 bytes had already been uploaded
+1118197.901 (4) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1118199.162 (4) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1118199.164 (4) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1118199.165 (4) An error condition has occurred for the first time during this job
+1118199.167 (4) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1118199.169 (4) Number of backup sets in history: 1
+1118199.170 (4) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1118199.171 (4) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1118199.174 (4) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1118199.175 (4) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1118199.176 (4) Resume backup (bd823f23b95d, 4): finish run
+1118199.177 (4) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1118199.179 (4) The backup has not finished; a resumption is scheduled
+1118853.548 (5) Opened log file at time: Mon, 02 Dec 2013 12:55:58 +0000
+1118853.549 (5) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1118853.711 (5) Free space on disk containing Updraft's temporary directory: 1310426.7 Mb
+1118853.714 (5) Backup run: resumption=5, nonce=bd823f23b95d, begun at=1384870105 (1118853s ago), job type=backup, previous check-in=1.9s
+1118853.715 (5) Scheduling a resumption (6) after 632 seconds (1385989590) in case this run gets aborted
+1118853.746 (5) Checking if we have a zip executable available
+1118853.747 (5) Zip engine: found/will use a binary zip: /usr/bin/zip
+1118853.748 (5) Creation of backups of directories: already finished
+1118853.748 (5) Saving backup status to database (elements: 8)
+1118853.750 (5) Database dump: Creation was completed already
+1118853.751 (5) Saving backup history
+1118853.754 (5) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1118853.754 (5) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1118853.755 (5) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1118853.756 (5) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1118853.757 (5) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1118853.759 (5) Requesting upload of the files that have not yet been successfully uploaded (1)
+1118853.762 (5) Cloud backup selection: dropbox
+1118853.765 (5) Beginning dispatch of backup to remote (dropbox)
+1118853.766 (5) Dropbox: begin cloud upload
+1118853.779 (5) Dropbox: access gained
+1118854.036 (5) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1118854.037 (5) This is a resumption: 94896128 bytes had already been uploaded
+1118854.038 (5) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1118855.263 (5) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1118855.265 (5) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1118855.266 (5) An error condition has occurred for the first time during this job
+1118855.269 (5) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1118855.270 (5) Number of backup sets in history: 1
+1118855.271 (5) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1118855.272 (5) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1118855.277 (5) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1118855.278 (5) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1118855.279 (5) Resume backup (bd823f23b95d, 5): finish run
+1118855.280 (5) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1118855.282 (5) The backup has not finished; a resumption is scheduled
+1119492.369 (6) Opened log file at time: Mon, 02 Dec 2013 13:06:37 +0000
+1119492.371 (6) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.3M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1119493.196 (6) Free space on disk containing Updraft's temporary directory: 1310425.7 Mb
+1119493.200 (6) Backup run: resumption=6, nonce=bd823f23b95d, begun at=1384870105 (1119493s ago), job type=backup, previous check-in=1.7s
+1119493.201 (6) Scheduling a resumption (7) after 632 seconds (1385990230) in case this run gets aborted
+1119493.397 (6) Checking if we have a zip executable available
+1119493.399 (6) Zip engine: found/will use a binary zip: /usr/bin/zip
+1119493.400 (6) Creation of backups of directories: already finished
+1119493.401 (6) Saving backup status to database (elements: 8)
+1119493.403 (6) Database dump: Creation was completed already
+1119493.419 (6) Saving backup history
+1119493.422 (6) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1119493.423 (6) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1119493.423 (6) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1119493.424 (6) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1119493.425 (6) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1119493.427 (6) Requesting upload of the files that have not yet been successfully uploaded (1)
+1119493.430 (6) Cloud backup selection: dropbox
+1119493.506 (6) Beginning dispatch of backup to remote (dropbox)
+1119493.507 (6) Dropbox: begin cloud upload
+1119493.607 (6) Dropbox: access gained
+1119493.895 (6) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1119493.896 (6) This is a resumption: 94896128 bytes had already been uploaded
+1119493.897 (6) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1119495.196 (6) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1119495.197 (6) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1119495.198 (6) An error condition has occurred for the first time during this job
+1119495.200 (6) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1119495.201 (6) Number of backup sets in history: 1
+1119495.202 (6) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1119495.203 (6) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1119495.212 (6) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1119495.213 (6) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1119495.214 (6) Resume backup (bd823f23b95d, 6): finish run
+1119495.215 (6) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1119495.218 (6) The backup has not finished; a resumption is scheduled
+1120155.403 (7) Opened log file at time: Mon, 02 Dec 2013 13:17:40 +0000
+1120155.405 (7) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.5M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1120155.748 (7) Free space on disk containing Updraft's temporary directory: 1310472 Mb
+1120155.752 (7) Backup run: resumption=7, nonce=bd823f23b95d, begun at=1384870105 (1120155s ago), job type=backup, previous check-in=2.8s
+1120155.753 (7) Scheduling a resumption (8) after 632 seconds (1385990892) in case this run gets aborted
+1120155.774 (7) Checking if we have a zip executable available
+1120155.776 (7) Zip engine: found/will use a binary zip: /usr/bin/zip
+1120155.777 (7) Creation of backups of directories: already finished
+1120155.778 (7) Saving backup status to database (elements: 8)
+1120155.780 (7) Database dump: Creation was completed already
+1120155.782 (7) Saving backup history
+1120155.784 (7) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1120155.785 (7) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1120155.786 (7) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1120155.787 (7) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1120155.788 (7) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1120155.790 (7) Requesting upload of the files that have not yet been successfully uploaded (1)
+1120155.792 (7) Cloud backup selection: dropbox
+1120155.804 (7) Beginning dispatch of backup to remote (dropbox)
+1120155.805 (7) Dropbox: begin cloud upload
+1120155.839 (7) Dropbox: access gained
+1120156.107 (7) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1120156.108 (7) This is a resumption: 94896128 bytes had already been uploaded
+1120156.110 (7) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1120157.325 (7) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1120157.326 (7) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1120157.327 (7) An error condition has occurred for the first time during this job
+1120157.329 (7) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1120157.331 (7) Number of backup sets in history: 1
+1120157.332 (7) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1120157.332 (7) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1120157.336 (7) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1120157.337 (7) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1120157.338 (7) Resume backup (bd823f23b95d, 7): finish run
+1120157.339 (7) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1120157.341 (7) The backup has not finished; a resumption is scheduled
+1120817.400 (8) Opened log file at time: Mon, 02 Dec 2013 13:28:42 +0000
+1120817.402 (8) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.5M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1120817.542 (8) Free space on disk containing Updraft's temporary directory: 1310453.6 Mb
+1120817.546 (8) Backup run: resumption=8, nonce=bd823f23b95d, begun at=1384870105 (1120817s ago), job type=backup, previous check-in=1.9s
+1120817.547 (8) Time passed on previous resumptions: 0:592.5 1:16.2 2:1.8 3:1.9 4:1.9 5:1.7 6:2.8 7:1.9  (known: 8, max: 592)
+1120817.548 (8) Scheduling a resumption (9) after 632 seconds (1385991554) in case this run gets aborted
+1120817.573 (8) Checking if we have a zip executable available
+1120817.574 (8) Zip engine: found/will use a binary zip: /usr/bin/zip
+1120817.575 (8) Creation of backups of directories: already finished
+1120817.575 (8) Saving backup status to database (elements: 8)
+1120817.577 (8) Database dump: Creation was completed already
+1120817.578 (8) Saving backup history
+1120817.581 (8) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1120817.581 (8) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1120817.582 (8) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1120817.583 (8) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1120817.584 (8) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1120817.586 (8) Requesting upload of the files that have not yet been successfully uploaded (1)
+1120817.588 (8) Cloud backup selection: dropbox
+1120817.639 (8) Beginning dispatch of backup to remote (dropbox)
+1120817.640 (8) Dropbox: begin cloud upload
+1120817.668 (8) Dropbox: access gained
+1120817.928 (8) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1120817.930 (8) This is a resumption: 94896128 bytes had already been uploaded
+1120817.930 (8) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1120819.091 (8) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1120819.092 (8) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1120819.093 (8) An error condition has occurred for the first time during this job
+1120819.096 (8) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1120819.097 (8) Number of backup sets in history: 1
+1120819.099 (8) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1120819.100 (8) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1120819.105 (8) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1120819.106 (8) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1120819.108 (8) Resume backup (bd823f23b95d, 8): finish run
+1120819.109 (8) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1120819.110 (8) The backup has not finished; a resumption is scheduled
+1121451.380 (9) Opened log file at time: Mon, 02 Dec 2013 13:39:16 +0000
+1121451.381 (9) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.41 WP: 3.7.1 PHP: 5.2.17 (Linux box885.bluehost.com 2.6.32-20130307.60.9.bh6.x86_64 #1 SMP Thu Mar 7 15:58:33 EST 2013 x86_64) MySQL: 5.5.34-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.1M | 49.5M) multisite: N mcrypt: Y ZipArchive::addFile: Y
+1121451.550 (9) Free space on disk containing Updraft's temporary directory: 1310468.4 Mb
+1121451.553 (9) Backup run: resumption=9, nonce=bd823f23b95d, begun at=1384870105 (1121451s ago), job type=backup, previous check-in=1.7s
+1121451.554 (9) The current run is resumption number 9, and there was nothing useful done on the last run (last useful run: 1) - will not schedule a further attempt until we see something useful happening this time
+1121451.575 (9) Creation of backups of directories: already finished
+1121451.576 (9) Saving backup status to database (elements: 8)
+1121451.578 (9) Database dump: Creation was completed already
+1121451.579 (9) Saving backup history
+1121451.582 (9) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-plugins.zip: plugins: This file has already been successfully uploaded
+1121451.583 (9) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-themes.zip: themes: This file has already been successfully uploaded
+1121451.585 (9) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1121451.585 (9) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-others.zip: others: This file has already been successfully uploaded
+1121451.586 (9) backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz: db: This file has already been successfully uploaded
+1121451.588 (9) Requesting upload of the files that have not yet been successfully uploaded (1)
+1121451.591 (9) Cloud backup selection: dropbox
+1121451.594 (9) Beginning dispatch of backup to remote (dropbox)
+1121451.595 (9) Dropbox: begin cloud upload
+1121451.610 (9) Dropbox: access gained
+1121451.839 (9) Dropbox quota usage: normal=1743.9 Mb, shared=3546.9 Mb, total=18432 Mb, available=13141.2 Mb
+1121451.841 (9) This is a resumption: 94896128 bytes had already been uploaded
+1121451.841 (9) Dropbox: Attempt to upload: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip to: backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-uploads.zip
+1121453.237 (9) Dropbox chunked upload exception: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1121453.238 (9) Dropbox error: No upload with upload_id [USArSXJ9HySuxwM8sWxkfg] found.
+1121453.239 (9) An error condition has occurred for the first time during this job
+1121453.241 (9) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+1121453.243 (9) Number of backup sets in history: 1
+1121453.244 (9) Examining backup set with datestamp: 1384870105 (Nov 19 2013 14:08:25)
+1121453.245 (9) 1384870105: db: this set includes a database (backup_2013-11-19-1408_Explaining_Progress_bd823f23b95d-db.gz); db count is now 1
+1121453.249 (9) 1384870105: this backup set remains non-empty (1/1); will retain in history
+1121453.250 (9) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1121453.252 (9) Resume backup (bd823f23b95d, 9): finish run
+1121453.253 (9) There were errors in the uploads, so the 'resume' event is remaining scheduled
+1121453.257 (9) With the next release of UpdraftPlus, you will need an add-on to use a different email address to the site owner's (MaxCRoser@googlemail.com). See: http://updraftplus.com/next-updraftplus-release-ready-testing/
+1121453.258 (9) Sending email ('Files and database') report to: expla...
+1121453.751 (9) The backup attempt has finished, apparently unsuccessfully
