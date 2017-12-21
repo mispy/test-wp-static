@@ -1,4 +1,4 @@
-/grapher/* http://owid-grapher.netlify.com/:splat 200
+/grapher/* http://owid-grapher.netlify.com/grapher/:splat 200
 /fertility-rates/ /fertility-rate 301
 /inequality-between-world-citizens/ /global-economic-inequality 301
 /minorities-violence-racial-tolerance/ /treatment-of-minorities 301
