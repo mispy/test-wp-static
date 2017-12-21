@@ -32,7 +32,8 @@ function owid_enqueue_scripts_styles() {
 }
 
 function build_static() {
-	exec("node dist/bakeSite.js");
+	exec("cd " . dirname(__FILE__) . " && node dist/bakeSite.js", $op);
+	error_log(print_r($op, true));
 }
 
 add_action('post_updated', 'build_static');
