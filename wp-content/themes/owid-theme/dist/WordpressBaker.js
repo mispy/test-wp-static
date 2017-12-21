@@ -159,7 +159,7 @@ var WordpressBaker = /** @class */ (function () {
                             try {
                                 outPath = path.join(outDir, slug + ".html");
                                 stat = fs.statSync(outPath);
-                                console.log(slug, stat.mtime.getTime(), row.post_modified.getTime());
+                                console.log(slug, stat.mtime, row.post_modified);
                                 if (stat.mtime >= row.post_modified) {
                                     // No newer version of this post, don't bother to bake
                                     //console.log(`304 ${slug}`)
