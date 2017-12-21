@@ -31,6 +31,11 @@ function owid_enqueue_scripts_styles() {
 	wp_enqueue_script("scripts", $template_dir . "/js/scripts.js", null, '?v=' . filemtime(get_stylesheet_directory() . '/js/scripts.js'), true);
 }
 
+function build_static() {
+	exec("node dist/bakeSite.js");
+}
+
+add_action('post_updated', 'build_static');
 
 
 add_theme_support('post-thumbnails');
