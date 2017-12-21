@@ -38,7 +38,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var WordpressBaker_1 = require("./WordpressBaker");
 var parseArgs = require("minimist");
 var argv = parseArgs(process.argv.slice(2));
-function main(email, name) {
+function main(email, name, postSlug) {
     return __awaiter(this, void 0, void 0, function () {
         var baker;
         return __generator(this, function (_a) {
@@ -53,7 +53,7 @@ function main(email, name) {
                     return [4 /*yield*/, baker.bakeAll()];
                 case 1:
                     _a.sent();
-                    return [4 /*yield*/, baker.deploy(email, name)];
+                    return [4 /*yield*/, baker.deploy(email, name, postSlug)];
                 case 2:
                     _a.sent();
                     baker.end();
@@ -62,5 +62,5 @@ function main(email, name) {
         });
     });
 }
-main(argv._[0], argv._[1]);
+main(argv._[0], argv._[1], argv._[2]);
 //# sourceMappingURL=postUpdatedHook.js.map

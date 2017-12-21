@@ -227,13 +227,13 @@ var WordpressBaker = /** @class */ (function () {
             });
         });
     };
-    WordpressBaker.prototype.deploy = function (authorEmail, authorName) {
+    WordpressBaker.prototype.deploy = function (authorEmail, authorName, commitMsg) {
         return __awaiter(this, void 0, void 0, function () {
             var outDir;
             return __generator(this, function (_a) {
                 outDir = this.props.outDir;
-                if (authorEmail && authorName) {
-                    shell.exec("cd " + outDir + " && git add -A . && git commit --author='" + authorName + " <" + authorEmail + ">' -a -m \"Wordpress content update\"");
+                if (authorEmail && authorName && commitMsg) {
+                    shell.exec("cd " + outDir + " && git add -A . && git commit --author='" + authorName + " <" + authorEmail + ">' -a -m \"" + commitMsg + "\"");
                 }
                 else {
                     shell.exec("cd " + outDir + " && git add -A . && git commit -a -m \"Code update\"");
