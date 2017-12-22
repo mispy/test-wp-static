@@ -1,4 +1,7 @@
 http://owid.netlify.com* https://owid.netlify.com:splat
+/chart-builder/* /grapher/:splat 301
+/grapher/public/* /grapher/:splat 301
+/grapher/view/* /grapher/:splat 301
 /grapher/* https://owid-grapher.netlify.com/grapher/:splat 200
 /fertility-rates/ https://ourworldindata.org/fertility-rate 301
 /inequality-between-world-citizens/ https://ourworldindata.org/global-economic-inequality 301
