@@ -1,4 +1,3 @@
-http://owid.netlify.com* https://owid.netlify.com:splat
 /chart-builder/* /grapher/:splat 301
 /grapher/public/* /grapher/:splat 301
 /grapher/view/* /grapher/:splat 301
