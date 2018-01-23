@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Blog - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="Our World In Data"/>
+<meta itemprop="name" content="Our World In Data"/>
+<meta name="twitter:title" content="Our World In Data"/>
+<meta property="og:url" content="https://ourworldindata.org/trust-and-gdp/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/trust-and-gdp/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Visualising the Empirical Evidence on how the World is Changing"/>
+<meta itemprop="description" content="Visualising the Empirical Evidence on how the World is Changing"/>
+<meta name="twitter:description" content="Visualising the Empirical Evidence on how the World is Changing"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473851359">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="blog">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+<header class="blog-header">
+	<h1>Blog</h1>
+</header>
+
+<div class="site-content">
+			<article id="post-8733" class="post-8733 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/new-entries-on-our-world-in-data-during-summer-2016/">New entries on Our World In Data during summer 2016</a></h1>
+				  	<div class='entry-meta'><time>September 11, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>We have been a bit quiet on the blog, but that doesn&#8217;t mean that we did not keep working on Our World In Data.<br />
+We worked on a series of updates and added new entries to our web publication. Here are the links to 7 of our latest additions:</p>
+<ul>
+<li>We have two completely new meta entries: One for <a href="https://ourworldindata.org/health-meta/">health</a> and for <a href="https://ourworldindata.org/global-rise-of-education">education</a>. They both present the most important aspect on these topics and give a first overview so that you can then go and study and read about the particular aspects in more depth in the specific entries.</li>
+<li>On the same topics we did quite a lot of work to present the empirical research on how these public goods are financed. You find these in the entry on <a href="https://ourworldindata.org/financing-healthcare/">financing health</a> and on <a href="https://ourworldindata.org/financing-education">financing education</a>.</li>
+<li>We have also updated and added a series of specific entries: Three that I think are particularly interesting are the entries on <a href="https://ourworldindata.org/trust">trust</a>, <a href="https://ourworldindata.org/literacy/">literacy</a>, and <a href="https://ourworldindata.org/international-trade">international trade</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-8433" class="post-8433 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/trust-and-gdp/">Trust and GDP</a></h1>
+				  	<div class='entry-meta'><time>August 17, 2016</time> by Esteban Ortiz-Ospina</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p style="text-align: center;"><em>[The visualization below and much more on this topic can be found in our <a href="https://ourworldindata.org/trust">entry on Trust</a>]</em></p>
+<p>&nbsp;</p>
+<p>In a much cited article, Arrow (1972) says that &#8220;Virtually every commercial transaction has within itself an element of trust, certainly any transaction conducted over a period of time.&#8221;</p>
+<p>The extent to which trust is linked to economic development has been the subject of many academic papers in the economics literature on growth (see Guiso et al. 2006, Algan and Cahuc 2010, and the references therein). A common way to get a first-order approximation of this relationship is to estimate the correlations between trust and GDP per capita. The visualization below provides evidence of this correlation, by plotting trust estimates from the World Value Survey against GDP per capita. Each dot on this scatter-plot corresponds to a different country. You can learn more about measures of national income in our <a href="http://ourworldindata.org/gdp-data/">entry on GDP data</a>.</p>
+<p>As it can be seen, there is a very strong positive relationship. Most academic studies find that this relationship remains after controlling for further characteristics. And similar results can also be obtained by looking at other measures of economic outcomes. Looking at outcomes across individuals, Guiso et al. (2006), for instance, report that trust has a positive and statistically significant correlation with the probability of becoming an entrepreneur, even after controlling for education, age and individual income. Their results also hold if religious affiliation of the respondents&#8217; ancestors is used as a proxy for trust – they thus argue that, since ancestors&#8217; religion correlates with respondents&#8217; trust attitudes, this instrumental variable approach can be taken as evidence that the estimated relationship goes in the suggested direction (i.e. that trust <em>leads</em> to entrepreneurship, rather than the other way around).</p>
+<p>Other studies using instrumental variables have also found similarly large effects. Algan and Cahuc (2010) predict that, according to their estimates, African countries would have a five-fold increase in GDP per capita if they had the same level of inherited social attitudes as Sweden, after controlling for lagged GDP per capita, contemporaneous political environment and time-invariant country characteristics.</p>
+<p>Algan and Cahuc (2010) show that inherited trust of descendants of US immigrants is significantly influenced by the country of origin and the timing of arrival of their forebears. This is their instrumental variable: the inherited trust of descendants of US immigrants is used as a time-varying measure of inherited trust in the country of origin. This approach allows the authors to control for country fixed effects and interpret the effect of trust on growth <em>causally</em>. You can read a summary of their findings and approach in a <a href="http://voxeu.org/article/trust-and-economic-development">voxeu.org article written by the researchers</a>.</p>
+<p>Nunn and Wantchekon (2011) provide evidence to explain mistrust in Africa: they show that current differences in trust levels within Africa can be traced back to the transatlantic and Indian Ocean slave trades. More specifically, they show that individuals whose ancestors were heavily raided during the slave trade are less trusting today – and using a variety of different econometric strategies, they claim that this relationship is causal.</p>
+<h6>Trust vs. GDP per capita, 2014 (or latest available data) </h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita.png"><img class="aligncenter size-large wp-image-8422" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-598x550.png" alt="Trust-vs-GDP-per-capita" width="598" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-598x550.png 598w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-150x138.png 150w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-400x368.png 400w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-768x706.png 768w" sizes="(max-width: 598px) 100vw, 598px" /><noscript><img class="aligncenter size-large wp-image-8422" src="//ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-598x550.png" alt="Trust-vs-GDP-per-capita" width="598" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-598x550.png 598w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-150x138.png 150w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-400x368.png 400w, //ourworldindata.org/wp-content/uploads/2016/07/Trust-vs-GDP-per-capita-768x706.png 768w" sizes="(max-width: 598px) 100vw, 598px" /></noscript></a></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-8279" class="post-8279 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/the-link-between-life-expectancy-and-health-spending-us-focus">Link between health spending and life expectancy: US is an outlier</a></h1>
+				  	<div class='entry-meta'><time>August 03, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The graph below shows the relationship between what a country spends on health per person and life expectancy in that country between 1970 and 2014 for a number of rich countries.</p>
+<p>The US stands out as an outlier: the US <a href="https://ourworldindata.org/financing-healthcare/">spends far more on health than any other country</a>, yet the life expectancy of the American population is not longer but actually shorter than in other countries that spend far less.</p>
+<p>If we look at the time trend for each country we first notice that all countries have followed an upward trajectory – the population lives increasingly longer as health expenditure increased. But again the US stands out as the the country is following a much flatter trajectory; gains in life expectancy from additional health spending in the U.S. were much smaller than in the other high-income countries, particularly since the mid-1980s.</p>
+<p>This development led to a large inequality between the US and other rich countries: In the US health spending per capita is often more than three-times higher than in other rich countries, yet the populations of countries with much lower health spending than the US enjoy considerably longer lives. In the most extreme case we see that Americans spend 5-times more than Chileans, but the population of Chile actually lives longer than Americans. The table at the end of this post shows the latest data for all countries so that you can study the data directly.</p>
+<h6>Life expectancy vs. health expenditure over time, 1970-2014</p>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1.png"><img class="aligncenter size-large wp-image-8277" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-485x550.png" alt="ftotHealthExp_pC_USD_long" width="485" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-485x550.png 485w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-132x150.png 132w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-353x400.png 353w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-768x871.png 768w" sizes="(max-width: 485px) 100vw, 485px" /><noscript><img class="aligncenter size-large wp-image-8277" src="//ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-485x550.png" alt="ftotHealthExp_pC_USD_long" width="485" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-485x550.png 485w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-132x150.png 132w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-353x400.png 353w, //ourworldindata.org/wp-content/uploads/2016/04/ftotHealthExp_pC_USD_long-1-768x871.png 768w" sizes="(max-width: 485px) 100vw, 485px" /></noscript></a></p>
+<p style="text-align: center;">[This graph and more information can be found in the <a href="https://ourworldindata.org/financing-healthcare/">entry on how healthcare is financed</a>.]</p>
+<h3>Why is this?</h3>
+<p>There are several aspects that contribute to the US being such an extreme outlier: <a href="http://www.nejm.org/doi/full/10.1056/NEJMsa022033#t=article">Studies find</a> that administrative costs in the health sector are higher in the US than in other countries; The price comparisons between countries rely on adjustment which are not ideally suited for comparisons of health costs and this might make comparisons more difficult. Sometimes it is also pointed out in these comparisons that violence rates in the US are higher than in other rich countries (<a href="https://ourworldindata.org/homicides/">and this is true</a>). But while this could explain the difference in levels, it is not a likely explanation for the difference in trends. Over the period shown in the chart above violence and <a href="https://ourworldindata.org/homicides/#usa">homicides have fallen in the US more than in other rich countries</a> and this should have led to a narrowing of the difference to other countries and not to the increase that we see.</p>
+<p>One of the reasons for the underachievement of the US is the large inequality in health spending. The chart above showed that average per capita spending on health is exceptionally high, but the average does not tell you about how much each individual in the US receives. The US healthcare system is characterized by little access to care for some and very high expenditure on health by others.</p>
+<p>The following graph shows this inequality. The top 5% of spenders accounts for almost half of all health care spending in the US.</p>
+<p>This chart is produced by the National Institute for Health Care Management (NIHCM) and it shows the cumulative distribution of healthcare spending per person in the U.S., using data on personal expenditures during the year 2009. The source of the data is the Medical Expenditure Panel Survey – a nationally representative longitudinal survey that collects information on healthcare utilization and expenditure, health insurance, and health status, as well sociodemographic and economic characteristics for civilian non-institutionalized population. According to the source, the data refers to &#8216;non-institutionalized civilian population&#8217;, in the sense that it excludes care provided to residents of institutions, such as long-term care facilities and penitentiaries, as well as care for military and other non-civilian members of the population. The data corresponds to &#8216;personal healthcare services&#8217;, in the sense that they exclude administrative costs, research, capital investments and many other public and private programs such as school health and worksite wellness.</p>
+<p>This graph should be read similarly to a Lorenz curve: the fact that the cumulative distribution of spending bends sharply away from the 45% degree line is a measure of high inequality (this is the intuition of the Gini coefficient that we discuss in our <a href="https://ourworldindata.org/data/growth-and-distribution-of-prosperity/income-inequality/#the-gini-coefficient">income inequality</a> data entry). As it can be seen, the top 5% of spenders account for almost half of spending, and the top 1% account for more than 20%. Some concentration in expenditure is certainly to be expected when looking at the distribution across the entire population – because it is in the nature of healthcare that some individuals, particularly those older and with complicated health conditions, will require large expenditure –, these figures seem remarkably large and suggest important inequality in access. Indeed, the publisher of the graph <a href="http://www.medpac.gov/documents/publications/jun14databookentirereport.pdf">notes</a> that a report from the Medicare Payment Assessment Commission shows that personal spending for individuals covered by Medicaid is less concentrated than for the population as a whole.</p>
+<h6>Cumulative distribution of personal healthcare spending in the U.S., 2009 – NIHCM (2012)</h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled.png"><img class="aligncenter size-large wp-image-7614" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-603x550.png" alt="nihcm-spending-concentration-titled" width="603" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-603x550.png 603w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-150x137.png 150w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-400x365.png 400w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-768x701.png 768w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled.png 901w" sizes="(max-width: 603px) 100vw, 603px" /><noscript><img class="aligncenter size-large wp-image-7614" src="//ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-603x550.png" alt="nihcm-spending-concentration-titled" width="603" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-603x550.png 603w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-150x137.png 150w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-400x365.png 400w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled-768x701.png 768w, //ourworldindata.org/wp-content/uploads/2016/04/ourworldindata_nihcm-spending-concentration-titled.png 901w" sizes="(max-width: 603px) 100vw, 603px" /></noscript></a></p>
+<h3 style="text-align: left;">Appendix:</h3>
+<p style="text-align: left;">Latest available data on life expectancy and spending on health per capita in OECD countries.</p>
+
+<table id="tablepress-62" class="tablepress tablepress-id-62">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">Country</th><th class="column-2">Life exectancy</th><th class="column-3">Health Spending per capita</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">United States</td><td class="column-2">78.94</td><td class="column-3">9,024.21  $</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Switzerland</td><td class="column-2">82.85</td><td class="column-3">6,786.57  $</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Norway</td><td class="column-2">81.75</td><td class="column-3">6,081.00  $</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Netherlands</td><td class="column-2">81.30</td><td class="column-3">5,276.60  $</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Germany</td><td class="column-2">80.84</td><td class="column-3">5,119.21  $</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Sweden</td><td class="column-2">81.96</td><td class="column-3">5,065.16  $</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Ireland</td><td class="column-2">81.15</td><td class="column-3">5,001.32  $</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">Austria</td><td class="column-2">81.34</td><td class="column-3">4,896.00  $</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">Denmark</td><td class="column-2">80.55</td><td class="column-3">4,857.03  $</td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1">Belgium</td><td class="column-2">80.59</td><td class="column-3">4,522.04  $</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1">Canada</td><td class="column-2">81.96</td><td class="column-3">4,495.69  $</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1">Luxembourg</td><td class="column-2">82.21</td><td class="column-3">4,478.97  $</td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1">France</td><td class="column-2">82.37</td><td class="column-3">4,366.99  $</td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1">Australia</td><td class="column-2">82.25</td><td class="column-3">4,206.85  $</td>
+</tr>
+<tr class="row-16 even">
+	<td class="column-1">Japan</td><td class="column-2">83.59</td><td class="column-3">4,152.37  $</td>
+</tr>
+<tr class="row-17 odd">
+	<td class="column-1">United Kingdom</td><td class="column-2">81.06</td><td class="column-3">3,971.39  $</td>
+</tr>
+<tr class="row-18 even">
+	<td class="column-1">Iceland</td><td class="column-2">82.06</td><td class="column-3">3,896.93  $</td>
+</tr>
+<tr class="row-19 odd">
+	<td class="column-1">Finland</td><td class="column-2">81.13</td><td class="column-3">3,871.39  $</td>
+</tr>
+<tr class="row-20 even">
+	<td class="column-1">New Zealand</td><td class="column-2">81.40</td><td class="column-3">3,537.26  $</td>
+</tr>
+<tr class="row-21 odd">
+	<td class="column-1">Italy</td><td class="column-2">82.69</td><td class="column-3">3,206.83  $</td>
+</tr>
+<tr class="row-22 even">
+	<td class="column-1">Spain</td><td class="column-2">83.08</td><td class="column-3">3,053.07  $</td>
+</tr>
+<tr class="row-23 odd">
+	<td class="column-1">Slovenia</td><td class="column-2">80.52</td><td class="column-3">2,598.91  $</td>
+</tr>
+<tr class="row-24 even">
+	<td class="column-1">Portugal</td><td class="column-2">80.72</td><td class="column-3">2,583.84  $</td>
+</tr>
+<tr class="row-25 odd">
+	<td class="column-1">Israel</td><td class="column-2">82.15</td><td class="column-3">2,547.40  $</td>
+</tr>
+<tr class="row-26 even">
+	<td class="column-1">Czech Republic</td><td class="column-2">78.28</td><td class="column-3">2,386.34  $</td>
+</tr>
+<tr class="row-27 odd">
+	<td class="column-1">South Korea</td><td class="column-2">82.16</td><td class="column-3">2,361.44  $</td>
+</tr>
+<tr class="row-28 even">
+	<td class="column-1">Greece</td><td class="column-2">81.29</td><td class="column-3">2,220.11  $</td>
+</tr>
+<tr class="row-29 odd">
+	<td class="column-1">Slovakia</td><td class="column-2">76.71</td><td class="column-3">1,970.52  $</td>
+</tr>
+<tr class="row-30 even">
+	<td class="column-1">Hungary</td><td class="column-2">75.87</td><td class="column-3">1,796.60  $</td>
+</tr>
+<tr class="row-31 odd">
+	<td class="column-1">Estonia</td><td class="column-2">77.24</td><td class="column-3">1,724.51  $</td>
+</tr>
+<tr class="row-32 even">
+	<td class="column-1">Lithuania</td><td class="column-2">73.97</td><td class="column-3">1,720.84  $</td>
+</tr>
+<tr class="row-33 odd">
+	<td class="column-1">Chile</td><td class="column-2">81.50</td><td class="column-3">1,688.52  $</td>
+</tr>
+<tr class="row-34 even">
+	<td class="column-1">Poland</td><td class="column-2">77.25</td><td class="column-3">1,624.87  $</td>
+</tr>
+<tr class="row-35 odd">
+	<td class="column-1">Costa Rica</td><td class="column-2">79.40</td><td class="column-3">1,393.95  $</td>
+</tr>
+<tr class="row-36 even">
+	<td class="column-1">Russia</td><td class="column-2">70.37</td><td class="column-3">1,368.75  $</td>
+</tr>
+<tr class="row-37 odd">
+	<td class="column-1">Latvia</td><td class="column-2">74.19</td><td class="column-3">1,295.01  $</td>
+</tr>
+<tr class="row-38 even">
+	<td class="column-1">South Africa</td><td class="column-2">57.18</td><td class="column-3">1,146.47  $</td>
+</tr>
+<tr class="row-39 odd">
+	<td class="column-1">Mexico</td><td class="column-2">76.72</td><td class="column-3">1,052.66  $</td>
+</tr>
+<tr class="row-40 even">
+	<td class="column-1">Turkey</td><td class="column-2">75.16</td><td class="column-3">990.19  $</td>
+</tr>
+<tr class="row-41 odd">
+	<td class="column-1">Colombia</td><td class="column-2">73.99</td><td class="column-3">964.50  $</td>
+</tr>
+<tr class="row-42 even">
+	<td class="column-1">China</td><td class="column-2">75.78</td><td class="column-3">730.52  $</td>
+</tr>
+<tr class="row-43 odd">
+	<td class="column-1">Indonesia</td><td class="column-2">68.89</td><td class="column-3">302.12  $</td>
+</tr>
+<tr class="row-44 even">
+	<td class="column-1">India</td><td class="column-2">68.01</td><td class="column-3">267.41  $</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-62 from cache -->
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-8331" class="post-8331 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/how-many-children-did-a-woman-give-birth-to-that-died-before-their-5th-birthday/">How many children did a woman give birth to that died before their 5th birthday?</a></h1>
+				  	<div class='entry-meta'><time>August 01, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The brutal reality of child mortality becomes clearer when one remembers what it means for each woman who loses her child.</p>
+<p>The following visualization uses the data on <a href="http://ourworldindata.org/fertility/">fertility</a> – the number of children born per woman – over time and combines it with information on <a href="https://ourworldindata.org/child-mortality/">child mortality</a> over time. Taking these two time series together makes it possible to estimate how many children a woman on average lost before the children were five years old.<br />
+Below you see the data for Sweden which is one of the country for which we have the best historical data, the Swedish office for population statistics <em>Tabellverket</em> was founded as early as 1749. The visualization shows that throughout most of the 19th century Swedish women gave birth to more than 4 children. As we have shown in the <a href="https://ourworldindata.org/child-mortality/">Our World In Data-entry on child mortality</a>, in 19th century Sweden 1 out of 4 children died before its 5th birthday: This means that fertility and child mortality were so high that on average <em> every</em> woman lost 1 of her children before they could celebrate their 5th birthday.</p>
+<p>With the decline of child mortality and fertility this became very rare. In 2015 Swedish women lost on average 0.006 children before they were 5 years old.</p>
+<p>In this visualization you can change the country for which this time-series is visualized to explore the trends in countries around the world. To <em>compare</em> the number of children lost per woman for several countries – and see the data on a world map – you can use <a href="https://ourworldindata.org/grapher/children-died-before-five-per-woman">this visualisation</a>.</p>
+<p>The data shown in this visualization is calculated based on the historical estimates of fertility and child mortality presented at <a href="http://gapminder.org">Gapminder.org</a> (see the sources tab in the chart for more information); particularly for the early period data coverage is not as good as one wishes and it should be understood that the presented estimates are coming with a considerable uncertainty.</p>
+<p><iframe style="width: 100%; height: 800px; border: 0px none;" data-src="https://ourworldindata.org/grapher/Children-woman-death-vs-survival" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 800px; border: 0px none;" src="https://ourworldindata.org/grapher/Children-woman-death-vs-survival" width="300" height="150"></iframe></noscript></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-8246" class="post-8246 post type-post status-publish format-standard hentry category-uncategorized tag-education tag-inequality">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/the-global-expansion-of-education-has-translated-into-lower-education-inequality-across-the-world/">Global education expansion has led to lower education inequality across the world</a></h1>
+				  	<div class='entry-meta'><time>July 20, 2016</time> by Esteban Ortiz-Ospina</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>Education systems around the world have expanded significantly over the last fifty years. This is true both in terms of funding and outcomes: in most countries <a href="https://ourworldindata.org/financing-education#the-world-is-expanding-funding-for-education-today">education expenditure</a> and <a href="https://ourworldindata.org/global-rise-of-education/#empirical-view">mean years of schooling</a> have increased. What has this implied in terms of education inequality? The short answer is that in most countries education is much more equally distributed today than fifty years ago. Here is some evidence, also discussed in our entry on <a href="https://ourworldindata.org/financing-education#the-world-is-expanding-funding-for-education-today">Financing Education</a>.</p>
+<p>The following figure, from Crespo Cuaresma et al. (2013), shows a series of graphs plotting changes in the Gini coefficient of the distribution of years of schooling, by age groups, across different world regions. The Gini coefficient is a measure of inequality, with higher values denoting higher inequality. As it can be seen, in the period 1960-2010 education inequality went down every year, for all age groups and in all world regions. In fact, notice that inequality is lower among today’s younger generations – this implies that further reductions in education inequality are still to be expected, particularly within developing countries where the generational gap is largest; and if the expansion of global education can be continued, we can get closer to global convergence.</p>
+<h6>Education Gini coefficients by world region for selected age groups, 1960- 2010 – Figure 4 in Crespo Cuaresma et al. (2013)</h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010-.png"><img class="aligncenter size-large wp-image-8038" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--296x550.png" alt="Cuaresma etal(2013) edu_gini_1960_2010" width="296" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--296x550.png 296w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--81x150.png 81w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--216x400.png 216w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--768x1425.png 768w" sizes="(max-width: 296px) 100vw, 296px" /><noscript><img class="aligncenter size-large wp-image-8038" src="//ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--296x550.png" alt="Cuaresma etal(2013) edu_gini_1960_2010" width="296" height="550" srcset="//ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--296x550.png 296w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--81x150.png 81w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--216x400.png 216w, //ourworldindata.org/wp-content/uploads/2016/06/Cuaresma-etal2013-edu_gini_1960_2010--768x1425.png 768w" sizes="(max-width: 296px) 100vw, 296px" /></noscript></a></p>
+<p>How quickly can education inequality be reduced? The experience of South Korea shows that it is possible to reduce education inequality very rapidly, across all levels of education. The following visualization shows two graphs comparing the concentration of years of education in South Korean between the years 1960 and 1990. To be precise, each of these graphs shows an education Lorenz curve: a plot showing the cumulative percentage of the schooling years across all levels of education on the vertical axis, and the cumulative percentage of the population on the horizontal axis. As it can be seen, in 1990 education was much less concentrated than in 1960, not only because there was a smaller share of individuals without schooling at the bottom (in 1990 only 10% of the population had no schooling, compared to 40% in 1960), but also because there was a smaller share of individuals concentrating large proportions of school-years at higher levels of education. Indeed, in only 30 years South Korea was able to double the mean years of schooling and get remarkably close to the 45-degree line marking the hypothetical scenario of complete equality of schooling. In this same period South Korea increased drastically its <a href="https://ourworldindata.org/gdp-growth-over-the-last-centuries/#real-gdp-per-capita-around-the-world-ppp-adjusted-since-1000-max-roserref"> GDP per capita</a> while significantly improving health outcomes, such as <a href="https://ourworldindata.org/grapher/child-mortality?country=KOR">child mortality</a>.</p>
+<h6>Education Lorenz Curves, Korea 1960-1990 – Figure 5 in Thomas et al. (2000)</h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990-.png"><img class="aligncenter size-large wp-image-8040" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--750x341.png" alt="Thomas etal (2001) SouthKorea_LorenzCurve_1960-1990" width="750" height="341" srcset="//ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--750x341.png 750w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--150x68.png 150w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--400x182.png 400w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--768x349.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-8040" src="//ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--750x341.png" alt="Thomas etal (2001) SouthKorea_LorenzCurve_1960-1990" width="750" height="341" srcset="//ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--750x341.png 750w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--150x68.png 150w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--400x182.png 400w, //ourworldindata.org/wp-content/uploads/2016/06/Thomas-etal-2001-SouthKorea_LorenzCurve_1960-1990--768x349.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+				
+
+	
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='https://ourworldindata.org/trust-and-gdp/page/2/'>2</a>
+<a class='page-numbers' href='https://ourworldindata.org/trust-and-gdp/page/3/'>3</a>
+<a class="next page-numbers" href="https://ourworldindata.org/trust-and-gdp/page/2/">Next »</a></div>
+	</nav>  
+</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473851359'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching using disk
+Object Caching 4159/4193 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 11:22:56 by W3 Total Cache -->

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; Land Cover Comments Feed" href="//ourworldindata.org/land-cover/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-social-icons-font-css'  href='//ourworldindata.org/wp-content/plugins/simple-social-icons/css/style.css?ver=1.0.12' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.srcset.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="//ourworldindata.org/land-cover/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=3016' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fland-cover%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fland-cover%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png"><style type="text/css" media="screen"> .simple-social-icons ul li a, .simple-social-icons ul li a:hover { background-color: #3E85EE !important; border-radius: 60px; color: #000000 !important; border: 0px #ffffff solid !important; font-size: 30px; padding: 15px; }  .simple-social-icons ul li a:hover { background-color: #3E85EE !important; border-color: #ffffff !important; color: #ffffff !important; }</style><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css" />
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+	</script>
+</head>
+
+<body class="page page-id-3016 page-child parent-pageid-3198 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search..."></input>
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title" itemprop="headline">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World In Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<header><h2>Entries</h2></header><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/economic-convergence-between-countries/'>Economic Convergence between Countries</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a href='https://ourworldindata.org/international-trade/'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a href='https://ourworldindata.org/global-rise-of-education/'>Global Rise of Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education and Schools</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/quality-of-education-drop-out-rates/'>Quality of Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/literacy/'>Literacy</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/trust/'>Trust</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search..."></input>
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><hr><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/economic-convergence-between-countries/'>Economic Convergence between Countries</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><hr><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/international-trade/'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/global-rise-of-education/'>Global Rise of Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education and Schools</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/quality-of-education-drop-out-rates/'>Quality of Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/literacy/'>Literacy</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/trust/'>Trust</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main" role="main">
+<main id="main" class="site-main" role="main">
+
+			<article id="post-3016" class="post-3016 page type-page status-publish hentry">
+			<header class="entry-header">
+				<div class="post-byline">Please cite the original source – including the original data source – and this entry on Our World In Data.<br>This entry can be cited as Max Roser (2016) – &lsquo;Land Cover&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/land-cover/ [Online Resource]</div>
+				<h1 class="entry-title">Land Cover</h1>			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>&nbsp;</p>
+<h2 id="emprical-view"><span id="-emprical-view"> <a class="deep-link" href="#emprical-view"># </a>Emprical View</span></h2>
+<h3 id="land-cover-of-the-world-today"> <a class="deep-link" href="#land-cover-of-the-world-today"># </a>Land Cover of the World Today</h3>
+<h6 id="world-map-of-the-earths-vegetation-noaaref"> <a class="deep-link" href="#world-map-of-the-earths-vegetation-noaaref"># </a>World map of the Earth&#8217;s vegetation – NOAA<a id='ref-1' class='side-matter side-matter-ref' href='#note-1' style="color: #ff543a"><sup class='side-matter side-matter-sup' title='This map is published by NASA/NOAA here. Shown in this map is the detailed vegetation index data from the VIIRS sensor aboard the NASA/NOAA Suomi NPP satellite. Satellite data from April 2012 to April 2013 was used to generate this image. The source explains: &#8220;The darkest green areas are the lushest in vegetation, while the pale colors are sparse in vegetation cover either due to snow, drought, rock, or urban areas.&#8221; Two versions are available for download at the website – a 4096 x 2048 image and a super high resolution version (30,000 x 15,000) which is 176 MB in size.'>1</sup></a><br />
+<strong><a title="" href="http://ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa.png"><img class="aligncenter size-medium wp-image-3021" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-645x322.png" alt="World Map of the Earths vegetation – NOAA" width="645" height="322" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="//ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-645x322.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-1024x512.png 1024w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-3021" src="//ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-645x322.png" alt="World Map of the Earths vegetation – NOAA" width="645" height="322" srcset="//ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-645x322.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/world-map-of-the-earths-vegetation-noaa-1024x512.png 1024w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></a></strong></p>
+<p>The same source – NOAA/NASA – visualized the vegetation data in a high resolution video of the vegetation on earth. It is online <a href="http://www.nnvl.noaa.gov/green.php">here</a>.</p>
+<h6 id="world-land-area-by-category-in-million-hectares-20052007-fao-2012ref"> <a class="deep-link" href="#world-land-area-by-category-in-million-hectares-20052007-fao-2012ref"># </a>World land area by category in million hectares, 2005/2007 – FAO (2012)<a id='ref-2' class='side-matter side-matter-ref' href='#note-2' style="color: #ff543a"><sup class='side-matter side-matter-sup' title='The source of the data is the research paper Alexandratos &amp; Bruinsma (2012) – World agriculture towards 2030/2050: the 2012 revision. ESA Working paper No. 12-03. Rome, FAO. Online here.'>2</sup></a></p>
+<script type='text/javascript' src='//www.google.com/jsapi'></script>
+<script type='text/javascript'>
+// <![CDATA[
+google.load('visualization', '1.0', {'packages':['corechart']});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+var wrapper = new google.visualization.ChartWrapper(
+{"containerId":"visualization2840","dataTable":{"cols":[{"id":"","label":"Col#0","pattern":"","type":"string"},{"id":"","label":"Col#1","pattern":"","type":"number"}],"rows":[{"c":[{"v":"Permanent meadows and pastures","f":null},{"v":1530,"f":null}]},{"c":[{"v":"Arable land and permanent crops ","f":null},{"v":3374,"f":null}]},{"c":[{"v":"Forest area ","f":null},{"v":4055,"f":null}]},{"c":[{"v":"Other land","f":null},{"v":4060,"f":null}]}],"p":null},"options":{"title":"","is3D":false,"pieHole":0,"booleanRole":"certainty","colors":["#e69138","#38761d","#134f5c","#85200c","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"vAxes":[{"viewWindow":{"max":null,"min":null},"minValue":null,"maxValue":null,"useFormatFromData":true},{"viewWindow":{"max":null,"min":null},"minValue":null,"maxValue":null,"useFormatFromData":true}],"hAxis":{"viewWindow":{"max":null,"min":null},"useFormatFromData":true,"minValue":null,"maxValue":null},"pieSliceText":"value","pieSliceTextStyle":{"fontSize":"14"}},"state":{},"isDefaultVisualization":true,"chartType":"PieChart"}
+);
+wrapper.draw();
+};
+// ]]&gt;
+</script>
+<div style='border: 0px darkgray solid; width: 700px;'>
+<div id='visualization2840' style='width: 700px; height: 400px;'></div>
+</div>
+
+<h3 id="change-over-time"> <a class="deep-link" href="#change-over-time"># </a>Change over Time</h3>
+<h6 id="estimated-changes-in-land-use-1700-1995-lambin-et-al-2001ref"> <a class="deep-link" href="#estimated-changes-in-land-use-1700-1995-lambin-et-al-2001ref"># </a>Estimated changes in land use, 1700-1995 – Lambin et al. (2001)<a id='ref-3' class='side-matter side-matter-ref' href='#note-3' style="color: #ff543a"><sup class='side-matter side-matter-sup' title='This is taken from the highly cited Lambin et al. (2001) – The causes of land-use and land-cover change: moving beyond the myths. Online here. The original source of the data is Goldewijk, K., Battjes, J.J., (1997) – A Hundred Year Database for Integrated Environmental Assessments. National Institute of Public Health and the Environment, Bilthoven.'>3</sup></a><br />
+<strong><img class="aligncenter size-medium wp-image-3022" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010-645x387.png" alt="Estimated changes in land use from 1700 to 1995 – Lambin et al. (2001)0" width="645" height="387" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="//ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010-645x387.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010.png 971w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-3022" src="//ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010-645x387.png" alt="Estimated changes in land use from 1700 to 1995 – Lambin et al. (2001)0" width="645" height="387" srcset="//ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010-645x387.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/estimated-changes-in-land-use-from-1700-to-1995-lambin-et-al-20010.png 971w" sizes="(max-width: 645px) 100vw, 645px" /></noscript><br />
+</strong></p>
+<p>NASA published an animation of the planet&#8217;s changing land cover between 2000 and 2013 <a href="http://earthobservatory.nasa.gov/GlobalMaps/view.php?d1=MOD17A2_M_PSN">here</a>.</p>
+<h6 id="greening-of-sahel-1982-1999-wikipediaref"> <a class="deep-link" href="#greening-of-sahel-1982-1999-wikipediaref"># </a>Greening of Sahel, 1982-1999 – Wikipedia<a id='ref-4' class='side-matter side-matter-ref' href='#note-4' style="color: #ff543a"><sup class='side-matter side-matter-sup' title='This map is taken from Wikipedia here. According to Wikipedia the map shows the recent &#8216;greening&#8217; of the Sahel. It shows the results of trend analyses of time series over the Sahel sub-Saharan savanna region of seasonally integrated Normalized Difference Vegetation Index (NDVI). Areas with trends of &lt;95% probability in white. This file is licensed under the Creative Commons Attribution-Share Alike 2.5 Generic license.'>4</sup></a><br />
+<strong><br />
+</strong></p>
+<p><img class="aligncenter size-medium wp-image-3023" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0-645x248.png" alt="Greening Sahel 1982-1999 – Wikipedia0" width="645" height="248" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="//ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0-645x248.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0.png 800w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-3023" src="//ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0-645x248.png" alt="Greening Sahel 1982-1999 – Wikipedia0" width="645" height="248" srcset="//ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0-645x248.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/greening-sahel-1982-1999-wikipedia0.png 800w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></p>
+<h2 id="data-quality-definition"><span id="-data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</span></h2>
+<h6 id="animation-of-the-changing-land-cover-of-the-earth-monthly-global-images-from-nasa-earth-observatory-2004-wikipedia-nasaref"> <a class="deep-link" href="#animation-of-the-changing-land-cover-of-the-earth-monthly-global-images-from-nasa-earth-observatory-2004-wikipedia-nasaref"># </a>Animation of the changing land cover of the Earth &#8211; monthly global images from NASA Earth Observatory, 2004 – Wikipedia [NASA]<a id='ref-5' class='side-matter side-matter-ref' href='#note-5' style="color: #ff543a"><sup class='side-matter side-matter-sup' title='This is taken from Wikipedia here and the original source is NASA here. The images are taken between January 2004 and December 2004. This file is in the public domain because it was solely created by NASA. NASA copyright policy states that &#8220;NASA material is not protected by copyright unless noted&#8221;.'>5</sup></a></p>
+<p><img class="aligncenter size-full wp-image-3017" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/oie_13174949BOiAdxoT.gif" alt="oie_13174949BOiAdxoT" width="700" height="350" /><noscript><img class="aligncenter size-full wp-image-3017" src="//ourworldindata.org/wp-content/uploads/2013/11/oie_13174949BOiAdxoT.gif" alt="oie_13174949BOiAdxoT" width="700" height="350" /></noscript></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal; color: #ff543a;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text' style='color: #777777;'>
+						</h6>
+<p>This map is published by NASA/NOAA <a href="http://www.nnvl.noaa.gov/green.php">here</a>.</p>
+<p>Shown in this map is the detailed vegetation index data from the VIIRS sensor aboard the NASA/NOAA Suomi NPP satellite. Satellite data from April 2012 to April 2013 was used to generate this image. The source explains: &#8220;The darkest green areas are the lushest in vegetation, while the pale colors are sparse in vegetation cover either due to snow, drought, rock, or urban areas.&#8221;</p>
+<p>Two versions are available for download at the website – a 4096 x 2048 image and a super high resolution version (30,000 x 15,000) which is 176 MB in size.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text' style='color: #777777;'>
+						</h6>
+<p>The source of the data is the research paper Alexandratos &amp; Bruinsma (2012) – World agriculture towards 2030/2050: the 2012 revision. ESA Working paper No. 12-03. Rome, FAO. Online <a href="http://www.fao.org/docrep/016/ap106e/ap106e.pdf">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text' style='color: #777777;'>
+						</h6>
+<p>This is taken from the highly cited Lambin et al. (2001) – The causes of land-use and land-cover change: moving beyond the myths. Online <a href="http://www.rengy.org/uploadfile/file/%E4%B8%AD%E6%96%87%E7%89%88/%E8%B5%84%E6%BA%90/%E6%96%87%E7%8C%AE/2001/The%20causes%20of%20land-use%20and%20land-cover%20change%20moving%20beyond%20the%20myths%20.pdf">here</a>.</p>
+<p>The original source of the data is Goldewijk, K., Battjes, J.J., (1997) – A Hundred Year Database for Integrated Environmental Assessments. National Institute of Public Health and the Environment, Bilthoven.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text' style='color: #777777;'>
+						</h6>
+<p>This map is taken from Wikipedia <a href="http://en.wikipedia.org/wiki/File:Greening_Sahel_1982-1999.jpg">here</a>.<br />
+According to Wikipedia the map shows the recent &#8216;greening&#8217; of the Sahel. It shows the results of trend analyses of time series over the Sahel sub-Saharan savanna region of seasonally integrated Normalized Difference Vegetation Index (NDVI).<br />
+Areas with trends of &lt;95% probability in white.</p>
+<p>This file is licensed under the Creative Commons Attribution-Share Alike 2.5 Generic license.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text' style='color: #777777;'>
+						</h6>
+<p>This is taken from Wikipedia <a href="http://upload.wikimedia.org/wikipedia/commons/e/ec/BlueMarble_monthlies_animation.gif">here</a> and the original source is NASA <a href="http://earthobservatory.nasa.gov/Features/BlueMarble/BlueMarble_monthlies.php">here</a>.<br />
+The images are taken between January 2004 and December 2004.</p>
+<p>This file is in the public domain because it was solely created by NASA. NASA copyright policy states that &#8220;NASA material is not protected by copyright unless noted&#8221;.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</main><!-- .site-main -->
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World In Data</a></h4>
+					<p>Our World In Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely reusable by journalists or educators.</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+					<p class="donation-thanks">We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll_offset":"57"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 3/13 queries in 0.009 seconds using disk
+Object Caching 3953/3971 objects using disk
+
+ Served from: ourworldindata.org @ 2016-06-20 05:06:19 by W3 Total Cache -->

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Income Inequality - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; Income Inequality Comments Feed" href="//ourworldindata.org/income-inequality/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/income-inequality/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=3178' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fincome-inequality%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fincome-inequality%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="Income Inequality"/>
+<meta itemprop="name" content="Income Inequality"/>
+<meta name="twitter:title" content="Income Inequality"/>
+<meta property="og:url" content="https://ourworldindata.org/income-inequality/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/income-inequality/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Empirical View
+Inequality in Pre-industrial Societies
+One way of studying pre-industrial inequality is to study the inequality of living standards (for this see the entry on health inequality). But one can also study economic inequality directly. Milanovic, Lindert and Williamson published a numbe"/>
+<meta itemprop="description" content="Empirical View
+Inequality in Pre-industrial Societies
+One way of studying pre-industrial inequality is to study the inequality of living standards (for this see the entry on health inequality). But one can also study economic inequality directly. Milanovic, Lindert and Williamson published a numbe"/>
+<meta name="twitter:description" content="Empirical View
+Inequality in Pre-industrial Societies
+One way of studying pre-industrial inequality is to study the inequality of living standards (for this see the entry on health inequality). But one can also study economic inequality directly. Milanovic, Lindert and Williamson published a numbe"/>
+<meta property="og:image" content="https://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years.png"/>
+<meta itemprop="image" content="https://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years.png"/>
+<meta name="twitter:image" content="https://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473851359">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-3178 page-child parent-pageid-194 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-3178" class="post-3178 page type-page status-publish has-post-thumbnail hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">Income Inequality</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser (2016) – &lsquo;Income Inequality&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/income-inequality/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="inequality-in-pre-industrial-societies"> <a class="deep-link" href="#inequality-in-pre-industrial-societies"># </a>Inequality in Pre-industrial Societies</h3>
+<p>One way of studying pre-industrial inequality is to study the inequality of living standards (for this see the entry on <a title="Health Inequality" href="http://ourworldindata.org/data/health/health-inequality/">health inequality</a>). But one can also study economic inequality directly. Milanovic, Lindert and Williamson published a number of these estimates in their 2008 paper &#8216;Ancient Inequality&#8217;. Most of their estimates (18 of the 28) of pre-industrial inequalities are based on so-called &#8216;social tables&#8217;. In these tables, social classes (or groups) &#8216;are ranked from the richest to the poorest with their estimated population shares and average incomes&#8217;.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='Cited from Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. Online here. A short version that is freely available was published on VoxEU online here.'>1</sup></a></p>
+<p>These social tables are not always reliable sources for the distribution of incomes, as Holmes has shown for one of the most famous tables: Gregory King&#8217;s Social Table for England in 1688. Holmes (1977) showed King&#8217;s limitations as a social analyst and critisices his social table arguing that various biases &#8220;beguiled him (1) into underestimating the number of families in some of the wealthiest, and fiscally most productive classes; and (2) into underestimating quite (sometimes grossly) income levels at many rungs above the poverty line.&#8221;<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='The publication is G. S. Holmes (1977) – Gregory King and the Social Structure of Pre-Industrial England. Transactions of the Royal Historical Society, Fifth Series, Vol. 27 (1977), pp. 41-68. Online here. The estimates shown in the graph below are based on a revision of King&#8217;s estimates that was published by Lindert and Williamson. The authors are saying they were using &#8220;Holmes’ penetrating critique (1977) to guide our modification of King’s tables&#8221;. This publication is Lindert, Peter H. and Williamson, Jeffrey G (1982) – Revising England&#8217;s social tables 1688-1812. Explorations in Economic History. Volume 19, Issue 4, October 1982, Pages 385–408. Online here.'>2</sup></a></p>
+<p>The following graph demonstrates the economic inequality of pre-industrial societies in relation to the level of prosperity in this society. Inequality is measured with the Gini index (explained below) and prosperity is measured by GDP per capita, adjusted for price changes to make comparisons in a common currency possible.</p>
+<p>The graph also shows a curve labelled IPF; this is the Inequality Possibility Frontier. The idea behind this curve is that in a very poor society inequality cannot be very high: Imagine the <em>average</em> level of income is just the bare minimum to survive; in such a economy there could not possibly be any inequality as this would necessarily mean that some people have to be below the minimum income level on which they could survive.</p>
+<p>When average income is a little higher it is possible to have some small level of inequality, and the IPF shows how the maximum possible inequality increases with higher average income. Now we see that many pre-industrial societies are clustered along the IPF. <strong>This means that in these societies inequality was as high as it possibly could have been.</strong></p>
+<p>For Holland and England, we see that during their early development they moved away from the IPF and the level of inequality no longer was at the maximum.</p>
+<h6 id="pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-ipf-milanovic-lindert-and-williamson-2008ref"> <a class="deep-link" href="#pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-ipf-milanovic-lindert-and-williamson-2008ref"># </a>Pre-industrial inequalities: estimated Gini coefficients, and the inequality possibility frontiers (IPF) – Milanovic, Lindert and Williamson (2008)<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='This is taken from Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. Online here. A short version was published on VoxEU online here. Notes related to this graph: the solid IPF line is constructed on the assumption that the annual subsistence minimum is $PPP 300. The Gini index is estimated by taking into account the estimated within-class income inequality (the Gini 2 in the original paper).'>3</sup></a><br />
+<strong><a href="http://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080.png"><img class="aligncenter size-large wp-image-5071" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-750x498.png" alt="Pre-industrial Inequalities Estimated Gini Coefficients, and the Inequality Possibility Frontiers – Milanovic, Lindert and Williamson (2008)0" width="750" height="498" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-750x498.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-400x265.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-560x373.png 560w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-360x240.png 360w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080.png 1097w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-5071" src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-750x498.png" alt="Pre-industrial Inequalities Estimated Gini Coefficients, and the Inequality Possibility Frontiers – Milanovic, Lindert and Williamson (2008)0" width="750" height="498" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-750x498.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-400x265.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-560x373.png 560w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080-360x240.png 360w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_pre-industrial-inequalities-estimated-gini-coefficients-and-the-inequality-possibility-frontiers-–-milanovic-lindert-and-williamson-20080.png 1097w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></strong></p>
+<h3 id="income-inequality-over-the-very-long-run"> <a class="deep-link" href="#income-inequality-over-the-very-long-run"># </a>Income Inequality over the Very Long Run</h3>
+<p>The United Kingdom is the country for which we have the best information on the distribution of income over the very long run. And this information is visualized in the following chart: On top</p>
+<p>The income share of the top 5% of income earners was very high in the past: Up to 40% of total income went into the pockets of the very rich. It increased slightly until the onset of industrialization. Both measures – the top income share and the Gini index – confirm this.</p>
+<p>Starting in the late 19th century income inequality started to decrease dramatically and reached historical lows in the late 1970s. Though it never reached pre-industrial levels income inequality increased  sharply in the 1980s.</p>
+<p>The bottom panel shows the Gini of both pre-tax income and the lower inequality of disposable income. Disposable income is the income that reaches people&#8217;s pockets after the welfare state redistributed the income through tax and transfers.</p>
+<h6 id="more-than-700-years-of-income-inequality-in-the-uk-measured-via-income-share-of-the-top-5-and-gini-1980-2010-max-roserref"> <a class="deep-link" href="#more-than-700-years-of-income-inequality-in-the-uk-measured-via-income-share-of-the-top-5-and-gini-1980-2010-max-roserref"># </a>More than 700 years of income inequality in the UK measured via income share of the top 5% and Gini, 1980-2010 – Max Roser<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='The sources for this graph are shown in the plot and refer to: &#8211; Peter H. Lindert (2000) – Three centuries of inequality in Britain and America. In A. B. Atkinson &amp; F. Bourguignon (Eds.), Handbook of Income Distribution. Amsterdam: Elsevier. Until 1801-3 referring to England and Wales. After 1867 referring to the UK. &#8211; Atkinson, Anthony B. (2007) – &#8216;The Distribution of Top Incomes in the United Kingdom 1908-2000&#8217; in Atkinson, A. B. and Piketty, T. (editors) Top Incomes over the Twentieth Century. A Contrast Between Continental European and English-Speaking Countries, Oxford University Press, chapter 4. I have taken this data from the World Top Income Database. The series was updated by the same author since the publication in 2007. &#8211; Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. (The authors are relying on various Social Tables. Amongst others the one by King shown above.) &#8211; UK Blue Book inequality before taxes is also taken from Lindert (2000) [see above]. &#8211; ONS (2011) refers to the following Office for National Statistics publication: Andrew Barnard, Steve Howell and Robert Smith (2011) – The effects of taxes and benefits on household income, 2009/10. Further analysis and methodology. Online here.'>4</sup></a></p>
+<p style="text-align: center;"><a href="http://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years.png"><img class="aligncenter size-large wp-image-5502" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-733x550.png" alt="Inequality-UK-over-700+-years" width="733" height="550" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-733x550.png 733w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-150x113.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-400x300.png 400w" sizes="(max-width: 733px) 100vw, 733px" /><noscript><img class="aligncenter size-large wp-image-5502" src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-733x550.png" alt="Inequality-UK-over-700+-years" width="733" height="550" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-733x550.png 733w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-150x113.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_inequality-uk-over-700-years-400x300.png 400w" sizes="(max-width: 733px) 100vw, 733px" /></noscript></a></p>
+<h3 id="inequality-over-the-last-century"> <a class="deep-link" href="#inequality-over-the-last-century"># </a>Inequality over the Last Century</h3>
+<p>The following two graphs demonstrate how inequality has developed over the last century. Researchers have a much better understanding of the long run evolution thanks to the new research on top income shares. Before the study of top incomes the main source for information on the income distribution were surveys. But since surveys in most countries were only started in the 1970s or 80s we had only have data going back 3 or 4 decades. Top income shares are reconstructed from income tax records and for many countries this gives us insight into the development over more 100 years.</p>
+<p>Top income inequality is measured as the share of total income that goes to the income earners at the very top of the distribution. This measure of inequality has the advantage that for many countries it is available for a long period of time.</p>
+<p>What we can learn from this long-term perspective is summarized in the 2 charts below. Let’s look at the blue line in the first chart which shows the long-run trend in the US. Before the Second World War up to 18% of the all income received by Americans went to the richest 1%. Since then, the share of the top 1% first dropped substantially and then – starting in the early 80s –increased again and in the US it returned to the level of the pre-war period. This means that inequality as measured by top income shares fell and then rose again and from the chart we see that this U-shaped long-term trend of top income shares is not unique to the US. In fact the development in other English-speaking countries shown in the left panel followed the same pattern.</p>
+<p>However, it would be wrong to think that increasing top income inequality is a universal phenomenon. From the second chart we see that in equally rich European countries as well as in Japan, the development is in fact quite different. The income share of the rich has decreased over many decades and just like in the English-speaking countries it reached a low point in the 70s. In contrast to the English-speaking countries however top incomes shares have not returned to the previous high levels of inequality, but instead remained flat or increased only modestly. Top income inequality followed an L-shape. Income inequality has decreased drastically since the beginning of the 20th century – a much smaller share of total incomes is paid to the very rich.</p>
+<p>A lesson that that we can take away from this empirical research is that political forces at work on the national level are possibly important for how incomes are distributed. If there was a universal trend towards more inequality it would be in line with the notion that inequality is determined by global market forces and technological progress where it is very hard (or for other reasons undesirable) to change the forces that lead to higher inequality. Inequality would then be inevitable. The reality of different inequality trends within countries suggests that the institutional and political framework in different countries play a role in shaping inequality of incomes.</p>
+<h6 id="top-1-share-of-total-income-english-speaking-countries-u-shaped-1900-2012-max-roserref"> <a class="deep-link" href="#top-1-share-of-total-income-english-speaking-countries-u-shaped-1900-2012-max-roserref"># </a>Top 1% share of total income &#8211; English speaking countries (U-shaped), 1900–2012 – Max Roser<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='The data is taken from the World Top Income Database. The series for Canada shows the LAD series after 1995.'>5</sup></a><br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_U/nvd3_lineChart_TopIncomesCSV_shape_in_U.html" width="100%" height="535" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_U/nvd3_lineChart_TopIncomesCSV_shape_in_U.html" width="100%" height="535" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_U/nvd3_lineChart_TopIncomesCSV_shape_in_U.html">Full screen view</a> <a class="newtab" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_U/nvd3_lineChart_TopIncomesCSV_shape_in_U.html" target="_blank">Open in new tab</a> <a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_U/top_1_U-shaped.csv">Download Data</a></address>
+<p>&nbsp;</p>
+<p>In the following graph, we can see this trend for other non-English speaking European nations and Japan. Inequality decreased rapidly over the first half of last century, but has only steadily declined or remained fairly stable since, forming an L-shaped curve.</p>
+<h6 id="top-1-share-of-total-income-europe-and-japan-l-shaped-1900-2012-max-roserref"> <a class="deep-link" href="#top-1-share-of-total-income-europe-and-japan-l-shaped-1900-2012-max-roserref"># </a>Top 1% share of total income &#8211; Europe and Japan (L-shaped), 1900–2012 – Max Roser<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='The data is taken from the World Top Income Database. The series for Finland shows data reconstructed from tax data for earlier years and the IDS series following 1990. The series for Denmark refers to &#8216;married couples &amp; single adults&#8217; before 1969 and after 1969 to adults only. 1969 was a income tax free year in Denmark.'>6</sup></a><br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_L/nvd3_lineChart_TopIncomesCSV_shape_in_L.html" width="100%" height="535" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_L/nvd3_lineChart_TopIncomesCSV_shape_in_L.html" width="100%" height="535" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_L/nvd3_lineChart_TopIncomesCSV_shape_in_L.html">Full screen view</a> <a class="newtab" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_L/nvd3_lineChart_TopIncomesCSV_shape_in_L.html" target="_blank">Open in new tab</a> <a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_TopIncomesCSV_shape_in_L/top_1_L-shaped.csv">Download Data</a></address>
+<h3 id="inequality-in-latin-america"> <a class="deep-link" href="#inequality-in-latin-america"># </a>Inequality in Latin America</h3>
+<p>The following chart shows that in all South American countries income inequality has fallen since the year 2000, though it is still very high.</p>
+<h6 id="inequality-in-latin-america-max-roserref"> <a class="deep-link" href="#inequality-in-latin-america-max-roserref"># </a>Inequality in Latin America – Max Roser<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='I have taken these data from the Socio-Economic Database for Latin America and the Caribbean (CEDLAS and The World Bank) downloaded on 26th February 2015. Shown is the Gini index for the distribution of household equivalized income.'>7</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://www.ourworldindata.org/roser/graphs/Gini_LatinAmerica_SEDLAC/Gini_LatinAmerica_SEDLAC.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://www.ourworldindata.org/roser/graphs/Gini_LatinAmerica_SEDLAC/Gini_LatinAmerica_SEDLAC.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://www.ourworldindata.org/roser/graphs/Gini_LatinAmerica_SEDLAC/Gini_LatinAmerica_SEDLAC.html">Full screen view</a> <a href="http://www.ourworldindata.org/roser/graphs/Gini_LatinAmerica_SEDLAC/Gini_LatinAmerica_SEDLAC.csv">Download Data</a></address>
+<h3 id="redistribution-as-a-solution"> <a class="deep-link" href="#redistribution-as-a-solution"># </a>Redistribution as a Solution</h3>
+<p>It is not always understood what the top income share actually measures. It does not measure the income that reaches the pockets of the rich; instead it captures what is paid to the rich <em>before</em> taxes are deducted. There is a considerable difference between incomes before and after taxes: <a href="http://www.heritage.org/federalbudget/top10-percent-income-earners?nomobile"> In the US, 37% of the total sum of income tax is paid by the top 1% while less than 3% is paid by the bottom 50%</a>. The redistribution means that the incomes of the poor are higher after taxes (because of transfer payments) and the incomes of the rich are reduced after taxes (due to generally progressive income tax rates).</p>
+<p>The consequence of such a progressive tax system is that the inequality of the disposable income – the income that actually reaches people&#8217;s pockets – is much lower than the pre-tax income that is measured in the top income shares from the 1st chart.</p>
+<p>This difference between market incomes and the disposable income is shown in the next chart. We see that the <strong>redistribution through taxes and transfers reduces inequality considerably</strong>.</p>
+<p>In this chart inequality is measured with the <a href="http://ourworldindata.org/data/growth-and-distribution-of-prosperity/income-inequality/#the-gini-coefficient">Gini index</a>, an inequality measure that not only looks at the top of the income distribution but captures the whole distribution.</p>
+<p>The chart shows that the market income inequality in the UK, the US, and France is fairly similar (Gini between .5 and .52), but there is a big difference in how much countries reduce inequality through redistribution. The US is a country in which inequality in both market and disposable income are steadily increasing; it stands out as a rich country that redistributes comparatively less than similarly rich countries.</p>
+<h6 id="inequality-of-disposable-income-vs-market-income-max-roserref"> <a class="deep-link" href="#inequality-of-disposable-income-vs-market-income-max-roserref"># </a>Inequality of disposable income vs market income – Max Roser<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='I have taken these data from the OECD stats website from the ‘Social Protection &amp; Well-Being’ here. Market income is the income before the redistribution through the state. (Market income = Gross wages and salaries + self-employment income + capital and property income) &nbsp; Disposable income is the income after transfers have been received and the income tax has been paid. (Disposable income = Market income + social security cash transfers + private transfers – income tax)'>8</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://www.ourworldindata.org/roser/graphs/Gini_before_and_after_taxes_OECD/Gini_before_and_after_taxes_OECD.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://www.ourworldindata.org/roser/graphs/Gini_before_and_after_taxes_OECD/Gini_before_and_after_taxes_OECD.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://www.ourworldindata.org/roser/graphs/Gini_before_and_after_taxes_OECD/Gini_before_and_after_taxes_OECD.html">Full screen view</a> <a href="http://www.ourworldindata.org/roser/graphs/Gini_before_and_after_taxes_OECD/Gini_before_and_after_taxes_OECD.csv">Download Data</a></address>
+<p>The following graph also shows the U-shaped pattern of wealth distribution in the USA. The increase in the share of total wealth gained by the top 1% is largely due to an increase in wages, salaries and pensions. Entrepreneurial income has also increased since the 1970s. The second graph demonstrates each income source as a share of the total income of the 1%. It shows that wages, salaries and pensions have come to make up a larger portion of the income gained by societies wealthiest individuals. This information combined with the first graph really reinforces the immensity of the wealth gains of the top 1% over the last few decades.</p>
+<h6 id="income-sources-of-the-top-1-as-shares-of-the-total-income-usa-max-roserref"> <a class="deep-link" href="#income-sources-of-the-top-1-as-shares-of-the-total-income-usa-max-roserref"># </a>Income sources of the top 1% as shares of the total income, USA – Max Roser<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='The data is taken from the World Top Income Database. The estimates refer to incomes excluding capital gains.'>9</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED.html" width="100%" height="484" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED.html" width="100%" height="484" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED.html">Full screen view</a> <a class="newtab" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED/nvd3_StackedArea_CSV_TopIncomeCompositionSTACKED.html" target="_blank">Open in new tab</a></address>
+<h6 id="income-sources-of-the-top-1-as-shares-of-the-income-of-the-top-1-in-the-usa-max-roserref"> <a class="deep-link" href="#income-sources-of-the-top-1-as-shares-of-the-income-of-the-top-1-in-the-usa-max-roserref"># </a>Income sources of the Top 1% as shares of the income of the top 1% in the USA – Max Roser<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='The data is taken from the World Top Income Database. The estimates refer to incomes excluding capital gains.'>10</sup></a><br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED.html" width="100%" height="484" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED.html" width="100%" height="484" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED.html">Full screen view</a> <a class="newtab" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED/nvd3_StackedArea_CSV_TopIncomeCompositionEXPANDED.html" target="_blank">Open in new tab</a></address>
+<p>Redistribution of wealth via taxes and transfers helps to reduce income inequality, as measured here through the Gini coefficient. We can see here that East Asian countries like Korea, Taiwan and Japan do some of the least wealth redistribution, but they also have some of the lowest levels of inequality before taxes. In contrast, Western countries like the, US, UK and Canada all have very high levels of inequality before taxes yet still do not partake in much redistribution, which leads to higher inequality than their counterparts in the Western world.</p>
+<h6 id="income-inequality-before-and-after-taxes-and-transfers-max-roserref"> <a class="deep-link" href="#income-inequality-before-and-after-taxes-and-transfers-max-roserref"># </a>Income inequality before and after taxes and transfers – Max Roser<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='The data that I visualized here were originally published by the Luxembourg Income Study (LIS) and is based on LIS micro data. It refers to the early to mid 2000s. I have taken this data from a chart by Janet Gornick that can for example be found here.'>11</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/graphs/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/graphs/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/graphs/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata.html">Full screen view</a> <a href="http://ourworldindata.org/roser/graphs/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata/multiBarHorizontalChart_InequalityBeforeAndAfterTax_LISdata.csv">Download Data</a> <a href="http://ourworldindata.org/wp-content/uploads/2014/06/ourworldindata_income-inequality-before-and-after-taxes-and-transfers-–-max-roser.png">Download as Image</a></address>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<p>Below we can see the correlation between increases in the income share of the top 1% and the decrease of the marginal income tax rate since 1960. The graph confirms the hypothesis that in general as tax rates decrease, the income share of the most wealthy citizens increases. The US and the UK are both extreme examples of this happening. France, Germany, Finland, Netherlands and Switzerland all contradict this trend. While the marginal income tax rate on the most wealthy has decreased, the government has implemented other means to decrease income inequality.</p>
+<h6 id="changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-1960-combining-both-central-and-local-government-income-taxes-atkinson-alvaredo-piketty-and-saez-2013ref"> <a class="deep-link" href="#changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-1960-combining-both-central-and-local-government-income-taxes-atkinson-alvaredo-piketty-and-saez-2013ref"># </a>Changes in top income shares and top marginal income tax rates since 1960 (combining both central and local government income taxes) – Atkinson, Alvaredo, Piketty and Saez (2013)<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='This is taken from A.B. Atkinson, F. Alvaredo, T. Piketty and E. Saez (2013) – “The top 1 per cent in international and historical perspective”, Journal of Economic Perspectives, vol 27, number 3. Online here. The data sources used by the authors are: Source for top income shares is the World Top Incomes Database. Source for top income tax rates is OECD and country- specific sources. The authors note: The figure depicts the change in the top 1 percent income share against the change in the top income tax rate from 1960–64 to 2005–2009 for 18 OECD countries. If the country does not have top income share data for those years, we select the first available five years after 1960 and the most recent 5 years. For the following five countries, the data start after 1960: Denmark (1980), Ireland (1975), Italy (1974), Portugal (1976), Spain (1981). For Switzerland, the data end in 1995 (they end in 2005 or after for all the other countries). Top tax rates include both the central and local government top tax rates. The correlation between those changes is very strong.'>12</sup></a><em><br />
+</em></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600.png"><img class="aligncenter size-large wp-image-5070" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-750x512.png" alt="Changes in Top Income Shares and Top Marginal Income Tax Rates since 19600" width="750" height="512" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-750x512.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-150x102.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-400x273.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600.png 1243w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-5070" src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-750x512.png" alt="Changes in Top Income Shares and Top Marginal Income Tax Rates since 19600" width="750" height="512" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-750x512.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-150x102.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600-400x273.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_changes-in-top-income-shares-and-top-marginal-income-tax-rates-since-19600.png 1243w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>It is commonly asserted that what really matters is not income inequality itself but social mobility; perhaps countries with high income inequality like the US have high social mobility and easier access to economic opportunity, and this is what is important to the fairness of an economy. However, the graph below debunks this assertion. We can see that countries with high inequality (measured by the Gini index) also tend to have the lowest social mobility, as measured by the intergenerational earnings elasticity. The US has an intergenerational earnings elasticity of about 0.5, which means that about 50% of a father&#8217;s earnings advantage or disadvantage will be passed on to the son.</p>
+<h6 id="relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-corak-2013ref"> <a class="deep-link" href="#relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-corak-2013ref"># </a>Relationship between earnings inequality and intergenerational earnings mobility across countries – Corak (2013)<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='I have taken it from Miles Corak&#8217;s personal website here. The figure was published in Corak (2013) – &#8220;Inequality from Generation to Generation:  The United States in Comparison,&#8221; in Robert Rycroft (editor), The Economics of Inequality, Poverty, and Discrimination in the 21st Century, ABC-CLIO.'>13</sup></a></p>
+<p><a title=" " href="http://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013.png"><img class="aligncenter size-large wp-image-4464" title="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-750x501.png" alt="The-Relationship-between-Earnings-Inequality-and-Intergenerational-Earnings-Mobility-across-Countries-–-Corak-(2013)" width="750" height="501" data-id="4464" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-750x501.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-400x267.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013.png 894w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-4464" title="" src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-750x501.png" alt="The-Relationship-between-Earnings-Inequality-and-Intergenerational-Earnings-Mobility-across-Countries-–-Corak-(2013)" width="750" height="501" data-id="4464" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-750x501.png 750w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013-400x267.png 400w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_the-relationship-between-earnings-inequality-and-intergenerational-earnings-mobility-across-countries-–-corak-2013.png 894w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<p>The household income distribution in the US is immensely unequal. It&#8217;s heavily skewed toward lower income with a second mode at the very richest end of the scale.</p>
+<h6 id="household-income-distribution-in-the-usa-2012-max-roserref"> <a class="deep-link" href="#household-income-distribution-in-the-usa-2012-max-roserref"># </a>Household income distribution in the USA, 2012 – Max Roser<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='This is taken from the United States Census Bureau. The data is online here.'>14</sup></a><br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012.html" width="100%" height="520" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012.html" width="100%" height="520" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012.html">Full screen view</a> <a class="newtab" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012/nvd3_BarChartFromCSV_HouseholdIncomesUSA2012.html" target="_blank">Open in new tab</a></address>
+<h4 id="the-gini-coefficient"> <a class="deep-link" href="#the-gini-coefficient"># </a>The Gini Coefficient</h4>
+<p>The Gini coefficient – or Gini index – is a measure of the income distribution of a population. It was developed by Italian statistician Corrado Gini (1884-1965) and is named after him.<br />
+The following figure illustrates the definition of the Gini index: in a population in which income is perfectly equally distributed, the distribution of incomes are represented by the &#8216;line of equality&#8217; – 10% of the population would earn 10% of the total income, 20% would earn 20% of the total income and so on. The &#8216;Lorenz curve&#8217; shows the income distribution in a population where income is not equally distributed – in the example below you see that the bottom 50% of the population earn less than 20% of the total income. The Gini coefficient captures the deviation of the Lorenz curve from the &#8216;line of equality&#8217; by comparing the areas A and B:</p>
+<p>Gini = A / (A + B)</p>
+<p>This means a Gini coefficient of zero represents a distribution where the Lorenz curve is just the &#8216;Line of Equality&#8217; and incomes are perfectly equally distributed – a value of 1 means maximal inequality (one person has all income and all others receive no income).</p>
+<h6 id="graphical-representation-of-the-gini-coefficient-max-roser"> <a class="deep-link" href="#graphical-representation-of-the-gini-coefficient-max-roser"># </a>Graphical representation of the Gini coefficient – Max Roser</h6>
+<p><a title=" " href="http://ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser.png"><img class="aligncenter size-large wp-image-4495" title="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-517x550.png" alt="Graphical-Representation-of-the-Gini-Coefficient-–-Max-Roser" width="517" height="550" data-id="4495" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-517x550.png 517w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-141x150.png 141w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-376x400.png 376w" sizes="(max-width: 517px) 100vw, 517px" /><noscript><img class="aligncenter size-large wp-image-4495" title="" src="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-517x550.png" alt="Graphical-Representation-of-the-Gini-Coefficient-–-Max-Roser" width="517" height="550" data-id="4495" srcset="//ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-517x550.png 517w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-141x150.png 141w, //ourworldindata.org/wp-content/uploads/2013/12/ourworldindata_graphical-representation-of-the-gini-coefficient-–-max-roser-376x400.png 376w" sizes="(max-width: 517px) 100vw, 517px" /></noscript></a></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h5>The <em>Chartbook of Economic Inequality</em></h5>
+<ul>
+<li><strong>Data:</strong> Data on inequality of earnings, inequality of household disposable income, top income shares, poverty and inequality of wealth.</li>
+<li><strong>Geographical coverage:</strong> 25 countries</li>
+<li><strong>Time span:</strong> More than 100 years – 1900 to today</li>
+<li><strong>Available at:</strong> <a href="http://www.chartbookofeconomicinequality.com/">www.ChartbookOfEconomicInequality.com</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="luxembourg-income-study-lis"> <a class="deep-link" href="#luxembourg-income-study-lis"># </a>Luxembourg Income Study (LIS)</h5>
+<ul>
+<li><strong>Data:</strong> LIS published a lot of data on the income structure of the countries. Some of the measures are: the Gini coefficient, Atkinson coefficients, percentile ratios, data on relative poverty for different demographic groups, and mean and median income. Data referring to pre- and post-tax incomes are available.</li>
+<li><strong>Geographical coverage:</strong> Almost 50 countries (84% of world GDP, 62% of the world population)</li>
+<li><strong>Time span:</strong> Depending on the country data are available for different time periods. The LIS data are available in several waves starting in 1980. For the time before 1980 only data for few countries are available.</li>
+<li><strong>Available at:</strong> <a href="http://www.lisdatacenter.org">www.lisdatacenter.org</a> – the website of the Luxembourg Income Study.</li>
+<li class="no-bullet"><em>The Luxembourg Income Study gathers and harmonizes data provided by the statistical offices of the countries involved.<br />
+</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="university-of-texas-inequality-project-ehii"> <a class="deep-link" href="#university-of-texas-inequality-project-ehii"># </a>University of Texas Inequality Project – EHII</h5>
+<ul>
+<li><strong>Data:</strong> Gini coefficients and Theil measure.</li>
+<li><strong>Geographical coverage:</strong> 154 countries.</li>
+<li><strong>Time span:</strong> Since 1963</li>
+<li><strong>Available at:</strong> Available at the website of the <a href="http://utip.gov.utexas.edu/data.html">University of Texas Inequality Project (UTIP)</a>.</li>
+<li class="no-bullet"><em>The Luxembourg Income Study is based on data provided by the statistical offices of the countries involved.</em></li>
+<li class="no-bullet"><em>The University of Texas Inequality Project (UTIP) released the Estimated Household Income Inequality (EHII) data set that combines information from a UNIDO data set and the Deininger-Squire data set. The data set is is described in detail in Galbraith and Kum (2005) and Galbraith (2009).</em></li>
+<li class="no-bullet"><em>The EHII record is a revision and correction of the Deininger-Squire data set. The Deininger-Squire data were regressed on the UNIDO data described above, and of this adjustment, a model was calculated to construct comparable data from the Deininger &#8211; Squire data. In the regression model, the authors considered various control variables, the share of employment in the industrial sector, the definition of income recipients and the definition of income, and were able to control for the different income definitions of the Deininger &#8211; Squire data. Using this model and UNIDO data, the authors then constructed the EHII record. The current EHII 2008 data set contains 3513 observations. The data measure the inequality of gross household income and lie in the interval from 1 to 100. The dimensions correspond Gini indices and higher values ​​represent a higher income inequality.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-income-inequality-database-wiid"> <a class="deep-link" href="#world-income-inequality-database-wiid"># </a>World Income Inequality Database (WIID)</h5>
+<ul>
+<li><strong>Data:</strong> Gini-coefficients, share of income by different deciles, mean and median incomes, and some others (among them Gini coefficients reconstructed from the panel data set of incomes by deciles).</li>
+<li><strong>Geographical coverage:</strong> 159 countries.</li>
+<li><strong>Time span:</strong> The earliest data are from 1867 but most data are available for the period after 1960.</li>
+<li><strong>Available at:</strong> Available on the website of the <a href="http://www.wider.unu.edu/research/Database/en_GB/wiid/"><em>United Nations University</em> here</a>.</li>
+<li class="no-bullet"><em>The Standardized World Income Inequality Database (SWIID) </em>is a revision of the WIID published by Frederick Solt on his website <a href="http://myweb.uiowa.edu/fsolt/swiid/swiid.html">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5>Deininger-Squire Data (World Bank) – <em>published 1996</em></h5>
+<ul>
+<li><strong>Data:</strong> Gini coefficients and some data on various income deciles.</li>
+<li><strong>Geographical coverage:</strong> Many countries. But often very few &#8211; sometimes only one &#8211; observations.</li>
+<li><strong>Time span:</strong> 1947 to 1995. Most data are available for the time approximately between 1965 and 1985.</li>
+<li><strong>Available at:</strong> The data set is available at <a href="http://econ.worldbank.org/WBSITE/EXTERNAL/EXTDEC/EXTRESEARCH/0,,contentMDK:20699070~pagePK:64214825~piPK:64214943~theSitePK:469382,00.html">the website of the World Bank here</a>.</li>
+<li class="no-bullet"><em> The data set is a pioneering work in the field. Today the original data set is, however, rarely used. This is because the data are out of date, and the measures are very heterogeneous: First, some data refer to the income side, others to the expenditure side. Second, some data refer to the income before taxes, while others relate to the after-tax income. And thirdly, some data refer to household incomes, while other refer to individual incomes. For a criticism see Atkinson and Brandolini (2001).<br />
+The EHII data set of the University of Texas Inequality Project is a revised version of this data set (see above).</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="all-the-ginis-dataset-world-bank"> <a class="deep-link" href="#all-the-ginis-dataset-world-bank"># </a>&#8216;All The Ginis Dataset&#8217; – World Bank</h5>
+<ul>
+<li><strong>Data:</strong> Gini coefficients – more than 2000 observations.</li>
+<li><strong>Geographical coverage:</strong> 164 countries</li>
+<li><strong>Time span:</strong> 1950 to today</li>
+<li><strong>Available at:</strong> Available at the website of the <a href="http://go.worldbank.org/9VCQW66LA0">World Bank here</a>.</li>
+<li class="no-bullet"><em>The author of this data set is Branko Milanovic.<br />
+</em></li>
+<li class="no-bullet"><em>Data from five sources are brought together in this data set:</em><br />
+<em> 1. Luxembourg Income Study (LIS)</em><br />
+<em> 2. Socio-Economic Database for Latin America</em><br />
+<em> 3. World Income Distribution</em><br />
+<em> 4. World Bank Europe and Central Asia</em><br />
+<em> 5. WIDER data set</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="oecd"> <a class="deep-link" href="#oecd"># </a>OECD</h5>
+<ul>
+<li><strong>Data:</strong> The data set contains a lot of data of the income structure of the countries, including median income and incomes by deciles. Some ratios between income deciles are already calculated (P9/P1, P5/P1 and P9/P5 are frequently used in the empirical literature). Also, data on the incidence of low pay (2/3 of the median income), which is often referred to as relative poverty is included.</li>
+<li><strong>Geographical coverage:</strong> OECD member states.</li>
+<li><strong>Time span:</strong> The maximum time covered ranges from 1950 to 2010. Mostly, however, the individual time series are much shorter (ca. 1975-2010).</li>
+<li><strong>Available at:</strong> Information can be found <a href="http://stats.oecd.org/Index.aspx?DatasetCode=DEC_I">here</a>. The data set is available <a href="http://www.oecd.org/dataoecd/9/59/39606921.xls">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="other-panel-data-sets"> <a class="deep-link" href="#other-panel-data-sets"># </a> Other panel data sets</h5>
+<p>In addition to these extensive data sets there are a number of more specialized panel data sets that contain only information for certain countries continents.</p>
+<p><strong>Transmonee Database (UNICEF)</strong></p>
+<p>The Transmonee record of UNICEF presents data on income distribution in <strong>transition countries</strong>.<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Country coverage: Albania, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Estonia, The former Yugoslav Republic of Macedonia, Georgia, Hungary, Kazakhstan, Kyrgyzstan, Latvia, Lithuania, Montenegro, Moldova, Poland, Romania, Russian Federation, Serbia, Slovakia, Slovenia, Tajikistan, Turkmenistan, Ukraine and Uzbekistan.'>15</sup></a></p>
+<p>The Transmonee statistics include other socio-economic indicators. They can be accessed on the website of UNICEF <a href="http://www.unicef-irc.org/databases/transmonee/.">here</a>.</p>
+<p><strong>Socio-Economic Database for Latin America and the Caribbean (CEDLAS)</strong></p>
+<p>The website of the CEDLAS contains data on poverty and income distribution in 25 Latin American and Caribbean countries. The data have micro statistical surveys in each country as a basis. Data are available <a href="http://sedlac.econo.unlp.edu.ar/eng/">here</a>.</p>
+<p><strong>National Poverty and Inequality Data by National/Sub-national Level (SEDAC)</strong></p>
+<p>This data set provides measurements of economic inequality and poverty for many countries in Africa, Asia, Europe and Latin America. The measures do not refer to incomes but to expenditures and measure the inequality of consumption. The data set contains various inequality measures: The measures of poverty by Foster, Greer and Thorbecke and inequality measures, such as the Atkinson index and Gini coefficient.</p>
+<hr class="datasources-hr" />
+<h5 id="country-specific-data-sets"> <a class="deep-link" href="#country-specific-data-sets"># </a>Country specific data sets</h5>
+<p>In addition to the above-mentioned panel data sets there are also country specific data sets – mostly based on survey data. Country-specific data are available for some industrial countries but usually do not go far back into the past.</p>
+<p><strong>USA:</strong> Panel Study of Income Dynamics (PSID). Panel published at Ann Arbor (Michigan) since the 1960s.</p>
+<p><strong>Princeton Working Group on Inequality</strong>: This data set includes measures of the income distribution for the individual U.S. states. The data set is created at the University of Princeton, based on census and survey data, ranging from 1963 to 2002.</p>
+<p><strong>Germany:</strong> Das Sozio-ökonomische Panel (SOEP) &#8220;Leben in Deutschland&#8221; published by the Deutschen Institut für Wirtschaftsforschung (DIW) in Berlin. It is a representative repeated survey of 12,000 private households in Germany carried out since 1984.</p>
+<p><strong>Great Britain:</strong> British Household Panel Survey (BHPS). Since 1991, this panel data set is being published by the University of Essex.</p>
+<p><strong>Australia:</strong> Household, Income and Labour Dynamics in Australia Survey (HILDA)</p>
+<p><strong>Italy:</strong> Survey on Household Income and Wealth (SHIW). The data is collected by the Banca d&#8217;Italia, the central bank of Italy</p>
+<p><strong>South Korea:</strong> Korea Labor and Income Panel Study (KLIPS)</p>
+<p><strong>Switzerland:</strong> Swiss Household Panel (SHP)</p>
+<p><strong>Canada:</strong> Canadian Survey of Labour and Income Dynamics (SLID)</p>
+<p><strong>European Union:</strong> European Community Household Panel. The EU data set summarizes the records of the individual panel data surveys of certain member states.</p>
+<hr class="datasources-hr" />
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Cited from Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. Online <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1468-0297.2010.02403.x/abstract?deniedAccessCustomisedMessage=&amp;userIsAuthenticated=false">here</a>.</p>
+<p>A short version that is freely available was published on VoxEU online <a href="http://www.voxeu.org/article/ancient-income-inequality">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The publication is G. S. Holmes (1977) – Gregory King and the Social Structure of Pre-Industrial England. Transactions of the Royal Historical Society, Fifth Series, Vol. 27 (1977), pp. 41-68. Online <a href="http://www.jstor.org/stable/3679187">here</a>.</p>
+<p>The estimates shown in the graph below are based on a revision of King&#8217;s estimates that was published by Lindert and Williamson. The authors are saying they were using &#8220;Holmes’ penetrating critique (1977) to guide our modification of King’s tables&#8221;. This publication is Lindert, Peter H. and Williamson, Jeffrey G (1982) – Revising England&#8217;s social tables 1688-1812. Explorations in Economic History. Volume 19, Issue 4, October 1982, Pages 385–408. Online <a href="http://www.sciencedirect.com/science/article/pii/0014498382900092">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. Online <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1468-0297.2010.02403.x/abstract?deniedAccessCustomisedMessage=&amp;userIsAuthenticated=false">here</a>.</p>
+<p>A short version was published on VoxEU online <a href="http://www.voxeu.org/article/ancient-income-inequality">here</a>.</p>
+<p>Notes related to this graph: the solid IPF line is constructed on the assumption that the annual subsistence minimum is $PPP 300. The Gini index is estimated by taking into account the estimated within-class income inequality (the Gini 2 in the original paper).</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The sources for this graph are shown in the plot and refer to:<br />
+&#8211; Peter H. Lindert (2000) – Three centuries of inequality in Britain and America. In A. B. Atkinson &amp; F. Bourguignon (Eds.), Handbook of Income Distribution. Amsterdam: Elsevier. Until 1801-3 referring to England and Wales. After 1867 referring to the UK.</p>
+<p>&#8211; Atkinson, Anthony B. (2007) – &#8216;The Distribution of Top Incomes in the United Kingdom 1908-2000&#8217; in Atkinson, A. B. and Piketty, T. (editors) Top Incomes over the Twentieth Century. A Contrast Between Continental European and English-Speaking Countries, Oxford University Press, chapter 4. I have taken this data from the World Top Income Database. The series was updated by the same author since the publication in 2007.</p>
+<p>&#8211; Milanovic, Lindert and Williamson (2008) – Ancient Inequality. In The Economic Journal. Volume 121, Issue 551, pages 255–272, March 2011. (The authors are relying on various Social Tables. Amongst others the one by King shown above.)</p>
+<p>&#8211; UK Blue Book inequality before taxes is also taken from Lindert (2000) [see above].</p>
+<p>&#8211; ONS (2011) refers to the following Office for National Statistics publication: Andrew Barnard, Steve Howell and Robert Smith (2011) – The effects of taxes and benefits on household income, 2009/10. Further analysis and methodology. Online <a href="http://www.ons.gov.uk/ons/rel/household-income/the-effects-of-taxes-and-benefits-on-household-income/2009-2010/index.html">here</a>. </p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the <a href="http://topincomes.g-mond.parisschoolofeconomics.eu/">World Top Income Database</a>.</p>
+<p>The series for Canada shows the LAD series after 1995.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the <a href="http://topincomes.g-mond.parisschoolofeconomics.eu/">World Top Income Database</a>.</p>
+<p>The series for Finland shows data reconstructed from tax data for earlier years and the IDS series following 1990. The series for Denmark refers to &#8216;married couples &amp; single adults&#8217; before 1969 and after 1969 to adults only. 1969 was a income tax free year in Denmark.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>I have taken these data from the <a href="http://sedlac.econo.unlp.edu.ar/eng/index.php">Socio-Economic Database for Latin America and the Caribbean</a> (CEDLAS and The World Bank) downloaded on 26th February 2015.</p>
+<p>Shown is the Gini index for the distribution of household equivalized income.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>I have taken these data from the OECD stats website from the ‘Social Protection &amp; Well-Being’ <a href="http://stats.oecd.org/Index.aspx?DataSetCode=IDD">here</a>.<br />
+Market income is the income before the redistribution through the state.</p>
+<p>(Market income = Gross wages and salaries + self-employment income + capital and property income)</p>
+<p>&nbsp;</p>
+<p>Disposable income is the income after transfers have been received and the income tax has been paid.</p>
+<p>(Disposable income = Market income + social security cash transfers + private transfers – income tax)</p>
+<p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the <a href="http://topincomes.g-mond.parisschoolofeconomics.eu/">World Top Income Database</a>. The estimates refer to incomes excluding capital gains.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the <a href="http://topincomes.g-mond.parisschoolofeconomics.eu/">World Top Income Database</a>. The estimates refer to incomes excluding capital gains.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data that I visualized here were originally published by the Luxembourg Income Study (LIS) and is based on LIS micro data. It refers to the early to mid 2000s.<br />
+I have taken this data from a chart by Janet Gornick that can for example be found <a href="http://www.newyorker.com/online/blogs/johncassidy/2013/11/inequality-and-growth-what-do-we-know.html">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from A.B. Atkinson, F. Alvaredo, T. Piketty and E. Saez (2013) – “The top 1 per cent in international and historical perspective”, Journal of Economic Perspectives, vol 27, number 3. Online <a href="http://elsa.berkeley.edu/~saez/alvaredo-atkinson-piketty-saezJEP13top1percent.pdf">here</a>.</p>
+<p>The data sources used by the authors are: Source for top income shares is the World Top Incomes Database. Source for top income tax rates is OECD and country- specific sources.</p>
+<p>The authors note: <em>The figure depicts the change in the top 1 percent income share against the change in the top income tax rate from 1960–64 to 2005–2009 for 18 OECD countries. If the country does not have top income share data for those years, we select the first available five years after 1960 and the most recent 5 years. For the following five countries, the data start after 1960: Denmark (1980), Ireland (1975), Italy (1974), Portugal (1976), Spain (1981). For Switzerland, the data end in 1995 (they end in 2005 or after for all the other countries). Top tax rates include both the central and local government top tax rates. The correlation between those changes is very strong.</em></p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>I have taken it from Miles Corak&#8217;s personal website <a href="http://milescorak.com/2012/01/12/here-is-the-source-for-the-great-gatsby-curve-in-the-alan-krueger-speech-at-the-center-for-american-progress/">here</a>.</p>
+<p>The figure was published in Corak (2013) – &#8220;Inequality from Generation to Generation:  The United States in Comparison,&#8221; in Robert Rycroft (editor), The Economics of Inequality, Poverty, and Discrimination in the 21st Century, ABC-CLIO.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from the United States Census Bureau. The data is online <a href="http://www.census.gov/hhes/www/cpstables/032013/hhinc/toc.htm">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Country coverage: Albania, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Estonia, The former Yugoslav Republic of Macedonia, Georgia, Hungary, Kazakhstan, Kyrgyzstan, Latvia, Lithuania, Montenegro, Moldova, Poland, Romania, Russian Federation, Serbia, Slovakia, Slovenia, Tajikistan, Turkmenistan, Ukraine and Uzbekistan.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473851359'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=3178&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 2/102 queries in 0.073 seconds using disk
+Object Caching 3990/4388 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 11:11:05 by W3 Total Cache -->

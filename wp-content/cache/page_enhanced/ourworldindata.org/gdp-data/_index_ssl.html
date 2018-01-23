@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>GDP Data - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; GDP Data Comments Feed" href="//ourworldindata.org/gdp-data/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/gdp-data/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=3127' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fgdp-data%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fgdp-data%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="GDP Data"/>
+<meta itemprop="name" content="GDP Data"/>
+<meta name="twitter:title" content="GDP Data"/>
+<meta property="og:url" content="https://ourworldindata.org/gdp-data/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/gdp-data/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="The Gross Domestic Product (GDP) of an economy is a measure of total production. More precisely, it is the monetary value of all goods and services produced within a country or region in a specific time period. While the definition of GDP is straightforward, accurately measuring it is a surprisingly"/>
+<meta itemprop="description" content="The Gross Domestic Product (GDP) of an economy is a measure of total production. More precisely, it is the monetary value of all goods and services produced within a country or region in a specific time period. While the definition of GDP is straightforward, accurately measuring it is a surprisingly"/>
+<meta name="twitter:description" content="The Gross Domestic Product (GDP) of an economy is a measure of total production. More precisely, it is the monetary value of all goods and services produced within a country or region in a specific time period. While the definition of GDP is straightforward, accurately measuring it is a surprisingly"/>
+<meta property="og:image" content="http://ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png"/>
+<meta itemprop="image" content="http://ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png"/>
+<meta name="twitter:image" content="http://ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473851359">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-3127 page-child parent-pageid-194 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-3127" class="post-3127 page type-page status-publish hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">GDP Data</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Mohamed Nagdy and Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Mohamed Nagdy and Max Roser (2016) – &lsquo;GDP Data&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/gdp-data/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The Gross Domestic Product (GDP) of an economy is a measure of total production. More precisely, it is the monetary value of all goods and services produced within a country or region in a specific time period. While the definition of GDP is straightforward, accurately measuring it is a surprisingly difficult undertaking. Moreover, any attempts to make comparisons over time and across borders are complicated by price, quality and currency differences. This article covers the basics of GDP data and highlights many of the pitfalls associated with intertemporal and spatial comparisons.</p>
+<h2 id="data-quality-definitions"> <a class="deep-link" href="#data-quality-definitions"># </a>Data Quality &amp; Definitions</h2>
+<p>There are many reasons why we might be interested in the size of an economy, its performance over time, or its relative performance compared to other countries. GDP is the most common way of measuring the size of an economy.</p>
+<p>GDP is published in a country&#8217;s National Accounts. These statistics comply to protocols laid down in the 1993 version of the Systems of National Accounts, SNA93.</p>
+<p>The SNA93 established the &#8216;production boundary&#8217;, a crucial definition of what is and is not included in GDP figures:</p>
+<ul>
+<li>included are all goods and services that are exchanged,</li>
+<li>included are all goods that are not exchanged (for example food produced for home consumption)</li>
+<li>but excluded are<em> services</em> that are not exchanged. Among these excluded services are food preparation, education of children at home, and minor home repairs.
+<ul>
+<li>An important exception to the services that are included is the housing services consumed by owner-occupiers. This service is imputed (imputed rent) and included in the GDP figure.</li>
+</ul>
+</li>
+</ul>
+<h3 id="gdp-per-capita-and-average-incomes"> <a class="deep-link" href="#gdp-per-capita-and-average-incomes"># </a>GDP per capita and average incomes</h3>
+<p>In principle there are three equivalent ways to calculate GDP:</p>
+<ol>
+<li><strong>Production</strong>: the value of final outputs produced in an economy less the value of all the inputs used in their production</li>
+<li><strong>Expenditure</strong>: the expenditure on final goods and services produced in an economy by households, corporations and governments</li>
+<li><strong>Income</strong>: the income earned by individuals and businesses from the production of goods and services in the economy</li>
+</ol>
+<p>It theory these three measures should be equal; they constitute an accounting identity. A company&#8217;s revenue is the income it generates from selling the goods and services it produces to consumers; yet that same revenue is also the expenditure of consumers on those goods and services. Paul Krugman makes the point that &#8220;our income mostly comes from selling things to each other. Your spending is my income, and my spending is your income.&#8221;<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='Paul Krugman. The Austerity Agenda. The New York Times (2012).'>1</sup></a> This symmetry allows us to use GDP to approximate average incomes by dividing GDP by the total population. In reality, average incomes and GDP per capita will not be equal.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='There are many reasons why this is the case. One reason is due to the biases coming from the way GDP is defined. GDP does not include income earned abroad by the citizens of a country but includes domestic production by foreign companies (which may be used to pay shareholders abroad). Another issue is that the total population of a country will include both workers and those outside the labour force.'>2</sup></a></p>
+<h6>Different measures of average income in the US 1914-2004 &#8211; Visualizing Economics<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Image taken from visualizingeconomics.com.'>3</sup></a></h6>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics.png"><img class="aligncenter size-large wp-image-3129" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png" alt="United States Income by different measures (1913-2005) – Visualizing Economics" width="750" height="543" srcset="//ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png 1024w, //ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-645x466.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics.png 1250w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-3129" src="//ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png" alt="United States Income by different measures (1913-2005) – Visualizing Economics" width="750" height="543" srcset="//ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-1024x741.png 1024w, //ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics-645x466.png 645w, //ourworldindata.org/wp-content/uploads/2013/11/united-states-income-by-different-measures-1913-2005-visualizing-economics.png 1250w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h3 id="real-gdp-adjusting-for-inflation-in-intertemporal-comparisons"> <a class="deep-link" href="#real-gdp-adjusting-for-inflation-in-intertemporal-comparisons"># </a>Real GDP: adjusting for inflation in intertemporal comparisons</h3>
+<p>Nominal GDP is a measure of the value of output produced in a country or region over a specified period (usually one year). The value of output is composed of two factors: the volume produced and the price,</p>
+<p class="ql-center-displayed-equation" style="line-height: 16px;"><span class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-0f97ee51997f91fb3def7b9dd5a5597b_l3.png" height="16" width="117" class="ql-img-displayed-equation quicklatex-auto-format" alt=" &#92;&#091;&#71;&#68;&#80;&#61;&#80;&#32;&#92;&#116;&#105;&#109;&#101;&#115;&#32;&#86;&#44; &#92;&#093;" title="Rendered by QuickLaTeX.com"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-0f97ee51997f91fb3def7b9dd5a5597b_l3.png" height="16" width="117" class="ql-img-displayed-equation quicklatex-auto-format" alt=" &#92;&#091;&#71;&#68;&#80;&#61;&#80;&#32;&#92;&#116;&#105;&#109;&#101;&#115;&#32;&#86;&#44; &#92;&#093;" title="Rendered by QuickLaTeX.com"/></noscript></p>
+<p>where <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-9916fdad998330de25d5da31eefc2126_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#80;" title="Rendered by QuickLaTeX.com" height="12" width="14" style="vertical-align: 0px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-9916fdad998330de25d5da31eefc2126_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#80;" title="Rendered by QuickLaTeX.com" height="12" width="14" style="vertical-align: 0px;"/></noscript> represents the price of output and <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-29f854c8c17e600efbed19867aea7565_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#86;" title="Rendered by QuickLaTeX.com" height="12" width="14" style="vertical-align: 0px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-29f854c8c17e600efbed19867aea7565_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#86;" title="Rendered by QuickLaTeX.com" height="12" width="14" style="vertical-align: 0px;"/></noscript> represents the volume of output. Therefore increases to GDP are either the result of more output, higher prices or a combination of the two. When looking at the performance of a single economy over time it is important that we control for price effects since they can mask changes to the value of output. In these cases we adjust for the price changes and look at real GDP. The real GDP is constructed by &#8216;deflating&#8217; the nominal GDP by a price index that tracks changes to prices in the economy relative to a chosen base year. This transformation attempts to isolate volume changes by eliminating price effects.</p>
+<p>However, it is not just prices that change over time. The very products and services that we produce and buy change. Technological progress has meant that the goods and services available today are invariably superior to those available several hundred years ago, with almost no example to the contrary. The introduction of new goods and services creates serious problems for intertemporal comparisons of wealth that are most relevant today; it is less of a problem for the long pre-modern world when almost all economic production consisted of food, shelter and clothing. To emphasise this point consider the following example: In 1836 the richest man in the world was probably Nathan Rothschild. Rothschild could afford whatever he wanted &#8211; every good and service available in the world of 1836. Yet in that same year, the 56 year old died of an infection that is curable today by cheap antibiotics. <a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Landes, David S. The wealth and poverty of nations: Why some are so rich and some so poor. WW Norton &amp; Company, 1999.'>4</sup></a></p>
+<h3 id="quality-changes"> <a class="deep-link" href="#quality-changes"># </a>Quality changes</h3>
+<p>The Stiglitz, Sen, Fitoussi report explains &#8220;Quality change can be very rapid in areas like information and communication technologies. There are also products whose quality is complex, multi-dimensional and hard to measure, such as medical services, educational services, research activities and financial services. Difficulties also arise in 1. Evidence and references in support of the claims presented in this Summary are presented in a companion technical report. 22 SHORT NARRATIVE ON THE CONTENT OF THE REPORT collecting data in an era when an increasing fraction of sales take place over the internet and at sales as well as discount stores. As a consequence, capturing quality change correctly is a tremendous challenge for statisticians, yet this is vital to measuring real income and real consumption, some of the key determinants of people’s well-being. Under-estimating quality improvements is equivalent to over-estimating the rate of inflation, and therefore to underestimating real income. For instance, in the mid-1990s, a report reviewing the measurement of inflation in the United States (Boskin Commission Report) estimated that insufficient accounting for quality improvements in goods and services had led to an annual overestimation of inflation by 0.6%. This led to a series of changes to the US consumer price index.&#8221;<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='Stiglitz, Joseph, Sen, Amartya, &amp; Fitoussi, Jean-Paul (2009) – Report by the Commission on the Measurement of Economic Performance and Social Progress.'>5</sup></a></p>
+<p>The two most common price indices used to deflate incomes and nominal GDP are:</p>
+<ol>
+<li><strong>Consumer Price Index (CPI)</strong>: The basket is used measure the price changes of the goods and services consumed by the typical household. The typical household consumption basket will vary from country-to-country due to different preferences and income levels as well as over time as new technologies emerge and preferences change. CPI indices are produced by national statistical agencies, with one major exception being the European Union’s Harmonised CPI (HCPI). The HCPI uses consistent definitions for all Eurozone members to aid comparability.The CPI used to adjust household incomes tracks changes to the price of a basket of goods that the typical household purchases. It is measuring the price changes of <em>consumption</em>.</li>
+<li><strong>GDP deflator</strong>: The GDP deflator also called National Accounts deflator measures the purchasing power relative to the prices of all domestically produced final goods and services in an economy. It is measuring the price changes of domestic <em>production</em>.</li>
+</ol>
+<h4 id="differences-between-cpi-and-gdp-deflator"> <a class="deep-link" href="#differences-between-cpi-and-gdp-deflator"># </a>Differences between CPI and GDP deflator</h4>
+<p>The CPI index measures price changes of consumption whereas the GDP deflator measures price changes of domestic production.</p>
+<p>Consequently there are several important differences of the two price indices:<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='François Lequiller, Derek Blades (2006) – Understanding National Accounts, second edition, published by the Organisation for Economic Co-operation and Development (OECD).'>6</sup></a></p>
+<ul>
+<li>Unlike the CPI, the GDP deflator does not adjust for changes of goods that are imported from other countries and the price changes of import prices are not directly taken into account.</li>
+<li>Secondly, the GDP deflator covers capital goods, goods that are not bought by consumers.</li>
+<li>The CPI is also available monthly for most countries, while the GDP deflator is mostly available only quarterly.</li>
+</ul>
+<h4 id="composition-of-the-bundle-of-goods-and-services-measured-in-the-cpi"> <a class="deep-link" href="#composition-of-the-bundle-of-goods-and-services-measured-in-the-cpi"># </a>Composition of the bundle of goods and services measured in the CPI</h4>
+<p>The following chart displays the composition of the German CPI basket of goods. The basket used is chosen to reflect the expenditure of the typical household, and changes to the CPI index over time reflect changes to the prices the typical consumer will face. The typical household consumption basket will vary from country-to-country due to preferences as well as over time as new technologies emerge and preferences change.<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='In 2012 the UK statistical agency changed the composition of this basket of goods to better reflect the typical consumption basket of households. Tablet computers were added demonstrating the effect of new technologies, while boiled sweets were removed reflecting changing preferences.  Gooding, Philip. &#8220;Consumer Prices Index and Retail Prices Index: the 2011 basket of goods and services.&#8221; Economic and Labour Market Review 5, no. 4 (2011): 96-107.'>7</sup></a></p>
+<h6 id="composition-of-the-german-cpi-basket-of-goods"> <a class="deep-link" href="#composition-of-the-german-cpi-basket-of-goods"># </a>Composition of the German CPI basket of goods</h6>
+<p><center><object data="https://www.destatis.de/Voronoi/PriceKaleidoscope.svg" width="85%" height="auto"></object></center></p>
+<h3 id="international-gdp-comparisons-market-vs-ppp-exchange-rates"> <a class="deep-link" href="#international-gdp-comparisons-market-vs-ppp-exchange-rates"># </a>International GDP Comparisons: market vs. PPP exchange rates</h3>
+<p>In order to highlight the difficultly of making international comparisons between countries, consider the average income of somebody living in India compared with the US.</p>
+<p>In 2011 the average Indian earned 72,000 rupees, while the average American earned $50,000. Since the average incomes are stated in different currencies, comparing the numerical value is meaningless and does not help us determine who is richer and by how much. Converting the rupee amount into US dollars using market exchange rates gives us an average income of $1,500 in India. This number is over 33 times smaller than the income of the average American!</p>
+<p>However, it is obvious that the cost of living in the US is much higher than in India, which implies that the comparison of incomes made at market exchange rates is also not a fair comparison of how rich or poor the people really are in comparison.<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='The fact that the income ratio between a high and low income country is systematically exaggerated by GDP conversion at the market exchange rates is called the Penn Effect.'>8</sup></a> A solution is to convert the amounts using the <em>Purchasing Power Parity</em> (PPP) exchange rate. This conversion takes into account differences in the price levels of both countries. Making the PPP-adjustment reveals that the average income of someone living in India is $4,800 (international dollars), only 10 times smaller than in the US. The precise nature of PPP adjustments is explained in the section below.</p>
+<p>This does not mean that comparisons of GDP evaluated at market exchange rates are uninformative. In fact, when comparing financial flows, PPP-adjustments are meaningless and GDP evaluated at the market exchange rate is the most appropriate measure. When comparing development and living standards, the converse is true since we need to eliminate price effects.</p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita.png"><img class="aligncenter size-large wp-image-6139" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-750x524.png" alt="PPP-adjusted GDP per capita in India and the US" width="750" height="524" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-750x524.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-400x279.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-6139" src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-750x524.png" alt="PPP-adjusted GDP per capita in India and the US" width="750" height="524" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-750x524.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_gdp-ppp-per-capita-400x279.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h3 id="ppp-adjusted-gdp-spatial-comparisons"> <a class="deep-link" href="#ppp-adjusted-gdp-spatial-comparisons"># </a>PPP-adjusted GDP: spatial comparisons</h3>
+<p>GDP comparisons made using market exchange rates fail to reflect differences in the purchasing power of different currencies. In general, prices are higher in developed economies,<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='This fact is explained by the Balassa–Samuelson effect.'>9</sup></a> and so exchange rate adjusted GDP measures will underestimate the size of low income economies.</p>
+<p>In a simplified world, the prices of traded goods are determined by global demand and supply forces, while the prices of non-traded goods are determined by local demand and supply forces. Since wages and salaries are lower in developing countries, the prices of non-traded goods also tend to be lower. This feature is missed by exchange rate adjusted GDP calculations as no distinction is made between traded and non-traded goods. In a world where all goods are traded, exchange rate adjusted GDP would be a more informative way to make international comparisons. Nevertheless, another complicating factor is that exchange rates are highly volatile and determined by currency speculation, interest rates and international capital flows.</p>
+<p>Purchasing Power Parity (PPP) adjustments to GDP are an attempt to isolate differences in the volume of output of two economies. That is, they eliminate disparities in the price levels of different economies. A PPP exchange rate can be thought of as the cost ratio of a comparable (but not identical) basket of goods in two countries. Hence, the methodology is analogous to that used in computing CPI inflation to calculate real GDP, except that here the comparisons are made between countries rather than over time. More precisely, PPP-adjusted GDP is a spatial measure and not a temporal one like real GDP: a base country is used as opposed to a base year. The US dollar is the most common unit of currency used to make international comparisons and, for clarity, PPP-adjusted quantities are quoted in international or Geary-Khamis dollars.<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='Roy C. Geary and Salem Hanna Khamis were economic statisticians that proposed this approach for comparisons.'>10</sup></a></p>
+<p>We can decompose the GDP ratio of two economies into
+<p class="ql-center-displayed-equation" style="line-height: 39px;"><span class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-0690be86bb3dd0a340099b3042f4e3c1_l3.png" height="39" width="207" class="ql-img-displayed-equation quicklatex-auto-format" alt=" &#92;&#091; &#92;&#102;&#114;&#97;&#99;&#123;&#71;&#68;&#80;&#95;&#123;&#65;&#125;&#125;&#123;&#71;&#68;&#80;&#95;&#123;&#66;&#125;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#80;&#95;&#123;&#65;&#125;&#125;&#123;&#80;&#95;&#123;&#66;&#125;&#125;&#92;&#116;&#105;&#109;&#101;&#115;&#92;&#102;&#114;&#97;&#99;&#123;&#67;&#95;&#123;&#65;&#125;&#125;&#123;&#67;&#95;&#123;&#66;&#125;&#125;&#92;&#116;&#105;&#109;&#101;&#115;&#92;&#102;&#114;&#97;&#99;&#123;&#86;&#95;&#123;&#65;&#125;&#125;&#123;&#86;&#95;&#123;&#66;&#125;&#125;&#44; &#92;&#093;" title="Rendered by QuickLaTeX.com"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-0690be86bb3dd0a340099b3042f4e3c1_l3.png" height="39" width="207" class="ql-img-displayed-equation quicklatex-auto-format" alt=" &#92;&#091; &#92;&#102;&#114;&#97;&#99;&#123;&#71;&#68;&#80;&#95;&#123;&#65;&#125;&#125;&#123;&#71;&#68;&#80;&#95;&#123;&#66;&#125;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#80;&#95;&#123;&#65;&#125;&#125;&#123;&#80;&#95;&#123;&#66;&#125;&#125;&#92;&#116;&#105;&#109;&#101;&#115;&#92;&#102;&#114;&#97;&#99;&#123;&#67;&#95;&#123;&#65;&#125;&#125;&#123;&#67;&#95;&#123;&#66;&#125;&#125;&#92;&#116;&#105;&#109;&#101;&#115;&#92;&#102;&#114;&#97;&#99;&#123;&#86;&#95;&#123;&#65;&#125;&#125;&#123;&#86;&#95;&#123;&#66;&#125;&#125;&#44; &#92;&#093;" title="Rendered by QuickLaTeX.com"/></noscript></p>
+<p>where <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-02dceaae23638c1988a55f9dd240ba9c_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#80;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="23" style="vertical-align: -3px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-02dceaae23638c1988a55f9dd240ba9c_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#80;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="23" style="vertical-align: -3px;"/></noscript> is the price level in country <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/></noscript></noscript></noscript>, <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-d9c0a9c678d62b5c202a4dee3a1b6cba_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#67;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="25" style="vertical-align: -3px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-d9c0a9c678d62b5c202a4dee3a1b6cba_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#67;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="25" style="vertical-align: -3px;"/></noscript> is the currency level in country <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/></noscript></noscript></noscript>, and <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-3fc679f9f92e527e5ebc726bbb68c5f9_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#86;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="22" style="vertical-align: -3px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-3fc679f9f92e527e5ebc726bbb68c5f9_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#86;&#95;&#123;&#88;&#125;" title="Rendered by QuickLaTeX.com" height="15" width="22" style="vertical-align: -3px;"/></noscript> is the volume of output (real output) in country <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/><noscript><img src="//ourworldindata.org/wp-content/ql-cache/quicklatex.com-2453362c766504f3c3806fed710a5337_l3.png" class="ql-img-inline-formula quicklatex-auto-format" alt="&#88;" title="Rendered by QuickLaTeX.com" height="12" width="16" style="vertical-align: 0px;"/></noscript></noscript></noscript>. When making international comparisons we are interested in the ratio of output volume. It is possible to remove the currency differences by using the exchange rate to convert the GDP into a common currency, but this would leave price level differences. The PPP exchange rate adjusts for both the currency and the price level ratio.</p>
+<h4 id="the-creation-of-ppps-by-the-international-comparisons-programme-icp"> <a class="deep-link" href="#the-creation-of-ppps-by-the-international-comparisons-programme-icp"># </a>The creation of PPPs by the International Comparisons Programme (ICP)</h4>
+<p>The PPPs that are used in international comparisons today are created by the International Comparisons Programme (ICP) conducted by the World Bank. The latest round of the ICP was completed in 2014 and has estimated PPPs for 2011. The study covers 199 countries and is the most extensive study of PPPs ever conducted.</p>
+<p>Since the research is highly intensive and requires cooperation with many different countries and statistical agencies, the existing PPP data is sparse (8 benchmark years since the first ICP study in 1970). What is more, the methodology used and the group of participating countries has differed between each round of the ICP. There are six years separating the most recent ICP estimates (2011 and 2005). Her is a <a href="http://siteresources.worldbank.org/ICPINT/Resources/270056-1183395201801/Summary-of-Results-and-Findings-of-the-2011-International-Comparison-Program.pdf" target="_blank">detailed explanation of the methodology and findings of the 2011 ICP</a>.</p>
+<h4 id="computing-ppp-adjusted-gdp-for-years-for-which-no-icp-data-is-available"> <a class="deep-link" href="#computing-ppp-adjusted-gdp-for-years-for-which-no-icp-data-is-available"># </a>Computing PPP-adjusted GDP for years for which no ICP data is available</h4>
+<p>Computing PPP-adjusted GDP for years where ICP data is available is straightforward, however, in years where there is no data, there is no consensus regarding the best way to produce estimates.</p>
+<p>Since PPP is a spatial measure, each ICP estimate is indexed to a benchmark year. Producing PPP-adjusted GDP estimates for non-benchmark years requires either extrapolation of PPP-estimates from a single round of ICP data, interpolation between different rounds or a combination of the two. Extrapolation takes the PPP-adjusted GDP in a single year and assumes that it evolves according to real GDP growth rates or the inflation ratio of the country of interest with the US. Interpolation attempts to &#8220;fill-in the gaps&#8221; using observed ICP rounds in conjunction with inflation or growth data according to some statistical model. The two figures presented below are designed to aid understanding of these two methods.</p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation.png"><img class="aligncenter size-large wp-image-6140" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-750x513.png" alt="PPP-adjusted GDP extrapolation" width="750" height="513" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-750x513.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-150x103.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-400x273.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-6140" src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-750x513.png" alt="PPP-adjusted GDP extrapolation" width="750" height="513" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-750x513.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-150x103.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-extrapolation-400x273.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation.png"><img class="aligncenter size-large wp-image-6141" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-750x513.png" alt="PPP-adjusted GDP interpolation" width="750" height="513" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-750x513.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-150x103.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-400x273.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-6141" src="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-750x513.png" alt="PPP-adjusted GDP interpolation" width="750" height="513" srcset="//ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-750x513.png 750w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-150x103.png 150w, //ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_ppp-adjusted-gdp-interpolation-400x273.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>Understanding the methodology and purpose of each dataset is important when conducting data analysis. The four most important data sets for PPP-adjusted GDP data have the following methodology:</p>
+<ul>
+<li><strong>World Bank data</strong>: Extrapolates from the most recent ICP round using national accounts deflators. The data and a brief description of the methodology can be found at <a href="http://data.worldbank.org/indicator/PA.NUS.PRVT.PP" target="_blank">http://data.worldbank.org/indicator/PA.NUS.PRVT.PP</a>.
+<ul>
+<li>Since the data is extrapolated from the 2011 ICP, data is only presented for the years 1990-2014 as any further extrapolation is likely to give unreliable estimates. This dataset is most useful when considering the very recent past as the 2011 ICP round uses the most sophisticated methodology to date. It also has the advantage of being extrapolated forward in time to 2014.</li>
+<li>Notes from the documentation: &#8220;For most economies PPP figures are extrapolated from the 2011 International Comparison Program (ICP) benchmark estimates or imputed using a statistical model based on the 2011 ICP.&#8221;</li>
+</ul>
+</li>
+<li><strong>Penn World Tables</strong>: Interpolates and extrapolates using national accounts deflators. The methodology used can be found in the documentation available at <a href="http://www.rug.nl/research/ggdc/data/pwt/pwt-8.1" target="_blank">http://www.rug.nl/research/ggdc/data/pwt/pwt-8.1</a>.
+<ul>
+<li>This dataset is most commonly used for statistical analysis by economists and covers the years 1950-2011. It is arguably the most reliable, long-run data available on PPP-adjusted GDP.</li>
+</ul>
+</li>
+<li><strong>Gapminder</strong>: Interpolates and extrapolates using real growth rates. The <a href="http://www.gapminder.org/documentation/documentation/gapdoc001_v9.pdf" target="_blank">methodology used can be found in the documentation</a>.
+<ul>
+<li>Gapminder aims to give the widest coverage possible at the expense of robust estimates. Much of the historic data has been estimated from trends and other For this reason, we present the data here for the purposes of graphical presentation and not as fact.</li>
+<li>Notes from the documentation: &#8220;The main purpose of the data is to produce graphical presentations that display the magnitude of income disparities in the world over time&#8230; Hence we discourage the use of this data set for statistical analysis&#8230; The observations for the period before 1950 are, in the majority of cases, based on rough estimates within a range of likely values. In many cases we have no information, what-so-ever, on the relative ranking of countries.&#8221;</li>
+</ul>
+</li>
+<li><strong>Maddison Project</strong>: Data is drawn from various sources. A complete list of sources can be found in the documentation available at <a href="http://www.ggdc.net/maddison/maddison-project/home.htm" target="_blank">http://www.ggdc.net/maddison/maddison-project/home.htm</a>.
+<ul>
+<li>This dataset has many different sources and is curated by the project team. Although the long-run data is much less reliable than more recent estimates, the more rigorous nature of the estimates allows for better spatial comparisons.</li>
+<li>Notes from the documentation: &#8220;The Maddison Project database places the emphasis more on the international comparability of the estimates than on their consistency over time.&#8221;</li>
+</ul>
+</li>
+</ul>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="gdp-per-capita-over-time"> <a class="deep-link" href="#gdp-per-capita-over-time"># </a>GDP per capita over time</h3>
+<h6 id="world-maps-of-gdp-per-capita-1-2008-max-roserref"> <a class="deep-link" href="#world-maps-of-gdp-per-capita-1-2008-max-roserref"># </a>World maps of GDP per capita, 1-2008 – Max Roser<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='This data is taken from the Angus Maddison Historical Statistics at the Groningen Growth &amp; Development Centre. Countries are shown with their current borders. For modern Russia the data for the ‘Total Former USSR’ is shown for the time before 1990. &#8216;Indonesia&#8217; is including Timor until 1999.'>11</sup></a></p>
+<div class="narrow_iframe">
+<iframe data-src="https://ourworldindata.org/wp-content/uploads/datamaps/gdpPerCapitaSince1_maddison/gdpPerCapitaSince1_maddison.html" width="100%" height="400" scrolling="no"></iframe><noscript><iframe src="https://ourworldindata.org/wp-content/uploads/datamaps/gdpPerCapitaSince1_maddison/gdpPerCapitaSince1_maddison.html" width="100%" height="400" scrolling="no"></iframe></noscript><br />
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/datamaps/gdpPerCapitaSince1_maddison/gdpPerCapitaSince1_maddison.html">Full screen view</a> <a href="http://ourworldindata.org/wp-content/uploads/datamaps/gdpPerCapitaSince1_maddison/gdpPerCapitaSince1_maddison.html" target="_blank">Open in new tab</a> <a href="http://ourworldindata.org/wp-content/uploads/datamaps/gdpPerCapitaSince1_maddison/gdpPerCapitaSince1_maddison.csv">Download Data</a></address>
+</div>
+<p><iframe data-src="https://ourworldindata.org/grapher/gdp-per-capita-worldbank" style="width:100%;height:660px; border: 0px none;"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/gdp-per-capita-worldbank" style="width:100%;height:660px; border: 0px none;"></iframe></noscript></p>
+<p><iframe data-src="https://ourworldindata.org/grapher/real-gdp-per-capita-PennWT?tab=map" style="width:100%;height:660px; border: 0px none;"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/real-gdp-per-capita-PennWT?tab=map" style="width:100%;height:660px; border: 0px none;"></iframe></noscript></p>
+<p><iframe data-src="https://ourworldindata.org/grapher/gdp-per-capita-TED" style="width:100%;height:660px; border: 0px none;"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/gdp-per-capita-TED" style="width:100%;height:660px; border: 0px none;"></iframe></noscript></p>
+<h3 id="productivity-output-over-time"> <a class="deep-link" href="#productivity-output-over-time"># </a>Productivity – output over time</h3>
+<p><iframe data-src="https://ourworldindata.org/grapher/labor-productivity-per-hour-TED" style="width:100%;height:660px; border: 0px none;"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/labor-productivity-per-hour-TED" style="width:100%;height:660px; border: 0px none;"></iframe></noscript></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="long-run-datasets"> <a class="deep-link" href="#long-run-datasets"># </a>Long-run datasets</h3>
+<h4 id="big-datasets"> <a class="deep-link" href="#big-datasets"># </a>Big datasets</h4>
+<h5 id="angus-maddison-historical-statistics"> <a class="deep-link" href="#angus-maddison-historical-statistics"># </a>Angus Maddison Historical Statistics</h5>
+<ul>
+<li><strong>Data: </strong>GDP per capita and total GDP (+ population data)<strong><br />
+</strong></li>
+<li><strong>Geographical coverage:</strong> Global – by countries &amp; world regions</li>
+<li><strong>Time span:</strong> 1-2008 CE (5 observations before 1820 and then annual if possible)</li>
+<li><strong>Available at: </strong>Online at the Groningen Growth &amp; Development Centre <a href="http://www.ggdc.net/MADDISON/oriindex.htm">here</a><strong><br />
+</strong></li>
+<li class="no-bullet"><em> Founded by the economic historian Angus Maddison and later updated. An updated version – available through the CLIO Infra project – is described below. Another correction of the Maddison data is the &#8216;Barro-Ursua Macroeconomic Data&#8217;, which is available at Robert Barro&#8217;s website <a href="http://rbarro.com/data-sets/">here</a>.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="maddison-project-available-through-the-clio-infra-project"> <a class="deep-link" href="#maddison-project-available-through-the-clio-infra-project"># </a>Maddison Project – available through the CLIO Infra Project</h5>
+<ul>
+<li><strong>Data: </strong>GDP per capita<strong><br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Global coverage – by country <strong><br />
+</strong></li>
+<li><strong>Time span: </strong>Between 1500 and 2010<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>Online <a href="http://www.clio-infra.eu/datasets/indicators">here</a><strong><br />
+</strong></li>
+<li class="no-bullet"><em> This database builds on the work of Angus Maddison. The database  and the accompanying paper<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Jutta Bolt and Jan Luiten van Zanden (2013) – The First Update of the Maddison Project – Re-Estimating Growth Before 1820.'>12</sup></a> are a product of The Maddison Project and are partly a revision of the earlier work. The authors are Jutta Bolt and Jan Luiten van Zanden. The many sources are very well documented at the website of the CLIO project.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="the-global-price-and-income-history-group"> <a class="deep-link" href="#the-global-price-and-income-history-group"># </a>The Global Price and Income History Group</h5>
+<ul>
+<li><strong>Data:</strong> <em>Nominal</em> GDP</li>
+<li><strong>Geographical coverage:</strong> Many world regions (including Africa, Asia and Oceania)</li>
+<li><strong>Time span:</strong> Varies by world region – long for some (e.g. Italy since 1310) but mostly since the 19th century</li>
+<li><strong>Available at:</strong> Online <a href="http://gpih.ucdavis.edu">here</a></li>
+<li><em>Well documented, readily available in Excel spreadsheets. Includes many other datasets</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h4 id="small-datasets"> <a class="deep-link" href="#small-datasets"># </a>Small Datasets</h4>
+<p><strong>Wikipedia&#8217;s</strong> <a href="http://en.wikipedia.org/wiki/List_of_regions_by_past_GDP_(PPP)_per_capita">&#8216;list of regions by past GDP (PPP) per capita&#8217;</a> includes Maddison&#8217;s estimates for countries and world regions between 1CE and 2003CE. It also includes Bairoch&#8217;s estimates for Europe between 1830–1938. And some estimates for the prosperity of the Roman and Byzantine empires.</p>
+<h5 id="stephen-broadberrys-data"> <a class="deep-link" href="#stephen-broadberrys-data"># </a>Stephen Broadberry&#8217;s Data</h5>
+<ul>
+<li><strong>Data: GDP per capita<br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Britain, Italy, Spain and Holland 1270-1870 and Europe for 1870-2000<strong><br />
+</strong></li>
+<li><strong>Time span: </strong>1270-1870 and 1870-2000<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>The early data is published in research papers by Broadberry and others. An overview is given in Broadberry (2013)<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='This is taken from Broadberry (2013) – Accounting for the great divergence.'>13</sup></a> The data for several European countries for the time period 1870–2000 is available online at Broadberry&#8217;s website <a href="http://www.lse.ac.uk/economicHistory/whosWho/profiles/sbroadberry.aspx">here</a>.<strong><br />
+</strong></li>
+<li class="no-bullet"><em> The quality of this data is high. The data was recently published in detailed research papers by various authors.<br />
+</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="post-1800"> <a class="deep-link" href="#post-1800"># </a>Post-1800</h3>
+<h5 id="national-accounts-data-in-the-international-historical-statistics"> <a class="deep-link" href="#national-accounts-data-in-the-international-historical-statistics"># </a>National Accounts data in the &#8216;International Historical Statistics&#8217;</h5>
+<ul>
+<li><strong>Data: </strong>GDP per capita and some other National Accounts data<strong><br />
+</strong></li>
+<li><strong>Geographical coverage: </strong>Global – by country</li>
+<li><strong>Time span: </strong>Varies by country. Often since the early 19th century (US since 1789)<strong><br />
+</strong></li>
+<li><strong>Available at: </strong>The statistics are published in three volumes covering more than 5000 pages.<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='The printed version is published in 3 volumes: Africa, Asia, Oceania – The Americas – Europe. The volume set is described at the publisher&#8217;s website.'>14</sup></a> At some universities you can access the online version of the books where data tables can be downloaded as ePDFs and Excel files. The online access is <a href="http://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">here</a>.<strong><br />
+</strong></li>
+<li class="no-bullet"><em>These statistics – originally published under the editorial leadership of Brian Mitchell (since 1983) – are a collection of data sets taken from many primary sources, including both official national and international abstracts dating back to 1750. </em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="jerry-dwyers-data-set"> <a class="deep-link" href="#jerry-dwyers-data-set"># </a>Jerry Dwyer&#8217;s data set</h5>
+<ul>
+<li><strong>Data:</strong> National account data &amp; other relevant data (e.g. average age and experience of the workforce)</li>
+<li><strong>Geographical coverage:</strong> Global by country</li>
+<li><strong>Time span:</strong> Mostly since 1880 – observations at every even decade</li>
+<li><strong>Available at:</strong> Online <a href="http://www.jerrydwyer.com/growth/index.html">here</a>. Downloadable as an excel-file</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="the-historical-national-accounts-database-of-the-groningen-growth-and-development-centre"> <a class="deep-link" href="#the-historical-national-accounts-database-of-the-groningen-growth-and-development-centre"># </a>The Historical National Accounts database of the Groningen Growth and Development Centre</h5>
+<ul>
+<li><strong>Data:</strong> National Account data with many interesting measures</li>
+<li><strong>Geographical coverage:</strong> (Mostly but not only) Early industrialized countries</li>
+<li><strong>Time span:</strong> Since the early 19th century</li>
+<li><strong>Available at:</strong> It is online <a href="http://www.rug.nl/research/ggdc/data/historical-national-accounts">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="the-history-database-of-the-global-environment-hyde"> <a class="deep-link" href="#the-history-database-of-the-global-environment-hyde"># </a>The History Database of the Global Environment (HYDE)</h5>
+<ul>
+<li><strong>Data:</strong> GDP (per capita) and private consumption as share of GDP</li>
+<li><strong>Geographical coverage:</strong></li>
+<li><strong>Time span:</strong> Since 1890</li>
+<li><strong>Available at:</strong> GDP data is online <a href="http://themasites.pbl.nl/tridion/en/themasites/hyde/basicdrivingfactors/gdp/index-2.html">here</a>. Private consumption is <a href="http://themasites.pbl.nl/tridion/en/themasites/hyde/basicdrivingfactors/private_consumption/index-2.html">here</a>.</li>
+<li class="no-bullet"><em>Early estimates are based on Maddison&#8217;s data.</em></li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="post-1950"> <a class="deep-link" href="#post-1950"># </a>Post-1950</h3>
+<h5 id="penn-world-table"> <a class="deep-link" href="#penn-world-table"># </a>Penn World Table</h5>
+<ul>
+<li><strong>Data:</strong> GDP and many measures related to relative levels of income, output, inputs and productivity.</li>
+<li><strong>Geographical coverage:</strong> Global – by country</li>
+<li><strong>Time span:</strong> Since 1950</li>
+<li><strong>Available at:</strong> It is online <a href="http://www.rug.nl/research/ggdc/data/penn-world-table">here</a>.</li>
+<li class="no-bullet"><em>The documentation can be found in Summers and Heston (1991)</em><a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Robert Summers and Alan Heston (1991) – The Penn World Table (Mark 5): An Expanded Set of International Comparisons, 1950–1988. The Quarterly Journal of Economics (1991) 106 (2): 327-368 doi:10.2307/2937941'>15</sup></a><em> and the follow-up papers.<br />
+</em></li>
+<li class="no-bullet"><em><em>For a discussion of the validity of these measures see Daniel A. Nuxoll (1994), Robert C. Feenstra, Alan Heston, Marcel P. Timmer, And Haiyan Deng (2009) and Simon Johnson, William Larson, Chris Papageorgiou, Arvind Subramanian (2013)</em></em><a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='Nuxoll (1994) – &#8220;Differences in Relative Prices and International Differences in Growth Rates,&#8221; American Economic Review, American Economic Association, vol. 84(5), pages 1423-36, December. Robert C. Feenstra, Alan Heston, Marcel P. Timmer, And Haiyan Deng (2009) Estimating Real Production And Expenditures Across Nations: A Proposal For Improving The Penn World Tables. The Review of Economics and Statistics, February 2009, 91(1): 201–212. Simon Johnson, William Larson, Chris Papageorgiou, Arvind Subramanian (2013) – Is Newer Better? Penn World Table Revisions and Their Impact on Growth Estimates. Journal of Monetary Economics. Volume 60, Issue 2, March 2013, Pages 255–274.'>16</sup></a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="world-development-indicators-wdi-published-by-the-world-bank"> <a class="deep-link" href="#world-development-indicators-wdi-published-by-the-world-bank"># </a>World Development Indicators (WDI) published by the World Bank</h5>
+<ul>
+<li><strong>Data:</strong> GDP and GNI (gross national income) constructed and corrected for price differences (across time and countries) in different ways</li>
+<li><strong>Geographical coverage:</strong> Global – by country and world region</li>
+<li><strong>Time span:</strong> The earliest data is available for 1960.</li>
+<li><strong>Available at:</strong> The different measures are published as part of the <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Development Indicators</a>. The data on current GDP in US-$ is <a href="http://data.worldbank.org/indicator/NY.GDP.MKTP.CD">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="total-economy-database-ted"> <a class="deep-link" href="#total-economy-database-ted"># </a>Total Economy Database (TED)</h5>
+<ul>
+<li><strong>Data:</strong> GDP, population, employment, hours, labor quality, capital services, labor productivity, and total factor productivity</li>
+<li><strong>Geographical coverage:</strong> Global – by country</li>
+<li><strong>Time span:</strong> Since 1950</li>
+<li><strong>Available at:</strong> It is online <a href="http://www.conference-board.org/data/economydatabase/">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+<p>&nbsp;</p>
+<h3 id="other-gdp-related-data"> <a class="deep-link" href="#other-gdp-related-data"># </a>Other GDP-related data</h3>
+<h4 id="subnational-data"> <a class="deep-link" href="#subnational-data"># </a>Subnational data</h4>
+<p>Nicola Gennaioli, Rafael La Porta, Florencio Lopez-de-Silanes, and Andrei Shleifer present subnational data of income in their publication<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='Nicola Gennaioli, Rafael La Porta, Florencio Lopez-de-Silanes, and Andrei Shleifer (2013) – Human Capital and Regional Development. In The Quarterly Journal of Economics (2013) 128 (1): 105-164 doi:10.1093/qje/qjs050'>17</sup></a> The data covers 1,569 subnational regions from 110 countries covering 74% of the world’s surface and 97% of its GDP.</p>
+<h4 id="spatial-data"> <a class="deep-link" href="#spatial-data"># </a>Spatial Data</h4>
+<p>Geographically based Economic data (G-Econ) by William Nordhaus and Xi Chen. The dataset covers &#8220;gross cell product&#8221; for all regions for 1990, 1995, 2000, and 2005 and includes 27,500 terrestrial observations. The basic metric is the regional equivalent of gross domestic product. Gross cell product (GCP) is measured at a 1-degree longitude by 1-degree latitude resolution at a global scale.</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Paul Krugman. <a href="http://www.nytimes.com/2012/06/01/opinion/krugman-the-austerity-agenda.html">The Austerity Agenda</a>. The New York Times (2012).</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>There are many reasons why this is the case. One reason is due to the biases coming from the way GDP is defined. GDP does not include income earned abroad by the citizens of a country but includes domestic production by foreign companies (which may be used to pay shareholders abroad). Another issue is that the total population of a country will include both workers and those outside the labour force.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Image taken from <a href="http://visualizingeconomics.com/" target="_blank">visualizingeconomics.com</a>.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Landes, David S. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.694.1969&#038;rep=rep1&#038;type=pdf">The wealth and poverty of nations: Why some are so rich and some so poor</a>. WW Norton &amp; Company, 1999.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Stiglitz, Joseph, Sen, Amartya, &amp; Fitoussi, Jean-Paul (2009) – <a href="http://www.insee.fr/fr/publications-et-services/dossiers_web/stiglitz/doc-commission/RAPPORT_anglais.pdf">Report by the Commission on the Measurement of Economic Performance and Social Progress</a>.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>François Lequiller, Derek Blades (2006) – <a href="http://www.oecd.org/std/UNA-2014.pdf">Understanding National Accounts, second edition</a>, published by the Organisation for Economic Co-operation and Development (OECD).</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>In 2012 the UK statistical agency changed the composition of this basket of goods to better reflect the typical consumption basket of households. Tablet computers were added demonstrating the effect of new technologies, while boiled sweets were removed reflecting changing preferences. </p>
+<p>Gooding, Philip. &#8220;<a href="http://www.ons.gov.uk/ons/rel/elmr/economic-and-labour-market-review/april-2011/economic-and-labour-market-review.pdf#page=96">Consumer Prices Index and Retail Prices Index: the 2011 basket of goods and services</a>.&#8221; <em>Economic and Labour Market Review</em> 5, no. 4 (2011): 96-107.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The fact that the income ratio between a high and low income country is systematically exaggerated by GDP conversion at the market exchange rates is called the <a href="https://en.wikipedia.org/wiki/Penn_effect">Penn Effect</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This fact is explained by the <a href="https://en.wikipedia.org/wiki/Balassa%E2%80%93Samuelson_effect">Balassa–Samuelson effect</a>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Roy C. Geary and Salem Hanna Khamis were economic statisticians that proposed this approach for comparisons.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This data is taken from the <a href="http://www.ggdc.net/maddison/maddison-project/home.htm">Angus Maddison Historical Statistics</a> at the <a href="http://www.rug.nl/research/ggdc/">Groningen Growth &amp; Development Centre</a>.</p>
+<p>Countries are shown with their current borders. For modern Russia the data for the ‘Total Former USSR’ is shown for the time before 1990. &#8216;Indonesia&#8217; is including Timor until 1999.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Jutta Bolt and Jan Luiten van Zanden (2013) – <a href="http://www.ggdc.net/maddison/maddison-project/publications/wp4.pdf">The First Update of the Maddison Project – Re-Estimating Growth Before 1820</a>.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This is taken from Broadberry (2013) – <a href="http://voxeu.org/article/accounting-great-divergence">Accounting for the great divergence</a>.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The printed version is published in 3 volumes: Africa, Asia, Oceania – The Americas – Europe. The volume set is <a href="http://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">described at the publisher&#8217;s website</a>.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Robert Summers and Alan Heston (1991) – The Penn World Table (Mark 5): An Expanded Set of International Comparisons, 1950–1988. The Quarterly Journal of Economics (1991) 106 (2): 327-368 doi:10.2307/2937941</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Nuxoll (1994) – &#8220;Differences in Relative Prices and International Differences in Growth Rates,&#8221; American Economic Review, American Economic Association, vol. 84(5), pages 1423-36, December.</p>
+<p>Robert C. Feenstra, Alan Heston, Marcel P. Timmer, And Haiyan Deng (2009) <a href="https://www.researchgate.net/profile/Alan_Heston/publication/24008774_Estimating_Real_Production_and_Expenditures_Across_Nations_A_Proposal_for_Improving_the_Penn_World_Tables/links/556c7b2a08aefcb861d7e00e.pdf">Estimating Real Production And Expenditures Across Nations: A Proposal For Improving The Penn World Tables</a>. The Review of Economics and Statistics, February 2009, 91(1): 201–212.</p>
+<p>Simon Johnson, William Larson, Chris Papageorgiou, Arvind Subramanian (2013) – <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/87736">Is Newer Better? Penn World Table Revisions and Their Impact on Growth Estimates</a>. Journal of Monetary Economics. Volume 60, Issue 2, March 2013, Pages 255–274.</p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Nicola Gennaioli, Rafael La Porta, Florencio Lopez-de-Silanes, and Andrei Shleifer (2013) – <a href="https://repositori.upf.edu/bitstream/handle/10230/19929/1286.pdf?sequence=1">Human Capital and Regional Development</a>. In The Quarterly Journal of Economics (2013) 128 (1): 105-164 doi:10.1093/qje/qjs050</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473851359'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=3127&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/10 queries in 0.035 seconds using disk
+Object Caching 4207/4218 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 11:11:01 by W3 Total Cache -->

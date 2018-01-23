@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="//gmpg.org/xfn/11">
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-social-icons-font-css'  href='//ourworldindata.org/wp-content/plugins/simple-social-icons/css/style.css?ver=1.0.12' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.srcset.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.2" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png"><style type="text/css" media="screen"> .simple-social-icons ul li a, .simple-social-icons ul li a:hover { background-color: #3E85EE !important; border-radius: 60px; color: #000000 !important; border: 0px #ffffff solid !important; font-size: 30px; padding: 15px; }  .simple-social-icons ul li a:hover { background-color: #3E85EE !important; border-color: #ffffff !important; color: #ffffff !important; }</style><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css" />
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+	</script>
+</head>
+
+<body class="blog">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search..."></input>
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title" itemprop="headline">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World In Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<header><h2>Entries</h2></header><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/economic-convergence-between-countries/'>Economic Convergence between Countries</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a href='https://ourworldindata.org/international-trade/'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a href='https://ourworldindata.org/global-rise-of-education/'>Global Rise of Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education and Schools</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/quality-of-education-drop-out-rates/'>Quality of Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/literacy/'>Literacy</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/trust/'>Trust</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search..."></input>
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><hr><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/economic-convergence-between-countries/'>Economic Convergence between Countries</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><hr><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/international-trade/'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/global-rise-of-education/'>Global Rise of Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education and Schools</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/quality-of-education-drop-out-rates/'>Quality of Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/literacy/'>Literacy</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><hr><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/trust/'>Trust</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main" role="main">
+<header class="blog-header">
+	<h1>Blog</h1>
+</header>
+
+<div class="site-content">
+			<article id="post-7922" class="post-7922 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/how-to-embed/">How to embed Our World In Data visualizations in your article</a></h1>
+				  	<div class='entry-meta'><time>June 13, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>You can use any of the interactive visualizations from Our World In Data in your articles. This is possible because everything is permissively licensed (under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>) and because there is an easy embed feature on every chart.</p>
+<p>Here are three recent examples of articles that embed OWID visualizations:</p>
+<p>– <a href="http://www.politifact.com/global-news/statements/2016/mar/23/gayle-smith/did-we-really-reduce-extreme-poverty-half-30-years/">Politifact using OurWorldInData in fact checking claims about global poverty</a>.</p>
+<p>– <a href="http://ofuturodascoisas.com/projecao-da-populacao-pelo-nivel-educacional-ate-2100/">The Brazilian website <em>o futuro das coisas</em> in an article about the future of global education</a>.</p>
+<p>– <a href="http://www.vox.com/2016/4/25/11488196/world-malaria-day">Vox.com in an article on the decline of global malaria deaths on World Malaria Day</a>.</p>
+<h3>An example:</h3>
+<p>For example let&#8217;s assume you want to write about fertility and on the <a href="https://ourworldindata.org/fertility/">fertility</a> page you find this map that you want to embed in your own article:</p>
+<p><iframe data-src="https://ourworldindata.org/grapher/children-per-woman-UN" width="100%" height="660px"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/children-per-woman-UN" width="100%" height="660px"></iframe></noscript></p>
+<h3>All you have to do to embed it in your article:</h3>
+<p>At the bottom of the chart you click on<strong> &lt;/&gt;Embed</strong> and you will see a box popping up (try it!) with the following bit of text:</p>
+<p>&lt;iframe src=&#8221;https://ourworldindata.org/grapher/children-per-woman-UN&#8221; width=&#8221;100%&#8221; height=&#8221;660px&#8221;&gt;&lt;/iframe&gt;</p>
+<p>Now you just take this bit of html code and place it in the text of your own article.</p>
+<p>An iframe is used to display a website within another website (<em>w3schools</em> has <a href="http://www.w3schools.com/html/html_iframe.asp">more info on iframes</a>.) Similar to when you embed a YouTube video in your article, your article now embeds an Our World In Data visualization.</p>
+<h3>Change the map focus, change the year:</h3>
+<p>We try to make the embed tool as useful as possible: For example, you can focus on Africa instead of World in the map above; and you can move the time slider to 2015 (you will get <a href="https://ourworldindata.org/grapher/children-per-woman-UN?region=Africa&amp;year=2015">this</a>). Now when you click on<strong> &lt;/&gt; Embed</strong> you get the following bit of code:</p>
+<p>&lt;iframe src=&#8221;https://ourworldindata.org/grapher/children-per-woman-UN?region=Africa&amp;year=2015&#8243; width=&#8221;100%&#8221; height=&#8221;660px&#8221;&gt;&lt;/iframe&gt;</p>
+<p>If you copy-paste this code your article will embed the map with a focus on Africa and the fertility rate for 2015.</p>
+<p>And the same works for the chart view. Just switch to Chart in the visualization above and add the countries that you are interested in – like <a href="https://ourworldindata.org/grapher/children-per-woman-UN?tab=chart&amp;country=DEU+IRN">this</a>. When you click on<strong> &lt;/&gt; Embed</strong> you can now get the code to embed this line chart.</p>
+<h3>Static visualizations for your text or presentation:</h3>
+<p>It is also possible to put static versions of Our World In Data visualizations in web articles, text documents or presentations. Just click on PNG below the chart and you have the chart that you need.</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-7821" class="post-7821 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/projection-of-the-world-population-by-level-of-education/">Projection of the World Population by Level of Education</a></h1>
+				  	<div class='entry-meta'><time>June 03, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The <em>International Institute for Applied Systems Analysis</em> (IIASA) is an interdisciplinary, highly-respected research institution near Vienna, Austria. The IIASA population projections are the most cited alternative to the UN work.</p>
+<p>Interestingly their medium projection – which they consider most likely – stands in stark contrast to the UN projection. While the medium variant of the UN projection sees the world population growing continuously throughout the 21st century the IIASA medium (most likely) scenario see the world population increase to 9.4 billion in 2070 and then starts a slow decline to below 9 billion by the end of the century.</p>
+<p>As the IIASA researchers <a href="https://blog.iiasa.ac.at/2014/09/23/9-billion-or-11-billion-the-research-behind-new-population-projections/">explain</a> there are important methodological differences between the UN and IIASA projections. The UN uses probabilistic population projections to extrapolate populations for each country over the 21st century and is applying the same statistical methodology to all countries. The IIASA researchers in contrast have a country-specific approach that takes into account the knowledge of experts for each country separately.</p>
+<p>The other important feature of the IIASA projection is that it takes into account the education of the population. As we show below in this data-entry there is a strong link between education and <a href="https://ourworldindata.org/fertility/">fertility</a> – more educated women have fewer children. This link is taken into account in the model of the IIASA researchers and contributes to their projection of a much smaller total world population over the course of the 21st century.</p>
+<p>The breakdown by education level is especially interesting: It shows that our world will be inhabited by more and more educated people. In the visualization below you see that in 1970 there were only around 700 million people in the world that had secondary or post-secondary education. By the end of this century the number of people with secondary or post-secondary education will have increased 10-fold and will reach 7 billion people!</p>
+<p>&nbsp;</p>
+<p>This visualization is now also included in the <a href="https://ourworldindata.org/world-population-growth/">data-entry on world population growth</a> – and you find more research, data, and visualizations there.</p>
+<p><iframe data-src="/grapher/projection-of-world-population-SSP2-IIASA" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/projection-of-world-population-SSP2-IIASA" width="100%" height="660px"></iframe></noscript></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-7746" class="post-7746 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/fertility-can-decline-extremely-fast/">Fertility can decline extremely fast</a></h1>
+				  	<div class='entry-meta'><time>May 20, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The decline of fertility is one of the most fundamental social changes that happened in human history. It is therefore especially surprising how very rapidly this transition can indeed happen.</p>
+<p>This chart is an excerpt of the data-entry on <a href="https://ourworldindata.org/fertility">fertility</a> which shows much more data and explains why fertility is declining.</p>
+<p>As we see from the chart below it took Iran only 10 years for fertility to fall from more than 6 children per woman to fewer than 3 children per woman. (Iran made this transition under a conservative Muslim government.)</p>
+<p>We also see from the chart that the speed with which countries can achieve low fertility has increased over time. A century ago it took the United Kingdom 95 years and the US 82 years to reduce fertility from more than 6 to less than 3. This is a pattern that we see often in development: those countries that first experience social change take much longer for transitions than those who catch up later: Countries that were catching up increased <a href="https://ourworldindata.org/life-expectancy/">life expectancy</a> much faster, they reduced <a href="https://ourworldindata.org/child-mortality/">child mortality</a> more quickly and were able to grow their <a href="https://ourworldindata.org/gdp-data/">incomes</a> much more rapidly.</p>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3.png"><img class="aligncenter size-large wp-image-7753" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-750x525.png" alt="Years-it-took-Fertility-to-fall-from-6-to-below-3" width="750" height="525" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="//ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-750x525.png 750w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-768x538.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-7753" src="//ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-750x525.png" alt="Years-it-took-Fertility-to-fall-from-6-to-below-3" width="750" height="525" srcset="//ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-750x525.png 750w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2014/02/Years-it-took-Fertility-to-fall-from-6-to-below-3-768x538.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-7704" class="post-7704 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/what-men-and-women-want-in-marriage/">What Men and Women Want in Marriage</a></h1>
+				  	<div class='entry-meta'><time>May 04, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>We know a lot about how income and health have changed, but less about the evolution of norms and values. One reason for that is that it is more straightforward to measure health-related aspects (like <a href="https://ourworldindata.org/child-mortality/">child mortality</a> or <a href="https://ourworldindata.org/life-expectancy/">life expectancy</a>) or income measures (like <a href="https://ourworldindata.org/gdp-data/">GDP</a>, <a href="https://ourworldindata.org/income-inequality/">income inequality</a> or <a href="https://ourworldindata.org/world-poverty/">poverty</a>).</p>
+<p>A rare opportunity to see how values have changed was discovered by Boxer et al (reference below) who compared surveys in which people were asked what they seek in a spouse. I took the first and last survey results reported by the authors and visualized it in the chart below: It allows us to compare the relative importance of these traits in 1939 and seven decades later. The big winner is &#8216;mutual attraction – love&#8217; which now ranks as the most important aspect for both women and men. But also &#8216;Education, intelligence&#8217; and &#8216;Sociability&#8217; rose in importance. The relative losers are &#8216;Good Health&#8217; and at the very bottom &#8216;Chastity&#8217;.</p>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage.png"><img class="aligncenter size-large wp-image-7705" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-750x525.png" alt="What-Men-and-Women-want-in-marriage" width="750" height="525" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="//ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-750x525.png 750w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-768x538.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-7705" src="//ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-750x525.png" alt="What-Men-and-Women-want-in-marriage" width="750" height="525" srcset="//ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-750x525.png 750w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2016/05/What-Men-and-Women-want-in-marriage-768x538.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>The data are from Christie F. Boxer, Mary C. Noonan, and Christine B. Whelan (2013) – Measuring Mate Preferences: A Replication and Extension. Journal of Family Issues May 30, 2013. doi: 10.1177/0192513X13490404. Online <a href="http://jfi.sagepub.com/content/36/2/163">here</a>.</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+			<article id="post-7605" class="post-7605 post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="https://ourworldindata.org/malaria-is-killing-fewer-people/">Malaria is killing fewer people</a></h1>
+				  	<div class='entry-meta'><time>April 25, 2016</time> by Max Roser</div>
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>Today is World Malaria Day – and we have good news in the global fight against this killer. Since the beginning of the 21st century, the WHO has published global estimates of the number of people that die from malaria. In these 15 years the global death toll has been cut in half: from 839,000 deaths in 2000 to 438,000 in 2015.</p>
+<p>Africa is the world region that is most affected by malaria: In 2015, the African continent held 9 out of 10 malaria victims (click on &#8216;Expanded&#8217; to see this). But Africa is also the world region that has achieved most progress: from 2000 to 2015, African deaths from malaria were reduced from 764,000 to 395,000.</p>
+<p>More information on malaria can be found in the <a href="http://ourworldindata.org/malaria/">data-entry on malaria</a>.</p>
+<p><iframe style="width: 100%; height: 660px; border: 0px none;" data-src="https://ourworldindata.org/grapher/global-malaria-deaths-by-world-region" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 660px; border: 0px none;" src="https://ourworldindata.org/grapher/global-malaria-deaths-by-world-region" width="300" height="150"></iframe></noscript></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+				
+
+	
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='https://ourworldindata.org/blog/page/2/'>2</a>
+<a class="next page-numbers" href="https://ourworldindata.org/blog/page/2/">Next »</a></div>
+	</nav>  
+</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World In Data</a></h4>
+					<p>Our World In Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely reusable by journalists or educators.</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+					<p class="donation-thanks">We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll_offset":"57"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 19/22 queries in 0.005 seconds using disk
+Object Caching 3915/3948 objects using disk
+
+ Served from: ourworldindata.org @ 2016-06-20 04:46:55 by W3 Total Cache -->

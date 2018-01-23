@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Homicides - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; Homicides Comments Feed" href="//ourworldindata.org/homicides/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/homicides/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=2092' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fhomicides%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fhomicides%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="Homicides"/>
+<meta itemprop="name" content="Homicides"/>
+<meta name="twitter:title" content="Homicides"/>
+<meta property="og:url" content="https://ourworldindata.org/homicides/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/homicides/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="This article deals with intentional homicides which are defined as “an unlawful death deliberately inflicted on one person by another person”. The data are presented as the homicide rate expressed as homicides per 100.000 inhabitants of a country or region.
+Homicides refer to interpersonal violence"/>
+<meta itemprop="description" content="This article deals with intentional homicides which are defined as “an unlawful death deliberately inflicted on one person by another person”. The data are presented as the homicide rate expressed as homicides per 100.000 inhabitants of a country or region.
+Homicides refer to interpersonal violence"/>
+<meta name="twitter:description" content="This article deals with intentional homicides which are defined as “an unlawful death deliberately inflicted on one person by another person”. The data are presented as the homicide rate expressed as homicides per 100.000 inhabitants of a country or region.
+Homicides refer to interpersonal violence"/>
+<meta property="og:image" content="https://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-five-western-european-regions-1300-2010-–-max-roser.png"/>
+<meta itemprop="image" content="https://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-five-western-european-regions-1300-2010-–-max-roser.png"/>
+<meta name="twitter:image" content="https://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-five-western-european-regions-1300-2010-–-max-roser.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473847031">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-2092 page-child parent-pageid-191 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-2092" class="post-2092 page type-page status-publish has-post-thumbnail hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">Homicides</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser (2016) – &lsquo;Homicides&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/homicides/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>This article deals with intentional homicides which are defined as “an unlawful death deliberately inflicted on one person by another person”.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='OECD (2011) – How&#8217;s Life? Measuring Well-being: Measuring Well-being.'>1</sup></a> The data are presented as the homicide rate expressed as homicides per 100.000 inhabitants of a country or region.</p>
+<p>Homicides refer to interpersonal violence. Civilian and military deaths during <a href="http://ourworldindata.org/data/war-peace/war-and-peace-after-1945/">interstate wars</a>, <a href="http://ourworldindata.org/data/war-peace/civil-wars/">civil wars</a> and <a href="http://ourworldindata.org/data/war-peace/genocides/">genocides</a> are not counted as homicides – but OurWorldInData presents the evidence on deaths in the linked articles.</p>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="europe"> <a class="deep-link" href="#europe"># </a>Europe</h3>
+<p>Eisner (2003) describes the secular trend of homicide rates in Europe and has collected data for this research paper. From his database Eisner constructed data for several European regions and presented this in a table. I added the latest available data to Eisner&#8217;s data and visualized this in the following graph. European homicide rates have dramatically decreased over the last millennium and have remained steadily low over the past 50 years. Italy has historically had higher homicide rates than other European countries, but today those rates have reached Northern European levels.</p>
+<h6 id="homicide-rates-in-five-western-european-regions-1300-2010-max-roserref"> <a class="deep-link" href="#homicide-rates-in-five-western-european-regions-1300-2010-max-roserref"># </a>Homicide rates in five Western European regions, 1300-2010 – Max Roser<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Data for all but the last observation is taken from Table 1 in Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142. The observations are printed at the midpoint of the given period. &nbsp; The 2010 observation for each region was added by me and this data is taken from the UNODC Homicide statistic 2012 &#8211; (International homicide, count and rate per 100.000). For regions of more than one country I calculated the average of all countries. The values given in the UNODC statistic are: 1.2 &#8211; United Kingdom. 1.2 &#8211; Scandinavia (Sweden: 1.0; Denmark 0.9; Norway: 0,6; Finland: 2,2). 1.7 &#8211; Belgium. 1.1 &#8211; Netherlands. 0.9 &#8211; Italy. 0.7 &#8211; Switzerland. 0.8 &#8211; Germany.'>2</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html">Full screen view</a> <a href="http://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.csv">Download Data</a>  <a href="http://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-five-western-european-regions-1300-2010-–-max-roser.png">Download Static Image</a></address>
+<p>The raw data without distinguishing between different states is visualized in the following graph.</p>
+<p>Note: This graph is Figure 2 in Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142. It shows 398 local estimates from Eisner&#8217;s Database and for the recent past it additionally includes the national series for Sweden, England and Wales, Switzerland, and Italy.</p>
+<h6 id="homicide-rates-in-germany-and-switzerland-local-estimates-and-national-series-13th-to-20th-century-eisner-2003ref"> <a class="deep-link" href="#homicide-rates-in-germany-and-switzerland-local-estimates-and-national-series-13th-to-20th-century-eisner-2003ref"># </a>Homicide rates in Germany and Switzerland, local estimates and national series, 13th to 20th century – Eisner (2003)<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.'>3</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-germany-and-switzerland-local-estimates-and-national-series-13th-to-20th-century-eisner-2003-png.png"><img class="aligncenter" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-germany-and-switzerland-local-estimates-and-national-series-13th-to-20th-century-eisner-2003-png.png" alt="Homicide-Rates-in-Germany-and-Switzerland-local-estimates-and-national-series-13th-to-20th-century-Eisner-2003.png" width="600" height="429" /><noscript><img class="aligncenter" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-germany-and-switzerland-local-estimates-and-national-series-13th-to-20th-century-eisner-2003-png.png" alt="Homicide-Rates-in-Germany-and-Switzerland-local-estimates-and-national-series-13th-to-20th-century-Eisner-2003.png" width="600" height="429" /></noscript></a></p>
+<h6 id="homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003ref"> <a class="deep-link" href="#homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003ref"># </a>Homicide rates in England, local estimates and national series, 1200-2000 – Eisner (2003)<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.'>4</sup></a></p>
+<h6><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png.png"><img class="aligncenter size-full wp-image-638" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png.png" alt="Homicide-Rates-in-England-local-estimates-and-national-series-1200-2000-Eisner-2003.png" width="600" height="321" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png-300x160.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-638" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png.png" alt="Homicide-Rates-in-England-local-estimates-and-national-series-1200-2000-Eisner-2003.png" width="600" height="321" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-england-local-estimates-and-national-series-1200-2000-eisner-2003-png-300x160.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></h6>
+<p>The declining homicides in some regions and stagnating high homicides in other regions caused a huge inequality in violence in the 19th century as can be seen in the following map. Over the course of the last century this picture has changed: the south of Europe has followed northwestern Europe and now has similarly low violence. The remaining inequality is now between a more violent Eastern Europe and a less violent Western Europe.</p>
+<h6 id="homicide-rates-in-europe-c-1880-and-2000-eisner-2003ref"> <a class="deep-link" href="#homicide-rates-in-europe-c-1880-and-2000-eisner-2003ref"># </a>Homicide rates in Europe, c. 1880 and 2000 – Eisner (2003)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.'>5</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map.png"><img class="aligncenter size-large wp-image-5247" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-750x429.png" alt="homicide-rates-in-europe-map" width="750" height="429" srcset="//ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-750x429.png 750w, //ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-150x86.png 150w, //ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-400x229.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-5247" src="//ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-750x429.png" alt="homicide-rates-in-europe-map" width="750" height="429" srcset="//ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-750x429.png 750w, //ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-150x86.png 150w, //ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-europe-map-400x229.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h6 id="european-homicide-rates-at-subnational-levels-unodcref"> <a class="deep-link" href="#european-homicide-rates-at-subnational-levels-unodcref"># </a>European homicide rates at subnational levels – UNODC<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Source is the UNODC here on page 76. The source of the data according to my UNODC source is: European Commission, Investing in Europe’s Future. Fifth report on economic, social and territorial cohesion (2010).'>6</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png.png"><img class="aligncenter size-full wp-image-647" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png.png" alt="Europe-Map-of-Homicide-Rates-subnational-Lebel-UNODC.png" width="600" height="386" srcset="//ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png-300x193.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-647" src="//ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png.png" alt="Europe-Map-of-Homicide-Rates-subnational-Lebel-UNODC.png" width="600" height="386" srcset="//ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/europe-map-of-homicide-rates-subnational-lebel-unodc-png-300x193.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<p>At least with respect to Italy the convergence between the northwest and the south of Europe can be studied in the following graph.</p>
+<h6 id="homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011ref"> <a class="deep-link" href="#homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011ref"># </a>Homicide rates in five Western European countries, 1900-2009 – Pinker (2011)<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined.'>7</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg.jpg"><img class="aligncenter size-full wp-image-646" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg.jpg" alt="Homicide-rates-in-five-Western-European-countries-1900–-2009-Pinker-2011.jpg" width="600" height="356" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg.jpg 600w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg-300x178.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-646" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg.jpg" alt="Homicide-rates-in-five-Western-European-countries-1900–-2009-Pinker-2011.jpg" width="600" height="356" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg.jpg 600w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-five-western-european-countries-1900-2009-pinker-2011-jpg-300x178.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<h3 id="germany"> <a class="deep-link" href="#germany"># </a>Germany</h3>
+<h6 id="crude-rates-of-homicide-in-east-and-west-germany-by-gender-1970-1995-clark-and-wildner-2000ref"> <a class="deep-link" href="#crude-rates-of-homicide-in-east-and-west-germany-by-gender-1970-1995-clark-and-wildner-2000ref"># </a>Crude rates of homicide in East and West Germany by gender, 1970-1995 – Clark and Wildner (2000)<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='Source: Clark and Wildner (2000) &#8211; Violence and fear of violence in East and West Germany. In Social Science &amp; Medicine, 51, 3, 373&#8211;379. EM = East German Males, WM = West German Males, EF = East German Females, WF = West German Females.'>8</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png.png"><img class="aligncenter size-full wp-image-667" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png.png" alt="Crude-rates-of-homicide-in-East-and-West-Germany-by-Gende-for-the-years-1970–1995.png" width="600" height="374" srcset="//ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png-300x187.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-667" src="//ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png.png" alt="Crude-rates-of-homicide-in-East-and-West-Germany-by-Gende-for-the-years-1970–1995.png" width="600" height="374" srcset="//ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/crude-rates-of-homicide-in-east-and-west-germany-by-gende-for-the-years-1970-1995-png-300x187.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<p>Since 1995 (the end of the observation period of Clark and Wildner (2000)) homicide rates dropped significantly.<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='The official statistics can be found at the website of the BKA in the document (Grundtabelle &#8211; ohne Tatortverteilung).'>9</sup></a><br />
+In the last year of the study of Clark and Wildner &#8211; the year 1995 &#8211; there were 1.207 homicides in Germany. Over the following years the number dropped and reached 723 homicides in 2011. The number of homicides in which a gun was involved dropped from 226 (in 1995) to 78 (in 2011).</p>
+<h3 id="global-long-run-perspective"> <a class="deep-link" href="#global-long-run-perspective"># </a>Global long run perspective</h3>
+<p>The interactive chart below allows to visualise the long-term trend of homicides for countries around the world. Time coverage varies between countries – for some countries data is available going back to 1800 while for other countries data for only 1 or 2 years are available.<br />
+<iframe style="width: 100%; height: 660px; border: 0px none;" data-src="https://ourworldindata.org/grapher/homicides-per-100000-people-per-year" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 660px; border: 0px none;" src="https://ourworldindata.org/grapher/homicides-per-100000-people-per-year" width="300" height="150"></iframe></noscript></p>
+<h3 id="japan"> <a class="deep-link" href="#japan"># </a>Japan</h3>
+<p>Homicide rates in Japan have steadily decreased over the past century. It&#8217;s interesting to note in the following graph that the homicide rate dropped significantly during and immediately after World War II, perhaps because the nation was focused on the war effort.</p>
+<h6 id="homicide-rate-including-homicide-attempts-in-japan-1888-2003-johnson-2006ref"> <a class="deep-link" href="#homicide-rate-including-homicide-attempts-in-japan-1888-2003-johnson-2006ref"># </a>Homicide Rate (including homicide attempts) in Japan, 1888-2003 – Johnson (2006)<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='Johnson (2006) &#8211; The Vanishing Killer: Japan’s Postwar Homicide Decline. In Social Science Japan Journal, 9, 1, 73&#8211;90. His source are &#8216;Official police statistics&#8217;. He notes that &#8216;because police data in Japan include homicide attempts, which have remained relatively stable during the postwar period at approximately 50% of the annual homicide total, the rates reflected in this figure should be reduced by about half in order to express the true number of killers.&#8217;'>10</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png.png"><img class="aligncenter size-full wp-image-640" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png.png" alt="The-Homicide-Rate-in-Japan-1888-–-2003-Johnson-2006.png" width="600" height="310" srcset="//ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png-300x155.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-640" src="//ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png.png" alt="The-Homicide-Rate-in-Japan-1888-–-2003-Johnson-2006.png" width="600" height="310" srcset="//ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/the-homicide-rate-in-japan-1888-2003-johnson-2006-png-300x155.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<h3 id="usa"> <a class="deep-link" href="#usa"># </a>USA</h3>
+<p>The homicide rate in the US has fallen dramatically over the past few centuries. The following graph shows the fall in the homicide rate in relation to various armed conflicts in New England. In the early colonial days in America, the homicide rate was incredibly high. But as the colonies became more established and orderly, the rate fell, except for the time during the American Revolution when the colonies were understandably amidst upheaval. It&#8217;s important to note that one cannot directly derive from this graph a causal relationship between these conflicts and the homicide rate.</p>
+<h6 id="european-american-adult-homicide-rate-per-100000-persons-per-year-in-new-england-1630-1800-roth-2009ref"> <a class="deep-link" href="#european-american-adult-homicide-rate-per-100000-persons-per-year-in-new-england-1630-1800-roth-2009ref"># </a>European American adult homicide rate (per 100,000 persons per year) in New England, 1630-1800 – Roth (2009)<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='Source: Roth (2009) &#8211; American Homicide. Harvard University Press. In this publication it is Figure 1.2.'>11</sup></a></p>
+<h6><a href="http://ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png.png"><img class="aligncenter size-full wp-image-753" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png.png" alt="New-England-European-American-Adult-Homicide-Rate-1630 –-1800-Roth-2009.png" width="600" height="433" srcset="//ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png-300x216.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-753" src="//ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png.png" alt="New-England-European-American-Adult-Homicide-Rate-1630 –-1800-Roth-2009.png" width="600" height="433" srcset="//ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/04/new-england-european-american-adult-homicide-rate-1630-1800-roth-2009-png-300x216.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></h6>
+<p>Pinker (2011) put together many quantitative accounts of the change and distribution of violent crime in the US. Below, we can see the disparity in homicide rates between various areas in present day New England. Predictably, the more urban areas of new York, Boston and Philadelphia have in general had higher homicide rates than the less dense states of Vermont and New Hampshire.</p>
+<h6 id="homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011ref"> <a class="deep-link" href="#homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011ref"># </a>Homicide rates in the northeastern United States, 1636-1900 – Pinker (2011)<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. The most important source of Pinker is Roth (2009) &#8211; American homicide. Harvard University Press. Pinker also took this graph from this publication.'>12</sup></a></p>
+<h6><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg.jpg"><img class="aligncenter size-full wp-image-649" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-northeastern-United-States-1636–1900-Pinker-2011.jpg" width="588" height="353" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg.jpg 588w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg-300x180.jpg 300w" sizes="(max-width: 588px) 100vw, 588px" /><noscript><img class="aligncenter size-full wp-image-649" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-northeastern-United-States-1636–1900-Pinker-2011.jpg" width="588" height="353" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg.jpg 588w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-northeastern-united-states-1636-1900-pinker-2011-jpg-300x180.jpg 300w" sizes="(max-width: 588px) 100vw, 588px" /></noscript></a></h6>
+<p>Homicide rates in the US have declined dramatically over history, but they still remain much higher than other industrialized states. Below, we can see that in the 1960s and 1970s, the US, Canada and England all experienced increases in violent crime, but the increase in the US was much more dramatic than in the other two nations. These rates have since fallen in the US, but homicide is still much more common there than in Canada and England.</p>
+<h6 id="homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011ref"> <a class="deep-link" href="#homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011ref"># </a>Homicide rates in the United States (1950-2010) and Canada (1961-2009) – Pinker (2011)<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. The author&#8217;s sources are: Data for United States are from the FBI Uniform Crime Reports 1950–2010: U.S. Bureau of Justice Statistics, 2009; U.S. Federal Bureau of Investigation, 2010b, 2011; Fox &amp; Zawitz, 2007. Data for Canada, 1961– 2007: Statistics Canada, 2008. Data for Canada, 2008: Statistics Canada, 2010. Data for Canada, 2009: K. Harris, “Canada’s crime rate falls,” Toronto Sun, Jul. 20, 2010.'>13</sup></a></p>
+<h6><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg.jpg"><img class="aligncenter size-full wp-image-650" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-United-States-1950–2010-and-Canada-1961–2009-Pinker-2011.jpg" width="564" height="364" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg.jpg 564w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg-300x193.jpg 300w" sizes="(max-width: 564px) 100vw, 564px" /><noscript><img class="aligncenter size-full wp-image-650" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-United-States-1950–2010-and-Canada-1961–2009-Pinker-2011.jpg" width="564" height="364" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg.jpg 564w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-1950-2010-and-canada-1961-2009-pinker-2011-jpg-300x193.jpg 300w" sizes="(max-width: 564px) 100vw, 564px" /></noscript></a></h6>
+<h6 id="homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011ref"> <a class="deep-link" href="#homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011ref"># </a>Homicide rates in the United States and England, 1900-2000 – Pinker (2011)<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. Pinker&#8217;s source is Monkkonen (2001) – Murder in New York City. University of California Press.'>14</sup></a></p>
+<h6><a href="http://ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg.jpg"><img class="aligncenter size-full wp-image-651" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-United-States-and-England-1900–2000-Pinker-2011.jpg" width="588" height="361" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg.jpg 588w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg-300x184.jpg 300w" sizes="(max-width: 588px) 100vw, 588px" /><noscript><img class="aligncenter size-full wp-image-651" src="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg.jpg" alt="Homicide-rates-in-the-United-States-and-England-1900–2000-Pinker-2011.jpg" width="588" height="361" srcset="//ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg.jpg 588w, //ourworldindata.org/wp-content/uploads/2013/03/homicide-rates-in-the-united-states-and-england-1900-2000-pinker-2011-jpg-300x184.jpg 300w" sizes="(max-width: 588px) 100vw, 588px" /></noscript></a></h6>
+<p>The violent crime in the US is not shared equally among all the states; in general the more populous states tend to have much higher homicide rates.</p>
+<h6 id="geography-of-homicide-in-the-united-states-2007-pinker-2011ref"> <a class="deep-link" href="#geography-of-homicide-in-the-united-states-2007-pinker-2011ref"># </a>Geography of homicide in the United States, 2007 – Pinker (2011)<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. Pinker&#8217;s source is the U.S. Federal Bureau of Investigation 2007 report &#8216;Crime in the United States&#8217;. The FBI data is here.'>15</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg.jpg"><img class="aligncenter size-full wp-image-648" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg.jpg" alt="Geography-of-homicide-in-the-United-States-2007-Pinker-2007.jpg" width="600" height="349" srcset="//ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg.jpg 600w, //ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg-300x174.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-648" src="//ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg.jpg" alt="Geography-of-homicide-in-the-United-States-2007-Pinker-2007.jpg" width="600" height="349" srcset="//ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg.jpg 600w, //ourworldindata.org/wp-content/uploads/2013/03/geography-of-homicide-in-the-united-states-2007-pinker-2007-jpg-300x174.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<p>After a period of higher violence in the 1970s and 1980s the US experiences a marked decrease in homicides and other crime rates. Recent data is published in the US census <a href="http://www.census.gov/compendia/statab/2012/tables/12s0306.pdf">here</a>. From this data it can be seen that the downward trend continued in the recent economic crisis.</p>
+<h3 id="global-picture-of-homicides-in-the-post-war-world"> <a class="deep-link" href="#global-picture-of-homicides-in-the-post-war-world"># </a>Global Picture of Homicides in the Post-War World</h3>
+<h6 id="estimated-world-homicide-rates-per-100000-people-per-year-late-1900s-roth-2009ref"> <a class="deep-link" href="#estimated-world-homicide-rates-per-100000-people-per-year-late-1900s-roth-2009ref"># </a>Estimated world homicide rates (per 100,000 people per year), late 1900s – Roth (2009)<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='Roth (2009) &#8211; American Homicide. Harvard University Press. Source: World Health Organization (2002: 274–275, 308–313). a. Includes all nations except Canada and the United States. b. Includes Thailand and the Democratic People’s Republic of Korea. c. Includes Israel and all Central Asian nations from the former Soviet Union. d. Includes predominantly Muslim nations from North Africa to Pakistan. e. Includes the People’s Republic of China.'>16</sup></a></p>
+
+<table id="tablepress-21" class="tablepress tablepress-id-21">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">Location</th><th class="column-2">Total</th><th class="column-3">Male</th><th class="column-4">Female</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Low- and middle-income nations</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Sub-Saharan Africa</td><td class="column-2">22.2</td><td class="column-3">33.4</td><td class="column-4">11.8</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">The Americas (a)</td><td class="column-2">27.5</td><td class="column-3">51</td><td class="column-4">4.8</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">South Asia (b)</td><td class="column-2">5.8</td><td class="column-3">8.1</td><td class="column-4">3.5</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Europe (c)</td><td class="column-2">14.8</td><td class="column-3">23.2</td><td class="column-4">6.8</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Eastern Mediterranean (d)</td><td class="column-2">7.2</td><td class="column-3">9.4</td><td class="column-4">4.8</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Western Pacific and Southeast Asia (e)</td><td class="column-2">3.8</td><td class="column-3">5.6</td><td class="column-4">1.8</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">High-income nations</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">Canada</td><td class="column-2">1.4</td><td class="column-3">1.9</td><td class="column-4">1</td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1">Europe</td><td class="column-2">1</td><td class="column-3">1.4</td><td class="column-4">0.6</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1">Eastern Mediterranean</td><td class="column-2">4.2</td><td class="column-3">6</td><td class="column-4">1.2</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1">Western Pacific and Southeast Asia</td><td class="column-2">1.1</td><td class="column-3">1.3</td><td class="column-4">0.8</td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1">United States</td><td class="column-2">6.9</td><td class="column-3">10.7</td><td class="column-4">3.1</td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1">The world (high, middle, low income)</td><td class="column-2">8.8</td><td class="column-3">13.6</td><td class="column-4">4</td>
+</tr>
+</tbody>
+</table>
+
+<p>The following map shows homicide rates globally. Some facts aren&#8217;t surprising: Colombia and Venezuela, both known for having high levels drug trafficking, have high homicide rates. But the graph also reveals some surprising facts: Many nations in the Middle East, which are portrayed as being dangerous places, have lower homicide rates than developed nations like the United States.</p>
+<h6 id="world-map-of-homicide-rates-today-max-roserref"> <a class="deep-link" href="#world-map-of-homicide-rates-today-max-roserref"># </a>World map of homicide rates today – Max Roser<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='The data is taken from the UNODC Homicide Statistics online here. The data refers to the time period 2005 to 2011 and shows the mean homicide rate for countries for which data for more than 1 year is available. The UK refers to the average rate of England &amp; Wales, Northern Ireland and Scotland.'>17</sup></a></p>
+<div class="narrow_iframe">
+<p><iframe data-src="https://ourworldindata.org/wp-content/uploads/datamaps/HomicideWorldMap/HomicideWorldMapJan2014.html" width="100%" height="360" scrolling="no"></iframe><noscript><iframe src="https://ourworldindata.org/wp-content/uploads/datamaps/HomicideWorldMap/HomicideWorldMapJan2014.html" width="100%" height="360" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/datamaps/HomicideWorldMap/HomicideWorldMapJan2014.html">Full screen view</a></address>
+</div>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<h6 id="female-offenders-as-a-percentage-of-all-offenders-in-various-historical-studies-eisner-2003ref"> <a class="deep-link" href="#female-offenders-as-a-percentage-of-all-offenders-in-various-historical-studies-eisner-2003ref"># </a>Female offenders as a percentage of all offenders in various historical studies – Eisner (2003)<a id='ref-18' class='side-matter side-matter-ref' href='#note-18'><sup class='side-matter side-matter-sup' title='This is table 3 in Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142. &nbsp; Legend: * Infanticide explicitly excluded. † Includes insult. ‡ Minor assault only. § Serious assault only. # Includes pickpocketing.'>18</sup></a></p>
+<p>Kellermann and Mercy (1992)<a id='ref-19' class='side-matter side-matter-ref' href='#note-19'><sup class='side-matter side-matter-sup' title='Kellermann and Mercy (1992) &#8211; Men, women, and murder: gender-specific differences in rates of fatal violence and victimization. In Journal of Trauma, Injury, Infection, and Critical Care, 33, 1, 1&#8211;5.'>19</sup></a> studied 215,273 homicides in the United States between 1976 and 1987. In line with the results presented above only 14.7% of the homicides were commited by women. Similarly unequal was the distribution of gender among the victims. The study found that 77% of the 215.273 victims were men.</p>
+<p>The <a href="http://www.unodc.org/unodc/en/data-and-analysis/homicide.html">UNODC Homicide statistic 2012</a> has global data on the gender of the sex of homicide victims.</p>
+<p>The table below shows the percentage of female offenders for various regions throughout history.</p>
+
+<table id="tablepress-17" class="tablepress tablepress-id-17">
+<thead>
+<tr class="row-1">
+	<th class="column-1">Region</th><th class="column-2">Assault</th><th class="column-3">Robbery</th><th class="column-4">Homicide</th><th class="column-5">Property Crime</th><th class="column-6">Source</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1">Fourteenth–sixteenth centuries:</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td>
+</tr>
+<tr class="row-3">
+	<td class="column-1">England, 1202–76</td><td class="column-2">-</td><td class="column-3">-</td><td class="column-4">8.6</td><td class="column-5">-</td><td class="column-6">Given (1977, p. 48)</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1">England, various counties, 1300–1348</td><td class="column-2">-</td><td class="column-3">5.1</td><td class="column-4">7</td><td class="column-5">9.8</td><td class="column-6">Hanawalt (1979, p. 118)</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1">Cracau, 1361–1405</td><td class="column-2">1</td><td class="column-3"></td><td class="column-4">1.0*</td><td class="column-5">10</td><td class="column-6">Schüssler (1998, p. 313)</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1">Zurich, 1376–85</td><td class="column-2">1.4</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">4</td><td class="column-6">Burghartz (1990, p. 80)</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1">Avignon, 1372</td><td class="column-2">21.0†</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">23.7</td><td class="column-6">Chiffoleau (1984, p. 250)</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1">Arras, 1400–1436</td><td class="column-2">13.7‡ 4.6§</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">-</td><td class="column-6">Muchembled (1992, pp. 34, 89)</td>
+</tr>
+<tr class="row-9">
+	<td class="column-1">Constance, 1430–60</td><td class="column-2">4.7</td><td class="column-3">-</td><td class="column-4">.0*</td><td class="column-5">17.2</td><td class="column-6">Schuster (2000, p. 71)</td>
+</tr>
+<tr class="row-10">
+	<td class="column-1">Douai, 1496–1519</td><td class="column-2">-</td><td class="column-3">-</td><td class="column-4">1</td><td class="column-5">-</td><td class="column-6">Fouret (1984)</td>
+</tr>
+<tr class="row-11">
+	<td class="column-1">Amsterdam, 1490–1552</td><td class="column-2">14</td><td class="column-3">-</td><td class="column-4">3</td><td class="column-5">15</td><td class="column-6">Boomgaard (1992)</td>
+</tr>
+<tr class="row-12">
+	<td class="column-1">Arras, 1528–49</td><td class="column-2">5</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">20</td><td class="column-6">Muchembled (1992, pp. 34, 89)</td>
+</tr>
+<tr class="row-13">
+	<td class="column-1">Brussels, 1500–1600</td><td class="column-2">8.2</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">7.4</td><td class="column-6">Vanhemelryck (1981, p. 314)</td>
+</tr>
+<tr class="row-14">
+	<td class="column-1">Cologne, 1568–1612</td><td class="column-2">4.4</td><td class="column-3">4.7</td><td class="column-4">5.7*</td><td class="column-5">22.9</td><td class="column-6">Schwerhoff (1995, p. 91)</td>
+</tr>
+<tr class="row-15">
+	<td class="column-1">Seventeenth and eighteenth centuries:</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td>
+</tr>
+<tr class="row-16">
+	<td class="column-1">Rural areas near Trier, late 16th to early 18th centuries</td><td class="column-2">12.3</td><td class="column-3">4.5</td><td class="column-4">3.7*</td><td class="column-5">5.2</td><td class="column-6">Lacour (2000, p. 535)</td>
+</tr>
+<tr class="row-17">
+	<td class="column-1">Castile, 1623–99</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">1.4*</td><td class="column-5"></td><td class="column-6">Chaulet (1997, p. 17)</td>
+</tr>
+<tr class="row-18">
+	<td class="column-1">Bavaria, 1600–1649</td><td class="column-2">4.5</td><td class="column-3">-</td><td class="column-4">2.9*</td><td class="column-5">12.4</td><td class="column-6">Behringer (1995, p. 65)</td>
+</tr>
+<tr class="row-19">
+	<td class="column-1">Bavaria, 1685–89</td><td class="column-2">5</td><td class="column-3">.0</td><td class="column-4">4.5*</td><td class="column-5">13.2</td><td class="column-6">Behringer (1995, p. 67)</td>
+</tr>
+<tr class="row-20">
+	<td class="column-1">Surrey, 1663–1802</td><td class="column-2">18.2</td><td class="column-3">7.9</td><td class="column-4">13</td><td class="column-5">23.9</td><td class="column-6">Beattie (1975, p. 81)</td>
+</tr>
+<tr class="row-21">
+	<td class="column-1">Leiden, 1678–1794</td><td class="column-2">7.8</td><td class="column-3">41#</td><td class="column-4">5.5*</td><td class="column-5">47.3</td><td class="column-6">Kloek (1990, p. 8)</td>
+</tr>
+<tr class="row-22">
+	<td class="column-1">Gent, 1700–1789</td><td class="column-2">10.2</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">24.6</td><td class="column-6">Roets (1982)</td>
+</tr>
+<tr class="row-23">
+	<td class="column-1">Stockholm, 1708–18</td><td class="column-2">41</td><td class="column-3">-</td><td class="column-4">43</td><td class="column-5">67</td><td class="column-6">Andersson (1995)</td>
+</tr>
+<tr class="row-24">
+	<td class="column-1">Alençon, northern France, 1715–45</td><td class="column-2">20</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">33.5</td><td class="column-6">Champin (1972)</td>
+</tr>
+<tr class="row-25">
+	<td class="column-1">Armagh, Ireland, 1736–95</td><td class="column-2">6.5</td><td class="column-3">-</td><td class="column-4">7.6</td><td class="column-5">9.7</td><td class="column-6">Garnham (1996)</td>
+</tr>
+<tr class="row-26">
+	<td class="column-1">Neuchatel, 1707–1806</td><td class="column-2">6.2</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">14.7</td><td class="column-6">Henry (1984, p. 660)</td>
+</tr>
+<tr class="row-27">
+	<td class="column-1">Nice, 1736–92</td><td class="column-2">-</td><td class="column-3">-</td><td class="column-4">3</td><td class="column-5">-</td><td class="column-6">Eleuche-Santini (1979)</td>
+</tr>
+<tr class="row-28">
+	<td class="column-1">Rural northern Germany, 1680–1795</td><td class="column-2">3.5</td><td class="column-3">-</td><td class="column-4">-</td><td class="column-5">18.5</td><td class="column-6">Frank (1995, p. 235)</td>
+</tr>
+<tr class="row-29">
+	<td class="column-1">Late nineteenth-century Germany</td><td class="column-2">8</td><td class="column-3">-</td><td class="column-4">16</td><td class="column-5">-</td><td class="column-6">von Mayr (1917, p. 754)</td>
+</tr>
+<tr class="row-30">
+	<td class="column-1">Late twentieth century:</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td>
+</tr>
+<tr class="row-31">
+	<td class="column-1">England and Wales, 1997</td><td class="column-2">14.7</td><td class="column-3">8.5</td><td class="column-4">11.9*</td><td class="column-5">23</td><td class="column-6">Home Office (1998)</td>
+</tr>
+<tr class="row-32">
+	<td class="column-1">Italy, 1998</td><td class="column-2">16</td><td class="column-3">6.9</td><td class="column-4">5.2</td><td class="column-5">15.2</td><td class="column-6">Istituto Nazionale di Statistica (2000)</td>
+</tr>
+<tr class="row-33">
+	<td class="column-1">Germany, 1997</td><td class="column-2">12</td><td class="column-3">7.5</td><td class="column-4">10.0*</td><td class="column-5">23</td><td class="column-6">Bundeskriminalamt (1998)</td>
+</tr>
+<tr class="row-34">
+	<td class="column-1">United States, 1997</td><td class="column-2">15</td><td class="column-3">8</td><td class="column-4">10</td><td class="column-5">32</td><td class="column-6">Federal Bureau of Investigation (1998)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Similarly, the age distribution of violent offenders is not uniform, either. The following graph shows this distribution for various time periods and European regions.</p>
+<h6 id="age-distribution-of-violent-offenders-across-time-and-space-eisner-2003ref"> <a class="deep-link" href="#age-distribution-of-violent-offenders-across-time-and-space-eisner-2003ref"># </a>Age distribution of violent offenders across time and space – Eisner (2003)<a id='ref-20' class='side-matter side-matter-ref' href='#note-20'><sup class='side-matter side-matter-sup' title='Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142. Eisner notes: &#8216;Persons convicted of assault in 1908 in Germany added for comparative reasons. Sources: Mantova: Romani 1980; Amsterdam: Spierenburg 1984, p. 321; southern France: Ruff 1984, p. 90; Alençon: Champin 1972, p. 55; Germany: von Mayr 1917, p. 766.&#8217;'>20</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png.png"><img class="aligncenter size-full wp-image-739" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png.png" alt="Age-distribution-of-violent-offenders-across-time-and-space-Eisner-2003.png" width="600" height="387" srcset="//ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png-300x193.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-739" src="//ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png.png" alt="Age-distribution-of-violent-offenders-across-time-and-space-Eisner-2003.png" width="600" height="387" srcset="//ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/04/age-distribution-of-violent-offenders-across-time-and-space-eisner-2003-png-300x193.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<p>There are two very different sources for historical data on homicide rates depending on the era discussed. For the last few decades, statistical offices have recorded homicide rates as part of the vital statistics. Eisner (2003) notes that &#8220;in most European countries, data series start during the second half of the nineteenth century, although Swedish national death statistics were introduced in the middle of the eighteenth century&#8221;.<br />
+For earlier historical periods, researchers have reconstructed the long-term changes in homicide rates from historical records that often originated from some form of legal documentation of the crimes. Although there are gaps in the reconstructed data, and there are uncertainties in both the number of homicides and the size of the population, the historical record is more complete than one might assume. One reason for this is the great social importance of these crimes. Violent killings were of concern for a long time, and they were therefore often reliably registered. In some cases, or for prehistoric times, it is additionally possible to use the insights from forensic archaeologists, who can determine the causes of death from skeletal remains.<br />
+Usually homicide rates are calculated as homicides per 100,000 people per year.</p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="historical-sources"> <a class="deep-link" href="#historical-sources"># </a>Historical sources</h3>
+<p>The <em>&#8216;Historical Violence Database&#8217; </em>Data on violence from medieval times to the present, mainly in Western Europe and the US, has been collected in the &#8216;Historical Violence Database&#8217; at the Ohio State University. In addition to homicide rates for many countries this database also includes qualitative information &#8211; among much more inforamtion also on the place and the cause of death and on the victim and the perpetrator.<br />
+The website can be found here: <a href="http://web.archive.org/web/20121120195113/http://cjrc.osu.edu:80/researchprojects/hvd/">Historical Violence Database at Ohio State University</a></p>
+<h3 id="sources-homicide-data-in-the-post-war-time"> <a class="deep-link" href="#sources-homicide-data-in-the-post-war-time"># </a>Sources &#8211; Homicide Data in the Post-War Time</h3>
+<ul>
+<li>The World Health Organization presents data since 1950 <a href="http://web.archive.org/web/20140121073248/http://www.who.int:80/healthinfo/statistics/mortality/en/index.html">here</a>.</li>
+<li>The United Nations Office on Drugs and Crime (UNODC) has more recent data for more than 200 countries <a href="http://www.unodc.org/unodc/en/data-and-analysis/homicide.html">here</a>.</li>
+</ul>
+<p>For the USA there is data available from the Federal Bureau of Investigation (FBI) and the National Institutes of Health (NIH). And there is the National Violent Death Reporting System at the National Center for Injury Prevention and Control in Atlanta, Georgia that has detailed data <a href="http://www.cdc.gov/violenceprevention/nvdrs/">here</a>.</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>OECD (2011) – How&#8217;s Life? Measuring Well-being: Measuring Well-being.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Data for all but the last observation is taken from Table 1 in Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.</p>
+<p>The observations are printed at the midpoint of the given period.</p>
+<p>&nbsp;</p>
+<p>The 2010 observation for each region was added by me and this data is taken from the <a href="http://www.unodc.org/unodc/en/data-and-analysis/homicide.html">UNODC Homicide statistic 2012</a> &#8211; (International homicide, count and rate per 100.000). For regions of more than one country I calculated the average of all countries. The values given in the UNODC statistic are:</p>
+<p>1.2 &#8211; United Kingdom.<br />
+1.2 &#8211; Scandinavia (Sweden: 1.0; Denmark 0.9; Norway: 0,6; Finland: 2,2).<br />
+1.7 &#8211; Belgium.<br />
+1.1 &#8211; Netherlands.<br />
+0.9 &#8211; Italy.<br />
+0.7 &#8211; Switzerland.<br />
+0.8 &#8211; Germany.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Eisner (2003) &#8211; Long-Term Historical Trends in Violent Crime. In Crime and Justice, 30, 83&#8211;142.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Source is the UNODC <a href="http://www.unodc.org/documents/data-and-analysis/statistics/Homicide/Globa_study_on_homicide_2011_web.pdf">here</a> on page 76. The source of the data according to my UNODC source is: European Commission, Investing in Europe’s Future. Fifth report on economic, social and territorial cohesion (2010).</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Source: Clark and Wildner (2000) &#8211; Violence and fear of violence in East and West Germany. In Social Science &amp; Medicine, 51, 3, 373&#8211;379. EM = East German Males, WM = West German Males, EF = East German Females, WF = West German Females.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>The official statistics can be found at the <a href="http://www.bka.de/nn_193232/DE/Publikationen/PolizeilicheKriminalstatistik/PksZeitreihen/pksZeitreihen__node.html?__nnn=true">website of the BKA</a> in the document (Grundtabelle &#8211; ohne Tatortverteilung).</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Johnson (2006) &#8211; The Vanishing Killer: Japan’s Postwar Homicide Decline. In Social Science Japan Journal, 9, 1, 73&#8211;90.</p>
+<p>His source are &#8216;Official police statistics&#8217;.</p>
+<p>He notes that &#8216;because police data in Japan include homicide attempts, which have remained relatively stable during the postwar period at approximately 50% of the annual homicide total, the rates reflected in this figure should be reduced by about half in order to express the true number of killers.&#8217;</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Source: Roth (2009) &#8211; <em>American Homicide</em>. Harvard University Press.</p>
+<p>In this publication it is Figure 1.2. </p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. The most important source of Pinker is Roth (2009) &#8211; American homicide. Harvard University Press. Pinker also took this graph from this publication.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. The author&#8217;s sources are:</p>
+<p>Data for United States are from the FBI Uniform Crime Reports 1950–2010: U.S. Bureau of Justice Statistics, 2009; U.S. Federal Bureau of Investigation, 2010b, 2011; Fox &amp; Zawitz, 2007.<br />
+Data for Canada, 1961– 2007: Statistics Canada, 2008. Data for Canada, 2008: Statistics Canada, 2010. Data for Canada, 2009: K. Harris, “Canada’s crime rate falls,” Toronto Sun, Jul. 20, 2010.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. Pinker&#8217;s source is Monkkonen (2001) – Murder in New York City. University of California Press.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Pinker (2011) &#8211; The Better Angels of Our Nature: Why Violence Has Declined. Pinker&#8217;s source is the U.S. Federal Bureau of Investigation 2007 report &#8216;Crime in the United States&#8217;. The FBI data is <a href="http://www.fbi.gov/about-us/cjis/ucr/ucr">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Roth (2009) &#8211; <em>American Homicide</em>. Harvard University Press. Source: World Health Organization (2002: 274–275, 308–313).</p>
+<p>a. Includes all nations except Canada and the United States.</p>
+<p>b. Includes Thailand and the Democratic People’s Republic of Korea.</p>
+<p>c. Includes Israel and all Central Asian nations from the former Soviet Union.</p>
+<p>d. Includes predominantly Muslim nations from North Africa to Pakistan.</p>
+<p>e. Includes the People’s Republic of China.</p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the UNODC Homicide Statistics online <a href="http://www.unodc.org/unodc/en/data-and-analysis/homicide.html">here</a>.</p>
+<p>The data refers to the time period 2005 to 2011 and shows the mean homicide rate for countries for which data for more than 1 year is available. The UK refers to the average rate of England &amp; Wales, Northern Ireland and Scotland.</p>
+					</div>
+				</li>
+								<li id='note-18' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is table 3 in Eisner (2003) &#8211; <em>Long-Term Historical Trends in Violent Crime</em>. In Crime and Justice, 30, 83&#8211;142.</p>
+<p>&nbsp;</p>
+<p>Legend:<br />
+* Infanticide explicitly excluded.<br />
+† Includes insult.<br />
+‡ Minor assault only.<br />
+§ Serious assault only.<br />
+# Includes pickpocketing.</p>
+<p>
+					</div>
+				</li>
+								<li id='note-19' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Kellermann and Mercy (1992) &#8211; <em>Men, women, and murder: gender-specific differences in rates of fatal violence and victimization</em>. In Journal of Trauma, Injury, Infection, and Critical Care, 33, 1, 1&#8211;5.</p>
+					</div>
+				</li>
+								<li id='note-20' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Eisner (2003) &#8211; <em>Long-Term Historical Trends in Violent Crime</em>. In Crime and Justice, 30, 83&#8211;142.</p>
+<p>Eisner notes: &#8216;Persons convicted of assault in 1908 in Germany added for comparative reasons. Sources: Mantova: Romani 1980; Amsterdam: Spierenburg 1984, p. 321; southern France: Ruff 1984, p. 90; Alençon: Champin 1972, p. 55; Germany: von Mayr 1917, p. 766.&#8217;</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473847031'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=2092&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/13 queries in 0.016 seconds using disk
+Object Caching 4235/4279 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 10:57:20 by W3 Total Cache -->

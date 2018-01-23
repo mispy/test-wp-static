@@ -1,0 +1,246 @@
+[15-Jul-2015 01:24:03 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[29-Jul-2015 12:32:51 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[10-Aug-2015 17:15:33 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[10-Aug-2015 18:36:49 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[10-Aug-2015 21:03:04 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[13-Aug-2015 11:16:54 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[20-Aug-2015 14:07:48 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom-comments.php on line 8
+[20-Aug-2015 14:07:50 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration.php on line 7
+[20-Aug-2015 14:07:54 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[20-Aug-2015 14:07:54 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[20-Aug-2015 14:07:54 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[20-Aug-2015 14:07:54 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[20-Aug-2015 14:07:54 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/class-snoopy.php on line 6
+[20-Aug-2015 14:07:55 America/Denver] PHP Fatal error:  Call to undefined function is_robots() in /home2/explain3/public_html/wp-includes/template-loader.php on line 28
+[20-Aug-2015 14:07:56 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[20-Aug-2015 14:07:56 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration-functions.php on line 7
+[20-Aug-2015 14:08:03 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-scripts.php on line 19
+[20-Aug-2015 14:08:06 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/nav-menu-template.php on line 16
+[20-Aug-2015 14:08:07 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/category-template.php on line 912
+[20-Aug-2015 14:08:10 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rdf.php on line 8
+[20-Aug-2015 14:08:11 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/class-wp-embed.php on line 26
+[20-Aug-2015 14:08:11 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[20-Aug-2015 14:08:12 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss.php on line 19
+[20-Aug-2015 14:08:14 America/Denver] PHP Fatal error:  Call to undefined function is_main_site() in /home2/explain3/public_html/wp-includes/update.php on line 666
+[20-Aug-2015 14:08:15 America/Denver] PHP Fatal error:  Call to undefined function add_shortcode() in /home2/explain3/public_html/wp-includes/media.php on line 815
+[20-Aug-2015 14:08:16 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[20-Aug-2015 14:08:16 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[20-Aug-2015 14:08:16 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[20-Aug-2015 14:08:17 America/Denver] PHP Fatal error:  Class 'IXR_Client' not found in /home2/explain3/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[20-Aug-2015 14:08:18 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home2/explain3/public_html/wp-includes/default-widgets.php on line 14
+[20-Aug-2015 14:08:21 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[20-Aug-2015 14:08:23 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home2/explain3/public_html/wp-includes/vars.php on line 23
+[20-Aug-2015 14:08:26 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss.php on line 8
+[20-Aug-2015 14:08:26 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-styles.php on line 19
+[20-Aug-2015 14:08:28 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[20-Aug-2015 14:08:28 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[20-Aug-2015 14:08:28 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[20-Aug-2015 14:08:29 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2-comments.php on line 8
+[20-Aug-2015 14:08:33 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[20-Aug-2015 14:08:33 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[20-Aug-2015 14:08:33 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[20-Aug-2015 14:08:33 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[20-Aug-2015 14:08:36 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[20-Aug-2015 14:08:36 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[20-Aug-2015 14:08:36 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[20-Aug-2015 14:08:39 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2.php on line 8
+[20-Aug-2015 14:08:41 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/post-template.php on line 1292
+[20-Aug-2015 14:08:41 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-constants.php on line 153
+[20-Aug-2015 14:08:46 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/comment-template.php on line 1662
+[20-Aug-2015 14:08:47 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-filters.php on line 17
+[20-Aug-2015 14:08:47 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/default-filters.php on line 17
+[20-Aug-2015 14:08:47 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom.php on line 8
+[20-Aug-2015 14:08:47 America/Denver] PHP Fatal error:  Class 'IXR_Server' not found in /home2/explain3/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[28-Aug-2015 11:29:08 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[22-Sep-2015 01:02:55 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[23-Oct-2015 04:34:26 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/category-template.php on line 912
+[23-Oct-2015 04:34:27 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-scripts.php on line 19
+[23-Oct-2015 04:34:31 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/default-filters.php on line 17
+[23-Oct-2015 04:34:31 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[23-Oct-2015 04:34:34 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[23-Oct-2015 04:34:34 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[23-Oct-2015 04:34:34 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[23-Oct-2015 04:34:34 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[23-Oct-2015 04:34:34 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[23-Oct-2015 04:34:34 America/Denver] PHP Fatal error:  Class 'IXR_Client' not found in /home2/explain3/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[23-Oct-2015 04:34:35 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home2/explain3/public_html/wp-includes/default-widgets.php on line 14
+[23-Oct-2015 04:34:38 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rdf.php on line 8
+[23-Oct-2015 04:34:40 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home2/explain3/public_html/wp-includes/vars.php on line 23
+[23-Oct-2015 04:34:40 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration-functions.php on line 7
+[23-Oct-2015 04:34:43 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[23-Oct-2015 04:34:43 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[23-Oct-2015 04:34:43 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[23-Oct-2015 04:34:44 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2-comments.php on line 8
+[23-Oct-2015 04:34:44 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-styles.php on line 19
+[23-Oct-2015 04:34:50 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/class-wp-embed.php on line 26
+[23-Oct-2015 04:34:52 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/post-template.php on line 1292
+[23-Oct-2015 04:34:54 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-constants.php on line 153
+[23-Oct-2015 04:34:55 America/Denver] PHP Fatal error:  Call to undefined function is_robots() in /home2/explain3/public_html/wp-includes/template-loader.php on line 28
+[23-Oct-2015 04:34:57 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration.php on line 7
+[23-Oct-2015 04:34:58 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[23-Oct-2015 04:34:58 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/class-snoopy.php on line 6
+[23-Oct-2015 04:35:00 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom-comments.php on line 8
+[23-Oct-2015 04:35:10 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-filters.php on line 17
+[23-Oct-2015 04:35:12 America/Denver] PHP Fatal error:  Call to undefined function add_shortcode() in /home2/explain3/public_html/wp-includes/media.php on line 815
+[23-Oct-2015 04:35:12 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss.php on line 8
+[23-Oct-2015 04:35:13 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/comment-template.php on line 1662
+[23-Oct-2015 04:35:17 America/Denver] PHP Fatal error:  Class 'IXR_Server' not found in /home2/explain3/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[23-Oct-2015 04:35:21 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[23-Oct-2015 04:35:21 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[23-Oct-2015 04:35:21 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[23-Oct-2015 04:35:23 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2.php on line 8
+[23-Oct-2015 04:35:23 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[23-Oct-2015 04:35:23 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[23-Oct-2015 04:35:23 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[23-Oct-2015 04:35:23 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[23-Oct-2015 04:35:28 America/Denver] PHP Fatal error:  Call to undefined function is_main_site() in /home2/explain3/public_html/wp-includes/update.php on line 666
+[23-Oct-2015 04:35:28 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom.php on line 8
+[23-Oct-2015 04:35:30 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/nav-menu-template.php on line 16
+[23-Oct-2015 04:35:30 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[23-Oct-2015 04:35:30 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[23-Oct-2015 04:35:30 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[23-Oct-2015 04:35:32 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss.php on line 19
+[04-Nov-2015 14:21:02 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/nav-menu-template.php on line 16
+[04-Nov-2015 14:21:03 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home2/explain3/public_html/wp-includes/default-widgets.php on line 14
+[04-Nov-2015 14:21:03 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss.php on line 19
+[04-Nov-2015 14:21:04 America/Denver] PHP Fatal error:  Class 'IXR_Server' not found in /home2/explain3/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[04-Nov-2015 14:21:05 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Nov-2015 14:21:05 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Nov-2015 14:21:05 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Nov-2015 14:21:05 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Nov-2015 14:21:05 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/class-wp-embed.php on line 26
+[04-Nov-2015 14:21:06 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration.php on line 7
+[04-Nov-2015 14:21:07 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Nov-2015 14:21:07 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Nov-2015 14:21:07 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Nov-2015 14:21:07 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Nov-2015 14:21:07 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rdf.php on line 8
+[04-Nov-2015 14:21:08 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2-comments.php on line 8
+[04-Nov-2015 14:21:09 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-styles.php on line 19
+[04-Nov-2015 14:21:11 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-constants.php on line 153
+[04-Nov-2015 14:21:12 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration-functions.php on line 7
+[04-Nov-2015 14:21:12 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-filters.php on line 17
+[04-Nov-2015 14:21:12 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss.php on line 8
+[04-Nov-2015 14:21:14 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Nov-2015 14:21:14 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Nov-2015 14:21:14 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Nov-2015 14:21:14 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-scripts.php on line 19
+[04-Nov-2015 14:21:16 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/class-snoopy.php on line 6
+[04-Nov-2015 14:21:17 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Nov-2015 14:21:17 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Nov-2015 14:21:17 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Nov-2015 14:21:18 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/default-filters.php on line 17
+[04-Nov-2015 14:21:18 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom.php on line 8
+[04-Nov-2015 14:21:19 America/Denver] PHP Fatal error:  Call to undefined function is_robots() in /home2/explain3/public_html/wp-includes/template-loader.php on line 28
+[04-Nov-2015 14:21:19 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home2/explain3/public_html/wp-includes/vars.php on line 23
+[04-Nov-2015 14:21:19 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Nov-2015 14:21:19 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Nov-2015 14:21:19 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Nov-2015 14:21:19 America/Denver] PHP Fatal error:  Call to undefined function is_main_site() in /home2/explain3/public_html/wp-includes/update.php on line 666
+[04-Nov-2015 14:21:20 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/category-template.php on line 912
+[04-Nov-2015 14:21:21 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[04-Nov-2015 14:21:21 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2.php on line 8
+[04-Nov-2015 14:21:22 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[04-Nov-2015 14:21:22 America/Denver] PHP Fatal error:  Class 'IXR_Client' not found in /home2/explain3/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[04-Nov-2015 14:21:22 America/Denver] PHP Fatal error:  Call to undefined function add_shortcode() in /home2/explain3/public_html/wp-includes/media.php on line 815
+[04-Nov-2015 14:21:26 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/comment-template.php on line 1662
+[04-Nov-2015 14:21:26 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[04-Nov-2015 14:21:26 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/post-template.php on line 1292
+[04-Nov-2015 14:21:27 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom-comments.php on line 8
+[16-Nov-2015 01:31:23 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home2/explain3/public_html/wp-includes/default-widgets.php on line 14
+[16-Nov-2015 01:31:24 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration-functions.php on line 7
+[16-Nov-2015 01:31:27 America/Denver] PHP Fatal error:  Class 'IXR_Server' not found in /home2/explain3/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[16-Nov-2015 01:31:29 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[16-Nov-2015 01:31:30 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss.php on line 19
+[16-Nov-2015 01:31:34 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 01:31:34 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 01:31:34 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 01:31:34 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[16-Nov-2015 01:31:34 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-constants.php on line 153
+[16-Nov-2015 01:31:35 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 01:31:35 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 01:31:35 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 01:31:35 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[16-Nov-2015 01:31:35 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom.php on line 8
+[16-Nov-2015 01:31:35 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rdf.php on line 8
+[16-Nov-2015 01:31:35 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 01:31:35 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 01:31:35 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[16-Nov-2015 01:31:38 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/default-filters.php on line 17
+[16-Nov-2015 01:31:38 America/Denver] PHP Fatal error:  Class 'IXR_Client' not found in /home2/explain3/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[16-Nov-2015 01:31:39 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[16-Nov-2015 01:31:42 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[16-Nov-2015 01:31:42 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-filters.php on line 17
+[16-Nov-2015 01:31:42 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-styles.php on line 19
+[16-Nov-2015 01:31:46 America/Denver] PHP Fatal error:  Call to undefined function is_main_site() in /home2/explain3/public_html/wp-includes/update.php on line 666
+[16-Nov-2015 01:31:46 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/post-template.php on line 1292
+[16-Nov-2015 01:31:47 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/comment-template.php on line 1662
+[16-Nov-2015 01:31:51 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/class-snoopy.php on line 6
+[16-Nov-2015 01:31:52 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 01:31:52 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 01:31:52 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[16-Nov-2015 01:31:52 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-scripts.php on line 19
+[16-Nov-2015 01:31:52 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home2/explain3/public_html/wp-includes/vars.php on line 23
+[16-Nov-2015 01:31:58 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/class-wp-embed.php on line 26
+[16-Nov-2015 01:31:59 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss.php on line 8
+[16-Nov-2015 01:32:01 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2-comments.php on line 8
+[16-Nov-2015 01:32:02 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/nav-menu-template.php on line 16
+[16-Nov-2015 01:32:04 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration.php on line 7
+[16-Nov-2015 01:32:05 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/category-template.php on line 912
+[16-Nov-2015 01:32:06 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom-comments.php on line 8
+[16-Nov-2015 01:32:09 America/Denver] PHP Fatal error:  Call to undefined function add_shortcode() in /home2/explain3/public_html/wp-includes/media.php on line 815
+[16-Nov-2015 01:32:10 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2.php on line 8
+[16-Nov-2015 01:32:10 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[16-Nov-2015 01:32:10 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[16-Nov-2015 01:32:10 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[16-Nov-2015 01:40:13 America/Denver] PHP Fatal error:  Call to undefined function is_robots() in /home2/explain3/public_html/wp-includes/template-loader.php on line 28
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2-comments.php on line 8
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/nav-menu-template.php on line 16
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/post-template.php on line 1292
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rdf.php on line 8
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  Call to undefined function is_main_site() in /home2/explain3/public_html/wp-includes/update.php on line 666
+[04-Dec-2015 23:13:16 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Dec-2015 23:13:16 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Dec-2015 23:13:16 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/functions.php on line 8
+[04-Dec-2015 23:13:17 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom.php on line 8
+[04-Dec-2015 23:13:17 America/Denver] PHP Fatal error:  Class 'WP_Widget' not found in /home2/explain3/public_html/wp-includes/default-widgets.php on line 14
+[04-Dec-2015 23:13:17 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-atom-comments.php on line 8
+[04-Dec-2015 23:13:17 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/class-wp-embed.php on line 26
+[04-Dec-2015 23:13:17 America/Denver] PHP Fatal error:  Call to undefined function is_robots() in /home2/explain3/public_html/wp-includes/template-loader.php on line 28
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-gd.php on line 17
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss.php on line 19
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss.php on line 8
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Class 'IXR_Client' not found in /home2/explain3/public_html/wp-includes/class-wp-http-ixr-client.php on line 9
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Call to undefined function feed_content_type() in /home2/explain3/public_html/wp-includes/feed-rss2.php on line 8
+[04-Dec-2015 23:13:18 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/comment-template.php on line 1662
+[04-Dec-2015 23:13:19 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home2/explain3/public_html/wp-includes/default-filters.php on line 17
+[04-Dec-2015 23:13:19 America/Denver] PHP Fatal error:  Class 'IXR_Server' not found in /home2/explain3/public_html/wp-includes/class-wp-xmlrpc-server.php on line 23
+[04-Dec-2015 23:13:20 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-scripts.php on line 19
+[04-Dec-2015 23:13:20 America/Denver] PHP Fatal error:  Call to undefined function add_shortcode() in /home2/explain3/public_html/wp-includes/media.php on line 815
+[04-Dec-2015 23:13:20 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home2/explain3/public_html/wp-includes/category-template.php on line 912
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home2/explain3/public_html/wp-includes/class-wp-image-editor-imagick.php on line 17
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home2/explain3/public_html/wp-includes/vars.php on line 23
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration-functions.php on line 7
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Class 'WP_Dependencies' not found in /home2/explain3/public_html/wp-includes/class.wp-styles.php on line 19
+[04-Dec-2015 23:13:21 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Dec-2015 23:13:21 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Dec-2015 23:13:21 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-simplepie.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-feed.php on line 4
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-constants.php on line 153
+[04-Dec-2015 23:13:21 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/explain3/public_html/wp-includes/ms-default-filters.php on line 17
+[04-Dec-2015 23:13:22 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Dec-2015 23:13:22 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Dec-2015 23:13:22 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/script-loader.php on line 25
+[04-Dec-2015 23:13:22 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/class-snoopy.php on line 6
+[04-Dec-2015 23:13:23 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/registration.php on line 7
+[04-Dec-2015 23:13:23 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Dec-2015 23:13:23 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Dec-2015 23:13:23 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/class-simplepie.php on line 5
+[04-Dec-2015 23:25:35 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Dec-2015 23:25:35 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Dec-2015 23:25:35 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/ms-load.php): failed to open stream: No such file or directory in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[04-Dec-2015 23:25:35 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/explain3/public_html/wp-includes/ms-settings.php on line 14
+[12-Dec-2015 04:30:51 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[22-Dec-2015 03:20:15 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8
+[21-Mar-2016 03:35:20 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home2/explain3/public_html/wp-includes/rss-functions.php on line 8

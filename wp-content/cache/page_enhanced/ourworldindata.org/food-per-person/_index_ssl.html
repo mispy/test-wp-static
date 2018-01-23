@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Food per Person - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; Food per Person Comments Feed" href="//ourworldindata.org/food-per-person/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/food-per-person/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=596' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Ffood-per-person%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Ffood-per-person%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="Food per Person"/>
+<meta itemprop="name" content="Food per Person"/>
+<meta name="twitter:title" content="Food per Person"/>
+<meta property="og:url" content="https://ourworldindata.org/food-per-person/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/food-per-person/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Empirical View
+Inequality of Food Consumption in France and England
+Before modern technology increased the productivity of the agricultural sector, food was very scarce in both England and France. In both countries the inequality in food consumption was very high, and it was only small share of th"/>
+<meta itemprop="description" content="Empirical View
+Inequality of Food Consumption in France and England
+Before modern technology increased the productivity of the agricultural sector, food was very scarce in both England and France. In both countries the inequality in food consumption was very high, and it was only small share of th"/>
+<meta name="twitter:description" content="Empirical View
+Inequality of Food Consumption in France and England
+Before modern technology increased the productivity of the agricultural sector, food was very scarce in both England and France. In both countries the inequality in food consumption was very high, and it was only small share of th"/>
+<meta property="og:image" content="https://ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png"/>
+<meta itemprop="image" content="https://ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png"/>
+<meta name="twitter:image" content="https://ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473851359">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-596 page-child parent-pageid-199 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-596" class="post-596 page type-page status-publish has-post-thumbnail hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">Food per Person</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser (2016) – &lsquo;Food per Person&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/food-per-person/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<h3 id="inequality-of-food-consumption-in-france-and-england"> <a class="deep-link" href="#inequality-of-food-consumption-in-france-and-england"># </a>Inequality of Food Consumption in France and England</h3>
+<p>Before modern technology increased the productivity of the agricultural sector, food was very scarce in both England and France. In both countries the inequality in food consumption was very high, and it was only small share of the population that had enough to eat. As it is shown in the following graph, the highest decile consumed roughly three times as much much as the lowest decile. Fogel<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='Fogel (2004) &#8211; The Escape from Hunger and Premature Death, 1700-2100: Europe, America, and the Third World. New York: Cambridge University Press.'>1</sup></a> points out how grave the consequences for the poor were: &#8216;Individuals in the bottom 20 percent of the caloric distributions of France and England near the end of the eighteenth century lacked the energy for sustained work and were effectively excluded from the labor force. Moreover, even those who participated in the labor force had only relatively small amounts of energy for work.&#8217;</p>
+<h6 id="inequality-of-food-consumption-daily-food-consumption-in-kcal-for-men-aged-20-39-at-the-end-of-the-eighteenth-century-in-france-and-england-max-roserref"> <a class="deep-link" href="#inequality-of-food-consumption-daily-food-consumption-in-kcal-for-men-aged-20-39-at-the-end-of-the-eighteenth-century-in-france-and-england-max-roserref"># </a>Inequality of food consumption – daily food consumption (in kcal) for men aged 20-39 at the end of the eighteenth century in France and England – Max Roser<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='I have taken this data from table 2.4 in Floud, Fogel, Harris, and Hong (2011) &#8211; The Changing Body: Health, Nutrition, and Human Development in the Western World since 1700. &nbsp; The data refers to food consumption per consuming unit. The authors explain what a consuming unit refers to: &#8220;In order to standardize for the age and sex distribution of a population, it is convenient to convert the per capita consumption of calories into consumption per equivalent adult male aged 20–39 (referred to as a consuming unit). This transformation involves weighting persons at each age and sex relative to adult males aged 20–39.&#8221; (Quote from the same book, page 44).'>2</sup></a></p>
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/graphs/nvd3_BarChart_InequalityKCALperCapitaFranceEngland/nvd3_BarChart_InequalityKCALperCapitaFranceEngland.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/graphs/nvd3_BarChart_InequalityKCALperCapitaFranceEngland/nvd3_BarChart_InequalityKCALperCapitaFranceEngland.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/graphs/nvd3_BarChart_InequalityKCALperCapitaFranceEngland/nvd3_BarChart_InequalityKCALperCapitaFranceEngland.html">Full screen view</a> <a href="http://ourworldindata.org/roser/graphs/nvd3_BarChart_InequalityKCALperCapitaFranceEngland/nvd3_BarChart_InequalityKCALperCapitaFranceEngland.csv">Download Data</a></address>
+<h3 id="improving-food-supply-in-early-modernized-countries"> <a class="deep-link" href="#improving-food-supply-in-early-modernized-countries"># </a>Improving Food Supply in Early Modernized Countries</h3>
+<p>As productivity increased, famines and the exclusion of the poor due to hunger and too little energy became a thing of the past in both France and England. The improving supply of food in both countries is shown in the following data visualization. In terms of calories, the average food supply in France more than doubled over the last 300 years. Fogel (2004)<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Fogel (2004) &#8211; The Escape from Hunger and Premature Death, 1700-2100: Europe, America, and the Third World.'>3</sup></a>, the original source for some of the presented data, brings the numbers in perspective: &#8216;the energy value of the typical diet in France at the start of the eighteenth century was as low as that of Rwanda in 1965, the most malnourished nation for that year in the tables of the World Bank&#8217;.</p>
+<h6 id="daily-caloric-intake-per-capita-in-european-countries-and-the-usa-1700-2010-max-roserref"> <a class="deep-link" href="#daily-caloric-intake-per-capita-in-european-countries-and-the-usa-1700-2010-max-roserref"># </a>Daily caloric intake per capita in European countries and the USA, 1700-2010 – Max Roser<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Sources: The data for Belgium, England, Finland, France, Germany, Iceland, Italy, the Netherlands and Norway between 1800 and 1960 is taken from Table 5.5 (Daily calorie consumption per head in western Europe, 1800–1960) in Floud, Fogel, Harris, and Hong (2011) &#8211; The Changing Body Health, Nutrition, and Human Development in the Western World Since 1700. The data for England in 1700 and 1750 refers to England and Wales and is series B (the higher estimate) in table 4.9 in the same publication. The data for the USA is taken from table 6.6 (Estimated daily caloric intake per capita, 1800–2004) in the same publication (the data for 1950 originally refers to 1952). The data for France in 1705 is taken from table 1.2 in  Fogel &#8211; The Escape from Hunger and Premature Death, 1700-2100. The data since 1970 for all countries (except the US until 1990 where the series cited above is shown but the FAO is very similar) is taken from the FAO online here &#8211;  (England refers to the United Kingdom and Belgium refers to Belgium-Luxembourg in the FAO Statistics)'>4</sup></a><br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/graphs/CaloricIntakeWesternEuropeAndUSASince1700/CaloricIntakeWesternEuropeAndUSASince1700.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/graphs/CaloricIntakeWesternEuropeAndUSASince1700/CaloricIntakeWesternEuropeAndUSASince1700.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/graphs/CaloricIntakeWesternEuropeAndUSASince1700/CaloricIntakeWesternEuropeAndUSASince1700.html">Full screen view</a> <a href="http://ourworldindata.org/roser/graphs/CaloricIntakeWesternEuropeAndUSASince1700/CaloricIntakeWesternEuropeAndUSASince1700.csv">Download Data</a></address>
+<h3 id="the-global-perspective-on-food-supply"> <a class="deep-link" href="#the-global-perspective-on-food-supply"># </a>The Global Perspective on Food Supply</h3>
+<p>While the population in the early modernized countries consumed more than 2500 kcal on average by the turn from the 19th to the 20 century other world regions lagged behind. Goklany (1999) presents data taken from the FAO to give a global overview on food consumption since the 1930s. As we have seen before France &#8211; the highest series on the graph &#8211; has already left the hungry past behind. The other three countries for which we have data before 1960 are Brazil, China and India, and none of these countries managed to increase the food supply before 1960. But over the last six decades this has changed considerably, and all series presented in the graph are now trending upwards. This is an especially huge achievement as the <a title="World Population Growth" href="http://explainingprogress.com/data/population-growth-vital-statistics/world-population-growth/">population increased massively in our world</a>, but that is the nature of productivity growth &#8211; while there are more and more people there is still more and more for each of them.</p>
+<h6 id="daily-food-supplies-for-countries-around-the-world-193438-2002-goklany-1999ref"> <a class="deep-link" href="#daily-food-supplies-for-countries-around-the-world-193438-2002-goklany-1999ref"># </a>Daily food supplies for countries around the world, 1934/38 &#8211; 2002 – Goklany (1999)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='This is taken from Goklany (1999) &#8211; Meeting global food needs: The Environmental trade-offs between increasing land conversion and land productivity. In Technology-Elmsford-Journal of the Franklin Institute then Journal of Science Serving Legislative Regulatory and Judicial Systems.'>5</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png.png"><img class="aligncenter size-full wp-image-594" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png.png" alt="Daily-food-supplies-for-countries-around-the-world-1936-2002.png" width="600" height="373" srcset="//ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png-300x186.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-594" src="//ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png.png" alt="Daily-food-supplies-for-countries-around-the-world-1936-2002.png" width="600" height="373" srcset="//ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/daily-food-supplies-for-countries-around-the-world-1936-2002-png-300x186.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<p>The most widely used data on food supply and consumption is published by the UN  Food and Agriculture Organization (FAO). This data is annually available and is updated by the FAO but it only goes back until 1961. I have presented this data in the last graph. It shows that food supply has been almost constant in Oceania and Europe while it has been rising rapidly in the rest of the world. The rise in the poorer regions of the world means that in terms of food supply we are living in a more and more equal world. At the beginning of this entry we have seen the huge gap between the rich and the poor within countries. Now we see that, similarly to what has happened within countries, we are now experiencing a constantly decreasing inequality across the world. As we are certainly heading in the right direction, it is also true that we are surely not where we want to be. Technological progress, better institutions, research and education ended malnutrition in parts of the world &#8211; and this is certainly not a small achievement &#8211; but we have to continuously improve to end malnutrition for everyone.</p>
+<h6 id="world-maps-of-food-supply-kcal-per-capita-per-day-1961-2009-max-roserref"> <a class="deep-link" href="#world-maps-of-food-supply-kcal-per-capita-per-day-1961-2009-max-roserref"># </a>World maps of food supply (kcal per capita per day), 1961-2009 – Max Roser<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='The data is taken from the FAO (FAOSTAT) here. Shown is the Grand Total series of Food Supply (kcal/capita/day) Belgium refers to Belgium-Luxembourg for data before 2000. The Czech Republic refers to Czechoslovakia before 1993. Ethiopia refers to Ethiopia PDR before 1993. Sudan refers to the former borders of the Sudan (before the separation of South Sudan). The Russian Federation refers to the entire USSR before 1992.'>6</sup></a></p>
+<div class="narrow_iframe">
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/datamaps/kcalPerCapita_since1961_FAO/kcalPerCapita_since1961_FAO.html" width="100%" height="405" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/datamaps/kcalPerCapita_since1961_FAO/kcalPerCapita_since1961_FAO.html" width="100%" height="405" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/datamaps/kcalPerCapita_since1961_FAO/kcalPerCapita_since1961_FAO.html">Full screen view</a>       <a href="http://ourworldindata.org/wp-content/uploads/datamaps/kcalPerCapita_since1961_FAO/kcalPerCapita_since1961_FAO.html" target="_blank">Open in new tab</a>       <a href="http://ourworldindata.org/wp-content/uploads/datamaps/kcalPerCapita_since1961_FAO/kcalPerCapita_since1961_FAO.csv">Download Data</a></address>
+</div>
+<h6 id="world-maps-of-minimum-and-average-dietary-energy-requirement-mder-and-ader-max-roserref"> <a class="deep-link" href="#world-maps-of-minimum-and-average-dietary-energy-requirement-mder-and-ader-max-roserref"># </a>World maps of minimum and average dietary energy requirement (MDER and ADER) – Max Roser<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='This data is taken from the Food Security Indicators of the FAO that are available for download here. The data presented here was last updated by the FAO on October 1st, 2013.'>7</sup></a></p>
+<div class="narrow_iframe">
+<p><iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/maps/EnergyReq_ADER_MDER/EnergyReq_ADER_MDER.html" width="100%" height="410" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/maps/EnergyReq_ADER_MDER/EnergyReq_ADER_MDER.html" width="100%" height="410" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/maps/EnergyReq_ADER_MDER/EnergyReq_ADER_MDER.html">Full screen view</a>       <a class="newtab" href="http://ourworldindata.org/roser/maps/EnergyReq_ADER_MDER/EnergyReq_ADER_MDER.html" target="_blank">Open in new tab</a>       <a href="http://ourworldindata.org/roser/maps/EnergyReq_ADER_MDER/EnergyReq_ADER_MDER.csv">Download Data</a></address>
+</div>
+<h6 id="kcal-per-capita-by-world-region-1961-2009-max-roserref"> <a class="deep-link" href="#kcal-per-capita-by-world-region-1961-2009-max-roserref"># </a>KCal per capita by world region, 1961-2009 – Max Roser<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='These up-to-date statistics from the FAO available here.'>8</sup></a> <a href="http://ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png"><img class="aligncenter size-full wp-image-595" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png" alt="kcalcapitaday-by-world-regions-mg.png" width="600" height="436" srcset="//ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png-300x218.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter size-full wp-image-595" src="//ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png" alt="kcalcapitaday-by-world-regions-mg.png" width="600" height="436" srcset="//ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/03/kcalcapitaday-by-world-regions-mg-png-300x218.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<h2 id="data-quality-definition"> <a class="deep-link" href="#data-quality-definition"># </a>Data Quality &amp; Definition</h2>
+<p>The following definitions are quoted from <em>The State of Food Insecurity in the World</em>:<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='This is the definition in FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online here.'>9</sup></a></p>
+<ul>
+<li><strong>Dietary energy requirement (DER) </strong>– The amount of dietary energy required by an individual to maintain body functions, health and normal activity.</li>
+<li><strong>Minimum dietary energy requirement (MDER)</strong> – In a specified age/sex category, the minimum amount of dietary energy per person that is considered adequate to meet the energy needs at a minimum acceptable BMI of an individual engaged in low physical activity. If referring to an entire population, the minimum energy requirement is the weighted average of the minimum energy requirements of the different age/sex groups. It is expressed as kilocalories per person per day.</li>
+<li><strong>Maximum dietary energy requirement</strong> – In a specified age and sex group, the amount of dietary energy per person that is considered adequate to meet the energy needs for heavy activity and good health. In an entire population, the maximum energy requirement is the weighted average of the maximum energy requirements of the different age and sex groups in the population. This is expressed in kilocalories per person per day.<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='This is the only definition here not taken from the source cited above. Instead this is taken from the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online here.'>10</sup></a></li>
+</ul>
+<ul>
+<li><strong>Dietary energy supply (DES)</strong> – Food available for human consumption, expressed in kilocalories per person per day (kcal/person/day). At country level, it is calculated as the food remaining for human use after deduction of all non-food utilizations (i.e. food = production + imports + stock withdrawals − exports − industrial use − animal feed – seed – wastage − additions to stock). Wastage includes losses of usable products occurring along distribution chains from farm gate (or port of import) up to the retail level.</li>
+<li><strong>Dietary energy supply adequacy</strong> – Dietary energy supply as a percentage of the average dietary energy requirement.</li>
+<li><strong>Dietary energy intake</strong> – The energy content of food consumed.</li>
+</ul>
+<p>&nbsp;</p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h5 id="food-and-agriculture-organization-fao-food-supply-database"> <a class="deep-link" href="#food-and-agriculture-organization-fao-food-supply-database"># </a>Food and Agriculture Organization (FAO) Food Supply database</h5>
+<ul>
+<li><strong>Data:</strong> Covers food commodities that have been converted back into primary equivalents (Quantity, Dietary Energy, Proteins, Fats, Totals and per Capita). Also includes &#8216;Per Capita Food Supply Variability&#8217;</li>
+<li><strong>Geographical coverage:</strong> Global – by country and world region</li>
+<li><strong>Time span:</strong> Since 1961</li>
+<li><strong>Available at:</strong> Online at FAOSTAT <a href="http://faostat.fao.org/site/345/default.aspx">here</a></li>
+<li class="no-bullet"><em>Detailed food consumption data is available in the <a href="http://faostat.fao.org/site/368/DesktopDefault.aspx#ancor">FAO Food Balance Sheet data</a>. This data is described in FAO (2001) – &#8216;Food Balance Sheets – A Handbook&#8217; (online <a href="http://www.fao.org/docrep/003/X9892E/X9892E00.HTM">here</a>). </em></li>
+<li class="no-bullet"><em><em>The FAO data is also available through <a href="http://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=f;nsl=t;se=t$wst;tts=C$ts;sp=6;ti=2007$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGlYVVpXX20tbU13STZyVG0yNkRrZnc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=176;dataMax=107100$map_y;scale=lin;dataMin=1220;dataMax=3902$map_s;sma=49;smi=2.65$cd;bd=0$inds=">Gapminder</a> where the data can be plotted against a second variable.</em></em></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="the-complex-emergency-database-ce-dat"> <a class="deep-link" href="#the-complex-emergency-database-ce-dat"># </a>The Complex Emergency Database (CE-DAT)</h5>
+<ul>
+<li><strong>Data: </strong>Mortality and malnutrition data &#8211; over 2,000 surveys and 20,000 health indicators</li>
+<li><strong>Geographical coverage: </strong>51 countries</li>
+<li><strong>Time span:</strong> 1998 to present</li>
+<li><strong>Available at:</strong> Online <a href="http://www.cedat.be/">here</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h5 id="the-history-database-of-the-global-environment-hyde"> <a class="deep-link" href="#the-history-database-of-the-global-environment-hyde"># </a>The History Database of the Global Environment (HYDE)</h5>
+<ul>
+<li><strong>Data:</strong> Total consumption of cereals (wheat and rye) in Europe, in kg/cap and kcal/cap, and Food consumption in the USSR.</li>
+<li><strong>Geographical coverage:</strong> Europe and the former USSR</li>
+<li><strong>Time span:</strong> 1909-1984</li>
+<li><strong>Available at:</strong> Online <a href="http://themasites.pbl.nl/tridion/en/themasites/hyde/landusedata/foodconsumption/index-2.html">here</a></li>
+</ul>
+<hr class="datasources-hr" />
+<h3 id="inequality-of-food-consumption"> <a class="deep-link" href="#inequality-of-food-consumption"># </a>Inequality of Food Consumption</h3>
+<h5 id="food-security-indicators-of-the-fao"> <a class="deep-link" href="#food-security-indicators-of-the-fao"># </a>Food Security Indicators of the FAO</h5>
+<ul>
+<li><strong>Data:</strong> Coefficient of variation (and skewness) of habitual caloric consumption distribution</li>
+<li><strong>Geographical coverage:</strong> Developing countries only.</li>
+<li><strong>Time span:</strong> Since 1990.</li>
+<li><strong>Available at:</strong> Online <a href="http://web.archive.org/web/20141108183923/http://www.fao.org:80/economic/ess/ess-fs/fs-data/en/">here</a>.</li>
+</ul>
+<hr class="datasources-hr" />
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Fogel (2004) &#8211; The Escape from Hunger and Premature Death, 1700-2100: Europe, America, and the Third World. New York: Cambridge University Press.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>I have taken this data from table 2.4 in Floud, Fogel, Harris, and Hong (2011) &#8211; The Changing Body: Health, Nutrition, and Human Development in the Western World since 1700.</p>
+<p>&nbsp;</p>
+<p>The data refers to food consumption per consuming unit. The authors explain what a consuming unit refers to: &#8220;In order to standardize for the age and sex distribution of a population, it is convenient to convert the per capita consumption of calories into consumption per equivalent adult male aged 20–39 (referred to as a consuming unit). This transformation involves weighting persons at each age and sex relative to adult males aged 20–39.&#8221; (Quote from the same book, page 44).</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Fogel (2004) &#8211; The Escape from Hunger and Premature Death, 1700-2100: Europe, America, and the Third World.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Sources: The data for Belgium, England, Finland, France, Germany, Iceland, Italy, the Netherlands and Norway between 1800 and 1960 is taken from Table 5.5 (Daily calorie consumption per head in western Europe, 1800–1960) in Floud, Fogel, Harris, and Hong (2011) &#8211; The Changing Body Health, Nutrition, and Human Development in the Western World Since 1700. The data for England in 1700 and 1750 refers to England and Wales and is series B (the higher estimate) in table 4.9 in the same publication. The data for the USA is taken from table 6.6 (Estimated daily caloric intake per capita, 1800–2004) in the same publication (the data for 1950 originally refers to 1952). The data for France in 1705 is taken from table 1.2 in  Fogel &#8211; The Escape from Hunger and Premature Death, 1700-2100. The data since 1970 for all countries (except the US until 1990 where the series cited above is shown but the FAO is very similar) is taken from the FAO online <a href="http://faostat3.fao.org/home/index.html">here</a> &#8211;  (England refers to the United Kingdom and Belgium refers to Belgium-Luxembourg in the FAO Statistics)</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This is taken from Goklany (1999) &#8211; Meeting global food needs: The Environmental trade-offs between increasing land conversion and land productivity. In Technology-Elmsford-Journal of the Franklin Institute then Journal of Science Serving Legislative Regulatory and Judicial Systems.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The data is taken from the FAO (FAOSTAT) <a href="http://faostat.fao.org/site/609/DesktopDefault.aspx?PageID=609#ancor">here</a>. Shown is the Grand Total series of Food Supply (kcal/capita/day) Belgium refers to Belgium-Luxembourg for data before 2000. The Czech Republic refers to Czechoslovakia before 1993. Ethiopia refers to <a href="http://en.wikipedia.org/wiki/People's_Democratic_Republic_of_Ethiopia">Ethiopia PDR</a> before 1993. Sudan refers to the former borders of the Sudan (before the separation of South Sudan). The Russian Federation refers to the entire USSR before 1992.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This data is taken from the Food Security Indicators of the FAO that are available for download <a href="http://web.archive.org/web/20141108183923/http://www.fao.org:80/economic/ess/ess-fs/fs-data/en/">here</a>.<br />
+The data presented here was last updated by the FAO on October 1st, 2013.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>These up-to-date statistics from the FAO available <a href="http://faostat3.fao.org/home/index.html">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This is the definition in FAO, IFAD &amp; WFP (2013) – The State of Food Insecurity in the World 2013 &#8211; The multiple dimensions of food security, Food and Agriculture Organization of the United Nations (FAO), the International Fund for Agricultural Development (IFAD) or of the World Food Programme (WFP), FAO, Rome, 2013. Online <a href="http://www.fao.org/publications/sofi/en">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>This is the only definition here not taken from the source cited above. Instead this is taken from the UN&#8217;s Food and Agricultural Organization (FAO) in their glossary that is online <a href="http://faostat.fao.org/site/375/default.aspx">here</a>.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473851359'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=596&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 4/12 queries in 0.013 seconds using disk
+Object Caching 4131/4148 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 11:11:36 by W3 Total Cache -->

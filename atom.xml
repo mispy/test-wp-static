@@ -5,13 +5,13 @@
     <id>https://ourworldindata.org/</id>
     <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
     <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-    <updated>2017-12-17T10:14:27.000Z</updated>
+    <updated>2017-12-17T23:14:27.000Z</updated>
     <entry>
         <title>Child maltreatment and educational outcomes</title>
     <id>https://ourworldindata.org/child-maltreatment-and-educational-outcomes</id>
         <link rel="alternate" href="https://ourworldindata.org/child-maltreatment-and-educational-outcomes"/>
-        <published>2017-12-17T10:14:27.000Z</published>
-        <updated>2017-12-18T12:28:06.000Z</updated>
+        <published>2017-12-17T23:14:27.000Z</published>
+        <updated>2017-12-19T01:28:06.000Z</updated>
         <author><name>Esteban Ortiz-Ospina</name></author>
         <summary>Child Labor</summary>
     </entry>
@@ -19,8 +19,8 @@
         <title>A sense of units and scale for electrical energy production and consumption</title>
     <id>https://ourworldindata.org/scale-for-electricity</id>
         <link rel="alternate" href="https://ourworldindata.org/scale-for-electricity"/>
-        <published>2017-11-22T01:50:03.000Z</published>
-        <updated>2017-12-21T17:26:34.000Z</updated>
+        <published>2017-11-22T14:50:03.000Z</published>
+        <updated>2017-12-22T06:26:34.000Z</updated>
         <author><name>Max Roser</name></author><author><name>Hannah Ritchie</name></author>
         <summary>Discussions about energy and electricity can be confusing. Often, the root of this confusion lies in the choice of units and scale. Firstly, units are often quoted inconsistently: we switch between watt-hours, kilograms of oil equivalent, joules, and even more confusingly, units of power. Secondly, we begin quoting big numbers in the order of millions and billions without a sense of scale: is the unit equivalent to one, ten, or one hundred coal-fired power stations? Thirdly, we lose perspective on the equivalence between electrical energy production and consumption: how many people could a wind or solar farm provide for?</summary>
     </entry>
@@ -28,8 +28,8 @@
         <title>How new vaccines can help with our antibiotic dependence</title>
     <id>https://ourworldindata.org/vaccines-antibiotic-dependence</id>
         <link rel="alternate" href="https://ourworldindata.org/vaccines-antibiotic-dependence"/>
-        <published>2017-11-18T07:52:06.000Z</published>
-        <updated>2017-11-20T02:34:59.000Z</updated>
+        <published>2017-11-18T20:52:06.000Z</published>
+        <updated>2017-11-20T15:34:59.000Z</updated>
         <author><name>Samantha Vanderslott</name></author>
         <summary>Antibiotics are antimicrobial drugs used to kill bacteria. Along with vaccines, antibiotics often top lists of the most important medical discoveries, with both interventions having a tremendous impact on illness and deaths from communicable diseases.1</summary>
     </entry>
@@ -37,8 +37,8 @@
         <title>How do we reduce antibiotic resistance from livestock?</title>
     <id>https://ourworldindata.org/antibiotic-resistance-from-livestock</id>
         <link rel="alternate" href="https://ourworldindata.org/antibiotic-resistance-from-livestock"/>
-        <published>2017-11-15T23:40:37.000Z</published>
-        <updated>2017-12-05T01:51:36.000Z</updated>
+        <published>2017-11-16T12:40:37.000Z</published>
+        <updated>2017-12-05T14:51:36.000Z</updated>
         <author><name>Hannah Ritchie</name></author>
         <summary>Antimicrobial resistance (AMR) — that is, a declining effectiveness of medicines to treat bacterial infections — is identified by the World Health Organization (WHO) as one of the greatest threats to global health, development and food security.1 AMR occurs when bacterial populations evolve in the presence of an antibiotic medicine; this leads to treatments becoming either less efficient or completely ineffective.</summary>
     </entry>
@@ -46,8 +46,8 @@
         <title>How many people does synthetic fertilizer feed?</title>
     <id>https://ourworldindata.org/how-many-people-does-synthetic-fertilizer-feed</id>
         <link rel="alternate" href="https://ourworldindata.org/how-many-people-does-synthetic-fertilizer-feed"/>
-        <published>2017-11-07T06:00:48.000Z</published>
-        <updated>2017-12-21T13:26:40.000Z</updated>
+        <published>2017-11-07T19:00:48.000Z</published>
+        <updated>2017-12-22T02:26:40.000Z</updated>
         <author><name>Hannah Ritchie</name></author>
         <summary>Predictions of a global food crisis — that the world's food production would not be able to keep pace with population growth — have a long history. In the 18th century the English cleric Thomas Robert Malthus hypothesized that gains in per capita resources would inevitably be outstripped by population until food supplies finally acted as a barrier to further growth.1 Such predictions have continued well into the 20th and 21st centuries; in his controversial 1968 book The Population Bomb, Paul Ehrlich argued that global population would continue to grow until the point of mass starvation.2</summary>
     </entry>
@@ -55,8 +55,8 @@
         <title>Are emerging economies deindustrializing too quickly?</title>
     <id>https://ourworldindata.org/growth-and-structural-transformation-are-emerging-economies-industrializing-too-quickly</id>
         <link rel="alternate" href="https://ourworldindata.org/growth-and-structural-transformation-are-emerging-economies-industrializing-too-quickly"/>
-        <published>2017-10-30T09:00:07.000Z</published>
-        <updated>2017-10-30T09:54:39.000Z</updated>
+        <published>2017-10-30T21:00:07.000Z</published>
+        <updated>2017-10-30T21:54:39.000Z</updated>
         <author><name>Esteban Ortiz-Ospina</name></author><author><name>Nicolas Lippolis</name></author>
         <summary>As today’s developed countries grew richer, they experienced a process of ‘structural transformation’. This means they first went through a period of industrialization as the economic center of gravity shifted from agriculture to manufacturing, and then went through a period of deindustrialization, shifting the weight from manufacturing to services. In a companion blog post we discuss this pattern in more detail.</summary>
     </entry>
@@ -64,8 +64,8 @@
         <title>Measurement Matters – The decline of maternal mortality</title>
     <id>https://ourworldindata.org/measurement-matters-the-decline-of-maternal-mortality</id>
         <link rel="alternate" href="https://ourworldindata.org/measurement-matters-the-decline-of-maternal-mortality"/>
-        <published>2017-10-25T09:00:12.000Z</published>
-        <updated>2018-01-10T20:22:50.000Z</updated>
+        <published>2017-10-25T21:00:12.000Z</published>
+        <updated>2018-01-11T09:22:50.000Z</updated>
         <author><name>Max Roser</name></author>
         <summary>What could be more tragic than a mother losing her life in the moment that she is giving life to her newborn? The visualization below shows how common this once was. In Finland – the country that today boasts the lowest maternal mortality in the world – we see that during much of the 19th century, maternal mortality hung between 800 and 1,000 deaths for every 100,000 births. In other words, each birth came with up to a 0.9% chance of death. And since women in Finland gave birth to 5 children on average at the time, this meant that the death of a new mother was no rare occurrence.</summary>
     </entry>
@@ -73,8 +73,8 @@
         <title>Is organic really better for the environment than conventional agriculture?</title>
     <id>https://ourworldindata.org/is-organic-agriculture-better-for-the-environment</id>
         <link rel="alternate" href="https://ourworldindata.org/is-organic-agriculture-better-for-the-environment"/>
-        <published>2017-10-19T10:00:58.000Z</published>
-        <updated>2017-12-20T06:01:55.000Z</updated>
+        <published>2017-10-19T22:00:58.000Z</published>
+        <updated>2017-12-20T19:01:55.000Z</updated>
         <author><name>Hannah Ritchie</name></author>
         <summary>As the total global population continues to rise and economic growth drives a transition towards more resource-intensive diets, a growing number of consumers are concerned with how to reduce the environmental impact of their dietary choices. Consumers often see organic food as an effective way to reduce their impact: surveys reveal that regardless of geographic location, the primary motivations for organic food purchases are health1 and environmental concerns.2 Furthermore, consumers are often willing to pay more for organic products – some studies indicate a willingness-to-pay of up to 100 percent above standard prices.3 But is this a wise choice? Is going organic really the best way to reduce the environmental impact of our diets?</summary>
     </entry>
@@ -82,8 +82,8 @@
         <title>Working women: Key facts and trends in female labor force participation</title>
     <id>https://ourworldindata.org/female-labor-force-participation-key-facts</id>
         <link rel="alternate" href="https://ourworldindata.org/female-labor-force-participation-key-facts"/>
-        <published>2017-10-16T09:00:41.000Z</published>
-        <updated>2017-11-03T00:42:10.000Z</updated>
+        <published>2017-10-16T21:00:41.000Z</published>
+        <updated>2017-11-03T12:42:10.000Z</updated>
         <author><name>Esteban Ortiz-Ospina</name></author><author><name>Sandra Tzvetkova</name></author>
         <summary>In almost every country in the world, men are more likely to participate in labor markets than women. However, these gender differences in participation rates have been narrowing substantially in recent decades. In this post we discuss how and why these changes are taking place.</summary>
     </entry>
@@ -91,8 +91,8 @@
         <title>Working women: What determines female labor force participation?</title>
     <id>https://ourworldindata.org/women-in-the-labor-force-determinants</id>
         <link rel="alternate" href="https://ourworldindata.org/women-in-the-labor-force-determinants"/>
-        <published>2017-10-16T09:00:10.000Z</published>
-        <updated>2017-11-03T00:55:12.000Z</updated>
+        <published>2017-10-16T21:00:10.000Z</published>
+        <updated>2017-11-03T12:55:12.000Z</updated>
         <author><name>Esteban Ortiz-Ospina</name></author><author><name>Sandra Tzvetkova</name></author>
         <summary>In almost every country in the world, men are more likely to participate in labor markets than women. However, these gender differences have been narrowing substantially, and in most countries around the world the share of women who are part of the labor force is higher today than half a century ago. In this blog post we discuss the key factors driving this change (for an in-depth look at the change itself, including key facts and trends, see our companion blog post).</summary>
     </entry>

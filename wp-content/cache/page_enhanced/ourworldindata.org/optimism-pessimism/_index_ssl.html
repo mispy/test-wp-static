@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Optimism &#038; Pessimism - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; Optimism &#038; Pessimism Comments Feed" href="//ourworldindata.org/optimism-pessimism/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/optimism-pessimism/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=4863' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Foptimism-pessimism%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Foptimism-pessimism%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="Optimism &amp; Pessimism"/>
+<meta itemprop="name" content="Optimism &amp; Pessimism"/>
+<meta name="twitter:title" content="Optimism &amp; Pessimism"/>
+<meta property="og:url" content="https://ourworldindata.org/optimism-pessimism/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/optimism-pessimism/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="This page is dedicated to motivating the work we do here at Our World in Data. The world is improving in almost every measurable way; fewer people are dying of disease, conflict and famine; more of us are receiving a basic education; the world is becoming more democratic; we live longer and lead hea"/>
+<meta itemprop="description" content="This page is dedicated to motivating the work we do here at Our World in Data. The world is improving in almost every measurable way; fewer people are dying of disease, conflict and famine; more of us are receiving a basic education; the world is becoming more democratic; we live longer and lead hea"/>
+<meta name="twitter:description" content="This page is dedicated to motivating the work we do here at Our World in Data. The world is improving in almost every measurable way; fewer people are dying of disease, conflict and famine; more of us are receiving a basic education; the world is becoming more democratic; we live longer and lead hea"/>
+<meta property="og:image" content="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png"/>
+<meta itemprop="image" content="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png"/>
+<meta name="twitter:image" content="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473851359">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-4863 page-child parent-pageid-781 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-4863" class="post-4863 page type-page status-publish hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">Optimism &#038; Pessimism</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Mohamed Nagdy and Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Mohamed Nagdy and Max Roser (2016) – &lsquo;Optimism &#038; Pessimism&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/optimism-pessimism/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>This page is dedicated to motivating the work we do here at Our World in Data. The world is improving in almost every measurable way; fewer people are dying of disease, conflict and famine; more of us are receiving a basic education; the world is becoming more democratic; we live longer and lead healthier lives. So why is that we, mostly in the developed world, are pessimistic about our collective future? </p>
+<h2 id="individual-optimism-and-social-pessimism"> <a class="deep-link" href="#individual-optimism-and-social-pessimism"># </a>Individual Optimism and Social Pessimism</h2>
+<p>It is a peculiar empirical phenomenon that while people tend to be optimistic about their own future, they are deeply pessimistic about the future of their nation or the world. Tali Sharot, associate professor of psychology at UCL, has popularised the idea of an innate optimism bias built into the human brain.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='Sharot, Tali. The Optimism Bias: A Tour of the Irrationally Positive Brain. New York: Pantheon Books, 2011. Sharot, Tali. The Science of Optimism Why We&#8217;re Hard-wired for Hope. New York: Ted Conferences, 2012.'>1</sup></a> That is, we tend to be optimistic rather than realistic when considering our individual future. If you were to ask newlywed couples to estimate the probability they will divorce in the future, they would likely reject the possibility outright. Yet today roughly 40% of marriages in the UK end in divorce! Another example is asking smokers to estimate their chances of getting cancer and again, most would underestimate their risk. This optimism persists even when people are presented with the relevant statistics.</p>
+<p>Consider the following graphs from the European Union&#8217;s Eurobarometer surveys; they report people&#8217;s expectations about their own personal job situation and of the economic situation in their home country. From the end of 1995 to the middle of 2015, around 60% of people predict that their job situation will remain the same, while 20% expect their situation to improve. Compare that with the response of the same group of individuals considering the future of the economic situation in their home country. Although far less stable, the results show that most people expect the economic situation in their home country to get worse or stay the same. The expectation that things are going to worsen nationally is correlated with recessions, yet there is remarkable stability in the results for individual expectations. Does the response to the question about national economic well being better correspond to an individual&#8217;s true job prospects?</p>
+<h6 id="eu-survey-responses-on-individual-and-economic-optimism-eurobarometer-surveysref"> <a class="deep-link" href="#eu-survey-responses-on-individual-and-economic-optimism-eurobarometer-surveysref"># </a>EU survey responses on individual and economic optimism &#8211; Eurobarometer surveys<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='Eurobarometer surveys. Available online here.'>2</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png" alt="EU survey responses on optimism" width="750" height="281" class="aligncenter size-large wp-image-6393" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-150x56.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-400x150.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism.png 1200w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png" alt="EU survey responses on optimism" width="750" height="281" class="aligncenter size-large wp-image-6393" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-750x281.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-150x56.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism-400x150.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_eu-survey-responses-on-optimism.png 1200w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>Now consider the degree to which the public&#8217;s perception can diverge from the reality. In the US, survey evidence shows that most Americans believe crime is on the up, even in years where crime is falling or remains the same. Teen pregnancy is another area in which most Americans believe the situation is deteriorating. In fact, teen pregnancy has fallen 42% since 1990 and is at its lowest level in two decades.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='Most Americans think teen pregnancy is getting worse. Most Americans are wrong. The Washington Post (2013). Available online here.'>3</sup></a></p>
+<h6 id="crime-perception-and-realised-changes-in-crime-in-the-us-1989-2014-voxref"> <a class="deep-link" href="#crime-perception-and-realised-changes-in-crime-in-the-us-1989-2014-voxref"># </a>Crime perception and realised changes in crime in the US, 1989-2014 &#8211; Vox<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='The US is safer than ever — and Americans don’t have any idea. Vox (2015). Available online here.'>4</sup></a><br />
+<br />
+<iframe width="821" height="514" data-src="//www.thinglink.com/card/651822565701976065" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><noscript><iframe width="821" height="514" src="//www.thinglink.com/card/651822565701976065" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe></noscript></p>
+<p>This pattern is also observed on a larger scale. The first chart below shows how individuals in the UK respond to the question: &#8220;Thinking about &#8230;, how much of a problem do you think each of the following are in your local area and in the whole of the UK?&#8221; Individuals tend to believe problems are more pronounced nationally than in their local area. The second chart shows how many individuals rate the environment in their local area as fairly or very bad, compared with the environment nationally and globally. Again, we observe a similar pattern for most countries.</p>
+<h6 id="local-optimists-and-national-pessimists-in-the-uk-2013-ipsos-moriref"> <a class="deep-link" href="#local-optimists-and-national-pessimists-in-the-uk-2013-ipsos-moriref"># </a>Local optimists and national pessimists in the UK, 2013 – Ipsos MORI<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='&#8220;Perils of Perception: Topline Results.&#8221; Ipsos MORI (2013). Available online here.'>5</sup></a><br />
+<br />	<br />
+<a title=" " href="http://ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori.png"><img class="aligncenter size-large wp-image-4867" title="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-750x511.png" alt="LocalOptimismGlobalPessimism_IPSOSMori" width="750" height="511" data-id="4867" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-750x511.png 750w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-150x102.png 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-400x272.png 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-4867" title="" src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-750x511.png" alt="LocalOptimismGlobalPessimism_IPSOSMori" width="750" height="511" data-id="4867" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-750x511.png 750w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-150x102.png 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_localoptimismglobalpessimism_ipsosmori-400x272.png 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h6 id="percentage-of-respondents-who-evaluate-the-environmental-quality-of-their-local-community-their-nation-and-the-world-as-very-or-fairly-bad-lomborg-2001ref"> <a class="deep-link" href="#percentage-of-respondents-who-evaluate-the-environmental-quality-of-their-local-community-their-nation-and-the-world-as-very-or-fairly-bad-lomborg-2001ref"># </a>Percentage of respondents who evaluate the environmental quality of their local community, their nation and the world as very or fairly bad – Lomborg (2001)<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Figure: Lomborg, Bjørn. &#8220;The Skeptical Environmentalist: Measuring the True State of the Planet.&#8221; (2001).  Data: Dunlap, Riley E., George H. Gallup Jr, and Alec M. Gallup. &#8220;Of global concern: Results of the health of the planet survey.&#8221; Environment: Science and Policy for Sustainable Development 35, no. 9 (1993): 7-39. Available online here.'>6</sup></a></p>
+<p><a title=" " href="http://ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality.png"><img class="aligncenter size-large wp-image-4870" title="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-550x550.png" alt="Percentage of respondents who evaluate the environmental quality" width="550" height="550" data-id="4870" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-550x550.png 550w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-150x150.png 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-400x400.png 400w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality.png 617w" sizes="(max-width: 550px) 100vw, 550px" /><noscript><img class="aligncenter size-large wp-image-4870" title="" src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-550x550.png" alt="Percentage of respondents who evaluate the environmental quality" width="550" height="550" data-id="4870" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-550x550.png 550w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-150x150.png 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality-400x400.png 400w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_percentage-of-respondents-who-evaluate-the-environmental-quality.png 617w" sizes="(max-width: 550px) 100vw, 550px" /></noscript></a></p>
+<p>How can we reconcile this individual optimism with social pessimism? Paul Dolan, professor of behavioural science at LSE, believes people respond pessimistically to questions about national or international performance for three reasons:</p>
+<ol style="font-size: medium; text-align: left; font-family:sans-serif;">
+<li>Individuals rarely think about grand issues such as the state of the nation or world, and so respond with an &#8216;on-the-spot&#8217; answer that may not be well considered or even a true reflection of their beliefs.</li>
+<li>The framing can influence the individual&#8217;s response. Moreover, the question itself may bias responses; &#8216;who would bother to ask if everything were okay?&#8217;</li>
+<li>Responses to questions such as these (and more general questions about happiness or life satisfaction) are heavily influenced by ephemeral recent events.</li>
+</ol>
+<p>This explanation suggests there is a problem of information. If we do not pay attention to human progress or development, then our judgement may suffer from a bias related to transient events or framing. <a href="http://www.gapminder.org/ignorance/" target="_blank">The Gapminder Ignorance Project</a> suggests the reason for all this ignorance is: </p>
+<blockquote><p>Statistical facts don’t come to people naturally. Quite the opposite. Most people understand the world by generalizing personal experiences which are very biased. In the media the “news-worthy” events exaggerate the unusual and put the focus on swift changes. Slow and steady changes in major trends don’t get much attention. Unintentionally, people end-up carrying around a sack of outdated facts that you got in school (including knowledge that often was outdated when acquired in school).</p></blockquote>
+<p>Another explanation put forward by Martin Seligman, professor of psychology at the University of Pennsylvania, suggests a link between control and optimism. If we feel more in control of our lives, we tend to be happier, healthier and more optimistic about the future. This could explain the gap between individual and societal optimism: since we are in direct control of our own lives but not the destiny of the nation we feel more optimistic about ourselves.</p>
+<h2 id="declinism"> <a class="deep-link" href="#declinism"># </a>Declinism</h2>
+<h3 id="declinism-and-development"> <a class="deep-link" href="#declinism-and-development"># </a>Declinism and Development</h3>
+<p>Declinism refers to the belief that a country or some other institution is in decline. Declinism was a prevalent feature of British political and economic history, whereby the decline of Britain as a world power was seen as the result of internal failures rather than international forces or global convergence. David Edgerton writes: &#8220;Declinism is beginning to appear as one of the last vestiges of imperial grandeur: for declinism holds, implicitly but clearly, that if Britain had done better it would have remained a much larger player on the world stage.&#8221;<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='David Edgerton. &#8220;The Decline of Declinism.&#8221; The Business History Review, Vol. 71, No. 2 (Summer, 1997), pp. 201-206. Available online at http://www.jstor.org/stable/3116157'>7</sup></a> Today declinism in the United States is fashionable with many politicians. Donald Trump&#8217;s campaign slogan for the 2016 Republican nomination election is &#8220;Make America Great Again!&#8221;</p>
+<p>The major flaw in much of the declinist narrative is the failure to distinguish between absolute and relative changes. Between 2010-14, US real GDP growth rates have fluctuated between 1.5-2.5% and yet, the US economy was recently overtaken by the Chinese economy measured in PPP-adjusted terms.<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='For more information on PPP-adjustments, please visit the GDP data page.'>8</sup></a> In many ways this may capture the reason why the most developed nations tend to believe that their economy is in decline: relative decline is interpreted as absolute decline. Unsurprisingly, new EU member states tend to be much more optimistic about the future. The four largest economies &#8212; the UK, France, Germany and Italy &#8212; are the most pessimistic. This pattern persists when considering economies at different stages of development: developing countries are more optimistic about the future, while developed ones tend to be pessimistic.</p>
+<h6 id="optimism-about-the-future-of-the-next-generation-by-country-pew-research-centerref"> <a class="deep-link" href="#optimism-about-the-future-of-the-next-generation-by-country-pew-research-centerref"># </a>Optimism about the future of the next generation by country &#8211; Pew Research Center<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='Global Publics: Economic Conditions Are Bad. Pew Research Center (2015). Available online here.'>9</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-208x550.png" alt="Optimism surveys on the next generation by country" width="208" height="550" class="aligncenter size-large wp-image-6397" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-208x550.png 208w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-57x150.png 57w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-151x400.png 151w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country.png 309w" sizes="(max-width: 208px) 100vw, 208px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-208x550.png" alt="Optimism surveys on the next generation by country" width="208" height="550" class="aligncenter size-large wp-image-6397" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-208x550.png 208w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-57x150.png 57w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country-151x400.png 151w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_optimism-surveys-on-the-next-generation-by-country.png 309w" sizes="(max-width: 208px) 100vw, 208px" /></noscript></a></p>
+<h3 id="declinism-and-age-the-reminiscence-bump"> <a class="deep-link" href="#declinism-and-age-the-reminiscence-bump"># </a>Declinism and Age: The Reminiscence Bump</h3>
+<p>One interesting explanation for declinism is that it is the result of the way we encode memories and what we remember. Firstly, researchers have long established a robust pattern in the age at which we retain the most memories. In old age, memories from our lives are not evenly distributed but instead concentrated in two regions. These regions are (1) memories formed in adolescence and early adulthood, between the ages of 10-30, and (2) recent memory of events. The following figure is a useful representation of this distribution.</p>
+<h6 id="lifespan-memory-retrieval-curve-wikipediaref"> <a class="deep-link" href="#lifespan-memory-retrieval-curve-wikipediaref"># </a>Lifespan memory retrieval curve &#8211; Wikipedia<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='Reminiscence bump, Wikipedia. Journal references: Hyland, Diane T., and Adele M. Ackerman. &#8220;Reminiscence and autobiographical memory in the study of the personal past.&#8221; Journal of Gerontology 43, no. 2 (1988): P35-P39. Available online here. Jansari, Ashok, and Alan J. Parkin. &#8220;Things that go bump in your life: Explaining the reminiscence bump in autobiographical memory.&#8221; Psychology and Aging 11, no. 1 (1996): 85. Available online here.'>10</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve.jpg" alt="Lifespan Retrieval Curve" width="531" height="374" class="aligncenter size-full wp-image-6403" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve.jpg 531w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve-150x106.jpg 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve-400x282.jpg 400w" sizes="(max-width: 531px) 100vw, 531px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve.jpg" alt="Lifespan Retrieval Curve" width="531" height="374" class="aligncenter size-full wp-image-6403" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve.jpg 531w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve-150x106.jpg 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_lifespan-retrieval-curve-400x282.jpg 400w" sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></p>
+<p>Secondly, as we get older we tend to have fewer negative experiences and that we are more likely to remember the positive ones over the negative ones.<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='Mara Mather, Laura L. Carstensen, Aging and motivated cognition: the positivity effect in attention and memory, Trends in Cognitive Sciences, Volume 9, Issue 10, October 2005, Pages 496-502, ISSN 1364-6613. Available online here.'>11</sup></a> This effect combined with the reminiscence bump could explain why declinism exists among older generations, and why your parents could never stand the music you listened to! The universality of this effect is highlighted by Harvey Daniels with the use of these quotes about the decline of the english language:<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Daniels, Harvey. Famous last words: The American language crisis reconsidered. Southern Illinois University Press, 1983.'>12</sup></a></p>
+<ol style="font-size: medium; text-align: left; font-family:sans-serif;">
+<li>&#8220;The common language is disappearing. It is slowly being crushed to death under the weight of verbal conglomerate, a pseudospeech at once both pretentious and feeble, that is created daily by millions of blunders and inaccuracies in grammar, syntax, idiom, metaphor, logic, and common sense&#8230;. In the history of modern English there is no period in which such victory over thought-in-speech has been so widespread. Nor in the past has the general idiom, on which we depend for our very understanding of vital matters, been so seriously distorted.&#8221; (A. Tibbets and C. Tibbets, <em>What&#8217;s Happening to American English?</em>, <strong>1978</strong>)</li>
+<li>&#8220;From every college in the country goes up the cry, &#8220;Our freshmen can&#8217;t spell, can&#8217;t punctuate.&#8221; Every high school is in disrepair because its pupils are so ignorant of the merest rudiments.&#8221; (C. H. Ward, <strong>1917</strong>)</li>
+<li>&#8220;Unless the present progress of change [is] arrested&#8230;there can be no doubt that, in another century, the dialect of the Americans will become utterly unintelligible to an Englishman&#8230;&#8221; (Captain Thomas Hamilton, <strong>1833</strong>)</li>
+<li>&#8220;Our language is degenerating very fast.&#8221; (James Beattie, <strong>1785</strong>)</li>
+</ol>
+<p>What is even more surprising is that one of the earliest Sumerian tablets discovered and deciphered by modern scholars was a complaint by a teacher about his students&#8217; writing ability!</p>
+<h2 id="why-should-we-care"> <a class="deep-link" href="#why-should-we-care"># </a>Why should we care?</h2>
+<p>There are three main reasons we should try to combat social pessimism and declinism. The first reason is simple; indicators of living standards are significantly improving around the world. By monitoring and researching these changes we can identify ways in which progress can be achieved. Over the long-run, say 50-100 years, human progress has been staggering with the benefits not confined to the richest or most powerful. The second reason is that if our perceptions of the reality are wrong, we can end up prioritising the wrong things and making ineffectual change. Finally, being optimistic can be good for your health, while having a pessimistic outlook can be detrimental to your health. </p>
+<h3 id="things-are-getting-better"> <a class="deep-link" href="#things-are-getting-better"># </a>Things Are Getting Better</h3>
+<p>With all the negative news stories and sensationalism that exists in the media it may be hard to believe things are improving. These events can be contextualised as short-term fluctuations in an otherwise positive global trend. Quantifying this progress and identifying its causes will help researchers develop successful strategies to combat the world&#8217;s problems. Below is a selection of graphs showing just how much progress has been made over the centuries. More examples can be found on <a href="http://ourworldindata.org/data/" target="_blank">http://ourworldindata.org/data/</a>.</p>
+<h6 id="absolute-number-of-people-living-in-extreme-poverty-1820-2011-max-roserref"> <a class="deep-link" href="#absolute-number-of-people-living-in-extreme-poverty-1820-2011-max-roserref"># </a>Absolute number of people living in extreme poverty, 1820-2011 – Max Roser<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='Full information on the data and sources used to construct these estimates is available at the World Poverty page.'>13</sup></a><br />
+<br />
+<iframe style="border: 0px none;" data-src="https://www.ourworldindata.org/roser/graphs/AbsoluteNumberOfPeopleInPoverty_Since1820/AbsoluteNumberOfPeopleInPoverty_Since1820.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://www.ourworldindata.org/roser/graphs/AbsoluteNumberOfPeopleInPoverty_Since1820/AbsoluteNumberOfPeopleInPoverty_Since1820.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<h6 id="homicide-rates-in-five-western-european-regions-1300-2010-max-roserref"> <a class="deep-link" href="#homicide-rates-in-five-western-european-regions-1300-2010-max-roserref"># </a>Homicide rates in five Western European regions, 1300-2010 – Max Roser<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='Full information on the data and sources used to construct these estimates is available at the Homicides page.'>14</sup></a><br />
+<br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.html">Full screen view</a> <a href="http://ourworldindata.org/roser/graphs/LineChart_HomicideRatesSince1300/LineChart_HomicideRatesSince1300.csv">Download Data</a>  <a href="http://ourworldindata.org/wp-content/uploads/2013/07/ourworldindata_homicide-rates-in-five-western-european-regions-1300-2010-–-max-roser.png">Download Static Image</a></address>
+<h6 id="number-of-democracies-between-1800-2010-max-roserref"> <a class="deep-link" href="#number-of-democracies-between-1800-2010-max-roserref"># </a>Number of democracies between 1800-2010 – Max Roser<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='The source of the data is the polity IV dataset which is available online here. I have only included countries with a population greater than 500,000.'>15</sup></a><br />
+<br />
+<iframe style="border: 0px none;" data-src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_politicalRegimes/lineChart_politicalRegimes.html" width="100%" height="545" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="https://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_politicalRegimes/lineChart_politicalRegimes.html" width="100%" height="545" scrolling="no"></iframe></noscript></p>
+<h3 id="perception-and-priority"> <a class="deep-link" href="#perception-and-priority"># </a>Perception and Priority</h3>
+<p>The public perception of these indicators matters because it directly influences the priorities of politicians. If, as in the example above, the public believes crime is increasing, it will demand more policing. But if crime is decreasing anyway, more policing is arguably an inefficient use of resources. This is why incorrect public perceptions can be a problem. The following figures underline just how sizable these effects can be and their causes. The first shows how spending on crime has moved with the public&#8217;s confidence in the government&#8217;s ability to crack down on crime. As the public&#8217;s confidence fell, spending on crime increased and recorded crime fell; without any uptick in the public&#8217;s confidence. Of those who believed crime was increasing, more than half suggested TV as a reason they believed there was more crime. In addition to this, just under half suggested newspapers were a factor.</p>
+<h6 id="public-confidence-recorded-crime-and-government-spending-in-the-uk-1997-2007-ipsos-mori-2008ref"> <a class="deep-link" href="#public-confidence-recorded-crime-and-government-spending-in-the-uk-1997-2007-ipsos-mori-2008ref"># </a> Public confidence, recorded crime and government spending in the UK, 1997-2007 &#8211; Ipsos MORI (2008)<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='Closing The Gaps: Crime and Public Perceptions. Ipsos MORI (2008). Available online here.'>16</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-750x502.png" alt="Spending on crime, crime levels and public confidence - Ipsos MORI" width="750" height="502" class="aligncenter size-large wp-image-6437" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-750x502.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-400x268.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-360x240.png 360w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori.png 1157w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-750x502.png" alt="Spending on crime, crime levels and public confidence - Ipsos MORI" width="750" height="502" class="aligncenter size-large wp-image-6437" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-750x502.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-150x100.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-400x268.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori-360x240.png 360w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_spending-on-crime-crime-levels-and-public-confidence-ipsos-mori.png 1157w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<h6 id="tv-and-newspapers-are-largest-factors-driving-crime-perceptions-in-the-uk-2007-ipsos-moriref"> <a class="deep-link" href="#tv-and-newspapers-are-largest-factors-driving-crime-perceptions-in-the-uk-2007-ipsos-moriref"># </a>TV and newspapers are largest factors driving crime perceptions in the UK, 2007 &#8211; Ipsos MORI<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='Closing The Gaps: Crime and Public Perceptions. Ipsos MORI (2008). Available online here.'>17</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori.png"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-750x446.png" alt="Why do people think there is more crime? - Ipsos MORI" width="750" height="446" class="aligncenter size-large wp-image-6438" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-750x446.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-150x89.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-400x238.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori.png 1159w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-750x446.png" alt="Why do people think there is more crime? - Ipsos MORI" width="750" height="446" class="aligncenter size-large wp-image-6438" srcset="//ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-750x446.png 750w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-150x89.png 150w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori-400x238.png 400w, //ourworldindata.org/wp-content/uploads/2015/08/ourworldindata_why-do-people-think-there-is-more-crime-ipsos-mori.png 1159w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>Research conducted by Stefano DellaVigna and Ethan Kaplan highlights the degree to which the media can influence voting behaviour.<a id='ref-18' class='side-matter side-matter-ref' href='#note-18'><sup class='side-matter side-matter-sup' title='DellaVigna, Stefano, and Ethan Daniel Kaplan. &#8220;The Fox News Effect: Media Bias and Voting.&#8221; The Quarterly Journal of Economics 122, no. 3 (2007): 1187-1234. Available online here.'>18</sup></a> DellaVigna and Kaplan looked at how the introduction of Fox News between 1996 and 2000 in different towns affected voting patterns and turnout in the Presidential election of 2000. They find &#8220;a significant effect of the introduction of Fox News on the vote share in Presidential elections between 1996 and 2000. Republicans gained 0.4 to 0.7 percentage points in the towns that broadcast Fox News. Fox News also affected voter turnout and the Republican vote share in the Senate. Our estimates imply that Fox News convinced 3 to 28 percent of its viewers to vote Republican, depending on the audience measure. The Fox News effect could be a temporary learning effect for rational voters, or a permanent effect for nonrational voters subject to persuasion.&#8221;</p>
+<p>Another dimension to this debate is the extent to which the perceived terrorism threat affects the willingness of individuals to trade-off civil liberties.<a id='ref-19' class='side-matter side-matter-ref' href='#note-19'><sup class='side-matter side-matter-sup' title='Davis, Darren W., and Brian D. Silver. &#8220;Civil liberties vs. security: Public opinion in the context of the terrorist attacks on America.&#8221; American Journal of Political Science 48, no. 1 (2004): 28-46. Available online here.'>19</sup></a> Darren Davis and Brian Silver find that &#8220;the greater people’s sense of threat, the lower their support for civil liberties.&#8221; This effect is attenuated by the people&#8217;s trust in government but fairly consistent across nearly all political affiliations and demographics.</p>
+<h3 id="health-impact-of-optimism-and-pessimism"> <a class="deep-link" href="#health-impact-of-optimism-and-pessimism"># </a>Health Impact of Optimism and Pessimism</h3>
+<p>Studies have found a link between an individual&#8217;s optimism/pessimism (measured by surveys) and their health outcomes. Julia Boehm and Laura Kubzansky reviewed over 200 published studies to investigate the link between a positive psychological outlook (optimism, life satisfaction and happiness) and cardiovascular health.<a id='ref-20' class='side-matter side-matter-ref' href='#note-20'><sup class='side-matter side-matter-sup' title='Boehm, Julia K., and Laura D. Kubzansky. &#8220;The heart&#8217;s content: the association between positive psychological well-being and cardiovascular health.&#8221; Psychological bulletin 138, no. 4 (2012): 655. Available online here.'>20</sup></a> They found that a positive psychological outlook was strongly associated with a reduced risk of cardiovascular disease: “For example, the most optimistic individuals had an approximately 50% reduced risk of experiencing an initial cardiovascular event compared to their less optimistic peers.&#8221;<a id='ref-21' class='side-matter side-matter-ref' href='#note-21'><sup class='side-matter side-matter-sup' title='Positive feelings may help protect cardiovascular health. Harvard School of Public Health (2012). Available online here.'>21</sup></a> Boehm et al. (2011) also find a link between optimism and the composition of cholesterol in the blood. Optimistic individuals had higher levels of good cholesterol and lower levels of triglycerides.<a id='ref-22' class='side-matter side-matter-ref' href='#note-22'><sup class='side-matter side-matter-sup' title='Boehm, Julia K., Christopher Peterson, Mika Kivimaki, and Laura Kubzansky. &#8220;A prospective study of positive psychological well-being and coronary heart disease.&#8221; Health Psychology 30, no. 3 (2011): 259. Available online here.'>22</sup></a></p>
+<p>Further research using data from the Women&#8217;s Health Initiative found that over an eight year period, the most optimistic women had a 9% lower risk of developing coronary heart disease and a 14% lower risk of dying from any cause.<a id='ref-23' class='side-matter side-matter-ref' href='#note-23'><sup class='side-matter side-matter-sup' title='Tindle, Hilary A., Yue-Fang Chang, Lewis H. Kuller, JoAnn E. Manson, Jennifer G. Robinson, Milagros C. Rosal, Greg J. Siegle, and Karen A. Matthews. &#8220;Optimism, cynical hostility, and incident coronary heart disease and mortality in the Women’s Health Initiative.&#8221; Circulation 120, no. 8 (2009): 656-662. Available online here.'>23</sup></a> Similar results were also found by researchers writing in the <em>Archives of General Psychiatry</em>; using data from the Netherlands, they found that the most optimistic individuals had a 55% reduced risk of all-cause mortality and a 23% reduced risk of cardiovascular death.</p>
+<h2 id="predictions-of-the-future"> <a class="deep-link" href="#predictions-of-the-future"># </a>Predictions of the Future</h2>
+<p>Predicting the future has been a constant feature of human existence and there are many examples throughout history of attempts to predict the future. Below are two infographics summarising various predictions. The first shows different predictions about the end of the world, while the second is a visual representation of predictions found in novels.</p>
+<h6 id="end-of-the-world-predictions-the-economistref"> <a class="deep-link" href="#end-of-the-world-predictions-the-economistref"># </a>End of the world predictions – The Economist<a id='ref-24' class='side-matter side-matter-ref' href='#note-24'><sup class='side-matter side-matter-sup' title='&#8220;Doomsdays.&#8221; The Economist (2012). Available online here.'>24</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530.png"><img class="aligncenter size-large wp-image-4901" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-415x550.png" alt="20121222_woc6530" width="415" height="550" data-id="4901" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-415x550.png 415w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-113x150.png 113w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-302x400.png 302w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530.png 595w" sizes="(max-width: 415px) 100vw, 415px" /><noscript><img class="aligncenter size-large wp-image-4901" src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-415x550.png" alt="20121222_woc6530" width="415" height="550" data-id="4901" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-415x550.png 415w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-113x150.png 113w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530-302x400.png 302w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_20121222_woc6530.png 595w" sizes="(max-width: 415px) 100vw, 415px" /></noscript></a></p>
+<h6 id="the-future-as-foretold-in-the-past-giorgia-lupi-and-accuratref"> <a class="deep-link" href="#the-future-as-foretold-in-the-past-giorgia-lupi-and-accuratref"># </a>The future as foretold in the past &#8211; Giorgia Lupi and Accurat<a id='ref-25' class='side-matter side-matter-ref' href='#note-25'><sup class='side-matter side-matter-sup' title='This infographic is the work of Giorgia Lupi, and more of her work can be found at http://giorgialupi.com.'>25</sup></a></p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-750x338.jpg" alt="futureevents_giorgialupi_large1" width="750" height="338" class="aligncenter size-large wp-image-6492" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-750x338.jpg 750w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-150x68.jpg 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-400x180.jpg 400w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img src="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-750x338.jpg" alt="futureevents_giorgialupi_large1" width="750" height="338" class="aligncenter size-large wp-image-6492" srcset="//ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-750x338.jpg 750w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-150x68.jpg 150w, //ourworldindata.org/wp-content/uploads/2014/11/ourworldindata_futureevents_giorgialupi_large1-400x180.jpg 400w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Sharot, Tali. <em>The Optimism Bias: A Tour of the Irrationally Positive Brain</em>. New York: Pantheon Books, 2011.</p>
+<p>Sharot, Tali. <em>The Science of Optimism Why We&#8217;re Hard-wired for Hope</em>. New York: Ted Conferences, 2012.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Eurobarometer surveys. Available online <a href="http://ec.europa.eu/public_opinion/cf/" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Most Americans think teen pregnancy is getting worse. Most Americans are wrong. The Washington Post (2013). Available online <a href="http://www.washingtonpost.com/news/wonkblog/wp/2013/04/01/most-americans-think-teen-pregnancy-is-getting-worse-most-americans-are-wrong/" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The US is safer than ever — and Americans don’t have any idea. Vox (2015). Available online <a href="http://www.vox.com/2015/5/4/8546497/crime-rate-america" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>&#8220;Perils of Perception: Topline Results.&#8221; Ipsos MORI (2013). Available online <a href="http://www.ipsos-mori.com/Assets/Docs/Polls/ipsos-mori-rss-kings-perils-of-perception-topline.pdf">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Figure: Lomborg, Bjørn. &#8220;The Skeptical Environmentalist: Measuring the True State of the Planet.&#8221; (2001).	 </p>
+<p>Data: Dunlap, Riley E., George H. Gallup Jr, and Alec M. Gallup. &#8220;Of global concern: Results of the health of the planet survey.&#8221; Environment: Science and Policy for Sustainable Development 35, no. 9 (1993): 7-39. Available online <a href="http://www.tandfonline.com/doi/pdf/10.1080/00139157.1993.9929122" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+David Edgerton. &#8220;The Decline of Declinism.&#8221; <em>The Business History Review</em>, Vol. 71, No. 2 (Summer, 1997), pp. 201-206. Available online at <a href="http://www.jstor.org/stable/3116157" target="_blank">http://www.jstor.org/stable/3116157</a></p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>For more information on PPP-adjustments, please visit the <a href="http://ourworldindata.org/data/growth-and-distribution-of-prosperity/gdp-data/" target="_blank">GDP data page</a>.</p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Global Publics: Economic Conditions Are Bad. Pew Research Center (2015). Available online <a href="http://www.pewglobal.org/2015/07/23/global-publics-economic-conditions-are-bad/" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p><a href="https://en.wikipedia.org/wiki/Reminiscence_bump" target="_blank">Reminiscence bump, Wikipedia</a>.</p>
+<p>Journal references:<br />
+Hyland, Diane T., and Adele M. Ackerman. &#8220;Reminiscence and autobiographical memory in the study of the personal past.&#8221; <em>Journal of Gerontology</em> 43, no. 2 (1988): P35-P39. Available online <a href="http://geronj.oxfordjournals.org/content/43/2/P35.short" target="_blank">here</a>.</p>
+<p>Jansari, Ashok, and Alan J. Parkin. &#8220;Things that go bump in your life: Explaining the reminiscence bump in autobiographical memory.&#8221; <em>Psychology and Aging</em> 11, no. 1 (1996): 85. Available online <a href="http://dx.doi.org/10.1037/0882-7974.11.1.85" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Mara Mather, Laura L. Carstensen, Aging and motivated cognition: the positivity effect in attention and memory, Trends in Cognitive Sciences, Volume 9, Issue 10, October 2005, Pages 496-502, ISSN 1364-6613. Available online <a href="http://dx.doi.org/10.1016/j.tics.2005.08.005" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Daniels, Harvey. <em>Famous last words: The American language crisis reconsidered</em>. Southern Illinois University Press, 1983.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Full information on the data and sources used to construct these estimates is available at the <a href="http://ourworldindata.org/data/growth-and-distribution-of-prosperity/world-poverty/#absolute-number-of-people-living-in-extreme-poverty-1820-2011-max-roserref" target="_blank">World Poverty page</a>.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Full information on the data and sources used to construct these estimates is available at the <a href="http://ourworldindata.org/data/violence-rights/homicides/#homicide-rates-in-five-western-european-regions-1300-2010-max-roserref" target="_blank">Homicides page</a>.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>The source of the data is the polity IV dataset which is available online <a href="http://www.systemicpeace.org/polity/polity4.htm">here</a>. I have only included countries with a population greater than 500,000.</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Closing The Gaps: Crime and Public Perceptions. Ipsos MORI (2008). Available online <a href="https://www.ipsos-mori.com/researchpublications/publications/publication.aspx?oItemId=11" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Closing The Gaps: Crime and Public Perceptions. Ipsos MORI (2008). Available online <a href="https://www.ipsos-mori.com/researchpublications/publications/publication.aspx?oItemId=11" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-18' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>DellaVigna, Stefano, and Ethan Daniel Kaplan. &#8220;The Fox News Effect: Media Bias and Voting.&#8221; <em>The Quarterly Journal of Economics</em> 122, no. 3 (2007): 1187-1234. Available online <a href="http://eml.berkeley.edu/~sdellavi/wp/FoxVoteQJEAug07.pdf" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-19' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Davis, Darren W., and Brian D. Silver. &#8220;Civil liberties vs. security: Public opinion in the context of the terrorist attacks on America.&#8221; American Journal of Political Science 48, no. 1 (2004): 28-46. Available online <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.0092-5853.2004.00054.x/abstract" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-20' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Boehm, Julia K., and Laura D. Kubzansky. &#8220;The heart&#8217;s content: the association between positive psychological well-being and cardiovascular health.&#8221; <em>Psychological bulletin</em> 138, no. 4 (2012): 655. Available online <a href="http://psycnet.apa.org/journals/bul/138/4/655/" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-21' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Positive feelings may help protect cardiovascular health. Harvard School of Public Health (2012). Available online <a href="http://www.eurekalert.org/pub_releases/2012-04/hsop-pfm041312.php" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-22' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Boehm, Julia K., Christopher Peterson, Mika Kivimaki, and Laura Kubzansky. &#8220;A prospective study of positive psychological well-being and coronary heart disease.&#8221; <em>Health Psychology</em> 30, no. 3 (2011): 259. Available online <a href="http://psycnet.apa.org/journals/hea/30/3/259/" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-23' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Tindle, Hilary A., Yue-Fang Chang, Lewis H. Kuller, JoAnn E. Manson, Jennifer G. Robinson, Milagros C. Rosal, Greg J. Siegle, and Karen A. Matthews. &#8220;Optimism, cynical hostility, and incident coronary heart disease and mortality in the Women’s Health Initiative.&#8221; <em>Circulation</em> 120, no. 8 (2009): 656-662. Available online <a href="http://circ.ahajournals.org/content/120/8/656.abstract" target="_blank">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-24' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>&#8220;Doomsdays.&#8221; The Economist (2012). Available online <a href="http://www.economist.com/blogs/graphicdetail/2012/12/daily-chart-11">here</a>.</p>
+					</div>
+				</li>
+								<li id='note-25' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>This infographic is the work of Giorgia Lupi, and more of her work can be found at <a href="http://giorgialupi.com" target="_blank">http://giorgialupi.com</a>.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473851359'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=4863&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/11 queries in 0.009 seconds using disk
+Object Caching 4277/4306 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 11:19:40 by W3 Total Cache -->

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>World Population Growth - Our World In Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0">
+	
+	<link rel="profile" href="//gmpg.org/xfn/11">
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Our World In Data &raquo; World Population Growth Comments Feed" href="//ourworldindata.org/world-population-growth/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ourworldindata.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fontello-custom-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/fontello.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-owid-css'  href='//ourworldindata.org/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-button-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/button.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='usernoise-form-css'  href='//ourworldindata.org/wp-content/plugins/usernoise/css/form.css?ver=3.7.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quicklatex-format-css'  href='//ourworldindata.org/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lazyloadxt-spinner-style-css'  href='//ourworldindata.org/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.spinner.css?ver=1.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='side-matter-css'  href='//ourworldindata.org/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css'  href='//ourworldindata.org/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='//ourworldindata.org/wp-content/tablepress-combined.min.css?ver=16' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='//ourworldindata.org/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Give me Feedback","style":"background-color: #002147; color: #FFFFFF","class":"un-bottom","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/usernoise.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/usernoise/js/button.js?ver=3.7.20'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='//ourworldindata.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ourworldindata.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ourworldindata.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="//ourworldindata.org/world-population-growth/" />
+<link rel='shortlink' href='//ourworldindata.org/?p=1308' />
+<link rel="alternate" type="application/json+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fworld-population-growth%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//ourworldindata.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fourworldindata.org%2Fworld-population-growth%2F&#038;format=xml" />
+
+<!-- Google Webmaster Tools plugin for WordPress -->
+<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* iFrame */
+	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+<style type="text/css">
+#fancybox-content{background-color:#fff}
+#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
+#fancybox-content{color:inherit}
+</style>
+
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7.3.1 -->
+<meta property="fb:app_id" content="1149943818390250"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Our World In Data"/>
+<meta property="og:title" content="World Population Growth"/>
+<meta itemprop="name" content="World Population Growth"/>
+<meta name="twitter:title" content="World Population Growth"/>
+<meta property="og:url" content="https://ourworldindata.org/world-population-growth/"/>
+<meta name="twitter:url" content="https://ourworldindata.org/world-population-growth/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="The UN calculates that there are more than 7 billion living humans on Earth, yet 200 years ago we numbered less than 1 billion. Recent estimates suggest that 6.5 percent of all people ever born are alive right now. This is the most conspicuous fact about world population growth: for thousands of yea"/>
+<meta itemprop="description" content="The UN calculates that there are more than 7 billion living humans on Earth, yet 200 years ago we numbered less than 1 billion. Recent estimates suggest that 6.5 percent of all people ever born are alive right now. This is the most conspicuous fact about world population growth: for thousands of yea"/>
+<meta name="twitter:description" content="The UN calculates that there are more than 7 billion living humans on Earth, yet 200 years ago we numbered less than 1 billion. Recent estimates suggest that 6.5 percent of all people ever born are alive right now. This is the most conspicuous fact about world population growth: for thousands of yea"/>
+<meta property="og:image" content="https://ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png"/>
+<meta itemprop="image" content="https://ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png"/>
+<meta name="twitter:image" content="https://ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
+
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="//ourworldindata.org/wp-content/themes/owid-theme/style.css?v=1473847031">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.6.1">
+    <link rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.6.1">
+
+	<!-- Hide until JS rendering -->
+	<style>
+	    body { visibility: hidden; }
+	</style>
+
+	<noscript>
+	    <style>
+	          body { visibility: inherit; }
+	    </style>
+	</noscript>
+
+	<script>
+		window.$ = jQuery;
+	</script>
+</head>
+
+<body class="page page-id-1308 page-child parent-pageid-198 page-template-default">
+	<header class="site-header">
+	<nav id="owid-topbar">
+		<ul class="desktop right">
+			<li>
+				<form id="search-nav" action="/">
+					<input type="search" name="s" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</li>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/support">Donate</a>
+			</li>
+		</ul>
+
+		<h1 id="owid-title">
+			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
+		</h1>
+
+		<ul class="mobile right">
+			<li class="nav-button">
+				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
+			</li><li class="nav-button">
+				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="topics-dropdown" class="mobile">
+		<ul>
+			<li class="header"><h2>Entries</h2></li><li class='category'><a><span> Population</span></a><div class='subcategory-menu'><div class='submenu-title'> Population</div><ul><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></div></li><li class='category'><a><span> Health</span></a><div class='subcategory-menu'><div class='submenu-title'> Health</div><ul><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></div></li><li class='category'><a><span> Food</span></a><div class='subcategory-menu'><div class='submenu-title'> Food</div><ul><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></div></li><li class='category'><a><span> Energy</span></a><div class='subcategory-menu'><div class='submenu-title'> Energy</div><ul><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></div></li><li class='category'><a><span> Environment</span></a><div class='subcategory-menu'><div class='submenu-title'> Environment</div><ul><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></div></li><li class='category'><a><span> Technology</span></a><div class='subcategory-menu'><div class='submenu-title'> Technology</div><ul><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></div></li><li class='category'><a><span> Growth & Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'> Growth & Inequality</div><ul><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span> Work & Life</span></a><div class='subcategory-menu'><div class='submenu-title'> Work & Life</div><ul><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></div></li><li class='category'><a><span> Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'> Public Sector</div><ul><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></div></li><li class='category'><a><span> Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'> Global Connections</div><ul><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></div></li><li class='category'><a><span> War & Peace</span></a><div class='subcategory-menu'><div class='submenu-title'> War & Peace</div><ul><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></div></li><li class='category'><a><span> Politics</span></a><div class='subcategory-menu'><div class='submenu-title'> Politics</div><ul><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></div></li><li class='category'><a><span> Violence & Rights</span></a><div class='subcategory-menu'><div class='submenu-title'> Violence & Rights</div><ul><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></div></li><li class='category'><a><span> Education</span></a><div class='subcategory-menu'><div class='submenu-title'> Education</div><ul><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></div></li><li class='category'><a><span> Media</span></a><div class='subcategory-menu'><div class='submenu-title'> Media</div><ul><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></div></li><li class='category'><a><span> Culture</span></a><div class='subcategory-menu'><div class='submenu-title'> Culture</div><ul><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
+			<li class='end-link'><a href='/support'>Donate</a></li>
+			<li class='end-link'><a href='/data'>Browse All</a></li>
+		</ul>
+	</div>
+
+	<div id="search-dropdown" class="mobile">
+		<form action="/">
+			<input type="search" name="s" placeholder="Search...">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
+	</div>		
+
+	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-population-growth/'>World Population Growth</a></li><li><a class='starred' href='https://ourworldindata.org/life-expectancy/'>Life Expectancy</a></li><li><a class='starred' href='https://ourworldindata.org/child-mortality/'>Child Mortality</a></li><li><a href='https://ourworldindata.org/future-world-population-growth/'>Future World Population Growth</a></li><li><a href='https://ourworldindata.org/fertility/'>Fertility</a></li><li><a href='https://ourworldindata.org/age-structure-and-mortality-by-age/'>Age Structure and Mortality by Age</a></li><li><a href='https://ourworldindata.org/infant-mortality/'>Infant Mortality</a></li></ul></li><li class='category' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/health-meta/'>Global Health</a></li><li><a class='starred' href='https://ourworldindata.org/suicide/'>Suicide</a></li><li><a class='starred' href='https://ourworldindata.org/financing-healthcare/'>Financing Healthcare</a></li><li><a href='https://ourworldindata.org/maternal-mortality/'>Maternal Mortality</a></li><li><a href='https://ourworldindata.org/burden-of-disease/'>Burden of Disease</a></li><li><a href='https://ourworldindata.org/eradication-of-diseases/'>Eradication of Diseases</a></li><li><a href='https://ourworldindata.org/malaria/'>Malaria</a></li><li><a href='https://ourworldindata.org/vaccination/'>Vaccination</a></li><li><a href='https://ourworldindata.org/hiv-aids/'>HIV / AIDS</a></li><li><a href='https://ourworldindata.org/smoking/'>Smoking</a></li><li><a href='https://ourworldindata.org/health-inequality/'>Health Inequality</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/food-per-person/'>Food per Person</a></li><li><a href='https://ourworldindata.org/hunger-and-undernourishment/'>Hunger and Undernourishment</a></li><li><a href='https://ourworldindata.org/famines/'>Famines</a></li><li><a href='https://ourworldindata.org/human-height/'>Human Height</a></li><li><a href='https://ourworldindata.org/agricultural-employment/'>Agricultural Employment</a></li><li><a href='https://ourworldindata.org/land-use-in-agriculture/'>Land Use in Agriculture</a></li><li><a href='https://ourworldindata.org/yields/'>Yields</a></li><li><a href='https://ourworldindata.org/fertilizer-and-pesticides/'>Fertilizer and Pesticides</a></li><li><a href='https://ourworldindata.org/food-prices/'>Food Prices</a></li><li><a href='https://ourworldindata.org/volatility-of-food-prices/'>Volatility of Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions/'>CO2 and other Greenhouse Gas Emissions</a></li><li><a href='https://ourworldindata.org/energy-production-and-changing-energy-sources/'>Energy Production & Changing Energy Sources</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/forest-cover/'>Forest Cover</a></li><li><a href='https://ourworldindata.org/indoor-air-pollution/'>Indoor Air Pollution</a></li><li><a href='https://ourworldindata.org/land-cover/'>Land Cover</a></li><li><a href='https://ourworldindata.org/natural-catastrophes/'>Natural Catastrophes</a></li><li><a href='https://ourworldindata.org/oil-spills/'>Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/research-development-engineers-scientists/'>R&D, Engineers & Scientists</a></li><li><a href='https://ourworldindata.org/technological-progress/'>Technological Progress</a></li></ul></li><li class='category' title='Growth & Inequality'><a><span>Growth & Inequality</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/world-poverty/'>World Poverty</a></li><li><a class='starred' href='https://ourworldindata.org/gdp-data/'>GDP Data</a></li><li><a href='https://ourworldindata.org/incomes-across-the-distribution/'>Incomes across the Distribution</a></li><li><a href='https://ourworldindata.org/income-inequality/'>Income Inequality</a></li><li><a href='https://ourworldindata.org/gdp-growth-over-the-last-centuries/'>GDP Growth Over the Last Centuries</a></li><li><a href='https://ourworldindata.org/Economic-growth-over-the-long-run/'>Economic Growth over the Long Run</a></li><li><a href='https://ourworldindata.org/global-economic-inequality'>Global Economic Inequality</a></li></ul></li><li class='category' title='Work & Life'><a><span>Work & Life</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/child-labor/'>Child Labor</a></li><li><a href='https://ourworldindata.org/happiness-and-life-satisfaction/'>Happiness and Life Satisfaction</a></li><li><a href='https://ourworldindata.org/human-development-index/'>Human Development Index (HDI)</a></li><li><a href='https://ourworldindata.org/light/'>Light</a></li><li><a href='https://ourworldindata.org/trends-in-africa/'>Trends in Africa</a></li><li><a href='https://ourworldindata.org/working-hours/'>Working Hours</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/social-spending/'>Social Spending</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/international-trade'>International Trade</a></li></ul></li><li class='category' title='War & Peace'><a><span>War & Peace</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/civil-wars/'>Civil Wars</a></li><li><a href='https://ourworldindata.org/genocides/'>Genocide, Politicide and Democide</a></li><li><a href='https://ourworldindata.org/military-spending/'>Military Spending</a></li><li><a href='https://ourworldindata.org/nuclear-weapons/'>Nuclear Weapons</a></li><li><a href='https://ourworldindata.org/peacekeeping/'>Peacekeeping</a></li><li><a href='https://ourworldindata.org/terrorism/'>Terrorism</a></li><li><a href='https://ourworldindata.org/war-and-peace-long-run'>War and Peace over the Long Run</a></li><li><a href='https://ourworldindata.org/war-and-peace-after-1945/'>War and Peace after 1945</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/data/political-regimes/colonialism/'>Colonialism</a></li><li><a href='https://ourworldindata.org/democratisation/'>Democracy</a></li></ul></li><li class='category' title='Violence & Rights'><a><span>Violence & Rights</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/cascade-of-rights/'>Cascade of Rights</a></li><li><a href='https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths/'>Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href='https://ourworldindata.org/homicides/'>Homicides</a></li><li><a href='https://ourworldindata.org/human-rights/'>Human Rights</a></li><li><a href='https://ourworldindata.org/treatment-of-minorities'>Treatment of Minorities</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/global-rise-of-education'>Global Rise of Education</a></li><li><a class='starred' href='https://ourworldindata.org/literacy/'>Literacy</a></li><li><a class='starred' href='https://ourworldindata.org/financing-education'>Financing Education</a></li><li><a href='https://ourworldindata.org/intelligence/'>Intelligence</a></li><li><a href='https://ourworldindata.org/primary-education-and-schools/'>Primary Education</a></li><li><a href='https://ourworldindata.org/higher-education/'>Higher Education</a></li><li><a href='https://ourworldindata.org/skill-premium-income-by-education/'>Skill Premium - Income by Education</a></li><li><a href='https://ourworldindata.org/quality-of-education'>Quality of Education</a></li><li><a href='https://ourworldindata.org/projections-of-future-education/'>Projections of Future Education</a></li><li><a href='https://ourworldindata.org/international-research-community/'>International Research Community</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li><a href='https://ourworldindata.org/internet/'>Internet</a></li><li><a href='https://ourworldindata.org/books/'>Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li><a class='starred' href='https://ourworldindata.org/trust'>Trust</a></li><li><a href='https://ourworldindata.org/optimism-pessimism/'>Optimism & Pessimism</a></li><li><a href='https://ourworldindata.org/materialism-and-post-materialism/'>Materialism and Post-Materialism</a></li></ul></li>	</ul></div>
+	<div id="entries-nav" class="desktop"></div>	</header>
+
+<main id="main" class="site-main">
+
+	<div class="owid-entry clearfix">
+		<div class="entry-sidebar">
+			<nav class="entry-toc">
+				<!-- populated by JS -->
+			</nav>
+		</div>
+		<article id="post-1308" class="post-1308 page type-page status-publish has-post-thumbnail hentry">
+			<header class="entry-header">
+				<h1 class="entry-title">World Population Growth</h1>				
+					<div class='authors-byline'><a href="/about/#the-team">Esteban Ortiz-Ospina and Max Roser </a><a class="citation-note"><sup>[cite]</sup></a></div>
+
+
+					<div class="citation-guideline">
+					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Esteban Ortiz-Ospina and Max Roser (2016) – &lsquo;World Population Growth&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: https://ourworldindata.org/world-population-growth/ [Online Resource]
+					</div>
+								
+			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<p>The UN calculates that there are more than 7 billion living humans on Earth, yet 200 years ago we numbered less than 1 billion.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='As per estimates from Michael Kremer (1993) “Population Growth and Technological Change: One Million B.C. to 1990″, Quarterly Journal of Economics., August 1993, pp.681-716.'>1</sup></a> Recent estimates suggest that 6.5 percent of all people ever born are alive right now.<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='As per 2011 estimates from Carl Haub (2011), &#8220;How Many People Have Ever Lived on Earth?&#8221; Population Reference Bureau.'>2</sup></a> This is the most conspicuous fact about world population growth: for thousands of years, population grew only slowly, but in recent centuries it has jumped dramatically. Between 1900 and 2000 the increase in world population was three times greater than the entire previous history of humanity– an increase from 1.5 to 6.1 billion in just 100 years.</p>
+<p>A picture of world population in the very long-run fits the pattern of exponential growth (when a population grows exponentially the rate of growth is proportional to the size of the population). Yet an empirical observation of how growth rates have developed in the course of the last century reveals that this pattern no longer holds. The annual rate of population growth has recently been going <em>down</em>. A long historical period of accelerated growth has thus come to an end; the annual world population growth rate peaked in 1962, at around 2.1%, and has come down to almost half since.<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='US Census Bureau data on &#8216;Total Midyear Population for the World: 1950-2050&#8217;'>3</sup></a></p>
+<p>Based on these observations, world history can be divided into three periods marked by distinct trends in population growth. The first period (pre-modernity) was a very long age of very slow population growth. The second period, beginning with the onset of modernity (with rising standards of living and improving health) and lasting until 1962, had an increasing rate of growth. Now that period is over, and the third part of the story has begun; the population growth rate is falling and will likely continue to fall, leading to an end of growth towards the end of this century.</p>
+<p><!------------------------------------></p>
+<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
+<p><!--------------Overview--------------></p>
+<h3 id="key-changes-in-population-growth"> <a class="deep-link" href="#key-changes-in-population-growth"># </a>Key changes in population growth</h3>
+<p>In order to study how the world population changes over time it is useful to focus on the <em>rate</em> of change (rather than just levels). The following visualization presents the annual population growth rate, superimposed on the total world population, for the period 1750-2010 (plus projections up to 2100). This is the period in history when population growth changed most drastically. Before 1800 the world population growth rate never exceeded 0.5%, while in the course of the first fifty years of the 20th century it went from 0.8% to 2.1% – the highest annual growth rate in history, recorded in 1962. After this point, it has been systematically going down with projections estimating an annual rate of growth of 0.06% for 2100. Since the rate of growth corresponds to the slope of the line tracing the total world population over time, this means that under these projections we should expect an inflection in growth around the year 2100. In other words, under the assumption that the population growth rate will continue falling more or less at the current pace, population will stop growing before the end of this century.</p>
+<h6>World population (total and annual growth rate), 1750-2010 and projections until 2100<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='World population until 1940 (total and growth rates) from Michael Kremer (1993) &#8220;Population Growth and Technological Change: One Million B.C. to 1990&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716. World population after 1940 (total and growth rates) from UN Population Division &#8211; 2012 revisions'>4</sup></a></h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png" rel="attachment wp-att-7186"><img class="alignnone wp-image-7186 size-full" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png" alt="World-Population-Growth-1750-2100" width="3000" height="2100" srcset="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png 3000w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-768x538.png 768w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-750x525.png 750w" sizes="(max-width: 3000px) 100vw, 3000px" /><noscript><img class="alignnone wp-image-7186 size-full" src="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png" alt="World-Population-Growth-1750-2100" width="3000" height="2100" srcset="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100.png 3000w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-150x105.png 150w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-400x280.png 400w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-768x538.png 768w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_world-population-growth-1750-2100-750x525.png 750w" sizes="(max-width: 3000px) 100vw, 3000px" /></noscript></a></p>
+<p><!--------------Long-run (1) Big Picture --------------></p>
+<h3 id="long-run-historical-perspective-the-big-picture"> <a class="deep-link" href="#long-run-historical-perspective-the-big-picture"># </a>Long-run historical perspective: the big picture</h3>
+<p>Around 108 billion people have lived on our planet. This means that about 6.5% of all people ever born are alive right now.<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='As per 2011 estimates from Carl Haub (2011), &#8220;How Many People Have Ever Lived on Earth?&#8221; Population Reference Bureau.'>5</sup></a> The following visualization plots estimates of the world population, from a number of sources, for different periods in history. As it can be appreciated, before 1,000 CE the population slowly but steadily increased, going from about 4 million in 10,000 BCE to 265 million in 1,000 CE. This represents an average increase of only about 24,000 people per year. By 1850, the world population had exceeded 1 billion people. In the period 1000-1850 the population grew on average almost 1.5 million people per year—this represents an average growth almost 60 times larger than that recorded for the period 10,000 BCE &#8211; 1000 CE.</p>
+<h6>World population over the last million years and projections 2010-2100<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='Data series for the period 1,000,000 BCE &#8211; 1990 CE from Michael Kremer (1993) &#8220;Population Growth and Technological Change: One Million B.C. to 1990&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716. US census data series for the period 1950-2013 from the US Census. UN data series labeled &#8216;UN Projections&#8217; corresponds to estimates for the period 1950-2010, plus projections 2010-2100 from UN Population Division &#8211; 2012 revisions'>6</sup></a></h6>
+<p><iframe style="border: 0px none;" data-src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears.html">Full screen view</a> <a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_Kremer_CSV_WorldPop_MillionYears/Kremer_CSV_WorldPop_MillionYears.csv">Download Data</a></address>
+<p style="text-align: left;">In order to provide a detailed and unified view of population levels in the long-run, the following visualization compiles annual estimates into a single series going back to 10,000 BCE.</p>
+<p><iframe style="width: 100%; height: 660px; border: 0px none;" data-src="https://ourworldindata.org/grapher/annual-world-population-since-10000-bce-ourworldindata-series" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 660px; border: 0px none;" src="https://ourworldindata.org/grapher/annual-world-population-since-10000-bce-ourworldindata-series" width="300" height="150"></iframe></noscript></p>
+<p style="text-align: center;"><a href="https://ourworldindata.org/wp-content/uploads/2013/05/WorldPopulationAnnual12000years_interpolated_HYDEandUNto2015.csv"> Download the annual world population data published by Our World in Data</a></p>
+<p><!--------------Long-run (2) Countries--------------></p>
+<h3 id="long-run-historical-perspective-country-trends-in-the-last-500-years"> <a class="deep-link" href="#long-run-historical-perspective-country-trends-in-the-last-500-years"># </a>Long-run historical perspective: country trends in the last 500 years</h3>
+<p>As has been already mentioned, for a long period of time (staring at the beginning of the 19th century and ending in the 1960s) total world population grew faster as the growth rate increased. This global pattern, however, masks a great deal of heterogeneity across countries; in reality growth started climbing at different points in time in each country. Data from the Clio Infra project allows a cross-country analysis. The following visualization shows total population by country in the last five centuries. Substantial differences are evident here: adding the U.S. to the graph reveals that, while the population in France roughly doubled in the period 1800-2000, in this same period the population in the U.S. increased almost 50-fold.</p>
+<p><iframe style="width: 100%; height: 660px; border: 0px none;" data-src="http://ourworldindata.org/grapher/public/view/169" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 660px; border: 0px none;" src="http://ourworldindata.org/grapher/public/view/169" width="300" height="150"></iframe></noscript></p>
+<p><!--------------Long-run (3) Regions--------------></p>
+<h3 id="long-run-historical-perspective-regional-shares"> <a class="deep-link" href="#long-run-historical-perspective-regional-shares"># </a>Long-run historical perspective: regional shares</h3>
+<p>Differences at the regional level are also important. The estimates provided by the History Database of the Global Environment (HYDE) allow a regional analysis for the period 1400-2000. The following visualization provides a break down of the world population by regions using this source (plus projections from the <a href="http://www.un.org/en/development/desa/population/">UN Population Division</a>). China, India and Africa are (and have been for a long time) the most populous regions in the world – and this is predicted to remain true by 2100. Yet in relative terms (click on the &#8216;expanded&#8217; option in this chart) the share of the world&#8217;s population living in India and Africa is predicted to continue increasing, while China&#8217;s share is expected to decrease, likely due to falling <a title="Fertility Rates" href="http://ourworldindata.org/data/population-growth-vital-statistics/fertility-rates/">fertility rates</a>.</p>
+<h6>World population by world regions, 1400-2000 and projections until 2100<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Data for the period 1400-2000 from the History Database of the Global Environment (HYDE). Credit goes to Kees Klein Goldewijk for making it available. Population projections for the period 2010-2100 from the UN World Population Prospects &#8211; 2008 Revision. Regions have been aggregated as follows: Russia &amp; Central-Asia includes the group of countries called ’Asia-Stan’ in the original dataset. Europe includes Western Europe, Central Europe, Ukraine and Greenland. Southeastern Asia includes Indonesia. India+ includes Afghanistan, Bangladesh, Bhutan, Nepal, Sri Lanka, Pakistan and India. China+ includes China, Mongolia, Hong Kong and Macao.'>7</sup></a></h6>
+<p><iframe data-src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400.html">Full screen view</a> <a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_WorldPopByDetailedRegionssince1400/nvd3_StackedArea_CSV_WorldPopByDetailedRegionssince1400.html">Full screen view of the same graph with more detailed world regions</a> <a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_StackedArea_CSV_WorldPopByLARGER_RegionsSince1400/CSV_WorldPopByLARGER_RegionsSince1400.csv">Download Data</a></address>
+<p><!--------------Recent Developments (1) Rates --------------></p>
+<h3 id="recent-history-and-projections"> <a class="deep-link" href="#recent-history-and-projections"># </a>Recent history and projections</h3>
+<p>In terms of recent developments, the data from the UN Population Division provides consistent and comparable estimates (and projections) within and across countries and time, over the last century. This data starts from estimates for 1950, and is updated periodically to reflect changes in fertility, mortality and international migration (for more information see the Data Quality section at the end of this entry).</p>
+<p>The following visualization presents the rate of population growth by country for the period 1955-2015, plus projections for 2015-2100 using the UN Population Division data (switch to the map view in this chart for a wider cross-country comparison). As you can see, in most countries growth rates have been going down since the 1960s. Yet substantial differences remain across countries and regions. While Western Europe currently has close to zero annual growth rates, sub-Saharan Africa has rates that are still higher than 3% – that is, still higher than the peak growth rates recorded for the world at the beginning of the 1960s. Moreover, in many cases there has been divergence in growth rates. For instance, India and Nigeria had similar growth rates in 1960 (around 1.7%), but followed very different paths in the following years, and currently have populations that grow at very different rates (about 1.26% for India compared to 2.67% for Nigeria).</p>
+<p><iframe data-src="/grapher/population-growth-rates" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/population-growth-rates" width="100%" height="660px"></iframe></noscript></p>
+<p>In the last century developed countries have had lower growth rates than developing countries. While some convergence is expected, large differences are projected to remain for the next century. The following visualization presents how the population growth rate has changed for &#8216;more developed&#8217;, &#8216;less developed&#8217; and &#8216;least developed&#8217; countries (UN categorization), together with the corresponding projections (UN Population Division estimates and projections from the 2012 revision).</p>
+<h6>Annual population growth rate by world regions, 1955-2010 and projections until 2100<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='Data from UN Population Division &#8211; 2012 revisions The &#8216;least developed countries&#8217; are a subgroup of the &#8216;less developed countries&#8217; &#8211; The UN defines the regions as follows:  More developed regions comprise Europe, Northern America, Australia/New Zealand and Japan. Less developed regions comprise all regions of Africa, Asia (excluding Japan), Latin America and the Caribbean plus Melanesia, Micronesia and Polynesia. The least developed countries are 48 countries, 33 in Africa, 9 in Asia, 5 in Oceania plus one in Latin America and the Caribbean.'>8</sup></a></h6>
+<p><iframe data-src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_popGrowth_until2100/nvd3_lineChart_CSV_popGrowth_until2100.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_popGrowth_until2100/nvd3_lineChart_CSV_popGrowth_until2100.html" width="100%" height="540" scrolling="no"></iframe></noscript></p>
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_popGrowth_until2100/nvd3_lineChart_CSV_popGrowth_until2100.html">Full screen view</a> <a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_popGrowth_until2100/Roser_CSV_popGrowth_until2100.csv">Download Data</a></address>
+<p><!--------------Recent Developments (2) Density --------------></p>
+<p>The above discussion also shows there are interesting patterns of population density: the most densely populated regions today have also been the most dense regions throughout modern history. India is a prime example of this. The following visualization shows population density patterns by country using the data from the History Database of the Global Environment (HYDE). Switch to the map view for a global perspective.</p>
+<p><iframe data-src="/grapher/population-density-3" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/population-density-3" width="100%" height="660px"></iframe></noscript></p>
+<h3 id="world-population-by-education-level"> <a class="deep-link" href="#world-population-by-education-level"># </a>World population by education level</h3>
+<p>The <em>International Institute for Applied Systems Analysis</em> (IIASA) is an interdisciplinary, highly-respected research institution near Vienna, Austria. The IIASA population projections are the most cited alternative to the UN work.</p>
+<p>Interestingly their medium projection – which they consider most likely – stands in stark contrast to the UN projection. While the medium variant of the UN projection sees the world population growing continuously throughout the 21st century the IIASA medium (most likely) scenario sees the world population increase to 9.4 billion in 2070 and then begin a slow decline to below 9 billion by the end of the century.</p>
+<p>As the IIASA researchers explain there are <a href="https://blog.iiasa.ac.at/2014/09/23/9-billion-or-11-billion-the-research-behind-new-population-projections/">important methodological differences</a> between the UN and IIASA projections. The UN uses probabilistic population projections to extrapolate populations for each country over the 21st century and is applying the same statistical methodology to all countries. The IIASA researchers in contrast have a country-specific approach that takes into account the knowledge of experts for each country separately.</p>
+<p>The other important feature of the IIASA projection is that it takes into account the education of the population. As we show below in this entry there is a strong link between education and <a href="https://ourworldindata.org/fertility/">fertility</a> – more educated women have fewer children. This link is taken into account in the model of the IIASA researchers and contributes to their projection of a much smaller total world population over the course of the 21st century.</p>
+<p>The breakdown by education level is especially interesting: it shows that our world will be inhabited by more and more educated people. In the visualization below you see that in 1970 there were only around 700 million people in the world that had secondary or post-secondary education. By the end of this century the number of people with secondary or post-secondary education will have increased 10-fold and will reach 7 billion people (a similar number to the entire current world population)!</p>
+<p>The projection also shows that the number of people with no education will decrease continuously and that by the end of this century virtually all people in the world will have received some level of education.</p>
+<p><iframe data-src="/grapher/projection-of-world-population-SSP2-IIASA" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/projection-of-world-population-SSP2-IIASA" width="100%" height="660px"></iframe></noscript></p>
+<p><!--------------Correlates--------------></p>
+<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+<h3 id="fertility"> <a class="deep-link" href="#fertility"># </a>Fertility</h3>
+<p>Perhaps the most direct and obvious determinant of population growth is fertility. In the following visualization we show the rate of fertility, defined as the average number of children that would be born to a woman over her lifetime if the woman were to experience the exact current age-specific fertility rates, and the woman were to survive from birth through the end of her reproductive life. This data comes from the UN Population Division. As we can see, fertility rates were stable across the world until the 1960s, with some differences in levels between &#8216;developed&#8217; and &#8216;developing&#8217; countries. After this point, fertility rates started dropping and levels began converging. This coincides with the decline in growth rates that has already been discussed. In the next section we explore the combined effects of changing fertility and mortality. You can read more about these factors in our <a href="/fertility-rates/">fertility</a> and <a href="/life-expectancy/">life expectancy</a> entries.</p>
+<h6 id="total-fertility-1950-2010-and-projections-until-2100-un-population-division-estimates-and-forecasts-for-medium-fertility-variantref"> <a class="deep-link" href="#total-fertility-1950-2010-and-projections-until-2100-un-population-division-estimates-and-forecasts-for-medium-fertility-variantref"># </a>Total fertility, 1950-2010 and projections until 2100 (UN Population Division estimates and forecasts for medium fertility variant)<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='Using data from UN World Population Prospects – 2010 Revision.'>9</sup></a><br />
+<script type='text/javascript' src='//www.google.com/jsapi'></script>
+<script type='text/javascript'>
+// <![CDATA[
+google.load('visualization', '1.0', {'packages':['corechart']});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+var wrapper = new google.visualization.ChartWrapper(
+{"containerId":"visualization1FBC","dataTable":{"cols":[{"id":"","label":"","pattern":"","type":"string"},{"id":"","label":"World","pattern":"","type":"number"},{"id":"","label":"More developed regions","pattern":"","type":"number"},{"id":"","label":"Less developed regions","pattern":"","type":"number"},{"id":"","label":"World (forecast)","pattern":"","type":"number"},{"id":"","label":"More developed regions (forecast)","pattern":"","type":"number"},{"id":"","label":"Less developed regions (forecast)","pattern":"","type":"number"}],"rows":[{"c":[{"v":"1950-1955","f":null},{"v":4.95,"f":null},{"v":2.81,"f":null},{"v":6.07,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1955-1960","f":null},{"v":4.89,"f":null},{"v":2.78,"f":null},{"v":5.94,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1960-1965","f":null},{"v":4.91,"f":null},{"v":2.66,"f":null},{"v":5.97,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1965-1970","f":null},{"v":4.85,"f":null},{"v":2.36,"f":null},{"v":5.94,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1970-1975","f":null},{"v":4.45,"f":null},{"v":2.16,"f":null},{"v":5.37,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1975-1980","f":null},{"v":3.84,"f":null},{"v":1.93,"f":null},{"v":4.54,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1980-1985","f":null},{"v":3.59,"f":null},{"v":1.85,"f":null},{"v":4.16,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1985-1990","f":null},{"v":3.39,"f":null},{"v":1.81,"f":null},{"v":3.85,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1990-1995","f":null},{"v":3.04,"f":null},{"v":1.66,"f":null},{"v":3.39,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"1995-2000","f":null},{"v":2.79,"f":null},{"v":1.56,"f":null},{"v":3.06,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"2000-2005","f":null},{"v":2.62,"f":null},{"v":1.58,"f":null},{"v":2.82,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"2005-2010","f":null},{"v":2.52,"f":null},{"v":1.66,"f":null},{"v":2.68,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null}]},{"c":[{"v":"2010-2015","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.45,"f":null},{"v":1.71,"f":null},{"v":2.57,"f":null}]},{"c":[{"v":"2015-2020","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.39,"f":null},{"v":1.75,"f":null},{"v":2.48,"f":null}]},{"c":[{"v":"2020-2025","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.33,"f":null},{"v":1.8,"f":null},{"v":2.4,"f":null}]},{"c":[{"v":"2025-2030","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.29,"f":null},{"v":1.86,"f":null},{"v":2.35,"f":null}]},{"c":[{"v":"2030-2035","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.25,"f":null},{"v":1.9,"f":null},{"v":2.3,"f":null}]},{"c":[{"v":"2035-2040","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.22,"f":null},{"v":1.93,"f":null},{"v":2.26,"f":null}]},{"c":[{"v":"2040-2045","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.19,"f":null},{"v":1.95,"f":null},{"v":2.22,"f":null}]},{"c":[{"v":"2045-2050","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.17,"f":null},{"v":1.97,"f":null},{"v":2.19,"f":null}]},{"c":[{"v":"2050-2055","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.15,"f":null},{"v":1.99,"f":null},{"v":2.16,"f":null}]},{"c":[{"v":"2055-2060","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.12,"f":null},{"v":2.01,"f":null},{"v":2.14,"f":null}]},{"c":[{"v":"2060-2065","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.11,"f":null},{"v":2.02,"f":null},{"v":2.12,"f":null}]},{"c":[{"v":"2065-2070","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.09,"f":null},{"v":2.03,"f":null},{"v":2.1,"f":null}]},{"c":[{"v":"2070-2075","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.08,"f":null},{"v":2.04,"f":null},{"v":2.08,"f":null}]},{"c":[{"v":"2075-2080","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.06,"f":null},{"v":2.05,"f":null},{"v":2.07,"f":null}]},{"c":[{"v":"2080-2085","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.05,"f":null},{"v":2.05,"f":null},{"v":2.05,"f":null}]},{"c":[{"v":"2085-2090","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.04,"f":null},{"v":2.06,"f":null},{"v":2.04,"f":null}]},{"c":[{"v":"2090-2095","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.04,"f":null},{"v":2.07,"f":null},{"v":2.03,"f":null}]},{"c":[{"v":"2095-2100","f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":null,"f":null},{"v":2.03,"f":null},{"v":2.07,"f":null},{"v":2.02,"f":null}]}],"p":null},"options":{"legend":"right","curveType":"","vAxes":[{"title":"Total Fertility Rate (children per woman)","minValue":null,"maxValue":null,"viewWindow":{"max":null,"min":null},"useFormatFromData":true},{"viewWindow":{"max":null,"min":null},"minValue":null,"maxValue":null,"useFormatFromData":true}],"animation":{"duration":500},"booleanRole":"certainty","lineWidth":2,"hAxis":{"minValue":null,"maxValue":null,"viewWindow":null,"viewWindowMode":null,"useFormatFromData":true},"legendTextStyle":{"color":"#222","fontSize":"10"}},"state":{},"view":{},"isDefaultVisualization":true,"chartType":"LineChart"}
+);
+wrapper.draw();
+};
+// ]]&gt;
+</script>
+<div style='border: 0px darkgray solid; width: 100%px;'>
+<div id='visualization1FBC' style='width: 100%px; height: 325px;'></div>
+</div>
+</p>
+<h3 id="demographic-transition"> <a class="deep-link" href="#demographic-transition"># </a>Demographic transition</h3>
+<p>The statistical office of Sweden &#8211; the <em>Tabellverket </em>(Office of Tables) &#8211; was established in 1749 when the Swedish population was 1,764,724; today it is more than five times higher (9,555,893 in 2012). This long record of population statistics makes Sweden a particularly interesting case to explore the mechanisms driving population changes.</p>
+<p>Statistics Sweden &#8211; the successor of the <em>Tabellverket</em> &#8211; publishes data on both deaths and births since record-keeping began more than 250 years ago. These records suggest that around the year 1800 the death rate of the Swedes started falling, mainly due to improvements in health and living standards, especially for children.<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='Before 1800 more than 20% of the Swedish babies died before they reached their first birthday, and of those who survived another 20% died before their 10th birthday (see Croix, Lindh, and Malmberg (2009), Demographic change and economic growth in Sweden: 1750–2050. In Journal of Macroeconomics, 31, 1, 132&#8211;148).'>10</sup></a> Yet while death rates were falling, birth rates remained at a constant pre-modern level until the 1860s. During this period and up until the first half of the 20th century, there was a sustained gap between the frequency of deaths and the frequency of births. It was because of this gap that the population of the Swedes increased. The following visualization supports these observations.</p>
+<p><iframe data-src="https://ourworldindata.org/grapher/Demographic-Transition-Mitchell" style="width: 100%; height: 660px; border: 0px none;"></iframe><noscript><iframe src="https://ourworldindata.org/grapher/Demographic-Transition-Mitchell" style="width: 100%; height: 660px; border: 0px none;"></iframe></noscript></p>
+<p>The expansion of the Swedish population, caused by the widening gap between mortality rates and birth rates, has been observed in many other countries – and is the main explanation for increasing population in the world as a whole. It is a fundamental part of a model of demographic transition, which is synthesised in the graph below.</p>
+<h6 id="the-five-stages-of-the-demographic-transition"> <a class="deep-link" href="#the-five-stages-of-the-demographic-transition"># </a>The five stages of the demographic transition</h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3.png" rel="attachment wp-att-7310"><img class="aligncenter size-large wp-image-7310" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-750x460.png" alt="Demographic-TransitionOWID" width="750" height="460" srcset="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-750x460.png 750w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-150x92.png 150w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-400x245.png 400w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-768x471.png 768w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-7310" src="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-750x460.png" alt="Demographic-TransitionOWID" width="750" height="460" srcset="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-750x460.png 750w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-150x92.png 150w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-400x245.png 400w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transitionowid-3-768x471.png 768w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>The following visualization depicts the Swedish pattern of demographic transition vis-a-vis other countries.</p>
+<h6>Demographic transition in 5 countries, 1820-2010<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='The data on birth rates, death rates and the total population is taken from the International Historical Statistics (IHS), edited by Palgrave Macmillan Ltd. (April 2013). The online version is available here. As a printed version it is published by Palgrave.'>11</sup></a></h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi.png" rel="attachment wp-att-7305"><img class="aligncenter size-large wp-image-7305" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-742x550.png" alt="Demographic-Transition-5-countriesi" width="742" height="550" srcset="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-742x550.png 742w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-150x111.png 150w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-400x296.png 400w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-768x569.png 768w" sizes="(max-width: 742px) 100vw, 742px" /><noscript><img class="aligncenter size-large wp-image-7305" src="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-742x550.png" alt="Demographic-Transition-5-countriesi" width="742" height="550" srcset="//ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-742x550.png 742w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-150x111.png 150w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-400x296.png 400w, //ourworldindata.org/wp-content/uploads/2013/05/ourworldindata_demographic-transition-5-countriesi-768x569.png 768w" sizes="(max-width: 742px) 100vw, 742px" /></noscript></a></p>
+<h3 id="health-improvements"> <a class="deep-link" href="#health-improvements"># </a>Health improvements</h3>
+<p>The high fertility of families in poor health environments is widely considered to be a consequence of families attempting to ensure that enough children survive. As health improves, families tend to adapt to the new situation by lowering their expectations of how many children to have. Better child health has thus two opposing effects on population growth. In the first instance, the effect of improving health is lower mortality – a driver initially pushing population growth up. But later on health improvements result in lower fertility – a driver pushing growth in the <em>opposite</em> direction.</p>
+<p>Since virtually all countries in the world have already achieved historically low child mortality rates, it is natural to think that the latter effect currently dominates the global landscape. The following visualization presents the correlation between population growth and child mortality across the world. Indeed, countries with high child mortality rates tend to grow faster. This is important, since it suggests that health improvements are effective at curbing population growth – and that, by the same token, failing to tackle child mortality may actually foster faster population growth.</p>
+<p><iframe data-src="/grapher/population-growth-vs-child-mortality" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/population-growth-vs-child-mortality" width="100%" height="660px"></iframe></noscript></p>
+<p><!--------------DATA QUALITY------------------------></p>
+<h2 id="data-quality-measurement"> <a class="deep-link" href="#data-quality-measurement"># </a>Data Quality &amp; Measurement</h2>
+<p><!--------------(1) Long run------------------------></p>
+<h3 id="data-on-the-population-of-the-ancient-world"> <a class="deep-link" href="#data-on-the-population-of-the-ancient-world"># </a>Data on the population of the ancient world</h3>
+<p>Kremer (1993) provides estimates of the total world population over the last 1 million years.<a id='ref-12' class='side-matter side-matter-ref' href='#note-12'><sup class='side-matter side-matter-sup' title='Michael Kremer (1993) &#8220;Population Growth and Technological Change: One Million B.C. to 1990&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716.'>12</sup></a> He puts together UN estimates for the period 1920-1990, as well as estimates from McEvedy and Jones (1978)<a id='ref-13' class='side-matter side-matter-ref' href='#note-13'><sup class='side-matter side-matter-sup' title='McEvedy, Colin and Richard Jones (1978), &#8220;Atlas of World Population History,&#8221; Facts on File, New York, pp. 342-351.'>13</sup></a> for the period 10,000 BCE-1900 CE, and Deevey (1960)<a id='ref-14' class='side-matter side-matter-ref' href='#note-14'><sup class='side-matter side-matter-sup' title='Deevey, Edward S. &#8220;The human population.&#8221; Scientific American 203 (1960): 194-204.'>14</sup></a> for the period 1,000,000 BCE-10,000 BCE.</p>
+<p>The estimates from McEvedy and Jones (1978) after 200 BCE were obtained by aggregating population estimates for individual geographic regions taken from other authors (see references therein), and these in turn were based primarily on historical sources such as Roman and Chinese censuses. Their estimates of population prior to 200BCE were based on archaeological and anthropological evidence.</p>
+<p>Many studies not considered in Kremer (1993) provide competing estimates of world population over long historial periods (Kremer (1993) mentions Clark (1977)<a id='ref-15' class='side-matter side-matter-ref' href='#note-15'><sup class='side-matter side-matter-sup' title='Clark, Colin (1997). &#8220;Population growth and land use.&#8221; London: Macmillan.'>15</sup></a> and Durand (1977)<a id='ref-16' class='side-matter side-matter-ref' href='#note-16'><sup class='side-matter side-matter-sup' title='Durand, John D. (1974), &#8220;Historical Estimates of World Population: An Evaluation,&#8221; Population and Development Review III, 253-96.'>16</sup></a>, but there are more). The following two graphs provide a sense of the dispersion of different estimates. All long-run estimates appear to be fairly close.</p>
+<h6>Comparison of different estimates of world population for the last million years &#8211; Figure 1 in DeLong (1998)<a id='ref-17' class='side-matter side-matter-ref' href='#note-17'><sup class='side-matter side-matter-sup' title='J. Bradford DeLong (1998) &#8220;Estimating World GDP, One Million B.C. &#8211; Present&#8220;.'>17</sup></a></h6>
+<p style="text-align: center;"><a href="http://ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png.png"><img class="aligncenter wp-image-1305 size-full" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png.png" alt="Comparison of Different Estimates of World Population for the last million years - DeLong" width="600" height="365" srcset="//ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png-300x182.png 300w" sizes="(max-width: 600px) 100vw, 600px" /><noscript><img class="aligncenter wp-image-1305 size-full" src="//ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png.png" alt="Comparison of Different Estimates of World Population for the last million years - DeLong" width="600" height="365" srcset="//ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png.png 600w, //ourworldindata.org/wp-content/uploads/2013/05/comparison-of-different-estimates-of-world-population-for-the-last-million-years-delong-png-300x182.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></noscript></a></p>
+<p><iframe data-src="/grapher/total-world-population-comparison-of-different-sources" width="100%" height="660px"></iframe><noscript><iframe src="/grapher/total-world-population-comparison-of-different-sources" width="100%" height="660px"></iframe></noscript></p>
+<p><!--------------(2) Recent------------------------></p>
+<h3 id="data-quality-of-recent-world-population-estimates"> <a class="deep-link" href="#data-quality-of-recent-world-population-estimates"># </a>Data quality of recent world population estimates</h3>
+<p>The most discussed estimates from the last century are those from the UN Population Division. These are revised periodically and aim to be consistent and comparable within and across countries and time.</p>
+<p>The methodology used by the UN to produce their estimates and projections is discussed extensively in the World Population Prospects&#8217; <a href="http://esa.un.org/unpd/wpp/Publications/Files/WPP2015_Methodology.pdf">Methodology Report</a>. As noted in this report, estimates are produced &#8220;by starting with a base population by age and sex for 1 July 1950 and advancing the population through successive 5-year time intervals using the cohort-component method, based on age-specific estimates of the components of population change (fertility, mortality, and international migration).&#8221; Population counts by age and sex from periodic censuses are used as benchmarks.</p>
+<p>The process of &#8216;revising&#8217; the estimates involves incorporating new information about the demography of each country. The following diagram explains the process used to ensure consistency.</p>
+<h6>Process for generating UN population revisions – Table I.4. in the UN World Population Prospects Methodology Report<a id='ref-18' class='side-matter side-matter-ref' href='#note-18'><sup class='side-matter side-matter-sup' title='UN World Population Prospects Methodology Report'>18</sup></a></h6>
+<p><a href="https://ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology.jpg" rel="attachment wp-att-7241"><img class="aligncenter size-large wp-image-7241" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-750x469.jpg" alt="UN Population Methodology" width="750" height="469" srcset="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-750x469.jpg 750w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-150x94.jpg 150w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-400x250.jpg 400w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-768x480.jpg 768w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology.jpg 1130w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter size-large wp-image-7241" src="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-750x469.jpg" alt="UN Population Methodology" width="750" height="469" srcset="//ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-750x469.jpg 750w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-150x94.jpg 150w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-400x250.jpg 400w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology-768x480.jpg 768w, //ourworldindata.org/wp-content/uploads/2016/03/ourworldindata_un-methodology.jpg 1130w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></a></p>
+<p>The main implication of this cohort-component framework by demographic trends is that it sometimes leads to marked inconsistencies with official country statistics. The following map, showing the coverage of births through civil registration, speaks to this issue: many countries, particularly those in the least developed regions of the world, have limited census data. For countries with no data in one or two decades before each revision, UN estimates are derived by extrapolating trends from countries in the same region with a socio-economic profile considered close to the country in question.</p>
+<h6>Civil registration coverage of births (in percent) using 2014 data from the WHO<a id='ref-19' class='side-matter side-matter-ref' href='#note-19'><sup class='side-matter side-matter-sup' title='Data from the World Health Organization (WHO) in the Global Health Observatory data repository. These are the latest available statistic for each country available as of February 2014. For most countries this is 2011 although it goes as far back as 2006 for some others.'>19</sup></a></h6>
+<div class="narrow_iframe"><iframe style="border: 0px none;" data-src="http://ourworldindata.org/wp-content/uploads/datamaps/CivilRegistrationCoverageOfBirths/CivilRegistrationCoverageOfBirths.html" width="100%" height="380" scrolling="no"></iframe><noscript><iframe style="border: 0px none;" src="http://ourworldindata.org/wp-content/uploads/datamaps/CivilRegistrationCoverageOfBirths/CivilRegistrationCoverageOfBirths.html" width="100%" height="380" scrolling="no"></iframe></noscript><br />
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/datamaps/CivilRegistrationCoverageOfBirths/CivilRegistrationCoverageOfBirths.html">Full screen view</a></address>
+</div>
+<p><!--------------(3) Future------------------------></p>
+<h3 id="uncertainty-of-future-projections"> <a class="deep-link" href="#uncertainty-of-future-projections"># </a>Uncertainty of future projections</h3>
+<p>The most discussed projections of population growth are also those from the UN Population Division.<a id='ref-20' class='side-matter side-matter-ref' href='#note-20'><sup class='side-matter side-matter-sup' title='There are other organizations working on population forecasts, such as the Austria-based Institute for Applied Systems Analysis (IIASA)'>20</sup></a> Keilman (2001)<a id='ref-21' class='side-matter side-matter-ref' href='#note-21'><sup class='side-matter side-matter-sup' title='Nico Keilman (2001), Data quality and accuracy of United Nations population projections, 1950-95. In Population Studies, 55, 2, 149&#8211;164.'>21</sup></a> provides an assessment of the forecasts of world population published by the UN between 1951 and 1998. This comparisons of projected versus actual population levels suggests that UN forecasts are fairly accurate. The following visualization shows this.</p>
+<p><a href="http://ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001.png"><img class="aligncenter wp-image-1414 size-full" title="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="//ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001.png" alt="World Population Size - The Estimates of the Wold Population compared with the UN Forecasts since 1950 - Keilman (2001)" width="642" height="501" srcset="//ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001.png 642w, //ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001-300x234.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><noscript><img class="aligncenter wp-image-1414 size-full" title="" src="//ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001.png" alt="World Population Size - The Estimates of the Wold Population compared with the UN Forecasts since 1950 - Keilman (2001)" width="642" height="501" srcset="//ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001.png 642w, //ourworldindata.org/wp-content/uploads/2013/05/World-Population-Size-The-Estimates-of-the-Wold-Population-compared-with-the-UN-Forecasts-since-1950-Keilman-2001-300x234.png 300w" sizes="(max-width: 642px) 100vw, 642px" /></noscript></a></p>
+<p>Since projecting fertility is a fundamental part of the forecasting exercise, future estimates are usually presented for different variants. The following visualization presents world population projections under different fertility assumptions. As you might expect, projections are highly sensitive to changes in the assumptions made about fertility.</p>
+<p><iframe data-src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants.html" width="100%" height="540" scrolling="no"></iframe><noscript><iframe src="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants.html" width="100%" height="540" scrolling="no"></iframe></noscript><br />
+<address><a class="fancybox-iframe" href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants.html">Full screen view</a><a href="http://ourworldindata.org/wp-content/uploads/nvd3/nvd3_lineChart_CSV_UNPopulationProjectionsDifVariants/Roser_CSV_UNPopulationProjectionsDifVariants.csv">Download Data</a></address>
+<p><!---------------------DATA SOURCES---------------------></p>
+<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
+<h3 id="estimates-of-ancient-population"> <a class="deep-link" href="#estimates-of-ancient-population"># </a>Estimates of ancient population</h3>
+<p>As it was discussed in the previous section, there are a number of studies providing historic population data. The most commonly cited source is McEvedy and Jones (1978).</p>
+<h5 id="mcevedy-and-jones-1978"> <a class="deep-link" href="#mcevedy-and-jones-1978"># </a>McEvedy and Jones (1978)</h5>
+<ul>
+<li><strong>Data Source:</strong> McEvedy, Colin and Richard Jones (1978), &#8220;Atlas of World Population History,&#8221; Facts on File, New York, pp. 342-351; relying on archeological and anthropological evidence, as well as historical documents such as Roman and Chinese censuses</li>
+<li><strong>Description of available measures:</strong> Population</li>
+<li><strong>Time span:</strong> 400BCE-2,000CE</li>
+<li><strong>Geographical coverage:</strong> Global by country and regions</li>
+</ul>
+<hr class="datasources-hr" />
+<p>This source is an input to produce, among other, the data from the HYDE project. Further references to this source are available in Goldewijk, K. K., Beusen, A., &amp; Janssen, P. (2010). <em>Long-term dynamic modelling of global population and built-up area in a spatially explicit way: HYDE 3.1</em>. The Holocene.</p>
+<h5 id="history-database-of-the-global-environment-hyde"> <a class="deep-link" href="#history-database-of-the-global-environment-hyde"># </a>History Database of the Global Environment (HYDE)</h5>
+<ul>
+<li><strong>Data Source:</strong> History Database of the Global Environment project, using estimates from McEvedy and Jones (1978), Livi-Bacci (2007)<a id='ref-22' class='side-matter side-matter-ref' href='#note-22'><sup class='side-matter side-matter-sup' title='Livi-Bacci (2007), &#8220;A Concise History of World Population&#8221;. Oxford: Blackwell Publishing.'>22</sup></a>, Maddison (2001)<a id='ref-23' class='side-matter side-matter-ref' href='#note-23'><sup class='side-matter side-matter-sup' title='Maddison, A. (2001). The World Economy: A Millennial Perspective, Development Centre of the Organization for Economic Cooperation and Development.'>23</sup></a>, and Denevan (1992)<a id='ref-24' class='side-matter side-matter-ref' href='#note-24'><sup class='side-matter side-matter-sup' title='Denevan, W. M. (1992). The pristine myth: the landscape of the Americas in 1492. Annals of the Association of American Geographers, 82(3), 369-385.'>24</sup></a></li>
+<li><strong>Description of available measures:</strong> Geographic distribution of the world population</li>
+<li><strong>Time span:</strong> 10,000BCE-2,000CE</li>
+<li><strong>Geographical coverage:</strong> Global at a 5 arc-minute spatial resolution</li>
+<li><strong>Link:</strong> <a href="http://themasites.pbl.nl/tridion/en/themasites/hyde/basicdrivingfactors/population/index-2.html">http://themasites.pbl.nl/</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------><br />
+The data from the HYDE project is in turn the basis for the population series published by the &#8216;Clio-Infra&#8217; project</p>
+<h5 id="clio-infra"> <a class="deep-link" href="#clio-infra"># </a>Clio-Infra</h5>
+<ul>
+<li><strong>Data Source:</strong> HYDE project and UN Population Division</li>
+<li><strong>Description of available measures:</strong> Population</li>
+<li><strong>Time span:</strong> 1,500-2,000CE</li>
+<li><strong>Geographical coverage:</strong> Global by country</li>
+<li><strong>Link:</strong> <a href="http://www.clio-infra.eu/datasets/indicators">www.clio-infra.eu/datasets/indicators</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------></p>
+<h3 id="estimates-of-population-in-recent-history-and-projections"> <a class="deep-link" href="#estimates-of-population-in-recent-history-and-projections"># </a>Estimates of population in recent history and projections</h3>
+<h5 id="un-population-database"> <a class="deep-link" href="#un-population-database"># </a>UN Population Database</h5>
+<ul>
+<li><strong>Data Source:</strong> UN Population Division based on &#8216;cohort-component&#8217; framework by demographic trends (see Data Quality section)</li>
+<li><strong>Description of available measures:</strong><br />
+◦ Population, by Five-Year Age Group and Sex<br />
+◦ Population Sex Ratio (males per 100 females)<br />
+◦ Median Age<br />
+◦ Population Growth Per Year<br />
+◦ Crude Birth Rate<br />
+◦ Crude Death Rate<br />
+◦ Net Reproduction Rate<br />
+◦ Total Fertility Rate<br />
+◦ Life Expectancy at Birth by Sex<br />
+◦ Net Migration Rate<br />
+◦ Sex ratio at birth<br />
+◦ Births<br />
+◦ Births by Age-group of Mother<br />
+◦ Age-specific Fertility Rates<br />
+◦ Women Aged 15-49<br />
+◦ Deaths by Sex<br />
+◦ Infant Mortality<br />
+◦ Mortality Under Age 5<br />
+◦ Dependency Ratios<br />
+◦ Population by Age: 0-4, 0-14, 5-14, 15-24, 15-59, 15-64, 60+, 65+, 80+</li>
+<li><strong>Time span:</strong> 1950-2015</li>
+<li><strong>Geographical coverage:</strong> Global by country</li>
+<li><strong>Link:</strong> <a href="http://esa.un.org/unpd/wpp/ ">http://esa.un.org/unpd/wpp/</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------></p>
+<h5 id="gridded-population-of-the-world-gpw"> <a class="deep-link" href="#gridded-population-of-the-world-gpw"># </a>Gridded Population of the World (GPW)</h5>
+<ul>
+<li><strong>Data Source:</strong> Center for International Earth Science Information Network (CIESIN), published by the Socioeconomic Data and Applications Center (SDAC) based on census data</li>
+<li><strong>Description of available measures:</strong> Population</li>
+<li><strong>Time span:</strong> 1990-2010</li>
+<li><strong>Geographical coverage:</strong> Global at a 2.5 arc-minute spatial resolution</li>
+<li><strong>Link:</strong> <a href="http://sedac.ciesin.columbia.edu/data/collection/gpw-v3">http://sedac.ciesin.columbia.edu/data/collection/gpw-v3</a></li>
+<li><strong>Notes:</strong> Within the CIESIN, the <a href="http://sedac.ciesin.columbia.edu/data/collection/anthromes ">Anthropogenic Biomes</a> map the distribution of the world population at different points in time: 1700, 1800, 1900, 2000. These maps focus on the varying impact of humans on the environment.</li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------></p>
+<h5 id="landscan"> <a class="deep-link" href="#landscan"># </a>LandScan</h5>
+<ul>
+<li><strong>Data Publisher:</strong> University of Iowa (originally developed by the Oak Ridge National Laboratory (ORNL) for the Department of Defense, U.S.)</li>
+<li><strong>Data Source:</strong> Annual mid-year national population estimates from the Geographic Studies Branch, US Bureau of Census</li>
+<li><strong>Description of available measures:</strong> Population and &#8216;ambient population&#8217; (a measure of person-hours accounting for varying presence throughout the day in commercial areas)</li>
+<li><strong>Time span:</strong> 1998-2012, but authors warn of inter-temporal comparability issues</li>
+<li><strong>Geographical coverage:</strong> Global at 30 arc-second grid spatial resolution (highest population resolution available)</li>
+<li><strong>Link:</strong> <a href="http://sedac.ciesin.columbia.edu/data/collection/gpw-v3">http://sedac.ciesin.columbia.edu/data/collection/gpw-v3</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------></p>
+<h5 id="world-development-indicators"> <a class="deep-link" href="#world-development-indicators"># </a>World Development Indicators</h5>
+<ul>
+<li><strong>Data Publisher:</strong> World Bank</li>
+<li><strong>Data Source:</strong> UN Population Division</li>
+<li><strong>Description of available measures:</strong> Population growth (annual %)</li>
+<li><strong>Time span:</strong> 1981-2015</li>
+<li><strong>Geographical coverage:</strong> Global by country</li>
+<li><strong>Link:</strong> <a href="http://data.worldbank.org/indicator/SP.POP.GROW?page=6">http://data.worldbank.org/indicator/</a></li>
+</ul>
+<hr class="datasources-hr" />
+<p><!---------------------></p>
+<h3 id="compilations-of-census-data-and-other-sources"> <a class="deep-link" href="#compilations-of-census-data-and-other-sources"># </a>Compilations of census data and other sources</h3>
+<p>Historical population data on a sub-national level – including their administrative divisions and principal towns – is collected by Jan Lahmeyer and published at his website <strong><a href="http://www.populstat.info/">www.populstat.info</a></strong>.</p>
+<p>The Minnesota Population Center publishes various high-quality datasets based on census data beginning in 1790. At the time of writing this source was online at <a href="https://www.pop.umn.edu/index.php">www.pop.umn.edu/index.php.</a> It focuses on North America and Europe.</p>
+<p>The Data &amp; Information Services Center (DISC) Archive at University of Wisconsin-Madison provides access to census data and population datasets (mostly for the Americas). At the time of writing this source was online at <a href="http://www.disc.wisc.edu/">http://www.disc.wisc.edu</a>.</p>
+<p>The International Database published by the U.S. Census Bureau provides data for the time 1950-2100. At the time of writing this source was online at <a href="http://www.census.gov/population/international/">http://www.census.gov/population/international/</a>.</p>
+<p>The Atlas of the Biosphere publishes data on Population Density. At the time of writing this source was online at <a href="http://web.archive.org/web/20140728202812/http://www.sage.wisc.edu:80/atlas/maps.php?datasetid=2&amp;includerelatedlinks=1&amp;dataset=2">www.sage.wisc.edu/atlas/maps</a>.</p>
+			</div><!-- .entry-content -->
+
+			<footer class="entry-footer">
+				<h2 id="footnotes">Footnotes</h2>
+							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
+							<li id='note-1' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>As per estimates from Michael Kremer (1993) “<a href="http://faculty.econ.ucdavis.edu/faculty/gclark/210a/readings/kremer1993.pdf">Population Growth and Technological Change: One Million B.C. to 1990</a>″, Quarterly Journal of Economics., August 1993, pp.681-716.</p>
+					</div>
+				</li>
+								<li id='note-2' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>As per 2011 estimates from Carl Haub (2011), &#8220;<a href="http://quelux.info/wp-content/uploads/2015/08/PRB_howManyPeopleHaveEverLivedOnEarth.pdf">How Many People Have Ever Lived on Earth?</a>&#8221; Population Reference Bureau.</p>
+					</div>
+				</li>
+								<li id='note-3' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>US Census Bureau data on <a href="http://www.census.gov/population/international/data/worldpop/table_population.php">&#8216;Total Midyear Population for the World: 1950-2050&#8217;</a></p>
+					</div>
+				</li>
+								<li id='note-4' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+World population until 1940 (total and growth rates) from Michael Kremer (1993) &#8220;<a href="http://faculty.econ.ucdavis.edu/faculty/gclark/210a/readings/kremer1993.pdf">Population Growth and Technological Change: One Million B.C. to 1990</a>&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716.</p>
+<p>World population after 1940 (total and growth rates) from <a href="http://esa.un.org/unpd/wpp/unpp/panel_population.htm">UN Population Division &#8211; 2012 revisions</a></p>
+					</div>
+				</li>
+								<li id='note-5' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>As per 2011 estimates from Carl Haub (2011), &#8220;<a href="http://quelux.info/wp-content/uploads/2015/08/PRB_howManyPeopleHaveEverLivedOnEarth.pdf">How Many People Have Ever Lived on Earth?</a>&#8221; Population Reference Bureau.</p>
+					</div>
+				</li>
+								<li id='note-6' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+Data series for the period 1,000,000 BCE &#8211; 1990 CE from Michael Kremer (1993) &#8220;<a href="http://faculty.econ.ucdavis.edu/faculty/gclark/210a/readings/kremer1993.pdf">Population Growth and Technological Change: One Million B.C. to 1990</a>&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716.</p>
+<p>US census data series for the period 1950-2013 from the <a href="https://www.census.gov/population/international/data/worldpop/table_population.php">US Census</a>.</p>
+<p>UN data series labeled &#8216;UN Projections&#8217; corresponds to estimates for the period 1950-2010, plus projections 2010-2100 from <a href="http://esa.un.org/unpd/wpp/unpp/panel_population.htm">UN Population Division &#8211; 2012 revisions </a></p>
+					</div>
+				</li>
+								<li id='note-7' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+Data for the period 1400-2000 from the <a href="http://themasites.pbl.nl/tridion/en/themasites/hyde/basicdrivingfactors/population/index-2.html">History Database of the Global Environment (HYDE)</a>. Credit goes to <a href="http://www.pbl.nl/en/aboutpbl/employees/kees-klein-goldewijk">Kees Klein Goldewijk</a> for making it available.</p>
+<p>Population projections for the period 2010-2100 from the <a href="http://www.un.org/esa/population/publications/wpp2008/wpp2008_highlights.pdf">UN World Population Prospects &#8211; 2008 Revision</a>.</p>
+<p>Regions have been aggregated as follows: Russia &amp; Central-Asia includes the group of countries called ’Asia-Stan’ in the original dataset. Europe includes Western Europe, Central Europe, Ukraine and Greenland. Southeastern Asia includes Indonesia. India+ includes Afghanistan, Bangladesh, Bhutan, Nepal, Sri Lanka, Pakistan and India. China+ includes China, Mongolia, Hong Kong and Macao.</p>
+					</div>
+				</li>
+								<li id='note-8' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+Data from <a href="http://esa.un.org/unpd/wpp/unpp/panel_population.htm">UN Population Division &#8211; 2012 revisions</a></p>
+<p>The &#8216;least developed countries&#8217; are a subgroup of the &#8216;less developed countries&#8217; &#8211; The UN defines the regions as follows:</p>
+<ul>
+<li>More developed regions comprise Europe, Northern America, Australia/New Zealand and Japan.</li>
+<li>Less developed regions comprise all regions of Africa, Asia (excluding Japan), Latin America and the Caribbean plus Melanesia, Micronesia and Polynesia.</li>
+<li>The least developed countries are 48 countries, 33 in Africa, 9 in Asia, 5 in Oceania plus one in Latin America and the Caribbean.</li>
+</ul>
+<p>
+					</div>
+				</li>
+								<li id='note-9' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						</h6>
+<p>Using data from <a href="http://www.un.org/en/development/desa/population/publications/pdf/trends/WPP2010/WPP2010_Volume-I_Comprehensive-Tables.pdf">UN World Population Prospects – 2010 Revision</a>.</p>
+					</div>
+				</li>
+								<li id='note-10' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Before 1800 more than 20% of the Swedish babies died before they reached their first birthday, and of those who survived another 20% died before their 10th birthday (see Croix, Lindh, and Malmberg (2009), <a href="https://www.researchgate.net/profile/Bo_Malmberg/publication/24017084_Demographic_change_and_economic_growth_in_Sweden_1750-2050/links/0912f506992677b743000000.pdf">Demographic change and economic growth in Sweden: 1750–2050</a>. In Journal of Macroeconomics, 31, 1, 132&#8211;148).</p>
+					</div>
+				</li>
+								<li id='note-11' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+The data on birth rates, death rates and the total population is taken from the International Historical Statistics (IHS), edited by Palgrave Macmillan Ltd. (April 2013). The online version is available <a href="http://www.palgraveconnect.com/pc/doifinder/10.1057/9781137305688">here</a>. As a printed version it is published by <a href="http://www.palgrave.com/products/title.aspx?pid=275960">Palgrave</a>.</p>
+					</div>
+				</li>
+								<li id='note-12' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Michael Kremer (1993) &#8220;<a href="http://faculty.econ.ucdavis.edu/faculty/gclark/210a/readings/kremer1993.pdf">Population Growth and Technological Change: One Million B.C. to 1990</a>&#8220;, Quarterly Journal of Economics., August 1993, pp.681-716.</p>
+					</div>
+				</li>
+								<li id='note-13' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>McEvedy, Colin and Richard Jones (1978), &#8220;Atlas of World Population History,&#8221; Facts on File, New York, pp. 342-351.</p>
+					</div>
+				</li>
+								<li id='note-14' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Deevey, Edward S. &#8220;The human population.&#8221; Scientific American 203 (1960): 194-204.</p>
+					</div>
+				</li>
+								<li id='note-15' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Clark, Colin (1997). &#8220;Population growth and land use.&#8221; London: Macmillan.</p>
+					</div>
+				</li>
+								<li id='note-16' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Durand, John D. (1974), &#8220;<a href="http://repository.upenn.edu/cgi/viewcontent.cgi?article=1009&#038;context=psc_penn_papers">Historical Estimates of World Population: An Evaluation</a>,&#8221; Population and Development Review III, 253-96. </p>
+					</div>
+				</li>
+								<li id='note-17' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+J. Bradford DeLong (1998) &#8220;<a href="http://delong.typepad.com/print/20061012_LRWGDP.pdf">Estimating World GDP, One Million B.C. &#8211; Present</a>&#8220;.</p>
+					</div>
+				</li>
+								<li id='note-18' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> UN World Population Prospects <a href="http://esa.un.org/unpd/wpp/Publications/Files/WPP2015_Methodology.pdf">Methodology Report</a></p>
+					</div>
+				</li>
+								<li id='note-19' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>
+Data from the World Health Organization (WHO) in the <a href="http://apps.who.int/gho/data/node.main.121">Global Health Observatory data repository</a>. These are the latest available statistic for each country available as of February 2014. For most countries this is 2011 although it goes as far back as 2006 for some others.</p>
+					</div>
+				</li>
+								<li id='note-20' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>There are other organizations working on population forecasts, such as the Austria-based <a href="http://www.iiasa.ac.at">Institute for Applied Systems Analysis (IIASA) </a></p>
+					</div>
+				</li>
+								<li id='note-21' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Nico Keilman (2001), <a href="http://folk.uio.no/keilman/Popstudies3.pdf">Data quality and accuracy of United Nations population projections, 1950-95</a>. In Population Studies, 55, 2, 149&#8211;164.</p>
+					</div>
+				</li>
+								<li id='note-22' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p> Livi-Bacci (2007), &#8220;A Concise History of World Population&#8221;. Oxford: Blackwell Publishing.</p>
+					</div>
+				</li>
+								<li id='note-23' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Maddison, A. (2001). The World Economy: A Millennial Perspective, Development Centre of the Organization for Economic Cooperation and Development.</p>
+					</div>
+				</li>
+								<li id='note-24' class='side-matter side-matter-note'>
+					<div class='side-matter side-matter-text'>
+						<p>Denevan, W. M. (1992). <a href="http://newwestinghouse.org/ourpages/auto/2012/8/22/54072101/Pristine%20Myth%20Article.pdf">The pristine myth: the landscape of the Americas in 1492</a>. Annals of the Association of American Geographers, 82(3), 369-385.</p>
+					</div>
+				</li>
+							</ol>
+						</footer><!-- .entry-footer -->
+		</article><!-- #post-## -->
+	</div>
+
+ 
+	</main>
+	<footer id="colophon" class="site-footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<div class="column">
+				<h4><a href="/">Our World in Data</a></h4>
+					<p>Our World in Data is an online publication by <a href="http://maxroser.com/about">Max Roser</a> which explores the development of human living conditions at a global scale. Our work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA</a> and freely usable by everyone (including journalists, authors, bloggers, lecturers, or educators).</p>
+					<hr>
+				</div>		
+				<div class="column subscribe">
+					<h6>Sign up to stay informed</h6>
+
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">				
+								<div class="mc-field-group">
+									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
+						    </div>
+						</form>
+						</div>
+					<script type='text/javascript' src='/wp-content/themes/owid-theme/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+
+					<h6>Follow us</h6>
+			    	<div class="social">
+			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
+			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
+   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
+			    	</div>			
+			    	<hr>
+				</div>
+				<div class="column links">
+					<h6>Links</h6>
+					<a href="/data">Entries</a>
+					<a href="/blog">Blog</a>
+					<a href="/support">Donate</a>
+					<a href="/about">About</a>
+					<a href="/wp-admin">Login</a>
+					<hr>
+				</div>
+			</div>
+			<div class="donation-thanks">
+				<p>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</p>
+				<hr>
+			</div>
+			<div class="supporters">
+				<div class="supporters-left">
+					<p>OWID is developed at the <a href="http://www.oxfordmartin.ox.ac.uk/research/programmes/world-data">Oxford Martin School</a>:</p>
+					<a class="oms-logo" href="http://http://www.oxfordmartin.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/oxford-martin-school.png"></a>
+				</div>
+				<div class="supporters-right">
+					<p>OWID is also supported by <a href="http://www.inet.ox.ac.uk/">INET Oxford</a>:</p>
+					<a class="inet-logo" href="http://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png"></a>
+					<p>And the <a href="http://www.nuffieldfoundation.org/">Nuffield Foundation</a>:</p>
+					<a class="nuffield-logo" href="http://www.nuffieldfoundation.org/"><img src="/wp-content/themes/owid-theme/images/nuffield-foundation.png"></a>
+					<p class="nuffield-disclaimer">The Nuffield Foundation is an endowed charitable trust that aims to improve social well-being in the widest sense. It has funded this project, but the views expressed are those of the authors and not necessarily those of the foundation.</p>
+				</div>
+			</div>
+		</div><!-- .wrap -->
+	</footer><!-- .site-footer -->
+
+	<div id="un-thankyou" style="display: none;">
+	<h2>Thank you</h2>
+	<p>
+		Your feedback has been received.	</p>
+	<a href="#" id="un-feedback-close"><img src="//ourworldindata.org/wp-content/plugins/usernoise/images/ok.png" id="thankyou-image" alt="Close" width="32" height="32"/></a>
+</div>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/jquery.scrollNav.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/tooltip.js'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1473847031'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.js?ver=1.5.7'></script>
+<script type='text/javascript' src='//ourworldindata.org/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+	<div id="wpadminbar" style="display: none;">
+	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+	            <li id="wp-admin-bar-site-name" class="menupop">
+	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
+	            </li>
+	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=1308&#038;action=edit">Edit Page</a></li>
+		        	        </ul>
+	    </div>
+	</div>
+
+	<script>
+		$("body").css('visibility', 'inherit');
+		$("body").hide().fadeIn();
+
+		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
+			$('#wpadminbar').show();
+			$('html').css('margin-top', '32px');
+		}
+	</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/111 queries in 0.136 seconds using disk
+Object Caching 4062/4479 objects using disk
+
+ Served from: ourworldindata.org @ 2016-09-14 10:58:02 by W3 Total Cache -->
