@@ -1,593 +1,164 @@
-<!DOCTYPE html>
-<html lang="en-US" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://ogp.me/ns/fb#">
-<head>
-	<title>Malaria - Our World in Data</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-		<link rel='dns-prefetch' href='//l' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Our World in Data &raquo; Malaria Comments Feed" href="/malaria/feed/" />
-<link rel='stylesheet' id='wp-quicklatex-format-css'  href='/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=4.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='lazyloadxt-fadein-style-css'  href='/wp-content/plugins/lazy-load-xt/css/jquery.lazyloadxt.fadein.css?ver=1.0.6' type='text/css' media='all' />
-<link rel='stylesheet' id='side-matter-css'  href='/wp-content/plugins/side-matter/css/side-matter.css?ver=1.4' type='text/css' media='all' />
-<link rel='stylesheet' id='ce_responsive-css'  href='/wp-content/plugins/simple-embed-code/css/video-container.css?ver=4.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='owid-theme-css'  href='/wp-content/themes/owid-theme/style.css?ver=1513175441' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-owid-css'  href='/wp-content/themes/owid-theme/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='/wp-content/plugins/tablepress/css/default.min.css?ver=1.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6' type='text/css' media='screen' />
-<!--[if !IE]><!-->
-<link rel='stylesheet' id='tablepress-responsive-css'  href='/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
-<!--<![endif]-->
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='/wp-content/plugins/lazy-load-xt/js/jquery.lazyloadxt.extra.js?ver=1.0.6'></script>
-<script type='text/javascript' src='/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0'></script>
-<link rel='https://api.w.org/' href='/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.1" />
-<link rel="canonical" href="/malaria/" />
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fmalaria%2F" />
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fl%3A8080%2Fmalaria%2F&#038;format=xml" />
-
-<!-- Google Webmaster Tools plugin for WordPress -->
-<meta name="google-site-verification" content="Y7Pf2HZYlPcacwjBODsIN2xasgvR13QFgFQw0po9VeY" />
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (https://status301.net/wordpress-plugins/easy-fancybox/) -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var fb_timeout = null;
-var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.75, 'overlayColor' : '#25365e', 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
-var easy_fancybox_handler = function(){
-	/* IMG */
-	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
-	jQuery(fb_IMG_select).addClass('fancybox image');
-	var fb_IMG_sections = jQuery('div.gallery');
-	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
-	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'linear', 'easingOut' : 'linear', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : true, 'titlePosition' : 'outside', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
-	/* iFrame */
-	jQuery('a.fancybox-iframe, area.fancybox-iframe, li.fancybox-iframe a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : '100%', 'height' : '100%', 'titleShow' : true, 'titlePosition' : 'float', 'titleFromAlt' : true, 'allowfullscreen' : false }) );
-}
-var easy_fancybox_auto = function(){
-	/* Auto-click */
-	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
-}
-/* ]]> */
-</script>
-<style type="text/css">
-#fancybox-content{background-color:#fff}
-#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
-#fancybox-content{color:inherit}
-</style>
-
-<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
- <!-- Facebook Open Graph -->
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Our World in Data"/>
-  <meta property="og:title" content="Malaria"/>
-  <meta property="og:url" content="/malaria/"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes.
-
-Malaria can be fatal. The World Health Organization (WHO) estimates that 438,000 people died because of malaria in 2015; the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) put"/>
-  <meta property="og:image" content="/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png"/>
-  <meta property="fb:app_id" content="1149943818390250"/>
- <!-- Google+ / Schema.org -->
-  <meta itemprop="name" content="Malaria"/>
-  <meta itemprop="description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes.
-
-Malaria can be fatal. The World Health Organization (WHO) estimates that 438,000 people died because of malaria in 2015; the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) put"/>
-  <meta itemprop="image" content="/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png"/>
- <!-- Twitter Cards -->
-  <meta name="twitter:title" content="Malaria"/>
-  <meta name="twitter:url" content="/malaria/"/>
-  <meta name="twitter:description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes.
-
-Malaria can be fatal. The World Health Organization (WHO) estimates that 438,000 people died because of malaria in 2015; the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) put"/>
-  <meta name="twitter:image" content="/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png"/>
-  <meta name="twitter:card" content="summary_large_image"/>
- <!-- SEO -->
- <!-- Misc. tags -->
-<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
-	
-
-	<script>
-		window.$ = jQuery;
-	</script>
-</head>
-
-<body class="page-template-default page page-id-3000 page-child parent-pageid-621">
-	<header class="site-header">
-	<nav id="owid-topbar">
-		<ul class="desktop right">
-			<li>
-				<form id="search-nav" action="https://google.com/search" method="GET">
-					<input type="hidden" name="sitesearch" value="ourworldindata.org">
-					<input type="search" name="q" placeholder="Search...">
-					<button type="submit">
-						<i class="fa fa-search"></i>
-					</button>
-				</form>
-			</li>
-			<li>
-				<a href="/blog">Blog</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/support">Donate</a>
-			</li>
-		</ul>
-
-		<h1 id="owid-title">
-			<a href="/"><i class="fa fa-globe"></i><span>Our World in Data</span></a>
-		</h1>
-
-		<ul class="mobile right">
-			<li class="nav-button">
-				<a href="/search" data-expand="#search-dropdown"><i class='fa fa-search'></i></a>
-			</li><li class="nav-button">
-				<a href="/data" data-expand="#topics-dropdown" class='mobile'><i class='fa fa-bars'></i></a>
-			</li>
-		</ul>
-	</nav>
-
-	<div id="topics-dropdown" class="mobile">
-		<ul>
-			<li class="header"><h2>Entries</h2></li><li class='category'><a><span>Population</span></a><div class='subcategory-menu'><div class='submenu-title'>Population</div><ul><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></div></li><li class='category active'><a><span>Health</span></a><div class='subcategory-menu'><div class='submenu-title'>Health</div><ul><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class="active"><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></div></li><li class='category'><a><span>Food</span></a><div class='subcategory-menu'><div class='submenu-title'>Food</div><ul><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></div></li><li class='category'><a><span>Energy</span></a><div class='subcategory-menu'><div class='submenu-title'>Energy</div><ul><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></div></li><li class='category'><a><span>Environment</span></a><div class='subcategory-menu'><div class='submenu-title'>Environment</div><ul><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></div></li><li class='category'><a><span>Technology</span></a><div class='subcategory-menu'><div class='submenu-title'>Technology</div><ul><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></div></li><li class='category'><a><span>Growth &amp; Inequality</span></a><div class='subcategory-menu'><div class='submenu-title'>Growth &amp; Inequality</div><ul><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class='category'><a><span>Work &amp; Life</span></a><div class='subcategory-menu'><div class='submenu-title'>Work &amp; Life</div><ul><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></div></li><li class='category'><a><span>Public Sector</span></a><div class='subcategory-menu'><div class='submenu-title'>Public Sector</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></div></li><li class='category'><a><span>Global Connections</span></a><div class='subcategory-menu'><div class='submenu-title'>Global Connections</div><ul><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></div></li><li class='category'><a><span>War &amp; Peace</span></a><div class='subcategory-menu'><div class='submenu-title'>War &amp; Peace</div><ul><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></div></li><li class='category'><a><span>Politics</span></a><div class='subcategory-menu'><div class='submenu-title'>Politics</div><ul><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></div></li><li class='category'><a><span>Violence &amp; Rights</span></a><div class='subcategory-menu'><div class='submenu-title'>Violence &amp; Rights</div><ul><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></div></li><li class='category'><a><span>Education</span></a><div class='subcategory-menu'><div class='submenu-title'>Education</div><ul><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></div></li><li class='category'><a><span>Media</span></a><div class='subcategory-menu'><div class='submenu-title'>Media</div><ul><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></div></li><li class='category'><a><span>Culture</span></a><div class='subcategory-menu'><div class='submenu-title'>Culture</div><ul><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></div></li>			<li class='end-link'><a href='/about'>About</a></li>
-			<li class='end-link'><a href='/support'>Donate</a></li>
-			<li class='end-link'><a href='/data'>Browse All</a></li>
-		</ul>
-	</div>
-
-	<div id="search-dropdown" class="mobile">
-		<form action="/">
-			<input type="search" name="s" placeholder="Search...">
-			<button type="submit">
-				<i class="fa fa-search"></i>
-			</button>
-		</form>
-	</div>		
-
-	<div id="category-nav" class="desktop"><ul><li class='category' title='Population'><a><span>Population</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/world-population-growth/">World Population Growth</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="" href="/child-mortality/">Child Mortality</a></li><li class=""><a class="" href="/future-population-growth/">Future Population Growth</a></li><li class=""><a class="starred" href="/fertility-rate">Fertility Rate</a></li></ul></li><li class='category active' title='Health'><a><span>Health</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class="active"><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></ul></li><li class='category' title='Food'><a><span>Food</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/diet-compositions/">Diet Compositions</a></li><li class=""><a class="starred" href="/micronutrient-deficiency/">Micronutrient Deficiency</a></li><li class=""><a class="" href="/meat-and-seafood-production-consumption/">Meat and Seafood Production & Consumption</a></li><li class=""><a class="" href="/obesity/">Obesity</a></li><li class=""><a class="" href="/food-per-person/">Food per Person</a></li><li class=""><a class="starred" href="/hunger-and-undernourishment/">Hunger and Undernourishment</a></li><li class=""><a class="starred" href="/famines/">Famines</a></li><li class=""><a class="" href="/human-height/">Human Height</a></li><li class=""><a class="" href="/employment-in-agriculture">Employment in Agriculture</a></li><li class=""><a class="starred" href="/yields-and-land-use-in-agriculture/">Yields and Land Use in Agriculture</a></li><li class=""><a class="" href="/fertilizer-and-pesticides/">Fertilizer and Pesticides</a></li><li class=""><a class="" href="/food-prices/">Food Prices</a></li></ul></li><li class='category' title='Energy'><a><span>Energy</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/energy-production-and-changing-energy-sources/">Energy Production & Changing Energy Sources</a></li><li class=""><a class="" href="/renewables">Renewables</a></li><li class=""><a class="" href="/fossil-fuels/">Fossil Fuels</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li></ul></li><li class='category' title='Environment'><a><span>Environment</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/air-pollution/">Air Pollution</a></li><li class=""><a class="starred" href="/water-access-resources-sanitation/">Water Access, Resources & Sanitation</a></li><li class=""><a class="starred" href="/co2-and-other-greenhouse-gas-emissions/">CO₂ and other Greenhouse Gas Emissions</a></li><li class=""><a class="" href="/natural-catastrophes/">Natural Catastrophes</a></li><li class=""><a class="starred" href="/indoor-air-pollution/">Indoor Air Pollution</a></li><li class=""><a class="" href="/oil-spills/">Oil Spills</a></li></ul></li><li class='category' title='Technology'><a><span>Technology</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/technology-adoption/">Technology Diffusion & Adoption</a></li><li class=""><a class="" href="/technological-progress/">Technological Progress</a></li></ul></li><li class='category' title='Growth &amp; Inequality'><a><span>Growth &amp; Inequality</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/extreme-poverty/">Global Extreme Poverty</a></li><li class=""><a class="" href="/economic-growth">Economic Growth</a></li><li class=""><a class="starred" href="/income-inequality/">Income Inequality</a></li><li class=""><a class="" href="/incomes-across-the-distribution/">Incomes across the Distribution</a></li><li class=""><a class="" href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li class='category' title='Work &amp; Life'><a><span>Work &amp; Life</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/child-labor/">Child Labor</a></li><li class=""><a class="starred" href="/happiness-and-life-satisfaction/">Happiness and Life Satisfaction</a></li><li class=""><a class="" href="/human-development-index/">Human Development Index (HDI)</a></li><li class=""><a class="" href="/light/">Light</a></li><li class=""><a class="" href="/working-hours/">Working Hours</a></li><li class=""><a class="" href="/homelessness">Homelessness</a></li></ul></li><li class='category' title='Public Sector'><a><span>Public Sector</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="starred" href="/public-spending/">Public Spending</a></li><li class=""><a class="starred" href="/taxation/">Taxation</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li></ul></li><li class='category' title='Global Connections'><a><span>Global Connections</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/international-trade">International Trade</a></li><li class=""><a class="" href="/tourism/">Tourism</a></li></ul></li><li class='category' title='War &amp; Peace'><a><span>War &amp; Peace</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/war-and-peace/">War and Peace</a></li><li class=""><a class="" href="/nuclear-weapons/">Nuclear Weapons</a></li><li class=""><a class="" href="/peacekeeping/">Peacekeeping</a></li><li class=""><a class="" href="/civil-wars/">Civil Wars</a></li><li class=""><a class="" href="/genocides/">Genocides</a></li><li class=""><a class="" href="/terrorism/">Terrorism</a></li><li class=""><a class="" href="/military-spending/">Military Spending</a></li></ul></li><li class='category' title='Politics'><a><span>Politics</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/corruption/">Corruption</a></li><li class=""><a class="" href="/colonialism/">Colonialism</a></li><li class=""><a class="" href="/democracy/">Democracy</a></li></ul></li><li class='category' title='Violence &amp; Rights'><a><span>Violence &amp; Rights</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/ethnographic-and-archaeological-evidence-on-violent-deaths/">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li class=""><a class="" href="/homicides/">Homicides</a></li><li class=""><a class="" href="/violence-against-rights-for-children/">Violence against & Rights for Children</a></li><li class=""><a class="" href="/human-rights/">Human Rights</a></li></ul></li><li class='category' title='Education'><a><span>Education</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/global-rise-of-education">Global Rise of Education</a></li><li class=""><a class="" href="/pre-primary-education/">Pre-Primary Education</a></li><li class=""><a class="" href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li class=""><a class="" href="/tertiary-education/">Tertiary Education</a></li><li class=""><a class="" href="/quality-of-education">Quality of Education</a></li><li class=""><a class="" href="/literacy/">Literacy</a></li><li class=""><a class="" href="/educational-mobility-inequality/">Educational Mobility & Inequality</a></li><li class=""><a class="" href="/returns-to-education/">Returns to Education</a></li><li class=""><a class="" href="/teachers-and-professors/">Teachers and Professors</a></li><li class=""><a class="" href="/science-and-research/">Science and Research</a></li><li class=""><a class="starred" href="/financing-education">Financing Education</a></li><li class=""><a class="" href="/projections-of-future-education/">Projections of Future Education</a></li><li class=""><a class="" href="/intelligence/">Intelligence</a></li></ul></li><li class='category' title='Media'><a><span>Media</span></a><ul class='entries'><li><hr></li><li class=""><a class="" href="/internet/">Internet</a></li><li class=""><a class="" href="/books/">Books</a></li></ul></li><li class='category' title='Culture'><a><span>Culture</span></a><ul class='entries'><li><hr></li><li class=""><a class="starred" href="/trust">Trust</a></li><li class=""><a class="" href="/optimism-pessimism/">Optimism & Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"><ul class="entries"><li><hr></li><li class=""><a class="starred" href="/health-meta/">Global Health</a></li><li class=""><a class="starred" href="/polio/">Polio</a></li><li class=""><a class="" href="/life-expectancy/">Life Expectancy</a></li><li class=""><a class="starred" href="/suicide/">Suicide</a></li><li class=""><a class="starred" href="/financing-healthcare/">Financing Healthcare</a></li><li class=""><a class="" href="/maternal-mortality/">Maternal Mortality</a></li><li class=""><a class="" href="/burden-of-disease/">Burden of Disease</a></li><li class=""><a class="" href="/eradication-of-diseases/">Eradication of Diseases</a></li><li class="active"><a class="" href="/malaria/">Malaria</a></li><li class=""><a class="" href="/hiv-aids/">HIV / AIDS</a></li><li class=""><a class="" href="/smoking/">Smoking</a></li></div>	</header>
-
-<main id="main" class="site-main">
-
-	<div class="page-with-sidebar clearfix">
-		<div class="entry-sidebar">
-			<nav class="entry-toc">
-				<!-- populated by JS -->
-			</nav>
-		</div>
-		<article id="post-3000" class="post-3000 page type-page status-publish has-post-thumbnail hentry category-entries category-health">
-			<header class="article-header">
-				<h1 class="entry-title">Malaria</h1>									<div class='authors-byline'><a href="/about/#the-team">by Max Roser and Hannah Ritchie </a><a class="citation-note"><sup>[cite]</sup></a></div>
-
-
-					<div class="citation-guideline">
-					OWID presents work from many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br><br>Max Roser and Hannah Ritchie (2017) – &lsquo;Malaria&rsquo;. <em>Published online at OurWorldInData.org.</em> Retrieved from: /malaria/ [Online Resource]
-					</div>
-								
-			</header><!-- .article-header -->
-
-			<div class="article-content">
-				<p>Malaria is a disease that is transmitted from person to person by infected mosquitoes.</p>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Malaria - Our World in Data</title><meta name="description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes." /><link rel="canonical" href="https://ourworldindata.org/malaria" /><link rel="alternate" type="application/atom+xml" href="/atom.xml" /><meta property="fb:app_id" content="1149943818390250" /><meta property="og:url" content="https://ourworldindata.org/malaria" /><meta property="og:title" content="Malaria - Our World in Data" /><meta property="og:description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes." /><meta property="og:image" content="https://ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png" /><meta property="og:site_name" content="Our World in Data" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@OurWorldInData" /><meta name="twitter:creator" content="@OurWorldInData" /><meta name="twitter:title" content="Malaria - Our World in Data" /><meta name="twitter:description" content="Malaria is a disease that is transmitted from person to person by infected mosquitoes." /><meta name="twitter:image" content="https://ourworldindata.org/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png" /><link rel="stylesheet" href="http://localhost:8095/owid.css" /></head><body><header class="site-header"><nav id="owid-topbar"><ul class="desktop right"><li><form id="search-nav" action="https://google.com/search" method="GET"><input type="hidden" name="sitesearch" value="ourworldindata.org" /><input type="search" name="q" placeholder="Search..." /><button type="submit"><i class="fa fa-search"></i></button></form></li><li><a href="/blog">Blog</a></li><li><a href="/about">About</a></li><li><a href="/support">Donate</a></li></ul><h1 id="owid-title"><a href="/"><span>Our World in Data</span></a></h1><ul class="mobile right"><li class="nav-button"><a href="/search" data-expand="#search-dropdown"><i class="fa fa-search"></i></a></li><li class="nav-button"><a href="/data" data-expand="#topics-dropdown" class="mobile"><i class="fa fa-bars"></i></a></li></ul></nav><div id="topics-dropdown" class="mobile"><ul><li class="header"><h2>Entries</h2></li><li class="category"><a href="/#population"><span>Population</span></a><div class="subcategory-menu"><div class="submenu-title">Population</div><ul><li><a href="/world-population-growth">World Population Growth</a></li><li><a href="/life-expectancy">Life Expectancy</a></li><li><a href="/child-mortality">Child Mortality</a></li><li><a href="/future-population-growth">Future Population Growth</a></li><li><a href="/fertility-rate" class="starred">Fertility Rate</a></li></ul></div></li><li class="category"><a href="/#health"><span>Health</span></a><div class="subcategory-menu"><div class="submenu-title">Health</div><ul><li><a href="/health-meta" class="starred">Global Health</a></li><li><a href="/polio" class="starred">Polio</a></li><li><a href="/life-expectancy">Life Expectancy</a></li><li><a href="/suicide" class="starred">Suicide</a></li><li><a href="/financing-healthcare" class="starred">Financing Healthcare</a></li><li><a href="/maternal-mortality">Maternal Mortality</a></li><li><a href="/eradication-of-diseases">Eradication of Diseases</a></li><li><a href="/burden-of-disease">Burden of Disease</a></li><li><a href="/malaria">Malaria</a></li><li><a href="/hiv-aids">HIV / AIDS</a></li><li><a href="/smoking">Smoking</a></li></ul></div></li><li class="category"><a href="/#food"><span>Food</span></a><div class="subcategory-menu"><div class="submenu-title">Food</div><ul><li><a href="/micronutrient-deficiency" class="starred">Micronutrient Deficiency</a></li><li><a href="/diet-compositions">Diet Compositions</a></li><li><a href="/meat-and-seafood-production-consumption">Meat and Seafood Production &amp; Consumption</a></li><li><a href="/water-access-resources-sanitation" class="starred">Water Access, Resources &amp; Sanitation</a></li><li><a href="/obesity">Obesity</a></li><li><a href="/food-per-person">Food per Person</a></li><li><a href="/hunger-and-undernourishment" class="starred">Hunger and Undernourishment</a></li><li><a href="/famines" class="starred">Famines</a></li><li><a href="/human-height">Human Height</a></li><li><a href="/employment-in-agriculture">Employment in Agriculture</a></li><li><a href="/yields-and-land-use-in-agriculture" class="starred">Yields and Land Use in Agriculture</a></li><li><a href="/fertilizer-and-pesticides">Fertilizer and Pesticides</a></li><li><a href="/food-prices">Food Prices</a></li></ul></div></li><li class="category"><a href="/#energy"><span>Energy</span></a><div class="subcategory-menu"><div class="submenu-title">Energy</div><ul><li><a href="/co2-and-other-greenhouse-gas-emissions" class="starred">CO₂ and other Greenhouse Gas Emissions</a></li><li><a href="/energy-production-and-changing-energy-sources">Energy Production &amp; Changing Energy Sources</a></li><li><a href="/fossil-fuels">Fossil Fuels</a></li><li><a href="/renewables">Renewables</a></li></ul></div></li><li class="category"><a href="/#environment"><span>Environment</span></a><div class="subcategory-menu"><div class="submenu-title">Environment</div><ul><li><a href="/co2-and-other-greenhouse-gas-emissions" class="starred">CO₂ and other Greenhouse Gas Emissions</a></li><li><a href="/indoor-air-pollution" class="starred">Indoor Air Pollution</a></li><li><a href="/natural-catastrophes">Natural Catastrophes</a></li><li><a href="/air-pollution" class="starred">Air Pollution</a></li><li><a href="/water-access-resources-sanitation" class="starred">Water Access, Resources &amp; Sanitation</a></li><li><a href="/oil-spills">Oil Spills</a></li></ul></div></li><li class="category"><a href="/#technology"><span>Technology</span></a><div class="subcategory-menu"><div class="submenu-title">Technology</div><ul><li><a href="/technology-adoption">Technology Diffusion &amp; Adoption</a></li><li><a href="/technological-progress">Technological Progress</a></li></ul></div></li><li class="category"><a href="/#growth-and-inequality"><span>Growth &amp; Inequality</span></a><div class="subcategory-menu"><div class="submenu-title">Growth &amp; Inequality</div><ul><li><a href="/extreme-poverty" class="starred">Global Extreme Poverty</a></li><li><a href="/economic-growth">Economic Growth</a></li><li><a href="/income-inequality" class="starred">Income Inequality</a></li><li><a href="/incomes-across-the-distribution">Incomes across the Distribution</a></li><li><a href="/global-economic-inequality">Global Economic Inequality</a></li></ul></div></li><li class="category"><a href="/#work-and-life"><span>Work &amp; Life</span></a><div class="subcategory-menu"><div class="submenu-title">Work &amp; Life</div><ul><li><a href="/happiness-and-life-satisfaction" class="starred">Happiness and Life Satisfaction</a></li><li><a href="/light">Light</a></li><li><a href="/human-development-index">Human Development Index (HDI)</a></li><li><a href="/child-labor" class="starred">Child Labor</a></li><li><a href="/working-hours">Working Hours</a></li><li><a href="/homelessness">Homelessness</a></li></ul></div></li><li class="category"><a href="/#public-sector"><span>Public Sector</span></a><div class="subcategory-menu"><div class="submenu-title">Public Sector</div><ul><li><a href="/corruption" class="starred">Corruption</a></li><li><a href="/public-spending" class="starred">Public Spending</a></li><li><a href="/financing-healthcare" class="starred">Financing Healthcare</a></li><li><a href="/taxation" class="starred">Taxation</a></li><li><a href="/financing-education" class="starred">Financing Education</a></li></ul></div></li><li class="category"><a href="/#global-connections"><span>Global Connections</span></a><div class="subcategory-menu"><div class="submenu-title">Global Connections</div><ul><li><a href="/international-trade" class="starred">International Trade</a></li><li><a href="/tourism">Tourism</a></li></ul></div></li><li class="category"><a href="/#war-and-peace"><span>War &amp; Peace</span></a><div class="subcategory-menu"><div class="submenu-title">War &amp; Peace</div><ul><li><a href="/war-and-peace">War and Peace</a></li><li><a href="/nuclear-weapons">Nuclear Weapons</a></li><li><a href="/peacekeeping">Peacekeeping</a></li><li><a href="/civil-wars">Civil Wars</a></li><li><a href="/genocides">Genocides</a></li><li><a href="/terrorism">Terrorism</a></li><li><a href="/military-spending">Military Spending</a></li></ul></div></li><li class="category"><a href="/#politics"><span>Politics</span></a><div class="subcategory-menu"><div class="submenu-title">Politics</div><ul><li><a href="/corruption" class="starred">Corruption</a></li><li><a href="/colonialism">Colonialism</a></li><li><a href="/democracy">Democracy</a></li></ul></div></li><li class="category"><a href="/#violence-and-rights"><span>Violence &amp; Rights</span></a><div class="subcategory-menu"><div class="submenu-title">Violence &amp; Rights</div><ul><li><a href="/homicides">Homicides</a></li><li><a href="/ethnographic-and-archaeological-evidence-on-violent-deaths">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href="/human-rights">Human Rights</a></li><li><a href="/violence-against-rights-for-children">Violence against &amp; Rights for Children</a></li></ul></div></li><li class="category"><a href="/#education"><span>Education</span></a><div class="subcategory-menu"><div class="submenu-title">Education</div><ul><li><a href="/global-rise-of-education" class="starred">Global Rise of Education</a></li><li><a href="/pre-primary-education">Pre-Primary Education</a></li><li><a href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li><a href="/tertiary-education">Tertiary Education</a></li><li><a href="/quality-of-education">Quality of Education</a></li><li><a href="/literacy">Literacy</a></li><li><a href="/educational-mobility-inequality">Educational Mobility &amp; Inequality</a></li><li><a href="/returns-to-education">Returns to Education</a></li><li><a href="/teachers-and-professors">Teachers and Professors</a></li><li><a href="/science-and-research">Science and Research</a></li><li><a href="/financing-education" class="starred">Financing Education</a></li><li><a href="/projections-of-future-education">Projections of Future Education</a></li><li><a href="/intelligence">Intelligence</a></li></ul></div></li><li class="category"><a href="/#media"><span>Media</span></a><div class="subcategory-menu"><div class="submenu-title">Media</div><ul><li><a href="/internet">Internet</a></li><li><a href="/books">Books</a></li></ul></div></li><li class="category"><a href="/#culture"><span>Culture</span></a><div class="subcategory-menu"><div class="submenu-title">Culture</div><ul><li><a href="/trust" class="starred">Trust</a></li><li><a href="/optimism-pessimism">Optimism &amp; Pessimism</a></li></ul></div></li><li class="end-link"><a href="/about">About</a></li><li class="end-link"><a href="/support">Donate</a></li><li class="end-link"><a href="/data">Browse All</a></li></ul></div><div id="search-dropdown" class="mobile"><form id="search-nav" action="https://google.com/search" method="GET"><input type="hidden" name="sitesearch" value="ourworldindata.org" /><input type="search" name="q" placeholder="Search..." /><button type="submit"><i class="fa fa-search"></i></button></form></div><div id="category-nav" class="desktop"><ul><li title="Population" class="category"><a href="/#population"><span>Population</span></a><ul class="entries"><li><hr /></li><li><a href="/world-population-growth">World Population Growth</a></li><li><a href="/life-expectancy">Life Expectancy</a></li><li><a href="/child-mortality">Child Mortality</a></li><li><a href="/future-population-growth">Future Population Growth</a></li><li><a href="/fertility-rate" class="starred">Fertility Rate</a></li></ul></li><li title="Health" class="category"><a href="/#health"><span>Health</span></a><ul class="entries"><li><hr /></li><li><a href="/health-meta" class="starred">Global Health</a></li><li><a href="/polio" class="starred">Polio</a></li><li><a href="/life-expectancy">Life Expectancy</a></li><li><a href="/suicide" class="starred">Suicide</a></li><li><a href="/financing-healthcare" class="starred">Financing Healthcare</a></li><li><a href="/maternal-mortality">Maternal Mortality</a></li><li><a href="/eradication-of-diseases">Eradication of Diseases</a></li><li><a href="/burden-of-disease">Burden of Disease</a></li><li><a href="/malaria">Malaria</a></li><li><a href="/hiv-aids">HIV / AIDS</a></li><li><a href="/smoking">Smoking</a></li></ul></li><li title="Food" class="category"><a href="/#food"><span>Food</span></a><ul class="entries"><li><hr /></li><li><a href="/micronutrient-deficiency" class="starred">Micronutrient Deficiency</a></li><li><a href="/diet-compositions">Diet Compositions</a></li><li><a href="/meat-and-seafood-production-consumption">Meat and Seafood Production &amp; Consumption</a></li><li><a href="/water-access-resources-sanitation" class="starred">Water Access, Resources &amp; Sanitation</a></li><li><a href="/obesity">Obesity</a></li><li><a href="/food-per-person">Food per Person</a></li><li><a href="/hunger-and-undernourishment" class="starred">Hunger and Undernourishment</a></li><li><a href="/famines" class="starred">Famines</a></li><li><a href="/human-height">Human Height</a></li><li><a href="/employment-in-agriculture">Employment in Agriculture</a></li><li><a href="/yields-and-land-use-in-agriculture" class="starred">Yields and Land Use in Agriculture</a></li><li><a href="/fertilizer-and-pesticides">Fertilizer and Pesticides</a></li><li><a href="/food-prices">Food Prices</a></li></ul></li><li title="Energy" class="category"><a href="/#energy"><span>Energy</span></a><ul class="entries"><li><hr /></li><li><a href="/co2-and-other-greenhouse-gas-emissions" class="starred">CO₂ and other Greenhouse Gas Emissions</a></li><li><a href="/energy-production-and-changing-energy-sources">Energy Production &amp; Changing Energy Sources</a></li><li><a href="/fossil-fuels">Fossil Fuels</a></li><li><a href="/renewables">Renewables</a></li></ul></li><li title="Environment" class="category"><a href="/#environment"><span>Environment</span></a><ul class="entries"><li><hr /></li><li><a href="/co2-and-other-greenhouse-gas-emissions" class="starred">CO₂ and other Greenhouse Gas Emissions</a></li><li><a href="/indoor-air-pollution" class="starred">Indoor Air Pollution</a></li><li><a href="/natural-catastrophes">Natural Catastrophes</a></li><li><a href="/air-pollution" class="starred">Air Pollution</a></li><li><a href="/water-access-resources-sanitation" class="starred">Water Access, Resources &amp; Sanitation</a></li><li><a href="/oil-spills">Oil Spills</a></li></ul></li><li title="Technology" class="category"><a href="/#technology"><span>Technology</span></a><ul class="entries"><li><hr /></li><li><a href="/technology-adoption">Technology Diffusion &amp; Adoption</a></li><li><a href="/technological-progress">Technological Progress</a></li></ul></li><li title="Growth &amp; Inequality" class="category"><a href="/#growth-and-inequality"><span>Growth &amp; Inequality</span></a><ul class="entries"><li><hr /></li><li><a href="/extreme-poverty" class="starred">Global Extreme Poverty</a></li><li><a href="/economic-growth">Economic Growth</a></li><li><a href="/income-inequality" class="starred">Income Inequality</a></li><li><a href="/incomes-across-the-distribution">Incomes across the Distribution</a></li><li><a href="/global-economic-inequality">Global Economic Inequality</a></li></ul></li><li title="Work &amp; Life" class="category"><a href="/#work-and-life"><span>Work &amp; Life</span></a><ul class="entries"><li><hr /></li><li><a href="/happiness-and-life-satisfaction" class="starred">Happiness and Life Satisfaction</a></li><li><a href="/light">Light</a></li><li><a href="/human-development-index">Human Development Index (HDI)</a></li><li><a href="/child-labor" class="starred">Child Labor</a></li><li><a href="/working-hours">Working Hours</a></li><li><a href="/homelessness">Homelessness</a></li></ul></li><li title="Public Sector" class="category"><a href="/#public-sector"><span>Public Sector</span></a><ul class="entries"><li><hr /></li><li><a href="/corruption" class="starred">Corruption</a></li><li><a href="/public-spending" class="starred">Public Spending</a></li><li><a href="/financing-healthcare" class="starred">Financing Healthcare</a></li><li><a href="/taxation" class="starred">Taxation</a></li><li><a href="/financing-education" class="starred">Financing Education</a></li></ul></li><li title="Global Connections" class="category"><a href="/#global-connections"><span>Global Connections</span></a><ul class="entries"><li><hr /></li><li><a href="/international-trade" class="starred">International Trade</a></li><li><a href="/tourism">Tourism</a></li></ul></li><li title="War &amp; Peace" class="category"><a href="/#war-and-peace"><span>War &amp; Peace</span></a><ul class="entries"><li><hr /></li><li><a href="/war-and-peace">War and Peace</a></li><li><a href="/nuclear-weapons">Nuclear Weapons</a></li><li><a href="/peacekeeping">Peacekeeping</a></li><li><a href="/civil-wars">Civil Wars</a></li><li><a href="/genocides">Genocides</a></li><li><a href="/terrorism">Terrorism</a></li><li><a href="/military-spending">Military Spending</a></li></ul></li><li title="Politics" class="category"><a href="/#politics"><span>Politics</span></a><ul class="entries"><li><hr /></li><li><a href="/corruption" class="starred">Corruption</a></li><li><a href="/colonialism">Colonialism</a></li><li><a href="/democracy">Democracy</a></li></ul></li><li title="Violence &amp; Rights" class="category"><a href="/#violence-and-rights"><span>Violence &amp; Rights</span></a><ul class="entries"><li><hr /></li><li><a href="/homicides">Homicides</a></li><li><a href="/ethnographic-and-archaeological-evidence-on-violent-deaths">Ethnographic and Archaeological Evidence on Violent Deaths</a></li><li><a href="/human-rights">Human Rights</a></li><li><a href="/violence-against-rights-for-children">Violence against &amp; Rights for Children</a></li></ul></li><li title="Education" class="category"><a href="/#education"><span>Education</span></a><ul class="entries"><li><hr /></li><li><a href="/global-rise-of-education" class="starred">Global Rise of Education</a></li><li><a href="/pre-primary-education">Pre-Primary Education</a></li><li><a href="/primary-and-secondary-education">Primary and Secondary Education</a></li><li><a href="/tertiary-education">Tertiary Education</a></li><li><a href="/quality-of-education">Quality of Education</a></li><li><a href="/literacy">Literacy</a></li><li><a href="/educational-mobility-inequality">Educational Mobility &amp; Inequality</a></li><li><a href="/returns-to-education">Returns to Education</a></li><li><a href="/teachers-and-professors">Teachers and Professors</a></li><li><a href="/science-and-research">Science and Research</a></li><li><a href="/financing-education" class="starred">Financing Education</a></li><li><a href="/projections-of-future-education">Projections of Future Education</a></li><li><a href="/intelligence">Intelligence</a></li></ul></li><li title="Media" class="category"><a href="/#media"><span>Media</span></a><ul class="entries"><li><hr /></li><li><a href="/internet">Internet</a></li><li><a href="/books">Books</a></li></ul></li><li title="Culture" class="category"><a href="/#culture"><span>Culture</span></a><ul class="entries"><li><hr /></li><li><a href="/trust" class="starred">Trust</a></li><li><a href="/optimism-pessimism">Optimism &amp; Pessimism</a></li></ul></li></ul></div><div id="entries-nav" class="desktop"></div></header><main><div class="clearfix page-with-sidebar"><div class="entry-sidebar"><nav class="entry-toc"><h3>Contents</h3><ol><li class="section"><a href="#empirical-view">I. Empirical View</a></li><li class="subsection"><a href="#deaths-due-to-malaria">I.1 Deaths Due to Malaria</a></li><li class="subsection"><a href="#malaria-death-rates">I.2 Malaria Death Rates</a></li><li class="subsection"><a href="#malaria-prevalence-today">I.3 Malaria Prevalence Today</a></li><li class="subsection"><a href="#malaria-prevalence-historically">I.4 Malaria Prevalence Historically</a></li><li class="section"><a href="#correlates-determinants-consequences">II. Correlates, Determinants &amp; Consequences</a></li><li class="subsection"><a href="#bed-nets">II.1 Bed nets</a></li><li class="subsection"><a href="#funding-for-malaria-control">II.2 Funding for malaria control</a></li><li class="subsection"><a href="#malaria-and-economic-prosperity">II.3 Malaria and economic prosperity</a></li><li class="section"><a href="#data-quality-definitions">III. Data Quality &amp; Definitions</a></li><li class="section"><a href="#data-sources">IV. Data Sources</a></li></ol></nav></div><article class="page"><header class="article-header"><h1 class="entry-title">Malaria</h1><div class="authors-byline"><a href="/about/#the-team">by Max Roser and Hannah Ritchie</a><a class="citation-note js-only"><sup>[cite]</sup></a></div><div class="citation-guideline">OWID presents work for many different people and organizations. When citing this entry, please also cite the original data source. This entry can be cited as:<br /><br />Max Roser and Hannah Ritchie (2017) - &quot;Malaria&quot;. <em>Published online at OurWorldInData.org.</em> Retrieved from: 'https://ourworldindata.org/malaria' [Online Resource]</div></header><div class="article-content"><html><head></head><body><p>Malaria is a disease that is transmitted from person to person by infected mosquitoes.</p>
 <p>Malaria can be fatal. The World Health Organization (WHO) estimates that 438,000 people died because of malaria in 2015; the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) puts this estimate at 720,000.</p>
-<p>Most victims are children. 72% of malaria fatalities are children younger than 5 years old. It is one of the leading causes of <a href="https://owid.netlify.com/child-mortality/">child mortality</a>. Every tenth child that died in 2016, died because of malaria.<a id='ref-1' class='side-matter side-matter-ref' href='#note-1'><sup class='side-matter side-matter-sup' title='This is according to the IHME&#8217;s Global Burden of Disease study here. In Sub-Saharan Africa malaria is responsible for 19% of all child deaths.'>1</sup></a></p>
-<p><!------------------------------><br />
+<p>Most victims are children. 72% of malaria fatalities are children younger than 5 years old. It is one of the leading causes of <a href="/child-mortality/">child mortality</a>. Every tenth child that died in 2016, died because of malaria.<a id="ref-1" class="side-matter side-matter-ref" href="#note-1"><sup class="side-matter side-matter-sup">1</sup></a></p>
+<p><!------------------------------><br>
 <!------------------------------></p>
-<h2 id="empirical-view"> <a class="deep-link" href="#empirical-view"># </a>Empirical View</h2>
-<h3 id="deaths-due-to-malaria"> <a class="deep-link" href="#deaths-due-to-malaria"># </a>Deaths Due to Malaria</h3>
-<p>In the visualisations below we provide estimates of the total number of deaths from the World Health Organization (WHO) from 2000 to 2015, and the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) from 1990 to 2016. These estimates are notably different across various countries which affects the total number of reported deaths. IHME figures, as shown below, tend to be higher; they report deaths greater than 720,000 in 2015 versus only 438,000 from the WHO. Further information on the confidence intervals of WHO estimates, and a country-level comparison between these two sources is covered in our section on <a href="https://owid.netlify.com/malaria/#data-quality-definitions">Data Quality &amp; Definitions</a>.</p>
-<h4 id="malaria-death-estimates-from-who"> <a class="deep-link" href="#malaria-death-estimates-from-who"># </a>Malaria death estimates from WHO</h4>
+<h2 id="empirical-view"><a class="deep-link" href="#empirical-view"></a>I. Empirical View</h2>
+<h3 id="deaths-due-to-malaria"><a class="deep-link" href="#deaths-due-to-malaria"></a>I.1 Deaths Due to Malaria</h3>
+<p>In the visualisations below we provide estimates of the total number of deaths from the World Health Organization (WHO) from 2000 to 2015, and the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) from 1990 to 2016. These estimates are notably different across various countries which affects the total number of reported deaths. IHME figures, as shown below, tend to be higher; they report deaths greater than 720,000 in 2015 versus only 438,000 from the WHO. Further information on the confidence intervals of WHO estimates, and a country-level comparison between these two sources is covered in our section on <a href="/malaria/#data-quality-definitions">Data Quality &amp; Definitions</a>.</p>
+<h4 id="malaria-death-estimates-from-who"><a class="deep-link" href="#malaria-death-estimates-from-who"></a>Malaria death estimates from WHO</h4>
 <p>Since the beginning of the 21st century, the WHO has published global estimates of the number of people that die from malaria. In these 15 years the global death toll has been cut in half: from 839,000 deaths in 2000 to 438,000 in 2015.</p>
-<p>Africa is the world region that is most affected by malaria: In 2015, the African continent held 9 out of 10 malaria victims (click on &#8216;Expand&#8217; to see this). But Africa is also the world region that has achieved most progress: from 2000 to 2015, African deaths from malaria were reduced from 764,000 to 395,000.</p>
-<p><a href="https://owid.netlify.com/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png">Download</a> this visualization as a static image.<br />
-<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/global-malaria-deaths-by-world-region" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/global-malaria-deaths-by-world-region" width="300" height="150"></iframe></noscript></p>
-<h4 id="malaria-death-estimates-from-ihme"> <a class="deep-link" href="#malaria-death-estimates-from-ihme"># </a>Malaria death estimates from IHME</h4>
+<p>Africa is the world region that is most affected by malaria: In 2015, the African continent held 9 out of 10 malaria victims (click on &apos;Expand&apos; to see this). But Africa is also the world region that has achieved most progress: from 2000 to 2015, African deaths from malaria were reduced from 764,000 to 395,000.</p>
+<p><a href="/wp-content/uploads/2013/11/ourworldindata_global-malaria-deaths.png">Download</a> this visualization as a static image.<br>
+<div class="interactivePreview"><a href="/grapher/global-malaria-deaths-by-world-region" target="_blank"><div><img src="/exports/global-malaria-deaths-by-world-region_v1_850x600.svg" data-grapher-src="/grapher/global-malaria-deaths-by-world-region"></div></a></div></p>
+<h4 id="malaria-death-estimates-from-ihme"><a class="deep-link" href="#malaria-death-estimates-from-ihme"></a>Malaria death estimates from IHME</h4>
 <p>The Institute of Health Metrics and Evaluation (IHME) provide estimates of malaria deaths from the year 1990 onwards. Over this period we see a clear rise-peak-fall trend, increasing from around 746,000 deaths in 1990; peaking at upwards of 990,000 in 2003; and then declining (although at varying rates) to around 720,000 in 2016.</p>
-<p>These estimates are notably higher than those of the WHO (see <a href="https://owid.netlify.com/malaria/#data-quality-definitions">Data Quality &amp; Definitions</a> for further details). Although divergent on the total number of malaria deaths, both the IHME and WHO estimate that 90 percent (9 in every 10 deaths) are from the African region.<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-deaths-by-region" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-deaths-by-region" width="300" height="150"></iframe></noscript></p>
-<h4 id="malaria-deaths-by-age-group"> <a class="deep-link" href="#malaria-deaths-by-age-group"># </a>Malaria deaths by age group</h4>
+<p>These estimates are notably higher than those of the WHO (see <a href="/malaria/#data-quality-definitions">Data Quality &amp; Definitions</a> for further details). Although divergent on the total number of malaria deaths, both the IHME and WHO estimate that 90 percent (9 in every 10 deaths) are from the African region.<div class="interactivePreview"><a href="/grapher/malaria-deaths-by-region" target="_blank"><div><img src="/exports/malaria-deaths-by-region_v1_850x600.svg" data-grapher-src="/grapher/malaria-deaths-by-region"></div></a></div></p>
+<h4 id="malaria-deaths-by-age-group"><a class="deep-link" href="#malaria-deaths-by-age-group"></a>Malaria deaths by age group</h4>
 <p>The visualisation below categories the annual number of deaths by age group. These figures are those published by the IHME, Global Burden of Disease [the WHO does not publish country-level data on malaria deaths by age]. Note that you can view these trends for any country in the chart below.</p>
-<p>At a global level, the most vulnerable age group to malaria deaths are children under five years old — in 2016 they account for 72 percent of total deaths. The number of deaths from malaria tends to decrease with age; with those over 70 years old accounting for less than four percent. When age categories are combined, children under 14 years old account for approximately 80 percent of mortality.<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-deaths-by-age" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-deaths-by-age" width="300" height="150"></iframe></noscript></p>
-<h3 id="malaria-death-rates"> <a class="deep-link" href="#malaria-death-rates"># </a>Malaria Death Rates</h3>
-<p>The visualisation below shows the age-standardized death rate from malaria, measured as the number of deaths per 100,000 individuals.<br />
-<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-death-rates" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-death-rates" width="300" height="150"></iframe></noscript></p>
-<h4 id="malaria-death-rates-by-age"> <a class="deep-link" href="#malaria-death-rates-by-age"># </a>Malaria death rates by age</h4>
-<p>The visualisation below shows the breakdown of death rates from malaria (measured as the number of deaths per 100,000 individuals) by age category. <iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-death-rates-by-age" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-death-rates-by-age" width="300" height="150"></iframe></noscript></p>
-<h3 id="malaria-prevalence-today"> <a class="deep-link" href="#malaria-prevalence-today"># </a>Malaria Prevalence Today</h3>
-<p>The map shows the number of malaria cases per 100,000 individuals across the world. The malaria prevalence is highest in the central part of Africa north and south of the equator.<br />
-<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/incidence-of-malaria" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/incidence-of-malaria" width="300" height="150"></iframe></noscript></p>
-<h3 id="malaria-prevalence-historically"> <a class="deep-link" href="#malaria-prevalence-historically"># </a>Malaria Prevalence Historically</h3>
+<p>At a global level, the most vulnerable age group to malaria deaths are children under five years old &#x2014; in 2016 they account for 72 percent of total deaths. The number of deaths from malaria tends to decrease with age; with those over 70 years old accounting for less than four percent. When age categories are combined, children under 14 years old account for approximately 80 percent of mortality.<div class="interactivePreview"><a href="/grapher/malaria-deaths-by-age" target="_blank"><div><img src="/exports/malaria-deaths-by-age_v1_850x600.svg" data-grapher-src="/grapher/malaria-deaths-by-age"></div></a></div></p>
+<h3 id="malaria-death-rates"><a class="deep-link" href="#malaria-death-rates"></a>I.2 Malaria Death Rates</h3>
+<p>The visualisation below shows the age-standardized death rate from malaria, measured as the number of deaths per 100,000 individuals.<br>
+<div class="interactivePreview"><a href="/grapher/malaria-death-rates" target="_blank"><div><img src="/exports/malaria-death-rates_v1_850x600.svg" data-grapher-src="/grapher/malaria-death-rates"></div></a></div></p>
+<h4 id="malaria-death-rates-by-age"><a class="deep-link" href="#malaria-death-rates-by-age"></a>Malaria death rates by age</h4>
+<p>The visualisation below shows the breakdown of death rates from malaria (measured as the number of deaths per 100,000 individuals) by age category. <div class="interactivePreview"><a href="/grapher/malaria-death-rates-by-age" target="_blank"><div><img src="/exports/malaria-death-rates-by-age_v1_850x600.svg" data-grapher-src="/grapher/malaria-death-rates-by-age"></div></a></div></p>
+<h3 id="malaria-prevalence-today"><a class="deep-link" href="#malaria-prevalence-today"></a>I.3 Malaria Prevalence Today</h3>
+<p>The map shows the number of malaria cases per 100,000 individuals across the world. The malaria prevalence is highest in the central part of Africa north and south of the equator.<br>
+<div class="interactivePreview"><a href="/grapher/incidence-of-malaria" target="_blank"><div><img src="/exports/incidence-of-malaria_v1_850x600.svg" data-grapher-src="/grapher/incidence-of-malaria"></div></a></div></p>
+<h3 id="malaria-prevalence-historically"><a class="deep-link" href="#malaria-prevalence-historically"></a>I.4 Malaria Prevalence Historically</h3>
 <p>The following map shows that malaria is prevalent in Sub-Saharan Africa, Latin America and Southern Asia. The map also shows that malaria was formerly prevalent in many other world regions. In the Western US, Europe, Northern Australia, and much of Asia malaria was once very common.</p>
-<h6>World map of past and current malaria prevalence – World Development Report (2009)<a id='ref-2' class='side-matter side-matter-ref' href='#note-2'><sup class='side-matter side-matter-sup' title='This is taken from World Bank (2009) – World Development Report (2009) &#8211; Part I: Reshaping Economic Geography. Washington, DC: World Bank. Online here. The sources given by my source are: Malaria Atlas Project (MAP), Kenyan Medical Research Institute, and University of Oxford.'>2</sup></a></p>
-<p><a href="https://owid.netlify.com/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009.png"><img class="aligncenter size-medium wp-image-3002" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png" alt="World Map of past and current Malaria prevalence – World Development Report (2009)" width="645" height="320" srcset="/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png 645w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-1024x509.png 1024w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009.png 1240w" sizes="(max-width: 645px) 100vw, 645px" /><noscript><img class="aligncenter size-medium wp-image-3002" src="https://owid.netlify.com/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png" alt="World Map of past and current Malaria prevalence – World Development Report (2009)" width="645" height="320" srcset="/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png 645w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-1024x509.png 1024w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009.png 1240w" sizes="(max-width: 645px) 100vw, 645px" /></noscript></a></p>
-<p>The below map shows the distribution of malaria deaths within the United States in 1870. Malaria was prevalent in most parts of the US, but especially so in pockets along the coasts.</p>
-<h6>Proportion of deaths from malaria to deaths of all causes – US Census 1870<a id='ref-3' class='side-matter side-matter-ref' href='#note-3'><sup class='side-matter side-matter-sup' title='This is taken from the Statistical Atlas from the 9th Census of the United States 1870 (published 1874). All maps and charts from the Statistical Atlas from the 9th Census of the United States 1870 are online at Radical Cartography here. This map shown here is available in high-resolution here.'>3</sup></a></p>
-<p><a href="https://owid.netlify.com/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700.png"><img class="aligncenter wp-image-4054 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-774x1024.png" alt="Proportion of deaths from malaria to deaths of all causes – US Census 1870" width="416" height="550" srcset="/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-774x1024.png 774w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-113x150.png 113w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-416x550.png 416w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700.png 1486w" sizes="(max-width: 416px) 100vw, 416px" /><noscript><img class="aligncenter wp-image-4054 size-large" src="https://owid.netlify.com/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-774x1024.png" alt="Proportion of deaths from malaria to deaths of all causes – US Census 1870" width="416" height="550" srcset="/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-774x1024.png 774w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-113x150.png 113w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700-416x550.png 416w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-–-US-Census-18700.png 1486w" sizes="(max-width: 416px) 100vw, 416px" /></noscript></a></p>
-<p><!------------------------------><br />
+<h6>World map of past and current malaria prevalence &#x2013;&#xA0;World Development Report (2009)<a id="ref-2" class="side-matter side-matter-ref" href="#note-2"><sup class="side-matter side-matter-sup">2</sup></a><p></p>
+<p><a href="/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009.png" target="_blank"><img class="aligncenter size-medium wp-image-3002" src="/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png" alt="World Map of past and current Malaria prevalence &#x2013;&#xA0;World Development Report (2009)" width="645" height="320" srcset="/wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-150x150.png 150w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-645x320.png 645w, /wp-content/uploads/2013/11/world-map-of-past-and-current-malaria-prevalence-world-development-report-2009-1024x509.png 1024w"></a></p>
+<p>The below map shows&#xA0;the distribution of malaria deaths within the United States in 1870. Malaria was prevalent in most parts of the US, but especially so in pockets along the coasts.</p>
+</h6><h6>Proportion of deaths from malaria to deaths of all causes &#x2013; US Census 1870<a id="ref-3" class="side-matter side-matter-ref" href="#note-3"><sup class="side-matter side-matter-sup">3</sup></a><p></p>
+<p><a href="/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-&#x2013;-US-Census-18700.png" target="_blank"><img class="aligncenter wp-image-4054 size-large" src="/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-&#x2013;-US-Census-18700-774x1024.png" alt="Proportion of deaths from malaria to deaths of all causes &#x2013; US Census 1870" width="416" height="550" srcset="/wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-&#x2013;-US-Census-18700-113x150.png 113w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-&#x2013;-US-Census-18700-416x550.png 416w, /wp-content/uploads/2013/11/The-Proportion-of-Deaths-from-Malaria-to-Deaths-of-all-Causes-&#x2013;-US-Census-18700-774x1024.png 774w"></a></p>
+<p><!------------------------------><br>
 <!------------------------------></p>
-<h2 id="correlates-determinants-consequences"> <a class="deep-link" href="#correlates-determinants-consequences"># </a>Correlates, Determinants &amp; Consequences</h2>
+</h6><h2 id="correlates-determinants-consequences"><a class="deep-link" href="#correlates-determinants-consequences"></a>II. Correlates, Determinants &amp; Consequences</h2>
 <p>In the first chart on this page, we see that the number of malaria deaths in Africa is now declining. The following chart shows that over the same period the number of people sleeping under insecticide treated nets increased.</p>
-<h3 id="bed-nets"> <a class="deep-link" href="#bed-nets"># </a>Bed nets</h3>
-<p>Bhatt et al. (2015)<a id='ref-4' class='side-matter side-matter-ref' href='#note-4'><sup class='side-matter side-matter-sup' title='Bhatt et al. (2015) – The effect of malaria control on Plasmodium falciparum in Africa between 2000 and 2015. Nature 526, 207–211 (08 October 2015) doi:10.1038/nature15535. Online here.'>4</sup></a> studied the decline of cases of malaria in Africa between 2000 and 2015. They found that the single most important contributor to the decline were insecticide-treated bed nets. According to their findings bed nets were responsible for the aversion of 68% of the 663 million averted cases in Africa between 2000 and 2015. These are 451 million averted cases.</p>
-<p>The second largest factor according to the study was artemisinin-based combination therapy which was responsible for 19% of averted cases. And the third largest factor was indoor residual spraying (IRS) which accounted for 13% of averted cases according to the study.<br />
-<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/share-of-children-younger-than-5-who-sleep-under-an-insecticide-treated-bednet-to-prevent-malaria" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/share-of-children-younger-than-5-who-sleep-under-an-insecticide-treated-bednet-to-prevent-malaria" width="300" height="150"></iframe></noscript></p>
-<h6>Estimated trend in proportion of households with at least one insecticide treated net (ITN) and proportion of the population sleeping under an ITN in sub-Saharan Africa, 2000-2012 – WHO (2012)<a id='ref-5' class='side-matter side-matter-ref' href='#note-5'><sup class='side-matter side-matter-sup' title='This is taken from World Health Organization (2012) – World Malaria Report 2012. Online here. Note of the original source: Proportion of population sleeping under an ITN derived from relationship with household ownership of at least one ITN analyzed by linear regression in 48 household surveys (2001-2011), y= 0.67x &#8211; 0.03. Note on the sources by the original source: ITN coverage model from the Institute for Health Metrics and Evaluation, which takes into account ITNs supplied by manufacturers, ITNs delivered by NMCPs and household survey results (1). Includes Djibouti, Somalia and Sudan which are in the WHO Eastern Mediterranean Region.'>5</sup></a></p>
-<p><a href="https://owid.netlify.com/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png"><img class="aligncenter wp-image-5264 size-full" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png" alt="Estimated trend in proportion of households with at least one insecticide treated net (ITN) and proportion of the population sleeping under an ITN in sub-Saharan Africa, 2000-2012 – WHO (2012)" width="591" height="465" srcset="/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png 591w, /wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-150x118.png 150w, /wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-400x315.png 400w" sizes="(max-width: 591px) 100vw, 591px" /><noscript><img class="aligncenter wp-image-5264 size-full" src="https://owid.netlify.com/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png" alt="Estimated trend in proportion of households with at least one insecticide treated net (ITN) and proportion of the population sleeping under an ITN in sub-Saharan Africa, 2000-2012 – WHO (2012)" width="591" height="465" srcset="/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png 591w, /wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-150x118.png 150w, /wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-400x315.png 400w" sizes="(max-width: 591px) 100vw, 591px" /></noscript></a></p>
-<h3 id="funding-for-malaria-control"> <a class="deep-link" href="#funding-for-malaria-control"># </a>Funding for malaria control</h3>
-<p>Funding for malaria control has increased dramatically from 2000, but has recently stalled.</p>
-<h6>Past and projected international funding for malaria control, 2000-2015 – WHO (2012)<a id='ref-6' class='side-matter side-matter-ref' href='#note-6'><sup class='side-matter side-matter-sup' title='This is taken from World Health Organization (2012) – World Malaria Report 2012. Online here.'>6</sup></a></h6>
-<p><img class="aligncenter wp-image-3007 size-large" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://owid.netlify.com/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png" alt="Past and projected international funding for malaria control, 2000-2015 – WHO (2012)" width="750" height="210" srcset="/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png 1024w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-645x181.png 645w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120.png 1167w" sizes="(max-width: 750px) 100vw, 750px" /><noscript><img class="aligncenter wp-image-3007 size-large" src="https://owid.netlify.com/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png" alt="Past and projected international funding for malaria control, 2000-2015 – WHO (2012)" width="750" height="210" srcset="/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png 1024w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-645x181.png 645w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120.png 1167w" sizes="(max-width: 750px) 100vw, 750px" /></noscript></p>
-<h3 id="malaria-and-economic-prosperity"> <a class="deep-link" href="#malaria-and-economic-prosperity"># </a>Malaria and economic prosperity</h3>
-<p><iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-prevalence-vs-gdp-per-capita" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-prevalence-vs-gdp-per-capita" width="300" height="150"></iframe></noscript></p>
-<h4 id="there-are-high-economic-costs-of-malaria"> <a class="deep-link" href="#there-are-high-economic-costs-of-malaria"># </a>There are high economic costs of malaria</h4>
-<p>Okorosobo et al. (2013)<a id='ref-7' class='side-matter side-matter-ref' href='#note-7'><sup class='side-matter side-matter-sup' title='Obinna Onwujekwe, Nkoli Uguru, Enyi Etiaba, Ifeanyi Chikezie, Benjamin Uzochukwu,and Alex Adjagba (2013) – The Economic Burden of Malaria on Households and the Health System in Enugu State Southeast Nigeria. In PLoS One. 2013; 8(11): e78362. Published online 2013 Nov 4. doi:  10.1371/journal.pone.0078362 PMCID: PMC3817251. Online here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3817251/'>7</sup></a> estimate that the <a href="https://owid.netlify.com/data/health/malaria/">malaria</a> “penalty” to GDP ranges from 0.41% of GDP in Ghana to 8.9% of GDP in Chad, all of which could be regained following elimination of malaria. Complete <a href="https://owid.netlify.com/data/health/eradication-of-diseases/">eradication of the disease</a> would increase GDP in Uganda by 50 million USD.</p>
-<p>Azemar and Desbordes (2009)<a id='ref-8' class='side-matter side-matter-ref' href='#note-8'><sup class='side-matter side-matter-sup' title='Céline Azémar and Rodolphe Desbordes (2009) – Public Governance, Health and Foreign Direct Investment in Sub-Saharan Africa. In Journal of African Economies Volume 18 Issue 4Pp. 667-709. doi: 10.1093/jae/ejn028. Online here: https://jae.oxfordjournals.org/content/18/4/667.'>8</sup></a> find that in the median sub-Saharan African country, foreign direct investment could increase by as much as one-third as a result of <a href="https://owid.netlify.com/data/health/malaria/">malaria</a> and <a href="https://owid.netlify.com/data/health/hiv-aids/">HIV</a> eradication, slightly more than one-half of this is attributed to malaria.</p>
-<h2 id="data-quality-definitions"> <a class="deep-link" href="#data-quality-definitions"># </a>Data Quality &amp; Definitions</h2>
-<p>The United Nations give the following definitions:<a id='ref-9' class='side-matter side-matter-ref' href='#note-9'><sup class='side-matter side-matter-sup' title='See here.'>9</sup></a></p>
+<h3 id="bed-nets"><a class="deep-link" href="#bed-nets"></a>II.1 Bed nets</h3>
+<p>Bhatt et al. (2015)<a id="ref-4" class="side-matter side-matter-ref" href="#note-4"><sup class="side-matter side-matter-sup">4</sup></a> studied the decline of cases of malaria in Africa between 2000 and 2015. They found that the single most important contributor to the decline were insecticide-treated bed nets. According to their findings bed nets were responsible for the aversion of 68% of the 663 million averted cases in Africa between 2000 and 2015. These are 451 million averted cases.</p>
+<p>The second largest factor according to the study was artemisinin-based combination therapy which was responsible for 19% of averted cases. And the third largest factor was indoor residual spraying (IRS) which accounted for 13% of averted cases according to the study.<br>
+<div class="interactivePreview"><a href="/grapher/share-of-children-younger-than-5-who-sleep-under-an-insecticide-treated-bednet-to-prevent-malaria" target="_blank"><div><img src="/exports/share-of-children-younger-than-5-who-sleep-under-an-insecticide-treated-bednet-to-prevent-malaria_v1_850x600.svg" data-grapher-src="/grapher/share-of-children-younger-than-5-who-sleep-under-an-insecticide-treated-bednet-to-prevent-malaria"></div></a></div></p>
+<h6>Estimated trend in proportion of households with at least one insecticide treated net (ITN) and proportion of the population sleeping under an ITN in sub-Saharan Africa, 2000-2012&#xA0;&#x2013; WHO (2012)<a id="ref-5" class="side-matter side-matter-ref" href="#note-5"><sup class="side-matter side-matter-sup">5</sup></a><p></p>
+<p><a href="/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png" target="_blank"><img class="aligncenter wp-image-5264 size-full" src="/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012.png" alt="Estimated trend in proportion of households with at least one insecticide treated net (ITN) and proportion of the population sleeping under an ITN in sub-Saharan Africa, 2000-2012 &#x2013; WHO (2012)" width="591" height="465" srcset="/wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-150x118.png 150w, /wp-content/uploads/2013/11/ourworldindata_estimated-trend-in-proportion-of-households-with-at-least-one-itn_who-2012-400x315.png 400w"></a></p>
+</h6><h3 id="funding-for-malaria-control"><a class="deep-link" href="#funding-for-malaria-control"></a>II.2 Funding for malaria control</h3>
+<p>Funding for malaria control&#xA0;has increased dramatically from 2000, but has recently stalled.</p>
+<h6>Past and projected international funding for malaria control, 2000-2015&#xA0;&#x2013; WHO (2012)<a id="ref-6" class="side-matter side-matter-ref" href="#note-6"><sup class="side-matter side-matter-sup">6</sup></a></h6>
+<p><img class="aligncenter wp-image-3007 size-large" src="/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png" alt="Past and projected international funding for malaria control, 2000-2015 &#x2013; WHO (2012)" width="750" height="210" srcset="/wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-150x150.png 150w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-645x181.png 645w, /wp-content/uploads/2013/11/past-and-projected-international-funding-for-malaria-control-2000-2015-who-20120-1024x287.png 1024w"></p>
+<h3 id="malaria-and-economic-prosperity"><a class="deep-link" href="#malaria-and-economic-prosperity"></a>II.3 Malaria and economic prosperity</h3>
+<p><div class="interactivePreview"><a href="/grapher/malaria-prevalence-vs-gdp-per-capita" target="_blank"><div><img src="/exports/malaria-prevalence-vs-gdp-per-capita_v1_850x600.svg" data-grapher-src="/grapher/malaria-prevalence-vs-gdp-per-capita"></div></a></div></p>
+<h4 id="there-are-high-economic-costs-of-malaria"><a class="deep-link" href="#there-are-high-economic-costs-of-malaria"></a>There are high economic costs of malaria</h4>
+<p>Okorosobo et al. (2013)<a id="ref-7" class="side-matter side-matter-ref" href="#note-7"><sup class="side-matter side-matter-sup">7</sup></a> estimate that the <a href="/data/health/malaria/">malaria</a> &#x201C;penalty&#x201D; to GDP ranges from 0.41% of GDP in Ghana to 8.9% of GDP in Chad, all of which could be regained following elimination of malaria. Complete <a href="/data/health/eradication-of-diseases/">eradication of the disease</a> would increase GDP in Uganda by 50 million USD.</p>
+<p>Azemar and Desbordes (2009)<a id="ref-8" class="side-matter side-matter-ref" href="#note-8"><sup class="side-matter side-matter-sup">8</sup></a> find that in the median sub-Saharan African country, foreign direct investment could increase by as much as one-third as a result of <a href="/data/health/malaria/">malaria</a> and <a href="/data/health/hiv-aids/">HIV</a> eradication, slightly more than one-half of this is attributed to malaria.</p>
+<h2 id="data-quality-definitions"><a class="deep-link" href="#data-quality-definitions"></a>III. Data Quality &amp; Definitions</h2>
+<p>The United Nations give the following definitions:<a id="ref-9" class="side-matter side-matter-ref" href="#note-9"><sup class="side-matter side-matter-sup">9</sup></a></p>
 <p>The malaria incidence rate (Ii) is the number of new cases of malaria (Cases) divided by the total population (Pop) and multiplied by 100,000.</p>
 <p><em>Ii = (Cases / Pop) * 100,000</em></p>
 <p>The malaria death rate (Id) is the number of deaths due to malaria (Deaths) divided by the total population (Pop) and multiplied by 100,000.</p>
 <p><em>Id = (Deaths / Pop) * 100,000</em></p>
-<h6>WHO estimates of the number of malaria deaths, 2010 – WHO (2012)<a id='ref-10' class='side-matter side-matter-ref' href='#note-10'><sup class='side-matter side-matter-sup' title='This is taken from World Health Organization (2012) – World Malaria Report 2012. Online here.'>10</sup></a></h6>
-
-<table id="tablepress-44" class="tablepress tablepress-id-44">
-<thead>
-<tr class="row-1 odd">
-	<th class="column-1">Region</th><th class="column-2">Estimate</th><th class="column-3">Lower</th><th class="column-4">Upper</th><th class="column-5">% <5</th>
-</tr>
-</thead>
-<tbody class="row-hover">
-<tr class="row-2 even">
-	<td class="column-1">African</td><td class="column-2">596 000</td><td class="column-3">429 000</td><td class="column-4">772 000</td><td class="column-5">91%</td>
-</tr>
-<tr class="row-3 odd">
-	<td class="column-1">Region of the Americas</td><td class="column-2">1 100</td><td class="column-3">700</td><td class="column-4">1 800</td><td class="column-5">29%</td>
-</tr>
-<tr class="row-4 even">
-	<td class="column-1">Eastern Mediterranean</td><td class="column-2">15 300</td><td class="column-3">7 200</td><td class="column-4">23 500</td><td class="column-5">70%</td>
-</tr>
-<tr class="row-5 odd">
-	<td class="column-1">European</td><td class="column-2">0</td><td class="column-3">0</td><td class="column-4">0</td><td class="column-5">–</td>
-</tr>
-<tr class="row-6 even">
-	<td class="column-1">South-East Asia</td><td class="column-2">43 000</td><td class="column-3">31 100</td><td class="column-4">60 300</td><td class="column-5">32%</td>
-</tr>
-<tr class="row-7 odd">
-	<td class="column-1">Western Pacific</td><td class="column-2">4 000</td><td class="column-3">2 400</td><td class="column-4">6 100</td><td class="column-5">41%</td>
-</tr>
-<tr class="row-8 even">
-	<td class="column-1">World</td><td class="column-2">660 000</td><td class="column-3">490 000</td><td class="column-4">836 000</td><td class="column-5">86%</td>
-</tr>
-</tbody>
-</table>
-<!-- #tablepress-44 from cache -->
-<h6>WHO estimates of the number of malaria cases (in thousands), 2010 – WHO (2012)<a id='ref-11' class='side-matter side-matter-ref' href='#note-11'><sup class='side-matter side-matter-sup' title='This is taken from World Health Organization (2012) – World Malaria Report 2012. Online here.'>11</sup></a></h6>
-
-<table id="tablepress-43" class="tablepress tablepress-id-43">
-<thead>
-<tr class="row-1 odd">
-	<th class="column-1">Region</th><th class="column-2">Estimate</th><th class="column-3">Lower</th><th class="column-4">Upper</th><th class="column-5">% falciparum</th>
-</tr>
-</thead>
-<tbody class="row-hover">
-<tr class="row-2 even">
-	<td class="column-1">African</td><td class="column-2">174 000</td><td class="column-3">110 000</td><td class="column-4">242 000</td><td class="column-5">98%</td>
-</tr>
-<tr class="row-3 odd">
-	<td class="column-1">Region of the Americas</td><td class="column-2">1 100</td><td class="column-3">900</td><td class="column-4">1 300</td><td class="column-5">35%</td>
-</tr>
-<tr class="row-4 even">
-	<td class="column-1">Eastern Mediterranean</td><td class="column-2">10 400</td><td class="column-3">6 400</td><td class="column-4">16 600</td><td class="column-5">83%</td>
-</tr>
-<tr class="row-5 odd">
-	<td class="column-1">European</td><td class="column-2">0.2</td><td class="column-3">0.2</td><td class="column-4">0.2</td><td class="column-5">–</td>
-</tr>
-<tr class="row-6 even">
-	<td class="column-1">South-East Asia</td><td class="column-2">32 000</td><td class="column-3">25 900</td><td class="column-4">41 900</td><td class="column-5">53%</td>
-</tr>
-<tr class="row-7 odd">
-	<td class="column-1">Western Pacific</td><td class="column-2">1 700</td><td class="column-3">1 300</td><td class="column-4">2 100</td><td class="column-5">79%</td>
-</tr>
-<tr class="row-8 even">
-	<td class="column-1">World</td><td class="column-2">219 000</td><td class="column-3">154 000</td><td class="column-4">289 000</td><td class="column-5">90%</td>
-</tr>
-</tbody>
-</table>
-<!-- #tablepress-43 from cache -->
-<h4 id="comparison-of-who-and-ihme-malaria-deaths"> <a class="deep-link" href="#comparison-of-who-and-ihme-malaria-deaths"># </a>Comparison of WHO and IHME malaria deaths</h4>
-<p>In our section on <a href="https://owid.netlify.com/malaria/#deaths-due-to-malaria">Deaths Due to Malaria</a>, we present regional estimates from the World Health Organization (WHO) and the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD). These estimates in some cases differ notably.</p>
+<h6>WHO estimates of the number of malaria deaths, 2010&#xA0;&#x2013; WHO (2012)<a id="ref-10" class="side-matter side-matter-ref" href="#note-10"><sup class="side-matter side-matter-sup">10</sup></a></h6>
+<p><table class="tablepress"><thead><tr><th>Region</th><th>Estimate</th><th>Lower</th><th>Upper</th><th>% &lt;5</th></tr></thead><tbody class="row-hover"><tr><td>African</td><td>596 000</td><td>429 000</td><td>772 000</td><td>91%</td></tr><tr><td>Region of the Americas</td><td>1 100</td><td>700</td><td>1 800</td><td>29%</td></tr><tr><td>Eastern Mediterranean</td><td>15 300</td><td>7 200</td><td>23 500</td><td>70%</td></tr><tr><td>European</td><td>0</td><td>0</td><td>0</td><td>&#x2013;</td></tr><tr><td>South-East Asia</td><td>43 000</td><td>31 100</td><td>60 300</td><td>32%</td></tr><tr><td>Western Pacific</td><td>4 000</td><td>2 400</td><td>6 100</td><td>41%</td></tr><tr><td>World</td><td>660 000</td><td>490 000</td><td>836 000</td><td>86%</td></tr></tbody></table></p>
+<h6>WHO estimates of the number of malaria cases (in thousands), 2010 &#x2013; WHO (2012)<a id="ref-11" class="side-matter side-matter-ref" href="#note-11"><sup class="side-matter side-matter-sup">11</sup></a></h6>
+<p><table class="tablepress"><thead><tr><th>Region</th><th>Estimate</th><th>Lower</th><th>Upper</th><th>% falciparum</th></tr></thead><tbody class="row-hover"><tr><td>African</td><td>174 000</td><td>110 000</td><td>242 000</td><td>98%</td></tr><tr><td>Region of the Americas</td><td>1 100</td><td>900</td><td>1 300</td><td>35%</td></tr><tr><td>Eastern Mediterranean</td><td>10 400</td><td>6 400</td><td>16 600</td><td>83%</td></tr><tr><td>European</td><td>0.2</td><td>0.2</td><td>0.2</td><td>&#x2013;</td></tr><tr><td>South-East Asia</td><td>32 000</td><td>25 900</td><td>41 900</td><td>53%</td></tr><tr><td>Western Pacific</td><td>1 700</td><td>1 300</td><td>2 100</td><td>79%</td></tr><tr><td>World</td><td>219 000</td><td>154 000</td><td>289 000</td><td>90%</td></tr></tbody></table></p>
+<h4 id="comparison-of-who-and-ihme-malaria-deaths"><a class="deep-link" href="#comparison-of-who-and-ihme-malaria-deaths"></a>Comparison of WHO and IHME malaria deaths</h4>
+<p>In our section on <a href="/malaria/#deaths-due-to-malaria">Deaths Due to Malaria</a>, we present regional estimates from the World Health Organization (WHO) and the Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD). These estimates in some cases differ notably.</p>
 <p>In the chart below we have plotted annual deaths from malaria by country, from IHME estimates (y-axis) versus estimates from WHO (x-axis). Note that the latest WHO estimates by country are only available for the year 2013. Also shown is the line of parity: countries that lie along this line have the same estimated number of deaths from the IHME and WHO; countries which lie above this line have higher estimates from IHME; and those below have higher estimates from WHO.</p>
-<p>For many countries — although not all — IHME estimates tend to be higher than WHO figures. This difference for some countries is highly significant; for example, in 2013, IHME estimates for Nigeria, Democratic Republic of Congo and India were approximately double that of WHO figures. The discrepancy between these estimates results from differences in methodology, data coverage and sourcing. Figures shown in this entry from both IHME and WHO will continue to be updated as new data is released — hopefully this data will begin to converge with time.<br />
-<iframe style="width: 100%; height: 600px; border: 0px none;" data-src="https://owid.netlify.com/grapher/malaria-deaths-comparisons" width="300" height="150"></iframe><noscript><iframe style="width: 100%; height: 600px; border: 0px none;" src="https://owid.netlify.com/grapher/malaria-deaths-comparisons" width="300" height="150"></iframe></noscript></p>
-<p><!------------------------------><br />
+<p>For many countries&#xA0;&#x2014; although not all&#xA0;&#x2014; IHME estimates tend to be higher than WHO figures. This difference for some countries is highly significant; for example, in 2013, IHME estimates for Nigeria, Democratic Republic of Congo and India were approximately double that of WHO figures. The discrepancy between these estimates results from differences in methodology, data coverage and sourcing. Figures shown in this entry from both IHME and WHO will continue to be updated as new data is released&#xA0;&#x2014; hopefully this data will begin to converge with time.<br>
+<div class="interactivePreview"><a href="/grapher/malaria-deaths-comparisons" target="_blank"><div><img src="/exports/malaria-deaths-comparisons_v1_850x600.svg" data-grapher-src="/grapher/malaria-deaths-comparisons"></div></a></div></p>
+<p><!------------------------------><br>
 <!------------------------------></p>
-<h2 id="data-sources"> <a class="deep-link" href="#data-sources"># </a>Data Sources</h2>
-<h5 id="world-health-organization-who"> <a class="deep-link" href="#world-health-organization-who"># </a>World Health Organization (WHO)</h5>
+<h2 id="data-sources"><a class="deep-link" href="#data-sources"></a>IV. Data Sources</h2>
+<h5>World Health Organization (WHO)</h5>
 <ul>
-<li><strong>Data: </strong>Data on cases, deaths (reported and estimates) and prevention and treatment<strong><br />
+<li><strong>Data: </strong>Data on cases, deaths (reported and estimates) and prevention and treatment<strong><br>
 </strong></li>
-<li><strong>Geographical coverage: </strong>Global – by country and WHO region<strong><br />
+<li><strong>Geographical coverage: </strong>Global &#x2013; by country and WHO region<strong><br>
 </strong></li>
-<li><strong>Time span: </strong>Since 2000 (for reported deaths); shorter for other measures.<strong><br />
+<li><strong>Time span: </strong>Since 2000 (for reported deaths); shorter for other measures.<strong><br>
 </strong></li>
-<li><strong>Available at:</strong> Online <a href="https://apps.who.int/gho/data/node.main.A1362?lang=en">here</a>.</li>
-<li class="no-bullet"><em>WHO data on malaria deaths and cases (1990-2006) is also available through <a href=" https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=6.14645161290322;ti=2009$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=pp59adS3CHWfGZUVJ2L-dCw;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=282;dataMax=119849$map_y;scale=lin;dataMin=0;dataMax=610$map_s;sma=49;smi=2.65$cd;bd=0$inds=">Gapminder</a> where it can be plotted against a second indicator.</em></li>
+<li><strong>Available at:</strong> Online <a href="http://apps.who.int/gho/data/node.main.A1362?lang=en">here</a>.</li>
+<li class="no-bullet"><em>WHO data on malaria deaths and cases (1990-2006) is also available through <a href=" http://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=6.14645161290322;ti=2009$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=pp59adS3CHWfGZUVJ2L-dCw;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=282;dataMax=119849$map_y;scale=lin;dataMin=0;dataMax=610$map_s;sma=49;smi=2.65$cd;bd=0$inds=">Gapminder</a> where it can be plotted against a second indicator.</em></li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="institute-of-health-metrics-and-evaluation-ihme-global-burden-of-disease-gbd"> <a class="deep-link" href="#institute-of-health-metrics-and-evaluation-ihme-global-burden-of-disease-gbd"># </a>Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD)</h5>
+<hr class="datasources-hr">
+<h5>Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD)</h5>
 <ul>
-<li><strong>Data:</strong> Death rates &#038; absolute number of deaths from malaria</li>
+<li><strong>Data:</strong> Death rates &amp; absolute number of deaths from malaria</li>
 <li><strong>Geographical coverage:</strong>Global, across all regions and countries</li>
 <li><strong>Time span:</strong>Available from 1990 onwards</li>
-<li><strong>Available at: </strong>Online <a href="https://ghdx.healthdata.org/gbd-results-tool">here</a></li>
+<li><strong>Available at:&#xA0;</strong>Online <a href="http://ghdx.healthdata.org/gbd-results-tool">here</a></li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="world-development-indicators-wdi-published-by-the-world-bank"> <a class="deep-link" href="#world-development-indicators-wdi-published-by-the-world-bank"># </a>World Development Indicators (WDI) – published by the World Bank</h5>
+<hr class="datasources-hr">
+<h5>World Development Indicators (WDI) &#x2013; published by the World Bank</h5>
 <ul>
 <li><strong>Data:</strong> Children with fever receiving antimalarial drugs (% of children under age 5 with fever), use of insecticide-treated bed nets (% of under-5 population)</li>
-<li><strong>Geographical coverage:</strong> Global – by country &amp; world region</li>
-<li><strong>Time span:</strong> Annual data – since 2000.</li>
-<li><strong>Available at:</strong> Online <a href="https://data.worldbank.org/indicator/SH.MLR.TRET.ZS">here</a>.</li>
+<li><strong>Geographical coverage:</strong> Global &#x2013; by country &amp; world region</li>
+<li><strong>Time span:</strong>&#xA0;Annual data &#x2013; since 2000.</li>
+<li><strong>Available at:</strong> Online <a href="http://data.worldbank.org/indicator/SH.MLR.TRET.ZS">here</a>.</li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="united-nations-millennium-development-goals-database"> <a class="deep-link" href="#united-nations-millennium-development-goals-database"># </a>United Nations – Millennium Development Goals Database</h5>
+<hr class="datasources-hr">
+<h5>United Nations &#x2013; Millennium Development Goals Database</h5>
 <ul>
-<li><strong>Data: </strong>Notified cases of malaria (per 100,000 people) and malaria death rate (all ages &amp; ages 0-4)<strong><br />
+<li><strong>Data: </strong>Notified cases of malaria (per 100,000 people) and malaria death rate (all ages &amp; ages 0-4)<strong><br>
 </strong></li>
-<li><strong>Geographical coverage: </strong>Global – by country and region.<strong><br />
+<li><strong>Geographical coverage: </strong>Global &#x2013; by country and region.<strong><br>
 </strong></li>
-<li><strong>Time span: </strong>Only very recent data.<strong><br />
+<li><strong>Time span: </strong>Only very recent data.<strong><br>
 </strong></li>
-<li><strong>Available: </strong>Notified cases of malaria (per 100,000 people) <a href="https://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=644">here</a>.<br />
-Malaria death rate (all ages) <a href="https://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=663">here</a>.<br />
-Malaria death rate (ages 0-4) <a href="https://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=664">here</a>.</li>
+<li><strong>Available: </strong>Notified cases of malaria (per 100,000 people) <a href="http://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=644">here</a>.<br>
+Malaria death rate (all ages) <a href="http://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=663">here</a>.<br>
+Malaria death rate (ages 0-4) <a href="http://mdgs.un.org/unsd/mdg/Handlers/ExportHandler.ashx?Type=Excel&amp;Series=664">here</a>.</li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="dhs-malaria-indicator-survey-mis"> <a class="deep-link" href="#dhs-malaria-indicator-survey-mis"># </a>DHS Malaria Indicator Survey (MIS)</h5>
+<hr class="datasources-hr">
+<h5>DHS Malaria Indicator Survey (MIS)</h5>
 <ul>
 <li><strong><strong>Data: </strong></strong>Detailed survey data from African countries</li>
-<li><strong>Geographical coverage: </strong>Some African countries.<strong><br />
+<li><strong>Geographical coverage: </strong>Some African countries.<strong><br>
 </strong></li>
-<li><strong>Time span: </strong>late 2000s<strong><br />
+<li><strong>Time span: </strong>late 2000s<strong><br>
 </strong></li>
-<li><strong>Available at: </strong>Online <a href="https://ghdx.healthmetricsandevaluation.org/series/dhs-malaria-indicator-survey-mis">here</a>.<strong><br />
+<li><strong>Available at: </strong>Online <a href="http://ghdx.healthmetricsandevaluation.org/series/dhs-malaria-indicator-survey-mis">here</a>.<strong><br>
 </strong></li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="the-mara-arma-mapping-malaria-risk-in-africa-atlas-du-risque-de-la-malaria-en-afrique-project"> <a class="deep-link" href="#the-mara-arma-mapping-malaria-risk-in-africa-atlas-du-risque-de-la-malaria-en-afrique-project"># </a>The MARA/ARMA (Mapping Malaria Risk in Africa/Atlas du Risque de la Malaria en Afrique) project</h5>
+<hr class="datasources-hr">
+<h5>The MARA/ARMA (Mapping Malaria Risk in Africa/Atlas du Risque de la Malaria en Afrique) project</h5>
 <ul>
-<li><strong>Data:</strong> MARA LITe malaria prevalence data, distribution of the Anopheles gambiae, entomological inoculation rates, related climate data and malaria distribution maps and estimated populations at risk.</li>
-<li><strong>Geographical coverage:  </strong>Entire Africa – low level</li>
+<li><strong>Data:</strong>&#xA0;MARA LITe malaria prevalence data, distribution of the Anopheles gambiae, entomological inoculation rates, related climate data and malaria distribution maps and estimated populations at risk.</li>
+<li><strong>Geographical coverage:&#xA0; </strong>Entire Africa &#x2013; low level</li>
 <li><strong>Time span:</strong> Mostly recent data</li>
-<li><strong>Available at:</strong> Online at <a href="https://www.mara.org.za/">www.mara.org.za</a>.</li>
-<li class="no-bullet"><em>Often it is possible to download the data and to view the data visualized on maps.<br />
+<li><strong>Available at:</strong> Online at <a href="http://www.mara.org.za/">www.mara.org.za</a>.</li>
+<li class="no-bullet"><em>Often it is possible to download the data and to view the data visualized on maps.<br>
 </em></li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="conley-mccord-and-sachs-2007-malaria-dataset"> <a class="deep-link" href="#conley-mccord-and-sachs-2007-malaria-dataset"># </a>Conley, McCord and Sachs (2007) Malaria Dataset</h5>
+<hr class="datasources-hr">
+<h5>Conley, McCord and Sachs (2007) Malaria Dataset</h5>
 <ul>
 <li><strong>Data:</strong> % of population at risk of malaria.</li>
-<li><strong>Geographical coverage:</strong> Global – by country.</li>
-<li><strong>Time span:</strong> 1960 &#8211; 2000 (observations every 5 years – including interpolations)</li>
-<li><strong>Available at:</strong> Online <a href="https://www.dropbox.com/s/3o7ds4vyksjwp5k/MalariaPopRisk.dta?dl=0">here</a>.</li>
+<li><strong>Geographical coverage:</strong> Global &#x2013; by country.</li>
+<li><strong>Time span:</strong> 1960 - 2000 (observations every 5 years &#x2013; including interpolations)</li>
+<li><strong>Available at:</strong> Online <a href="http://www.dropbox.com/s/3o7ds4vyksjwp5k/MalariaPopRisk.dta?dl=0">here</a>.</li>
 </ul>
-<hr class="datasources-hr" />
-<h5 id="who-data-on-incidence-of-malaria-cases"> <a class="deep-link" href="#who-data-on-incidence-of-malaria-cases"># </a>WHO data on incidence of malaria cases</h5>
+<hr class="datasources-hr">
+<h5>WHO data on incidence of malaria cases</h5>
 <ul>
 <li><strong>Data:</strong> Incidence of malaria cases</li>
-<li><strong>Geographical coverage:</strong> Global – by country.</li>
-<li><strong>Time span:</strong> 1962-1997 – annual data.</li>
-<li><strong>Available at:</strong> Online available at the <a href="https://www.econ.upf.edu/~reynal/data_web.htm">website of Marta Reynal-Querol</a>.</li>
+<li><strong>Geographical coverage:</strong> Global &#x2013; by country.</li>
+<li><strong>Time span:</strong> 1962-1997 &#x2013; annual data.</li>
+<li><strong>Available at:</strong> Online available at the <a href="http://www.econ.upf.edu/~reynal/data_web.htm">website of Marta Reynal-Querol</a>.</li>
 </ul>
-<hr class="datasources-hr" />
-<p>Other sources: Up-to-date information on the current state of malaria is published by the <a href="https://www.rollbackmalaria.org">Roll Back Malaria Partnership</a> – a partnership between WHO, UNICEF, UNDP and the World Bank.</p>
-			</div><!-- .article-content -->
-
-			<footer class="article-footer">
-				<h2 id="footnotes">Footnotes</h2>
-							<ol class='side-matter side-matter-list' style='list-style-type: decimal;'>
-							<li id='note-1' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>This is according to the IHME&#8217;s Global Burden of Disease study <a href="https://vizhub.healthdata.org/gbd-compare/">here</a>. In Sub-Saharan Africa malaria is responsible for 19% of all child deaths.</p>
-					</div>
-				</li>
-								<li id='note-2' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
-This is taken from World Bank (2009) – World Development Report (2009) &#8211; Part I: Reshaping Economic Geography. Washington, DC: World Bank. Online <a href="https://siteresources.worldbank.org/INTWDRS/Resources/477365-1327525347307/8392086-1327528510568/WDR09_bookweb_1.pdf">here</a>.</h6>
-<p>The sources given by my source are: Malaria Atlas Project (MAP), Kenyan Medical Research Institute, and University of Oxford.</p>
-					</div>
-				</li>
-								<li id='note-3' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
+<hr class="datasources-hr">
+<p>Other sources: Up-to-date information on the current state of malaria is published by the <a href="http://www.rollbackmalaria.org">Roll Back Malaria Partnership</a> &#x2013; a partnership between WHO, UNICEF, UNDP and the World Bank.</p>
+</body></html></div><footer class="article-footer"><h2 id="footnotes">Footnotes</h2><ol style="list-style-type: decimal; opacity: 1;" class="side-matter side-matter-list"><li id="note-1" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>This is according to the IHME's Global Burden of Disease study <a href="https://vizhub.healthdata.org/gbd-compare/">here</a>. In Sub-Saharan Africa malaria is responsible for 19% of all child deaths.</p></div></li><li id="note-2" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
+This is taken from World Bank (2009) – World Development Report (2009) - Part I: Reshaping Economic Geography. Washington, DC: World Bank. Online <a href="http://siteresources.worldbank.org/INTWDRS/Resources/477365-1327525347307/8392086-1327528510568/WDR09_bookweb_1.pdf">here</a>.</h6>
+The sources given by my source are: Malaria Atlas Project (MAP), Kenyan Medical Research Institute, and University of Oxford.</p></div></li><li id="note-3" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
 This is taken from the Statistical Atlas from the 9th Census of the United States 1870 (published 1874).</h6>
-<p>All maps and charts from the Statistical Atlas from the 9th Census of the United States 1870 are online at Radical Cartography <a href="https://www.radicalcartography.net/index.html?9thcensus">here</a>.</p>
-<p>This map shown here is available in high-resolution <a href="https://www.radicalcartography.net/9thcensus/9th44.jpg">here</a>.</p>
-					</div>
-				</li>
-								<li id='note-4' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>Bhatt et al. (2015) – The effect of malaria control on Plasmodium falciparum in Africa between 2000 and 2015. Nature 526, 207–211 (08 October 2015) doi:10.1038/nature15535. Online <a href="https://www.nature.com/nature/journal/v526/n7572/abs/nature15535.html">here</a>.</p>
-					</div>
-				</li>
-								<li id='note-5' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
-This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="https://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</h6>
-<p>Note of the original source: Proportion of population sleeping under an ITN derived from relationship with household ownership of at least one ITN analyzed by linear regression in 48 household surveys (2001-2011), y= 0.67x &#8211; 0.03.</p>
-<p>Note on the sources by the original source: ITN coverage model from the Institute for Health Metrics and Evaluation, which takes into account ITNs supplied by manufacturers, ITNs delivered by NMCPs and household survey results (1). Includes Djibouti, Somalia and Sudan which are in the WHO Eastern Mediterranean Region.</p>
-					</div>
-				</li>
-								<li id='note-6' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
-This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="https://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p>
-					</div>
-				</li>
-								<li id='note-7' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>Obinna Onwujekwe, Nkoli Uguru, Enyi Etiaba, Ifeanyi Chikezie, Benjamin Uzochukwu,and Alex Adjagba (2013) – The Economic Burden of Malaria on Households and the Health System in Enugu State Southeast Nigeria. In PLoS One. 2013; 8(11): e78362. Published online 2013 Nov 4. doi:  10.1371/journal.pone.0078362 PMCID: PMC3817251. Online here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3817251/ </p>
-					</div>
-				</li>
-								<li id='note-8' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>Céline Azémar and Rodolphe Desbordes (2009) – Public Governance, Health and Foreign Direct Investment in Sub-Saharan Africa. In Journal of African Economies Volume 18 Issue 4Pp. 667-709. doi: 10.1093/jae/ejn028. Online here: <a href="https://jae.oxfordjournals.org/content/18/4/667">https://jae.oxfordjournals.org/content/18/4/667</a>.</p>
-					</div>
-				</li>
-								<li id='note-9' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>See <a href="https://mdgs.un.org/unsd/mi/wiki/6-6-Incidence-and-death-rates-associated-with-malaria.ashx">here</a>.</p>
-					</div>
-				</li>
-								<li id='note-10' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
-This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="https://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p>
-					</div>
-				</li>
-								<li id='note-11' class='side-matter side-matter-note'>
-					<div class='side-matter side-matter-text'>
-						<p>
-This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="https://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p>
-					</div>
-				</li>
-							</ol>
-						</footer><!-- .article-footer -->
-		</article><!-- #post-## -->
-	</div>
+All maps and charts from the Statistical Atlas from the 9th Census of the United States 1870 are online at Radical Cartography <a href="http://www.radicalcartography.net/index.html?9thcensus">here</a>.
 
- 
-	</main>
-	<footer id="colophon" class="site-footer">
-		<div class="wrap">
-			<div class="clearfix">
-				<div class="column">
-					<p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p>			
-					<br>		
-					<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg=="/></a>
-					<p><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">Our World in Data</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://owid.netlify.com/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p>					
-					
-					<hr>
-				</div>		
-				<div class="column subscribe">
-					<h6>Sign up to stay informed</h6>
+This map shown here is available in high-resolution <a href="http://www.radicalcartography.net/9thcensus/9th44.jpg">here</a>.</p></div></li><li id="note-4" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>Bhatt et al. (2015) – The effect of malaria control on Plasmodium falciparum in Africa between 2000 and 2015. Nature 526, 207–211 (08 October 2015) doi:10.1038/nature15535. Online <a href="http://www.nature.com/nature/journal/v526/n7572/abs/nature15535.html">here</a>.</p></div></li><li id="note-5" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
+This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="http://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</h6>
+Note of the original source: Proportion of population sleeping under an ITN derived from relationship with household ownership of at least one ITN analyzed by linear regression in 48 household surveys (2001-2011), y= 0.67x - 0.03.
 
-					<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup">
-						<form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						    <div id="mc_embed_signup_scroll">				
-								<div class="mc-field-group">
-									<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" aria-label="Email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabindex="-1" value=""></div>
-						    </div>
-						</form>
-					</div>
-					<!--End mc_embed_signup-->
-
-					<h6>Follow us</h6>
-			    	<div class="social">
-			    		<a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a>
-			    		<a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a>
-   				 		<a href="/feed/"><i class="fa fa-feed"></i></a>
-			    	</div>			
-			    	<hr>
-				</div>
-				<div class="column links">
-					<h6>Links</h6>
-					<a href="/data">Entries</a>
-					<a href="/blog">Blog</a>
-					<a href="/support">Donate</a>
-					<a href="/about">About</a>
-					<a href="/wp-admin">Login</a>
-					<hr>
-				</div>
-			</div>
-			<div class="supporters">
-				<p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p>
-				<hr>
-				<div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;">
-					<div style="max-width: 45%; margin-right: 10px;">
-						<a class="oms-logo" href="https://www.oxfordmartin.ox.ac.uk/"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo"></a>
-					</div>
-					<div style="max-width: 45%; margin-left: 10px;">
-						<a class="inet-logo" href="https://www.inet.ox.ac.uk/"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo"></a>
-					</div>
-				</div>
-			</div>
-		</div><!-- .wrap -->
-	</footer><!-- .site-footer -->
-
-	<script>
-		var iframes = Array.prototype.slice.apply(document.getElementsByTagName("iframe"))
-        for (var iframe of iframes) {
-			var dataSrc = iframe.getAttribute('data-src');
-			if (dataSrc && dataSrc.match(/\/grapher\//)) {
-				var figure = document.createElement('figure')
-				figure.setAttribute('data-grapher-src', dataSrc.replace(/.*(?=\/grapher\/)/, ''));
-				figure.setAttribute('style', iframe.getAttribute('style'));
-				iframe.parentNode.replaceChild(figure, iframe)
-			}
-		}
-	</script>
-
-	<script src="https://owid.netlify.com/grapher/embedCharts.js"></script>
-
-	<script type='text/javascript'>
-/* <![CDATA[ */
-var side_matter = {"is_responsive":"1","use_effects":"1","note_adjust":"3","html_class":"side-matter"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='/wp-content/plugins/side-matter/js/side-matter.js?ver=1.4'></script>
-<script type='text/javascript' src='/wp-content/themes/owid-theme/js/tooltip.js'></script>
-<script type='text/javascript' src='/wp-content/themes/owid-theme/js/scripts.js?ver=?v=1500669024'></script>
-<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
-<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6'></script>
-<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
-<script type="text/javascript">
-jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create/button"]').addClass('nolightbox'); });
-jQuery(document).on('ready post-load',easy_fancybox_handler);
-jQuery(document).on('ready',easy_fancybox_auto);</script>
-
-	<div id="wpadminbar" style="display: none;">
-	    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
-	        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
-	            <li id="wp-admin-bar-site-name" class="menupop">
-	                <a class="ab-item" aria-haspopup="true" href="/wp-admin/">Our World In Data</a>
-	            </li>
-	            		            <li id="wp-admin-bar-edit"><a class="ab-item" href="/wp-admin/post.php?post=3000&#038;action=edit">Edit Page</a></li>
-		        	        </ul>
-	    </div>
-	</div>
-
-	<script>
-		if (document.cookie.indexOf('wordpress') != -1 || document.cookie.indexOf('wp-settings') != -1) {
-			$('#wpadminbar').show();
-		}
-	</script>
-</body>
-</html>
+Note on the sources by the original source: ITN coverage model from the Institute for Health Metrics and Evaluation, which takes into account ITNs supplied by manufacturers, ITNs delivered by NMCPs and household survey results (1). Includes Djibouti, Somalia and Sudan which are in the WHO Eastern Mediterranean Region.</p></div></li><li id="note-6" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
+This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="http://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p></div></li><li id="note-7" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>Obinna Onwujekwe, Nkoli Uguru, Enyi Etiaba, Ifeanyi Chikezie, Benjamin Uzochukwu,and Alex Adjagba (2013) – The Economic Burden of Malaria on Households and the Health System in Enugu State Southeast Nigeria. In PLoS One. 2013; 8(11): e78362. Published online 2013 Nov 4. doi:  10.1371/journal.pone.0078362 PMCID: PMC3817251. Online here: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3817251/ </p></div></li><li id="note-8" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>Céline Azémar and Rodolphe Desbordes (2009) – Public Governance, Health and Foreign Direct Investment in Sub-Saharan Africa. In Journal of African Economies Volume 18 Issue 4Pp. 667-709. doi: 10.1093/jae/ejn028. Online here: <a href="http://jae.oxfordjournals.org/content/18/4/667">http://jae.oxfordjournals.org/content/18/4/667</a>.</p></div></li><li id="note-9" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>See <a href="http://mdgs.un.org/unsd/mi/wiki/6-6-Incidence-and-death-rates-associated-with-malaria.ashx">here</a>.</p></div></li><li id="note-10" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
+This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="http://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p></div></li><li id="note-11" style="margin-top: 0px;" class="side-matter side-matter-note"><div class="side-matter side-matter-text"><p>
+This is taken from World Health Organization (2012) – World Malaria Report 2012. Online <a href="http://www.who.int/malaria/publications/world_malaria_report_2012/en/index.html">here</a>.</p></div></li></ol></footer></article></div></main><div id="wpadminbar" style="display: none;"><div id="wp-toolbar" role="navigation" aria-label="Toolbar" class="quicklinks"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a aria-haspopup="true" href="/wp-admin/" class="ab-item">Our World In Data</a></li><li id="wp-admin-bar-edit"><a href="http://l:8080/wp-admin/post.php?post=3000&amp;action=edit" class="ab-item">Edit Page</a></li></ul></div></div><footer class="SiteFooter"><div class="wrap"><div class="clearfix"><div class="column"><p>Our World in Data is an online publication that presents the empirical evidence on the development of human living conditions at a global scale.</p><br /><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAGHElEQVR42u1aS08bVxT2ulIQexZFKlKgEhVplVbdJEjpD6A/IA1Vt1GL2qpSJKpSRFpFrYosKppGAhplVx7mZcAPsME2fmObhGyJxCLdIX7B6XxnOJM7w9ie8dhp5XClI43v49zxd8/9zrnnjo+IOnw+H11KS4QL/wiG12kzukGhnS2K7kZoJ7FDu6k4JTIJ2s+lKFNIU7aYpfxBjgqlPBXKBV2053wpRzmtDX3QN6mNwdiYpgO6Qjsh1o051rZWaWVzmZaDAVpaX6TFtQWWhdV5ml/5u21EBdkANxwL0fZelOLJGCXSewxWtphhAA8qRSo/LVHlWZkOjw7p6XNd8Fx5VuE29MlrgGMMxkJHPBVjndBtBTkQXDJABsBtCrLPDK5mebDAdD7N1grQAOrE/Qm69cktutJx5cJWQB3aJn6a4L4Hhwe8KLDoZDbJ1ry9t20CeXVrhZY3AjrIa4t1rfje6D3q6+u7MDfq0OYVjFboNwAGLajgAphCOc9W6Z/yU1dXl2PeQV//734eCwqBNacMkKMGXayH1mh1Uwe5lhVPPZyi3r5eQ//g4CCNjIyw4Fnq0Qd93YLQSv0GwOBJ0MIrcAtsiUOfDpnA6+zspOHhYRobG6NYLMaCZ9ShTe2Lscl0gooVHWRYMuhC5+Qt2ogEzVRhY8VzT2apo6ND1zc0RMfHx2QtqEMb+qCvGxBard8AGA4NfAlagOVawQV4APL09JRqlbm5ORPQWHWAjAXDwmEOOL5IPExb25s6VdhYsbygWBYWUC2i3zq3zOkUADv9JycnlEmnWfDsRb8BMLYvnBI4F1tbBXdgYMB2ZasVLALGqJYMneBkzPGKKhQr3tCseH3JRBPgPbGs50dHdQFGEUtzwpl2+p88fkzvvN1tknAo1JB+E8AJpoYMOzRwrgpuPat1AjI4GY6PqUKbK5bUrZi5OKxzsdCEACwOx83ioq84pnp/3qofFgtAb370MX1x53P67ptvDZD9k5Ou9ZsAZuvVLAzUIA4NW71UKlGjBSALXUAndCOEEyuO7upWrEYUKk2Iw7EWbGdZOCt1oIhjcvLnRf/Z2RnNTT9iMH/7+RdD1+zMDNdd63/PtX4TwODHoma9CMXk5cG5XovwFgQhHHaIcPHOedim0oQVYHhya7FGLdaCMU4BFv0AuKenh8Hs7e018bFY8T8vX7rSbwIYJ7SSxpOIZcV6VWpAtAD+wepBVPCtbZPn20mKWDF0g4tx4rtAE1rIxtGEwsOvE2CUYDBI/f39/H/sAH5x/KJxgOHcsIXlEKFuPUxoF+8CzEAgYNumjpctDd048YGKUuchWyQe4WgCPCzh2n9BEShwZnBy2UzGqFuYnzcA9kQRyCccHlWMF1etUJxVd3c3kzwAxzO2v7RJpAHApc2OJnCsLph4OGIK11SAazm5atbrxckJ30ImfhxneffqVf79cPoPb04OsS/yCvLi6japxclO+FrdAZgDMfF+br8uwGoY5RTgRsM0KQDVGqZ9efcuc7SnMO3/CLDbg4Zwo9eDRj6XZ2qAqPF3I/pdUwQcH0I3PANUlSKsbV4poq2OyrWcXC1H5sTJycrrTq7MczlxcioIajIGiwn90KseZhpN9rRS/4UwTY7ICK2s27xamAaQpd7ahgKLVsO0rBKmhWPVw7S2SlfKQUM9Jlvj2WYeNPbODxpIXcpBo1rCpy0S7qms/VHZTR6g2UfltgJYTfbM/jXT/GSPtjOgG8kezCUpSzXxbk32tBXAkNEfRo105e3PbptAdpP0gdXbpis13eP3x9/Im2Xjx8jXX3EYVW4g4Y429FET7tc/vM7UgDgbC/imXt2bKr7XgMBhACCrltzIlRHALWq6pv+c9vSS1Q4Z1j6tmMOrXp9dJYNc0i89wcmuLz2n5NIz7xlcK3h2z80A1+mcTQFY6EK9tgdo9a7tcXPB1/b4PkIb2yxaqJeubOYc1fIcTQcY8v4H1yiwGuAQDnFyyfjwpKJ8eFLhOvXDk+W1AN24eaNpPNZKaqg2V8stWBWA9eDXBxSNR5VPp84Fn05pdWhDn2YC+7osuB7HtxzgS/Eg2uK8dQlE60K0fwE5zuJ88NAmhAAAAABJRU5ErkJggg==" /></a><p><span>Our World in Data</span> by <a href="https://maxroser.com" property="cc:attributionName" rel="cc:attributionURL">Max Roser</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See <a href="https://ourworldindata.org/how-to-use-our-world-in-data/">how to use Our World in Data</a>.</p><hr /></div><div class="column subscribe"><h6>Sign up to stay informed</h6><div id="mc_embed_signup"><form action="https://ourworldindata.us8.list-manage.com/subscribe/post?u=18058af086319ba6afad752ec&amp;id=2e166c1fc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate class="validate"><div id="mc_embed_signup_scroll"><div class="mc-field-group"><input type="email" placeholder="Email" name="EMAIL" id="mce-EMAIL" aria-label="Email" class="required email" /><input type="submit" placeholder="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div><div id="mce-responses" class="clear"><div id="mce-error-response" style="display: none;" class="response"></div><div id="mce-success-response" style="display: none;" class="response"></div></div><div style="position: absolute; left: -5000px;"><input type="text" name="b_18058af086319ba6afad752ec_2e166c1fc1" tabIndex="-1" /></div></div></form></div><h6>Follow us</h6><div class="social"><a href="https://twitter.com/MaxCRoser"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/OurWorldinData"><i class="fa fa-facebook"></i></a><a href="/feed/"><i class="fa fa-feed"></i></a></div><hr /></div><div class="column links"><h6>Links</h6><a href="/#entries">Entries</a><a href="/blog">Blog</a><a href="/support">Donate</a><a href="/about">About</a><hr /></div></div></div><div class="supporters"><p><strong>We are supported by the <a href="/support">generous donations of readers</a>. Without these donations our work would not be possible. Thank you!</strong></p><hr /><div style="display: flex; align-items: center; justify-content: center; padding-left: 4%;"><div style="max-width: 45%; margin-right: 10px;"><a href="https://www.oxfordmartin.ox.ac.uk/" class="oms-logo"><img style="max-height: 180px;" src="/wp-content/themes/owid-theme/images/oxford-martin-school.png" alt="Oxford Martin School logo" /></a></div><div style="max-width: 45%; margin-left: 10px;"><a href="https://www.inet.ox.ac.uk/" class="inet-logo"><img src="/wp-content/themes/owid-theme/images/inet-oxford.png" alt="INET Oxford logo" /></a></div></div></div><script src="http://localhost:8095/js/owid.js"></script></footer></body></html>
