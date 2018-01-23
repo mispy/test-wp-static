@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-09-06 17:53:56+0000\n"
+"PO-Revision-Date: 2015-10-12 12:52:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Stable (latest release)\n"
 
 #: php/class-wp-cli.php:230
@@ -275,11 +275,6 @@ msgstr "Mettre à jour l'auteur invité"
 #: php/class-coauthors-guest-authors.php:91
 msgid "About the guest author"
 msgstr "À propos de l'auteur invité"
-
-#: php/class-coauthors-guest-authors.php:100
-msgctxt "guest author"
-msgid "Add New"
-msgstr "Ajouter"
 
 #: php/class-coauthors-guest-authors.php:156
 #: php/class-coauthors-guest-authors.php:162

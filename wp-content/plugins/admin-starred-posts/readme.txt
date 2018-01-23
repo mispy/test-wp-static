@@ -1,12 +1,12 @@
 === Admin Starred Posts ===
 Contributors: innocuo
-Tags: bookmarks, admin, stars, organize, posts, gmail, productivity
+Tags: bookmarks, admin, stars, highlight, posts, gmail, productivity
 Requires at least: 3.8
-Tested up to: 4.7
-Stable tag: 2.3.0
+Tested up to: 4.4
+Stable tag: 1.1.0
 License: GPLv2
 
-Mark posts, pages and custom posts in your Wordpress admin; pretty similar to the stars feature in Gmail.
+Mark posts, pages and custom posts in your Wordpress admin; pretty similar to how stars in Gmail work.
 
 == Description ==
 Admin Starred Posts lets you mark posts, pages and custom posts within the Wordpress admin with stars.
@@ -56,22 +56,6 @@ any changes.
 
 == Changelog ==
 
-= 2.3.0 =
-* Cleanup version numbers
-* Bug Fixes when looping through stars, specially on slow networks.
-* Bug fix: don't display "yellow-star" label when star is unset
-
-= 2.2.0 =
-* Bug Fixes when looping through stars, specially on slow networks.
-* Bug fix: don't display "yellow-star" label when star is unset
-
-= 2.1.0 =
-* Improved layout for mobile
-
-= 2.0.0 =
-* Improved code for faster switching between stars
-* Using a sprite for stars instead of multiple images
-
 = 1.1.0 =
 * Fixed issue when using quick edit to edit posts
 * Small updates to graphics
@@ -88,15 +72,6 @@ any changes.
 * Initial release
 
 == Upgrade Notice ==
-
-= 2.3.0 =
-Bugs Fixed! Fixes settings stars when clicking quickly on a slow network.
-
-= 2.2.0 =
-Bugs Fixed! Fixes settings stars when clicking quickly on a slow network.
-
-= 2.0.0 =
-switching between stars is way faster now!
 
 = 1.1.0 =
 fixed bug with quick edit and small updates to graphics

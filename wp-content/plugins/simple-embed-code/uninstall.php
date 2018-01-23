@@ -4,7 +4,7 @@
 *
 * Uninstall the plugin by removing any options from the database
 *
-* @package	simple-embed-code
+* @package	Code-Embed
 * @since	1.6
 */
 

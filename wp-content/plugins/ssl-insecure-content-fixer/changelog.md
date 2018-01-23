@@ -2,44 +2,6 @@
 
 ## Changelog
 
-### 2.5.0, 2017-11-23
-
-* changed: .htaccess rules file for non-WP test script now supports Apache v2.4; thanks, [Andreas Schneider](https://github.com/cryptomilk)!
-* added: option to only fix content resource links for the current website; thanks, [Luke Driscoll](https://github.com/ldriscoll)!
-* added: support for KeyCDN https detection via the X-Forwarded-Scheme header
-
-### 2.4.0, 2017-05-14
-
-* fixed: don't capture content on admin pages when mode is Capture or Capture All
-* added: filter `ssl_insecure_content_disable_capture` for disabling Capture mode on selected pages / scripts
-
-### 2.3.0, 2017-05-01
-
-* added: support for Windows Azure with ARR
-* added: filter `ssl_insecure_content_domain_exclusions` for domains that can be excluded from content cleaning (ignored for enqueued scripts)
-
-### 2.2.3, 2017-02-01
-
-* fixed: breaks Visual Composer back end editing due to a regular expression problem (now you have two!)
-* changed: Capture no longer captures AJAX requests; new mode Capture All introduced to capture AJAX requests too
-* added: prerequisites check, to ensure that plugin can run successfully
-
-### 2.2.2, 2017-01-21
-
-* fixed: make protocol header tests case-insensitive (thanks, [waja](https://github.com/waja)!)
-* added: support for Amazon CloudFront `CloudFront-Forwarded-Proto` header (thanks, [gmazovec](https://github.com/gmazovec)!)
-* added: clean up responsive image srcset links to external images (WordPress already handles local images)
-
-### 2.2.1, 2016-11-19
-
-* fixed: improve accessibility of admin pages
-* removed: update message display forced on multisite; just leave that for WordPress to handle (it does it so well)
-
-### 2.2.0, 2016-09-09
-
-* added: stop WooCommerce cached widgets from http showing on https
-* added: fix Gravity Forms confirmation content
-
 ### 2.1.6, 2016-02-02
 
 * fixed: malware warning with GOTMLS vulnerability scanner
@@ -73,7 +35,7 @@
 
 * **SECURITY FIX**: restrict access to AJAX test script; don't disclose server environment with system information
 * changed: always show server environment on test results
-* added: Bulgarian translation (thanks, [Ivan Arnaudov](https://www.bvionline.eu/)!)
+* added: Bulgarian translation (thanks, [Ivan Arnaudov](http://templateinspector.com/)!)
 * added: .htaccess file for AJAX SSL Tests, fixes conflict with some security plugins
 
 ### 2.0.0, 2015-07-26

@@ -32,9 +32,9 @@ defined( 'ABSPATH' ) || die( 'No direct script access allowed!' );
  *   GNU Lesser General Public License for more details.
  *
  *   You should have received a copy of the GNU Lesser General Public License
- *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @license https://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
+ * @license http://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
  * @package CSSTidy
  * @author Florian Schmitz (floele at gmail dot com) 2005-2007
  * @author Brett Zamir (brettz9 at yahoo dot com) 2007
@@ -136,7 +136,7 @@ class CSSTidy_optimise {
 			return;
 		}
 
-		if ( 2 === (int) $this->parser->get_cfg( 'merge_selectors' ) ) {
+		if ( 2 === $this->parser->get_cfg( 'merge_selectors' ) ) {
 			foreach ( $this->css as $medium => $value ) {
 				$this->merge_selectors( $this->css[ $medium ] );
 			}
@@ -399,8 +399,8 @@ class CSSTidy_optimise {
 		}
 
 		// Fix bad color names.
-		if ( isset( $replace_colors[ strtolower( $color ) ] ) ) {
-			$color = $replace_colors[ strtolower( $color ) ];
+		if ( isset( $replace_colors[strtolower( $color )] ) ) {
+			$color = $replace_colors[strtolower( $color )];
 		}
 
 		// #aabbcc -> #abc
@@ -489,7 +489,7 @@ class CSSTidy_optimise {
 				if ( '' === $number[1] && in_array( $this->property, $unit_values, true ) ) {
 					$number[1] = 'px';
 				}
-			} elseif ( $number[1] !== 's' && $number[1] !== 'ms' ) {
+			} else {
 				$number[1] = '';
 			}
 

@@ -1,8 +1,7 @@
 <?php
-// Copyright 2014-2016 RealFaviconGenerator
+// Copyright 2014 RealFaviconGenerator
 
-require_once plugin_dir_path( __FILE__ ) . '..' . DIRECTORY_SEPARATOR .
-	'public' . DIRECTORY_SEPARATOR . 'class-favicon-by-realfavicongenerator-common.php';
+require_once plugin_dir_path( __FILE__ ) . '../public/class-favicon-by-realfavicongenerator-common.php';
 
 class Favicon_By_RealFaviconGenerator extends Favicon_By_RealFaviconGenerator_Common {
 

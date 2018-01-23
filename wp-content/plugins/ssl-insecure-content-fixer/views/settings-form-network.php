@@ -1,17 +1,13 @@
 <?php
 // settings form for single site / blog
-
-if (!defined('ABSPATH')) {
-	exit;
-}
 ?>
 
 <div class="wrap">
 
-	<h1><?php
+	<h2><?php
 		/* translators: heading for multisite network admin settings */
 		esc_html_e('SSL Insecure Content Fixer multisite network settings', 'ssl-insecure-content-fixer');
-	?></h1>
+	?></h2>
 
 	<p><?php esc_html_e('These settings affect all sites on this network that have not been set individually.', 'ssl-insecure-content-fixer'); ?></p>
 
@@ -28,5 +24,4 @@ if (!defined('ABSPATH')) {
 
 		<?php submit_button(); ?>
 	</form>
-
 </div>

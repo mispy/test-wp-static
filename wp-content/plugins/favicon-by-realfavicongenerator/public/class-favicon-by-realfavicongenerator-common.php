@@ -1,5 +1,5 @@
 <?php
-// Copyright 2014-2016 RealFaviconGenerator
+// Copyright 2014 RealFaviconGenerator
 
 class Favicon_By_RealFaviconGenerator_Common {
 
@@ -275,30 +275,22 @@ class Favicon_By_RealFaviconGenerator_Common {
 	 */
 	public static function get_files_url() {
 		$up_dir = wp_upload_dir();
-		$baseUrl = $up_dir['baseurl'];
-		// Make sure to no duplicate the '/'
-		// This is especially important when the base URL is the root directory:
-		// When this happens, the generated URL would be
-		// "http//somesite.com//fbrfg/" and then "//fbrfg/" when the host name is
-		// stripped. But this path is wrong, as it looks like a "same protocol" URL.
-		$separator = (substr($baseUrl, -1) == '/') ? '' : '/';
-		return $baseUrl . $separator . Favicon_By_RealFaviconGenerator_Common::PLUGIN_PREFIX . '/';
+		return $up_dir['baseurl'] . '/' . Favicon_By_RealFaviconGenerator_Common::PLUGIN_PREFIX . '/';
 	}
 
 	public static function get_tmp_dir() {
-		return Favicon_By_RealFaviconGenerator_Common::get_files_dir() . 'tmp' . DIRECTORY_SEPARATOR;
+		return Favicon_By_RealFaviconGenerator_Common::get_files_dir() . 'tmp/';
 	}
 
 	public static function remove_directory($directory) {
 		foreach( scandir( $directory ) as $v ) {
-			if ( is_dir( $directory . DIRECTORY_SEPARATOR . $v ) ) {
+			if ( is_dir( $directory . '/' . $v ) ) {
 				if ( $v != '.' && $v != '..' ) {
-					Favicon_By_RealFaviconGenerator_Common::remove_directory(
-						$directory . DIRECTORY_SEPARATOR . $v );
+					Favicon_By_RealFaviconGenerator_Common::remove_directory( $directory . '/' . $v );
 				}
 			}
 			else {
-				unlink( $directory . DIRECTORY_SEPARATOR . $v );
+				unlink( $directory . '/' . $v );
 			}
 		}
 		rmdir( $directory );
@@ -313,10 +305,9 @@ class Favicon_By_RealFaviconGenerator_Common {
 		$domain = Favicon_By_RealFaviconGenerator_Common::PLUGIN_SLUG;
 		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
 
-		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . DIRECTORY_SEPARATOR . $domain . '-' . $locale . '.mo' );
-		load_plugin_textdomain( $domain, FALSE,
-			basename( plugin_dir_path( dirname( __FILE__ ) ) ) . DIRECTORY_SEPARATOR .
-				'languages' . DIRECTORY_SEPARATOR );
+		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
+		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
+
 	}
 
 	// See http://webcheatsheet.com/php/get_current_page_url.php
@@ -465,16 +456,6 @@ class Favicon_By_RealFaviconGenerator_Common {
 		}
 
 		return $json;
-	}
-
-	public function portable_filename( $filename ) {
-		return str_replace( '/', DIRECTORY_SEPARATOR, $filename );
-	}
-
-	public function portable_rename( $from, $to ) {
-		$from = $this->portable_filename( $from );
-		$to = $this->portable_filename( $to );
-		rename( $from, $to );
 	}
 
 }

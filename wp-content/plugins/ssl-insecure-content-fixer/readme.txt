@@ -2,14 +2,14 @@
 Contributors: webaware
 Plugin Name: SSL Insecure Content Fixer
 Plugin URI: https://ssl.webaware.net.au/
-Author URI: https://shop.webaware.com.au/
-Donate link: https://shop.webaware.com.au/donations/?donation_for=SSL+Insecure+Content+Fixer
+Author URI: http://webaware.com.au/
+Donate link: http://shop.webaware.com.au/donations/?donation_for=SSL+Insecure+Content+Fixer
 Tags: ssl, https, insecure content, partially encrypted, mixed content
-Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 2.5.0
+Requires at least: 3.2.1
+Tested up to: 4.4.1
+Stable tag: 2.1.6
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Clean up WordPress website HTTPS insecure content
 
@@ -27,17 +27,10 @@ See the [SSL Insecure Content Fixer website](https://ssl.webaware.net.au/) for m
 
 Many thanks to the generous efforts of our translators:
 
-* Bulgarian (bg_BG) -- [the Bulgarian translation team](https://translate.wordpress.org/locale/bg/default/wp-plugins/ssl-insecure-content-fixer)
-* Chinese simplified (zh_CN) -- [the Chinese translation team](https://translate.wordpress.org/locale/zh-cn/default/wp-plugins/ssl-insecure-content-fixer)
-* English (en_CA) -- [the English (Canadian) translation team](https://translate.wordpress.org/locale/en-ca/default/wp-plugins/ssl-insecure-content-fixer)
-* English (en_GB) -- [the English (British) translation team](https://translate.wordpress.org/locale/en-gb/default/wp-plugins/ssl-insecure-content-fixer)
-* Dutch (nl_NL) -- [the Dutch translation team](https://translate.wordpress.org/locale/nl/default/wp-plugins/ssl-insecure-content-fixer)
-* German (de_DE) -- [the German translation team](https://translate.wordpress.org/locale/de/default/wp-plugins/ssl-insecure-content-fixer)
-* French (fr_FR) -- [the French translation team](https://translate.wordpress.org/locale/fr/default/wp-plugins/ssl-insecure-content-fixer)
-* Italian (it_IT) -- [the Italian translation team](https://translate.wordpress.org/locale/it/default/wp-plugins/ssl-insecure-content-fixer)
-* Japanese (ja) -- [the Japanese translation team](https://translate.wordpress.org/locale/ja/default/wp-plugins/ssl-insecure-content-fixer)
-* Russian (ru_RU) -- [the Russian translation team](https://translate.wordpress.org/locale/ru/default/wp-plugins/ssl-insecure-content-fixer)
-* Spanish (es_ES) -- [the Spanish translation team](https://translate.wordpress.org/locale/es/default/wp-plugins/ssl-insecure-content-fixer)
+* Bulgarian (bg_BG) -- [Ivan Arnaudov](http://templateinspector.com/)
+* Chinese simplified (zh_CN) -- [漠伦](https://molun.net/)
+* English (en_CA) -- [Christoph Herr](http://www.christophherr.com/)
+* French (fr_FR) -- Houzepha Taheraly
 
 If you'd like to help out by translating this plugin, please [sign up for an account and dig in](https://translate.wordpress.org/projects/wp-plugins/ssl-insecure-content-fixer).
 
@@ -46,7 +39,7 @@ If you'd like to help out by translating this plugin, please [sign up for an acc
 1. Either install automatically through the WordPress admin, or download the .zip file, unzip to a folder, and upload the folder to your /wp-content/plugins/ directory. Read [Installing Plugins](https://codex.wordpress.org/Managing_Plugins#Installing_Plugins) in the WordPress Codex for details.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-If your browser still reports insecure/mixed content, have a read of the [Cleaning Up page](https://ssl.webaware.net.au/cleaning-up-content/).
+If your browser still reports insecure/mixed content, have a read of the [Cleaning Up page](https://ssl.webaware.net.au/cleaning-up-content/). If that doesn't help, tell me the URL of the problem page in [the support forum](https://wordpress.org/support/plugin/ssl-insecure-content-fixer).
 
 == Frequently Asked Questions ==
 
@@ -65,13 +58,23 @@ NB: after you open your browser's console, refresh your page so that it tries to
 
 = I get "insecure content" warnings from some of my content =
 
-You are probably loading content (such as images) with a URL that starts with "http:". Take that bit away, but leave the slashes, e.g. `//www.example.com/image.png`; your browser will load the content, using HTTPS when your page uses it. Better still, replace "http:" with "https:" so that it always uses https to load images, e.g. `https://www.example.com/image.png`.
+You are probably loading content (such as images) with a URL that starts with "http:". Take that bit away, but leave the slashes, e.g. `//www.example.com/image.png`; your browser will load the content, using HTTPS when your page uses it.
 
 If your page can be used outside a web browser, e.g. in emails or other non-web documents, then you should always use a protocol and it should probably be "https:" (since you have an SSL certificate). See [Cleaning up content](https://ssl.webaware.net.au/cleaning-up-content/) for more details.
 
+NB: see below for responsive images bug!
+
+= Responsive images don't work with plugin enabled =
+
+WordPress 4.4 introduced [responsive images](https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/). It works well when images are linked with a protocol ("http:" or "https:") and the page is loaded on the same protocol. Sadly, there's a bug in WordPress 4.4 that breaks responsive images when the page is loaded on a different protocol, or when images a linked with no protocol (just "//").
+
+Because this plugin changes image URLs in PHP calls, the responsive images can have a different protocol scheme to the image in the content. Even with the fix level set to Content, responsive images won't work if the page was saved with "http:" for image URLs, until this WordPress bug is fixed.
+
+Until the bug is fixed, the best work-around is to make sure that image URLs have a protocol that matches how the page will be loaded. If the page will always be loaded with HTTPS, then the image URL should start with "https:". If the page can be loaded on both HTTP and HTTPS, then responsive images won't work on at least one of those until the bug is fixed.
+
 = My website is behind a load balancer or reverse proxy =
 
-If your website is behind a load balancer or other reverse proxy, and WordPress doesn't know when HTTPS is being used, you will need to select the appropriate [HTTPS detection settings](https://ssl.webaware.net.au/https-detection/). See my blog post, [WordPress is_ssl() doesn’t work behind some load balancers](https://snippets.webaware.com.au/snippets/wordpress-is_ssl-doesnt-work-behind-some-load-balancers/), for some details.
+If your website is behind a load balancer or other reverse proxy, and WordPress doesn't know when HTTPS is being used, you will need to select the appropriate [HTTPS detection settings](https://ssl.webaware.net.au/https-detection/). See my blog post, [WordPress is_ssl() doesn’t work behind some load balancers](http://snippets.webaware.com.au/snippets/wordpress-is_ssl-doesnt-work-behind-some-load-balancers/), for some details.
 
 = I get warnings about basic WordPress scripts like jquery.js =
 
@@ -98,16 +101,19 @@ Great! Tell me which plugin is yours and how to check for your new version, and 
 
 == Upgrade Notice ==
 
-= 2.5.0 =
+= 2.1.6 =
 
-support for https detection on KeyCDN; option to only fix content resource links for the current website; .htaccess rules file for non-WP test script now supports Apache v2.4
+fix malware warning with GOTMLS vulnerability scanner
 
 == Changelog ==
 
 The full changelog can be found [on GitHub](https://github.com/webaware/ssl-insecure-content-fixer/blob/master/changelog.md). Recent entries:
 
-### 2.5.0, 2017-11-23
+### 2.1.6, 2016-02-02
 
-* changed: .htaccess rules file for non-WP test script now supports Apache v2.4; thanks, [Andreas Schneider](https://github.com/cryptomilk)!
-* added: option to only fix content resource links for the current website; thanks, [Luke Driscoll](https://github.com/ldriscoll)!
-* added: support for KeyCDN https detection via the X-Forwarded-Scheme header
+* fixed: malware warning with GOTMLS vulnerability scanner
+
+### 2.1.5, 2015-12-12
+
+* changed: remove some more clutter from server environment report in tests
+* removed: translations no longer in zip file; now delivered automatically as language packs when required

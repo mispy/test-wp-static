@@ -292,7 +292,7 @@ class TablePress_Frontend_Controller extends TablePress_Controller {
 					$parameters['orderClasses'] = '"orderClasses":false';
 				}
 				// Alternating row colors is default, so remove them if not wanted with [].
-				$parameters['stripeClasses'] = '"stripeClasses":' . ( ( $js_options['alternating_row_colors'] ) ? '["even","odd"]' : '[]' );
+				$parameters['stripeClasses'] = '"stripeClasses":' . ( ( $js_options['alternating_row_colors'] ) ? "['even','odd']" : '[]' );
 				// The following options are activated by default, so we only need to "false" them if we don't want them, but don't need to "true" them if we do.
 				if ( ! $js_options['datatables_sort'] ) {
 					$parameters['ordering'] = '"ordering":false';
@@ -737,14 +737,6 @@ JS;
 						} else {
 							$output = TablePress::format_datetime( $table['last_modified'], 'mysql', '<br />' );
 						}
-						break;
-					case 'date':
-						$modified_timestamp = strtotime( $table['last_modified'] );
-						$output = date_i18n( get_option( 'date_format' ), $modified_timestamp );
-						break;
-					case 'time':
-						$modified_timestamp = strtotime( $table['last_modified'] );
-						$output = date_i18n( get_option( 'time_format' ), $modified_timestamp );
 						break;
 					case 'mysql':
 					default:

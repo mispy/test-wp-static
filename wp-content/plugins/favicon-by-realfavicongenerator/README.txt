@@ -1,10 +1,10 @@
 ﻿=== Favicon by RealFaviconGenerator ===
 Contributors: phbernard
+Tags: favicon, apple-touch-icon, realfavicongenerator
 Donate link: http://realfavicongenerator.net/donate
-Tags: favicon, favicon icon, favicon image, favicon code, favicon change, favicon manager, short icon, addressbar logo, apple touch icon, icon, iphone, admin, wordpress, realfavicongenerator, real favicon generator
 Requires at least: 3.5
-Tested up to: 4.8.1
-Stable tag: 1.3.11
+Tested up to: 4.5
+Stable tag: 1.3.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,9 +40,6 @@ We take compatibility very seriously. See http://realfavicongenerator.net/favico
 * Dutch (`nl_NL`) by [Axel Vanderhaeghen](https://eco13.eu)
 * Danish (`da_DK`) by [Alexander Leo-Hansen](http://alexanderleohansen.dk/)
 * Czech (`cs_CZ`) by an anonymous translator
-* Polish (`pl_PL`) by [Maciej Gryniuk](http://maciej-gryniuk.tk/)
-* Russian (`ru_RU`) by Natasha Diatko, [UStarCash](https://www.ustarcash.com)
-* Indonesian (`id_ID`) by [Jordan Silaen](https://www.chameleonjohn.com/)
 
 == Installation ==
 
@@ -77,39 +74,6 @@ This screen presents you a preview of the favicon you various platforms, so you 
 5. You can also trigger RealFaviconGenerator's favicon checker, to make sure your favicon is correctly setup.
 
 == Changelog ==
-
-= 1.3.11 =
-
-- id/ID translation added, thanks to Jordan Silaen
-- Plugin was tested up to WordPress 4.8.1
-
-= 1.3.10 =
-
-- Always access RealFaviconGenerator via HTTPS
-- Clarification in local path separators for Windows
-- Plugin was tested up to WordPress 4.7.1
-- Notice to ask administrator to not deactivate the plugin
-
-= 1.3.9 =
-
-- Plugin was tested up to WordPress 4.7
-
-= 1.3.8 =
-
-- Plugin was tested up to WordPress 4.6
-
-= 1.3.7 =
-
-- Fix: Plugin keywords rephrased (some were not taken into account).
-
-= 1.3.6 =
-
-- Fix: the icons path was sometimes wrong when the upload directory was the root directory
-
-= 1.3.5 =
-
-- pl/PL translation added, thanks to Maciej Gryniuk
-- ru/RU translation added, thanks to Natasha Diatko
 
 = 1.3.4 =
 

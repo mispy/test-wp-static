@@ -1,41 +1,57 @@
 <?php
 
-abstract class Red_Match {
-	public function __construct( $values = '' ) {
+class Red_Match {
+	var $url;
+
+	function __construct( $values = '' ) {
 		if ( $values ) {
-			$this->load( $values );
+			$this->url = $values;
+
+			$obj = maybe_unserialize( $values );
+
+			if ( is_array( $obj ) ) {
+				foreach ( $obj AS $key => $value ) {
+					$this->$key = $value;
+				}
+			}
 		}
 	}
 
-	abstract public function save( array $details, $no_target_url = false );
-	abstract public function name();
-	abstract public function get_target( $url, $matched_url, $regex );
-	abstract public function get_data();
-	abstract public function load( $values );
-
-	public function sanitize_url( $url ) {
-		// No new lines
-		$url = preg_replace( "/[\r\n\t].*?$/s", '', $url );
-
-		// Clean control codes
-		$url = preg_replace( '/[^\PC\s]/u', '', $url );
-
-		return $url;
+	function data( $details ) {
+		$data = $this->save( $details );
+		if ( count( $data ) == 1 && !is_array( current( $data ) ) )
+			$data = current( $data );
+		else
+			$data = serialize( $data );
+		return $data;
 	}
 
-	protected function get_target_regex_url( $matched_url, $target, $url ) {
-		return preg_replace( '@'.str_replace( '@', '\\@', $matched_url ).'@', $target, $url );
+	function save( $details ) {
+		return array();
+	}
+
+	function name() {
+		return '';
+	}
+
+	function show() {
+	}
+
+	function wants_it() {
+		return true;
+	}
+
+	function get_target( $url, $matched_url, $regex ) {
+		return false;
 	}
 
 	static function create( $name, $data = '' ) {
 		$avail = self::available();
-		if ( isset( $avail[ strtolower( $name ) ] ) ) {
+		if ( isset( $avail[strtolower( $name )] ) ) {
 			$classname = $name.'_match';
 
-			if ( ! class_exists( strtolower( $classname ) ) ) {
-				include( dirname( __FILE__ ).'/../matches/'.$avail[ strtolower( $name ) ] );
-			}
-
+			if ( !class_exists( strtolower( $classname ) ) )
+				include( dirname( __FILE__ ).'/../matches/'.$avail[strtolower( $name )] );
 			return new $classname( $data );
 		}
 
@@ -46,20 +62,24 @@ abstract class Red_Match {
 		$data = array();
 
 		$avail = self::available();
-		foreach ( $avail as $name => $file ) {
+		foreach ( $avail AS $name => $file ) {
 			$obj = self::create( $name );
-			$data[ $name ] = $obj->name();
+			$data[$name] = $obj->name();
 		}
 
 		return $data;
 	}
 
 	static function available() {
-	 	return array(
+	 	return array (
 			'url'      => 'url.php',
 			'referrer' => 'referrer.php',
 			'agent'    => 'user-agent.php',
 			'login'    => 'login.php',
 		 );
+	}
+
+	function match_name() {
+		return '';
 	}
 }

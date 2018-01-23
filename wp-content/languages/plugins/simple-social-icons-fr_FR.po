@@ -1,0 +1,162 @@
+# Translation of Stable (latest release) in French (France)
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-03-24 06:20:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/1.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: simple-social-icons.php:291
+msgid "Align Right"
+msgstr "Aligner à droite"
+
+#: simple-social-icons.php:297
+msgid "Icon Font Color:"
+msgstr "Couleur de l&rsquo;icône&nbsp;:"
+
+#: simple-social-icons.php:299
+msgid "Icon Font Hover Color:"
+msgstr "Couleur de l&rsquo;icône au survol&nbsp;:"
+
+#: simple-social-icons.php:301
+msgid "Background Color:"
+msgstr "Couleur de Fond&nbsp;:"
+
+#: simple-social-icons.php:303
+msgid "Background Hover Color:"
+msgstr "Couleur de fond au survol&nbsp;:"
+
+#: simple-social-icons.php:305
+msgid "Border Color:"
+msgstr "Couleur de la bordure&nbsp;:"
+
+#: simple-social-icons.php:307
+msgid "Border Hover Color:"
+msgstr "Couleur de la bordure au survol&nbsp;:"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/simple-social-icons/"
+msgstr "http://wordpress.org/plugins/simple-social-icons/"
+
+#. Description of the plugin/theme
+msgid "A simple, CSS and icon font driven social icons widget."
+msgstr "Un widget Réseaux Sociaux simple, basé sur des styles et une police d&rsquo;icônes."
+
+#. Author of the plugin/theme
+msgid "Nathan Rice"
+msgstr "Nathan Rice"
+
+#. Author URI of the plugin/theme
+msgid "http://www.nathanrice.net/"
+msgstr "http://www.nathanrice.net/"
+
+#: simple-social-icons.php:289
+msgid "Align Left"
+msgstr "Aligner à gauche"
+
+#: simple-social-icons.php:290
+msgid "Align Center"
+msgstr "Centrer"
+
+#: simple-social-icons.php:278
+msgid "Open links in new window?"
+msgstr "Ouvrir les liens dans une nouvelle fenêtre&nbsp;?"
+
+#: simple-social-icons.php:280
+msgid "Icon Size"
+msgstr "Taille de l'icone"
+
+#: simple-social-icons.php:282
+msgid "Icon Border Radius:"
+msgstr "Arrondi du bord de l&rsquo;icône&nbsp;:"
+
+#: simple-social-icons.php:284
+msgid "Border Width:"
+msgstr "Largeur de la bordure&nbsp;:"
+
+#: simple-social-icons.php:287
+msgid "Alignment"
+msgstr "Alignement"
+
+#: simple-social-icons.php:124
+msgid "Bloglovin URI"
+msgstr "Lien Bloglovin"
+
+#: simple-social-icons.php:128
+msgid "Dribbble URI"
+msgstr "URL Dribbble"
+
+#: simple-social-icons.php:132
+msgid "Email URI"
+msgstr "URL Email"
+
+#: simple-social-icons.php:136
+msgid "Facebook URI"
+msgstr "URL Facebook"
+
+#: simple-social-icons.php:140
+msgid "Flickr URI"
+msgstr "URL Flickr"
+
+#: simple-social-icons.php:144
+msgid "GitHub URI"
+msgstr "URL GitHub"
+
+#: simple-social-icons.php:148
+msgid "Google+ URI"
+msgstr "URL Google+"
+
+#: simple-social-icons.php:152
+msgid "Instagram URI"
+msgstr "URL Instagram"
+
+#: simple-social-icons.php:156
+msgid "Linkedin URI"
+msgstr "URL Linkedin"
+
+#: simple-social-icons.php:160
+msgid "Pinterest URI"
+msgstr "URL Pinterest"
+
+#: simple-social-icons.php:164
+msgid "RSS URI"
+msgstr "URL RSS"
+
+#: simple-social-icons.php:168
+msgid "StumbleUpon URI"
+msgstr "URL StumbleUpon"
+
+#: simple-social-icons.php:172
+msgid "Tumblr URI"
+msgstr "URL Tumblr"
+
+#: simple-social-icons.php:176
+msgid "Twitter URI"
+msgstr "URL Twitter"
+
+#: simple-social-icons.php:180
+msgid "Vimeo URI"
+msgstr "URL Vimeo"
+
+#: simple-social-icons.php:184
+msgid "YouTube URI"
+msgstr "URL YouTube"
+
+#: simple-social-icons.php:191
+msgid "Displays select social icons."
+msgstr "Affiche une sélection d&rsquo;icônes de réseaux sociaux."
+
+#. #-#-#-#-#  tmp-simple-social-icons.pot (Simple Social Icons 1.0.13) 
+#. #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: simple-social-icons.php:198
+msgid "Simple Social Icons"
+msgstr "Simple Social Icons"
+
+#: simple-social-icons.php:276
+msgid "Title:"
+msgstr "Titre&nbsp;:"

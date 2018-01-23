@@ -294,7 +294,7 @@ class EvalMath {
 					// Pop stuff off the stack into the output.
 					$output[] = $stack->pop();
 				}
-				// Many thanks: https://en.wikipedia.org/wiki/Reverse_Polish_notation
+				// Many thanks: http://en.wikipedia.org/wiki/Reverse_Polish_notation#The_algorithm_in_detail
 				$stack->push( $op ); // finally put OUR operator onto the stack
 				$index++;
 				$expecting_operator = false;

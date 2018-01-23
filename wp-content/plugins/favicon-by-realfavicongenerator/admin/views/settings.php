@@ -1,5 +1,5 @@
 <?php
-// Copyright 2014-2016 RealFaviconGenerator
+// Copyright 2014 RealFaviconGenerator
 ?>
 
 <div class="wrap">

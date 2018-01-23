@@ -1,9 +1,5 @@
 <?php
 
-if (!defined('ABSPATH')) {
-	exit;
-}
-
 /**
 * manage admin
 */
@@ -16,8 +12,6 @@ class SSLInsecureContentFixerAdmin {
 	*/
 	public function __construct() {
 		add_action('admin_init', array($this, 'adminInit'));
-		add_action('admin_notices', array($this, 'checkPrerequisites'));
-		add_action('network_admin_notices', array($this, 'checkPrerequisites'));
 		add_action('load-tools_page_ssl-insecure-content-fixer-tests', array($this, 'setNonceCookie'));
 		add_action('load-settings_page_ssl-insecure-content-fixer', array($this, 'setNonceCookie'));
 		add_action('admin_print_styles-settings_page_ssl-insecure-content-fixer', array($this, 'printStylesSettings'));
@@ -35,6 +29,11 @@ class SSLInsecureContentFixerAdmin {
 	public function adminInit() {
 		add_settings_section(SSLFIX_PLUGIN_OPTIONS, false, false, SSLFIX_PLUGIN_OPTIONS);
 		register_setting(SSLFIX_PLUGIN_OPTIONS, SSLFIX_PLUGIN_OPTIONS, array($this, 'settingsValidate'));
+
+		// in_plugin_update_message isn't supported on multisite != blog-1, so just add another row
+		if (current_user_can('update_plugins')) {
+			add_action('after_plugin_row_' . SSLFIX_PLUGIN_NAME, array($this, 'upgradeMessage'), 20, 2);
+		}
 	}
 
 	/**
@@ -56,69 +55,6 @@ class SSLInsecureContentFixerAdmin {
 	}
 
 	/**
-	* check for required PHP extensions, tell admin if any are missing
-	*/
-	public function checkPrerequisites() {
-		// only bother admins / plugin installers / option setters with this stuff
-		if (!current_user_can('activate_plugins') && !current_user_can('manage_options')) {
-			return;
-		}
-
-		// only on specific pages
-		if (!self::canShowNotices()) {
-			return;
-		}
-
-		// need these PHP extensions
-		$prereqs = array('json', 'pcre');
-		$missing = array();
-		foreach ($prereqs as $ext) {
-			if (!extension_loaded($ext)) {
-				$missing[] = $ext;
-			}
-		}
-		if (!empty($missing)) {
-			include SSLFIX_PLUGIN_ROOT . 'views/requires-extensions.php';
-		}
-
-		// and PCRE needs to be v8+ or we break! e.g. \K not present until v7.2 and some sites still use v6.6!
-		$pcre_min = '8';
-		if (defined('PCRE_VERSION') && version_compare(PCRE_VERSION, $pcre_min, '<')) {
-			include SSLFIX_PLUGIN_ROOT . 'views/requires-pcre.php';
-		}
-	}
-
-	/**
-	* check admin page to see if we should show notices or not
-	*/
-	protected static function canShowNotices() {
-		global $pagenow;
-
-		switch ($pagenow) {
-
-			case 'plugins.php':
-				return true;
-
-			case 'tools.php':
-				if (!empty($_GET['page']) && wp_unslash($_GET['page']) === 'ssl-insecure-content-fixer-tests') {
-					return true;
-				}
-				return false;
-
-			case 'options-general.php':
-			case 'settings.php':
-				if (!empty($_GET['page']) && wp_unslash($_GET['page']) === 'ssl-insecure-content-fixer') {
-					return true;
-				}
-				return false;
-
-			default:
-				return false;
-
-		}
-	}
-
-	/**
 	* add plugin details links on plugins page
 	*/
 	public function pluginDetailsLinks($links, $file) {
@@ -134,11 +70,11 @@ class SSLInsecureContentFixerAdmin {
 				$links[] = sprintf('<a href="%s">%s</a>', esc_url($url), _x('SSL Tests', 'menu link', 'ssl-insecure-content-fixer'));
 			}
 
-			$links[] = sprintf('<a href="https://ssl.webaware.net.au/" target="_blank" rel="noopener">%s</a>', _x('Instructions', 'plugin details links', 'ssl-insecure-content-fixer'));
-			$links[] = sprintf('<a href="https://wordpress.org/support/plugin/ssl-insecure-content-fixer" target="_blank" rel="noopener">%s</a>', _x('Get help', 'plugin details links', 'ssl-insecure-content-fixer'));
-			$links[] = sprintf('<a href="https://wordpress.org/plugins/ssl-insecure-content-fixer/" target="_blank" rel="noopener">%s</a>', _x('Rating', 'plugin details links', 'ssl-insecure-content-fixer'));
-			$links[] = sprintf('<a href="https://translate.wordpress.org/projects/wp-plugins/ssl-insecure-content-fixer" target="_blank" rel="noopener">%s</a>', _x('Translate', 'plugin details links', 'ssl-insecure-content-fixer'));
-			$links[] = sprintf('<a href="https://shop.webaware.com.au/donations/?donation_for=SSL+Insecure+Content+Fixer" target="_blank" rel="noopener">%s</a>', _x('Donate', 'plugin details links', 'ssl-insecure-content-fixer'));
+			$links[] = sprintf('<a href="https://ssl.webaware.net.au/" target="_blank">%s</a>', _x('Instructions', 'plugin details links', 'ssl-insecure-content-fixer'));
+			$links[] = sprintf('<a href="https://wordpress.org/support/plugin/ssl-insecure-content-fixer" target="_blank">%s</a>', _x('Get help', 'plugin details links', 'ssl-insecure-content-fixer'));
+			$links[] = sprintf('<a href="https://wordpress.org/plugins/ssl-insecure-content-fixer/" target="_blank">%s</a>', _x('Rating', 'plugin details links', 'ssl-insecure-content-fixer'));
+			$links[] = sprintf('<a href="https://translate.wordpress.org/projects/wp-plugins/ssl-insecure-content-fixer" target="_blank">%s</a>', _x('Translate', 'plugin details links', 'ssl-insecure-content-fixer'));
+			$links[] = sprintf('<a href="http://shop.webaware.com.au/donations/?donation_for=SSL+Insecure+Content+Fixer" target="_blank">%s</a>', _x('Donate', 'plugin details links', 'ssl-insecure-content-fixer'));
 		}
 
 		return $links;
@@ -182,6 +118,27 @@ class SSLInsecureContentFixerAdmin {
 	}
 
 	/**
+	* show upgrade messages on Plugins admin page
+	* @param string $file
+	* @param object $current_meta
+	*/
+	public function upgradeMessage($file, $plugin_data) {
+		$current = get_site_transient('update_plugins');
+
+		if (isset($current->response[$file])) {
+			$r = $current->response[$file];
+
+			if (!empty($r->upgrade_notice)) {
+				$wp_list_table = _get_list_table('WP_Plugins_List_Table');
+				$colspan = $wp_list_table->get_column_count();
+				$plugin_name = wp_kses($plugin_data['Name'], 'strip');
+
+				require SSLFIX_PLUGIN_ROOT . 'views/admin-upgrade-message.php';
+			}
+		}
+	}
+
+	/**
 	* settings admin
 	*/
 	public function settingsPage() {
@@ -209,8 +166,8 @@ class SSLInsecureContentFixerAdmin {
 			require SSLFIX_PLUGIN_ROOT . 'views/settings-form.php';
 		}
 
-		$min = SCRIPT_DEBUG ? '' : '.min';
-		$ver = SCRIPT_DEBUG ? time() : SSLFIX_PLUGIN_VERSION;
+		$min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
+		$ver = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? time() : SSLFIX_PLUGIN_VERSION;
 
 		$ajax_url = $this->getNoWpAJAX();
 
@@ -234,14 +191,13 @@ class SSLInsecureContentFixerAdmin {
 
 		$output['fix_level']		= empty($input['fix_level']) ? '' : $input['fix_level'];
 		$output['proxy_fix']		= empty($input['proxy_fix']) ? '' : $input['proxy_fix'];
-		$output['site_only']		= empty($input['site_only']) ? 0  : 1;
 
-		if (!in_array($output['fix_level'], array('off', 'simple', 'content', 'widgets', 'capture', 'capture_all'))) {
+		if (!in_array($output['fix_level'], array('off', 'simple', 'content', 'widgets', 'capture'))) {
 			add_settings_error(SSLFIX_PLUGIN_OPTIONS, 'sslfix-fix_level', _x('Fix level is invalid', 'settings error', 'ssl-insecure-content-fixer'));
 			$this->has_settings_errors = true;
 		}
 
-		if (!in_array($output['proxy_fix'], array('normal', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CLOUDFRONT_FORWARDED_PROTO', 'HTTP_X_FORWARDED_SSL', 'HTTP_CF_VISITOR', 'HTTP_X_ARR_SSL', 'HTTP_X_FORWARDED_SCHEME', 'detect_fail'))) {
+		if (!in_array($output['proxy_fix'], array('normal', 'HTTP_X_FORWARDED_PROTO', 'HTTP_X_FORWARDED_SSL', 'HTTP_CF_VISITOR', 'detect_fail'))) {
 			add_settings_error(SSLFIX_PLUGIN_OPTIONS, 'sslfix-proxy_fix', _x('HTTPS detection setting is invalid', 'settings error', 'ssl-insecure-content-fixer'));
 			$this->has_settings_errors = true;
 		}
@@ -274,8 +230,8 @@ class SSLInsecureContentFixerAdmin {
 	public function testPage() {
 		require SSLFIX_PLUGIN_ROOT . 'views/ssl-tests.php';
 
-		$min = SCRIPT_DEBUG ? '' : '.min';
-		$ver = SCRIPT_DEBUG ? time() : SSLFIX_PLUGIN_VERSION;
+		$min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
+		$ver = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? time() : SSLFIX_PLUGIN_VERSION;
 
 		$ajax_url = $this->getNoWpAJAX();
 

@@ -102,7 +102,7 @@ abstract class TablePress_View {
 			'id' => 'tablepress-help', // This should be unique for the screen.
 			'title' => __( 'TablePress Help', 'tablepress' ),
 			'content' => '<p>' . $this->help_tab_content() . '</p>'
-						. '<p>' . sprintf( __( 'More information about TablePress can be found on the <a href="%1$s">plugin&#8217;s website</a> or on its page in the <a href="%2$s">WordPress Plugin Directory</a>.', 'tablepress' ), 'https://tablepress.org/', 'https://wordpress.org/plugins/tablepress/' ) . ' '
+						. '<p>' . sprintf( __( 'More information about TablePress can be found on the <a href="%1$s">plugin&#8217;s website</a> or on its page in the <a href="%s">WordPress Plugin Directory</a>.', 'tablepress' ), 'https://tablepress.org/', 'https://wordpress.org/plugins/tablepress/' ) . ' '
 						. sprintf( __( 'For technical information, please see the <a href="%s">documentation</a>.', 'tablepress' ), 'https://tablepress.org/documentation/' ) . ' '
 						. sprintf( __( '<a href="%1$s">Support</a> is provided through the <a href="%2$s">WordPress Support Forums</a>.', 'tablepress' ), 'https://tablepress.org/support/', 'https://wordpress.org/tags/tablepress' ) . ' '
 						. sprintf( __( 'Before asking for support, please carefully read the <a href="%s">Frequently Asked Questions</a>, where you will find answers to the most common questions, and search through the forums.', 'tablepress' ), 'https://tablepress.org/faq/' ) . '<br />'
@@ -377,10 +377,15 @@ abstract class TablePress_View {
 	 */
 	protected function print_nav_tab_menu() {
 		?>
-		<div id="tablepress-nav" class="nav-tab-wrapper">
-			<h1 class="wp-heading-inline"><?php _e( 'TablePress', 'tablepress' ); ?></h1>
+		<h1 id="tablepress-nav" class="nav-tab-wrapper">
 			<?php
+			echo '<span class="plugin-name">' . __( 'TablePress', 'tablepress' ) . '</span><span class="separator"></span>';
 			foreach ( $this->data['view_actions'] as $action => $entry ) {
+				// Special case: Add a separator before the group that starts with "Plugin Options", for some spacing.
+				if ( 'options' === $action ) {
+					echo '<span class="separator"></span><span class="separator"></span>';
+				}
+
 				if ( '' === $entry['nav_tab_title'] ) {
 					continue;
 				}
@@ -390,11 +395,10 @@ abstract class TablePress_View {
 
 				$url = esc_url( TablePress::url( array( 'action' => $action ) ) );
 				$active = ( $action === $this->action ) ? ' nav-tab-active' : '';
-				$separator = ( 'options' === $action ) ? ' nav-tab-separator' : ''; // Make the "Plugin Options" entry a separator, for some spacing.
-				echo "<a class=\"nav-tab{$active}{$separator}\" href=\"{$url}\">{$entry['nav_tab_title']}</a>";
+				echo "<a class=\"nav-tab{$active}\" href=\"{$url}\">{$entry['nav_tab_title']}</a>";
 			}
 			?>
-		</div><hr class="wp-header-end" />
+		</h1>
 		<?php
 	}
 

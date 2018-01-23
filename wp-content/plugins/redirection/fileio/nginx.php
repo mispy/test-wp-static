@@ -1,26 +1,31 @@
 <?php
 
 class Red_Nginx_File extends Red_FileIO {
-	public function force_download() {
-		parent::force_download();
-
+	function export( array $items ) {
 		$filename = 'redirection-'.date_i18n( get_option( 'date_format' ) ).'.nginx';
 
 		header( 'Content-Type: application/octet-stream' );
+		header( 'Cache-Control: no-cache, must-revalidate' );
+		header( 'Expires: Mon, 26 Jul 1997 05:00:00 GMT' );
 		header( 'Content-Disposition: attachment; filename="'.$filename.'"' );
+
+		echo $this->get( $items );
 	}
 
-	public function get_data( array $items, array $groups ) {
+	public function get( array $items ) {
+		if ( count( $items ) === 0 )
+			return '';
+
 		$lines   = array();
 		$version = get_plugin_data( dirname( dirname( __FILE__ ) ).'/redirection.php' );
 
 		$lines[] = '# Created by Redirection';
-		$lines[] = '# '.date( 'r' );
-		$lines[] = '# Redirection '.trim( $version['Version'] ).' - https://redirection.me';
+		$lines[] = '# '.date ('r');
+		$lines[] = '# Redirection '.trim( $version['Version'] ).' - http://urbangiraffe.com/plugins/redirection/';
 		$lines[] = '';
 		$lines[] = 'server {';
 
-		foreach ( $items as $item ) {
+		foreach ( $items AS $item ) {
 			$lines[] = $this->get_nginx_item( $item );
 		}
 
@@ -28,7 +33,7 @@ class Red_Nginx_File extends Red_FileIO {
 		$lines[] = '';
 		$lines[] = '# End of Redirection';
 
-		return implode( PHP_EOL, $lines ).PHP_EOL;
+		return implode( "\n", $lines );
 	}
 
 	private function get_redirect_code( Red_Item $item ) {
@@ -86,11 +91,8 @@ class Red_Nginx_File extends Red_FileIO {
 	}
 
 	private function add_redirect( $source, $target, $code ) {
-		$source = preg_replace( "/[\r\n\t].*?$/s", '', $source );
-		$source = preg_replace( '/[^\PC\s]/u', '', $source );
-		$target = preg_replace( "/[\r\n\t].*?$/s", '', $target );
-		$target = preg_replace( '/[^\PC\s]/u', '', $target );
-
 		return 'rewrite ^'.$source.'$ '.$target.' '.$code.';';
 	}
 }
+
+

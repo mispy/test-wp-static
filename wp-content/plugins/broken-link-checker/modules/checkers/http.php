@@ -254,9 +254,6 @@ class blcCurlHttp extends blcHttpCheckerBase {
 			curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 		}
 
-        // Apply filter for additional options
-        curl_setopt_array($ch, apply_filters('broken-link-checker-curl-options', array()) );
-
 		//Execute the request
 		$start_time = microtime_float();
         $content = curl_exec($ch);
@@ -319,11 +316,6 @@ class blcCurlHttp extends blcHttpCheckerBase {
         } else {
         	$result['broken'] = $this->is_error_code($result['http_code']);
         }
-
-
-        // Apply filter before curl closes
-        apply_filters('broken-link-checker-curl-before-close', $ch, $content, $this->last_headers);
-
         curl_close($ch);
 
 		$blclog->info(sprintf(

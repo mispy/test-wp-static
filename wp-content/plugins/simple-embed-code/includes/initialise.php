@@ -4,11 +4,17 @@
 *
 * Run everytime the plugin is initialised
 *
-* @package	simple-embed-code
+* @package	Code-Embed
 * @since 	2.2
 */
 
 function ce_initialisation() {
+
+	// Load text domain for translations
+
+	$language_dir = plugin_basename( dirname( __FILE__ ) ) . '/languages/';
+
+	load_plugin_textdomain( 'simple-embed-code', false, $language_dir );
 
 	// Add exerpt filter, if required
 

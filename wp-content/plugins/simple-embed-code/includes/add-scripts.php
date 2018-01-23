@@ -4,7 +4,7 @@
 *
 * Add CSS to the main theme
 *
-* @package	simple-embed-code
+* @package	Code-Embed
 */
 
 /**
