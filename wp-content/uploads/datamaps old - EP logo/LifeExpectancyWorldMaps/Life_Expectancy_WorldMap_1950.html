@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+
+.download { 
+  background: #333; 
+  color: #FFF; 
+  font-weight: 900; 
+  border: 2px solid #B10000; 
+  padding: 4px; 
+  margin:4px;
+}
+
+#TitleContainer{
+    position: absolute;
+	width: 100%;
+    height: 26px;
+    top:0px;
+	left: 0; 
+	background-color:#FAFAFA;
+}
+
+.mainTitleText{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+}
+
+#CreditsContainer{
+    position: absolute;
+	width: 100%;
+    height: 36px;
+    bottom:0px;
+	left: 0; 
+    background-color:#FAFAFA;
+
+}
+
+.datamaps-legend {
+        line-height: 16px !important;  /* Auch Höhe der Farbboxen*/ 
+}
+
+#map {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0; /*fill parent*/
+	background-color:#ECF6FC; /*hellblau*/
+}
+
+
+</style>
+
+
+
+
+
+<body>
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="datamaps.world.min.js"></script>
+  <script src="../../maxstyle_for_d3/colorbrewer.js"></script>
+
+   
+<div id="all">
+	<div id="map"> </div>
+	<div>    <svg id="CreditsContainer"></svg>  </div>
+	<div>    <svg id="TitleContainer"></svg>  </div>
+</div>
+
+   <script>
+     
+     
+     var colorschemeOfThisMap = colorbrewer.RdYlGn;
+  
+     var map = new Datamap({
+        scope: 'world',
+		projection: 'equirectangular',
+        element: document.getElementById('map'),
+        // projection: 'mercator',
+
+       geographyConfig: {
+        borderWidth: 0.2,
+        borderColor: '#4F4F4F',
+        highlightBorderColor: 'black',
+        highlightBorderWidth: 0.5,
+
+        highlightFillColor: '#FFEC38',
+        
+        popupTemplate: function(geography, data) {
+                    if ( !data ) return;  // makes sure that the tooltip is shown only if there is data 
+         			return '<div class="hoverinfo">' + geography.properties.name + '<br>Live Expectancy in 1950: <strong>' +  data.LifeExp1950 + '</strong> years (at birth).';},
+            },        
+        fills: {
+            
+              
+// Fills & Legendlabels – Reihenfolge ist wichtig - wird in dieser Reihenfolge in der Legende angezeigt (also mit höchstem Wert beginnen)
+       defaultFill: 'grey',
+          "80-84":'#006837',
+		  "75-79":'#1a9850',
+          "70-74":'#66bd63',
+          "65-69":'#a6d96a',
+          "60-64":'#d9ef8b',
+          "55-59":'#ffffbf',
+          "50-54":'#fee08b',
+          "45-49":'#fdae61',
+          "40-44":'#f46d43',
+          "35-39":'#d73027',
+          "30-34":'#a50026',
+          "25-29":'#7A021C',
+          "20-24":'#4F0011'
+        },
+  data: {
+    
+    
+  "AFG":{LifeExp1950:26.7,fillKey:"25-29"},
+  "ALB":{LifeExp1950:54.2,fillKey:"50-54"},
+  "DZA":{LifeExp1950:42.1,fillKey:"40-44"},
+  "AGO":{LifeExp1950:29.2,fillKey:"25-29"},
+  "ATG":{LifeExp1950:57.5,fillKey:"55-59"},
+  "ARG":{LifeExp1950:61.4,fillKey:"60-64"},
+  "ARM":{LifeExp1950:62,fillKey:"60-64"},
+  "ABW":{LifeExp1950:58.4,fillKey:"55-59"},
+  "AUS":{LifeExp1950:69,fillKey:"65-69"},
+  "AUT":{LifeExp1950:64.9,fillKey:"60-64"},
+  "AZE":{LifeExp1950:57.1,fillKey:"55-59"},
+  "BHS":{LifeExp1950:59.2,fillKey:"55-59"},
+  "BHR":{LifeExp1950:41.2,fillKey:"40-44"},
+  "BGD":{LifeExp1950:42.9,fillKey:"40-44"},
+  "BRB":{LifeExp1950:56.1,fillKey:"55-59"},
+  "BLR":{LifeExp1950:65,fillKey:"65-69"},
+  "BEL":{LifeExp1950:66.4,fillKey:"65-69"},
+  "BLZ":{LifeExp1950:54.8,fillKey:"50-54"},
+  "BEN":{LifeExp1950:32.7,fillKey:"30-34"},
+  "BTN":{LifeExp1950:28.8,fillKey:"25-29"},
+  "BOL":{LifeExp1950:39.8,fillKey:"35-39"},
+  "BIH":{LifeExp1950:51.4,fillKey:"50-54"},
+  "BWA":{LifeExp1950:46.8,fillKey:"45-49"},
+  "BRA":{LifeExp1950:50,fillKey:"50-54"},
+  "BRN":{LifeExp1950:56.6,fillKey:"55-59"},
+  "BGR":{LifeExp1950:61.4,fillKey:"60-64"},
+  "BFA":{LifeExp1950:30,fillKey:"30-34"},
+  "BDI":{LifeExp1950:38.4,fillKey:"35-39"},
+  "KHM":{LifeExp1950:39.8,fillKey:"35-39"},
+  "CMR":{LifeExp1950:37.9,fillKey:"35-39"},
+  "CAN":{LifeExp1950:68.3,fillKey:"65-69"},
+  "CPV":{LifeExp1950:47.8,fillKey:"45-49"},
+  "CAF":{LifeExp1950:32.6,fillKey:"30-34"},
+  "TCD":{LifeExp1950:35.6,fillKey:"35-39"},
+  "CHL":{LifeExp1950:54.3,fillKey:"50-54"},
+  "CHN":{LifeExp1950:39.2,fillKey:"35-39"},
+  "COL":{LifeExp1950:48.4,fillKey:"45-49"},
+  "COM":{LifeExp1950:40.1,fillKey:"40-44"},
+  "COD":{LifeExp1950:38.3,fillKey:"35-39"},
+  "COG":{LifeExp1950:41.6,fillKey:"40-44"},
+  "CRI":{LifeExp1950:56.1,fillKey:"55-59"},
+  "CIV":{LifeExp1950:31.2,fillKey:"30-34"},
+  "HRV":{LifeExp1950:60.3,fillKey:"60-64"},
+  "CUB":{LifeExp1950:58.2,fillKey:"55-59"},
+  "CYP":{LifeExp1950:65.8,fillKey:"65-69"},
+  "CZE":{LifeExp1950:64.4,fillKey:"60-64"},
+  "DNK":{LifeExp1950:70.3,fillKey:"70-74"},
+  "DJI":{LifeExp1950:40.4,fillKey:"40-44"},
+  "DOM":{LifeExp1950:44.3,fillKey:"40-44"},
+  "ECU":{LifeExp1950:47.3,fillKey:"45-49"},
+  "EGY":{LifeExp1950:38.5,fillKey:"35-39"},
+  "SLV":{LifeExp1950:43.3,fillKey:"40-44"},
+  "GNQ":{LifeExp1950:33.9,fillKey:"30-34"},
+  "ERI":{LifeExp1950:35.5,fillKey:"35-39"},
+  "EST":{LifeExp1950:64.4,fillKey:"60-64"},
+  "ETH":{LifeExp1950:33.3,fillKey:"30-34"},
+  "FJI":{LifeExp1950:51.1,fillKey:"50-54"},
+  "FIN":{LifeExp1950:64.2,fillKey:"60-64"},
+  "FRA":{LifeExp1950:66.4,fillKey:"65-69"},
+  "GUF":{LifeExp1950:52.3,fillKey:"50-54"},
+  "PYF":{LifeExp1950:45.6,fillKey:"45-49"},
+  "GAB":{LifeExp1950:36,fillKey:"35-39"},
+  "GMB":{LifeExp1950:29.7,fillKey:"25-29"},
+  "GEO":{LifeExp1950:59.8,fillKey:"55-59"},
+  "DEU":{LifeExp1950:66.8,fillKey:"65-69"},
+  "GHA":{LifeExp1950:41.1,fillKey:"40-44"},
+  "GRC":{LifeExp1950:65.4,fillKey:"65-69"},
+  "GRD":{LifeExp1950:55.2,fillKey:"55-59"},
+  "GLP":{LifeExp1950:51.7,fillKey:"50-54"},
+  "GUM":{LifeExp1950:56.1,fillKey:"55-59"},
+  "GTM":{LifeExp1950:41.4,fillKey:"40-44"},
+  "GIN":{LifeExp1950:32.5,fillKey:"30-34"},
+  "GUY":{LifeExp1950:57,fillKey:"55-59"},
+  "HTI":{LifeExp1950:36.3,fillKey:"35-39"},
+  "HND":{LifeExp1950:40.8,fillKey:"40-44"},
+  "HKG":{LifeExp1950:62.1,fillKey:"60-64"},
+  "HUN":{LifeExp1950:62.1,fillKey:"60-64"},
+  "ISL":{LifeExp1950:71,fillKey:"70-74"},
+  "IND":{LifeExp1950:34.8,fillKey:"30-34"},
+  "IDN":{LifeExp1950:36.4,fillKey:"35-39"},
+  "IRN":{LifeExp1950:39.4,fillKey:"35-39"},
+  "IRQ":{LifeExp1950:34.9,fillKey:"30-34"},
+  "IRL":{LifeExp1950:65.6,fillKey:"65-69"},
+  "ISR":{LifeExp1950:64.2,fillKey:"60-64"},
+  "ITA":{LifeExp1950:65.8,fillKey:"65-69"},
+  "JAM":{LifeExp1950:56.6,fillKey:"55-59"},
+  "JPN":{LifeExp1950:59.3,fillKey:"55-59"},
+  "JOR":{LifeExp1950:44.8,fillKey:"40-44"},
+  "KAZ":{LifeExp1950:54.2,fillKey:"50-54"},
+  "KEN":{LifeExp1950:41.6,fillKey:"40-44"},
+  "KIR":{LifeExp1950:42.6,fillKey:"40-44"},
+  "PRK":{LifeExp1950:29.7,fillKey:"25-29"},
+  "KOR":{LifeExp1950:46.7,fillKey:"45-49"},
+  "KWT":{LifeExp1950:51.3,fillKey:"50-54"},
+  "KGZ":{LifeExp1950:51.9,fillKey:"50-54"},
+  "LAO":{LifeExp1950:40.3,fillKey:"40-44"},
+  "LVA":{LifeExp1950:59.7,fillKey:"55-59"},
+  "LBN":{LifeExp1950:59.6,fillKey:"55-59"},
+  "LSO":{LifeExp1950:41,fillKey:"40-44"},
+  "LBR":{LifeExp1950:32.7,fillKey:"30-34"},
+  "LBY":{LifeExp1950:37.3,fillKey:"35-39"},
+  "LTU":{LifeExp1950:63.6,fillKey:"60-64"},
+  "LUX":{LifeExp1950:65.2,fillKey:"65-69"},
+  "MAC":{LifeExp1950:60,fillKey:"60-64"},
+  "MKD":{LifeExp1950:53,fillKey:"50-54"},
+  "MDG":{LifeExp1950:35.3,fillKey:"35-39"},
+  "MWI":{LifeExp1950:36,fillKey:"35-39"},
+  "MYS":{LifeExp1950:53.5,fillKey:"50-54"},
+  "MDV":{LifeExp1950:32.6,fillKey:"30-34"},
+  "MLI":{LifeExp1950:26.4,fillKey:"25-29"},
+  "MLT":{LifeExp1950:65.6,fillKey:"65-69"},
+  "MTQ":{LifeExp1950:54.2,fillKey:"50-54"},
+  "MRT":{LifeExp1950:37.4,fillKey:"35-39"},
+  "MUS":{LifeExp1950:48.1,fillKey:"45-49"},
+  "MYT":{LifeExp1950:44.7,fillKey:"40-44"},
+  "MEX":{LifeExp1950:48.6,fillKey:"45-49"},
+  "FSM":{LifeExp1950:53.8,fillKey:"50-54"},
+  "MDA":{LifeExp1950:58.1,fillKey:"55-59"},
+  "MNG":{LifeExp1950:42.5,fillKey:"40-44"},
+  "MNE":{LifeExp1950:59.2,fillKey:"55-59"},
+  "MAR":{LifeExp1950:45,fillKey:"45-49"},
+  "MOZ":{LifeExp1950:30.3,fillKey:"30-34"},
+  "MMR":{LifeExp1950:33.3,fillKey:"30-34"},
+  "NAM":{LifeExp1950:40.3,fillKey:"40-44"},
+  "NPL":{LifeExp1950:34.6,fillKey:"30-34"},
+  "NLD":{LifeExp1950:71.5,fillKey:"70-74"},
+  "ANT":{LifeExp1950:58.4,fillKey:"55-59"},
+  "NCL":{LifeExp1950:49.1,fillKey:"45-49"},
+  "NZL":{LifeExp1950:69.3,fillKey:"65-69"},
+  "NIC":{LifeExp1950:41.1,fillKey:"40-44"},
+  "NER":{LifeExp1950:34.9,fillKey:"30-34"},
+  "NGA":{LifeExp1950:33.3,fillKey:"30-34"},
+  "NOR":{LifeExp1950:71.6,fillKey:"70-74"},
+  "OMN":{LifeExp1950:34.2,fillKey:"30-34"},
+  "PAK":{LifeExp1950:36,fillKey:"35-39"},
+  "PAN":{LifeExp1950:55.7,fillKey:"55-59"},
+  "PNG":{LifeExp1950:33.7,fillKey:"30-34"},
+  "PRY":{LifeExp1950:62.7,fillKey:"60-64"},
+  "PER":{LifeExp1950:43.1,fillKey:"40-44"},
+  "PHL":{LifeExp1950:54.7,fillKey:"50-54"},
+  "POL":{LifeExp1950:59,fillKey:"55-59"},
+  "PRT":{LifeExp1950:58.5,fillKey:"55-59"},
+  "PRI":{LifeExp1950:60.9,fillKey:"60-64"},
+  "QAT":{LifeExp1950:53.6,fillKey:"50-54"},
+  "REU":{LifeExp1950:45.3,fillKey:"45-49"},
+  "ROU":{LifeExp1950:61.1,fillKey:"60-64"},
+  "RUS":{LifeExp1950:57.3,fillKey:"55-59"},
+  "RWA":{LifeExp1950:39.4,fillKey:"35-39"},
+  "LCA":{LifeExp1950:52,fillKey:"50-54"},
+  "VCT":{LifeExp1950:50,fillKey:"50-54"},
+  "WSM":{LifeExp1950:44.9,fillKey:"40-44"},
+  "STP":{LifeExp1950:45.5,fillKey:"45-49"},
+  "SAU":{LifeExp1950:41,fillKey:"40-44"},
+  "SEN":{LifeExp1950:34.5,fillKey:"30-34"},
+  "SRB":{LifeExp1950:58.2,fillKey:"55-59"},
+  "SYC":{LifeExp1950:58,fillKey:"55-59"},
+  "SLE":{LifeExp1950:28.4,fillKey:"25-29"},
+  "SGP":{LifeExp1950:58.4,fillKey:"55-59"},
+  "SVK":{LifeExp1950:60.9,fillKey:"60-64"},
+  "SVN":{LifeExp1950:64.5,fillKey:"60-64"},
+  "SLB":{LifeExp1950:44.4,fillKey:"40-44"},
+  "SOM":{LifeExp1950:33.2,fillKey:"30-34"},
+  "ZAF":{LifeExp1950:43.5,fillKey:"40-44"},
+  "SSD":{LifeExp1950:26.7,fillKey:"25-29"},
+  "ESP":{LifeExp1950:61.9,fillKey:"60-64"},
+  "LKA":{LifeExp1950:52.5,fillKey:"50-54"},
+  "SDN":{LifeExp1950:43.4,fillKey:"40-44"},
+  "SUR":{LifeExp1950:54.7,fillKey:"50-54"},
+  "SWZ":{LifeExp1950:40.5,fillKey:"40-44"},
+  "SWE":{LifeExp1950:71.1,fillKey:"70-74"},
+  "CHE":{LifeExp1950:68.9,fillKey:"65-69"},
+  "SYR":{LifeExp1950:47.5,fillKey:"45-49"},
+  "TWN":{LifeExp1950:54.6,fillKey:"50-54"},
+  "TJK":{LifeExp1950:52.2,fillKey:"50-54"},
+  "TZA":{LifeExp1950:40.4,fillKey:"40-44"},
+  "THA":{LifeExp1950:50.9,fillKey:"50-54"},
+  "TLS":{LifeExp1950:28.9,fillKey:"25-29"},
+  "TGO":{LifeExp1950:33.9,fillKey:"30-34"},
+  "TON":{LifeExp1950:57.9,fillKey:"55-59"},
+  "TTO":{LifeExp1950:56.9,fillKey:"55-59"},
+  "TUN":{LifeExp1950:38.3,fillKey:"35-39"},
+  "TUR":{LifeExp1950:40.2,fillKey:"40-44"},
+  "TKM":{LifeExp1950:50.4,fillKey:"50-54"},
+  "UGA":{LifeExp1950:39,fillKey:"35-39"},
+  "UKR":{LifeExp1950:64.3,fillKey:"60-64"},
+  "ARE":{LifeExp1950:41.4,fillKey:"40-44"},
+  "GBR":{LifeExp1950:68.7,fillKey:"65-69"},
+  "USA":{LifeExp1950:68.1,fillKey:"65-69"},
+  "URY":{LifeExp1950:65.8,fillKey:"65-69"},
+  "UZB":{LifeExp1950:54.9,fillKey:"50-54"},
+  "VUT":{LifeExp1950:40.7,fillKey:"40-44"},
+  "VEN":{LifeExp1950:54,fillKey:"50-54"},
+  "PSE":{LifeExp1950:46.1,fillKey:"45-49"},
+  "ESH":{LifeExp1950:34.8,fillKey:"30-34"},
+  "VNM":{LifeExp1950:51.9,fillKey:"50-54"},
+  "VIR":{LifeExp1950:57.4,fillKey:"55-59"},
+  "YEM":{LifeExp1950:23.4,fillKey:"20-24"},
+  "ZMB":{LifeExp1950:41.2,fillKey:"40-44"},
+  "ZWE":{LifeExp1950:47.7,fillKey:"45-49"}
+
+}
+});
+     
+     
+     
+
+
+    
+   // Max Plugin
+      //plugin added by me to have the legend vertically
+  function addLegendmaxstyle(layer, data, options) {
+    data = data || {};
+    if ( !this.options.fills ) {
+      return;
+    }
+
+    var html = '<dl>';
+    var label = '';
+    if ( data.legendTitle ) {
+      html = '<h4>' + data.legendTitle + '</h4>' + html;
+    }
+    
+    for ( var fillKey in this.options.fills ) {
+
+      if ( fillKey === 'defaultFill') {
+        if (! data.defaultFillName ) {
+          continue;
+        }
+        label = data.defaultFillName;
+      } else {
+        if (data.labels && data.labels[fillKey]) {
+          label = data.labels[fillKey];
+        } else {
+        
+        // Changed by Max //
+	label= '' + fillKey;
+    html += '<dd style="background-color:' +  this.options.fills[fillKey] + '">&nbsp;</dd>';
+	html += '<dt>' + label + '</dt>'+ '<br>';
+
+        }
+      }
+    }
+    html += '</dl>';
+
+    var hoverover = d3.select( this.options.element ).append('div')
+      .attr('class', 'datamaps-legend')
+      .html(html);
+  }
+  
+  
+//Legende anzeigen  
+   map.addPlugin("mylegend", addLegendmaxstyle);
+   map.mylegend({legendTitle:"Life Expectancy (at birth)"})
+
+    
+    
+    
+
+
+
+
+
+
+
+/*  TITLE                      */
+/* --------------------------- */
+
+var TitleCanvas = d3.select("#TitleContainer")
+
+
+TitleCanvas
+	.append("text")
+	.text("Life Expectancy (at birth) – in 1950")
+	.attr("x",35)
+	.attr("y",18)
+	.attr('class','mainTitleText');
+	
+	
+	
+TitleCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+
+
+
+
+
+ 
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.OurWorldinData.org/data/population-growth-vital-statistics/life-expectancy")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.OurWorldinData.org/data/population-growth-vital-statistics/life-expectancy")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data source: Gapminder")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+	
+	
+	
+/* ------- end credits ------ */
+		  
+
+     
+     </script>
+</body>

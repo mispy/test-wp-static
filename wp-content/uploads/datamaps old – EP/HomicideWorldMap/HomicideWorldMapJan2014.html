@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+
+<style>
+
+
+.download { 
+  background: #333; 
+  color: #FFF; 
+  font-weight: 900; 
+  border: 2px solid #B10000; 
+  padding: 4px; 
+  margin:4px;
+}
+
+#TitleContainer{
+    position: absolute;
+	width: 100%;
+    height: 30px;
+    top:0px; /*     top:36px; for single line of buttons */
+
+	left: 0; 
+	background-color:#FAFAFA;
+}
+
+
+.datamaps-legend {
+        line-height: 18px !important; /*  In meinem css ist der standard:     line-height: 21px;  kann hier überschrieben werden     */
+}
+
+
+.Button_explanation{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+}
+
+.mainTitleText{
+	font-size:12px;
+	font-family:"Helvetica Neue","Helvetica";
+	font-weight:bold;
+}
+
+#CreditsContainer{
+    position: absolute;
+	width: 100%;
+    height: 36px;
+    bottom:0px;
+	left: 0; 
+    background-color:#FAFAFA;
+
+}
+
+.hoverinfo {
+	text-align:center;
+} 
+
+
+#map {
+    position: absolute;  
+    margin-top: 35px;
+    top: 0; bottom: 0; right: 0; left: 0; /*fill parent*/
+	background-color:#ECF6FC; /*hellblau*/
+}
+
+</style>
+
+
+
+
+<body>
+ 
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="datamaps.world.min.js"></script>
+  <script src="../../maxstyle_for_d3/colorbrewer.js"></script>
+
+
+  <!--  Page Elements  -->
+  
+
+
+	<div id="map"> </div>
+	<div>    <svg id="CreditsContainer"></svg>  </div>
+	<div>    <svg id="TitleContainer"></svg>  </div>
+
+   <script>
+     
+     
+     
+
+MapTitleText = 'Homicides per 100,000 per year ';
+
+dataSourcetext="Data source: UNODC Homicide Statistics";  // XXX Text to be shown as data Source text
+
+ExplainingProgressLink_href = "http://www.explainingprogress.com/data/violence-rights/homicides";   /// XXX The true link (the visually shown link without http:// is created automatically)
+
+
+	
+		
+	
+     
+  
+     var map = new Datamap({
+        scope: 'world',
+		projection: 'equirectangular',
+        element: document.getElementById('map'),
+        // projection: 'mercator',
+
+       geographyConfig: {
+        borderWidth: 0.2,
+        borderColor: '#4F4F4F',
+        highlightBorderColor: 'black',
+        highlightBorderWidth: 0.5,
+
+        highlightFillColor: '#FFEC38',
+        
+        popupTemplate: function(geography, data) {
+                    if ( !data ) return;  // makes sure that the tooltip is shown only if there is data 
+         return '<div class="hoverinfo">' + geography.properties.name + '<br>Homicide Rate: <strong>' +  data.Rate + '</strong> per 100.000 per year';                                           },
+            },        
+        fills: {
+           
+          defaultFill: 'grey',
+          "<1":'#1a9850',
+          "1-2":'#91cf60',
+          "2-5":'#d9ef8b',
+          "5-10":'#ffffbf',
+          "10-20":'#fee08b',
+          "20-35":'#fc8d59',
+          "35-65":'#d73027',
+   
+        },
+        
+      
+  data: {
+    
+
+	  "BRN":{Rate:0.27,fillKey:"<1"},
+	  "SGP":{Rate:0.40,fillKey:"<1"},
+	  "JPN":{Rate:0.44,fillKey:"<1"},
+	  "HKG":{Rate:0.47,fillKey:"<1"},
+	  "ISL":{Rate:0.50,fillKey:"<1"},
+	  "IDN":{Rate:0.55,fillKey:"<1"},
+	  "AUT":{Rate:0.64,fillKey:"<1"},
+	  "OMN":{Rate:0.69,fillKey:"<1"},
+	  "BHR":{Rate:0.70,fillKey:"<1"},
+	  "CHE":{Rate:0.74,fillKey:"<1"},
+	  "SVN":{Rate:0.78,fillKey:"<1"},
+	  "LIE":{Rate:0.80,fillKey:"<1"},
+	  "DZA":{Rate:0.80,fillKey:"<1"},
+	  "DNK":{Rate:0.80,fillKey:"<1"},
+	  "MLT":{Rate:0.86,fillKey:"<1"},
+	  "VUT":{Rate:0.88,fillKey:"<1"},
+	  "NOR":{Rate:0.89,fillKey:"<1"},
+	  "AND":{Rate:0.90,fillKey:"<1"},
+	  "DEU":{Rate:0.90,fillKey:"<1"},
+	  "NLD":{Rate:0.90,fillKey:"<1"},
+	  "FSM":{Rate:0.91,fillKey:"<1"},
+	  "TON":{Rate:0.97,fillKey:"<1"},
+	  "ESP":{Rate:0.98,fillKey:"<1"},
+	  "SWE":{Rate:0.98,fillKey:"<1"},
+	  "ITA":{Rate:0.99,fillKey:"<1"},
+	  "CZE":{Rate:1.00,fillKey:"<1"},
+	  "WSM":{Rate:1.10,fillKey:"1-2"},
+	  "SAU":{Rate:1.10,fillKey:"1-2"},
+	  "QAT":{Rate:1.10,fillKey:"1-2"},
+	  "ARE":{Rate:1.11,fillKey:"1-2"},
+	  "TUN":{Rate:1.14,fillKey:"1-2"},
+	  "AUS":{Rate:1.19,fillKey:"1-2"},
+	  "NZL":{Rate:1.21,fillKey:"1-2"},
+	  "GBR":{Rate:1.56,fillKey:"1-2"},
+	  "CHN":{Rate:1.23,fillKey:"1-2"},
+	  "CYP":{Rate:1.24,fillKey:"1-2"},
+	  "POL":{Rate:1.27,fillKey:"1-2"},
+	  "GRC":{Rate:1.28,fillKey:"1-2"},
+	  "BTN":{Rate:1.29,fillKey:"1-2"},
+	  "FRA":{Rate:1.30,fillKey:"1-2"},
+	  "IRL":{Rate:1.30,fillKey:"1-2"},
+	  "PRT":{Rate:1.30,fillKey:"1-2"},
+	  "MDV":{Rate:1.31,fillKey:"1-2"},
+	  "LUX":{Rate:1.38,fillKey:"1-2"},
+	  "HRV":{Rate:1.41,fillKey:"1-2"},
+	  "MCO":{Rate:1.42,fillKey:"1-2"},
+	  "SRB":{Rate:1.46,fillKey:"1-2"},
+	  "EGY":{Rate:1.46,fillKey:"1-2"},
+	  "MAR":{Rate:1.49,fillKey:"1-2"},
+	  "HUN":{Rate:1.50,fillKey:"1-2"},
+	  "JOR":{Rate:1.54,fillKey:"1-2"},
+	  "SOM":{Rate:1.55,fillKey:"1-2"},
+	  "VNM":{Rate:1.57,fillKey:"1-2"},
+	  "CAN":{Rate:1.63,fillKey:"1-2"},
+	  "MAC":{Rate:1.67,fillKey:"1-2"},
+	  "BIH":{Rate:1.69,fillKey:"1-2"},
+	  "SVK":{Rate:1.70,fillKey:"1-2"},
+	  "PYF":{Rate:1.90,fillKey:"1-2"},
+	  "MKD":{Rate:1.92,fillKey:"1-2"},
+	  "BEL":{Rate:1.92,fillKey:"1-2"},
+	  "ROU":{Rate:1.93,fillKey:"1-2"},
+	  "IRQ":{Rate:2.04,fillKey:"2-5"},
+	  "MYS":{Rate:2.09,fillKey:"2-5"},
+	  "ISR":{Rate:2.09,fillKey:"2-5"},
+	  "AZE":{Rate:2.18,fillKey:"2-5"},
+	  "BGR":{Rate:2.18,fillKey:"2-5"},
+	  "FIN":{Rate:2.30,fillKey:"2-5"},
+	  "ARM":{Rate:2.30,fillKey:"2-5"},
+	  "AFG":{Rate:2.39,fillKey:"2-5"},
+	  "KOR":{Rate:2.44,fillKey:"2-5"},
+	  "SYR":{Rate:2.46,fillKey:"2-5"},
+	  "KWT":{Rate:2.46,fillKey:"2-5"},
+	  "TJK":{Rate:2.51,fillKey:"2-5"},
+	  "BGD":{Rate:2.76,fillKey:"2-5"},
+	  "LBY":{Rate:2.86,fillKey:"2-5"},
+	  "ZMB":{Rate:2.91,fillKey:"2-5"},
+	  "NPL":{Rate:2.93,fillKey:"2-5"},
+	  "IRN":{Rate:3.03,fillKey:"2-5"},
+	  "LBN":{Rate:3.13,fillKey:"2-5"},
+	  "UZB":{Rate:3.24,fillKey:"2-5"},
+	  "MNE":{Rate:3.29,fillKey:"2-5"},
+	  "KHM":{Rate:3.35,fillKey:"2-5"},
+	  "DJI":{Rate:3.39,fillKey:"2-5"},
+	  "IND":{Rate:3.44,fillKey:"2-5"},
+	  "ALB":{Rate:3.46,fillKey:"2-5"},
+	  "CHL":{Rate:3.55,fillKey:"2-5"},
+	  "MUS":{Rate:3.67,fillKey:"2-5"},
+	  "TWN":{Rate:3.69,fillKey:"2-5"},
+	  "GUM":{Rate:3.72,fillKey:"2-5"},
+	  "NER":{Rate:3.82,fillKey:"2-5"},
+	  "CMR":{Rate:3.88,fillKey:"2-5"},
+	  "MOZ":{Rate:3.95,fillKey:"2-5"},
+	  "STP":{Rate:4.02,fillKey:"2-5"},
+	  "TUR":{Rate:4.08,fillKey:"2-5"},
+	  "YEM":{Rate:4.19,fillKey:"2-5"},
+	  "BDI":{Rate:4.28,fillKey:"2-5"},
+	  "TKM":{Rate:4.28,fillKey:"2-5"},
+	  "KEN":{Rate:4.52,fillKey:"2-5"},
+	  "LVA":{Rate:4.57,fillKey:"2-5"},
+	  "LAO":{Rate:4.63,fillKey:"2-5"},
+	  "SLB":{Rate:4.81,fillKey:"2-5"},
+	  "MTQ":{Rate:4.94,fillKey:"2-5"},
+	  "CYM":{Rate:4.97,fillKey:"2-5"},
+	  "CUB":{Rate:5.16,fillKey:"5-10"},
+	  "USA":{Rate:5.27,fillKey:"5-10"},
+	  "ARG":{Rate:5.48,fillKey:"5-10"},
+	  "UKR":{Rate:5.52,fillKey:"5-10"},
+	  "HTI":{Rate:5.77,fillKey:"5-10"},
+	  "TCA":{Rate:5.87,fillKey:"5-10"},
+	  "GEO":{Rate:5.90,fillKey:"5-10"},
+	  "THA":{Rate:6.00,fillKey:"5-10"},
+	  "URY":{Rate:6.13,fillKey:"5-10"},
+	  "GLP":{Rate:6.19,fillKey:"5-10"},
+	  "EST":{Rate:6.23,fillKey:"5-10"},
+	  "BOL":{Rate:6.57,fillKey:"5-10"},
+	  "BLR":{Rate:6.61,fillKey:"5-10"},
+	  "PHL":{Rate:6.64,fillKey:"5-10"},
+	  "LKA":{Rate:6.67,fillKey:"5-10"},
+	  "TLS":{Rate:6.95,fillKey:"5-10"},
+	  "PAK":{Rate:6.96,fillKey:"5-10"},
+	  "MDA":{Rate:7.17,fillKey:"5-10"},
+	  "ZWE":{Rate:7.23,fillKey:"5-10"},
+	  "KIR":{Rate:7.25,fillKey:"5-10"},
+	  "BMU":{Rate:7.50,fillKey:"5-10"},
+	  "MLI":{Rate:8.00,fillKey:"5-10"},
+	  "MDG":{Rate:8.12,fillKey:"5-10"},
+	  "LTU":{Rate:8.13,fillKey:"5-10"},
+	  "SYC":{Rate:8.30,fillKey:"5-10"},
+	  "VGB":{Rate:8.60,fillKey:"5-10"},
+	  "SEN":{Rate:8.71,fillKey:"5-10"},
+	  "KGZ":{Rate:8.83,fillKey:"5-10"},
+	  "SUR":{Rate:9.58,fillKey:"5-10"},
+	  "UGA":{Rate:9.59,fillKey:"5-10"},
+	  "BRB":{Rate:9.69,fillKey:"5-10"},
+	  "CRI":{Rate:9.74,fillKey:"5-10"},
+	  "NRU":{Rate:9.82,fillKey:"5-10"},
+	  "LBR":{Rate:10.14,fillKey:"10-20"},
+	  "MMR":{Rate:10.16,fillKey:"10-20"},
+	  "KAZ":{Rate:10.27,fillKey:"10-20"},
+	  "MNG":{Rate:10.57,fillKey:"10-20"},
+	  "GMB":{Rate:10.76,fillKey:"10-20"},
+	  "GRD":{Rate:10.78,fillKey:"10-20"},
+	  "TGO":{Rate:10.85,fillKey:"10-20"},
+	  "PER":{Rate:10.97,fillKey:"10-20"},
+	  "CPV":{Rate:11.59,fillKey:"10-20"},
+	  "COM":{Rate:12.19,fillKey:"10-20"},
+	  "NGA":{Rate:12.23,fillKey:"10-20"},
+	  "SWZ":{Rate:12.64,fillKey:"10-20"},
+	  "RUS":{Rate:12.65,fillKey:"10-20"},
+	  "PNG":{Rate:13.04,fillKey:"10-20"},
+	  "PRY":{Rate:13.20,fillKey:"10-20"},
+	  "NIC":{Rate:13.24,fillKey:"10-20"},
+	  "ATG":{Rate:13.28,fillKey:"10-20"},
+	  "DMA":{Rate:13.44,fillKey:"10-20"},
+	  "GRL":{Rate:13.62,fillKey:"10-20"},
+	  "GAB":{Rate:13.79,fillKey:"10-20"},
+	  "BWA":{Rate:14.48,fillKey:"10-20"},
+	  "MRT":{Rate:14.72,fillKey:"10-20"},
+	  "MEX":{Rate:14.84,fillKey:"10-20"},
+	  "SLE":{Rate:14.91,fillKey:"10-20"},
+	  "BEN":{Rate:15.10,fillKey:"10-20"},
+	  "PRK":{Rate:15.16,fillKey:"10-20"},
+	  "GHA":{Rate:15.67,fillKey:"10-20"},
+	  "TCD":{Rate:15.83,fillKey:"10-20"},
+	  "GUF":{Rate:16.67,fillKey:"10-20"},
+	  "RWA":{Rate:17.07,fillKey:"10-20"},
+	  "NAM":{Rate:17.23,fillKey:"10-20"},
+	  "PAN":{Rate:17.35,fillKey:"10-20"},
+	  "ECU":{Rate:17.48,fillKey:"10-20"},
+	  "AIA":{Rate:17.62,fillKey:"10-20"},
+	  "ERI":{Rate:17.77,fillKey:"10-20"},
+	  "BFA":{Rate:17.96,fillKey:"10-20"},
+	  "GUY":{Rate:18.16,fillKey:"10-20"},
+	  "AGO":{Rate:18.99,fillKey:"10-20"},
+	  "VCT":{Rate:20.16,fillKey:"20-35"},
+	  "GNB":{Rate:20.22,fillKey:"20-35"},
+	  "GNQ":{Rate:20.68,fillKey:"20-35"},
+	  "MSR":{Rate:21.13,fillKey:"20-35"},
+	  "COD":{Rate:21.70,fillKey:"20-35"},
+	  "BRA":{Rate:21.73,fillKey:"20-35"},
+	  "PRI":{Rate:21.86,fillKey:"20-35"},
+	  "GIN":{Rate:22.51,fillKey:"20-35"},
+	  "LCA":{Rate:23.08,fillKey:"20-35"},
+	  "SDN":{Rate:24.21,fillKey:"20-35"},
+	  "DOM":{Rate:24.25,fillKey:"20-35"},
+	  "BHS":{Rate:24.35,fillKey:"20-35"},
+	  "TZA":{Rate:24.50,fillKey:"20-35"},
+	  "ETH":{Rate:25.48,fillKey:"20-35"},
+	  "CAF":{Rate:29.26,fillKey:"20-35"},
+	  "COG":{Rate:30.76,fillKey:"20-35"},
+	  "TTO":{Rate:32.47,fillKey:"20-35"},
+	  "BLZ":{Rate:34.37,fillKey:"20-35"},
+	  "ZAF":{Rate:35.67,fillKey:"35-65"},
+	  "MWI":{Rate:35.98,fillKey:"35-65"},
+	  "KNA":{Rate:36.24,fillKey:"35-65"},
+	  "LSO":{Rate:36.67,fillKey:"35-65"},
+	  "VIR":{Rate:36.77,fillKey:"35-65"},
+	  "COL":{Rate:36.85,fillKey:"35-65"},
+	  "GTM":{Rate:43.23,fillKey:"35-65"},
+	  "VEN":{Rate:46.07,fillKey:"35-65"},
+	  "JAM":{Rate:55.09,fillKey:"35-65"},
+	  "CIV":{Rate:56.89,fillKey:"35-65"},
+	  "HND":{Rate:61.33,fillKey:"35-65"},
+	  "SLV":{Rate:63.14,fillKey:"35-65"}
+  
+    
+}
+      });
+     
+     
+   
+
+
+//  –––––––––––––––––––––––––––––––––––––––––––––––––––
+//  Max – Plugin added by me to have the legend vertically
+  function addLegendmaxstyle(layer, data, options) {
+    			data = data || {};
+    			if ( !this.options.fills ) { return; }
+
+    var html = '<dl>';
+    var label = '';
+    
+    if ( data.legendTitle ) {  html = '<h4>' + data.legendTitle + '</h4>' + html;  }
+    
+    for ( var fillKey in this.options.fills ) {
+
+      if ( fillKey === 'defaultFill') {
+        		if (! data.defaultFillName ) {
+          		continue;
+        								}
+        								
+        label = data.defaultFillName;
+      } else {
+        if (data.labels && data.labels[fillKey]) {
+          label = data.labels[fillKey];
+        } else {
+        
+// Changed by Max //
+	label= '' + fillKey;
+    html += '<dd style="background-color:' +  this.options.fills[fillKey] + '">&nbsp;</dd>';
+	html += '<dt>' + label + '</dt>'+ '<br>';
+
+        }
+      }
+    }
+    html += '</dl>';
+
+    var hoverover = d3.select( this.options.element ).append('div')
+      .attr('class', 'datamaps-legend')
+      .html(html);
+}
+//  –––––––––––––––––––––––––––––––––––––––––––––––––––
+ 
+  
+
+
+
+
+
+
+
+
+// –––––––––––––––––––––––––––––––––––––––––––––––––––
+//  TITLE & CREDITS (title text is changed in map()  
+{
+
+var TitleCanvas = d3.select("#TitleContainer")
+
+
+
+TitleCanvas.append("svg:image")
+   		.attr('x',3)
+   		.attr('y',1)
+   		.attr('width', 32)
+   		.attr('height', 22)
+   		.attr("xlink:href","../../maxstyle_for_d3/EPLogo.png");
+
+ TitleCanvas
+		.append("text")
+		.text(MapTitleText)  // XXX Change the title here
+		.attr("x",40)
+		.attr("y",18)
+		.attr('class','mainTitleText');
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+	
+	
+
+
+ExplainingProgressLink_linktext = ExplainingProgressLink_href.replace('http://','');  // strips http:// from the displayed link address	
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", ExplainingProgressLink_href)
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text(ExplainingProgressLink_linktext)
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text(dataSourcetext)
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+	
+/* ------- end credits ------ */
+		  
+		  
+}
+  
+//Legende anzeigen  
+   map.addPlugin("mylegend", addLegendmaxstyle);
+   map.mylegend({legendTitle:"Homicides per 100,000 per year"}) // XXX
+// –––––––––––––––––––––––––––––––––––––––––––––––––––
+   
+
+     
+     
+     
+     
+     </script>
+</body>

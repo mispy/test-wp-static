@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link href="nv.d3.css" rel="stylesheet" type="text/css">
+<link href="../../maxstyle_for_d3/max.nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+body {
+  overflow-y:hidden;
+  overflow-x:hidden;
+  margin:0px 4px 0px 0px; /* new & important */
+}
+
+
+#CreditsContainer{
+    position: absolute;
+
+    height: 40px;
+	background-color: #FAFAFA;
+	width:100%;
+	bottom:0;
+	margin:0;
+	border:0;
+	padding:0;
+	
+}
+
+#chart1, #chart2 {
+    position: absolute;
+ /* border: 2px solid #FAFAFA; */
+
+}
+
+
+#chart1 .nv-lineChart circle.nv-point,
+#chart2 .nv-lineChart circle.nv-point {
+
+    fill-opacity: 0;   /* Only lines: 0 – with markers: 0.9 */
+}
+
+#chart1 .nv-lineChart path.nv-line,
+#chart2 .nv-lineChart path.nv-line {
+
+    stroke-opacity: 1px; /* Only lines: 1px – with markers: 0.6px */
+    stroke-width: 1.3px; /* Only lines: 1.3px – with markers: 0.5px */
+}
+
+.tick line {
+  opacity: 0.3;
+}
+
+
+
+
+</style>
+<body>
+
+    
+  <div>
+    <svg id="chart1"></svg>
+  </div>
+
+  <div>
+    <svg id="CreditsContainer"></svg>
+  </div>
+
+
+<script src="d3.v3.js"></script>
+<script src="nv.d3.js"></script>
+
+<script>
+
+
+
+   
+
+var chartdata = [
+{
+    key    : "Belgium, before 1790",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Belgium, 1950-55",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Belgium, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Belgium, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Germany, before 1790",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Germany, 1950-55",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Germany, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Germany, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "France, before 1790",
+    values : []
+  },  {
+    key    : "France, 1950-55",
+    disabled: true,
+    values : []
+  },  {
+    key    : "France, 1960-65",
+    values : []
+  },  {
+    key    : "France, 2005-10",
+    values : []
+  },  {
+    key    : "USA, 1950-55",
+    disabled: true,
+    values : []
+  },  {
+    key    : "USA, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "USA, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Brazil, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Brazil, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Africa, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Africa, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Sub-Saharan Africa, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "Sub-Saharan Africa, 2005-10",
+    disabled: true,
+    values : []
+  },  {
+    key    : "World, 1960-65",
+    disabled: true,
+    values : []
+  },  {
+    key    : "World, 2005-10",
+    disabled: true,
+    values : []
+  }];
+//    	disabled: true,
+
+
+d3.csv("Roser_CSV_AgeSpecificFertility_Finn_UN.csv", function (error, csv) {
+	  if (error) return console.log("there was an error loading the csv: " + error);
+	  console.log("there are " + csv.length + " elements in my csv set");
+
+ 	  var columndata = ["Belgium (before 1790)","Belgium, 1950-55","Belgium, 1960-1965","Belgium, 2005-2010","Germany (before 1790)","Germany, 1950-55","Germany, 1960-1965","Germany, 2005-2010","France (before 1790)","France, 1950-55","France, 1960-1965","France, 2005-2010","USA, 1950-55","USA, 1960-1965","USA, 2005-2010","Brazil, 1960-1965","Brazil, 2005-2010","Africa, 1960-1965","Africa, 2005-2010","Sub-Saharan Africa, 1960-1965","Sub-Saharan Africa, 2005-2010","World, 1960-1965","World, 2005-2010"];
+
+for (var i = 0; i < columndata.length; i++) { 
+ //chartdata[i].key = columndata[i];
+ chartdata[i].values = csv.map(function(d) { 
+ 							return [  
+ 								d["year"], 
+ 								+d[columndata[i]] ];
+  						    })
+  						    .filter(function(d){ return d[1]||(d[1] === null); });
+ 											 }
+
+
+
+
+//var colors = d3.scale.ordinal()
+    //      .range(["darkgrey", "darkblue","lightblue","orange", "green","darkred","#388E8E", "","red","teal","lightgreen"])
+      //    .domain(d3.range(0,11));
+		  
+//keyColor = function(d, i) {return colors(d.key)};
+
+
+    var d3_category20max = [ 
+      "#153666",
+      "#2662bb", 
+      "#598edd", 
+      "#adc8ee", 
+      //Ger
+      "#2e1015",
+      "#61212b", 
+      "#ca6273", 
+      "#db95a0", 
+      
+      //Fra
+      "#1b4e03", 
+      "#318f06", 
+      "#47d009", 
+      "#73f737", 
+      
+      //USA
+      "#0c353e", 
+      "#176577", 
+      "#208aa1", 
+      
+      //BRA
+      "#4ca823", 
+      "#94e172", 
+      
+      //AFR
+      "#a27019", 
+      "#e4ad4d",
+      
+      //SS Afr
+      "#08a645",
+      "#40f686", 
+      
+      
+      //World
+      "#104c22",
+      "#1c843c"];
+      
+d3.scale.category20 = function() {
+    return d3.scale.ordinal().range(d3_category20max);
+  };
+
+var colors = d3.scale.category20();
+
+keyColor = function(d, i) {return colors(d.key)};
+
+var chart;
+
+nv.addGraph(function() {
+    chart = nv.models.lineChart()
+		.margin({top: 30, right: 20, bottom: 85, left: 50}) 
+		.tooltipContent(function(key, x, y, e, graph) {return '<h3>' + key + '</h3>' +
+               '<p>' +  y +  '</p>'			})
+                .x(function(d) { return d[0] })
+                .y(function(d) { return d[1] })  
+
+                .color(keyColor);
+                
+                
+var x_format = function(num) {
+    if (num === 15)
+        return "15-19";
+    else if (num === 20)
+        return "20-24";
+    else if (num === 25)
+        return "25-29";
+        
+    else if (num === 30)
+        return "30-34";
+        
+    else if (num === 35)
+        return "35-39";
+        
+    else if (num === 40)
+        return "40-44";
+        
+    else if (num === 45)
+        return "45-49";
+};
+
+
+  chart.xAxis
+       .axisLabel('Age Group')
+
+	.tickFormat(x_format);
+      
+  chart.yAxis
+      .axisLabel('Age Specific Fertility Rate (per 1,000 Women)')
+  	  .axisLabelDistance(40)
+      .tickFormat(d3.format(',0f'));
+	  
+	  
+  d3.select('#chart1')
+    .datum(chartdata)
+      .transition().call(chart);
+  
+  nv.utils.windowResize(chart.update);
+  
+  chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+  /*setTimeout(function() {
+              $('#my-chart .nv-lineChart circle.nv-point').attr("r", "3.5");
+          }, 500);*/
+  return chart;
+});
+
+
+// end read csv
+});
+
+
+
+
+var logoCanvas = d3.select("#chart1")
+
+logoCanvas.append("svg:image")
+   		.attr('x',2)
+   		.attr('y',0)
+   		.attr('width', 51)
+   		.attr('height', 24)
+   		.attr("xlink:href","../../maxstyle_for_d3/Our-World-in-Data24high.png");
+
+
+
+/*--------------------------------------------------*/
+/*    				  Credits    					*/
+/*--------------------------------------------------*/
+   		
+var creditsCanvas = d3.select("#CreditsContainer")
+		var xorigin=8;
+		var yorigin=1;
+
+
+/*1. Zeile*/	
+creditsCanvas
+	.append("text")
+	.text("The author Max Roser licensed this visualisation under a")
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+10)
+	.attr("id",'erstesTextstuck').attr('class','creditsText');
+var erstesTextstuckLange = document.getElementById('erstesTextstuck').getComputedTextLength();
+
+creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://creativecommons.org/licenses/by-sa/4.0/deed.en_US")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr("x", xorigin+erstesTextstuckLange+3)
+		  .attr("y", yorigin+10)
+		  .attr('class','creditsLink').attr("id",'zweitesTextstuck')
+	      .text("CC BY-SA license");
+var zweitesTextstuckLange = document.getElementById('zweitesTextstuck').getComputedTextLength();
+
+
+creditsCanvas
+	.append("text")
+	.text(". You are welcome to share but please refer to its source where you")
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1)
+	.attr("y",yorigin+10)
+	.attr("id",'drittesTextstuck').attr('class','creditsText');	
+var drittesTextstuckLange = document.getElementById('drittesTextstuck').getComputedTextLength();
+
+	
+/*1. oder 2. Zeile*/	
+
+var TextViertesTextstuck = creditsCanvas
+	.append("text")
+	.text("find more information:")
+	.attr("id",'viertesTextstuck')
+	.attr('class','creditsText');
+	var viertesTextstuckLange = document.getElementById('viertesTextstuck').getComputedTextLength();
+	
+var TextFunftesTextstuck = creditsCanvas.append("svg:a")
+		  .attr("xlink:href", "http://www.OurWorldinData.org/data/population-growth-vital-statistics/fertility-rates")
+		  .attr("target","_blank")
+		  .append("svg:text")
+		  .attr('class','creditsLink')
+	      .text("www.OurWorldinData.org/data/population-growth-vital-statistics/fertility-rates")
+		  .attr("id",'funftesTextstuck');
+var funftesTextstuckLange = document.getElementById('funftesTextstuck').getComputedTextLength();
+
+var creditsCanvasWidth = parseInt(creditsCanvas.style('width'));
+var LongTextWidth = parseInt( xorigin + erstesTextstuckLange + 3 + zweitesTextstuckLange + 1 + drittesTextstuckLange + 3 + viertesTextstuckLange + 3 + funftesTextstuckLange );
+
+if (creditsCanvasWidth > LongTextWidth ) {
+TextViertesTextstuck
+	.attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3)
+	.attr("y",yorigin+10);
+	}
+ else
+  {
+TextViertesTextstuck
+	.attr("x",xorigin+0)
+	.attr("y",yorigin+21);
+	  }
+
+	
+if (creditsCanvasWidth > LongTextWidth ) {
+	TextFunftesTextstuck
+		  .attr("x",xorigin+erstesTextstuckLange+3+zweitesTextstuckLange+1+drittesTextstuckLange+3+viertesTextstuckLange+3)
+		  .attr("y", yorigin+10);
+	}
+ else
+  {
+TextFunftesTextstuck
+		  .attr("x", xorigin+102)
+		  .attr("y", yorigin+21);
+	  }
+
+
+
+/*3. Zeile*/	
+creditsCanvas
+  	.append("text")
+  	.text("Data Source: United Nation's Population Division")
+  	.attr("x",xorigin+0)
+  	.attr("y",yorigin+32)
+  	.attr('class','creditsText');
+	
+/* ------- end credits ------ */
+		  
+		  
+
+
+</script>
+</html>

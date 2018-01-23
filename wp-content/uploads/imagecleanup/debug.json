@@ -1,0 +1,33 @@
+[0.3505] Info: WP_Query results written to log
+[0.0008] Registered sizes: ["thumbnail","medium","medium_large","large","guest-author-32","guest-author-50","guest-author-64","guest-author-96","guest-author-128","full"]
+[0.0009] Meta indexed so far: 1 / 1476
+[0.0017] Sample meta:
+{"width":2040,"height":1440,"file":"2017\/12\/internet-users-by-world-region.png","sizes":{"thumbnail":{"file":"internet-users-by-world-region-150x106.png","width":150,"height":106,"mime-type":"image\/png"},"medium":{"file":"internet-users-by-world-region-400x282.png","width":400,"height":282,"mime-type":"image\/png"},"medium_large":{"file":"internet-users-by-world-region-768x542.png","width":768,"height":542,"mime-type":"image\/png"},"large":{"file":"internet-users-by-world-region-750x529.png","width":750,"height":529,"mime-type":"image\/png"},"guest-author-32":{"file":"internet-users-by-world-region-32x32.png","width":32,"height":32,"mime-type":"image\/png"},"guest-author-50":{"file":"internet-users-by-world-region-50x50.png","width":50,"height":50,"mime-type":"image\/png"},"guest-author-64":{"file":"internet-users-by-world-region-64x64.png","width":64,"height":64,"mime-type":"image\/png"},"guest-author-96":{"file":"internet-users-by-world-region-96x96.png","width":96,"height":96,"mime-type":"image\/png"},"guest-author-128":{"file":"internet-users-by-world-region-128x128.png","width":128,"height":128,"mime-type":"image\/png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}}
+[3.3092] Meta indexed so far: 1476 / 1476
+[0.0005] Meta indexed so far: 101 / 1476
+[0.0004] Meta indexed so far: 201 / 1476
+[0.0005] Meta indexed so far: 301 / 1476
+[0.0005] Meta indexed so far: 401 / 1476
+[0.0004] Meta indexed so far: 501 / 1476
+[0.0005] Meta indexed so far: 601 / 1476
+[0.0004] Meta indexed so far: 701 / 1476
+[0.0005] Meta indexed so far: 801 / 1476
+[0.0005] Meta indexed so far: 901 / 1476
+[0.0005] Meta indexed so far: 1001 / 1476
+[0.0005] Meta indexed so far: 1101 / 1476
+[0.0005] Meta indexed so far: 1201 / 1476
+[0.0004] Meta indexed so far: 1301 / 1476
+[0.0005] Meta indexed so far: 1401 / 1476
+[0.0566] Meta indexed so far: 1476 / 1476
+[0.0685] Info: Valid and Invalid meta results written to log
+[0.1727] Info: Loaded attachments to memory [39.5 mb]
+[0.2959] Info: 10336 Images found [49.25 mb]
+[1.9511] Info: 1237 Invalid images found [50.25 mb]
+[2.0812] Info: Retrieved attachment images from DB [23 mb]
+[2.5364] Info: Backup meta results written to log [22.75 mb]
+[0.0061] Posts checked for used images 1/177
+[0.0060] Posts checked for used images 101/177
+[2.8803] Info: Invalid post image meta results written to log
+Warning: skipping script index because of too many image files
+[0.0073] Warning: skipping attachment index because of too many image files
+[0.0122] Info: Unreferenced image file results written to log
