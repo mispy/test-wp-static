@@ -42,6 +42,9 @@ var slugify = require('slugify');
 var path = require("path");
 var glob = require("glob");
 var _ = require("lodash");
+var util_1 = require("util");
+var imageSizeStandard = require("image-size");
+var imageSize = util_1.promisify(imageSizeStandard);
 var wpdb = database_1.createConnection({
     database: settings_1.WORDPRESS_DB_NAME
 });
@@ -60,17 +63,25 @@ exports.end = end;
 var cachedUploadDex;
 function getUploadedImages() {
     return __awaiter(this, void 0, void 0, function () {
-        var paths, uploadDex, _i, paths_1, filepath, filename, match, _1, dirpath, slug, dims, filetype, upload, _a, width, height;
-        return __generator(this, function (_b) {
-            if (cachedUploadDex)
-                return [2 /*return*/, cachedUploadDex];
-            paths = glob.sync(path.join(settings_1.WORDPRESS_DIR, 'wp-content/uploads/**/*'));
-            uploadDex = new Map();
-            for (_i = 0, paths_1 = paths; _i < paths_1.length; _i++) {
-                filepath = paths_1[_i];
-                filename = path.basename(filepath);
-                match = filepath.match(/(\/wp-content.*\/)([^\/]*?)-?(\d+x\d+)?\.(png|jpg|jpeg|gif)$/);
-                if (match) {
+        var paths, uploadDex, _i, paths_1, filepath, filename, match, dimensions, _1, dirpath, slug, dims, filetype, upload;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (cachedUploadDex)
+                        return [2 /*return*/, cachedUploadDex];
+                    paths = glob.sync(path.join(settings_1.WORDPRESS_DIR, 'wp-content/uploads/**/*'));
+                    uploadDex = new Map();
+                    _i = 0, paths_1 = paths;
+                    _a.label = 1;
+                case 1:
+                    if (!(_i < paths_1.length)) return [3 /*break*/, 4];
+                    filepath = paths_1[_i];
+                    filename = path.basename(filepath);
+                    match = filepath.match(/(\/wp-content.*\/)([^\/]*?)-?(\d+x\d+)?\.(png|jpg|jpeg|gif)$/);
+                    if (!match) return [3 /*break*/, 3];
+                    return [4 /*yield*/, imageSize(filepath)];
+                case 2:
+                    dimensions = _a.sent();
                     _1 = match[0], dirpath = match[1], slug = match[2], dims = match[3], filetype = match[4];
                     upload = uploadDex.get(slug);
                     if (!upload) {
@@ -81,22 +92,23 @@ function getUploadedImages() {
                         };
                         uploadDex.set(slug, upload);
                     }
-                    if (dims) {
-                        _a = dims.split("x"), width = _a[0], height = _a[1];
-                        upload.variants.push({
-                            url: path.join(dirpath, filename),
-                            width: parseInt(width),
-                            height: parseInt(height)
-                        });
-                    }
+                    upload.variants.push({
+                        url: path.join(dirpath, filename),
+                        width: dimensions.width,
+                        height: dimensions.height
+                    });
                     uploadDex.set(filename, upload);
-                }
+                    _a.label = 3;
+                case 3:
+                    _i++;
+                    return [3 /*break*/, 1];
+                case 4:
+                    uploadDex.forEach(function (upload) {
+                        upload.variants = _.sortBy(upload.variants, function (v) { return v.width; });
+                    });
+                    cachedUploadDex = uploadDex;
+                    return [2 /*return*/, uploadDex];
             }
-            uploadDex.forEach(function (upload) {
-                upload.variants = _.sortBy(upload.variants, function (v) { return v.width; });
-            });
-            cachedUploadDex = uploadDex;
-            return [2 /*return*/, uploadDex];
         });
     });
 }
@@ -202,42 +214,13 @@ function getEntriesByCategory() {
     });
 }
 exports.getEntriesByCategory = getEntriesByCategory;
-var cachedPermalinks;
-function getCustomPermalinks() {
-    return __awaiter(this, void 0, void 0, function () {
-        var rows, permalinks, _i, rows_2, row;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    if (cachedPermalinks)
-                        return [2 /*return*/, cachedPermalinks];
-                    return [4 /*yield*/, wpdb.query("SELECT post_id, meta_value FROM wp_postmeta WHERE meta_key='custom_permalink'")];
-                case 1:
-                    rows = _a.sent();
-                    permalinks = new Map();
-                    for (_i = 0, rows_2 = rows; _i < rows_2.length; _i++) {
-                        row = rows_2[_i];
-                        permalinks.set(row.post_id, row.meta_value);
-                    }
-                    cachedPermalinks = permalinks;
-                    return [2 /*return*/, permalinks];
-            }
-        });
-    });
-}
-exports.getCustomPermalinks = getCustomPermalinks;
 function getPermalinks() {
     return __awaiter(this, void 0, void 0, function () {
-        var permalinks;
         return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, getCustomPermalinks()];
-                case 1:
-                    permalinks = _a.sent();
-                    return [2 /*return*/, {
-                            get: function (ID, post_name) { return (permalinks.get(ID) || post_name).replace(/\/$/, ""); }
-                        }];
-            }
+            return [2 /*return*/, {
+                    // Strip trailing slashes, and convert -- into / to allow custom subdirs like /about/media-coverage
+                    get: function (ID, post_name) { return post_name.replace(/\/+$/g, "").replace(/--/g, "/"); }
+                }];
         });
     });
 }
@@ -245,7 +228,7 @@ exports.getPermalinks = getPermalinks;
 var cachedFeaturedImages;
 function getFeaturedImages() {
     return __awaiter(this, void 0, void 0, function () {
-        var rows, featuredImages, _i, rows_3, row;
+        var rows, featuredImages, _i, rows_2, row;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -255,8 +238,8 @@ function getFeaturedImages() {
                 case 1:
                     rows = _a.sent();
                     featuredImages = new Map();
-                    for (_i = 0, rows_3 = rows; _i < rows_3.length; _i++) {
-                        row = rows_3[_i];
+                    for (_i = 0, rows_2 = rows; _i < rows_2.length; _i++) {
+                        row = rows_2[_i];
                         featuredImages.set(row.post_id, row.guid);
                     }
                     cachedFeaturedImages = featuredImages;
@@ -268,7 +251,7 @@ function getFeaturedImages() {
 exports.getFeaturedImages = getFeaturedImages;
 function getFullPost(row) {
     return __awaiter(this, void 0, void 0, function () {
-        var authorship, featuredImages, permalinks;
+        var authorship, featuredImages, permalinks, postId;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, getAuthorship()];
@@ -280,6 +263,7 @@ function getFullPost(row) {
                     return [4 /*yield*/, getPermalinks()];
                 case 3:
                     permalinks = _a.sent();
+                    postId = row.post_status === "inherit" ? row.post_parent : row.ID;
                     return [2 /*return*/, {
                             id: row.ID,
                             type: row.post_type,
@@ -287,7 +271,7 @@ function getFullPost(row) {
                             title: row.post_title,
                             date: new Date(row.post_date_gmt),
                             modifiedDate: new Date(row.post_modified_gmt),
-                            authors: authorship.get(row.ID) || [],
+                            authors: authorship.get(postId) || [],
                             content: row.post_content,
                             excerpt: row.post_excerpt,
                             imageUrl: featuredImages.get(row.ID)
@@ -336,7 +320,7 @@ exports.getBlogIndex = getBlogIndex;
 var cachedTables;
 function getTables() {
     return __awaiter(this, void 0, void 0, function () {
-        var optRows, tableToPostIds, rows, tableContents, _i, rows_4, row, tableId, data;
+        var optRows, tableToPostIds, rows, tableContents, _i, rows_3, row, tableId, data;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -350,8 +334,8 @@ function getTables() {
                 case 2:
                     rows = _a.sent();
                     tableContents = new Map();
-                    for (_i = 0, rows_4 = rows; _i < rows_4.length; _i++) {
-                        row = rows_4[_i];
+                    for (_i = 0, rows_3 = rows; _i < rows_3.length; _i++) {
+                        row = rows_3[_i];
                         tableContents.set(row.ID, row.post_content);
                     }
                     cachedTables = new Map();

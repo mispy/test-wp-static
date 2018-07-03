@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var settings = require("../settings");
 var React = require("react");
 var Head_1 = require("./Head");
-function SubscribePage(props) {
-    var entries = props.entries, posts = props.posts;
+function SubscribePage() {
     var style = "\n        body {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 100%;\n        }\n        main {\n            max-width: 1080px;\n            padding: 40px 20px;\n            margin: auto;\n            min-height: 0;\n        }\n        h1 {\n            line-height: 1.1em;\n        }\n\n        input[type=email] {\n            width: 100%;\n            padding: 10px;\n            border: 1px solid #ccc;\n        }\n\n        input[type=submit] {\n            margin-top: 10px;\n            background: #5d5d5d;\n            color: #fff;\n            padding: 10px 22px;\n            cursor: pointer;\n        }\n    ";
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { pageTitle: "Subscribe", canonicalUrl: settings.BAKED_URL + "/subscribe" },

@@ -47,7 +47,7 @@ exports.FrontPage = function (props) {
                         React.createElement("ul", null, entries.map(function (category) { return React.createElement("li", null,
                             React.createElement("h4", { id: category.slug }, category.name),
                             React.createElement("div", { className: "link-container" }, category.entries.map(function (entry) {
-                                return React.createElement("a", { className: entry.starred ? "starred" : undefined, href: "/" + entry.slug }, entry.title);
+                                return React.createElement("a", { className: entry.starred ? "starred" : undefined, title: entry.starred ? "Starred pages are our best and most complete entries." : undefined, href: "/" + entry.slug }, entry.title);
                             }))); }))),
                     React.createElement("div", { className: "owid-data owid-presentations" },
                         React.createElement("h3", { id: "presentations" },
@@ -67,11 +67,11 @@ exports.FrontPage = function (props) {
                             React.createElement("a", { href: "https://twitter.com/MaxCRoser" }, "Follow us")),
                         React.createElement("div", { className: "social" },
                             React.createElement("a", { href: "https://twitter.com/MaxCRoser" },
-                                React.createElement("i", { className: "fa fa-twitter" })),
+                                React.createElement("i", { className: "fac fac-twitter" })),
                             React.createElement("a", { href: "https://www.facebook.com/OurWorldinData" },
-                                React.createElement("i", { className: "fa fa-facebook" })),
+                                React.createElement("i", { className: "fac fac-facebook" })),
                             React.createElement("a", { href: "/feed/" },
-                                React.createElement("i", { className: "fa fa-feed" }))),
+                                React.createElement("i", { className: "fac fac-feed" }))),
                         React.createElement("a", { className: "twitter-timeline", "data-height": "600", href: "https://twitter.com/MaxCRoser" }, "Tweets by MaxCRoser"),
                         " ",
                         React.createElement("script", { async: true, src: "//platform.twitter.com/widgets.js" })))),

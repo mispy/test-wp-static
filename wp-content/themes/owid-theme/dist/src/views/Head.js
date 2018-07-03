@@ -4,12 +4,13 @@ var settings_1 = require("../settings");
 var React = require("react");
 exports.Head = function (props) {
     var canonicalUrl = props.canonicalUrl;
-    var pageTitle = props.pageTitle ? props.pageTitle + " - Our World in Data" : "Our World in Data";
+    var pageTitle = props.pageTitle || "Our World in Data";
+    var fullPageTitle = props.pageTitle ? props.pageTitle + " - Our World in Data" : "Our World in Data";
     var pageDesc = props.pageDesc || "Living conditions around the world are changing rapidly. Explore how and why.";
     var imageUrl = props.imageUrl || settings_1.BAKED_URL + "/wp-content/uploads/2016/06/OurWorldInData.png";
     return React.createElement("head", null,
         React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
-        React.createElement("title", null, pageTitle),
+        React.createElement("title", null, fullPageTitle),
         React.createElement("meta", { name: "description", content: pageDesc }),
         React.createElement("link", { rel: "canonical", href: canonicalUrl }),
         React.createElement("link", { rel: "alternate", type: "application/atom+xml", href: "/atom.xml" }),

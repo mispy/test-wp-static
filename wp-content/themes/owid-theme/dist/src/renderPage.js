@@ -52,35 +52,47 @@ var settings_1 = require("./settings");
 var formatting_1 = require("./formatting");
 var grapherUtil_1 = require("./grapherUtil");
 var cheerio = require("cheerio");
-function renderPageById(id) {
+// Wrap ReactDOMServer to stick the doctype on
+function renderToHtmlPage(element) {
+    return "<!doctype html>" + ReactDOMServer.renderToStaticMarkup(element);
+}
+exports.renderToHtmlPage = renderToHtmlPage;
+function renderPageById(id, isPreview) {
     return __awaiter(this, void 0, void 0, function () {
         var rows, post, entries, $, grapherUrls, exportsByUrl, formatted;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, wpdb.query("\n        SELECT * FROM wp_posts AS post WHERE ID=?\n    ", [id])];
+                case 0:
+                    if (!isPreview) return [3 /*break*/, 2];
+                    return [4 /*yield*/, wpdb.query("SELECT post.*, parent.post_type FROM wp_posts AS post JOIN wp_posts AS parent ON parent.ID=post.post_parent WHERE post.post_parent=? AND post.post_type='revision' ORDER BY post_modified DESC", [id])];
                 case 1:
                     rows = _a.sent();
-                    return [4 /*yield*/, wpdb.getFullPost(rows[0])];
-                case 2:
+                    return [3 /*break*/, 4];
+                case 2: return [4 /*yield*/, wpdb.query("SELECT * FROM wp_posts AS post WHERE ID=?", [id])];
+                case 3:
+                    rows = _a.sent();
+                    _a.label = 4;
+                case 4: return [4 /*yield*/, wpdb.getFullPost(rows[0])];
+                case 5:
                     post = _a.sent();
                     return [4 /*yield*/, wpdb.getEntriesByCategory()];
-                case 3:
+                case 6:
                     entries = _a.sent();
                     $ = cheerio.load(post.content);
                     grapherUrls = $("iframe").toArray().filter(function (el) { return (el.attribs['src'] || '').match(/\/grapher\//); }).map(function (el) { return el.attribs['src']; });
                     return [4 /*yield*/, grapherUtil_1.bakeGrapherUrls(grapherUrls, { silent: true })];
-                case 4:
+                case 7:
                     _a.sent();
                     return [4 /*yield*/, grapherUtil_1.getGrapherExportsByUrl()];
-                case 5:
+                case 8:
                     exportsByUrl = _a.sent();
                     return [4 /*yield*/, formatting_1.formatPost(post, exportsByUrl)];
-                case 6:
+                case 9:
                     formatted = _a.sent();
                     if (rows[0].post_type === 'post')
-                        return [2 /*return*/, ReactDOMServer.renderToStaticMarkup(React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }))];
+                        return [2 /*return*/, renderToHtmlPage(React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }))];
                     else
-                        return [2 /*return*/, ReactDOMServer.renderToStaticMarkup(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }))];
+                        return [2 /*return*/, renderToHtmlPage(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }))];
                     return [2 /*return*/];
             }
         });
@@ -108,7 +120,7 @@ function renderFrontPage() {
                     return [4 /*yield*/, wpdb.getEntriesByCategory()];
                 case 3:
                     entries = _a.sent();
-                    return [2 /*return*/, ReactDOMServer.renderToStaticMarkup(React.createElement(FrontPage_1.FrontPage, { entries: entries, posts: posts }))];
+                    return [2 /*return*/, renderToHtmlPage(React.createElement(FrontPage_1.FrontPage, { entries: entries, posts: posts }))];
             }
         });
     });
@@ -116,14 +128,8 @@ function renderFrontPage() {
 exports.renderFrontPage = renderFrontPage;
 function renderSubscribePage() {
     return __awaiter(this, void 0, void 0, function () {
-        var entries;
         return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, wpdb.getEntriesByCategory()];
-                case 1:
-                    entries = _a.sent();
-                    return [2 /*return*/, ReactDOMServer.renderToStaticMarkup(React.createElement(SubscribePage_1.default, { entries: entries }))];
-            }
+            return [2 /*return*/, renderToHtmlPage(React.createElement(SubscribePage_1.default, null))];
         });
     });
 }
@@ -159,13 +165,13 @@ function renderBlogByPageNum(pageNum) {
                     return [4 /*yield*/, wpdb.getEntriesByCategory()];
                 case 2:
                     entries = _a.sent();
-                    return [2 /*return*/, ReactDOMServer.renderToStaticMarkup(React.createElement(BlogIndexPage_1.BlogIndexPage, { entries: entries, posts: posts, pageNum: pageNum, numPages: numPages }))];
+                    return [2 /*return*/, renderToHtmlPage(React.createElement(BlogIndexPage_1.BlogIndexPage, { entries: entries, posts: posts, pageNum: pageNum, numPages: numPages }))];
             }
         });
     });
 }
 exports.renderBlogByPageNum = renderBlogByPageNum;
-function main(target) {
+function main(target, isPreview) {
     return __awaiter(this, void 0, void 0, function () {
         var _a, _b, _c, _d, pageNum, _e, _f, _g, _h, err_1;
         return __generator(this, function (_j) {
@@ -195,7 +201,7 @@ function main(target) {
                     return [3 /*break*/, 8];
                 case 6:
                     _h = (_g = console).log;
-                    return [4 /*yield*/, renderPageById(parseInt(target))];
+                    return [4 /*yield*/, renderPageById(parseInt(target), isPreview)];
                 case 7:
                     _h.apply(_g, [_j.sent()]);
                     _j.label = 8;
@@ -213,5 +219,5 @@ function main(target) {
     });
 }
 if (require.main == module)
-    main(process.argv[2]);
+    main(process.argv[2], process.argv[3] === "preview");
 //# sourceMappingURL=renderPage.js.map

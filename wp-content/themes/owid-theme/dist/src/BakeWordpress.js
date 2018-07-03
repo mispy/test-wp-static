@@ -51,7 +51,6 @@ var BAKED_DIR = settings.BAKED_DIR, BAKED_URL = settings.BAKED_URL, WORDPRESS_UR
 var renderPage_1 = require("./renderPage");
 var grapherUtil_1 = require("./grapherUtil");
 var React = require("react");
-var ReactDOMServer = require("react-dom/server");
 var WordpressBaker = /** @class */ (function () {
     function WordpressBaker(props) {
         this.stagedFiles = [];
@@ -60,27 +59,34 @@ var WordpressBaker = /** @class */ (function () {
     }
     WordpressBaker.prototype.bakeRedirects = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var props, redirects, rows;
+            var redirects, rows;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        props = this.props;
                         redirects = [
+                            // Let's Encrypt certbot verification 
+                            "/.well-known/* https://owid.cloud/.well-known/:splat 200",
+                            // RSS feed
                             "/feed /atom.xml 302",
-                            "/entries /#entries 302",
-                            "/chart-builder/* /grapher/:splat 301",
-                            "/grapher/public/* /grapher/:splat 301",
-                            "/grapher/view/* /grapher/:splat 301",
+                            // Backwards compatibility-- admin urls
                             "/wp-admin/* https://owid.cloud/wp-admin/:splat 302",
                             "/wp-login.php https://owid.cloud/wp-login.php 302",
                             "/grapher/admin/* https://owid.cloud/grapher/admin/:splat 302",
+                            // Backwards compatibility-- old Max stuff that isn't static-friendly
                             "/roser/* https://www.maxroser.com/roser/:splat 302",
                             "/wp-content/uploads/nvd3/* https://www.maxroser.com/owidUploads/nvd3/:splat 302",
                             "/wp-content/uploads/datamaps/* https://www.maxroser.com/owidUploads/datamaps/:splat 302",
-                            "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200",
-                            "/mispy/sdgs/* https://owid-sdgs.netlify.com/:splat 302",
                             "/slides/Max_PPT_presentations/* https://www.maxroser.com/slides/Max_PPT_presentations/:splat 302",
-                            "/slides/Max_Interactive_Presentations/* https://www.maxroser.com/slides/Max_Interactive_Presentations/:splat 302"
+                            "/slides/Max_Interactive_Presentations/* https://www.maxroser.com/slides/Max_Interactive_Presentations/:splat 302",
+                            // Backwards compatibility-- public urls
+                            "/entries /#entries 302",
+                            "/data/food-agriculture/land-use-in-agriculture /yields-and-land-use-in-agriculture 301",
+                            // Backwards compatibility-- grapher url style
+                            "/chart-builder/* /grapher/:splat 301",
+                            "/grapher/public/* /grapher/:splat 301",
+                            "/grapher/view/* /grapher/:splat 301",
+                            // Main grapher chart urls are proxied through to separate repo
+                            "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200"
                         ];
                         return [4 /*yield*/, wpdb.query("SELECT url, action_data, action_code FROM wp_redirection_items")];
                     case 1:
@@ -135,7 +141,7 @@ var WordpressBaker = /** @class */ (function () {
                         return [4 /*yield*/, formatting_1.formatPost(post, this.grapherExports)];
                     case 2:
                         formatted = _a.sent();
-                        html = ReactDOMServer.renderToStaticMarkup(post.type == 'post' ? React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }) : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }));
+                        html = renderPage_1.renderToHtmlPage(post.type == 'post' ? React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }) : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }));
                         outPath = path.join(BAKED_DIR, post.slug + ".html");
                         return [4 /*yield*/, fs.mkdirp(path.dirname(outPath))];
                     case 3:
@@ -152,11 +158,10 @@ var WordpressBaker = /** @class */ (function () {
     WordpressBaker.prototype.bakePosts = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
-            var forceUpdate, postsQuery, rows, bakingPosts, postSlugs, _i, rows_2, row, post, existingSlugs, toRemove, _a, toRemove_1, slug, outPath;
+            var postsQuery, rows, bakingPosts, postSlugs, _i, rows_2, row, post, existingSlugs, toRemove, _a, toRemove_1, slug, outPath;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        forceUpdate = this.props.forceUpdate;
                         postsQuery = wpdb.query("SELECT * FROM wp_posts WHERE (post_type='page' OR post_type='post') AND post_status='publish'");
                         return [4 /*yield*/, postsQuery];
                     case 1:
@@ -185,7 +190,7 @@ var WordpressBaker = /** @class */ (function () {
                     case 6:
                         _b.sent();
                         existingSlugs = glob.sync(BAKED_DIR + "/**/*.html").map(function (path) { return path.replace(BAKED_DIR + "/", '').replace(".html", ""); })
-                            .filter(function (path) { return !path.startsWith('wp-') && !path.startsWith('slides') && !path.startsWith('subscribe') && !path.startsWith('blog') && path !== "index" && path !== "identifyadmin" && path !== "404"; });
+                            .filter(function (path) { return !path.startsWith('wp-') && !path.startsWith('slides') && !path.startsWith('subscribe') && !path.startsWith('blog') && path !== "index" && path !== "identifyadmin" && path !== "404" && path !== "google8272294305985984"; });
                         toRemove = lodash_1.without.apply(void 0, [existingSlugs].concat(postSlugs));
                         _a = 0, toRemove_1 = toRemove;
                         _b.label = 7;

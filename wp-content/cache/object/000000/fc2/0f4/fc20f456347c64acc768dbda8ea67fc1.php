@@ -1,0 +1,1 @@
+lvÌZ<?php exit; ?>a:1:{s:7:"content";a:5:{s:10:"_edit_lock";a:1:{i:0;s:13:"1469202716:11";}s:10:"_edit_last";a:1:{i:0;s:2:"11";}s:17:"_wp_page_template";a:1:{i:0;s:7:"default";}s:13:"_thumbnail_id";a:1:{i:0;s:4:"7761";}s:16:"custom_permalink";a:1:{i:0;s:32:"incomes-across-the-distribution/";}}}
