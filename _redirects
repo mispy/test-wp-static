@@ -14,6 +14,7 @@
 /grapher/public/* /grapher/:splat 301
 /grapher/view/* /grapher/:splat 301
 /grapher/* https://owid-grapher.netlify.com/grapher/:splat 200
+/slides/* https://owid-slides.netlify.com/:splat 200
 /fertility-rates/ https://ourworldindata.org/fertility-rate 301
 /inequality-between-world-citizens/ https://ourworldindata.org/global-economic-inequality 301
 /minorities-violence-racial-tolerance/ https://ourworldindata.org/treatment-of-minorities 301
@@ -43,3 +44,10 @@
 /peak-children /peak-child 301
 /world-poverty/ https://ourworldindata.org/extreme-poverty 301
 /gdp-growth-over-the-last-centuries /economic-growth 301
+/forest-cover /forests 301
+/water-access-consumption-sanitation /water-access-resources-sanitation 301
+/sdgs https://sdg-tracker.org 301
+/skill-premium-income-by-education /returns-to-education 301
+/higher-education /tertiary-education 301
+/military-long-run-perspective/ /military-long-run-spending-perspective/ 301
+/delete/ / 301

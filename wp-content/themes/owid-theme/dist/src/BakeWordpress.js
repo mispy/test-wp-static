@@ -86,7 +86,8 @@ var WordpressBaker = /** @class */ (function () {
                             "/grapher/public/* /grapher/:splat 301",
                             "/grapher/view/* /grapher/:splat 301",
                             // Main grapher chart urls are proxied through to separate repo
-                            "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200"
+                            "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200",
+                            "/slides/* https://owid-slides.netlify.com/:splat 200"
                         ];
                         return [4 /*yield*/, wpdb.query("SELECT url, action_data, action_code FROM wp_redirection_items")];
                     case 1:

@@ -31,7 +31,7 @@ exports.ArticlePage = function (props) {
                         React.createElement("header", { className: "article-header" },
                             React.createElement("h1", { className: "entry-title" }, post.title),
                             React.createElement("div", { className: "authors-byline" },
-                                React.createElement("a", { href: "/about/#the-team" },
+                                React.createElement("a", { href: "/about/#team" },
                                     "by ",
                                     authorsText),
                                 React.createElement("a", { className: "citation-note js-only" },
