@@ -14,8 +14,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
                 case 0: case 1: t = op; break;
                 case 4: _.label++; return { value: op[1], done: false };
@@ -83,14 +83,14 @@ function getUploadedImages() {
                 case 2:
                     dimensions = _a.sent();
                     _1 = match[0], dirpath = match[1], slug = match[2], dims = match[3], filetype = match[4];
-                    upload = uploadDex.get(slug);
+                    upload = uploadDex.get(dirpath + slug);
                     if (!upload) {
                         upload = {
                             slug: slug,
                             originalUrl: path.join(dirpath, slug) + "." + filetype,
                             variants: []
                         };
-                        uploadDex.set(slug, upload);
+                        uploadDex.set(dirpath + slug, upload);
                     }
                     upload.variants.push({
                         url: path.join(dirpath, filename),
@@ -123,7 +123,7 @@ function getAuthorship() {
                 case 0:
                     if (cachedAuthorship)
                         return [2 /*return*/, cachedAuthorship];
-                    return [4 /*yield*/, wpdb.query("\n        SELECT object_id, terms.description FROM wp_term_relationships AS rels\n        LEFT JOIN wp_term_taxonomy AS terms ON terms.term_taxonomy_id=rels.term_taxonomy_id \n        WHERE terms.taxonomy='author'\n    ")];
+                    return [4 /*yield*/, wpdb.query("\n        SELECT object_id, terms.description FROM wp_term_relationships AS rels\n        LEFT JOIN wp_term_taxonomy AS terms ON terms.term_taxonomy_id=rels.term_taxonomy_id \n        WHERE terms.taxonomy='author'\n        ORDER BY rels.term_order ASC\n    ")];
                 case 1:
                     authorRows = _a.sent();
                     authorship = new Map();
@@ -218,8 +218,8 @@ function getPermalinks() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             return [2 /*return*/, {
-                    // Strip trailing slashes, and convert -- into / to allow custom subdirs like /about/media-coverage
-                    get: function (ID, post_name) { return post_name.replace(/\/+$/g, "").replace(/--/g, "/"); }
+                    // Strip trailing slashes, and convert __ into / to allow custom subdirs like /about/media-coverage
+                    get: function (ID, post_name) { return post_name.replace(/\/+$/g, "").replace(/--/g, "/").replace(/__/g, "/"); }
                 }];
         });
     });

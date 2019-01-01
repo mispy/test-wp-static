@@ -1,0 +1,12 @@
+èËØ[<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"8733";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2016-09-11 15:56:29";s:13:"post_date_gmt";s:19:"2016-09-11 15:56:29";s:12:"post_content";s:1357:"We have been a bit quiet on the blog, but that doesn't mean that we did not keep working on Our World In Data.
+We worked on a series of updates and added new entries to our web publication. Here are the links to 7 of our latest additions:
+<ul>
+ 	<li>We have two completely new meta entries: One for <a href="https://ourworldindata.org/health-meta/">health</a> and for <a href="https://ourworldindata.org/global-rise-of-education">education</a>. They both present the most important aspect on these topics and give a first overview so that you can then go and study and read about the particular aspects in more depth in the specific entries.</li>
+ 	<li>On the same topics we did quite a lot of work to present the empirical research on how these public goods are financed. You find these in the entry on <a href="https://ourworldindata.org/financing-healthcare/">financing health</a> and on <a href="https://ourworldindata.org/financing-education">financing education</a>.</li>
+ 	<li>We have also updated and added a series of specific entries: Three that I think are particularly interesting are the entries on <a href="https://ourworldindata.org/trust">trust</a>, <a href="https://ourworldindata.org/literacy/">literacy</a>, and <a href="https://ourworldindata.org/international-trade">international trade</a>.</li>
+</ul>
+&nbsp;
+
+&nbsp;
+
+&nbsp;";s:10:"post_title";s:51:"New entries on Our World In Data during summer 2016";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:51:"new-entries-on-our-world-in-data-during-summer-2016";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2016-09-11 16:08:47";s:17:"post_modified_gmt";s:19:"2016-09-11 16:08:47";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:34:"https://ourworldindata.org/?p=8733";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

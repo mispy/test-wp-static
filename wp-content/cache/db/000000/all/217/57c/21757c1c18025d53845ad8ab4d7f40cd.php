@@ -1,4 +1,4 @@
-ì7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:190:"
+uÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:190:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','global-child-mortality-timeseries_v1_850x600-svg')

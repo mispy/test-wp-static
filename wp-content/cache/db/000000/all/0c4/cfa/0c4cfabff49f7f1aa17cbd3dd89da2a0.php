@@ -1,4 +1,4 @@
-7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:44:"SELECT * FROM wp_posts WHERE ID = 92 LIMIT 1";s:11:"last_result";a:1:{i:0;O:8:"stdClass":23:{s:2:"ID";s:2:"92";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2008-09-17 16:53:25";s:13:"post_date_gmt";s:19:"2008-09-17 16:53:25";s:12:"post_content";s:27513:"<!--raw-->
+ †ö[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:44:"SELECT * FROM wp_posts WHERE ID = 92 LIMIT 1";s:11:"last_result";a:1:{i:0;O:8:"stdClass":23:{s:2:"ID";s:2:"92";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2008-09-17 16:53:25";s:13:"post_date_gmt";s:19:"2008-09-17 16:53:25";s:12:"post_content";s:27513:"<!--raw-->
 <style>
     @media (min-width: 800px) {
         ul.TeamMembers > li:not(.Director) {

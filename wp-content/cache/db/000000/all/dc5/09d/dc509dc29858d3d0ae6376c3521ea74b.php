@@ -1,4 +1,4 @@
-ô7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:234:"
+~ÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:234:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','neonatal-mortality-rate-per-1000-live-births-f6188c67834324cc95d28ca2108ab63e_v1_850x600-svg')

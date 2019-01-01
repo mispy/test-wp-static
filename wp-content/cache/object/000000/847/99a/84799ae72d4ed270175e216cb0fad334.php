@@ -1,0 +1,1 @@
+è¯[<?php exit; ?>a:1:{s:7:"content";a:5:{s:10:"_edit_lock";a:1:{i:0;s:13:"1507740468:15";}s:10:"_edit_last";a:1:{i:0;s:2:"15";}s:38:"_webdados_fb_open_graph_specific_image";a:1:{i:0;s:0:"";}s:13:"_thumbnail_id";a:1:{i:0;s:5:"10857";}s:16:"custom_permalink";a:1:{i:0;s:34:"no-matter-what-global-poverty-line";}}}

@@ -1,4 +1,4 @@
-ö7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:248:"
+€ÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:248:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','correlation-between-child-mortality-and-mean-years-of-schooling-for-those-aged-15-and-older_v1_850x600-svg')

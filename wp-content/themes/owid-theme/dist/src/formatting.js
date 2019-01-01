@@ -14,8 +14,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
                 case 0: case 1: t = op; break;
                 case 4: _.label++; return { value: op[1], done: false };
@@ -45,15 +45,7 @@ var settings_1 = require("./settings");
 var wpdb_1 = require("./wpdb");
 var Tablepress_1 = require("./views/Tablepress");
 var path = require("path");
-//const compiler = require('markdown-to-jsx').compiler
-var MarkdownIt = require('markdown-it');
 var mjAPI = require("mathjax-node");
-var md = new MarkdownIt({ html: true, linkify: true });
-function parseMarkdown(content) {
-    //return compiler(content).props.children||[]
-    return md.render(content);
-}
-exports.parseMarkdown = parseMarkdown;
 function romanize(num) {
     if (!+num)
         return "";
@@ -65,7 +57,9 @@ function romanize(num) {
     return Array(+digits.join("") + 1).join("M") + roman;
 }
 mjAPI.config({
-    MathJax: {}
+    MathJax: {
+    // traditional MathJax configuration
+    }
 });
 mjAPI.start();
 function extractLatex(html) {
@@ -78,7 +72,7 @@ function extractLatex(html) {
 }
 function formatLatex(html, latexBlocks) {
     return __awaiter(this, void 0, void 0, function () {
-        var compiled, _i, latexBlocks_1, latex, result, err_1, i, _a;
+        var _a, compiled, _i, latexBlocks_1, latex, result, err_1, i;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
@@ -115,9 +109,9 @@ function formatLatex(html, latexBlocks) {
         });
     });
 }
-function formatPostLegacy(post, html, grapherExports) {
+function formatWordpressPost(post, html, grapherExports) {
     return __awaiter(this, void 0, void 0, function () {
-        var latexBlocks, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _a, grapherIframes_1, el, src, chart, output, $p, _b, _c, iframe, _d, _e, p, $p, _f, _g, table, $table, $div, uploadDex, _h, _j, el, src, upload, hasToc, openHeadingIndex, openSubheadingIndex, tocHeadings, _k;
+        var _a, latexBlocks, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _b, grapherIframes_1, el, src, chart, output, $p, _c, _d, iframe, _e, _f, p, $p, _g, _h, table, $table, $div, uploadDex, _j, _k, el, $el, src, upload, $a, hasToc, openHeadingIndex, openSubheadingIndex, tocHeadings;
         return __generator(this, function (_l) {
             switch (_l.label) {
                 case 0:
@@ -125,7 +119,7 @@ function formatPostLegacy(post, html, grapherExports) {
                     html = html.replace(/<!--[^>]+-->/g, "");
                     // Standardize spacing
                     html = html.replace(/&nbsp;/g, "").replace(/\r\n/g, "\n").replace(/\n+/g, "\n").replace(/\n/g, "\n\n");
-                    _k = extractLatex(html), html = _k[0], latexBlocks = _k[1];
+                    _a = extractLatex(html), html = _a[0], latexBlocks = _a[1];
                     // Replicate wordpress formatting (thank gods there's an npm package)
                     html = wpautop(html);
                     return [4 /*yield*/, formatLatex(html, latexBlocks)
@@ -150,8 +144,8 @@ function formatPostLegacy(post, html, grapherExports) {
                             return "UNKNOWN TABLE";
                     });
                     // These old things don't work with static generation, link them through to maxroser.com
-                    html = html.replace(new RegExp("/wp-content/uploads/nvd3", 'g'), "https://www.maxroser.com/owidUploads/nvd3")
-                        .replace(new RegExp("/wp-content/uploads/datamaps", 'g'), "https://www.maxroser.com/owidUploads/datamaps");
+                    html = html.replace(new RegExp("https://ourworldindata.org/wp-content/uploads/nvd3", 'g'), "https://www.maxroser.com/owidUploads/nvd3")
+                        .replace(new RegExp("https://ourworldindata.org/wp-content/uploads/datamaps", 'g'), "https://www.maxroser.com/owidUploads/datamaps");
                     $ = cheerio.load(html);
                     sectionStarts = [$("body").children().get(0)].concat($("h2").toArray());
                     for (_i = 0, sectionStarts_1 = sectionStarts; _i < sectionStarts_1.length; _i++) {
@@ -167,8 +161,8 @@ function formatPostLegacy(post, html, grapherExports) {
                     // Replace grapher iframes with static previews
                     if (grapherExports) {
                         grapherIframes = $("iframe").toArray().filter(function (el) { return (el.attribs['src'] || '').match(/\/grapher\//); });
-                        for (_a = 0, grapherIframes_1 = grapherIframes; _a < grapherIframes_1.length; _a++) {
-                            el = grapherIframes_1[_a];
+                        for (_b = 0, grapherIframes_1 = grapherIframes; _b < grapherIframes_1.length; _b++) {
+                            el = grapherIframes_1[_b];
                             src = el.attribs['src'];
                             chart = grapherExports.get(src);
                             if (chart) {
@@ -181,21 +175,21 @@ function formatPostLegacy(post, html, grapherExports) {
                     }
                     // Any remaining iframes: ensure https embeds
                     if (settings_1.HTTPS_ONLY) {
-                        for (_b = 0, _c = $("iframe").toArray(); _b < _c.length; _b++) {
-                            iframe = _c[_b];
+                        for (_c = 0, _d = $("iframe").toArray(); _c < _d.length; _c++) {
+                            iframe = _d[_c];
                             iframe.attribs['src'] = iframe.attribs['src'].replace("http://", "https://");
                         }
                     }
                     // Remove any empty elements
-                    for (_d = 0, _e = $("p").toArray(); _d < _e.length; _d++) {
-                        p = _e[_d];
+                    for (_e = 0, _f = $("p").toArray(); _e < _f.length; _e++) {
+                        p = _f[_e];
                         $p = $(p);
                         if ($p.contents().length === 0)
                             $p.remove();
                     }
                     // Wrap tables so we can do overflow-x: scroll if needed
-                    for (_f = 0, _g = $("table").toArray(); _f < _g.length; _f++) {
-                        table = _g[_f];
+                    for (_g = 0, _h = $("table").toArray(); _g < _h.length; _g++) {
+                        table = _h[_g];
                         $table = $(table);
                         $div = $("<div class='tableContainer'></div>");
                         $table.after($div);
@@ -204,8 +198,9 @@ function formatPostLegacy(post, html, grapherExports) {
                     return [4 /*yield*/, wpdb_1.getUploadedImages()];
                 case 3:
                     uploadDex = _l.sent();
-                    for (_h = 0, _j = $("img").toArray(); _h < _j.length; _h++) {
-                        el = _j[_h];
+                    for (_j = 0, _k = $("img").toArray(); _j < _k.length; _j++) {
+                        el = _k[_j];
+                        $el = $(el);
                         // Open full-size image in new tab
                         if (el.parent.tagName === "a") {
                             el.parent.attribs['target'] = '_blank';
@@ -215,156 +210,8 @@ function formatPostLegacy(post, html, grapherExports) {
                         if (upload && upload.variants.length) {
                             el.attribs['srcset'] = upload.variants.map(function (v) { return v.url + " " + v.width + "w"; }).join(", ");
                             el.attribs['sizes'] = "(min-width: 800px) 50vw, 100vw";
-                        }
-                    }
-                    hasToc = post.type === 'page' && post.slug !== 'about';
-                    openHeadingIndex = 0;
-                    openSubheadingIndex = 0;
-                    tocHeadings = [];
-                    $("h1, h2, h3, h4").each(function (_, el) {
-                        var $heading = $(el);
-                        var headingText = $heading.text();
-                        // We need both the text and the html because may contain footnote
-                        var headingHtml = $heading.html();
-                        var slug = urlSlug(headingText);
-                        // Table of contents
-                        if (hasToc) {
-                            if ($heading.is("#footnotes") && footnotes.length > 0) {
-                                tocHeadings.push({ text: headingText, slug: "footnotes", isSubheading: false });
-                            }
-                            else if (!$heading.is('h1') && !$heading.is('h4')) {
-                                // Inject numbering into the text as well
-                                if ($heading.is('h2')) {
-                                    openHeadingIndex += 1;
-                                    openSubheadingIndex = 0;
-                                }
-                                else if ($heading.is('h3')) {
-                                    openSubheadingIndex += 1;
-                                }
-                                if (openHeadingIndex > 0) {
-                                    if ($heading.is('h2')) {
-                                        headingHtml = romanize(openHeadingIndex) + '. ' + headingHtml;
-                                        $heading.html(headingHtml);
-                                        tocHeadings.push({ text: $heading.text(), slug: slug, isSubheading: false });
-                                    }
-                                    else {
-                                        headingHtml = romanize(openHeadingIndex) + '.' + openSubheadingIndex + ' ' + headingHtml;
-                                        $heading.html(headingHtml);
-                                        tocHeadings.push({ text: $heading.text(), slug: slug, isSubheading: true });
-                                    }
-                                }
-                            }
-                        }
-                        // Deep link
-                        $heading.attr('id', slug).prepend("<a class=\"deep-link\" href=\"#" + slug + "\"></a>");
-                    });
-                    return [2 /*return*/, {
-                            id: post.id,
-                            type: post.type,
-                            slug: post.slug,
-                            title: post.title,
-                            date: post.date,
-                            modifiedDate: post.modifiedDate,
-                            authors: post.authors,
-                            html: $("body").html(),
-                            footnotes: footnotes,
-                            excerpt: post.excerpt || $($("p")[0]).text(),
-                            imageUrl: post.imageUrl,
-                            tocHeadings: tocHeadings
-                        }];
-            }
-        });
-    });
-}
-exports.formatPostLegacy = formatPostLegacy;
-function formatPostMarkdown(post, html, grapherExports) {
-    return __awaiter(this, void 0, void 0, function () {
-        var footnotes, tables, $, sectionStarts, _i, sectionStarts_2, start, $start, $contents, $wrapNode, grapherIframes, _a, grapherIframes_2, el, src, chart, output, _b, _c, iframe, _d, _e, p, $p, uploadDex, _f, _g, el, $el, src, upload, $a, hasToc, openHeadingIndex, openSubheadingIndex, tocHeadings;
-        return __generator(this, function (_h) {
-            switch (_h.label) {
-                case 0:
-                    // Remove starting tag
-                    html = html.replace(/^<!--markdown-->/, "");
-                    footnotes = [];
-                    html = html.replace(/\[ref\]([\s\S]*?)\[\/ref\]/gm, function (_, footnote) {
-                        footnotes.push(parseMarkdown(footnote));
-                        var i = footnotes.length;
-                        return "<a id=\"ref-" + i + "\" class=\"ref\" href=\"#note-" + i + "\"><sup>" + i + "</sup></a>";
-                    });
-                    return [4 /*yield*/, formatLatex(html)
-                        // Insert [table id=foo] tablepress tables
-                    ];
-                case 1:
-                    html = _h.sent();
-                    return [4 /*yield*/, wpdb_1.getTables()];
-                case 2:
-                    tables = _h.sent();
-                    html = html.replace(/\[table\s+id=(\d+)\s*\/\]/g, function (match, tableId) {
-                        var table = tables.get(tableId);
-                        if (table)
-                            return ReactDOMServer.renderToStaticMarkup(React.createElement(Tablepress_1.default, { data: table.data }));
-                        else
-                            return "UNKNOWN TABLE";
-                    });
-                    html = parseMarkdown(html);
-                    // These old things don't work with static generation, link them through to maxroser.com
-                    html = html.replace(new RegExp("/wp-content/uploads/nvd3", 'g'), "https://www.maxroser.com/owidUploads/nvd3")
-                        .replace(new RegExp("/wp-content/uploads/datamaps", 'g'), "https://www.maxroser.com/owidUploads/datamaps");
-                    $ = cheerio.load(html);
-                    sectionStarts = [$("body").children().get(0)].concat($("h2").toArray());
-                    for (_i = 0, sectionStarts_2 = sectionStarts; _i < sectionStarts_2.length; _i++) {
-                        start = sectionStarts_2[_i];
-                        $start = $(start);
-                        $contents = $start.nextUntil("h2");
-                        $wrapNode = $("<section></section>");
-                        $contents.remove();
-                        $wrapNode.append($start.clone());
-                        $wrapNode.append($contents);
-                        $start.replaceWith($wrapNode);
-                    }
-                    // Replace grapher iframes with static previews
-                    if (grapherExports) {
-                        grapherIframes = $("iframe").toArray().filter(function (el) { return (el.attribs['src'] || '').match(/\/grapher\//); });
-                        for (_a = 0, grapherIframes_2 = grapherIframes; _a < grapherIframes_2.length; _a++) {
-                            el = grapherIframes_2[_a];
-                            src = el.attribs['src'];
-                            chart = grapherExports.get(src);
-                            if (chart) {
-                                output = "<figure data-grapher-src=\"" + src + "\" class=\"grapherPreview\"><a href=\"" + src + "\" target=\"_blank\"><div><img src=\"" + chart.svgUrl + "\"/></div></a></div>";
-                                $(el).replaceWith(output);
-                            }
-                        }
-                    }
-                    // Any remaining iframes: ensure https embeds
-                    if (settings_1.HTTPS_ONLY) {
-                        for (_b = 0, _c = $("iframe").toArray(); _b < _c.length; _b++) {
-                            iframe = _c[_b];
-                            iframe.attribs['src'] = iframe.attribs['src'].replace("http://", "https://");
-                        }
-                    }
-                    // Remove any empty elements
-                    for (_d = 0, _e = $("p").toArray(); _d < _e.length; _d++) {
-                        p = _e[_d];
-                        $p = $(p);
-                        if ($p.contents().length === 0)
-                            $p.remove();
-                    }
-                    return [4 /*yield*/, wpdb_1.getUploadedImages()];
-                case 3:
-                    uploadDex = _h.sent();
-                    for (_f = 0, _g = $("img").toArray(); _f < _g.length; _f++) {
-                        el = _g[_f];
-                        $el = $(el);
-                        src = el.attribs['src'] || "";
-                        upload = uploadDex.get(path.basename(src));
-                        if (upload && upload.variants.length) {
-                            el.attribs['srcset'] = upload.variants.map(function (v) { return v.url + " " + v.width + "w"; }).join(", ");
-                            el.attribs['sizes'] = "(min-width: 800px) 50vw, 100vw";
                             // Link through to full size image
-                            if (el.parent.tagName === "a") {
-                                el.parent.attribs['target'] = '_blank';
-                            }
-                            else {
+                            if (el.parent.tagName !== "a") {
                                 $a = $("<a href=\"" + upload.originalUrl + "\" target=\"_blank\"></a>");
                                 $el.replaceWith($a);
                                 $a.append($el);
@@ -430,15 +277,15 @@ function formatPostMarkdown(post, html, grapherExports) {
         });
     });
 }
-exports.formatPostMarkdown = formatPostMarkdown;
+exports.formatWordpressPost = formatWordpressPost;
 function formatPost(post, grapherExports) {
     return __awaiter(this, void 0, void 0, function () {
         var html, isRaw;
         return __generator(this, function (_a) {
             html = post.content;
-            // Use relative urls wherever possible
-            html = html.replace(new RegExp(settings_1.WORDPRESS_URL, 'g'), "")
-                .replace(new RegExp("https?://ourworldindata.org", 'g'), "");
+            // Standardize urls
+            html = html.replace(new RegExp(settings_1.WORDPRESS_URL, 'g'), settings_1.BAKED_URL)
+                .replace(new RegExp("https?://ourworldindata.org", 'g'), settings_1.BAKED_URL);
             isRaw = html.match(/<!--raw-->/);
             if (isRaw) {
                 return [2 /*return*/, {
@@ -456,11 +303,8 @@ function formatPost(post, grapherExports) {
                         tocHeadings: []
                     }];
             }
-            else if (html.match(/^<!--markdown-->/)) {
-                return [2 /*return*/, formatPostMarkdown(post, html, grapherExports)];
-            }
             else {
-                return [2 /*return*/, formatPostLegacy(post, html, grapherExports)];
+                return [2 /*return*/, formatWordpressPost(post, html, grapherExports)];
             }
             return [2 /*return*/];
         });

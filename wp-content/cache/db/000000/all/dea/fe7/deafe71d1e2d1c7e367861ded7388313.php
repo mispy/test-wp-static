@@ -1,4 +1,4 @@
-ç7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:156:"
+nÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:156:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('future-population-growth')

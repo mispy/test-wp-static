@@ -1,4 +1,4 @@
-ò7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:217:"
+|ÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:217:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','annual-deaths-of-infants-younger-than-1-year-by-world-region_v1_850x600-svg')

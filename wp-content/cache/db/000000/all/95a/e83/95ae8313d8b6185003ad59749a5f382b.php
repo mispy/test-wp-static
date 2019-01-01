@@ -1,4 +1,4 @@
-Þ7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:211:"
+fÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:211:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','children-per-woman-un-15a2f82ca104f101a94a50b8aa5bebaf_v1_850x600-svg')

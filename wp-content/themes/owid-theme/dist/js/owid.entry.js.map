@@ -1,1 +1,1 @@
-{"version":3,"file":"owid.entry.js","sourceRoot":"","sources":["../../js/owid.entry.ts"],"names":[],"mappings":";;AAAA,6BAA0B;AAC1B,2BAAwB"}
+{"version":3,"file":"owid.entry.js","sourceRoot":"","sources":["../../js/owid.entry.ts"],"names":[],"mappings":";;AAAA,6BAA0B;AAC1B,2BAAwB;AACxB,yCAAqC;AAErC,IAAM,MAAM,GAAG,QAAQ,CAAC,aAAa,CAAC,iBAAiB,CAAC,CAAA;AAExD,IAAI,MAAM,EAAE;IACR,IAAM,OAAK,GAAG,MAAM,CAAC,aAAa,CAAC,oBAAoB,CAAqB,CAAA;IAC5E,MAAM,CAAC,gBAAgB,CAAC,QAAQ,EAAE,cAAM,OAAA,qBAAS,CAAC,QAAQ,CAAC,kBAAkB,EAAE,EAAE,KAAK,EAAE,OAAK,CAAC,KAAK,EAAE,CAAC,EAA9D,CAA8D,CAAC,CAAA;CAC1G"}

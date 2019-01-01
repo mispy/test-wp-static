@@ -1,4 +1,4 @@
-Ø7[<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"17263";s:11:"post_author";s:2:"10";s:9:"post_date";s:19:"2018-03-19 10:08:57";s:13:"post_date_gmt";s:19:"2018-03-19 10:08:57";s:12:"post_content";s:8414:"<div class="blog-info">
+j:\<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"17263";s:11:"post_author";s:2:"10";s:9:"post_date";s:19:"2018-03-19 10:08:57";s:13:"post_date_gmt";s:19:"2018-03-19 10:08:57";s:12:"post_content";s:8414:"<div class="blog-info">
 Our World in Data presents the empirical evidence on global development in articles dedicated to specific topics. This blog post is related to our article on <strong><a href="https://ourworldindata.org/growth-and-structural-transformation-are-emerging-economies-industrializing-too-quickly" target="_blank">industrialization in developing countries</a>.</strong>
 <em>We thank Penelope Mealy for helpful comments and suggestions on earlier draft versions of this blog post.</em>
 </div>

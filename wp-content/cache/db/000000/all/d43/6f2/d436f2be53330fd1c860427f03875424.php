@@ -1,4 +1,4 @@
-Ø7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:212:"
+ª£þ[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:212:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('wp-content','uploads','2018','03','five-year-cancer-survival-rates-usa-v2-01-png')

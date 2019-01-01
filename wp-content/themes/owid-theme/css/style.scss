@@ -13,7 +13,7 @@
 	License URI: https://opensource.org/licenses/MIT
 */
 
-@import 'normalize.css';
+@import '~normalize.css';
 
 body { margin: 0; }
 
@@ -87,11 +87,6 @@ textarea:focus,
 a {
 	color: #1059E5;
 	text-decoration: none;
-}
-
-p {
-	margin: 0 0 20px;
-	padding: 0;
 }
 
 ol,
@@ -959,6 +954,7 @@ h1.entry-title > a:hover {
 	}
 }
 
+/* The little section at the top of blog posts that links to related entries */
 .blog-info {
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
@@ -970,6 +966,13 @@ h1.entry-title > a:hover {
 	> p:last-child {
 		margin-bottom: 0;
 	}
+}
+
+/* Optional abstract for blog posts */
+.blog-abstract {
+	background-color: #f8f7fe;
+	padding: 20px;
+	font-style: italic;
 }
 
 main {
@@ -1796,8 +1799,18 @@ div.owid-presentations li:nth-of-type(1) a:hover {
 	}
 }
 
+hr {
+	color: lightgrey;
+	border-bottom:none;
+	border-left:none;
+	border-right: none;
+	padding-bottom: 8px;
+	border-top: 1px;
+	border-top-style: solid;
+	margin-bottom: 0;
+}
+
 /* The style of horizontal lines in the data sources section of every entry */
-.article-content > section:last-child > hr,
 hr.datasources-hr {
 	color: lightgrey;
 	border-top:none;

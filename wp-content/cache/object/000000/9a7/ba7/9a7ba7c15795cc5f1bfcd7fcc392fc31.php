@@ -1,4 +1,4 @@
-Ó7[<?php exit; ?>a:1:{s:7:"content";a:73:{s:10:"first_name";a:1:{i:0;s:3:"Max";}s:9:"last_name";a:1:{i:0;s:5:"Roser";}s:8:"nickname";a:1:{i:0;s:9:"max-roser";}s:11:"description";a:1:{i:0;s:224:"<a href="https://twitter.com/MaxCRoser">Follow @MaxCRoser</a>
+r£þ[<?php exit; ?>a:1:{s:7:"content";a:73:{s:10:"first_name";a:1:{i:0;s:3:"Max";}s:9:"last_name";a:1:{i:0;s:5:"Roser";}s:8:"nickname";a:1:{i:0;s:9:"max-roser";}s:11:"description";a:1:{i:0;s:224:"<a href="https://twitter.com/MaxCRoser">Follow @MaxCRoser</a>
 
 <a rel="author" href="http://plus.google.com/u/0/102013783400917541979">Google Plus</a>
 

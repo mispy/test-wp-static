@@ -1,4 +1,4 @@
-ß7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:222:"
+gÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:222:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','birth-rate-the-number-of-births-per-1000-people-in-the-population_v1_850x600-svg')

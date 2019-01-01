@@ -5,95 +5,95 @@
     <id>https://ourworldindata.org/</id>
     <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
     <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-    <updated>2018-07-03T08:35:40.000Z</updated>
+    <updated>2018-12-04T16:21:06.000Z</updated>
     <entry>
-        <title>Global education: 7 slide decks with key charts on progress and challenges</title>
-    <id>https://ourworldindata.org/global-education-slides</id>
-        <link rel="alternate" href="https://ourworldindata.org/global-education-slides"/>
-        <published>2018-07-03T08:35:40.000Z</published>
-        <updated>2018-07-03T17:13:37.000Z</updated>
+        <title>Who emits more than their share of CO₂ emissions?</title>
+    <id>https://ourworldindata.org/share-co2-emissions</id>
+        <link rel="alternate" href="https://ourworldindata.org/share-co2-emissions"/>
+        <published>2018-12-04T16:21:06.000Z</published>
+        <updated>2018-12-14T14:32:48.000Z</updated>
+        <author><name>Hannah Ritchie</name></author>
+        <summary>This blog post draws on data and research discussed in our entry on CO₂ and other Greenhouse Gas Emissions.</summary>
+    </entry>
+<entry>
+        <title>Global inequalities in CO₂ emissions, based on consumption</title>
+    <id>https://ourworldindata.org/global-inequalities-co2-consumption</id>
+        <link rel="alternate" href="https://ourworldindata.org/global-inequalities-co2-consumption"/>
+        <published>2018-12-04T16:20:51.000Z</published>
+        <updated>2018-12-14T14:46:53.000Z</updated>
+        <author><name>Hannah Ritchie</name></author>
+        <summary>This blog post draws on data and research discussed in our entry on CO2 and other Greenhouse Gas Emissions.</summary>
+    </entry>
+<entry>
+        <title>Is income inequality rising around the world?</title>
+    <id>https://ourworldindata.org/income-inequality-since-1990</id>
+        <link rel="alternate" href="https://ourworldindata.org/income-inequality-since-1990"/>
+        <published>2018-11-19T10:00:46.000Z</published>
+        <updated>2018-11-26T13:51:07.000Z</updated>
+        <author><name>Joe Hasell</name></author>
+        <summary>Rising levels of inequality has become a key political issue in recent years; "the defining issue of our time," as Barack Obama described it back in 2013. It was at the heart of the Occupy movement protests, and has received a huge amount of attention in the media and in policy circles. But much of this discussion has focussed on what's been happening in rich countries, in particular upon trends seen in the US. We tend to hear less about inequality in the rest of the world.</summary>
+    </entry>
+<entry>
+        <title>Can the world eradicate another disease?</title>
+    <id>https://ourworldindata.org/can-the-world-eradicate-another-disease</id>
+        <link rel="alternate" href="https://ourworldindata.org/can-the-world-eradicate-another-disease"/>
+        <published>2018-11-08T10:12:54.000Z</published>
+        <updated>2018-11-08T14:47:49.000Z</updated>
+        <author><name>Sophie Ochmann</name></author>
+        <summary>This blog post draws on data and research discussed in our entry on the Eradication of Diseases.</summary>
+    </entry>
+<entry>
+        <title>What makes a disease eradicable?</title>
+    <id>https://ourworldindata.org/what-makes-a-disease-eradicable</id>
+        <link rel="alternate" href="https://ourworldindata.org/what-makes-a-disease-eradicable"/>
+        <published>2018-11-05T14:30:50.000Z</published>
+        <updated>2018-11-05T14:38:33.000Z</updated>
+        <author><name>Sophie Ochmann</name></author>
+        <summary>This blog post draws on data and research discussed in our entry on the Eradication of Diseases.</summary>
+    </entry>
+<entry>
+        <title>We've updated our entry on Trade and Globalization</title>
+    <id>https://ourworldindata.org/weve-updated-our-entry-on-trade-and-globalization</id>
+        <link rel="alternate" href="https://ourworldindata.org/weve-updated-our-entry-on-trade-and-globalization"/>
+        <published>2018-11-01T18:02:08.000Z</published>
+        <updated>2018-11-01T23:17:40.000Z</updated>
         <author><name>Esteban Ortiz-Ospina</name></author>
-        <summary>We have made a new set of presentation slides on education. We cover many aspects – schooling, learning, teaching, governance and much more.</summary>
+        <summary>Over the last couple of months we have been expanding and updating our entry on international trade and globalization. The new version is here: OurWorldInData.org/trade-and-globalization </summary>
     </entry>
 <entry>
-        <title>Introducing our new and improved 'Sustainable Development Goal (SDG) Tracker'</title>
-    <id>https://ourworldindata.org/sdg-tracker-update</id>
-        <link rel="alternate" href="https://ourworldindata.org/sdg-tracker-update"/>
-        <published>2018-06-28T10:20:58.000Z</published>
-        <updated>2018-06-28T16:21:42.000Z</updated>
+        <title>The world is much better; The world is awful; The world can be much better</title>
+    <id>https://ourworldindata.org/much-better-awful-can-be-better</id>
+        <link rel="alternate" href="https://ourworldindata.org/much-better-awful-can-be-better"/>
+        <published>2018-10-31T01:42:44.000Z</published>
+        <updated>2018-10-31T20:55:10.000Z</updated>
+        <author><name>Max Roser</name></author>
+        <summary>The world is much better. The world is awful. The world can be much better. All three statements are true.</summary>
+    </entry>
+<entry>
+        <title>From commonplace to rarer tragedy - declining child mortality across the world</title>
+    <id>https://ourworldindata.org/child-mortality-global-overview</id>
+        <link rel="alternate" href="https://ourworldindata.org/child-mortality-global-overview"/>
+        <published>2018-10-29T13:00:08.000Z</published>
+        <updated>2018-11-01T15:47:33.000Z</updated>
         <author><name>Hannah Ritchie</name></author>
-        <summary>This post introduces our Sustainable Development Goal (SDG) Tracker.</summary>
+        <summary>This blog post draws on data and research discussed in our entry on Child Mortality.</summary>
     </entry>
 <entry>
-        <title>How is literacy measured?</title>
-    <id>https://ourworldindata.org/how-is-literacy-measured</id>
-        <link rel="alternate" href="https://ourworldindata.org/how-is-literacy-measured"/>
-        <published>2018-06-08T08:44:50.000Z</published>
-        <updated>2018-06-08T08:45:04.000Z</updated>
-        <author><name>Esteban Ortiz-Ospina</name></author><author><name>Diana Beltekian</name></author>
-        <summary>Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.</summary>
+        <title>Is trade a major driver of income inequality?</title>
+    <id>https://ourworldindata.org/trade-and-income-inequality</id>
+        <link rel="alternate" href="https://ourworldindata.org/trade-and-income-inequality"/>
+        <published>2018-10-22T07:27:02.000Z</published>
+        <updated>2018-10-22T16:40:48.000Z</updated>
+        <author><name>Esteban Ortiz-Ospina</name></author>
+        <summary>Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics. In this blog post we cover the link between globalization and inequality. In two separate companion posts we cover the link between globalization and economic growth, and the link between globalization and jobs. These articles draw on data and research discussed in our entry on International Trade.</summary>
     </entry>
 <entry>
-        <title>International trade data: why doesn't it add up?</title>
-    <id>https://ourworldindata.org/trade-data-sources-discrepancies</id>
-        <link rel="alternate" href="https://ourworldindata.org/trade-data-sources-discrepancies"/>
-        <published>2018-06-05T09:20:10.000Z</published>
-        <updated>2018-06-05T09:21:10.000Z</updated>
-        <author><name>Esteban Ortiz-Ospina</name></author><author><name>Diana Beltekian</name></author>
-        <summary>Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.</summary>
-    </entry>
-<entry>
-        <title>We're hiring! Why you should come do programming at Oxford</title>
-    <id>https://ourworldindata.org/why-you-should-come-do-programming-at-oxford</id>
-        <link rel="alternate" href="https://ourworldindata.org/why-you-should-come-do-programming-at-oxford"/>
-        <published>2018-06-04T13:12:54.000Z</published>
-        <updated>2018-06-06T18:51:18.000Z</updated>
-        <author><name>Jaiden Mispy</name></author>
-        <summary>Our World in Data now has stable funding for the next 4 years, so we're looking to take on more programmers. In particular:</summary>
-    </entry>
-<entry>
-        <title>What’s happening to life expectancy in Britain?</title>
-    <id>https://ourworldindata.org/whats-happening-to-life-expectancy-in-britain</id>
-        <link rel="alternate" href="https://ourworldindata.org/whats-happening-to-life-expectancy-in-britain"/>
-        <published>2018-05-31T14:58:58.000Z</published>
-        <updated>2018-06-08T14:03:56.000Z</updated>
-        <author><name>Esteban Ortiz-Ospina</name></author><author><name>Hannah Ritchie</name></author>
-        <summary>This blog post draws on data and research discussed in our entry on Life Expectancy.</summary>
-    </entry>
-<entry>
-        <title>How common is alcohol and drug dependency across the world?</title>
-    <id>https://ourworldindata.org/alcohol-and-drug-dependency</id>
-        <link rel="alternate" href="https://ourworldindata.org/alcohol-and-drug-dependency"/>
-        <published>2018-05-16T09:21:35.000Z</published>
-        <updated>2018-05-16T09:25:59.000Z</updated>
-        <author><name>Hannah Ritchie</name></author>
-        <summary>This blog post draws on data and research discussed in our entry on Substance Use and Alcohol Consumption.</summary>
-    </entry>
-<entry>
-        <title>Global mental health: five key insights which emerge from the data</title>
-    <id>https://ourworldindata.org/global-mental-health</id>
-        <link rel="alternate" href="https://ourworldindata.org/global-mental-health"/>
-        <published>2018-05-16T09:20:00.000Z</published>
-        <updated>2018-05-16T09:25:19.000Z</updated>
-        <author><name>Hannah Ritchie</name></author>
-        <summary>This blog post draws on data and research discussed in our entries on Mental Health and Substance Use.</summary>
-    </entry>
-<entry>
-        <title>How is the world doing in its fight against vaccine preventable diseases?</title>
-    <id>https://ourworldindata.org/vaccine-preventable-diseases</id>
-        <link rel="alternate" href="https://ourworldindata.org/vaccine-preventable-diseases"/>
-        <published>2018-04-24T11:19:24.000Z</published>
-        <updated>2018-04-24T21:15:48.000Z</updated>
-        <author><name>Samantha Vanderslott</name></author>
-        <summary>This week – 24-30 April – is World Immunization Week. The theme of this year's World Immunization Week is collective action to protect every person in the world from "vaccine-preventable diseases" (VPDs). VPDs are 25 viral and bacterial diseases listed by the World Health Organization (WHO) that can be prevented by vaccination. </summary>
-    </entry>
-<entry>
-        <title>Mental health - new entry now online</title>
-    <id>https://ourworldindata.org/mental-health-new-entry-now-online</id>
-        <link rel="alternate" href="https://ourworldindata.org/mental-health-new-entry-now-online"/>
-        <published>2018-04-23T12:20:27.000Z</published>
-        <updated>2018-04-23T13:58:41.000Z</updated>
-        <author><name>Hannah Ritchie</name></author>
-        <summary>In recent months we have been working on a new entry on Mental Health. This entry is now available to explore.</summary>
+        <title>Does trade cause growth?</title>
+    <id>https://ourworldindata.org/trade-and-econ-growth</id>
+        <link rel="alternate" href="https://ourworldindata.org/trade-and-econ-growth"/>
+        <published>2018-10-22T06:05:28.000Z</published>
+        <updated>2018-12-13T14:50:56.000Z</updated>
+        <author><name>Esteban Ortiz-Ospina</name></author>
+        <summary>Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics. In this blog post we cover the link between globalization and economic growth. In two separate companion posts we cover the link between globalization and jobs, and the link between globalization and inequality. These articles draw on data and research discussed in our entry on International Trade.</summary>
     </entry>
 </feed>

@@ -1,4 +1,4 @@
-Ø7[<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"18339";s:11:"post_author";s:2:"28";s:9:"post_date";s:19:"2018-04-06 11:58:39";s:13:"post_date_gmt";s:19:"2018-04-06 10:58:39";s:12:"post_content";s:18647:"This is a guest post by <strong>Linus Mattauch</strong><sup>1</sup>, <strong>Alexander Radebach</strong><sup>2</sup>, <strong>Jan Siegmeier</strong><sup>2</sup>, and <strong>Simona Sulikova</strong><sup>1</sup>.
+j:\<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"18339";s:11:"post_author";s:2:"28";s:9:"post_date";s:19:"2018-04-06 11:58:39";s:13:"post_date_gmt";s:19:"2018-04-06 10:58:39";s:12:"post_content";s:18647:"This is a guest post by <strong>Linus Mattauch</strong><sup>1</sup>, <strong>Alexander Radebach</strong><sup>2</sup>, <strong>Jan Siegmeier</strong><sup>2</sup>, and <strong>Simona Sulikova</strong><sup>1</sup>.
 
 <sup>1</sup>Institute for New Economic Thinking, Oxford Martin School, and Environmental Change Institute, School of Geography &amp; the Environment. University of Oxford.
 <sup>2</sup>Mercator Research Institute on Global Commons and Climate Change Berlin.

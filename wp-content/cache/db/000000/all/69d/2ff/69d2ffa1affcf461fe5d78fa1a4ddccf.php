@@ -1,4 +1,4 @@
-î7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:174:"
+xÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:174:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','u5mr-1970-vs-2015_v1_850x600-svg')

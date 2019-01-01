@@ -14,8 +14,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
                 case 0: case 1: t = op; break;
                 case 4: _.label++; return { value: op[1], done: false };
@@ -79,15 +79,19 @@ var WordpressBaker = /** @class */ (function () {
                             "/slides/Max_PPT_presentations/* https://www.maxroser.com/slides/Max_PPT_presentations/:splat 302",
                             "/slides/Max_Interactive_Presentations/* https://www.maxroser.com/slides/Max_Interactive_Presentations/:splat 302",
                             // Backwards compatibility-- public urls
+                            "/entries/* /:splat 301",
                             "/entries /#entries 302",
-                            "/data/food-agriculture/land-use-in-agriculture /yields-and-land-use-in-agriculture 301",
+                            "/data/food-agriculture/* /:splat 301",
+                            "/data/political-regimes/* /:splat 301",
+                            "/data/population-growth-vital-statistics/* /:splat 301",
+                            "/data/growth-and-distribution-of-prosperity/* /:splat 301",
                             // Backwards compatibility-- grapher url style
                             "/chart-builder/* /grapher/:splat 301",
                             "/grapher/public/* /grapher/:splat 301",
                             "/grapher/view/* /grapher/:splat 301",
                             // Main grapher chart urls are proxied through to separate repo
                             "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200",
-                            "/slides/* https://owid-slides.netlify.com/:splat 200"
+                            "/slides/* https://slides.ourworldindata.org/:splat 302"
                         ];
                         return [4 /*yield*/, wpdb.query("SELECT url, action_data, action_code FROM wp_redirection_items")];
                     case 1:
@@ -158,8 +162,8 @@ var WordpressBaker = /** @class */ (function () {
     // Bake all Wordpress posts, both blog posts and entry pages
     WordpressBaker.prototype.bakePosts = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
             var postsQuery, rows, bakingPosts, postSlugs, _i, rows_2, row, post, existingSlugs, toRemove, _a, toRemove_1, slug, outPath;
+            var _this = this;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
@@ -174,7 +178,7 @@ var WordpressBaker = /** @class */ (function () {
                     case 2:
                         if (!(_i < rows_2.length)) return [3 /*break*/, 5];
                         row = rows_2[_i];
-                        if (row.post_name === 'blog')
+                        if (row.post_name === 'blog') // Handled separately
                             return [3 /*break*/, 4];
                         return [4 /*yield*/, wpdb.getFullPost(row)];
                     case 3:
@@ -191,7 +195,7 @@ var WordpressBaker = /** @class */ (function () {
                     case 6:
                         _b.sent();
                         existingSlugs = glob.sync(BAKED_DIR + "/**/*.html").map(function (path) { return path.replace(BAKED_DIR + "/", '').replace(".html", ""); })
-                            .filter(function (path) { return !path.startsWith('wp-') && !path.startsWith('slides') && !path.startsWith('subscribe') && !path.startsWith('blog') && path !== "index" && path !== "identifyadmin" && path !== "404" && path !== "google8272294305985984"; });
+                            .filter(function (path) { return !path.startsWith('wp-') && !path.startsWith('subscribe') && !path.startsWith('blog') && path !== "index" && path !== "identifyadmin" && path !== "404" && path !== "google8272294305985984"; });
                         toRemove = lodash_1.without.apply(void 0, [existingSlugs].concat(postSlugs));
                         _a = 0, toRemove_1 = toRemove;
                         _b.label = 7;
@@ -306,7 +310,6 @@ var WordpressBaker = /** @class */ (function () {
                 shell.exec("rsync -havz --delete " + WORDPRESS_DIR + "/wp-content " + BAKED_DIR + "/");
                 shell.exec("rsync -havz --delete " + WORDPRESS_DIR + "/wp-includes " + BAKED_DIR + "/");
                 shell.exec("rsync -havz --delete " + WORDPRESS_DIR + "/favicon* " + BAKED_DIR + "/");
-                shell.exec("rsync -havz --delete " + WORDPRESS_DIR + "/slides/ " + BAKED_DIR + "/slides");
                 shell.exec("rsync -havz --delete " + WORDPRESS_DIR + "/wp-content/themes/owid-theme/public/*  " + BAKED_DIR + "/");
                 return [2 /*return*/];
             });

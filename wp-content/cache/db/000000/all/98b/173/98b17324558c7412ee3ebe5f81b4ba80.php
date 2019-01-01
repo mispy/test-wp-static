@@ -1,4 +1,4 @@
-á7[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:218:"
+iÿI[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:218:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','fertility-vs-child-mortality-ebae645eef801ff4dc4a29318789620d_v1_850x600-svg')
