@@ -1,4 +1,4 @@
-аш\<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"15918";s:11:"post_author";s:2:"10";s:9:"post_date";s:19:"2018-02-19 10:10:50";s:13:"post_date_gmt";s:19:"2018-02-19 10:10:50";s:12:"post_content";s:26580:"<div class="blog-info">Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
+]-\<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:5:"15918";s:11:"post_author";s:2:"10";s:9:"post_date";s:19:"2018-02-19 10:10:50";s:13:"post_date_gmt";s:19:"2018-02-19 10:10:50";s:12:"post_content";s:26580:"<div class="blog-info">Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.
 
 This blog post is closely related to a companion article where we discuss <a href="https://ourworldindata.org/six-facts-pay-gap">definitions and trends in the gender pay gap</a>. It is also related to our articles exploring female labor force participation <a href="https://ourworldindata.org/female-labor-force-participation-key-facts">trends</a> and <a href="https://ourworldindata.org/women-in-the-labor-force-determinants/">determinants</a>.
 

@@ -46,16 +46,6 @@ var wpdb_1 = require("./wpdb");
 var Tablepress_1 = require("./views/Tablepress");
 var path = require("path");
 var mjAPI = require("mathjax-node");
-function romanize(num) {
-    if (!+num)
-        return "";
-    var digits = String(+num).split(""), key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
-        "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
-        "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], roman = "", i = 3;
-    while (i--)
-        roman = (key[+digits.pop() + (i * 10)] || "") + roman;
-    return Array(+digits.join("") + 1).join("M") + roman;
-}
 mjAPI.config({
     MathJax: {
     // traditional MathJax configuration
@@ -109,9 +99,9 @@ function formatLatex(html, latexBlocks) {
         });
     });
 }
-function formatWordpressPost(post, html, grapherExports) {
+function formatWordpressPost(post, html, formattingOptions, grapherExports) {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, latexBlocks, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _b, grapherIframes_1, el, src, chart, output, $p, _c, _d, iframe, _e, _f, p, $p, _g, _h, table, $table, $div, uploadDex, _j, _k, el, $el, src, upload, $a, hasToc, openHeadingIndex, openSubheadingIndex, tocHeadings;
+        var _a, latexBlocks, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _b, grapherIframes_1, el, src, chart, output, $p, _c, _d, iframe, _e, _f, p, $p, _g, _h, table, $table, $div, uploadDex, _j, _k, el, $el, src, upload, $a, tocHeadings, existingSlugs, parentHeading;
         return __generator(this, function (_l) {
             switch (_l.label) {
                 case 0:
@@ -121,7 +111,9 @@ function formatWordpressPost(post, html, grapherExports) {
                     html = html.replace(/&nbsp;/g, "").replace(/\r\n/g, "\n").replace(/\n+/g, "\n").replace(/\n/g, "\n\n");
                     _a = extractLatex(html), html = _a[0], latexBlocks = _a[1];
                     // Replicate wordpress formatting (thank gods there's an npm package)
-                    html = wpautop(html);
+                    if (formattingOptions.wpFormat) {
+                        html = wpautop(html);
+                    }
                     return [4 /*yield*/, formatLatex(html, latexBlocks)
                         // Footnotes
                     ];
@@ -218,41 +210,33 @@ function formatWordpressPost(post, html, grapherExports) {
                             }
                         }
                     }
-                    hasToc = post.type === 'page' && post.slug !== 'about';
-                    openHeadingIndex = 0;
-                    openSubheadingIndex = 0;
                     tocHeadings = [];
+                    existingSlugs = [];
+                    parentHeading = null;
                     $("h1, h2, h3, h4").each(function (_, el) {
                         var $heading = $(el);
                         var headingText = $heading.text();
                         // We need both the text and the html because may contain footnote
-                        var headingHtml = $heading.html();
+                        // let headingHtml = $heading.html() as string
                         var slug = urlSlug(headingText);
+                        // Avoid If the slug already exists, try prepend the parent
+                        if (existingSlugs.indexOf(slug) !== -1 && parentHeading != null) {
+                            slug = parentHeading.slug + "-" + slug;
+                        }
+                        existingSlugs.push(slug);
                         // Table of contents
-                        if (hasToc) {
+                        if (formattingOptions.toc) {
                             if ($heading.is("#footnotes") && footnotes.length > 0) {
                                 tocHeadings.push({ text: headingText, slug: "footnotes", isSubheading: false });
                             }
                             else if (!$heading.is('h1') && !$heading.is('h4')) {
-                                // Inject numbering into the text as well
                                 if ($heading.is('h2')) {
-                                    openHeadingIndex += 1;
-                                    openSubheadingIndex = 0;
+                                    var tocHeading = { text: $heading.text(), slug: slug, isSubheading: false };
+                                    tocHeadings.push(tocHeading);
+                                    parentHeading = tocHeading;
                                 }
-                                else if ($heading.is('h3')) {
-                                    openSubheadingIndex += 1;
-                                }
-                                if (openHeadingIndex > 0) {
-                                    if ($heading.is('h2')) {
-                                        headingHtml = romanize(openHeadingIndex) + '. ' + headingHtml;
-                                        $heading.html(headingHtml);
-                                        tocHeadings.push({ text: $heading.text(), slug: slug, isSubheading: false });
-                                    }
-                                    else {
-                                        headingHtml = romanize(openHeadingIndex) + '.' + openSubheadingIndex + ' ' + headingHtml;
-                                        $heading.html(headingHtml);
-                                        tocHeadings.push({ text: $heading.text(), slug: slug, isSubheading: true });
-                                    }
+                                else {
+                                    tocHeadings.push({ text: $heading.text(), slug: slug, isSubheading: true });
                                 }
                             }
                         }
@@ -278,9 +262,40 @@ function formatWordpressPost(post, html, grapherExports) {
     });
 }
 exports.formatWordpressPost = formatWordpressPost;
-function formatPost(post, grapherExports) {
+function extractFormattingOptions(html) {
+    var formattingOptionsMatch = html.match(/<!--\s*formatting-options\s+(.*)\s*-->/);
+    if (formattingOptionsMatch) {
+        return parseFormattingOptions(formattingOptionsMatch[1]);
+    }
+    else {
+        return {};
+    }
+}
+exports.extractFormattingOptions = extractFormattingOptions;
+// Converts "toc:false raw somekey:somevalue" to { toc: false, raw: true, somekey: "somevalue" }
+// If only the key is specified, the value is assumed to be true (e.g. "raw" above)
+function parseFormattingOptions(text) {
+    var options = {};
+    text.split(/\s+/)
+        // filter out empty strings
+        .filter(function (s) { return s && s.length > 0; })
+        // populate options object
+        .forEach(function (option) {
+        var _a = option.split(":"), name = _a[0], value = _a[1];
+        var parsedValue;
+        if (value === undefined || value === "true")
+            parsedValue = true;
+        else if (value === "false")
+            parsedValue = false;
+        else
+            parsedValue = value;
+        options[name] = parsedValue;
+    });
+    return options;
+}
+function formatPost(post, formattingOptions, grapherExports) {
     return __awaiter(this, void 0, void 0, function () {
-        var html, isRaw;
+        var html, isRaw, options;
         return __generator(this, function (_a) {
             html = post.content;
             // Standardize urls
@@ -304,7 +319,11 @@ function formatPost(post, grapherExports) {
                     }];
             }
             else {
-                return [2 /*return*/, formatWordpressPost(post, html, grapherExports)];
+                options = Object.assign({
+                    toc: post.type === 'page',
+                    wpFormat: true
+                }, formattingOptions);
+                return [2 /*return*/, formatWordpressPost(post, html, options, grapherExports)];
             }
             return [2 /*return*/];
         });

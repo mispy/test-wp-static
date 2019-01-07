@@ -18,7 +18,7 @@ exports.BlogIndexPage = function (props) {
                 React.createElement("div", { className: "site-content" },
                     React.createElement("h2", null, "Latest Posts"),
                     React.createElement("ul", { className: "posts" }, posts.map(function (post) {
-                        return React.createElement("li", { className: "post" },
+                        return React.createElement("li", { key: post.slug, className: "post" },
                             React.createElement("a", { href: "/" + post.slug },
                                 post.imageUrl && React.createElement("img", { src: post.imageUrl }),
                                 React.createElement("h3", null, post.title),
@@ -30,7 +30,7 @@ exports.BlogIndexPage = function (props) {
                     React.createElement("nav", { className: "navigation pagination", role: "navigation" },
                         React.createElement("h2", { className: "screen-reader-text" }, "Posts navigation"),
                         React.createElement("div", { className: "nav-link" }, pageNums.map(function (num) {
-                            return React.createElement("a", { className: "page-numbers" + (num === pageNum ? " current" : ""), href: num === 1 ? '/blog/' : "/blog/page/" + num }, num);
+                            return React.createElement("a", { key: num, className: "page-numbers" + (num === pageNum ? " current" : ""), href: num === 1 ? '/blog/' : "/blog/page/" + num }, num);
                         }))))),
             React.createElement(SiteFooter_1.SiteFooter, null)));
 };

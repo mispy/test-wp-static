@@ -1,4 +1,4 @@
-yX\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:144:"
+S-\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:144:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('git','config')

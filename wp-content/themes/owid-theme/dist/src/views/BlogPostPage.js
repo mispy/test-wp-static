@@ -7,14 +7,14 @@ var SiteHeader_1 = require("./SiteHeader");
 var SiteFooter_1 = require("./SiteFooter");
 var formatting_1 = require("../formatting");
 exports.BlogPostPage = function (props) {
-    var entries = props.entries, post = props.post;
+    var entries = props.entries, post = props.post, formattingOptions = props.formattingOptions;
     var authorsText = formatting_1.formatAuthors(post.authors);
     var pageTitle = post.title;
     var canonicalUrl = settings_1.BAKED_URL + "/" + post.slug;
     var pageDesc = post.excerpt;
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { pageTitle: pageTitle, pageDesc: pageDesc, canonicalUrl: canonicalUrl, imageUrl: post.imageUrl }),
-        React.createElement("body", { className: "single-post" },
+        React.createElement("body", { className: "single-post " + (formattingOptions.bodyClassName || "") },
             React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
             React.createElement("main", null,
                 React.createElement("header", { className: "blog-header" },

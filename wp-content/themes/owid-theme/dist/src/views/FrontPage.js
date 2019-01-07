@@ -31,7 +31,7 @@ exports.FrontPage = function (props) {
                     React.createElement("div", { id: "homepage-blog" },
                         React.createElement("h3", null,
                             React.createElement("a", { href: "/blog" }, "Blog")),
-                        React.createElement("ul", null, posts.map(function (post) { return React.createElement("li", { className: "post" },
+                        React.createElement("ul", null, posts.map(function (post) { return React.createElement("li", { key: post.slug, className: "post" },
                             React.createElement("h4", null,
                                 React.createElement("a", { href: "/" + post.slug }, post.title)),
                             React.createElement("div", { className: "entry-meta" },
@@ -44,10 +44,10 @@ exports.FrontPage = function (props) {
                             "Ongoing collections of research and data by topic. Entries marked with ",
                             React.createElement("span", { className: "star" }, "\u2B51"),
                             " are the most complete."),
-                        React.createElement("ul", null, entries.map(function (category) { return React.createElement("li", null,
+                        React.createElement("ul", null, entries.map(function (category) { return React.createElement("li", { key: category.slug },
                             React.createElement("h4", { id: category.slug }, category.name),
                             React.createElement("div", { className: "link-container" }, category.entries.map(function (entry) {
-                                return React.createElement("a", { className: entry.starred ? "starred" : undefined, title: entry.starred ? "Starred pages are our best and most complete entries." : undefined, href: "/" + entry.slug }, entry.title);
+                                return React.createElement("a", { key: entry.slug, className: entry.starred ? "starred" : undefined, title: entry.starred ? "Starred pages are our best and most complete entries." : undefined, href: "/" + entry.slug }, entry.title);
                             }))); }))),
                     React.createElement("div", { className: "owid-data owid-presentations" },
                         React.createElement("h3", { id: "presentations" },

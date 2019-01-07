@@ -1,4 +1,4 @@
-иг■[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:190:"
+П├.\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:190:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','disease-burden-rates-from-cancers_v4_850x600-svg')

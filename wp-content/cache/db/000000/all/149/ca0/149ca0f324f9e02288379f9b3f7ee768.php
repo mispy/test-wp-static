@@ -1,4 +1,4 @@
-ê£˛[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:222:"
+o√.\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:222:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','suicide-rates-vs-prevalence-of-mental-and-substance-use-disorders_v1_850x600-svg')

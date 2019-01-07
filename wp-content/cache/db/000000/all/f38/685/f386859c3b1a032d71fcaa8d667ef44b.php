@@ -1,4 +1,4 @@
-ê£˛[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:200:"
+p√.\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:200:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','depression-by-level-of-education-employment_v1_850x600-svg')

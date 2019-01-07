@@ -59,7 +59,7 @@ function renderToHtmlPage(element) {
 exports.renderToHtmlPage = renderToHtmlPage;
 function renderPageById(id, isPreview) {
     return __awaiter(this, void 0, void 0, function () {
-        var rows, post, entries, $, grapherUrls, exportsByUrl, formatted;
+        var rows, post, entries, $, grapherUrls, exportsByUrl, formattingOptions, formatted;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -83,16 +83,19 @@ function renderPageById(id, isPreview) {
                     return [4 /*yield*/, grapherUtil_1.bakeGrapherUrls(grapherUrls, { silent: true })];
                 case 7:
                     _a.sent();
-                    return [4 /*yield*/, grapherUtil_1.getGrapherExportsByUrl()];
+                    return [4 /*yield*/, grapherUtil_1.getGrapherExportsByUrl()
+                        // Extract formatting options from post HTML comment (if any)
+                    ];
                 case 8:
                     exportsByUrl = _a.sent();
-                    return [4 /*yield*/, formatting_1.formatPost(post, exportsByUrl)];
+                    formattingOptions = formatting_1.extractFormattingOptions(post.content);
+                    return [4 /*yield*/, formatting_1.formatPost(post, formattingOptions, exportsByUrl)];
                 case 9:
                     formatted = _a.sent();
                     if (rows[0].post_type === 'post')
-                        return [2 /*return*/, renderToHtmlPage(React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }))];
+                        return [2 /*return*/, renderToHtmlPage(React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
                     else
-                        return [2 /*return*/, renderToHtmlPage(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }))];
+                        return [2 /*return*/, renderToHtmlPage(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
                     return [2 /*return*/];
             }
         });

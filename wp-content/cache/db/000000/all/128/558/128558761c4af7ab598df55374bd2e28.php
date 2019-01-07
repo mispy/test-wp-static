@@ -1,4 +1,4 @@
-Ÿè\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:208:"
+]-\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:208:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('wp-content','plugins','cherry-plugin','admin','css','cherry-admin-plugin-css')

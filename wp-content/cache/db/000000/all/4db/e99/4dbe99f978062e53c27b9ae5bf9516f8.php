@@ -1,4 +1,4 @@
-†£þ[<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:198:"
+dÃ.\<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:198:"
 		SELECT ID, post_name, post_parent, post_type
 		FROM wp_posts
 		WHERE post_name IN ('exports','share-with-mental-and-substance-disorders_v4_850x600-svg')

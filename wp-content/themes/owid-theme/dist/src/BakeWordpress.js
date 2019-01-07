@@ -64,7 +64,7 @@ var WordpressBaker = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         redirects = [
-                            // Let's Encrypt certbot verification 
+                            // Let's Encrypt certbot verification
                             "/.well-known/* https://owid.cloud/.well-known/:splat 200",
                             // RSS feed
                             "/feed /atom.xml 302",
@@ -137,16 +137,19 @@ var WordpressBaker = /** @class */ (function () {
     // Bake an individual post/page
     WordpressBaker.prototype.bakePost = function (post) {
         return __awaiter(this, void 0, void 0, function () {
-            var entries, formatted, html, outPath;
+            var entries, formattingOptions, formatted, html, outPath;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, wpdb.getEntriesByCategory()];
                     case 1:
                         entries = _a.sent();
-                        return [4 /*yield*/, formatting_1.formatPost(post, this.grapherExports)];
+                        formattingOptions = formatting_1.extractFormattingOptions(post.content);
+                        return [4 /*yield*/, formatting_1.formatPost(post, formattingOptions, this.grapherExports)];
                     case 2:
                         formatted = _a.sent();
-                        html = renderPage_1.renderToHtmlPage(post.type == 'post' ? React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted }) : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted }));
+                        html = renderPage_1.renderToHtmlPage(post.type == 'post'
+                            ? React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted, formattingOptions: formattingOptions })
+                            : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }));
                         outPath = path.join(BAKED_DIR, post.slug + ".html");
                         return [4 /*yield*/, fs.mkdirp(path.dirname(outPath))];
                     case 3:
@@ -270,7 +273,7 @@ var WordpressBaker = /** @class */ (function () {
     };
     WordpressBaker.prototype.bakeRSS = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var postRows, posts, _i, postRows_1, row, fullPost, _a, _b, feed;
+            var postRows, posts, _i, postRows_1, row, fullPost, formattingOptions, _a, _b, feed;
             return __generator(this, function (_c) {
                 switch (_c.label) {
                     case 0: return [4 /*yield*/, wpdb.query("SELECT * FROM wp_posts WHERE post_type='post' AND post_status='publish' ORDER BY post_date DESC LIMIT 10")];
@@ -285,8 +288,9 @@ var WordpressBaker = /** @class */ (function () {
                         return [4 /*yield*/, wpdb.getFullPost(row)];
                     case 3:
                         fullPost = _c.sent();
+                        formattingOptions = formatting_1.extractFormattingOptions(fullPost.content);
                         _b = (_a = posts).push;
-                        return [4 /*yield*/, formatting_1.formatPost(fullPost)];
+                        return [4 /*yield*/, formatting_1.formatPost(fullPost, formattingOptions)];
                     case 4:
                         _b.apply(_a, [_c.sent()]);
                         _c.label = 5;
