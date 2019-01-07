@@ -64,7 +64,7 @@ var WordpressBaker = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         redirects = [
-                            // Let's Encrypt certbot verification
+                            // Let's Encrypt certbot verification 
                             "/.well-known/* https://owid.cloud/.well-known/:splat 200",
                             // RSS feed
                             "/feed /atom.xml 302",
